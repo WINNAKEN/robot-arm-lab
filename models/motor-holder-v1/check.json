@@ -1,0 +1,273 @@
+{
+ "what": "MP15 모터 받침 검사 — 커밋된 STL 로 스스로 계산",
+ "summary": {
+  "C0_build_record_matches_files": true,
+  "C1_closed_one_piece_each": true,
+  "C2_cradle_fits_motor": true,
+  "C3_clear_of_reducer": true,
+  "C4_clear_of_connector": true,
+  "C5_bar_clamps_motor": true,
+  "C6_inserts_and_bar_holes": true,
+  "C7_base_holes": true,
+  "C8_print_prep_ready": true
+ },
+ "all_true": true,
+ "results": {
+  "C0": {
+   "stl_matches": true,
+   "inputs_match": true,
+   "control": null,
+   "inputs_differ": []
+  },
+  "C1": {
+   "watertight": [
+    true,
+    true
+   ],
+   "volume_mm3": [
+    83001.00914390244,
+    9122.71368282285
+   ],
+   "pieces": {
+    "HOLDER": 1,
+    "BAR": 1
+   }
+  },
+  "C2": {
+   "x": 13.15,
+   "inner_y": [
+    -21.5,
+    21.5
+   ],
+   "side_clearance": [
+    0.3500000000000014,
+    0.3500000000000014
+   ],
+   "band": [
+    0.25,
+    0.6
+   ],
+   "floor_z": 33.849998474121094,
+   "floor_want": 33.85,
+   "motor_box_overlap_mm3": 0.0,
+   "frame": 42.3,
+   "frame_status": "assumed"
+  },
+  "C3": {
+   "overlap_mm3": {
+    "reducer": 0.0,
+    "cap_screw_heads": 0.0
+   },
+   "stop_face_x": 0.30000001192092896,
+   "stop_gap": 0.3,
+   "stop_ok": true,
+   "axis_z_measured": 54.99999847412109,
+   "reducer_r_plus_gap": 40.45,
+   "reducer_bottom_z": 15.999998474121092,
+   "head_x_end_plus_gap": 3.95,
+   "keepout_bounds": [
+    [
+     -44.95,
+     -40.45,
+     14.54999847412109
+    ],
+    [
+     3.95,
+     40.45,
+     95.44999847412109
+    ]
+   ]
+  },
+  "C4": {
+   "x_max_above_base": 26.0,
+   "bar_x_max": 25.0,
+   "limit": 26.0,
+   "connector_front": 29.0,
+   "connector_front_in_j5_params": 29.0,
+   "same_as_j5": true
+  },
+  "C5": {
+   "motor_top": 76.14999847412109,
+   "wall_top_z": [
+    75.1500015258789,
+    75.1500015258789
+   ],
+   "clamp_gap": [
+    0.9999969482421847,
+    0.9999969482421847
+   ],
+   "band": [
+    0.5,
+    1.5
+   ],
+   "bar_bottom_z": 76.1500015258789
+  },
+  "C6": {
+   "rows": [
+    {
+     "side": 1,
+     "insert_dia": 3.996,
+     "insert_centre": [
+      15.000000044587965,
+      25.499999971356207
+     ],
+     "depth": 8.0,
+     "material_inner": 2.0019919999528284,
+     "material_outer": 2.001992057240414,
+     "bar_hole_dia": 3.3977,
+     "bar_hole_to_insert_centre": 8.296758002636341e-08,
+     "seat_z": 81.1500015258789,
+     "seat_to_wall_top": 6.0,
+     "screws": [
+      {
+       "length": 10,
+       "tip_below_wall_top": 4.0,
+       "engagement": 4.0,
+       "ok": true
+      },
+      {
+       "length": 12,
+       "tip_below_wall_top": 6.0,
+       "engagement": 5.7,
+       "ok": true
+      }
+     ],
+     "ok": true
+    },
+    {
+     "side": -1,
+     "insert_dia": 3.996,
+     "insert_centre": [
+      15.000000044587969,
+      -25.500000028643793
+     ],
+     "depth": 8.0,
+     "material_inner": 2.0019920572404146,
+     "material_outer": 2.001991999952828,
+     "bar_hole_dia": 3.3977,
+     "bar_hole_to_insert_centre": 8.29676151554656e-08,
+     "seat_z": 81.1500015258789,
+     "seat_to_wall_top": 6.0,
+     "screws": [
+      {
+       "length": 10,
+       "tip_below_wall_top": 4.0,
+       "engagement": 4.0,
+       "ok": true
+      },
+      {
+       "length": 12,
+       "tip_below_wall_top": 6.0,
+       "engagement": 5.7,
+       "ok": true
+      }
+     ],
+     "ok": true
+    }
+   ],
+   "insert_hole_dia": 4.0,
+   "m3_clearance_dia": 3.4,
+   "fit_status": {
+    "insert_hole_dia": "confirmed",
+    "m3_clearance_dia": "placeholder"
+   },
+   "min_material": 2.0
+  },
+  "C7": {
+   "rows": [
+    {
+     "at": [
+      -6.0,
+      34.0
+     ],
+     "dia": 4.4959,
+     "through": true,
+     "to_block": 5.494122922867536,
+     "to_edge": 3.752030182529172,
+     "ok": true
+    },
+    {
+     "at": [
+      -6.0,
+      -34.0
+     ],
+     "dia": 4.4959,
+     "through": true,
+     "to_block": 5.494122922867536,
+     "to_edge": 3.752030182529172,
+     "ok": true
+    },
+    {
+     "at": [
+      40.0,
+      34.0
+     ],
+     "dia": 4.4959,
+     "through": true,
+     "to_block": 12.457471574866936,
+     "to_edge": 3.752030405014194,
+     "ok": true
+    },
+    {
+     "at": [
+      40.0,
+      -34.0
+     ],
+     "dia": 4.4959,
+     "through": true,
+     "to_block": 12.457471574866936,
+     "to_edge": 3.752030405014194,
+     "ok": true
+    }
+   ]
+  },
+  "C8": {
+   "parts": {
+    "HOLDER": {
+     "verdict": "ready",
+     "support_needed": false,
+     "mass_g": 34.3,
+     "time": 3480,
+     "stl_sha256": "86ef1aa0ba5dfcd3239428d67d118e03b2d82552b4a4505db786db40661db809",
+     "translation_z": -0.0
+    },
+    "BAR": {
+     "verdict": "ready",
+     "support_needed": false,
+     "mass_g": 4.88,
+     "time": 819,
+     "stl_sha256": "ca0286c2c34f3535f80d49634b358335a8b429f8a35bbf391c8a436c48b41902",
+     "translation_z": -76.1500015258789
+    }
+   },
+   "plate": {
+    "verdict": "ready",
+    "support_needed": false,
+    "mass_g": 39.26,
+    "time": 3962,
+    "fits_bed": true,
+    "plate_stl_sha256": "b03fc4c7e54cbce04ded7c72b1db56bc93a43da98b40144e6c39d656f2f2dcd6",
+    "project_sha256": "828e55ecaf7b239796dc3f0586046ad2b016f4a05921012c97af25845f09a357",
+    "bounds": [
+     [
+      130.0,
+      120.0,
+      0.0
+     ],
+     [
+      220.0,
+      200.0,
+      75.1500015258789
+     ]
+    ]
+   },
+   "plate_ok": true
+  }
+ },
+ "inputs_sha256": {
+  "parts/HOLDER.stl": "86ef1aa0ba5dfcd3239428d67d118e03b2d82552b4a4505db786db40661db809",
+  "parts/BAR.stl": "ca0286c2c34f3535f80d49634b358335a8b429f8a35bbf391c8a436c48b41902",
+  "check_holder.py": "01c90da43adc45c2a71371389ed4816480640a9be85c45a82fc15bc72ddd73b3",
+  "parameters.json": "7ac2a4b3f064e2d22a6fd339b7c5f34bf6dfeaa848a88d268713051e3c625086"
+ }
+}

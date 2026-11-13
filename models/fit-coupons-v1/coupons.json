@@ -1,0 +1,422 @@
+{
+ "units": "mm",
+ "bodies": [
+  "C1_NEMA17_PLATE_1",
+  "C1_NEMA17_PLATE_2",
+  "C1_NEMA17_PLATE_3",
+  "C2_BEARING_608_SEAT_1",
+  "C2_BEARING_608_SEAT_2",
+  "C2_BEARING_608_SEAT_3",
+  "C2_BEARING_608_SEAT_4",
+  "C3_M3_HOLE_BLOCK",
+  "C4_SLIP_BOSS_40",
+  "C4_SLIP_RING_1",
+  "C4_SLIP_RING_2",
+  "C4_SLIP_RING_3",
+  "C5_D_HOLE_PLATE",
+  "C5_D_PIN_6_1",
+  "C5_D_PIN_6_2"
+ ],
+ "coupons": [
+  {
+   "body": "C1_NEMA17_PLATE_1",
+   "test": "NEMA17 pilot Ø22 boss (through hole) + M3 clearance on 31 mm square",
+   "pilot_dia_mm": 22.15,
+   "m3_clearance_dia_mm": 3.4,
+   "thickness_mm": 3,
+   "hole_axis_vs_z_deg": 0,
+   "label": "22.15",
+   "min_material_mm": 3.0,
+   "mating_part": "NEMA17 motor (not on hand)"
+  },
+  {
+   "body": "C1_NEMA17_PLATE_2",
+   "test": "NEMA17 pilot Ø22 boss (through hole) + M3 clearance on 31 mm square",
+   "pilot_dia_mm": 22.3,
+   "m3_clearance_dia_mm": 3.4,
+   "thickness_mm": 3,
+   "hole_axis_vs_z_deg": 0,
+   "label": "22.30",
+   "min_material_mm": 3.0,
+   "mating_part": "NEMA17 motor (not on hand)"
+  },
+  {
+   "body": "C1_NEMA17_PLATE_3",
+   "test": "NEMA17 pilot Ø22 boss (through hole) + M3 clearance on 31 mm square",
+   "pilot_dia_mm": 22.45,
+   "m3_clearance_dia_mm": 3.4,
+   "thickness_mm": 3,
+   "hole_axis_vs_z_deg": 0,
+   "label": "22.45",
+   "min_material_mm": 3.0,
+   "mating_part": "NEMA17 motor (not on hand)"
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_1",
+   "test": "bearing 608 outer-ring seat (press fit)",
+   "seat_dia_mm": 22.0,
+   "bearing": "608 8x22x7",
+   "height_mm": 5.0,
+   "hole_axis_vs_z_deg": 0,
+   "label": "0.0",
+   "min_material_mm": 4.0,
+   "mating_part": "608 bearing (not on hand)"
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_2",
+   "test": "bearing 608 outer-ring seat (press fit)",
+   "seat_dia_mm": 22.1,
+   "bearing": "608 8x22x7",
+   "height_mm": 5.0,
+   "hole_axis_vs_z_deg": 0,
+   "label": "+0.1",
+   "min_material_mm": 3.95,
+   "mating_part": "608 bearing (not on hand)"
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_3",
+   "test": "bearing 608 outer-ring seat (press fit)",
+   "seat_dia_mm": 22.2,
+   "bearing": "608 8x22x7",
+   "height_mm": 5.0,
+   "hole_axis_vs_z_deg": 0,
+   "label": "+0.2",
+   "min_material_mm": 3.9,
+   "mating_part": "608 bearing (not on hand)"
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_4",
+   "test": "bearing 608 outer-ring seat (press fit)",
+   "seat_dia_mm": 22.3,
+   "bearing": "608 8x22x7",
+   "height_mm": 5.0,
+   "hole_axis_vs_z_deg": 0,
+   "label": "+0.3",
+   "min_material_mm": 3.85,
+   "mating_part": "608 bearing (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance",
+   "hole_dia_mm": 3.2,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    -27.0,
+    6
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance (horizontal)",
+   "hole_dia_mm": 3.2,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    -27.0,
+    -13
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance",
+   "hole_dia_mm": 3.4,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    -20.25,
+    6
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance (horizontal)",
+   "hole_dia_mm": 3.4,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    -20.25,
+    -13
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance",
+   "hole_dia_mm": 3.6,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    -13.5,
+    6
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 clearance (horizontal)",
+   "hole_dia_mm": 3.6,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    -13.5,
+    -13
+   ],
+   "label": "C",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap",
+   "hole_dia_mm": 2.5,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    -6.75,
+    6
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap (horizontal)",
+   "hole_dia_mm": 2.5,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    -6.75,
+    -13
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap",
+   "hole_dia_mm": 2.7,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    0.0,
+    6
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap (horizontal)",
+   "hole_dia_mm": 2.7,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    0.0,
+    -13
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap",
+   "hole_dia_mm": 2.9,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    6.75,
+    6
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 self-tap (horizontal)",
+   "hole_dia_mm": 2.9,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    6.75,
+    -13
+   ],
+   "label": "T",
+   "mating_part": "M3 bolt (not on hand)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert",
+   "hole_dia_mm": 4.0,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    13.5,
+    6
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert (horizontal)",
+   "hole_dia_mm": 4.0,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    13.5,
+    -13
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert",
+   "hole_dia_mm": 4.2,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    20.25,
+    6
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert (horizontal)",
+   "hole_dia_mm": 4.2,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    20.25,
+    -13
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert",
+   "hole_dia_mm": 4.4,
+   "depth_mm": 8,
+   "hole_axis_vs_z_deg": 0,
+   "position_mm": [
+    27.0,
+    6
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "M3 heat-set insert (horizontal)",
+   "hole_dia_mm": 4.4,
+   "depth_mm": 10,
+   "hole_axis_vs_z_deg": 90,
+   "position_mm": [
+    27.0,
+    -13
+   ],
+   "label": "I",
+   "mating_part": "M3 heat-set insert (on hand — length unknown; depth 8 fits up to 5.7)"
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "test": "block material between holes and under the blind holes",
+   "min_material_mm": 2
+  },
+  {
+   "body": "C4_SLIP_BOSS_40",
+   "test": "slip-fit boss Ø40 (hollow)",
+   "boss_dia_mm": 40,
+   "hole_axis_vs_z_deg": 0,
+   "min_material_mm": 4.0,
+   "mating_part": "C4 slip rings (printed)"
+  },
+  {
+   "body": "C4_SLIP_RING_1",
+   "test": "slip ring on Ø40 boss",
+   "bore_dia_mm": 40.2,
+   "radial_clearance_mm": 0.1,
+   "hole_axis_vs_z_deg": 0,
+   "label": "1 dot(s)",
+   "min_material_mm": 2.9,
+   "mating_part": "C4 boss (printed)"
+  },
+  {
+   "body": "C4_SLIP_RING_2",
+   "test": "slip ring on Ø40 boss",
+   "bore_dia_mm": 40.4,
+   "radial_clearance_mm": 0.2,
+   "hole_axis_vs_z_deg": 0,
+   "label": "2 dot(s)",
+   "min_material_mm": 2.8,
+   "mating_part": "C4 boss (printed)"
+  },
+  {
+   "body": "C4_SLIP_RING_3",
+   "test": "slip ring on Ø40 boss",
+   "bore_dia_mm": 40.6,
+   "radial_clearance_mm": 0.3,
+   "hole_axis_vs_z_deg": 0,
+   "label": "3 dot(s)",
+   "min_material_mm": 2.7,
+   "mating_part": "C4 boss (printed)"
+  },
+  {
+   "body": "C5_D_HOLE_PLATE",
+   "test": "D hole for D6",
+   "radius_mm": 3.1,
+   "flat_to_far_side_mm": 5.2,
+   "clearance_mm": 0.1,
+   "hole_axis_vs_z_deg": 0,
+   "label": "D6 column 1",
+   "mating_part": "C5 D pins (printed)"
+  },
+  {
+   "body": "C5_D_HOLE_PLATE",
+   "test": "D hole for D6",
+   "radius_mm": 3.2,
+   "flat_to_far_side_mm": 5.4,
+   "clearance_mm": 0.2,
+   "hole_axis_vs_z_deg": 0,
+   "label": "D6 column 2",
+   "mating_part": "C5 D pins (printed)"
+  },
+  {
+   "body": "C5_D_HOLE_PLATE",
+   "test": "D hole for D6",
+   "radius_mm": 3.3,
+   "flat_to_far_side_mm": 5.6,
+   "clearance_mm": 0.3,
+   "hole_axis_vs_z_deg": 0,
+   "label": "D6 column 3",
+   "mating_part": "C5 D pins (printed)"
+  },
+  {
+   "body": "C5_D_PIN_6_1",
+   "test": "D pin Ø6 / flat 5 (printed lying on its flat)",
+   "length_mm": 20,
+   "hole_axis_vs_z_deg": 90,
+   "min_material_mm": 5.0,
+   "mating_part": "C5 D6 holes (printed)"
+  },
+  {
+   "body": "C5_D_PIN_6_2",
+   "test": "D pin Ø6 / flat 5 (printed lying on its flat)",
+   "length_mm": 20,
+   "hole_axis_vs_z_deg": 90,
+   "min_material_mm": 5.0,
+   "mating_part": "C5 D6 holes (printed)"
+  }
+ ]
+}

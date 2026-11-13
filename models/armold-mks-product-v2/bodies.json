@@ -1,0 +1,159 @@
+{
+ "bodies": [
+  {
+   "name": "BASE_FOOT",
+   "link": 0,
+   "role": "dark"
+  },
+  {
+   "name": "BASE_COLUMN",
+   "link": 0,
+   "role": "body"
+  },
+  {
+   "name": "BASE_LIGHT_RING",
+   "link": 0,
+   "role": "accent"
+  },
+  {
+   "name": "J1_MODULE",
+   "link": 0,
+   "role": "body"
+  },
+  {
+   "name": "J1_ACCENT_RING",
+   "link": 0,
+   "role": "accent"
+  },
+  {
+   "name": "LINK1_SHOULDER_CAP",
+   "link": 1,
+   "role": "body"
+  },
+  {
+   "name": "LINK1_POST",
+   "link": 1,
+   "role": "body"
+  },
+  {
+   "name": "J2_MODULE",
+   "link": 1,
+   "role": "body"
+  },
+  {
+   "name": "J2_ACCENT_RING",
+   "link": 1,
+   "role": "accent"
+  },
+  {
+   "name": "J2_END_CAP",
+   "link": 1,
+   "role": "accent"
+  },
+  {
+   "name": "LINK2_SHOULDER_HUB",
+   "link": 2,
+   "role": "body"
+  },
+  {
+   "name": "LINK2_UPPER_TUBE",
+   "link": 2,
+   "role": "body"
+  },
+  {
+   "name": "J3_MODULE",
+   "link": 2,
+   "role": "body"
+  },
+  {
+   "name": "J3_ACCENT_RING",
+   "link": 2,
+   "role": "accent"
+  },
+  {
+   "name": "J3_END_CAP",
+   "link": 2,
+   "role": "accent"
+  },
+  {
+   "name": "LINK3_ELBOW_HUB",
+   "link": 3,
+   "role": "body"
+  },
+  {
+   "name": "LINK3_FOREARM_TUBE",
+   "link": 3,
+   "role": "body"
+  },
+  {
+   "name": "J4_MODULE",
+   "link": 3,
+   "role": "body"
+  },
+  {
+   "name": "J4_ACCENT_RING",
+   "link": 3,
+   "role": "accent"
+  },
+  {
+   "name": "J4_END_CAP",
+   "link": 3,
+   "role": "accent"
+  },
+  {
+   "name": "LINK4_NECK",
+   "link": 4,
+   "role": "body"
+  },
+  {
+   "name": "J5_MODULE",
+   "link": 4,
+   "role": "body"
+  },
+  {
+   "name": "J5_ACCENT_RING",
+   "link": 4,
+   "role": "accent"
+  },
+  {
+   "name": "J5_END_CAP",
+   "link": 4,
+   "role": "accent"
+  },
+  {
+   "name": "LINK5_WRIST_HUB",
+   "link": 5,
+   "role": "body"
+  },
+  {
+   "name": "LINK5_WRIST_TUBE",
+   "link": 5,
+   "role": "body"
+  },
+  {
+   "name": "J6_MODULE",
+   "link": 5,
+   "role": "body"
+  },
+  {
+   "name": "J6_ACCENT_RING",
+   "link": 5,
+   "role": "accent"
+  },
+  {
+   "name": "J6_END_CAP",
+   "link": 5,
+   "role": "accent"
+  },
+  {
+   "name": "LINK6_TOOL_FLANGE",
+   "link": 6,
+   "role": "dark"
+  },
+  {
+   "name": "LINK6_TOOL_RING",
+   "link": 6,
+   "role": "accent"
+  }
+ ]
+}

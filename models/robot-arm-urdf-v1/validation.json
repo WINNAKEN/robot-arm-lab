@@ -1,0 +1,18 @@
+{
+  "status": "URDF_DRAFT_STATIC_VALIDATED",
+  "physical_links": 7,
+  "revolute_joints": 6,
+  "visual_bodies": 31,
+  "triangles": 198280,
+  "fk_poses": 16,
+  "max_fk_position_error_m": 4.440892098500626e-16,
+  "max_fk_rotation_component_error": 2.275957200481571e-15,
+  "max_stl_world_vertex_error_m": 7.441520705198101e-09,
+  "assumed_mass_kg": 4.15,
+  "mass_inertia_verified": false,
+  "collision_physics": "NOT_VALIDATED_AABB_PROXIES",
+  "ring_geometry": "DEFERRED",
+  "isaac_import": "NOT_RUN",
+  "rl_training": "NOT_RUN",
+  "hardware_approved": false
+}

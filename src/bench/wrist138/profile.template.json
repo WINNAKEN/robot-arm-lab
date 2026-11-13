@@ -1,0 +1,65 @@
+{
+  "schema": "wrist-bench-138-v1",
+  "hardware_approved": false,
+  "status": "UNCONFIRMED_PHYSICAL_FACTS",
+  "controller": {
+    "product": null,
+    "revision": null,
+    "firmware_checked": null,
+    "terminal_labels_checked": null,
+    "isolated_reference_reviewed": null
+  },
+  "power": {
+    "voltage_v": null,
+    "current_limit_a": null,
+    "fuse_rating_a": null,
+    "disconnect_verified": null,
+    "usb_only_confirmed": null,
+    "polarity_checked": null
+  },
+  "axes": {
+    "J5": {
+      "driver_model": null, "fw_version": null, "hw_version": null, "motor_model": null,
+      "transport": null, "protocol": null, "node_id": null, "baud": null, "uart_format": null,
+      "mode": null, "microsteps": null, "motor_step_angle_deg": null,
+      "motor_rated_current_a": null, "configured_current_a": null, "gear_ratio": null,
+      "command0_motor_sign": null, "output_sign_from_motor": null, "encoder_sign_from_motor": null,
+      "clearance_positive_motor_deg": null, "clearance_negative_motor_deg": null,
+      "max_test_motor_rpm": null, "neutral_confirmed": null, "direction_confirmed": null,
+      "fixture_verified": null, "gravity_support_verified": null, "stop_verified": null,
+      "disconnection_verified": null, "calibration_history_verified": null,
+      "auto_home_disabled": null, "auto_resume_disabled": null,
+      "gear_ratio_verified": null, "step_angle_verified": null, "microsteps_verified": null,
+      "current_settings_verified": null, "encoder_sign_verified": null
+    },
+    "J6": {
+      "driver_model": null, "fw_version": null, "hw_version": null, "motor_model": null,
+      "transport": null, "protocol": null, "node_id": null, "baud": null, "uart_format": null,
+      "mode": null, "microsteps": null, "motor_step_angle_deg": null,
+      "motor_rated_current_a": null, "configured_current_a": null, "gear_ratio": null,
+      "command0_motor_sign": null, "output_sign_from_motor": null, "encoder_sign_from_motor": null,
+      "clearance_positive_motor_deg": null, "clearance_negative_motor_deg": null,
+      "max_test_motor_rpm": null, "neutral_confirmed": null, "direction_confirmed": null,
+      "fixture_verified": null, "gravity_support_verified": null, "stop_verified": null,
+      "disconnection_verified": null, "calibration_history_verified": null,
+      "auto_home_disabled": null, "auto_resume_disabled": null,
+      "gear_ratio_verified": null, "step_angle_verified": null, "microsteps_verified": null,
+      "current_settings_verified": null, "encoder_sign_verified": null
+    },
+    "GRIPPER": {
+      "driver_model": null, "fw_version": null, "hw_version": null, "motor_model": null,
+      "transport": null, "protocol": null, "node_id": null, "baud": null, "uart_format": null,
+      "mode": null, "microsteps": null, "motor_step_angle_deg": null,
+      "motor_rated_current_a": null, "configured_current_a": null, "gear_ratio": null,
+      "command0_motor_sign": null, "output_sign_from_motor": null, "encoder_sign_from_motor": null,
+      "clearance_positive_motor_deg": null, "clearance_negative_motor_deg": null,
+      "max_test_motor_rpm": null, "neutral_confirmed": null, "direction_confirmed": null,
+      "fixture_verified": null, "gravity_support_verified": null, "stop_verified": null,
+      "disconnection_verified": null, "calibration_history_verified": null,
+      "auto_home_disabled": null, "auto_resume_disabled": null,
+      "gear_ratio_verified": null, "step_angle_verified": null, "microsteps_verified": null,
+      "current_settings_verified": null, "encoder_sign_verified": null,
+      "pinion_radius_mm": null, "pinion_radius_verified": null
+    }
+  }
+}

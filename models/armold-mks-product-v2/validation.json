@@ -1,0 +1,602 @@
+{
+ "checks": {
+  "interference_unchecked_pairs_0": true,
+  "cross_link_interference_0": true,
+  "keepout_boxes_18": true,
+  "keepouts_100pct_inside_their_module": true,
+  "keepouts_no_other_link_overlap": true,
+  "joints_match_v1": true,
+  "v1_frozen_files_unchanged": true
+ },
+ "cross_link": [],
+ "same_link_overlaps": [
+  {
+   "a": "BASE_FOOT",
+   "b": "J1_MODULE",
+   "link": 0,
+   "volume_mm3": 4778.094992734339
+  },
+  {
+   "a": "BASE_COLUMN",
+   "b": "J1_MODULE",
+   "link": 0,
+   "volume_mm3": 315318.3122037926
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "LINK1_POST",
+   "link": 1,
+   "volume_mm3": 26549.883339668344
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "J2_MODULE",
+   "link": 1,
+   "volume_mm3": 23123.173682287976
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "J2_ACCENT_RING",
+   "link": 1,
+   "volume_mm3": 1305.5829338030478
+  },
+  {
+   "a": "LINK1_POST",
+   "b": "J2_MODULE",
+   "link": 1,
+   "volume_mm3": 130607.53082947042
+  },
+  {
+   "a": "LINK2_SHOULDER_HUB",
+   "b": "LINK2_UPPER_TUBE",
+   "link": 2,
+   "volume_mm3": 55033.008477131494
+  },
+  {
+   "a": "LINK2_UPPER_TUBE",
+   "b": "J3_MODULE",
+   "link": 2,
+   "volume_mm3": 56829.49443520748
+  },
+  {
+   "a": "LINK3_ELBOW_HUB",
+   "b": "LINK3_FOREARM_TUBE",
+   "link": 3,
+   "volume_mm3": 55033.26672661768
+  },
+  {
+   "a": "LINK3_FOREARM_TUBE",
+   "b": "J4_MODULE",
+   "link": 3,
+   "volume_mm3": 15661.648632700177
+  },
+  {
+   "a": "LINK3_FOREARM_TUBE",
+   "b": "J4_END_CAP",
+   "link": 3,
+   "volume_mm3": 3414.714307058399
+  },
+  {
+   "a": "LINK4_NECK",
+   "b": "J5_MODULE",
+   "link": 4,
+   "volume_mm3": 9616.883288371808
+  },
+  {
+   "a": "LINK4_NECK",
+   "b": "J5_ACCENT_RING",
+   "link": 4,
+   "volume_mm3": 649.4126982765621
+  },
+  {
+   "a": "LINK5_WRIST_HUB",
+   "b": "LINK5_WRIST_TUBE",
+   "link": 5,
+   "volume_mm3": 27803.42926588248
+  },
+  {
+   "a": "LINK5_WRIST_TUBE",
+   "b": "J6_MODULE",
+   "link": 5,
+   "volume_mm3": 16944.537183976685
+  },
+  {
+   "a": "LINK5_WRIST_TUBE",
+   "b": "J6_END_CAP",
+   "link": 5,
+   "volume_mm3": 3001.034274527226
+  }
+ ],
+ "keepouts": [
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 0,
+   "inside_module_mm3": 71571.59999999998,
+   "ratio": 0.9999999999999998,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 0,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 0,
+   "inside_module_mm3": 4320.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 1,
+   "inside_module_mm3": 71571.6,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 1,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 1,
+   "inside_module_mm3": 4320.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 2,
+   "inside_module_mm3": 71571.59999999999,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 2,
+   "inside_module_mm3": 38088.00000000001,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 2,
+   "inside_module_mm3": 4319.999999999995,
+   "ratio": 0.999999999999999,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 3,
+   "inside_module_mm3": 71571.60000000002,
+   "ratio": 1.0000000000000004,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 3,
+   "inside_module_mm3": 38088.00000000001,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 3,
+   "inside_module_mm3": 4320.000000000005,
+   "ratio": 1.000000000000001,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 4,
+   "inside_module_mm3": 71571.59999999996,
+   "ratio": 0.9999999999999996,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 4,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 4,
+   "inside_module_mm3": 4319.999999999995,
+   "ratio": 0.999999999999999,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 5,
+   "inside_module_mm3": 71571.60000000002,
+   "ratio": 1.0000000000000004,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 5,
+   "inside_module_mm3": 38087.99999999998,
+   "ratio": 0.9999999999999994,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 5,
+   "inside_module_mm3": 4320.000000000005,
+   "ratio": 1.000000000000001,
+   "other_link_overlaps": []
+  }
+ ],
+ "joints": [
+  {
+   "joint": "J1",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J2",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J3",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J4",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "z": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "z": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J5",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "z": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "z": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J6",
+   "found": true,
+   "native": {
+    "frame_a": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "z": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ]
+    },
+    "frame_b": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "z": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ]
+    },
+    "type": "revolute"
+   },
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  }
+ ],
+ "v1_frozen": {
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.3mf": {
+   "manifest": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da",
+   "now": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.solidcraft": {
+   "manifest": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd",
+   "now": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.step": {
+   "manifest": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d",
+   "now": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/build-commands.json": {
+   "manifest": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d",
+   "now": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/front.png": {
+   "manifest": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285",
+   "now": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/iso.png": {
+   "manifest": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f",
+   "now": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/kinematics.json": {
+   "manifest": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+   "now": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/parameters.json": {
+   "manifest": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+   "now": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/provenance.json": {
+   "manifest": "3968a78be6993244aff8138f452e4490dceb88f04ae73737c5674ca9f1754a27",
+   "now": "3968a78be6993244aff8138f452e4490dceb88f04ae73737c5674ca9f1754a27",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/README.md": {
+   "manifest": "9b0e74ec2262316747694dd8585c8a6a442d65d68e34c4b2b0e523c11953107f",
+   "now": "9b0e74ec2262316747694dd8585c8a6a442d65d68e34c4b2b0e523c11953107f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-principle-schematic-NONFUNCTIONAL.solidcraft": {
+   "manifest": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d",
+   "now": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-principle-schematic.png": {
+   "manifest": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3",
+   "now": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-commands.json": {
+   "manifest": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f",
+   "now": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-raw.png": {
+   "manifest": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4",
+   "now": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-validation.json": {
+   "manifest": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c",
+   "now": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/REFERENCE-LICENSE-CERN-OHL-S-2.0.txt": {
+   "manifest": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+   "now": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/right.png": {
+   "manifest": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512",
+   "now": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/validation.json": {
+   "manifest": "c7cf84a0099f859fe874959457c50cd48ea8537ba9ec0d149cb9a4dd33e597f1",
+   "now": "c7cf84a0099f859fe874959457c50cd48ea8537ba9ec0d149cb9a4dd33e597f1",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/build_concept.py": {
+   "manifest": "e5b6e6e4a7c861290fde3aa90feab7b6e673435f22d29b6dab79e3bed4d86a0e",
+   "now": "e5b6e6e4a7c861290fde3aa90feab7b6e673435f22d29b6dab79e3bed4d86a0e",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/build_reducer_schematic.py": {
+   "manifest": "fb88b23924eaf7a49cb976333a628292e1a1bc966fef61b694d1cfbc3d3e4f8b",
+   "now": "fb88b23924eaf7a49cb976333a628292e1a1bc966fef61b694d1cfbc3d3e4f8b",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/parameters.json": {
+   "manifest": "b5d17b4b3616ca6cc0f5ae558c085e52f9c2631119ce50282c16c70c542ef776",
+   "now": "b5d17b4b3616ca6cc0f5ae558c085e52f9c2631119ce50282c16c70c542ef776",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/README.md": {
+   "manifest": "f4c96041250de1ecb35c22acbdfaa62af729fc602f4ce4b49b4f99482f150de7",
+   "now": "f4c96041250de1ecb35c22acbdfaa62af729fc602f4ce4b49b4f99482f150de7",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/validate_concept.py": {
+   "manifest": "0c222eac9aa5a0770800bdc73e298ddbd4b0b80a4661cdb71bb5d0aa4dac8feb",
+   "now": "0c222eac9aa5a0770800bdc73e298ddbd4b0b80a4661cdb71bb5d0aa4dac8feb",
+   "same": true
+  }
+ },
+ "unchecked": [],
+ "notes": [
+  "Envelope bodies are solid; containment = keep-out box fully inside the solid module.",
+  "Connector box outer corner radius 36.4 mm vs can radius 39 mm: 2.6 mm margin (not a wall thickness)."
+ ]
+}

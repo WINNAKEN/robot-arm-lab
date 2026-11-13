@@ -1,0 +1,211 @@
+{
+  "unit": 119,
+  "dt_s": 0.008333333333333333,
+  "resolution": [
+    640,
+    480
+  ],
+  "fps": 10,
+  "capture_stride": 12,
+  "drive": {
+    "type": "acceleration",
+    "kp": 64,
+    "kd": 16
+  },
+  "initial_opening_m": 0.04,
+  "floor": {
+    "path": "/World/Floor",
+    "size": 1,
+    "scale": [
+      2,
+      2,
+      0.02
+    ],
+    "translation": [
+      0,
+      0,
+      -0.01
+    ]
+  },
+  "camera": {
+    "path": "/World/Camera",
+    "eye": [
+      1.4,
+      -1.6,
+      1.42
+    ],
+    "target": [
+      0,
+      0,
+      0.42
+    ],
+    "focal_length_mm": 35,
+    "horizontal_aperture_mm": 36,
+    "vertical_aperture_mm": 27
+  },
+  "settling": {
+    "position_deg": 0.5,
+    "velocity_deg_s": 1,
+    "large_check_s": 34
+  },
+  "stages": {
+    "hold": {
+      "duration_s": 2,
+      "segments": [
+        {
+          "duration_s": 2,
+          "q_deg": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "small": {
+      "duration_s": 12,
+      "segments": [
+        {
+          "duration_s": 2,
+          "q_deg": [
+            5,
+            -3,
+            -3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 2,
+          "q_deg": [
+            5,
+            -3,
+            -3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 2,
+          "q_deg": [
+            -5,
+            -3,
+            -3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 2,
+          "q_deg": [
+            -5,
+            -3,
+            -3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 2,
+          "q_deg": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 2,
+          "q_deg": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "large": {
+      "duration_s": 42,
+      "segments": [
+        {
+          "duration_s": 4,
+          "q_deg": [
+            0,
+            -20,
+            -30,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 8,
+          "q_deg": [
+            60,
+            -20,
+            -30,
+            30,
+            -20,
+            60
+          ]
+        },
+        {
+          "duration_s": 8,
+          "q_deg": [
+            -60,
+            -20,
+            -30,
+            -30,
+            20,
+            -60
+          ]
+        },
+        {
+          "duration_s": 5,
+          "q_deg": [
+            0,
+            -20,
+            -30,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 8,
+          "q_deg": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "duration_s": 9,
+          "q_deg": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  }
+}

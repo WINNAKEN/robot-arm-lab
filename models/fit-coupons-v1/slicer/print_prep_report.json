@@ -1,0 +1,89 @@
+{
+  "format": "printforge-print-prep-report",
+  "version": 1,
+  "verdict": "ready",
+  "reason": null,
+  "detail": null,
+  "model": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\fit-coupons-v1-plate.stl",
+    "sha256": "89b0b496c7a0d19bea3226216d497efc8273217eda61c2f3208a574522249eed",
+    "triangles": 52386,
+    "size_mm": [
+      248.996,
+      236.999,
+      10.0
+    ],
+    "min_z_mm": -0.0
+  },
+  "studio": {
+    "command": [
+      "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe"
+    ],
+    "version": "02.08.02.61",
+    "version_verified": true
+  },
+  "profiles": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "limits": {
+      "area_x_mm": 350.0,
+      "area_y_mm": 320.0,
+      "height_mm": 325.0
+    },
+    "settings_sha256": {
+      "machine": "57e4d59f3307183fba60e28c68bad1a0dd8867ce09bf41db4f148a1db4f84747",
+      "process": "a18199f1db31fed4fb62979a065ed2b9825b3d243fdae223660813a3514fc0dc",
+      "filament": "c2ecb2a0d92487b3009d70ec98d756ceb4934ff44f69fe2ee5b49d00c0d039dd"
+    }
+  },
+  "plate": {
+    "requested": "Textured PEI Plate",
+    "used": "Textured PEI Plate"
+  },
+  "support": {
+    "mode": "auto",
+    "advised_by_studio": false,
+    "enabled": false
+  },
+  "runs": {
+    "plain": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 3.5,
+      "numbers": {
+        "print_time_s": 5256,
+        "filament_g": 43.11,
+        "filament_m": 14.23,
+        "support_generated": false,
+        "max_z_mm": 10.0
+      }
+    },
+    "support": null,
+    "project": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 0.7,
+      "numbers": null
+    }
+  },
+  "estimate": {
+    "print_time_s": 5256,
+    "filament_g": 43.11,
+    "filament_m": 14.23,
+    "support_generated": false,
+    "max_z_mm": 10.0
+  },
+  "outputs": {
+    "project": "fit-coupons-v1-plate.bambu.3mf",
+    "preview": "preview.png"
+  }
+}

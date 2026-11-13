@@ -1,0 +1,15 @@
+{
+  "status": "GUIDANCE_ONLY_NOT_EXECUTABLE_API_CONFIG",
+  "import_tested": false,
+  "fixed_base": true,
+  "asset_length_unit": "metre",
+  "mesh_scale": 1,
+  "self_collision_initial": false,
+  "keep_explicit_mass_inertia": true,
+  "joint_count": 6,
+  "joint_zero": "CAD_DISPLAY_POSE",
+  "initial_physics_state": "STOPPED_UNTIL_IMPORT_AND_ACTUATOR_CHECKS",
+  "actuator_gains": "UNSET_TO_BE_CONFIGURED_AND_TESTED_IN_SIMULATION",
+  "physical_hardware_approved": false,
+  "source_docs_checked": "2026-10-27"
+}

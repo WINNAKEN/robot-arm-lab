@@ -1,0 +1,178 @@
+[
+  {
+    "display_value": 24.0,
+    "errors": [],
+    "expression": "24 mm",
+    "name": "width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 24.0
+  },
+  {
+    "display_value": 18.0,
+    "errors": [],
+    "expression": "18 mm",
+    "name": "depth",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 18.0
+  },
+  {
+    "display_value": 5.0,
+    "errors": [],
+    "expression": "5 mm",
+    "name": "height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 5.0
+  },
+  {
+    "display_value": 5.0,
+    "errors": [],
+    "expression": "5 mm",
+    "name": "channel_width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 5.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "channel_height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "base_t",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "OuterProfile",
+    "projected": null,
+    "sketch": 1
+  },
+  {
+    "constraints": [
+      "k1"
+    ],
+    "created": {
+      "constraints": [
+        "k1"
+      ],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "l1.start"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 1
+  },
+  {
+    "bodies": [
+      "cable_tie_mount"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+      "cable_tie_mount"
+    ],
+    "feature": 2,
+    "ms": 1.4502,
+    "name": "Extrude1",
+    "removed_bodies": [],
+    "warning": null
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "TieTunnel",
+    "projected": null,
+    "sketch": 3
+  },
+  {
+    "constraints": [],
+    "created": {
+      "constraints": [],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 3
+  },
+  {
+    "bodies": [
+      "cable_tie_mount"
+    ],
+    "changed_bodies": [
+      "cable_tie_mount"
+    ],
+    "created_bodies": [],
+    "feature": 4,
+    "ms": 7.1231,
+    "name": "Extrude2",
+    "removed_bodies": [],
+    "warning": null
+  }
+]

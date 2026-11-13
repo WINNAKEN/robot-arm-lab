@@ -1,0 +1,245 @@
+{
+ "blend": "kmjh-arm-v3.blend",
+ "blend_sha256": "fa271bce13405d221a4426507f171b67633fa50499158deafdd73e667a01ea8e",
+ "assembly_sha256": "b07383b88bc9b0b3c1fc20113b09647d85407836b93aa864d3c730b03ccdecd0",
+ "check_sha256": "a6aa725c7c02d0f631881c6e99ca17abedc133329d08bbe5a7c44ac50be2cd04",
+ "u": 20.0,
+ "padset": "FLAT",
+ "params_sha256": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77",
+ "grip_display": {
+  "BASE": {
+   "max_nearest_m": 3.4142850324769825e-08,
+   "ok": true
+  },
+  "JAW_A": {
+   "max_nearest_m": 3.4142850324769825e-08,
+   "ok": true
+  },
+  "JAW_B": {
+   "max_nearest_m": 3.4142850324769825e-08,
+   "ok": true
+  },
+  "PINION": {
+   "max_nearest_m": 3.4142850324769825e-08,
+   "ok": true
+  },
+  "PAD_A_FLAT": {
+   "max_nearest_m": 3.332000986233652e-08,
+   "ok": true
+  },
+  "PAD_B_FLAT": {
+   "max_nearest_m": 3.3527612686157227e-08,
+   "ok": true
+  }
+ },
+ "pose_errors": {
+  "display": {
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "max_err_m": 0.0,
+   "ok": true
+  },
+  "home": {
+   "q_deg": [
+    0.0,
+    -90.0,
+    90.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_err_m": 8.955661226157207e-08,
+   "ok": true
+  },
+  "side-reach": {
+   "q_deg": [
+    80.0,
+    -20.0,
+    30.0,
+    -40.0,
+    35.0,
+    45.0
+   ],
+   "max_err_m": 8.412389035291982e-08,
+   "ok": true
+  },
+  "wave": {
+   "q_deg": [
+    -60.0,
+    -70.0,
+    40.0,
+    60.0,
+    -50.0,
+    0.0
+   ],
+   "max_err_m": 7.300915619688414e-08,
+   "ok": true
+  }
+ },
+ "renders": {
+  "display": {
+   "file": "display.jpg",
+   "pose": "display",
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "lens_mm": 50,
+   "direction": [
+    -0.4341353476047516,
+    -0.7893369793891907,
+    0.4341353476047516
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 6,
+   "arm_bodies_hit": 36,
+   "ok": true
+  },
+  "display-tool": {
+   "file": "display-tool.jpg",
+   "pose": "display",
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "lens_mm": 85,
+   "direction": [
+    0.2638797163963318,
+    -0.8795989751815796,
+    0.3958195149898529
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 9,
+   "arm_bodies_hit": 17,
+   "ok": true
+  },
+  "display-tool-back": {
+   "file": "display-tool-back.jpg",
+   "pose": "display",
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "lens_mm": 85,
+   "direction": [
+    0.8377077579498291,
+    0.46073928475379944,
+    0.29319772124290466
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 9,
+   "arm_bodies_hit": 30,
+   "ok": true
+  },
+  "home": {
+   "file": "home.jpg",
+   "pose": "home",
+   "q_deg": [
+    0.0,
+    -90.0,
+    90.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "lens_mm": 50,
+   "direction": [
+    -0.4866642355918884,
+    -0.8111070394515991,
+    0.3244428336620331
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 8,
+   "arm_bodies_hit": 36,
+   "ok": true
+  },
+  "side-reach": {
+   "file": "side-reach.jpg",
+   "pose": "side-reach",
+   "q_deg": [
+    80.0,
+    -20.0,
+    30.0,
+    -40.0,
+    35.0,
+    45.0
+   ],
+   "lens_mm": 50,
+   "direction": [
+    0.8025723099708557,
+    -0.4414147734642029,
+    0.40128615498542786
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 8,
+   "arm_bodies_hit": 39,
+   "ok": true
+  },
+  "wave": {
+   "file": "wave.jpg",
+   "pose": "wave",
+   "q_deg": [
+    -60.0,
+    -70.0,
+    40.0,
+    60.0,
+    -50.0,
+    0.0
+   ],
+   "lens_mm": 50,
+   "direction": [
+    -0.8687444925308228,
+    -0.30406057834625244,
+    0.3909350037574768
+   ],
+   "size": [
+    1600,
+    1200
+   ],
+   "gripper_bodies_hit": 9,
+   "arm_bodies_hit": 37,
+   "ok": true
+  }
+ },
+ "checks": {
+  "R_gripper_display_equals_stl_moved": true,
+  "R_pose_gripper_vertices_equal_rotated_display": true,
+  "R_renders_size_and_visible": true,
+  "R_blend_not_modified": true
+ },
+ "blender": "5.2.3 LTS",
+ "samples": 64
+}

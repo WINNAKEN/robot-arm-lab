@@ -1,0 +1,27 @@
+> 개발 이력: 작성 당시의 계획·결과입니다. 현재 상태는 [STATUS](../STATUS.md)를 확인하세요. 원시 로그와 로컬 경로 일부는 공개본에서 제외했습니다.
+
+# 128 — J6 실패 상태·속도 한도 전파 수리와 실제 재검증
+
+2026-11-07 KST. 새 사용자 원문: 좋아 J6 속도 초과도 해결하고 큰 동작까지 이어가서 영상 올려줘. 기존 판정 기준은 유지하고 실물 CAN·RS485는 계속 건드리지 마. 목표는v4 import→hold→small→large42초및34초판정통과→실제영상Drive전달이다. 이번지시는단순12초진단본추가가아닌J6수리와큰동작까지계속할권위다. 원127SDK/markers/grant/period/실패·영상/원장과과거소진판정을보존한다. 원물성·URDF/CAD·gain64/16·cap12/7·sourcevelocity limits(J6 .5rad_s +1e-4 guard)·.5deg/1deg_s/34초·각2/12/42sim_s·dt1/120·원프로필은128첫관측에서유지한다. 실물CAN/RS485·포트·급전·flash·설치·구매·네트워크/시계변경0.
+
+작업을128(실패관측/같은원한도전파검산·필요시수리/실제검증)과필요시129(128의실측기전에대한최소수리/큰동작재검증) M단위로분할한다. 각source9+plan1/2group=M, 각작성자cap2700/검산예비300·필수비작성자L2+L4누적2700/마감예비300,각L2/L4max2/noR3. 사용자목표내필요한이두실행을각첫원격부터고정2700초·신규SDKmax1/retry0(이번목표원격합계상한5400초/SDK2)로제한하고oldgrant재사용/마커삭제/시간소급변경0. 추가실측뒤에도원goal을중간진단만으로완료표시하지않으며,129는확인된기전에대한별도구체plan/소스/검토/새runid·권위기록을필요로한다. 같은최신실제요청의연속임을명시해새사용자응답을조작하지않는다. 원128·129각unit의source/budget/원실패/계보도독립보존·합집합계수한다.
+
+128소유 src/simulation/mp18_video_run_128/{release.py,runner.py,test_runner.py}, derived src/simulation/mp18_isaac_128/{driver.py,contract.py,native.py,config.json,program.json,media.py}, outputs/mp18-video-run-128/ 및이계획/자기인계절. 작성자implement113_c, main비작성자필수검토1명(토폴로지기승인same-familyfallback/공통편향잔여한계명시). Root운영·회수·Drive영상만담당. 타인CAD/기존source/원리뷰/원raw/원Gitpublisher수정·revert0. 원127source Fdd237b…/mainL4c53f5e08…/native06a36b…/진단54f531c2…·18dde93e…/실제APIbinding9a2b6170…와원결과를핀한다. 신규원문은approval-evidence.json으로exclusive보존한다.
+
+실제127은freshstage/import/holdPASS, small1429step J6speedFAIL/largeNOT_RUN였다. 실패qd는guard뒤journal쓰기때문에미기록이며단지finite absqd>.5001만확정이다. 기록prefixmax.0445826/last−.009711/FD일치/FF포화근거0, KG1_A desk.210253mm는재구성됐지만접촉·impulse와실제tensormaxvel은미관측이다. 128은이관측공백과한도전파생명주기를우선닫는다. 원인미확정현상1을oldv3qd-onlyEXH/34s정착이나oldlayer/expectedjobclass각union1/次DISTINCT2에근거없이가산·리셋하지않는다. 현재소진부정/완화판정은작성자가단독제조하지않으며비작성자가actual기전·착지로판정한다.
+
+원127release/runner/test·생성package를fixedraw기점으로128namespace/path/module/video labels·PLAN/hash/새approval·actualpriorv4SDK3/newmax1/retry0로좁게파생한다. 원119contract/config/program은바이트동일, native는원127에서허용된관측/한도전파delta만AST/byte-span으로파생한다. 원126fresh_stage strongpin/Clear/empty/clock/oldhashguard는바이트보존한다. expected_job_sha256 bootstrap→parent/native→context필수인계/검산한동일bytesexec·singlecapturedFACTSsemantic·126F16·현재snapshot/path/resultwrite/원rawstdinbridge·WinJob·seal·MP4onlyallowlist는그대로다. 원127nativeFAIL/SDKreaped/120frames/초기화·정지PASS/actualpriorSDK3·main분석을새FACTS로같은검산bytes에서검증한다. history127namespace를allreplace하지않고元sourceSHA·허용변경span/파생SHA·예상밖함수변경0를보고한다. remoteRoot119/runs와legacyunit119는호환계약으로보존,outer128/runid/nonce/sourceSHA로구별한다.
+
+native추가1: 매post-step state를clocks/floor/base/jointlimit/속도guard보다앞서ctx의bounded메모리에두고target/직전상태·clock·step·FF/remainingcap/phase를결속한다. 예외때별도UNVALIDATED first-fault packet으로save하고원정상journal/frame검증순서는유지한다. 실패packet은성공trajectory/정상q로소비하지않는다. 저장실패/비유한값/진단보조실패는원primaryexception을가리지않고secondary기록;베이스예외와GateFailure양경로/최종cleanup도검증한다. packet은처음실패1개이며현재step보다오래된state로원인값을대체하지않는다. setup실패에는측정미완료를명시한다.
+
+native추가2: reset前USD원9축maxvelocity setter뒤get/readback, reset後tensor namedget를SI단위로보존한다. zero-time에서actualtensor값이원URDF값과다르면같은원값만set/readback하여전파를수리하고q/qd/clock불변과정확names/order/shape/finite를검산한다. 이미같으면추가set하지않고원물리동작동일. gain/cap/effort/원velocity값/허용오차를늘리지않는다. 값일치가contact/solver문제해결을뜻하지않으며관측으로분리한다.
+
+native추가3: existingPhysXinterface의문서화된contactreport기전을통해실제링크/desk contact·position/normal/impulse/separation/stageID·physicsstep과관련collider의contact/restoffset·solver설정을bounded자료로보존한다. RigidBody/Articulation에ContactReportAPI/threshold0로보고만활성화하고collisionenabled·friction/restoffset/contactoffset·solver/형상·pose값은수정하지않는다. callback/vector는해당step동안만유효하므로그안에서ownedprimitive값으로즉시복사,구독/수명/마감/예외를실제관측과구분한다. 지원불가/디코더불명/overflow/순서오류는UNKNOWN/NOT_OBSERVED및원에러로명시해빈배열=무접촉으로단정하지않는다. 진단조회가clock/q/qd를바꾸거나physicsstep을추가하지않는다. 부가기전으로원error를가리지않고자원정리를별도보장한다. 가능하면동기get_contact_report의동일step자료를우선하고SDK버전기전선택은primaryAPI+보존SDK코드로검증한다.
+
+HOST는원12717군을실제128생성패키지로재실행하고신규진단helper를actualnative함수소비경로에서fakebackend로제어한다. failure1429가journal/frame추가없이UNVALIDATEDpacket에정확보존,가짜stale/nonfinite/statefail/저장fail/contactcallback borrowed객체다음step변조·overflow/없는sensor·관측에러·cleanup이원exception/기준을바꾸지못함, USD/tensor재배열·shape/한도mismatch 같은원값재적용·이미정확무set·pose/clock변경거절을음성관측한다. 특정토큰존재핀으로대체하지않고실제파생native에서호출된동일함수/동일bytes를확인한다. 원기준/gain/cap/model/프로필과새native관측delta외함수동등/expectedjobcoherentB거절/위조권위거절/MP4only를검산한다. 독립검토는최소8AC/5공격범주와발견합집합·분류·반복/재귀·다음DISTINCT임계·현재소진상태를명시한다.
+
+최종L4·F/current source·동일native/실제prepare뒤Root가최신실제요청과고정period·F/preparedSHA·nonce·hardwarefalse를결속한exclusive128grant를작성하고실제SDK1회로import→hold→small→large42까지gate가허용하는만큼진행한다. 128에서원인이관측되면확인된기전/경계의최소수리로129를별도검토해큰동작완주까지이어간다. 기존.5deg/1deg_s/34초·sourcevelocity/floor/한계가실제통과해야전체성공이라한다. SDK/자료회수·phase/SDKREAPED/row/frame·sourcejobseal·실제q범위와render를검산한다. fail이어도원결과를보존하며관측값으로지적을폐쇄·수용한다.
+
+최종실제v4움직임RGB만encode,전체decode/처음중간끝확인·실제phase/checkpoint·34초/42초를확인한뒤기승인Drive폴더PRIVATE_CLOUD_RESOURCE_REMOVED에영상1개만업로드·metadata/원격bytesSHA검산한다. 이전12712초DIAGNOSTIC/v3/가짜HOST/CAD를큰동작성공대신쓰지않는다. 내부JSON·원로그·설정·권위·토큰외부업로드0,공유권한변경0.
+
+primary: https://docs.omniverse.nvidia.com/kit/docs/omni_physics/latest/extensions/runtime/source/omni.physx/docs/dev_guide/contact_reports.html ; https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html ; https://docs.isaacsim.omniverse.nvidia.com/6.2.0/sensors/isaacsim_sensors_physics_contact.html ; API예제의구버전명·tuple표기차이는가정하지않고지원기전/미관측상태를명시한다.

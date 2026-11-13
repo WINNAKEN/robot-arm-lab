@@ -1,0 +1,133 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "width",
+        "expression": "24 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "depth",
+        "expression": "18 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "height",
+        "expression": "5 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "channel_width",
+        "expression": "5 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "channel_height",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "base_t",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "OuterProfile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            "width",
+            0
+          ],
+          [
+            "width",
+            "depth"
+          ],
+          [
+            0,
+            "depth"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "height",
+        "operation": "new",
+        "body_name": "cable_tie_mount"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "base_t",
+        "name": "TieTunnel"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(width-channel_width)/2",
+            -1
+          ],
+          [
+            "(width+channel_width)/2",
+            -1
+          ],
+          [
+            "(width+channel_width)/2",
+            "depth+1"
+          ],
+          [
+            "(width-channel_width)/2",
+            "depth+1"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "channel_height",
+        "operation": "cut"
+      }
+    }
+  ]
+}

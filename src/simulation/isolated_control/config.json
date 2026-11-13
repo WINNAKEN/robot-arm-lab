@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "ssh_alias": "isaacpc",
+  "remote_root": "C:/isaacsim_remote/robot-arm-lab/049/runs",
+  "isaac_root": "C:/isaacsim",
+  "isaac_version": "6.2.0-rc.14+release.52805.02189a84.gl",
+  "installation_record": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved",
+  "native_limit": 2,
+  "timeout_s": 600,
+  "cap_Nm": [
+    3,
+    6,
+    5,
+    2,
+    2,
+    1
+  ],
+  "kp_acceleration": 64,
+  "kd_acceleration": 16,
+  "references": {
+    "lib/motion.py": {
+      "path": "src/simulation/motion/core.py",
+      "sha256": "3d27396f2929f713f42d6449a7ef1dae0d8b20515c14323557b23fd4146305c4"
+    },
+    "lib/frames.py": {
+      "path": "src/joint_frames/frames.py",
+      "sha256": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46"
+    },
+    "lib/environment.py": {
+      "path": "src/simulation/contact_motion/environment.py",
+      "sha256": "6b1e7a1451feabf5f310ae18d32a9bae997cd56be73ed689eb91540e9d0d4c6c"
+    },
+    "lib/extract.py": {
+      "path": "src/simulation/isaac_import/extract_usd.py",
+      "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+    },
+    "data/model.usda": {
+      "path": "outputs/isaac-import-v1/asset/robot-arm-v2.usda",
+      "sha256": "117d94292c75e89b201e12606eafbcf24065c537c6f8308647562f9a0679f4db"
+    },
+    "data/golden.json": {
+      "path": "outputs/isaac-contact-v1/runs/501c7bfc27b6409b8351821408bff0de/retrieved/501c7bfc27b6409b8351821408bff0de/static.json",
+      "sha256": "94c57452b7b8c7120ac0de93ed688d97fd7521b4c5bf325928ffb8b081635cd5"
+    },
+    "data/kinematics.json": {
+      "path": "models/armold-mks-concept-v1/kinematics.json",
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+    },
+    "data/program.json": {
+      "path": "src/simulation/motion/program.json",
+      "sha256": "6134a71f23dd044dbd53e0445aff9f4fb0d4b67e7c5b793a65948bf0bc9f6b26"
+    },
+    "data/assumptions.json": {
+      "path": "models/robot-arm-urdf-v1/assumptions.json",
+      "sha256": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5"
+    }
+  },
+  "hardware_approved": false,
+  "calibration_approved": false,
+  "training": "NOT_RUN",
+  "ring_geometry": "DEFERRED",
+  "installation_seal_sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a",
+  "installation_job_sha256": "36c2c31d0765554f3bb9e62a3a313a0f9da45efb8fc56a19d89eb50fce166729",
+  "installation_wheel_sha256": "625f752c7dd912eb8efade85daeb7a8119d620266852380d17d8f9e701b80bca",
+  "installation_prefix": "C:\\isaacsim_remote\\robot-arm-lab\\048\\runs\\e56d43dc7d3a41c484f6f37c15ec9045\\packages"
+}

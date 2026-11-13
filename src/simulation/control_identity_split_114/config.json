@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "ssh_alias": "isaacpc",
+  "remote_root": "C:/isaacsim_remote/robot-arm-lab/114/worker/runs",
+  "timeout_s": 600,
+  "sdk": {
+    "ssh_alias": "isaacpc",
+    "isaac_root": "C:/isaacsim",
+    "isaac_version": "6.2.0-rc.14+release.52805.02189a84.gl",
+    "installation_record": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved",
+    "installation_prefix": "C:\\isaacsim_remote\\robot-arm-lab\\048\\runs\\e56d43dc7d3a41c484f6f37c15ec9045\\packages",
+    "installation_seal_sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a",
+    "installation_job_sha256": "36c2c31d0765554f3bb9e62a3a313a0f9da45efb8fc56a19d89eb50fce166729",
+    "installation_wheel_sha256": "625f752c7dd912eb8efade85daeb7a8119d620266852380d17d8f9e701b80bca",
+    "schema_version": 1,
+    "remote_root": "C:/isaacsim_remote/robot-arm-lab/053/runs",
+    "timeout_s": 600,
+    "steps": 10,
+    "rate_hz": 120,
+    "gravity": [
+      0,
+      0,
+      0
+    ],
+    "cap_Nm": [
+      3,
+      6,
+      5,
+      2,
+      2,
+      1
+    ],
+    "hardware_approved": false,
+    "calibration_approved": false,
+    "training": "NOT_RUN",
+    "ring_geometry": "DEFERRED",
+    "references": {
+      "lib/frames.py": {
+        "path": "src/joint_frames/frames.py",
+        "sha256": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46"
+      },
+      "lib/environment.py": {
+        "path": "src/simulation/contact_motion/environment.py",
+        "sha256": "6b1e7a1451feabf5f310ae18d32a9bae997cd56be73ed689eb91540e9d0d4c6c"
+      },
+      "lib/extract.py": {
+        "path": "src/simulation/isaac_import/extract_usd.py",
+        "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+      },
+      "data/model.usda": {
+        "path": "outputs/isaac-import-v1/asset/robot-arm-v2.usda",
+        "sha256": "117d94292c75e89b201e12606eafbcf24065c537c6f8308647562f9a0679f4db"
+      },
+      "data/golden.json": {
+        "path": "outputs/isaac-contact-v1/runs/501c7bfc27b6409b8351821408bff0de/retrieved/501c7bfc27b6409b8351821408bff0de/static.json",
+        "sha256": "94c57452b7b8c7120ac0de93ed688d97fd7521b4c5bf325928ffb8b081635cd5"
+      },
+      "data/kinematics.json": {
+        "path": "models/armold-mks-concept-v1/kinematics.json",
+        "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+      },
+      "data/assumptions.json": {
+        "path": "models/robot-arm-urdf-v1/assumptions.json",
+        "sha256": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5"
+      }
+    },
+    "sdk_files": {
+      "sitecustomize.py": {
+        "path": "C:/isaacsim/site/sitecustomize.py",
+        "sha256": "23e66d04b602b9eb316fcf12d2ae4af381ea2c7a2dc12afe018cc41943e2efeb"
+      },
+      "setup_python_env.bat": {
+        "path": "C:/isaacsim/setup_python_env.bat",
+        "sha256": "e1e4e6a0600760ee324f7d320d3569f08a7a391ef49667b5dc7c4fdd4a1f96ac"
+      },
+      "python.bat": {
+        "path": "C:/isaacsim/python.bat",
+        "sha256": "ead7a729c2c9d37a04f11c40e754e1f814127986e14d32953fcefc09d95d9871"
+      }
+    },
+    "stage_limits": {
+      "sdk_preflight": 1,
+      "robot_connection": 1
+    },
+    "numpy_root": "C:/isaacsim/extscache/omni.kit.pip_archive-0.0.0+187cf21b.wx64.cp312/pip_prebundle/numpy",
+    "scipy_root": "C:/isaacsim/exts/omni.pip.compute/pip_prebundle/scipy",
+    "warp_root": "C:/isaacsim/extscache/omni.warp.core-1.17.0+wx64/warp",
+    "frozen_stage_ledgers": [
+      "C:/isaacsim_remote/robot-arm-lab/052/runs/stage-ledger.json"
+    ]
+  },
+  "source_A": [
+    "bootstrap.py",
+    "config.json",
+    "driver.py",
+    "launch.ps1",
+    "sdk.py",
+    "test_host.py",
+    "validate.py",
+    "winjob.py"
+  ],
+  "source_B": [
+    "README.md",
+    "balance.py",
+    "capture.py",
+    "decision_schema.py",
+    "init_boundary.py",
+    "program.json",
+    "recovery.py",
+    "reference.py",
+    "root_binding.py",
+    "scene.py",
+    "test_scene.py",
+    "torque.py",
+    "workspace.py"
+  ],
+  "model_dir": "models/robot-arm-urdf-v3",
+  "model_submission": {
+    "path": "outputs/urdf-gripper-v3/submission-r2.json",
+    "sha256": "dd36fccca92b05d3e94add72e0f72fc5e345903d8db89465a06e61cb42fd6d39"
+  },
+  "refs": {
+    "kernel.py": {
+      "path": "src/simulation/canonical_v4/kernel.py",
+      "sha256": "4a9fb954638c0032ef251371db17bfe2224f48de3d0bd2f2ffb798a9be3c01d6"
+    },
+    "numeric.py": {
+      "path": "src/simulation/canonical_v4/providers.py",
+      "sha256": "ee62c94af1b60976261ca0d7b8f99f58d1935556d25691c2b038f109b2641d63"
+    },
+    "policy.py": {
+      "path": "src/simulation/controller_baseline/session.py",
+      "sha256": "f23c04bd24626c4a5388e2a23af5f550251e6171d35e88d4b6fb5dd505947400"
+    },
+    "observer.py": {
+      "path": "src/simulation/controller_baseline/providers.py",
+      "sha256": "df9f0db0d24c778dfb619eff7186268ef2f50b5b4320700d95a01506800214df"
+    },
+    "extract.py": {
+      "path": "src/simulation/isaac_import/extract_usd.py",
+      "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+    },
+    "physics_reference.py": {
+      "path": "src/simulation/controller_baseline/physics.py",
+      "sha256": "72c0d2f5c9acc89f006b82512627165051741c9724faa55308701ac0512ebe56"
+    },
+    "prefix-seal.json": {
+      "path": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved/prefix-seal.json",
+      "sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a"
+    },
+    "model-submission.json": {
+      "path": "outputs/urdf-gripper-v3/submission-r2.json",
+      "sha256": "dd36fccca92b05d3e94add72e0f72fc5e345903d8db89465a06e61cb42fd6d39"
+    },
+    "workspace.json": {
+      "path": "outputs/isaac-workspace-v1/data/workspace.json",
+      "sha256": "9ed56d7eb90c5b58c3ffa3918f0f8307e29675e327c2b85997a83dd0f676d5fc"
+    },
+    "sampling-oracle.py": {
+      "path": "src/simulation/latest_scene/validate.py",
+      "sha256": "c9b311532241fe4d6f2636a5f39363a781afc83673f3343cb721059ded777c10"
+    },
+    "torque_api.py": {
+      "path": "outputs/isaac-torque-observer-v1/tensor-api-source.py",
+      "sha256": "0da2ff6f94a8e5afffce6460f7b97b2f09d0423a3813149498cb88e96f60a3b6"
+    }
+  },
+  "sdk_source_pins": [
+    {
+      "path": "C:/isaacsim/exts/isaacsim.asset.importer.urdf/pip_prebundle/isaacsim/asset/importer/urdf/impl/config.py",
+      "sha256": "d0ca4be870b67266bf16d5483adb1baa71a0b174678d0a9e59580ccc68b6c0a4"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.asset.importer.urdf/pip_prebundle/isaacsim/asset/importer/urdf/impl/converter.py",
+      "sha256": "d46f964be509ad4d4f55a534e665415b16ec52c534e2e9d33e657cad1f48a957"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.core.experimental.prims/isaacsim/core/experimental/prims/impl/articulation.py",
+      "sha256": "9a2b617077bb2171436465d0f6a6140949b506970810a247bf9553678aa6b374"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/create.py",
+      "sha256": "c353806b43dc44c0803adfca4c7850d3ea87161beae8823d59e11336d6170594"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/annotators.py",
+      "sha256": "6db00554c8a5d00d4a75b1ba2e207b3f3a8a57727f81565d8d5ea7d71abef370"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/orchestrator.py",
+      "sha256": "138b2ade7a735db39dd2bbfa72971191a3c43a8d26c098168ae2ee0f6bd3314e"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/annotators_default.py",
+      "sha256": "569e0da5d5405c6ab4f93161678f4334b9a4fc77b25e4ec21857657a435dbe7a"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/tests/test_annotator_registry.py",
+      "sha256": "70bd57a33fec2652e01046e95a94c59c0539ce45ea6af572dde3f4e59606e13d"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.sensors.camera.ui/config/extension.toml",
+      "sha256": "73d02bbac4f38e24083152bd97c71f41a72057662531979512c9bfc8a2f4e69d"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.sensors.experimental.rtx/isaacsim/sensors/experimental/rtx/impl/camera_sensor.py",
+      "sha256": "c5fc373ec02b343d7e6cf97291b24629bae99048cab56ce32440efa752452371"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py",
+      "sha256": "e5db812e752cc415f969c464dfe7248bb4524eaa240ba556386d3a8007f36ce5"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.physics.tensors-110.4.4+110.4.0.wx64.r.cp312.u7f4/omni/physics/tensors/api.py",
+      "sha256": "0da2ff6f94a8e5afffce6460f7b97b2f09d0423a3813149498cb88e96f60a3b6"
+    }
+  ],
+  "hardware_approved": false,
+  "physical_calibration": false,
+  "training": "NOT_RUN",
+  "ring_geometry": "DEFERRED",
+  "floor": {
+    "path": "/World/Floor",
+    "size": 1.0,
+    "scale": [
+      2.0,
+      2.0,
+      0.02
+    ],
+    "position": [
+      0.0,
+      0.0,
+      -0.01
+    ]
+  },
+  "width": 640,
+  "height": 480,
+  "fps": 10,
+  "legacy_ledger": {
+    "path": "C:/isaacsim_remote/robot-arm-lab/066/runs/session-ledger.json",
+    "sha256": "6ea2a523b038acdede164c0e6f87b570013f1aea79704ac21544be96c4bf2505"
+  },
+  "physics_pins": {
+    "isaacsim.core.experimental.prims.impl.articulation": "9a2b617077bb2171436465d0f6a6140949b506970810a247bf9553678aa6b374",
+    "isaacsim.core.experimental.prims.impl.rigid_prim": "f9d5863e2cf4b9f4746831e0f26e4f346046a107fa6f96bc8dbe16e058cd50eb",
+    "isaacsim.core.experimental.prims.impl.prim": "bffa6875946a40b754fe048328331a179beb4af0725cbda522e5aee2a7f15ac0",
+    "isaacsim.core.simulation_manager.impl.simulation_manager": "0dd33b5f6927112450fb06bc81a3dffb8f82409b108d64657853f3cec11b1833",
+    "isaaclab_physx.physics.physx_manager": "dc1a3fbabbb54a4a3f7c45bf10e25643a346b06a6d9577e8f974584df9869742"
+  },
+  "experiment_id": "control_identity_split_114",
+  "native_limits": {
+    "import": 1,
+    "render_smoke": 1,
+    "motion": 1
+  },
+  "deadline_unix": 0,
+  "motion_timeout_s": 900,
+  "motion_launch_headroom_s": 1680,
+  "export_timeout_s": 300,
+  "recovery_total_s": 600,
+  "offline_only": false,
+  "minimum_launch_headroom_s": 1380,
+  "transport_kind": "LOCAL_PROCESS",
+  "immutable_source_pins": {
+    "balance.py": "8ba1c9218f960b4df9bc341dcda53cce537393697a8079b17ce0db08275417a0",
+    "capture.py": "e4ca9607cb0b8a219928e7ccfabd9f50033b248e1f2d0ddb726c2892f492a5a7",
+    "init_boundary.py": "c81385a4d86b5864ba36cd62dff9f2d648c31ff03798b52ad8dfccd5fb69848b",
+    "launch.ps1": "5d064624503d743106f747687e49f42632f9fabe4420c344d366097c62fcb43a",
+    "program.json": "08c925a2e538eb8412e38b42d44c59beebeedfbb2fe258c9991a3689bc62cdfb",
+    "README.md": "82ceec661b6e587c4c30e0347d549d578c409263947b7d7f0128d3065d5f147c",
+    "recovery.py": "8111c2c657f2652bf2cfd84630f0ad3110bc48102189296b738977c0d4065315",
+    "reference.py": "b82236061b4b551745829ccc8e60be92172d9cfff12e319e2acbcacd98b1577f",
+    "root_binding.py": "0a55c7479f335c244f4ef01b94337d077cce1a2230cc6c2f3ff1d7a39662e33b",
+    "scene.py": "f3b4e08491124ea3daf13949dc994618374c0be8cd6267f56ef7ac4789fd1807",
+    "sdk.py": "f3d3dd3d3c7ff8aa2774689e135b64a3d85a61701a8e9a6810313bbdc6aa06cf",
+    "test_host.py": "b1f77dc121baf47e8120cbf4dcfd6202440489f15cb889c05dd129e586f228d1",
+    "test_scene.py": "efff43624e475fe52381d45d7b27a282278c430d8de1948cf596099bd10c2370",
+    "torque.py": "b83e26217d85e954026ffd50e1f32c9c6777e1864ae1b9d42da6e222f23bd31b",
+    "workspace.py": "b1ea9aa298b7fe6dd7488130c38103c792047967be74e56cd50a78d60541ec2e"
+  },
+  "winjob_sha256": "2ca8c90616026a103eb41da18c33f34b012bcd56439cb39af967ea9bf2f683b0"
+}

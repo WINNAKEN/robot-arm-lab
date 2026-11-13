@@ -1,0 +1,57 @@
+{
+ "what": "MP18 보기용 그림(치수 원천 아님) — 부품 색 = layout · 구매품 어림 = 어두운 회색 · 57D 단자 어림 = 어두운 빨강 · 케이블 = 주황(고리는 처진 곡선 그림 — 길이는 검사 C10)",
+ "poses": {
+  "display": {
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "glb": "manipulator-v2-display.glb",
+   "glb_note": null,
+   "glb_sha256": "1c023daa28e718c0f657dd90b3b3e8b9d5d12484a4e7b86609a7c6ebae174ffb",
+   "pngs": [
+    "display-back.png",
+    "display-front.png",
+    "display-iso.png",
+    "display-isoback.png",
+    "display-top.png"
+   ]
+  },
+  "zero": {
+   "q_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "glb": null,
+   "glb_note": "scratch only (not committed)",
+   "glb_sha256": "05dba2c20a84169ef367614bc1ae3b5cccb502501d57f3a730a2d3aebebad76e",
+   "pngs": [
+    "zero-isoback.png"
+   ]
+  },
+  "ready": {
+   "q_deg": [
+    0.0,
+    -60.0,
+    90.0,
+    0.0,
+    60.0,
+    0.0
+   ],
+   "glb": null,
+   "glb_note": "scratch only (not committed)",
+   "glb_sha256": "9d60fe59bd0fd984b275b0fb988fe8e6f1f8224dcf4753ecff45363cee3de7f8",
+   "pngs": [
+    "ready-isoback.png"
+   ]
+  }
+ }
+}

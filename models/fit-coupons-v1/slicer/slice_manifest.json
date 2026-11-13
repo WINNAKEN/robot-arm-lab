@@ -1,0 +1,77 @@
+{
+  "status": "ESTIMATE_NOT_PRINT_TESTED",
+  "created_utc": "2026-10-23T01:23:35.015778+00:00",
+  "user_confirmed": [
+    "Bambu H2D",
+    "PLA",
+    "fit-coupon set tonight (decision 3 of plan 014)"
+  ],
+  "assumptions": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "plate": "Textured PEI Plate",
+    "support": "auto",
+    "quantity": "one plate holding every coupon (one STL with 15 shells)"
+  },
+  "limits": [
+    "PLA brand, nozzle and build plate are assumed; check installed hardware and filament before printing. 1:1 parts must use the same settings, or the fits are measured again.",
+    "Stock-profile slicer estimates are not measured print time, material use, strength or fit.",
+    "No printer address, credentials or print-dispatch command is passed to the tools.",
+    "Network activity of the native Bambu executable is not instrumented by this run.",
+    "PrintForge source and installed profiles are read, not edited by this script.",
+    "Delivered Bambu projects must contain no G-code member; raw local slice work remains evidence only."
+  ],
+  "tool_sources_sha256": {
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\runner.py": "fa4f28abb5b4209ad3a8fcd5e403b98ee53f9e0c75f021425d685989a9f099ac",
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\studio.py": "d345cdc581f1791fca5ffa14f22dc7dfdb209f2e30e6c1a8a21b470261cbe0c4",
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\profiles.py": "17094e31d45003905bc7b339e1f60f179e4447589ca2cbd1ea02ada848ac5093"
+  },
+  "runs": [
+    {
+      "part": "fit-coupons-v1-plate",
+      "command": [
+        "C:\\projects\\printforge\\.venv\\Scripts\\python.exe",
+        "-m",
+        "printforge.printprep",
+        "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\fit-coupons-v1-plate.stl",
+        "--out",
+        "C:\\projects\\robot-arm-lab\\.dev\\fit-coupons-evidence\\slicer\\runs\\fit-coupons-v1-plate",
+        "--studio",
+        "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe",
+        "--printer",
+        "Bambu Lab H2D 0.4 nozzle",
+        "--process",
+        "0.20mm Standard @BBL H2D",
+        "--filament",
+        "Bambu PLA Basic @BBL H2D",
+        "--plate",
+        "Textured PEI Plate",
+        "--support",
+        "auto",
+        "--timeout",
+        "600"
+      ],
+      "exit_code": 0,
+      "model_sha256_before": "89b0b496c7a0d19bea3226216d497efc8273217eda61c2f3208a574522249eed",
+      "model_sha256_after": "89b0b496c7a0d19bea3226216d497efc8273217eda61c2f3208a574522249eed",
+      "verdict": "ready",
+      "estimate": {
+        "print_time_s": 5256,
+        "filament_g": 43.11,
+        "filament_m": 14.23,
+        "support_generated": false,
+        "max_z_mm": 10.0
+      },
+      "support": {
+        "mode": "auto",
+        "advised_by_studio": false,
+        "enabled": false
+      },
+      "report_sha256": "4d9bd928810d41973389dc5b9a0c003fbd9492772d09765dbc5a440be60713a2",
+      "delivered_project_has_gcode": false
+    }
+  ],
+  "all_ready": true,
+  "over_one_hour_tell_user": true
+}

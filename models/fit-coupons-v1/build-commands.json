@@ -1,0 +1,3992 @@
+{
+ "commands": [
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_P",
+    "plane": {
+     "origin": [
+      -90,
+      85,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -23.0,
+     -23.0
+    ],
+    "p1": [
+     23.0,
+     23.0
+    ],
+    "radius": 4
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "operation": "new",
+    "body_name": "C1_NEMA17_PLATE_1",
+    "name": "C1_NEMA17_PLATE_1_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_H_PILOT",
+    "plane": {
+     "origin": [
+      -90,
+      85,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.075
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_HOLE_PILOT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_H_M3_-1-1",
+    "plane": {
+     "origin": [
+      -105.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_HOLE_M3_-1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_H_M3_-11",
+    "plane": {
+     "origin": [
+      -105.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_HOLE_M3_-11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_H_M3_1-1",
+    "plane": {
+     "origin": [
+      -74.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_HOLE_M3_1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_H_M3_11",
+    "plane": {
+     "origin": [
+      -74.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_HOLE_M3_11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_1_T_24",
+    "plane": {
+     "origin": [
+      -98,
+      63,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "22.15",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_1"
+    ],
+    "name": "C1_NEMA17_PLATE_1_LABEL_27"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_P",
+    "plane": {
+     "origin": [
+      -40,
+      85,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -23.0,
+     -23.0
+    ],
+    "p1": [
+     23.0,
+     23.0
+    ],
+    "radius": 4
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "operation": "new",
+    "body_name": "C1_NEMA17_PLATE_2",
+    "name": "C1_NEMA17_PLATE_2_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_H_PILOT",
+    "plane": {
+     "origin": [
+      -40,
+      85,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.15
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_HOLE_PILOT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_H_M3_-1-1",
+    "plane": {
+     "origin": [
+      -55.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_HOLE_M3_-1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_H_M3_-11",
+    "plane": {
+     "origin": [
+      -55.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_HOLE_M3_-11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_H_M3_1-1",
+    "plane": {
+     "origin": [
+      -24.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_HOLE_M3_1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_H_M3_11",
+    "plane": {
+     "origin": [
+      -24.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_HOLE_M3_11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_2_T_52",
+    "plane": {
+     "origin": [
+      -48,
+      63,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "22.30",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_2"
+    ],
+    "name": "C1_NEMA17_PLATE_2_LABEL_55"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_P",
+    "plane": {
+     "origin": [
+      10,
+      85,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -23.0,
+     -23.0
+    ],
+    "p1": [
+     23.0,
+     23.0
+    ],
+    "radius": 4
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "operation": "new",
+    "body_name": "C1_NEMA17_PLATE_3",
+    "name": "C1_NEMA17_PLATE_3_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_H_PILOT",
+    "plane": {
+     "origin": [
+      10,
+      85,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.225
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_HOLE_PILOT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_H_M3_-1-1",
+    "plane": {
+     "origin": [
+      -5.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_HOLE_M3_-1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_H_M3_-11",
+    "plane": {
+     "origin": [
+      -5.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_HOLE_M3_-11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_H_M3_1-1",
+    "plane": {
+     "origin": [
+      25.5,
+      69.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_HOLE_M3_1-1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_H_M3_11",
+    "plane": {
+     "origin": [
+      25.5,
+      100.5,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_HOLE_M3_11"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C1_NEMA17_PLATE_3_T_80",
+    "plane": {
+     "origin": [
+      2,
+      63,
+      3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "22.45",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C1_NEMA17_PLATE_3"
+    ],
+    "name": "C1_NEMA17_PLATE_3_LABEL_83"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 15.0,
+    "height": 5.0,
+    "base": [
+     -90,
+     25,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_1",
+    "name": "C2_BEARING_608_SEAT_1_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_1_TAB_P",
+    "plane": {
+     "origin": [
+      -90,
+      7.0,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.0,
+     -5.0
+    ],
+    "p1": [
+     7.0,
+     5.0
+    ],
+    "radius": 2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_1_TAB",
+    "name": "C2_BEARING_608_SEAT_1_TAB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C2_BEARING_608_SEAT_1",
+    "tools": [
+     "C2_BEARING_608_SEAT_1_TAB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_1_H_SEAT",
+    "plane": {
+     "origin": [
+      -90,
+      25,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_1"
+    ],
+    "name": "C2_BEARING_608_SEAT_1_HOLE_SEAT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_1_T_94",
+    "plane": {
+     "origin": [
+      -95.5,
+      4.0,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "0.0",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_1"
+    ],
+    "name": "C2_BEARING_608_SEAT_1_LABEL_97"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 15.0,
+    "height": 5.0,
+    "base": [
+     -55,
+     25,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_2",
+    "name": "C2_BEARING_608_SEAT_2_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_2_TAB_P",
+    "plane": {
+     "origin": [
+      -55,
+      7.0,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.0,
+     -5.0
+    ],
+    "p1": [
+     7.0,
+     5.0
+    ],
+    "radius": 2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_2_TAB",
+    "name": "C2_BEARING_608_SEAT_2_TAB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C2_BEARING_608_SEAT_2",
+    "tools": [
+     "C2_BEARING_608_SEAT_2_TAB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_2_H_SEAT",
+    "plane": {
+     "origin": [
+      -55,
+      25,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.05
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_2"
+    ],
+    "name": "C2_BEARING_608_SEAT_2_HOLE_SEAT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_2_T_108",
+    "plane": {
+     "origin": [
+      -60.5,
+      4.0,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "+0.1",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_2"
+    ],
+    "name": "C2_BEARING_608_SEAT_2_LABEL_111"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 15.0,
+    "height": 5.0,
+    "base": [
+     -20,
+     25,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_3",
+    "name": "C2_BEARING_608_SEAT_3_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_3_TAB_P",
+    "plane": {
+     "origin": [
+      -20,
+      7.0,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.0,
+     -5.0
+    ],
+    "p1": [
+     7.0,
+     5.0
+    ],
+    "radius": 2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_3_TAB",
+    "name": "C2_BEARING_608_SEAT_3_TAB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C2_BEARING_608_SEAT_3",
+    "tools": [
+     "C2_BEARING_608_SEAT_3_TAB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_3_H_SEAT",
+    "plane": {
+     "origin": [
+      -20,
+      25,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_3"
+    ],
+    "name": "C2_BEARING_608_SEAT_3_HOLE_SEAT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_3_T_122",
+    "plane": {
+     "origin": [
+      -25.5,
+      4.0,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "+0.2",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_3"
+    ],
+    "name": "C2_BEARING_608_SEAT_3_LABEL_125"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 15.0,
+    "height": 5.0,
+    "base": [
+     15,
+     25,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_4",
+    "name": "C2_BEARING_608_SEAT_4_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_4_TAB_P",
+    "plane": {
+     "origin": [
+      15,
+      7.0,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.0,
+     -5.0
+    ],
+    "p1": [
+     7.0,
+     5.0
+    ],
+    "radius": 2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "operation": "new",
+    "body_name": "C2_BEARING_608_SEAT_4_TAB",
+    "name": "C2_BEARING_608_SEAT_4_TAB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C2_BEARING_608_SEAT_4",
+    "tools": [
+     "C2_BEARING_608_SEAT_4_TAB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_4_H_SEAT",
+    "plane": {
+     "origin": [
+      15,
+      25,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.15
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_4"
+    ],
+    "name": "C2_BEARING_608_SEAT_4_HOLE_SEAT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C2_BEARING_608_SEAT_4_T_136",
+    "plane": {
+     "origin": [
+      9.5,
+      4.0,
+      5.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "+0.3",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C2_BEARING_608_SEAT_4"
+    ],
+    "name": "C2_BEARING_608_SEAT_4_LABEL_139"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_P",
+    "plane": {
+     "origin": [
+      85,
+      85,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -32.0,
+     -13.0
+    ],
+    "p1": [
+     32.0,
+     13.0
+    ],
+    "radius": 2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "operation": "new",
+    "body_name": "C3_M3_HOLE_BLOCK",
+    "name": "C3_M3_HOLE_BLOCK_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V0",
+    "plane": {
+     "origin": [
+      58.0,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.6
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS0",
+    "plane": {
+     "origin": [
+      58.0,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.6
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V1",
+    "plane": {
+     "origin": [
+      64.75,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS1",
+    "plane": {
+     "origin": [
+      64.75,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V2",
+    "plane": {
+     "origin": [
+      71.5,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.8
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS2",
+    "plane": {
+     "origin": [
+      71.5,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.8
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V3",
+    "plane": {
+     "origin": [
+      78.25,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.25
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS3",
+    "plane": {
+     "origin": [
+      78.25,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.25
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V4",
+    "plane": {
+     "origin": [
+      85.0,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.35
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS4",
+    "plane": {
+     "origin": [
+      85.0,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.35
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V5",
+    "plane": {
+     "origin": [
+      91.75,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.45
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS5",
+    "plane": {
+     "origin": [
+      91.75,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.45
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V6",
+    "plane": {
+     "origin": [
+      98.5,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V6"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS6",
+    "plane": {
+     "origin": [
+      98.5,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H6"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V7",
+    "plane": {
+     "origin": [
+      105.25,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V7"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS7",
+    "plane": {
+     "origin": [
+      105.25,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H7"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_H_V8",
+    "plane": {
+     "origin": [
+      112.0,
+      91,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_V8"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_HS8",
+    "plane": {
+     "origin": [
+      112.0,
+      72,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 10,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_HOLE_H8"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_T_216",
+    "plane": {
+     "origin": [
+      61.0,
+      81,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "C",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_LABEL_219"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_T_220",
+    "plane": {
+     "origin": [
+      81.25,
+      81,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "T",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_LABEL_223"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C3_M3_HOLE_BLOCK_T_224",
+    "plane": {
+     "origin": [
+      101.5,
+      81,
+      10
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "I",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C3_M3_HOLE_BLOCK"
+    ],
+    "name": "C3_M3_HOLE_BLOCK_LABEL_227"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 24,
+    "height": 3,
+    "base": [
+     -90,
+     -105,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C4_SLIP_BOSS_40",
+    "name": "C4_SLIP_BOSS_40_C"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 20,
+    "height": 5,
+    "base": [
+     -90,
+     -105,
+     3
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C4_SLIP_BOSS_40_BOSS",
+    "name": "C4_SLIP_BOSS_40_BOSS_C"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C4_SLIP_BOSS_40",
+    "tools": [
+     "C4_SLIP_BOSS_40_BOSS"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_BOSS_40_H_CORE",
+    "plane": {
+     "origin": [
+      -90,
+      -105,
+      8
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 16.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_BOSS_40"
+    ],
+    "name": "C4_SLIP_BOSS_40_HOLE_CORE"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 23,
+    "height": 4,
+    "base": [
+     -35,
+     -105,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C4_SLIP_RING_1",
+    "name": "C4_SLIP_RING_1_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_1_H_BORE",
+    "plane": {
+     "origin": [
+      -35,
+      -105,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 20.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 4,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_1"
+    ],
+    "name": "C4_SLIP_RING_1_HOLE_BORE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_1_H_DOT0",
+    "plane": {
+     "origin": [
+      -37,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_1"
+    ],
+    "name": "C4_SLIP_RING_1_HOLE_DOT0"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 23,
+    "height": 4,
+    "base": [
+     15,
+     -105,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C4_SLIP_RING_2",
+    "name": "C4_SLIP_RING_2_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_2_H_BORE",
+    "plane": {
+     "origin": [
+      15,
+      -105,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 20.2
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 4,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_2"
+    ],
+    "name": "C4_SLIP_RING_2_HOLE_BORE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_2_H_DOT0",
+    "plane": {
+     "origin": [
+      13,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_2"
+    ],
+    "name": "C4_SLIP_RING_2_HOLE_DOT0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_2_H_DOT1",
+    "plane": {
+     "origin": [
+      15,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_2"
+    ],
+    "name": "C4_SLIP_RING_2_HOLE_DOT1"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 23,
+    "height": 4,
+    "base": [
+     65,
+     -105,
+     0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "C4_SLIP_RING_3",
+    "name": "C4_SLIP_RING_3_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_3_H_BORE",
+    "plane": {
+     "origin": [
+      65,
+      -105,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 20.3
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 4,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_3"
+    ],
+    "name": "C4_SLIP_RING_3_HOLE_BORE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_3_H_DOT0",
+    "plane": {
+     "origin": [
+      63,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_3"
+    ],
+    "name": "C4_SLIP_RING_3_HOLE_DOT0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_3_H_DOT1",
+    "plane": {
+     "origin": [
+      65,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_3"
+    ],
+    "name": "C4_SLIP_RING_3_HOLE_DOT1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C4_SLIP_RING_3_H_DOT2",
+    "plane": {
+     "origin": [
+      67,
+      -126.5,
+      4
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 0.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C4_SLIP_RING_3"
+    ],
+    "name": "C4_SLIP_RING_3_HOLE_DOT2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_HOLE_PLATE_P",
+    "plane": {
+     "origin": [
+      105,
+      25,
+      0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -30.0,
+     -9.0
+    ],
+    "p1": [
+     30.0,
+     9.0
+    ],
+    "radius": 3
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "operation": "new",
+    "body_name": "C5_D_HOLE_PLATE",
+    "name": "C5_D_HOLE_PLATE_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_HOLE_PLATE_DP_D60",
+    "plane": {
+     "origin": [
+      87,
+      27,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -2.280350850198276,
+      2.1
+     ],
+     [
+      2.280350850198276,
+      2.1
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.arc.three_point",
+   "params": {
+    "start": [
+     2.280350850198276,
+     2.1
+    ],
+    "end": [
+     -2.280350850198276,
+     2.1
+    ],
+    "through": [
+     0,
+     -3.1
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C5_D_HOLE_PLATE"
+    ],
+    "name": "C5_D_HOLE_PLATE_D_D6_0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_HOLE_PLATE_DP_D61",
+    "plane": {
+     "origin": [
+      105,
+      27,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -2.32379000772445,
+      2.2
+     ],
+     [
+      2.32379000772445,
+      2.2
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.arc.three_point",
+   "params": {
+    "start": [
+     2.32379000772445,
+     2.2
+    ],
+    "end": [
+     -2.32379000772445,
+     2.2
+    ],
+    "through": [
+     0,
+     -3.2
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C5_D_HOLE_PLATE"
+    ],
+    "name": "C5_D_HOLE_PLATE_D_D6_1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_HOLE_PLATE_DP_D62",
+    "plane": {
+     "origin": [
+      123,
+      27,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -2.3664319132398464,
+      2.3
+     ],
+     [
+      2.3664319132398464,
+      2.3
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.arc.three_point",
+   "params": {
+    "start": [
+     2.3664319132398464,
+     2.3
+    ],
+    "end": [
+     -2.3664319132398464,
+     2.3
+    ],
+    "through": [
+     0,
+     -3.3
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C5_D_HOLE_PLATE"
+    ],
+    "name": "C5_D_HOLE_PLATE_D_D6_2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_HOLE_PLATE_T_293",
+    "plane": {
+     "origin": [
+      78,
+      17.5,
+      5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.text",
+   "params": {
+    "text": "D6",
+    "at": [
+     0,
+     0
+    ],
+    "height": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.6,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "C5_D_HOLE_PLATE"
+    ],
+    "name": "C5_D_HOLE_PLATE_LABEL_296"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_PIN_6_1_P",
+    "plane": {
+     "origin": [
+      90,
+      -35,
+      2.0
+     ],
+     "x_dir": [
+      0,
+      1,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -2.23606797749979,
+      -2.0
+     ],
+     [
+      2.23606797749979,
+      -2.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.arc.three_point",
+   "params": {
+    "start": [
+     2.23606797749979,
+     -2.0
+    ],
+    "end": [
+     -2.23606797749979,
+     -2.0
+    ],
+    "through": [
+     0,
+     3.0
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 20,
+    "operation": "new",
+    "body_name": "C5_D_PIN_6_1",
+    "name": "C5_D_PIN_6_1_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "C5_D_PIN_6_2_P",
+    "plane": {
+     "origin": [
+      90,
+      -49,
+      2.0
+     ],
+     "x_dir": [
+      0,
+      1,
+      0
+     ],
+     "y_dir": [
+      0,
+      0,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -2.23606797749979,
+      -2.0
+     ],
+     [
+      2.23606797749979,
+      -2.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.arc.three_point",
+   "params": {
+    "start": [
+     2.23606797749979,
+     -2.0
+    ],
+    "end": [
+     -2.23606797749979,
+     -2.0
+    ],
+    "through": [
+     0,
+     3.0
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 20,
+    "operation": "new",
+    "body_name": "C5_D_PIN_6_2",
+    "name": "C5_D_PIN_6_2_X"
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C1_NEMA17_PLATE_1.stl",
+    "bodies": [
+     "C1_NEMA17_PLATE_1"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C1_NEMA17_PLATE_2.stl",
+    "bodies": [
+     "C1_NEMA17_PLATE_2"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C1_NEMA17_PLATE_3.stl",
+    "bodies": [
+     "C1_NEMA17_PLATE_3"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C2_BEARING_608_SEAT_1.stl",
+    "bodies": [
+     "C2_BEARING_608_SEAT_1"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C2_BEARING_608_SEAT_2.stl",
+    "bodies": [
+     "C2_BEARING_608_SEAT_2"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C2_BEARING_608_SEAT_3.stl",
+    "bodies": [
+     "C2_BEARING_608_SEAT_3"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C2_BEARING_608_SEAT_4.stl",
+    "bodies": [
+     "C2_BEARING_608_SEAT_4"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C3_M3_HOLE_BLOCK.stl",
+    "bodies": [
+     "C3_M3_HOLE_BLOCK"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C4_SLIP_BOSS_40.stl",
+    "bodies": [
+     "C4_SLIP_BOSS_40"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C4_SLIP_RING_1.stl",
+    "bodies": [
+     "C4_SLIP_RING_1"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C4_SLIP_RING_2.stl",
+    "bodies": [
+     "C4_SLIP_RING_2"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C4_SLIP_RING_3.stl",
+    "bodies": [
+     "C4_SLIP_RING_3"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C5_D_HOLE_PLATE.stl",
+    "bodies": [
+     "C5_D_HOLE_PLATE"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C5_D_PIN_6_1.stl",
+    "bodies": [
+     "C5_D_PIN_6_1"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\fit-coupons-v1\\parts\\C5_D_PIN_6_2.stl",
+    "bodies": [
+     "C5_D_PIN_6_2"
+    ]
+   }
+  },
+  {
+   "command": "component.list",
+   "params": {
+    "compact": true,
+    "bodies": true
+   }
+  }
+ ]
+}

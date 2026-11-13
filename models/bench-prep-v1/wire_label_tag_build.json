@@ -1,0 +1,178 @@
+[
+  {
+    "display_value": 40.0,
+    "errors": [],
+    "expression": "40 mm",
+    "name": "width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 40.0
+  },
+  {
+    "display_value": 16.0,
+    "errors": [],
+    "expression": "16 mm",
+    "name": "depth",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 16.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "display_value": 5.0,
+    "errors": [],
+    "expression": "5 mm",
+    "name": "slot_width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 5.0
+  },
+  {
+    "display_value": 3.0,
+    "errors": [],
+    "expression": "3 mm",
+    "name": "slot_depth",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 3.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "slot_left",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "OuterProfile",
+    "projected": null,
+    "sketch": 1
+  },
+  {
+    "constraints": [
+      "k1"
+    ],
+    "created": {
+      "constraints": [
+        "k1"
+      ],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "l1.start"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 1
+  },
+  {
+    "bodies": [
+      "wire_label_tag"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+      "wire_label_tag"
+    ],
+    "feature": 2,
+    "ms": 1.9706,
+    "name": "Extrude1",
+    "removed_bodies": [],
+    "warning": null
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "TieSlot",
+    "projected": null,
+    "sketch": 3
+  },
+  {
+    "constraints": [],
+    "created": {
+      "constraints": [],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 3
+  },
+  {
+    "bodies": [
+      "wire_label_tag"
+    ],
+    "changed_bodies": [
+      "wire_label_tag"
+    ],
+    "created_bodies": [],
+    "feature": 4,
+    "ms": 4.6442000000000005,
+    "name": "Extrude2",
+    "removed_bodies": [],
+    "warning": null
+  }
+]

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>그리퍼 · J5 · J6 — 결선과 첫 제어 시험 준비</title>
+<style>
+:root{--ink:#182c3a;--muted:#526777;--line:#c8d5df;--blue:#1876ad;--green:#167963;--red:#ba3b3b;--amber:#79560a}
+*{box-sizing:border-box}body{font:16px/1.55 "Malgun Gothic","Noto Sans KR",sans-serif;color:var(--ink);background:#edf2f5;margin:0}main{max-width:1120px;margin:auto}section{background:white;padding:36px 42px;margin:20px 0;border-radius:12px}h1{font-size:32px;letter-spacing:-1.2px;line-height:1.3;margin:10px 0 18px}h2{font-size:24px;margin:0 0 18px}h3{font-size:18px;margin:20px 0 10px}p{margin:10px 0}.eyebrow{font-size:13px;font-weight:700;color:var(--blue);letter-spacing:1px}.pill{display:inline-block;border:1px solid var(--line);border-radius:100px;padding:4px 12px;font-size:13px;margin:2px}.note{padding:13px 16px;border-left:4px solid var(--blue);background:#eef6fb}.hold{border-left-color:#c79a27;background:#fff8e8;color:#614a16}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.small{font-size:13px;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0}th,td{padding:9px 10px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:#edf4f8}code,pre{font-family:Consolas,monospace;font-size:13px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#152c3a;color:#e7f3fa;padding:16px;border-radius:7px;line-height:1.65}svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fbfdff;margin:15px 0}svg text{font-family:"Malgun Gothic",sans-serif;fill:#203948;font-size:18px}svg .title{font-weight:700;font-size:22px}svg .sub{font-size:16px;fill:#576c79}svg .box{fill:white;stroke:#a9bfce;stroke-width:2}svg .wire{fill:none;stroke-width:4}svg .red{stroke:#bd3f42}svg .black{stroke:#314553}svg .a{stroke:#17876f}svg .b{stroke:#2c78b7}svg .muted{fill:#f2f4f6;stroke:#cad2d9;stroke-dasharray:5 4}ol{padding-left:24px}li{margin:9px 0}a{color:#176899}footer{text-align:right;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:20px}
+@media print{@page{size:A4 portrait;margin:11mm}body{background:white;font-size:10pt;line-height:1.4}main{max-width:none}section{margin:0;padding:0;border-radius:0;break-after:page}section:last-child{break-after:auto}h1{font-size:22pt}h2{font-size:17pt}h3{font-size:12pt}p,li{margin:6px 0}.small{font-size:8pt}table{font-size:8.5pt}th,td{padding:5px 6px}pre{font-size:8pt;padding:10px;line-height:1.5}svg{margin:10px 0}.note{padding:8px 10px}.pill{font-size:8pt;padding:3px 8px}footer{font-size:8pt}}
+</style>
+<main>
+<section>
+<div class="eyebrow">ROBOT ARM LAB / BENCH 138 / 2026-11-11</div>
+<h1>그리퍼 · J5 · J6<br>결선과 첫 제어 시험 준비</h1>
+<span class="pill">이번 결과: 준비 코드 · 오프라인 시험</span><span class="pill">실제 급전 · 통신 · 구동: NOT_RUN</span>
+<p>조립 사진은 기구 조립 보고입니다. 드라이버가 RS485형인지 CAN형인지, 전원·모터 정격·감속비·실제 단자 위치는 아직 확인되지 않았습니다. 아래는 기존 구매 기록의 <b>SERVO42D RS485 MB + Waveshare ESP32-S3-RS485-CAN</b>을 기준으로 한 준비안입니다.</p>
+<div class="note hold"><b>처음에는 한 축만.</b> 나머지 두 축은 전원 OFF와 통신선 물리 분리를 유지합니다. 현재 보드의 공장 펌웨어가 무엇인지 모르므로, USB를 연결하기 전에도 모터 전원과 A/B 버스를 분리합니다. USB만 꽂으면 기존 펌웨어가 무조건 무동작한다고 가정하지 않습니다.</div>
+<h3>01 · 짧은 1축 RS485 시험 결선 — 단자 이름 기준</h3>
+<svg viewBox="0 0 1000 570" role="img" aria-label="USB 급전 제어기와 별도 DC 급전 MKS 드라이버 한 축의 RS485 결선">
+<rect class="box" x="25" y="35" width="210" height="95" rx="10"/><text class="title" x="45" y="72">현재 노트북</text><text class="sub" x="45" y="104">USB 데이터 케이블</text>
+<rect class="box" x="295" y="35" width="320" height="240" rx="10"/><text class="title" x="315" y="72">Waveshare ESP32-S3</text><text x="315" y="103">RS485-CAN 보드</text><text x="315" y="145">Type-C: USB 전원만</text><text class="sub" x="315" y="177">상단 DC + / − : 미연결</text><text x="315" y="220">RS485 A+</text><text x="315" y="253">RS485 B−</text>
+<path class="wire b" d="M235 90H295"/><text class="sub" x="242" y="75">USB</text>
+<rect class="box" x="735" y="35" width="240" height="270" rx="10"/><text class="title" x="755" y="72">선택한 MKS 1대</text><text class="sub" x="755" y="105">RS485형 현품 확인</text><text x="755" y="151">전원 V+</text><text x="755" y="184">전원 GND</text><text x="755" y="220">통신 A</text><text x="755" y="253">통신 B</text><text class="sub" x="755" y="285">모터 A± / B± → 코일</text>
+<path class="wire a" d="M615 213H735"/><path class="wire b" d="M615 246H735"/><text class="sub" x="626" y="195">꼬임쌍</text>
+<rect class="box" x="25" y="345" width="210" height="145" rx="10"/><text class="title" x="45" y="385">별도 DC 전원</text><text class="sub" x="45" y="420">전압 / 전류제한: 미정</text><text x="45" y="455">+                  −</text>
+<rect class="box" x="295" y="345" width="320" height="145" rx="10"/><text class="title" x="315" y="382">DC 정격 차단 + 퓨즈</text><text class="sub" x="315" y="417">현품·전선 정격 확인 후 선정</text><text class="sub" x="315" y="451">수동 급전 차단 / STO 인증 아님</text>
+<path class="wire red" d="M235 390H295"/><path class="wire red" d="M615 390H660V145H735"/>
+<path class="wire black" d="M185 490V545H700V178H735"/>
+<rect class="muted" x="735" y="345" width="240" height="145" rx="10"/><text class="title" x="755" y="382">다른 두 축</text><text x="755" y="418">전원 OFF</text><text x="755" y="452">A/B 물리 분리</text>
+<text class="sub" x="25" y="565">적색: DC+ / 진회색: DC− / 녹색·청색: 통신 A/B. 실제 선색이나 나사 위치를 뜻하지 않습니다.</text>
+</svg>
+<p class="small">MKS 제품 문서의 12–24V는 모델 범위이며 이번 현품의 설정 승인이 아닙니다. Waveshare DC 입력(7–36V) 범위를 모터 전압으로 쓰지 않습니다. USB와 Waveshare DC 입력은 동시에 연결하지 않습니다.</p>
+<footer>1 / 준비용 단자명 결선도 · 실제 결선 검수 전</footer>
+</section>
+
+<section>
+<h2>선 한 가닥씩 확인할 표</h2>
+<table><tr><th>출발</th><th>도착</th><th>확인 사항</th></tr>
+<tr><td>노트북 USB</td><td>Waveshare Type-C</td><td>이 구성은 보드 USB 급전만. 상단 DC 입력 미연결</td></tr>
+<tr><td>Waveshare RS485 A+</td><td>MKS 통신 A</td><td>다음 B선과 같은 꼬임쌍. CAN H가 아님</td></tr>
+<tr><td>Waveshare RS485 B−</td><td>MKS 통신 B</td><td>CAN L이나 모터 코일 B−와 구분</td></tr>
+<tr><td>PSU + → DC 차단 → 분기 퓨즈</td><td>MKS 전원 V+</td><td>전압·입력 전류·전선·퓨즈·단자의 DC 정격 확인</td></tr>
+<tr><td>PSU −</td><td>MKS 전원 GND</td><td>전원 귀환. COM / EGND와 임의로 바꾸지 않음</td></tr>
+<tr><td>MKS 모터 출력 A+ / A−</td><td>모터 한 코일</td><td>출고 결선 우선, 선색으로 코일을 추측하지 않음</td></tr>
+<tr><td>MKS 모터 출력 B+ / B−</td><td>모터 다른 코일</td><td>통전 중 커넥터 변경 금지</td></tr></table>
+<div class="grid"><div class="note"><b>연결하지 않는 단자</b><p>이번 준비안에서는 MKS COM/EN/STP/DIR, EVCC/EGND/IN_1을 임의로 연결하지 않습니다. EVCC는 문서상 5V/20mA 보조 출력이며 ESP32나 모터 전원용이 아닙니다.</p></div><div class="note hold"><b>절연 기준선</b><p>Waveshare 통신부 SGND와 논리 SH1.0 GND는 구분합니다. 외부 A/B 단자만 보이는 보드에 일반 USB–RS485 그림의 GND선을 임의로 추가하지 않습니다. 기준선 필요성은 현품 회로와 절연을 대조해 결정합니다.</p></div></div>
+<h3>최초 전원 인가 전에 채울 항목</h3>
+<table><tr><th>확인값</th><th>J5</th><th>J6</th><th>그리퍼</th></tr>
+<tr><td>드라이버 CAN/RS485 · HW · FW</td><td>미확인</td><td>미확인</td><td>미확인</td></tr>
+<tr><td>모터 모델 · 정격 상전류 · 스텝각</td><td>미확인</td><td>미확인</td><td>미확인</td></tr>
+<tr><td>실제 주소 · baud · 8N1 · native/Modbus</td><td>미확인</td><td>미확인</td><td>미확인</td></tr>
+<tr><td>감속비 · 출력 방향 · 중립 · 여유</td><td>미확인</td><td>미확인</td><td>미확인</td></tr>
+<tr><td>교정 이력 · 자동홈/자동재개 OFF</td><td>미확인</td><td>미확인</td><td>미확인</td></tr>
+<tr><td>기구 고정 · 급전 차단 · 무급전 처짐</td><td>받침 필요</td><td>미확인</td><td>미확인</td></tr></table>
+<p>PSU 현품/설정 _____ V, 입력 전류제한 _____ A, 분기 퓨즈 _____ A, 전선/단자 정격 _____ . 모터 드라이버의 <b>Ma 상전류</b>와 <b>PSU 입력 전류</b>는 같은 값이 아닙니다. 매뉴얼의 기본 1600mA를 이번 모터의 정격이나 퓨즈값으로 채우지 않습니다.</p>
+<footer>2 / 미확인 값을 확인값으로 바꾸기 위한 기록지</footer>
+</section>
+
+<section>
+<h2>세 축 버스는 한 축 확인 뒤에</h2>
+<p>아래는 확장 방향입니다. 공장 기본 주소가 모두 1일 수 있으므로 세 대를 동시에 연결하지 않습니다. <b>ID 1/2/3은 배치 제안</b>이며, 한 대씩 현품 주소를 확인·설정한 기록이 필요합니다. 이번 소프트웨어는 주소를 바꾸거나 스캔하지 않습니다.</p>
+<svg viewBox="0 0 1000 300" role="img" aria-label="향후 RS485 다중 선형 버스와 양 끝 종단">
+<text class="title" x="25" y="37">향후 RS485 선형 버스</text>
+<path class="wire a" d="M90 100H910"/><path class="wire b" d="M90 125H910"/>
+<rect class="box" x="25" y="170" width="190" height="88" rx="8"/><text x="45" y="205">Waveshare A/B</text><text class="sub" x="45" y="235">끝단 120Ω 검토</text>
+<rect class="box" x="295" y="170" width="180" height="88" rx="8"/><text x="315" y="205">J5 / ID1 제안</text><text class="sub" x="315" y="235">중간 종단 OFF</text>
+<rect class="box" x="540" y="170" width="180" height="88" rx="8"/><text x="560" y="205">J6 / ID2 제안</text><text class="sub" x="560" y="235">중간 종단 OFF</text>
+<rect class="box" x="785" y="170" width="190" height="88" rx="8"/><text x="805" y="205">그리퍼 / ID3 제안</text><text class="sub" x="805" y="235">끝단 120Ω 검토</text>
+<path class="wire a" d="M90 100V170M370 100V170M615 100V170M880 100V170"/><path class="wire b" d="M110 125V170M390 125V170M635 125V170M900 125V170"/>
+<text class="sub" x="25" y="285">짧은 가지 · 꼬임쌍 · 별 모양 통신 분기 회피. 전원 분기는 통신 종단과 별도로 보호합니다.</text>
+</svg>
+<div class="note">현재 짧은 <b>1축 RS485</b> 준비안: MKS V1.0.9 p19는 모터측 종단 점퍼를 끼우지 않도록 안내합니다. Waveshare도 기본 NC 준비안입니다. 이를 긴 다중 RS485 버스에 그대로 적용하지 않습니다.</div>
+<svg viewBox="0 0 1000 300" role="img" aria-label="최종 CAN 전환은 CAN형 드라이버와 H L 선형 버스">
+<text class="title" x="25" y="37">최종 CAN 전환 — CAN형 드라이버로 교체</text>
+<path class="wire a" d="M90 100H910"/><path class="wire b" d="M90 125H910"/>
+<rect class="box" x="25" y="170" width="190" height="88" rx="8"/><text x="45" y="205">Waveshare H/L</text><text class="sub" x="45" y="235">끝단 120Ω</text>
+<rect class="box" x="295" y="170" width="180" height="88" rx="8"/><text x="315" y="205">J5 CAN형</text><text class="sub" x="315" y="235">중간 종단 OFF</text>
+<rect class="box" x="540" y="170" width="180" height="88" rx="8"/><text x="560" y="205">J6 CAN형</text><text class="sub" x="560" y="235">중간 종단 OFF</text>
+<rect class="box" x="785" y="170" width="190" height="88" rx="8"/><text x="805" y="205">그리퍼 CAN형</text><text class="sub" x="805" y="235">끝단 120Ω</text>
+<path class="wire a" d="M90 100V170M370 100V170M615 100V170M880 100V170"/><path class="wire b" d="M110 125V170M390 125V170M635 125V170M900 125V170"/>
+<text class="sub" x="25" y="285">RS485 A/B를 H/L에 옮겨 꽂는 전환이 아닙니다. 드라이버형·주소·속도·정지·방향/스케일을 새로 확인합니다.</text>
+</svg>
+<p class="small">CAN 양 끝 각120Ω이면 무전압 H–L 측정은 대략60Ω입니다. 이는 저항 검사이며 통신·정지 수용이 아닙니다. 이 CAN 검사표를 현재 단독 RS485에 적용하지 않습니다. 기존 CAN actor는2축 준비물이므로3축 실물 통합·정지 검증이 별도로 필요합니다.</p>
+<footer>3 / 확장용 구조 — 현품 확인·정격 선정 뒤 사용</footer>
+</section>
+
+<section>
+<h2>소프트웨어: 지금은 오프라인으로 실행</h2>
+<p><code>src/bench/wrist138/bench.py</code>는 파일과 바이트만 처리합니다. COM 포트를 열거나 장치를 검색하지 않으며 실제 송신 기능이 없습니다.</p>
+<pre>cd C:\projects\robot-arm-lab
+$benchPy = 'C:/projects/printforge/.venv/Scripts/python.exe'
+$benchTool = 'src/bench/wrist138/bench.py'
+&amp; $benchPy -X utf8 -I -B $benchTool status
+&amp; $benchPy -X utf8 -I -B $benchTool demo
+&amp; $benchPy -X utf8 -I -B $benchTool read-plan --axis J5 --address 1
+&amp; $benchPy -X utf8 -I -B $benchTool jog-plan --axis J5 --amount 1</pre>
+<table><tr><th>명령</th><th>지금 얻는 것</th></tr>
+<tr><td>status</td><td>세 축의 미확인 항목 전체. 현재 이동 계획은 BLOCKED</td></tr>
+<tr><td>demo</td><td><b>합성 응답</b>의 해석 예시. 실제 응답이나 통신 성공이 아님</td></tr>
+<tr><td>read-plan</td><td>31 위치 /32 속도 /F1 운전상태 /3A enable의 예정 프레임·길이. 송신0</td></tr>
+<tr><td>decode</td><td>사용자가 가진 한 응답의 길이·주소·opcode·checksum·signed 값 해석. 응답 출처는 인증하지 않음</td></tr>
+<tr><td>jog-plan</td><td>현품값 미확인 시 FD/enable 없이 BLOCKED. 확인 프로필에서도 유한 이동 프레임의 <b>미리보기만</b></td></tr></table>
+<h3>향후 읽기 전용 ESP32 펌웨어</h3>
+<p><code>src/bench/wrist138/firmware/</code>는 기존 로봇 펌웨어와 분리된 준비 타깃입니다. 기본 <code>WRIST138_HARDWARE_PERMIT=OFF</code>에서는 app_main의 명시 UART/USB 초기화와 송신을 하지 않습니다. ROM/부트로더 출력이나 현품에 이미 있는 펌웨어의 동작까지 보장한다는 뜻은 아닙니다.</p>
+<div class="note hold"><b>읽기 중계는 모터 제어기가 아닙니다.</b> 향후 별도 현품 확인·업로드/실행 승인을 거친 허가 분기에서도 <code>READ 주소 opcode</code>만 받습니다. 예: <code>READ 1 31</code>. F3 enable, FD 이동, F7 정지, 교정·설정변경 명령은 모두 거부합니다. <b>jog-plan의 FD 미리보기는 이 중계기로 보내도 실행되지 않습니다.</b></div>
+<p>준비 배선은 UART1 TX=GPIO17 / RX=GPIO18 / RTS=GPIO21, <b>RS485 HALF_DUPLEX</b>입니다. GPIO21을 고정 HIGH로 두지 않습니다. 38400/8N1/native FA–FB는 준비 후보이며 실제 드라이버 설정과 대조해야 합니다. Modbus-RTU 모드나 CAN payload와 혼용하지 않습니다.</p>
+<h3>각도와 그리퍼 mm를 섞지 않기</h3>
+<p><code>motor_deg</code>는 모터축, <code>output_deg</code>는 감속기 출력축입니다. gear_ratio=모터 회전/출력 회전이며 실측 확인 전 미정입니다. <code>rack_mm</code>는 <b>그리퍼 한쪽 랙의 이동량</b>입니다. 대칭 양쪽 랙이면 전체 벌어짐 변화는 그2배이며 별도 항목으로 출력합니다. 실제 피니언 반경과 비율 확인 전 mm 계획도 BLOCKED입니다.</p>
+<p class="small">계획기의 모터축5°/5rpm 상한은 오프라인 소프트웨어 상한일 뿐 실물 사용 승인값이 아닙니다. 펄스로 반올림한 뒤에도 상한·실제 여유를 재검사합니다. 시뮬레이션 cap이나 CAD의27:1 가정을 실물 프로필에 복사하지 않습니다.</p>
+<footer>4 / 실제 포트·플래시·급전·움직임 없음</footer>
+</section>
+
+<section>
+<h2>실물 시험 때의 순서와 기록</h2>
+<ol>
+<li><b>모든 전원 OFF.</b> 잔류 전압·극성·단락·단자명·코일 결선·케이블 장력을 확인합니다. 점퍼와 커넥터는 무전압에서 변경합니다.</li>
+<li><b>기구를 고정하고 J5를 받칩니다.</b> 전원을 끄거나 enable을 해제하면 중력축이 처질 수 있습니다. 손으로 움직이는 축을 잡아 정지시키지 않습니다.</li>
+<li><b>한 대만 식별.</b> 다른 두 축은 OFF/버스 분리. 드라이버형·HW/FW·모터 정격·모드·주소·baud·자동홈/자동재개·교정 이력을 기록합니다. 교정 이력이 불명확하면 자동 교정 대신 보류합니다. 조립 기어와 하중을 연결한 채 무심코 CAL을 실행하지 않습니다.</li>
+<li><b>읽기만 확인.</b> 위치·속도·운전상태·enable의 실제 원시 응답과 화면을 비교합니다. <code>F1=0</code>은 조회 실패이며 정지가 아닙니다. 엔코더 counts는 모터 내부 값이므로 출력축 각도·유격의 측정 결과로 바꾸지 않습니다.</li>
+<li><b>정지·수동 급전 차단·복귀를 먼저 확인.</b> 실제 관측으로 확인하며 응답 ACK만으로 기계 정지나 정지 시간을 승인하지 않습니다. 통신이 끊기면 소프트웨어 정지 명령도 전달되지 않을 수 있습니다. 차단 복귀만으로 자동 재개하지 않아야 합니다.</li>
+<li><b>별도 승인된 극소 유한 이동.</b> 방향·중립·여유·전류·고정·정지를 확인한 후 하나의 짧은 이동만 계획합니다. 현재 read-only 중계로는 이동할 수 없으므로 후속 운전 경로와 승인이 필요합니다. 무응답 상대 이동을 재전송하지 않습니다.</li>
+<li><b>실제 출력 방향·감속비·유격을 관찰.</b> 같은 조건에서 다른 축으로 옮기고, 최종 CAN으로 바뀌면 통신·단절·정지·스케일을 다시 검증합니다.</li>
+</ol>
+<table><tr><th>축 / 날짜</th><th>전→후 모터 counts</th><th>출력축 표시 / 그리퍼 간격 실측</th></tr><tr><td>____________</td><td>____________</td><td>____________</td></tr><tr><th>TX / RX 원시 바이트</th><th>모드 / 전압·입력전류 / 상전류</th><th>차단 / 실제 정지 / 복귀 관측</th></tr><tr><td>____________<br>____________</td><td>____________<br>____________</td><td>____________<br>____________</td></tr></table>
+<p>방향 매핑은 세 가지를 분리해 적습니다: <b>FD dir비트→실제 모터 방향</b>, <b>모터 방향→엔코더 counts 부호</b>, <b>모터 방향→출력축/조의 양의 방향</b>. 매뉴얼 p28은 회전 부호 설명과 예시가 반대라 실측 전 추정하지 않습니다.</p>
+<h3>근거와 남은 확인</h3>
+<p class="small"><a href="https://github.com/makerbase-motor/MKS-SERVO42D-57D/blob/master/User%20Manual/V1.0.9/MKS%20SERVO42%2657D_RS485%20User%20Manual%20V1.0.9.pdf">Makerbase RS485 User Manual V1.0.9</a>: p9 전기범위, p10 단자, p19 단독/다중 결선, p23 설정, p26 프레임, p28/30/74 읽기, p75 enable/정지, p81–82 FD. 로컬 원본 SHA256: <code>11ed701c9fdc8c450c62d8a25649ea94033c93e993192bcd81c236caa00bf9f0</code>.</p>
+<p class="small"><a href="https://docs.waveshare.com/ESP32-S3-RS485-CAN">Waveshare 공식 단자/사양</a> · <a href="https://docs.waveshare.com/ESP32-S3-RS485-CAN/FAQ">공식 FAQ</a> · <a href="https://files.waveshare.com/wiki/ESP32-S3-RS485-CAN/ESP32-S3-RS485-CAN-Schematic.pdf">공식 회로</a>. 현품 PCB 개정·PSU·모터·교정·주소·감속비·실제 단자 검수는 남아 있습니다. 이 준비물은 배선 적합성·정지 안전등급·실제 통신/구동 성공의 인증이 아닙니다.</p>
+<footer>5 / 사용자 측 확인·기록 후 후속 실물 시험</footer>
+</section>
+</main></html>

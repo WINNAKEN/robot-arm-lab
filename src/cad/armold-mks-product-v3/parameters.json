@@ -1,0 +1,49 @@
+{
+  "units": "mm",
+  "status": "PRODUCT_EXTERIOR_V3_KMJH_ENVELOPE_NOT_FOR_FABRICATION",
+  "kinematics_source": "models/armold-mks-concept-v1/kinematics.json (joint origins, world axes, R_child at the display pose) and parameters.json (lengths, reducer diameters/depth, motor/driver assumptions) - read only, never changed here (user 2026-10-27: URDF in preparation, do not touch joint distances)",
+  "brand": {
+    "source": "docs/brand/README.md (user's KMJH concept, 2026-10-26)",
+    "colors": {"body": "#FFFFFF", "accent": "#0B2545", "frame": "#6B7280", "highlight": "#34D399"},
+    "color_names": {"body": "White", "accent": "Deep Navy", "frame": "Cool Gray", "highlight": "Mint Accent"}
+  },
+  "exterior": {
+    "motor_can_radius_mm": 39.0,
+    "can_rear_clearance_mm": 4.0,
+    "end_cap_thickness_mm": 6.0,
+    "accent_ring_width_mm": 6.0,
+    "accent_ring_depth_mm": 3.0,
+    "output_side_sign": [1, 1, -1, 1, 1, 1],
+    "drum_chamfer_mm": 4.0,
+    "cap_chamfer_mm": 2.0,
+    "hub_chamfer_mm": 4.0
+  },
+  "links": {
+    "base": {"foot_r": 82.0, "foot_h": 12.0, "foot_chamfer": 4.0, "column_r": 62.0, "band_z0": 20.0, "band_z1": 26.0, "column_top_r": 50.0},
+    "shoulder": {"cap_r": 45.0, "cap_h": 22.0, "cap_chamfer": 6.0, "post_half_w": 32.0, "post_y0": -82.0, "post_y1": -20.0, "post_chamfer": 10.0},
+    "upper_arm": {"hub_r": 38.0, "hub_t": 44.0, "bar_half_w": 22.0, "bar_half_h": 22.0, "bar_chamfer": 8.0},
+    "forearm": {"hub_r": 38.0, "hub_t": 44.0, "bar_half_w": 22.0, "bar_half_h": 22.0, "bar_chamfer": 8.0, "tube_len": 80.0},
+    "wrist1": {"neck_w": 34.0, "neck_h": 52.0, "neck_gap": 30.0, "neck_chamfer": 9.0},
+    "wrist2": {"hub_r": 32.0, "hub_t": 34.0, "bar_half_w": 17.0, "bar_half_h": 17.0, "bar_chamfer": 6.0, "tube_len": 86.0},
+    "tool": {"flange_r": 28.0, "flange_t": 10.0, "flange_chamfer": 2.0,
+             "interface_from": {"gripper_params": "../kmjh-gripper-v1/parameters.json", "ledger": "../calibration/print-fits.json", "material": "PLA"},
+             "screw_hole_extra_depth": 1.0,
+             "screw_hole_min_floor": 1.0,
+             "limits_note": "검토 MP9-B1: 구멍 깊이 ≤ flange_t − screw_hole_min_floor · 구멍이 돌기 밖(pcd/2 − d/2 > 돌기 반지름) · 모따기 안(pcd/2 + d/2 < flange_r − flange_chamfer) · 원장 재료 = 그리퍼 fits_from.material 을 생성기와 검사기가 따로 단언. 깊이의 원천인 그리퍼 screws.arm_m3.length 는 그리퍼 쪽 표기로 잠정(「length set when the arm side is designed」) — 나사 길이를 정하면 이 깊이도 바뀐다",
+             "interface_note": "MP9 2 단계(2026-10-28 · 계획 051): 옛 민트 고리(Ø40 × 4 · ring_r 20 · ring_t 4)를 그리퍼 규격 돌기로 바꿈. 돌기(바디 이름 LINK6_TOOL_RING 그대로) 지름 = 그리퍼 layout.recess_dia · 높이 = recess_depth · 플랜지 인서트 구멍 넷 지름 = 원장 insert_hole_dia · 원 = arm_screw_pcd · 각 = arm_screw_phase_deg(링크 6 지역 y 에서 z 쪽) · 깊이 = screws.arm_m3.length − (base_top − arm_screw_cbore[1]) + screw_hole_extra_depth — 숫자는 그 두 파일에만 둔다"}
+  },
+  "marks": {
+    "emboss_mm": 0.8,
+    "cap_slash": {"height": 24.0, "width": 14.0, "joints": [2, 3, 4, 5, 6],
+                  "shift_link_mm": {"4": [0, 6, 0]}, "shift_note": "J4's end cap faces the forearm bar (link 3, y -62 .. -18): the slash moves 6 mm toward +y so no part of it is buried in the bar"},
+    "logo": {"link": 2, "face": "-y (toward the J2 output side, seen from the front)", "cap_height": 13.0, "center_x": 89.0,
+             "keep_clear_of_j2_drum_x": 52.0, "note": "KMJH letters drawn by the author from the user's brand image as polygons (kmjh_logo.py) - not an original logo file"},
+    "hub_caps": "navy disc (1.0 proud, radius = hub radius - hub chamfer - 2) + mint slash on the outer faces of the shoulder, elbow and wrist hubs",
+    "bar_end_cut": "forearm and wrist bars end beside the next joint's motor can: the part outside the can is cut at 45 deg (meets the can inside radius RC - 0.5)"
+  },
+  "notes": [
+    "Exterior bodies are solid envelopes like v2: wall thickness, cavities, fasteners and reducers are not designed here.",
+    "Joint origins, axes, link lengths, drum diameters/depth, can radius and the display pose are v1/v2 values (unchanged) - only edge shapes, link cross-sections, colors and marks change.",
+    "v2 files (models/armold-mks-product-v2, src/cad/armold-mks-product-v2) are pinned by Codex's alignment checks and are not modified."
+  ]
+}

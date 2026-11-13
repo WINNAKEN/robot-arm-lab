@@ -1,0 +1,17 @@
+{
+  "canonical": "robot_arm.urdf",
+  "files": {
+    "asset-ledger.json": "c618fe72557dac55d15be952c4d5e373eed7ae4e37c0a4d5b3da6953a2b5cd91",
+    "meshes/Base.stl": "0bf034bca79f21f3d5aa006eda0c80bc855b9a4be61e12315a22e1309f7c0915",
+    "meshes/KG1.stl": "8f1b1becffc2694215f4cd686fd811444f7c95bfcca9fc2f58201c697aec3067",
+    "meshes/Link1.stl": "aed7c1a3596737f3373a3ba4d084eac518c8d7da7b2eea5cb20a0217320e0467",
+    "meshes/Link2.stl": "f8ac751136fb5473b9eda01c399de6006704e16ab9ec8fd863be95fbc93bc538",
+    "meshes/Link3.stl": "0158fba4e04ab88dda47e6956f9c5785bb98b484f15dc42e918363c3b1873dd4",
+    "meshes/Link4.stl": "b0fa1cd99fedee9eec7aa46365211964f6675fc517da2a8d4d97333353db30bf",
+    "meshes/Link5.stl": "ec89581e32143ca244d15181b7fb7d8def245c9fc6a6382a25d9f2ea578fc7ab",
+    "meshes/Link6.stl": "84eae4dc1219e93544bcfb31589ce14b25ad4129701f08548bcd102245d0295f",
+    "provenance.json": "716d6e9b810218f55300ddb64b2dcb4a5b637a61648ca5b042fdda53fced9138",
+    "README.md": "94da10d24d4fde70c1c8e139593434064d896134d0dfcf6c9b467e54d31ca502",
+    "robot_arm.urdf": "a26817eabb553021c1c1518f92296d1cb4a458410b104a3158b356471f713eee"
+  }
+}

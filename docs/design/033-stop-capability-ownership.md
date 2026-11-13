@@ -1,0 +1,73 @@
+> 개발 이력: 작성 당시의 계획·결과입니다. 현재 상태는 [STATUS](../STATUS.md)를 확인하세요. 원시 로그와 로컬 경로 일부는 공개본에서 제외했습니다.
+
+# 033 — Stop capability ownership / SC-20261025
+
+## Authorization and finite scope
+
+2026-10-25 user explicitly chose a fresh design separating screen-query cancellation from Stop capability lifetime, offline verification first, physical calibration unapproved and ring deferred. This is a new ownership design, not reopening032 for a local nonce patch. Preserve032 immutable plan/evidence and Git884ff6e source snapshot. All prior PA/Stop witnesses, startup/SB and firstfault ledgers persist. L2 maximum2 / L4 maximum2 declared before first review. Next additional independently measured + author-accepted same PA/Stop-capability lifecycle instance1 is sufficient for immediate PRODUCT EXHAUSTED even inside budget. Independent nonauthor classification/union/landing is mandatory. External-family review remains NOT_RUN under prior central block, no bypass.
+
+This unit seeks only actual client Stop-capability lifetime acceptance against existing actual Owner. It does NOT claim complete032 or030 PB acceptance: Ticket-delay, effective missingStop/missingFD browser controls, all runtime phase/deadline cases remain OPEN unless separately executed. New actual DOM hide/return/Stop is required for this lifetime claim; host-only evidence must be labeled if DOM cannot complete. All physical/normal/hardware/measured approvalsfalse; fixed100pulse restriction, calibration false, ring deferred. No hardware/flash/purchase/CAD/print/push.
+
+## Actual failure and unchanged server boundary
+
+032 actual production JS hide→visible loses the sole handoff id; actualOwner at6419 ticket0 Stop Phase-rejects, then internally grants by6900, lease_until7600. Original29 positive stops6419, attempts0. New Stop identity must exist independently before the first potentially accepted send and outlive local interest cancellation, receipt adoption and failed transport.
+
+Existing actualOwner transfer_stop authenticates original principal+boot+axis+nonce, initial generation window, and Pending/Granted in expected RunChecking/Run. Stops bypass normal request replay, not authentication. Server rejects mismatched identity. Keep this admission policy and Owner/Gate/CAN/HTTP code UNCHANGED. Legacy unbound old-generation Stop limitation remains OPEN. A retained key does not grant movement or waive server checks.
+
+A later duplicate Stop can Phase-reject if the first Stop already executed and the client has not yet observed terminal status. Do not call this remote Stop failure when the server already stopped, or assert idempotent legacy Stop. Preserve the key until actual status resolves uncertainty. Test both dropped-before-delivery (second Stop must reach live reservation) and lost-after-acceptance (server stop preserved, no grant; later terminal observation retires key). No automatic retry or automatic remote Stop on hide.
+
+## Ownership model
+
+Separate four lifetimes: (1) movement authority/lease/epoch, (2) cancellable result observer/handoff, (3) numeric request revision, (4) immutable StopBinding for possibly-live server reservation. StopBinding stores origin boot, initial generation, axis, nonce, origin sessionEpoch and credential, plus unique local object identity. Store credentials in memory only, never DOM/log/storage; no movement reads this binding as authorization.
+
+Creation: after local validation and actual request sequence assignment, BEFORE invoking send(handoff-acquire). Bind id to exact wire.request. Only one outstanding binding; new transfer and legacy handoff blocked while it exists. Failed/rejected/unknown send retains binding conservatively; phase may still be initial Boot, where exact current-generation Stop remains applicable. No local elapsed-time expiry of binding: server can renew after adoption and unknown delivery cannot be resolved by a client timer.
+
+Movement adoption may cancel only the observer. It leaves StopBinding intact. Once normal authority is invalidated after hide/stale/error/disconnect, retaining StopBinding cannot restore or renew it. Ordinary actions after observer cancellation are blocked while binding unresolved; ordinary actions are allowed only for the original currently authenticated session with an active observer, or an already adopted normal lease. Stop always has independent lane and does not release an outstanding normal busy flag.
+
+Transport disconnect invalidates normal authority/observer and clears normal credential/snapshot, but retains binding's origin credential solely for explicit Stop and authenticated read-only status recovery. It increments sessionEpoch to fence old responses. Explicit new pairing may create a new normal credential but does not erase or replace unresolved binding; all movement remains blocked because the new session does not own the binding. Manual Stop continues using origin credential. Once terminal or a new boot is authentically observed, the binding may retire and the new session follows existing ordinary policy. No background pairing or automatic reacquire.
+
+Stop emission: capture binding BEFORE cancelling other contexts. If present, serialize original boot/generation/axis/nonce with origin credential, lease0 and direction/unloaded0, independent of local fresh/snapshot/normal credential/busy. Stop does not consume binding; failed Stop also retains it. Without binding, preserve existing normal Stop semantics and requirements. A Stop reply alone is command acceptance, not stop_verified; do not retire on ACK or error. No key disclosure in UI.
+
+Retirement is exclusively based on a successful authenticated status response, not arbitrary update(s), local time, readyfalse, angle capability, network errors, Stop ACK or reservation receipt. The request must have started while this exact binding existed and the binding must still match when applied; old polls from before creation cannot retire it. Retire only if (a) same boot AND same selected axis AND phase exactly4 (Owner Terminal) AND generation >= initial generation using BigInt, or (b) authenticated response reports a different boot (old key cannot address new boot). Stopping/phase3 NEVER retires the binding or its recovery authentication, regardless of generation, stop_at or apparent acknowledgement. Preserve recovery polling through the final Terminal response, displaying stop_verified and manual_power_cut_required from that exact response BEFORE releasing the Stop-only identity. Terminal is not proof of physical safety; a fault/manual power cut outcome must remain visible in the retained final snapshot.
+
+This predicate consumes the Owner's authoritative global terminal state rather than guessing a single path's offsets. The actual phase() graph is one-way per boot: Boot -> Checking -> optional Run -> optional Stopping -> Terminal; failure can skip phases, terminal is absorbing and generation saturates at uint64max. Thus matching Terminal generation >= origin is enough; there is deliberately NO inferred +N offset/upper bound and NO > test that would reject saturation. Boot rejected/undelivered combined has no server reservation but still keeps the pre-send binding until actual Terminal/newboot observation. Direct faults, skipped intermediate status observations, preRun Stop (B+2 Stopping/B+3 Terminal), Run Stop (B+3 Stopping/B+4 Terminal), direct fault Terminal and saturated generation must all use the same rule. An authenticated matching Terminal with lower generation than origin cannot retire it. A wrong axis or phase cannot retire it on the same boot. Different authenticated boot is a separate invalidation case, not physical Stop confirmation.
+
+Order status polls by local issuance serial plus sessionEpoch; ignore older completions after a newer poll has been applied. Capture selected credential and binding object. Recovery status uses normal credential if present, otherwise retained binding credential. A new pairing/session fences old poll responses. An old poll issued before creation can update ordinary snapshot under existing rules but cannot retire a subsequently created binding. Use exact BigInt server generations, never numeric coercion. No caller injection of a status/boolean clears binding. Server credential auth failure remains unresolved key/error; no invented revocation.
+
+## Lifecycle table
+
+| Event | Observer / movement | StopBinding |
+|---|---|---|
+| Send combined before ACK | live observer / no normal grant | install immutable exact identity first |
+| hide→visible, stale, local clear, angle cancel, observer1147 timeout | cancel observer + movement as existing | retain |
+| expected Boot→Checking→Run / readyfalse / calibration capability | preserve/cancel observer per existing rules | retain |
+| granted receipt / normal renew / move | adopt valid existing normal lease only | retain |
+| query reject/malformed/late ACK | no authority restoration | retain |
+| Stop before ACK, while query/busy, repeated Stop | observer/movement cancelled; busy not stolen | retain until status resolution |
+| send rejection or loss before/after delivery | no automatic retry/renew | retain |
+| offline/disconnect | clear normal credentials/observer/lease; fence responses | retain Stop-only auth and readonly recovery |
+| pair success/failure/same-boot new session | no old context restoration; movement blocked | retain origin binding |
+| authenticated matching phase4 Terminal / changed boot status issued after binding | ordinary invalidation rules | retire exact binding only |
+| page close/process restart | memory lost; cannot promise remote cancellation | server expiry protection only; no persistence added |
+
+## Implementation ownership
+
+Production: `src/firmware/components/robot_phone/web/app.js` and minimal explanatory/status/Stop-actionability text in same web/index.html. Stop button is enabled if there is a retained binding even without normal credential/snapshot, but hidden page never auto-sends. New files only `src/firmware/tests/stop_capability/`, `.dev/stop-capability-evidence/`, this plan; closeout indexes HANDOFF/SESSION/BACKLOG/LESSONS/ARCHITECTURE. No other production/test files are patched, especially032 originals, CAD/foreign dirty files. Existing app.js old version stays in predecessor-app.js and Git884ff6e. Baseline captures foreign working-tree modifications; do not revert/stage them.
+
+## Acceptance and effective controls
+
+A. Actual production JS: install-before-send; hold ACK + hide/return + explicitStop exactkey; clear/timeout/malformed query/expected phase/axis update/normaladoption/readyfalse preserve key; failed-before/failed-after Stop then explicitStop; disconnect Stop with no snapshot/normalcredential; pair changes origin remains; late ACK/error can't restore authority; before-binding status or stale out-of-order status cannot retire; exact matching phase4 Terminal/differentboot retires; same-boot wrong axis, lower generation or any phase other than4 does not; Stopping preserves recovery auth through actual final verification; include rejected/undelivered Boot, skipped Checking/Run, directFault and saturated generation cases; Stop bypasses ordinarybusy and never releases it. No read of binding renews/acquires/moves. Check no secret in DOM storage.
+
+B. Actual JS -> actual compiled032 Owner bridge: consume preserved public setup prefix only through accepted combined6379 (do not inject lease/Acquire/Ready). In actual producer send combined body generated by normal JS with exact recorded sequence/generation; held ACK, local lifecycle events, actual Stop body into compiledOwner. Original exact public setup sequence is fixture, not new browser operation. Check stop_at6419/nonzero, internal attempts0 through6900, FD0, origin auth preserved. Additional granted-before-Stop case obtains actual grant via core stepping then retained Stop must stop, attempts1/no moves, no renew. Wrong nonce/credential/axis/boot/generation controls must deny, without mutating server. Dropped-before and lost-after delivery scenarios record actual outcomes. Do not claim 250ms/browser behavior from this test.
+
+C. Actual Chromium DOM visibility event hide→visible and explicit Stop through existing loopback HTTP + actualOwner fixture at production250ms/50ms intervals, credentials not injected by test. Reuse032 setup/harness in a new test copy with truthful source identity checks; select stable setup read-only slots as before and disclose that conditional fixture. Exact Stop key/actualStop/attempts0 is target. If setup fails, preserve attempt and mark DOM NOT_ACCEPTED rather than serial phase hunting. No claims to full PB closure.
+
+D. Effective behavioral controls: predecessor productionJS must fail new hide/return Stop assertion while new producer passes with same input; a clear-binding-on-Stop/failure mutant must compile/parse then fail repeated-Stop retention; a permissive terminal-retirement mutant must fail before-binding/axis/generation stale status case. Record positive before/after. Old test expecting ticket0 in predecessor reproduction is historical only and must not be misreported as the new acceptance test.
+
+E. Regression: existing032 native2552 runner, productionJS19, legacyJS136, original028 bridge or explicitly preserved bounded copy116, phone UI/HTTP/runtime SDKstub and angle actual bridge tests relevant to app.js. Distinguish original flaky runner failure from bounded copy. No target/hardware acceptance. Full browser/Ticket/deadline sweeps remain pending. Author may add bounded new tests only; classify any inherited test failure before changing tests, do not weaken or overwrite old evidence.
+
+Freeze scope/hashes before independent L4. Reviewer must read actual consumers, reproduce new cancellation boundaries, assess existing PA witnesses and classify findings independently, not approve based on assertion totals. Any new accepted PA/Stop-lifecycle instance triggers existing sufficient-next1 stop and user disposition. Closeout records exact PASSED/FAILED/NOT_RUN boundaries and preserves all prior failed candidates and foreign modeling edits.
+
+## R1 disposition / final R2 input
+
+L2R1 BLOCK7/2 accepted: SC-L2-R1-1 offset-specific generation omission; SC-L2-R1-2 premature Stopping recovery-auth retirement. Original plan frozen in evidence/plan-r1.md, R1 receipt unchanged. No product has been changed. The new global Terminal-only predicate replaces the faulty offsets rather than adding another path-specific exception. Next additional independently supported+author-accepted terminal-retirement/recovery-completion instance1 sufficient for EXHAUSTED, alongside inherited actual PA/Stop threshold; no reset. Final L2R2 is2/2.

@@ -1,0 +1,212 @@
+{
+ "checks": {
+  "every_part_watertight": true,
+  "every_part_positive_volume": true,
+  "every_part_one_shell_no_cavity": true,
+  "every_part_on_the_bed": true,
+  "plate_shells_equal_parts": true,
+  "plate_inside_h2d_profile": true,
+  "min_material_at_least_1_2_mm": true
+ },
+ "parts": [
+  {
+   "body": "C1_NEMA17_PLATE_1",
+   "watertight": true,
+   "volume_mm3": 5035.49,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    46.0,
+    46.0,
+    3.0
+   ]
+  },
+  {
+   "body": "C1_NEMA17_PLATE_2",
+   "watertight": true,
+   "volume_mm3": 5019.28,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    46.0,
+    46.0,
+    3.0
+   ]
+  },
+  {
+   "body": "C1_NEMA17_PLATE_3",
+   "watertight": true,
+   "volume_mm3": 5003.64,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    46.0,
+    46.0,
+    3.0
+   ]
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_1",
+   "watertight": true,
+   "volume_mm3": 2217.0,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    29.992,
+    38.0,
+    5.0
+   ]
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_2",
+   "watertight": true,
+   "volume_mm3": 2199.4,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    29.992,
+    38.0,
+    5.0
+   ]
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_3",
+   "watertight": true,
+   "volume_mm3": 2181.77,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    29.992,
+    38.0,
+    5.0
+   ]
+  },
+  {
+   "body": "C2_BEARING_608_SEAT_4",
+   "watertight": true,
+   "volume_mm3": 2164.2,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    29.992,
+    38.0,
+    5.0
+   ]
+  },
+  {
+   "body": "C3_M3_HOLE_BLOCK",
+   "watertight": true,
+   "volume_mm3": 15003.89,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    64.0,
+    26.0,
+    10.0
+   ]
+  },
+  {
+   "body": "C4_SLIP_BOSS_40",
+   "watertight": true,
+   "volume_mm3": 5276.69,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    47.991,
+    47.999,
+    8.0
+   ]
+  },
+  {
+   "body": "C4_SLIP_RING_1",
+   "watertight": true,
+   "volume_mm3": 1570.32,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    45.992,
+    45.999,
+    4.0
+   ]
+  },
+  {
+   "body": "C4_SLIP_RING_2",
+   "watertight": true,
+   "volume_mm3": 1519.32,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    45.992,
+    45.999,
+    4.0
+   ]
+  },
+  {
+   "body": "C4_SLIP_RING_3",
+   "watertight": true,
+   "volume_mm3": 1468.04,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    45.992,
+    45.999,
+    4.0
+   ]
+  },
+  {
+   "body": "C5_D_HOLE_PLATE",
+   "watertight": true,
+   "volume_mm3": 4923.66,
+   "shells": 1,
+   "min_z_mm": -0.0,
+   "size_mm": [
+    60.0,
+    18.0,
+    5.0
+   ]
+  },
+  {
+   "body": "C5_D_PIN_6_1",
+   "watertight": true,
+   "volume_mm3": 503.26,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    20.0,
+    5.999,
+    5.0
+   ]
+  },
+  {
+   "body": "C5_D_PIN_6_2",
+   "watertight": true,
+   "volume_mm3": 503.26,
+   "shells": 1,
+   "min_z_mm": 0.0,
+   "size_mm": [
+    20.0,
+    5.999,
+    5.0
+   ]
+  }
+ ],
+ "plate": {
+  "shells": 15,
+  "size_mm": [
+   248.996,
+   236.999,
+   10.0
+  ],
+  "volume_mm3": 54589.2
+ },
+ "min_material_mm": 2,
+ "bed_profile_mm": [
+  350.0,
+  320.0,
+  325.0
+ ],
+ "not_checked": [
+  "label legibility (engraved, 0.6 mm deep, ≥ 3 mm tall — backup: dots and position)",
+  "actual printed fits (user, after printing — README record sheet)"
+ ]
+}

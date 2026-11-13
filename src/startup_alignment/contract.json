@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "worker_sha256": "00bfbf56e4048175b501946b5604b9abcbfeea856ec116a34f65977940ae642f",
+  "asset_path": "src/cad_alignment/alignment.py",
+  "asset_sha256": "5e3b9168741b87689f4f35b722f760841f9f4521dd4eac47a3a38f32b07e6cc7",
+  "core_path": "src/joint_frames/frames.py",
+  "core_sha256": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46",
+  "approval_path": ".dev/joint-frames-evidence/frozen-r2-manifest.json",
+  "approval_sha256": "43d1153d75917a96e8ded6f313e4314846766f8cbb67f818670b095c41ff8422",
+  "receipt_path": ".dev/joint-frames-evidence/l4-r2.md",
+  "receipt_sha256": "fdd4030257d77b51e9077d1e8cbd1425dd036a70f9ffa4be13ae96e3ba5f5138",
+  "accepted_run": "9921dbd274204f93956849385affe980",
+  "kin_path": "models/armold-mks-concept-v1/kinematics.json",
+  "inputs": {
+    "docs/design/021-joint-frames-and-zero-transform.md": 1048576,
+    "src/joint_frames/frames.py": 1048576,
+    "src/joint_frames/README.md": 1048576,
+    "src/joint_frames/run_checks.py": 1048576,
+    "src/joint_frames/test_frames.py": 1048576,
+    "outputs/joint-frames-v1/current.json": 1048576,
+    "outputs/joint-frames-v1/runs/9921dbd274204f93956849385affe980/frames.json": 1048576,
+    "outputs/joint-frames-v1/runs/9921dbd274204f93956849385affe980/input.json": 1048576,
+    "outputs/joint-frames-v1/runs/9921dbd274204f93956849385affe980/manifest.json": 1048576,
+    "models/armold-mks-concept-v1/kinematics.json": 1048576,
+    "models/armold-mks-product-v2/armold-type-mks-product-v2.solidcraft": 8388608,
+    "models/armold-mks-product-v2/build-commands.json": 1048576,
+    ".dev/joint-frames-evidence/frozen-r2-manifest.json": 1048576,
+    ".dev/joint-frames-evidence/l4-r2.md": 1048576,
+    "src/cad_alignment/alignment.py": 1048576
+  }
+}

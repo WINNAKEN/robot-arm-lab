@@ -1,0 +1,89 @@
+{
+  "format": "printforge-print-prep-report",
+  "version": 1,
+  "verdict": "ready",
+  "reason": null,
+  "detail": null,
+  "model": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\bench-prep-v1\\parts_tray.stl",
+    "sha256": "95337ea543b508b83806d331e8c3d43b7b4b283511dc1bc6c514ae3731501e67",
+    "triangles": 28,
+    "size_mm": [
+      90.0,
+      60.0,
+      12.0
+    ],
+    "min_z_mm": 0.0
+  },
+  "studio": {
+    "command": [
+      "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe"
+    ],
+    "version": "02.08.02.61",
+    "version_verified": true
+  },
+  "profiles": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "limits": {
+      "area_x_mm": 350.0,
+      "area_y_mm": 320.0,
+      "height_mm": 325.0
+    },
+    "settings_sha256": {
+      "machine": "57e4d59f3307183fba60e28c68bad1a0dd8867ce09bf41db4f148a1db4f84747",
+      "process": "a18199f1db31fed4fb62979a065ed2b9825b3d243fdae223660813a3514fc0dc",
+      "filament": "c2ecb2a0d92487b3009d70ec98d756ceb4934ff44f69fe2ee5b49d00c0d039dd"
+    }
+  },
+  "plate": {
+    "requested": "Textured PEI Plate",
+    "used": "Textured PEI Plate"
+  },
+  "support": {
+    "mode": "auto",
+    "advised_by_studio": false,
+    "enabled": false
+  },
+  "runs": {
+    "plain": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 1.1,
+      "numbers": {
+        "print_time_s": 1605,
+        "filament_g": 18.81,
+        "filament_m": 6.21,
+        "support_generated": false,
+        "max_z_mm": 12.0
+      }
+    },
+    "support": null,
+    "project": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 0.9,
+      "numbers": null
+    }
+  },
+  "estimate": {
+    "print_time_s": 1605,
+    "filament_g": 18.81,
+    "filament_m": 6.21,
+    "support_generated": false,
+    "max_z_mm": 12.0
+  },
+  "outputs": {
+    "project": "parts_tray.bambu.3mf",
+    "preview": "preview.png"
+  }
+}

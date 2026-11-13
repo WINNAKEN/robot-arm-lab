@@ -1,0 +1,1035 @@
+{
+ "limit_deg": 170.0,
+ "floor_clear_mm": 5.0,
+ "overlap_mm3": 0.05,
+ "near_mm": 2.0,
+ "mesh_status": {
+  "BASE_FOOT": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "BASE_COLUMN": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "BASE_LIGHT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J1_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J1_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK1_SHOULDER_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK1_POST": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J2_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J2_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J2_END_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J2_CAP_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_SHOULDER_HUB": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_SHOULDER_HUB_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_SHOULDER_HUB_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_UPPER_BAR": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J3_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J3_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J3_END_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J3_CAP_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_LOGO_K": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_LOGO_K_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_LOGO_M": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_LOGO_J": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK2_LOGO_H": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK3_ELBOW_HUB": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK3_ELBOW_HUB_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK3_ELBOW_HUB_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK3_FOREARM_BAR": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J4_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J4_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J4_END_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J4_CAP_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK4_NECK": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J5_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J5_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J5_END_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J5_CAP_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK5_WRIST_HUB": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK5_WRIST_HUB_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK5_WRIST_HUB_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK5_WRIST_BAR": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J6_MODULE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J6_ACCENT_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J6_END_CAP": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "J6_CAP_SLASH": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK6_TOOL_FLANGE": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  },
+  "LINK6_TOOL_RING": {
+   "manifold": "Error.NoError",
+   "watertight": true
+  }
+ },
+ "poses": [
+  {
+   "name": "display",
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "delta_from_display_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 47,
+   "overlaps": [
+    {
+     "a": "J6_MODULE",
+     "b": "LINK6_TOOL_FLANGE",
+     "links": [
+      5,
+      6
+     ],
+     "mm3": 0.004029
+    },
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.003933
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.002374
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.001034
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000418
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000364
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000262
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000138
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 4.8e-05
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 2.1e-05
+    },
+    {
+     "a": "J2_ACCENT_RING",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 4e-06
+    }
+   ],
+   "max_overlap_mm3": 0.004029,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 88.1574478149414,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "home",
+   "q_deg": [
+    0.0,
+    -90.0,
+    90.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_from_display_deg": [
+    -15.0,
+    -40.0,
+    20.0,
+    -15.0,
+    -25.0,
+    10.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 21,
+   "overlaps": [
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.003514
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.002488
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.00094
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000198
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000174
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000158
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 5.3e-05
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 4.5e-05
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 3.1e-05
+    }
+   ],
+   "max_overlap_mm3": 0.003514,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 114.0,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "reach-up",
+   "q_deg": [
+    -20.0,
+    -80.0,
+    25.0,
+    0.0,
+    -15.0,
+    0.0
+   ],
+   "delta_from_display_deg": [
+    -35.0,
+    -30.0,
+    -45.0,
+    -15.0,
+    -40.0,
+    10.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 40,
+   "overlaps": [
+    {
+     "a": "J6_MODULE",
+     "b": "LINK6_TOOL_FLANGE",
+     "links": [
+      5,
+      6
+     ],
+     "mm3": 0.022117
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.002927
+    },
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.002741
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.001141
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000651
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000598
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000448
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000255
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 3.7e-05
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 3e-05
+    },
+    {
+     "a": "J2_ACCENT_RING",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 5e-06
+    }
+   ],
+   "max_overlap_mm3": 0.022117,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 114.0,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "pick",
+   "q_deg": [
+    -35.0,
+    -50.0,
+    75.0,
+    0.0,
+    65.0,
+    30.0
+   ],
+   "delta_from_display_deg": [
+    -50.0,
+    0.0,
+    5.0,
+    -15.0,
+    40.0,
+    40.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 46,
+   "overlaps": [
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.006596
+    },
+    {
+     "a": "J6_MODULE",
+     "b": "LINK6_TOOL_FLANGE",
+     "links": [
+      5,
+      6
+     ],
+     "mm3": 0.006593
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.005999
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.003198
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000773
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.00053
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000516
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 6e-05
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 3.9e-05
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 3.3e-05
+    }
+   ],
+   "max_overlap_mm3": 0.006596,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 36.266539467877635,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "side-reach",
+   "q_deg": [
+    80.0,
+    -20.0,
+    30.0,
+    -40.0,
+    35.0,
+    45.0
+   ],
+   "delta_from_display_deg": [
+    65.0,
+    30.0,
+    -40.0,
+    -55.0,
+    10.0,
+    55.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 38,
+   "overlaps": [
+    {
+     "a": "J6_MODULE",
+     "b": "LINK6_TOOL_FLANGE",
+     "links": [
+      5,
+      6
+     ],
+     "mm3": 0.007596
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.004373
+    },
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.002207
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.001513
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.001145
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.001106
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000376
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000171
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 6.7e-05
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 1.9e-05
+    },
+    {
+     "a": "J2_ACCENT_RING",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 7e-06
+    }
+   ],
+   "max_overlap_mm3": 0.007596,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 69.8269062919415,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "wave",
+   "q_deg": [
+    -60.0,
+    -70.0,
+    40.0,
+    60.0,
+    -50.0,
+    0.0
+   ],
+   "delta_from_display_deg": [
+    -75.0,
+    -20.0,
+    -30.0,
+    45.0,
+    -75.0,
+    10.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 50,
+   "overlaps": [
+    {
+     "a": "J6_MODULE",
+     "b": "LINK6_TOOL_FLANGE",
+     "links": [
+      5,
+      6
+     ],
+     "mm3": 0.013742
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.008262
+    },
+    {
+     "a": "J4_MODULE",
+     "b": "LINK4_NECK",
+     "links": [
+      3,
+      4
+     ],
+     "mm3": 0.004446
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.001532
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.001051
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000924
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.000321
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000135
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 4.7e-05
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 1.7e-05
+    },
+    {
+     "a": "J2_ACCENT_RING",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 7e-06
+    }
+   ],
+   "max_overlap_mm3": 0.013742,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 114.0,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  },
+  {
+   "name": "zero",
+   "q_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_from_display_deg": [
+    -15.0,
+    50.0,
+    -70.0,
+    -15.0,
+    -25.0,
+    10.0
+   ],
+   "within_limits": true,
+   "pairs_checked": 21,
+   "overlaps": [
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_HUB",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.002488
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_ELBOW_HUB",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000912
+    },
+    {
+     "a": "J3_MODULE",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 0.000448
+    },
+    {
+     "a": "J2_MODULE",
+     "b": "LINK2_SHOULDER_HUB",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 0.00018
+    },
+    {
+     "a": "J5_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 0.000174
+    },
+    {
+     "a": "J3_ACCENT_RING",
+     "b": "LINK3_FOREARM_BAR",
+     "links": [
+      2,
+      3
+     ],
+     "mm3": 4.5e-05
+    },
+    {
+     "a": "J5_ACCENT_RING",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      4,
+      5
+     ],
+     "mm3": 3.1e-05
+    },
+    {
+     "a": "J2_ACCENT_RING",
+     "b": "LINK2_UPPER_BAR",
+     "links": [
+      1,
+      2
+     ],
+     "mm3": 1e-06
+    }
+   ],
+   "max_overlap_mm3": 0.002488,
+   "near_non_adjacent": [],
+   "moving_min_z_mm": 114.0,
+   "base_min_z_mm": 0.0,
+   "ok": true
+  }
+ ],
+ "mesh_all_manifold": true,
+ "all_ok": true
+}

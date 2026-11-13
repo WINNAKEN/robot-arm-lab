@@ -1,0 +1,15 @@
+{
+  "date_kst": "2026-11-12",
+  "kind": "PRIVACY_MINIMIZED_SUMMARY_OF_RECORDED_PHYSICAL_CAN_READ",
+  "axis_assignment": "J5 reported by user",
+  "app": "robot_can_reader144",
+  "app_version": "144.1",
+  "idf_version": "5.5.6",
+  "user_menu": {"Mode": "CR_vFOC", "CanID": 1, "CanRate_bps": 500000, "Ma_mA": 800},
+  "request": {"CAN_id": 1, "data_hex": "32 33", "count": 1, "automatic_retry": false},
+  "response": {"CAN_id": 1, "data_hex": "32 00 00 33", "checksum_valid": true, "speed_rpm": 0},
+  "after_query": {"CAN_driver_uninstalled": true, "USB_port_closed": true},
+  "motion_enable_CAL_home_or_configuration_commands_sent": 0,
+  "limitations": ["one speed snapshot", "not sustained standstill proof", "not torque-off proof", "not mechanical-zero or CAL-validity proof", "not hardware motion or stop acceptance"],
+  "raw_evidence": "Retained locally; not redistributed with device identifiers or flash contents."
+}

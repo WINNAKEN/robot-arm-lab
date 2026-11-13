@@ -1,0 +1,216 @@
+{
+ "what": "J5 모듈 질량 · 무게중심 어림(모듈 좌표 · z = J5 축 · 0 = 모터 앞면 · 링크 4 점 = (x + 78, z − 21, −y))",
+ "total_mass_g": 662.1,
+ "com_mm": [
+  -1.19,
+  -0.01,
+  -8.56
+ ],
+ "items": [
+  {
+   "name": "J5_STATOR_A",
+   "kind": "printed (J5)",
+   "mass_g": 46.73,
+   "com_mm": [
+    -30.91,
+    -0.14,
+    -12.43
+   ],
+   "source": "슬라이서(부품 하나 · 출력 방향) · STL 부피 중심"
+  },
+  {
+   "name": "J5_STATOR_B",
+   "kind": "printed (J5)",
+   "mass_g": 31.8,
+   "com_mm": [
+    20.73,
+    0.0,
+    -26.81
+   ],
+   "source": "슬라이서(부품 하나 · 출력 방향) · STL 부피 중심"
+  },
+  {
+   "name": "J5_REAR_COVER",
+   "kind": "printed (J5)",
+   "mass_g": 12.72,
+   "com_mm": [
+    -0.0,
+    -0.0,
+    -59.48
+   ],
+   "source": "슬라이서(부품 하나 · 출력 방향) · STL 부피 중심"
+  },
+  {
+   "name": "J5_OUTPUT_HUB",
+   "kind": "printed (J5)",
+   "mass_g": 10.31,
+   "com_mm": [
+    -0.0,
+    0.0,
+    48.37
+   ],
+   "source": "슬라이서(부품 하나 · 출력 방향) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 HOUSING_BASE",
+   "kind": "printed (MP6)",
+   "mass_g": 32.2,
+   "com_mm": [
+    0.0,
+    -0.0,
+    10.18
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 HOUSING_CAP",
+   "kind": "printed (MP6)",
+   "mass_g": 22.57,
+   "com_mm": [
+    -0.0,
+    -0.0,
+    31.67
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 RETAINER",
+   "kind": "printed (MP6)",
+   "mass_g": 5.76,
+   "com_mm": [
+    -0.0,
+    -0.0,
+    40.75
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 DISC_1",
+   "kind": "printed (MP6)",
+   "mass_g": 6.39,
+   "com_mm": [
+    0.7,
+    0.0,
+    11.65
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 DISC_2",
+   "kind": "printed (MP6)",
+   "mass_g": 6.39,
+   "com_mm": [
+    -0.7,
+    -0.0,
+    18.65
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 CARRIER",
+   "kind": "printed (MP6)",
+   "mass_g": 9.6,
+   "com_mm": [
+    -0.0,
+    -0.0,
+    31.61
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 OUTPUT_FLANGE",
+   "kind": "printed (MP6)",
+   "mass_g": 4.22,
+   "com_mm": [
+    0.0,
+    -0.0,
+    41.5
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 CAM_LOWER",
+   "kind": "printed (MP6)",
+   "mass_g": 1.12,
+   "com_mm": [
+    0.28,
+    0.02,
+    8.11
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 CAM_UPPER",
+   "kind": "printed (MP6)",
+   "mass_g": 1.08,
+   "com_mm": [
+    -0.35,
+    0.03,
+    20.55
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "MP6 WASHER",
+   "kind": "printed (MP6)",
+   "mass_g": 0.24,
+   "com_mm": [
+    -0.0,
+    -0.0,
+    22.75
+   ],
+   "source": "슬라이서(부품 하나 · 그대로 세움) · STL 부피 중심"
+  },
+  {
+   "name": "모터 + 드라이버(MKS SERVO42D CAN MT)",
+   "kind": "purchased",
+   "mass_g": 310.0,
+   "com_mm": [
+    0.0,
+    0.0,
+    -26.75
+   ],
+   "source": "모터 원장 mass_motor_with_driver (assumed) · 무게중심 = 앞면 ~ overall_length (measured) 가운데(어림)"
+  },
+  {
+   "name": "강철 다월 Ø4 × 28 (28) + Ø4 × 20 (6)",
+   "kind": "purchased",
+   "mass_g": 89.2,
+   "com_mm": [
+    0.0,
+    0.0,
+    15.0
+   ],
+   "source": "강 밀도 7.85 g/cm³ × 원기둥 부피(어림) · 무게중심 어림"
+  },
+  {
+   "name": "베어링 6808 + 6801 × 2 + 6800",
+   "kind": "purchased",
+   "mass_g": 45.0,
+   "com_mm": [
+    0.0,
+    0.0,
+    22.0
+   ],
+   "source": "어림(깊은 홈 얇은 판 베어링 대략 무게 — 판매처 · 카탈로그로 확인 안 함 · 받으면 잼)"
+  },
+  {
+   "name": "나사 · 인서트(M3 — 이 단위 16 + MP6 12(출력 플랜지 넷은 허브 나사로 바뀜 · 검토 R-12) · 인서트 12 + MP6 12)",
+   "kind": "purchased",
+   "mass_g": 26.8,
+   "com_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "source": "어림(강 M3 × 10 약 0.7 g · 황동 인서트 약 0.3 g)"
+  }
+ ],
+ "printed_mass_source": "printforge printprep(뱀부 스튜디오 · H2D 0.4 · 0.20 Standard · PLA Basic) — 부품 하나씩",
+ "parts_sha256": {
+  "J5_STATOR_A": "477a89f93de5124f580f3dc13a9bdf09f6979bd02b700e9664d8c3ece35c06a0",
+  "J5_STATOR_B": "f49b61dd91b1740288fd4695052f84d116c4d7d0c81eb22b7abea76f089e77a5",
+  "J5_REAR_COVER": "2343d7d69e7916b5678e4083f121c6cab5f9a09a03ed668c14107f11b763d60d",
+  "J5_OUTPUT_HUB": "d57ecc6fc9f5bc50a61c7812b1cff2257d40b5eb253f0eda68268fa6563970d2"
+ }
+}

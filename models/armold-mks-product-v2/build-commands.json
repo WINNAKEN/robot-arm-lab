@@ -1,0 +1,2658 @@
+{
+ "commands": [
+  {
+   "command": "document.metadata.set",
+   "params": {
+    "values": {
+     "project": "robot-arm-lab",
+     "part_number": "ARMOLD-TYPE-MKS-PRODUCT-V2",
+     "revision": "product-exterior-v2",
+     "description": "1:1 product exterior v2 on the v1 kinematics (display pose). Solid envelopes - NOT FOR FABRICATION."
+    }
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Base"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_FOOT_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      82.0
+     ],
+     [
+      12.0,
+      82.0
+     ],
+     [
+      12.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_FOOT",
+    "name": "BASE_FOOT_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_FOOT"
+    ],
+    "color": "#2b3138"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "BASE_FOOT",
+    "edges": [
+     [
+      82.0,
+      0.0,
+      12.0
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_COLUMN_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      0.0
+     ],
+     [
+      12.0,
+      62.0
+     ],
+     [
+      20.0,
+      62.0
+     ],
+     [
+      20.0,
+      59.0
+     ],
+     [
+      26.0,
+      59.0
+     ],
+     [
+      26.0,
+      58.0
+     ],
+     [
+      78.0,
+      50.0
+     ],
+     [
+      78.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_COLUMN",
+    "name": "BASE_COLUMN_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_COLUMN"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_LIGHT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      20.0,
+      59.0
+     ],
+     [
+      20.0,
+      62.0
+     ],
+     [
+      26.0,
+      62.0
+     ],
+     [
+      26.0,
+      59.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_LIGHT_RING",
+    "name": "BASE_LIGHT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_LIGHT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J1_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      45.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      12.0,
+      42.0
+     ],
+     [
+      18.0,
+      42.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J1_MODULE",
+    "name": "J1_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J1_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J1_MODULE",
+    "edges": [
+     [
+      45.0,
+      0.0,
+      78.0
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J1_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      42.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      18.0,
+      42.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J1_ACCENT_RING",
+    "name": "J1_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J1_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK1_SHOULDER_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      40.0,
+      45.0
+     ],
+     [
+      40.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK1_SHOULDER_CAP",
+    "name": "LINK1_SHOULDER_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK1_SHOULDER_CAP"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK1_SHOULDER_CAP",
+    "edges": [
+     [
+      43.466662183008076,
+      11.646857029613432,
+      136.0
+     ]
+    ],
+    "radius": 8.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK1_POST_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      114.0
+     ],
+     "x_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      0.0
+     ],
+     "y_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -32.0,
+     -82.0
+    ],
+    "p1": [
+     32.0,
+     -20.0
+    ],
+    "radius": 14
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 60.0,
+    "operation": "new",
+    "body_name": "LINK1_POST",
+    "name": "LINK1_POST_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK1_POST"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      52.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      12.0,
+      49.0
+     ],
+     [
+      18.0,
+      49.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_MODULE",
+    "name": "J2_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_MODULE",
+    "edges": [
+     [
+      4.658742811845373,
+      -17.38666487320323,
+      226.0
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      49.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      18.0,
+      52.0
+     ],
+     [
+      18.0,
+      49.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_ACCENT_RING",
+    "name": "J2_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_END_CAP",
+    "name": "J2_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_END_CAP",
+    "edges": [
+     [
+      23.552533104329388,
+      -87.89925019230522,
+      212.0
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_SHOULDER_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      38.0
+     ],
+     [
+      62.0,
+      38.0
+     ],
+     [
+      62.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK2_SHOULDER_HUB",
+    "name": "LINK2_SHOULDER_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_SHOULDER_HUB"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK2_SHOULDER_HUB",
+    "edges": [
+     [
+      -32.7765430562116,
+      9.852523004785677,
+      198.4259291680885
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK2_SHOULDER_HUB",
+    "edges": [
+     [
+      -44.16458104072251,
+      52.353259361504676,
+      198.4259291680885
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 22.0,
+    "height": 165.0,
+    "base": [
+     -10.35276180410083,
+     38.63703305156273,
+     174.0
+    ],
+    "axis": [
+     0.6208851530148457,
+     0.16636567534280192,
+     0.766044443118978
+    ],
+    "operation": "new",
+    "body_name": "LINK2_UPPER_TUBE",
+    "name": "LINK2_UPPER_TUBE_CYL"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_UPPER_TUBE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      45.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      12.0,
+      42.0
+     ],
+     [
+      18.0,
+      42.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_MODULE",
+    "name": "J3_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J3_MODULE",
+    "edges": [
+     [
+      64.489912409381,
+      35.91499119742897,
+      329.32277555052565
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      42.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      18.0,
+      42.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_ACCENT_RING",
+    "name": "J3_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_END_CAP",
+    "name": "J3_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J3_END_CAP",
+    "edges": [
+     [
+      50.77571689875393,
+      107.81544475544999,
+      324.82326228271984
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_ELBOW_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -62.0,
+      0.0
+     ],
+     [
+      -62.0,
+      38.0
+     ],
+     [
+      -18.0,
+      38.0
+     ],
+     [
+      -18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK3_ELBOW_HUB",
+    "name": "LINK3_ELBOW_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_ELBOW_HUB"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK3_ELBOW_HUB",
+    "edges": [
+     [
+      131.0467424466812,
+      -29.073254376107595,
+      336.10565270449587
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK3_ELBOW_HUB",
+    "edges": [
+     [
+      119.65870446217029,
+      13.427481980611406,
+      336.10565270449587
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 22.0,
+    "height": 80.0,
+    "base": [
+     112.79881205155036,
+     -11.186696620000415,
+     300.39733311463135
+    ],
+    "axis": [
+     0.9076733711903687,
+     0.24321034680169393,
+     -0.34202014332566866
+    ],
+    "operation": "new",
+    "body_name": "LINK3_FOREARM_TUBE",
+    "name": "LINK3_FOREARM_TUBE_CYL"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_FOREARM_TUBE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_MODULE",
+    "name": "J4_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_ACCENT_RING",
+    "name": "J4_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_END_CAP",
+    "name": "J4_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J4_END_CAP",
+    "edges": [
+     [
+      159.475956838653,
+      42.73145384709764,
+      319.3466656815381
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK4_NECK_PROFILE",
+    "plane": {
+     "origin": [
+      245.8584428955278,
+      65.87757122622996,
+      246.35815046917568
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -17.0,
+     -26.0
+    ],
+    "p1": [
+     17.0,
+     26.0
+    ],
+    "radius": 12
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 30.0,
+    "operation": "new",
+    "body_name": "LINK4_NECK",
+    "name": "LINK4_NECK_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK4_NECK"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_MODULE",
+    "name": "J5_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_ACCENT_RING",
+    "name": "J5_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_END_CAP",
+    "name": "J5_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J5_END_CAP",
+    "edges": [
+     [
+      329.95955147936877,
+      -12.769673958550356,
+      238.19638841591544
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      32.0
+     ],
+     [
+      52.0,
+      32.0
+     ],
+     [
+      52.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK5_WRIST_HUB",
+    "name": "LINK5_WRIST_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_HUB"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK5_WRIST_HUB",
+    "edges": [
+     [
+      320.830625379141,
+      96.19528490933662,
+      251.91352766224333
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK5_WRIST_HUB",
+    "edges": [
+     [
+      315.2377965974092,
+      128.69669095386604,
+      260.18267945350095
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 17.0,
+    "height": 86.0,
+    "base": [
+     294.5615214210495,
+     113.92752178605306,
+     234.34930400769485
+    ],
+    "axis": [
+     0.6594600396925665,
+     0.28994200701628453,
+     -0.6935748615802388
+    ],
+    "operation": "new",
+    "body_name": "LINK5_WRIST_TUBE",
+    "name": "LINK5_WRIST_TUBE_CYL"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_TUBE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_MODULE",
+    "name": "J6_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_ACCENT_RING",
+    "name": "J6_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_END_CAP",
+    "name": "J6_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J6_END_CAP",
+    "edges": [
+     [
+      360.50620597296603,
+      92.91802892596812,
+      217.61909811803937
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link6"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      28.0
+     ],
+     [
+      28.0,
+      28.0
+     ],
+     [
+      28.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK6_TOOL_FLANGE",
+    "name": "LINK6_TOOL_FLANGE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "color": "#2b3138"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "LINK6_TOOL_FLANGE",
+    "edges": [
+     [
+      430.5349086500507,
+      132.55164491292044,
+      129.19689283705074
+     ]
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_RING_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      28.0,
+      0.0
+     ],
+     [
+      28.0,
+      20.0
+     ],
+     [
+      32.0,
+      20.0
+     ],
+     [
+      32.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK6_TOOL_RING",
+    "name": "LINK6_TOOL_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK6_TOOL_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "occurrence.ground",
+   "params": {
+    "occurrence": "Base:1",
+    "grounded": true
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Base:1",
+    "b": "Link1:1",
+    "at": {
+     "point": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "name": "J1_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link1:1",
+    "b": "Link2:1",
+    "at": {
+     "point": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "name": "J2_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link2:1",
+    "b": "Link3:1",
+    "at": {
+     "point": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "name": "J3_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link3:1",
+    "b": "Link4:1",
+    "at": {
+     "point": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "z": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ]
+    },
+    "name": "J4_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link4:1",
+    "b": "Link5:1",
+    "at": {
+     "point": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "z": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ]
+    },
+    "name": "J5_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link5:1",
+    "b": "Link6:1",
+    "at": {
+     "point": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "z": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ]
+    },
+    "name": "J6_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "component.list",
+   "params": {
+    "compact": true,
+    "bodies": true
+   }
+  },
+  {
+   "command": "joint.list",
+   "params": {}
+  }
+ ]
+}

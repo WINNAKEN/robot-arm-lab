@@ -1,0 +1,539 @@
+{
+  "unit": 119,
+  "ssh_alias": "isaacpc",
+  "remote_root": "C:/isaacsim_remote/robot-arm-lab/119/runs",
+  "sdk": {
+    "ssh_alias": "isaacpc",
+    "isaac_root": "C:/isaacsim",
+    "isaac_version": "6.2.0-rc.14+release.52805.02189a84.gl",
+    "installation_record": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved",
+    "installation_prefix": "C:\\isaacsim_remote\\robot-arm-lab\\048\\runs\\e56d43dc7d3a41c484f6f37c15ec9045\\packages",
+    "installation_seal_sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a",
+    "installation_job_sha256": "36c2c31d0765554f3bb9e62a3a313a0f9da45efb8fc56a19d89eb50fce166729",
+    "installation_wheel_sha256": "625f752c7dd912eb8efade85daeb7a8119d620266852380d17d8f9e701b80bca",
+    "schema_version": 1,
+    "remote_root": "C:/isaacsim_remote/robot-arm-lab/053/runs",
+    "timeout_s": 600,
+    "steps": 10,
+    "rate_hz": 120,
+    "gravity": [
+      0,
+      0,
+      0
+    ],
+    "cap_Nm": [
+      3,
+      6,
+      5,
+      2,
+      2,
+      1
+    ],
+    "hardware_approved": false,
+    "calibration_approved": false,
+    "training": "NOT_RUN",
+    "ring_geometry": "DEFERRED",
+    "references": {
+      "lib/frames.py": {
+        "path": "src/joint_frames/frames.py",
+        "sha256": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46"
+      },
+      "lib/environment.py": {
+        "path": "src/simulation/contact_motion/environment.py",
+        "sha256": "6b1e7a1451feabf5f310ae18d32a9bae997cd56be73ed689eb91540e9d0d4c6c"
+      },
+      "lib/extract.py": {
+        "path": "src/simulation/isaac_import/extract_usd.py",
+        "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+      },
+      "data/model.usda": {
+        "path": "outputs/isaac-import-v1/asset/robot-arm-v2.usda",
+        "sha256": "117d94292c75e89b201e12606eafbcf24065c537c6f8308647562f9a0679f4db"
+      },
+      "data/golden.json": {
+        "path": "outputs/isaac-contact-v1/runs/501c7bfc27b6409b8351821408bff0de/retrieved/501c7bfc27b6409b8351821408bff0de/static.json",
+        "sha256": "94c57452b7b8c7120ac0de93ed688d97fd7521b4c5bf325928ffb8b081635cd5"
+      },
+      "data/kinematics.json": {
+        "path": "models/armold-mks-concept-v1/kinematics.json",
+        "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+      },
+      "data/assumptions.json": {
+        "path": "models/robot-arm-urdf-v1/assumptions.json",
+        "sha256": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5"
+      }
+    },
+    "sdk_files": {
+      "sitecustomize.py": {
+        "path": "C:/isaacsim/site/sitecustomize.py",
+        "sha256": "23e66d04b602b9eb316fcf12d2ae4af381ea2c7a2dc12afe018cc41943e2efeb"
+      },
+      "setup_python_env.bat": {
+        "path": "C:/isaacsim/setup_python_env.bat",
+        "sha256": "e1e4e6a0600760ee324f7d320d3569f08a7a391ef49667b5dc7c4fdd4a1f96ac"
+      },
+      "python.bat": {
+        "path": "C:/isaacsim/python.bat",
+        "sha256": "ead7a729c2c9d37a04f11c40e754e1f814127986e14d32953fcefc09d95d9871"
+      }
+    },
+    "stage_limits": {
+      "sdk_preflight": 1,
+      "robot_connection": 1
+    },
+    "numpy_root": "C:/isaacsim/extscache/omni.kit.pip_archive-0.0.0+187cf21b.wx64.cp312/pip_prebundle/numpy",
+    "scipy_root": "C:/isaacsim/exts/omni.pip.compute/pip_prebundle/scipy",
+    "warp_root": "C:/isaacsim/extscache/omni.warp.core-1.17.0+wx64/warp",
+    "frozen_stage_ledgers": [
+      "C:/isaacsim_remote/robot-arm-lab/052/runs/stage-ledger.json"
+    ]
+  },
+  "sdk_source_pins": [
+    {
+      "path": "C:/isaacsim/exts/isaacsim.asset.importer.urdf/pip_prebundle/isaacsim/asset/importer/urdf/impl/config.py",
+      "sha256": "d0ca4be870b67266bf16d5483adb1baa71a0b174678d0a9e59580ccc68b6c0a4"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.asset.importer.urdf/pip_prebundle/isaacsim/asset/importer/urdf/impl/converter.py",
+      "sha256": "d46f964be509ad4d4f55a534e665415b16ec52c534e2e9d33e657cad1f48a957"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.core.experimental.prims/isaacsim/core/experimental/prims/impl/articulation.py",
+      "sha256": "9a2b617077bb2171436465d0f6a6140949b506970810a247bf9553678aa6b374"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/create.py",
+      "sha256": "c353806b43dc44c0803adfca4c7850d3ea87161beae8823d59e11336d6170594"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/annotators.py",
+      "sha256": "6db00554c8a5d00d4a75b1ba2e207b3f3a8a57727f81565d8d5ea7d71abef370"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/orchestrator.py",
+      "sha256": "138b2ade7a735db39dd2bbfa72971191a3c43a8d26c098168ae2ee0f6bd3314e"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/scripts/annotators_default.py",
+      "sha256": "569e0da5d5405c6ab4f93161678f4334b9a4fc77b25e4ec21857657a435dbe7a"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.replicator.core-1.13.38+110.4.0.wx64.r.cp312/omni/replicator/core/tests/test_annotator_registry.py",
+      "sha256": "70bd57a33fec2652e01046e95a94c59c0539ce45ea6af572dde3f4e59606e13d"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.sensors.camera.ui/config/extension.toml",
+      "sha256": "73d02bbac4f38e24083152bd97c71f41a72057662531979512c9bfc8a2f4e69d"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.sensors.experimental.rtx/isaacsim/sensors/experimental/rtx/impl/camera_sensor.py",
+      "sha256": "c5fc373ec02b343d7e6cf97291b24629bae99048cab56ce32440efa752452371"
+    },
+    {
+      "path": "C:/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py",
+      "sha256": "e5db812e752cc415f969c464dfe7248bb4524eaa240ba556386d3a8007f36ce5"
+    },
+    {
+      "path": "C:/isaacsim/extscache/omni.physics.tensors-110.4.4+110.4.0.wx64.r.cp312.u7f4/omni/physics/tensors/api.py",
+      "sha256": "0da2ff6f94a8e5afffce6460f7b97b2f09d0423a3813149498cb88e96f60a3b6"
+    }
+  ],
+  "refs": {
+    "kernel.py": {
+      "path": "src/simulation/canonical_v4/kernel.py",
+      "sha256": "4a9fb954638c0032ef251371db17bfe2224f48de3d0bd2f2ffb798a9be3c01d6"
+    },
+    "numeric.py": {
+      "path": "src/simulation/canonical_v4/providers.py",
+      "sha256": "ee62c94af1b60976261ca0d7b8f99f58d1935556d25691c2b038f109b2641d63"
+    },
+    "policy.py": {
+      "path": "src/simulation/controller_baseline/session.py",
+      "sha256": "f23c04bd24626c4a5388e2a23af5f550251e6171d35e88d4b6fb5dd505947400"
+    },
+    "observer.py": {
+      "path": "src/simulation/controller_baseline/providers.py",
+      "sha256": "df9f0db0d24c778dfb619eff7186268ef2f50b5b4320700d95a01506800214df"
+    },
+    "extract.py": {
+      "path": "src/simulation/isaac_import/extract_usd.py",
+      "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+    },
+    "physics_reference.py": {
+      "path": "src/simulation/controller_baseline/physics.py",
+      "sha256": "72c0d2f5c9acc89f006b82512627165051741c9724faa55308701ac0512ebe56"
+    },
+    "prefix-seal.json": {
+      "path": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved/prefix-seal.json",
+      "sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a"
+    },
+    "sdk.py": {
+      "path": "src/simulation/clock_ready_resume_108/sdk.py",
+      "sha256": "f3d3dd3d3c7ff8aa2774689e135b64a3d85a61701a8e9a6810313bbdc6aa06cf"
+    },
+    "capture.py": {
+      "path": "src/simulation/clock_ready_resume_108/capture.py",
+      "sha256": "e4ca9607cb0b8a219928e7ccfabd9f50033b248e1f2d0ddb726c2892f492a5a7"
+    },
+    "init_boundary.py": {
+      "path": "src/simulation/clock_ready_resume_108/init_boundary.py",
+      "sha256": "c81385a4d86b5864ba36cd62dff9f2d648c31ff03798b52ad8dfccd5fb69848b"
+    },
+    "root_binding.py": {
+      "path": "src/simulation/clock_ready_resume_108/root_binding.py",
+      "sha256": "0a55c7479f335c244f4ef01b94337d077cce1a2230cc6c2f3ff1d7a39662e33b"
+    },
+    "winjob.py": {
+      "path": "src/simulation/blended_reference_trial_116/winjob.py",
+      "sha256": "2ca8c90616026a103eb41da18c33f34b012bcd56439cb39af967ea9bf2f683b0"
+    },
+    "support.json": {
+      "path": "outputs/mp18-isaac-119/A/support.json",
+      "sha256": "1aedfa74eb2314328d91115b2a34dfd971038330532eff5e772964a67d5c0ba5"
+    },
+    "workspace.json": {
+      "path": "outputs/mp18-isaac-119/A/workspace.json",
+      "sha256": "17951c190b6ef8849b87ecad287dbebfd83d24cd21ea38cf69749ae247f2ea6e"
+    }
+  },
+  "model_dir": "models/robot-arm-urdf-v4",
+  "model_pins": {
+    "README.md": {
+      "bytes": 6632,
+      "sha256": "677c8f18c8bfc728d4b8a794c269265668f7e0a5e7505644dfe419d1a73b9bca"
+    },
+    "asset-ledger.json": {
+      "bytes": 861882,
+      "sha256": "90a6def1ac9c99acdfe9359cdd76866f4c8e9a7db7e79a793b7f4f5e49e1d6e1"
+    },
+    "meshes/Base.stl": {
+      "bytes": 10712384,
+      "sha256": "cfd84fc903e955b4566d33f01811313a26d4d0fe0a391a4ac836cbe43d5004c6"
+    },
+    "meshes/KG1.stl": {
+      "bytes": 678284,
+      "sha256": "d5fd356916c7699f56ab0629b71da931bde6c92a37a9f950dfed8d22bf912bbd"
+    },
+    "meshes/KG1_A.stl": {
+      "bytes": 552584,
+      "sha256": "d84f7d66da786dcfbb1169f73cc998a30feddc268c34356277d7861bfa2f6384"
+    },
+    "meshes/KG1_B.stl": {
+      "bytes": 429484,
+      "sha256": "5945d60a8dbf087ec407b2a8c1a2a977e54cb93abb6f9771aa281b66d2db776a"
+    },
+    "meshes/KG1_R.stl": {
+      "bytes": 771484,
+      "sha256": "e29b54e0bab2da8161a8e02e3f54faf2f01aad7482ea5896c90150d6cb8a4884"
+    },
+    "meshes/Link1.stl": {
+      "bytes": 16390884,
+      "sha256": "9163c6535f01dfa8c86467c9c364cd23c44048e9bb26ae14dff6ed22fbeec365"
+    },
+    "meshes/Link2.stl": {
+      "bytes": 18899384,
+      "sha256": "f940c70cd488dd31f06f8d8d128662f83e7f902b23be3f7b3f4ce26c37493573"
+    },
+    "meshes/Link3.stl": {
+      "bytes": 13369384,
+      "sha256": "46527211804ec9081fde47a45b42fb3881efcd65582da36594d31b83216cf60c"
+    },
+    "meshes/Link4.stl": {
+      "bytes": 8843284,
+      "sha256": "42c1bc57849b8711977d9c8473d9b050277f6c8fc45579795b0fa9b61a527de0"
+    },
+    "meshes/Link5.stl": {
+      "bytes": 12548384,
+      "sha256": "2461e95ffa752f5cabadc12e30a399345973e78c1695e026eba1c0391bc552d9"
+    },
+    "meshes/Link6.stl": {
+      "bytes": 2204684,
+      "sha256": "164d690b3e0bd9032d8feb527294ab05279bb51677b77c3488d5f6ca5421029b"
+    },
+    "meshes/collision/Base.stl": {
+      "bytes": 1193684,
+      "sha256": "7559c930c4f2feb58259efd55d42b8ecc6563ee05a11e819fa2cadb22b20d3c4"
+    },
+    "meshes/collision/KG1.stl": {
+      "bytes": 383884,
+      "sha256": "60ee5c0cf4a9da1621b4ff2108ea4fb7aa26259a4279f2d4afd34f97c9f96457"
+    },
+    "meshes/collision/KG1_A.stl": {
+      "bytes": 78584,
+      "sha256": "4b6f2b85d49397b9b4ee80f8c2002831e874f331a279cee786ceef25404bbd8a"
+    },
+    "meshes/collision/KG1_B.stl": {
+      "bytes": 78684,
+      "sha256": "adc37d7039acf7bf4ea573a7e929b6a36b75978c416f6bc42ff8b8fde83db24d"
+    },
+    "meshes/collision/KG1_R.stl": {
+      "bytes": 255284,
+      "sha256": "a8efebc892d7d9233252973384a3ba16f4d5fe49d22b78319be4f91ee8d2bad9"
+    },
+    "meshes/collision/Link1.stl": {
+      "bytes": 831584,
+      "sha256": "c65a1e57dda562efe6bedfc148f07ea4d5897075cb175bf352de0b2f65e6fd69"
+    },
+    "meshes/collision/Link2.stl": {
+      "bytes": 1277184,
+      "sha256": "9ab8291c6859aa23d2b61c1cb7b8cfc09baf24c3befd4ed1d4c0a9dc04d6c228"
+    },
+    "meshes/collision/Link3.stl": {
+      "bytes": 1174434,
+      "sha256": "a07241e46c70cf87916890ddf823f9820aa5c42125fce51faa736fb706b1f473"
+    },
+    "meshes/collision/Link4.stl": {
+      "bytes": 794784,
+      "sha256": "56b6ce8e11696f2613dcfeb6da23a9e502653c62352cb2034e3a72d734453cae"
+    },
+    "meshes/collision/Link5.stl": {
+      "bytes": 1376134,
+      "sha256": "8269f0ad4347238877bca48f2669333fd67c5afcbdb14ce6c78ae7caabd89d7a"
+    },
+    "meshes/collision/Link6.stl": {
+      "bytes": 320884,
+      "sha256": "44d1382447b9d99d66ae4c6d5f88b928b5e46defbb3030d0648e22e86c7dd33b"
+    },
+    "meshes/visual/Base__141416.stl": {
+      "bytes": 1284,
+      "sha256": "c184706a96b54b718bc7ab8c146d66e27359c167569158d558a7866cdc873e7d"
+    },
+    "meshes/visual/Base__34D399.stl": {
+      "bytes": 179084,
+      "sha256": "1e5563b3d67052032e9daebf52cd2b7553809a6c9ff1976da8d1b50f3875206e"
+    },
+    "meshes/visual/Base__6B7280.stl": {
+      "bytes": 1284484,
+      "sha256": "505d0606151a046a2e75815ab17d276e4a28ff041962812b1946f02199022126"
+    },
+    "meshes/visual/Base__87CEEB.stl": {
+      "bytes": 3673784,
+      "sha256": "b014c1a446302ac81c01f556a8e86c2ee01163e480d10bffd5bdab8d84291b42"
+    },
+    "meshes/visual/Base__FFFFFF.stl": {
+      "bytes": 5574084,
+      "sha256": "39bcf932e2e8ceb6a63944b16fb51058ff3b4dc60093e7640a3faba8721cac4a"
+    },
+    "meshes/visual/KG1_A__6B7280.stl": {
+      "bytes": 121284,
+      "sha256": "ca5ef4d1581c52c233ab10b8f3d6facb690849fe47dfeba14b06590737a53ebb"
+    },
+    "meshes/visual/KG1_A__FFFFFF.stl": {
+      "bytes": 431384,
+      "sha256": "14db3b5540cd9cb9dd2cf7f42c36ae621135cb8e228db7f9f3fd797e35b759e7"
+    },
+    "meshes/visual/KG1_B__6B7280.stl": {
+      "bytes": 109684,
+      "sha256": "18c80b6aed5b3003cc978b50c0279c3795ffc9d007adfe47078216d8042f26e1"
+    },
+    "meshes/visual/KG1_B__FFFFFF.stl": {
+      "bytes": 319884,
+      "sha256": "a49d9046a1241409834a68c1cbcf0b21298553e104d7c4975a198c09c5a37d16"
+    },
+    "meshes/visual/KG1_R__0B2545.stl": {
+      "bytes": 543284,
+      "sha256": "4814686bb555186c49f0a85a5b9fbded72988984d5a161f6ffdb7108063b798a"
+    },
+    "meshes/visual/KG1_R__2A2A2A.stl": {
+      "bytes": 38284,
+      "sha256": "5e9eb697a87a31521f6574253bb1ebfab5a74cfe6f4abfeba69f3de1a48fc776"
+    },
+    "meshes/visual/KG1_R__3A3A3A.stl": {
+      "bytes": 19084,
+      "sha256": "08ee1a96e560b6db823dea3b175b94965c77d9d6c15efc4a6013a0016547fac5"
+    },
+    "meshes/visual/KG1_R__9CA3AF.stl": {
+      "bytes": 171084,
+      "sha256": "77a80ffe6c8bd4d1eb0dfc81a92f9f490ddf1739f3d38c88e7af6a90b250a559"
+    },
+    "meshes/visual/KG1__0A0A0A.stl": {
+      "bytes": 76084,
+      "sha256": "55cf9341518b593dbec68f46d3c3502294c2fa8fc8b376df4a437ac25b67e166"
+    },
+    "meshes/visual/KG1__141416.stl": {
+      "bytes": 2484,
+      "sha256": "87a9b76ebeb8f39bbb02b19d61d33979f330cb7389aac53c3d9a0f6808cfb03b"
+    },
+    "meshes/visual/KG1__6B7280.stl": {
+      "bytes": 295884,
+      "sha256": "562e6a1bea1d4ccb0e958c3c1f541292aef6ff489c29b47bdb8e5a48bcfc7383"
+    },
+    "meshes/visual/KG1__9CA3AF.stl": {
+      "bytes": 304084,
+      "sha256": "2bc1d0b84db95a109374420e0e399a53deae899bf98dde96151856ce8b55e299"
+    },
+    "meshes/visual/Link1__0B2545.stl": {
+      "bytes": 272084,
+      "sha256": "6808a9cb1cf63344d61bad68496b64c1e1f245c0eb97cd54c1ae9d2ef998758b"
+    },
+    "meshes/visual/Link1__141416.stl": {
+      "bytes": 684,
+      "sha256": "c9ddb6ebd7e07a031b727c6f3d701031de1abb4701e33117e83c734712fecc7f"
+    },
+    "meshes/visual/Link1__6B7280.stl": {
+      "bytes": 1254584,
+      "sha256": "a323b856b3d1ed356f6add19dfab0a82fca807b9178d1e9c54703b1540e6bdf1"
+    },
+    "meshes/visual/Link1__87CEEB.stl": {
+      "bytes": 6195584,
+      "sha256": "a8f29e3fa3514c72304f5df8045145205ada0e763b55db1e82e4920f87811e17"
+    },
+    "meshes/visual/Link1__FFFFFF.stl": {
+      "bytes": 8668284,
+      "sha256": "3dd0a65986a53731b904ed4e9b877f26776b2fef41144e28a369bfeed998253c"
+    },
+    "meshes/visual/Link2__0B2545.stl": {
+      "bytes": 795484,
+      "sha256": "cc5a7a5457afbc6e75dc59005996cdcee30939c29e39147d00fd0397a6049b1d"
+    },
+    "meshes/visual/Link2__141416.stl": {
+      "bytes": 684,
+      "sha256": "0073c3a2352359fb272f745b6ac240c06e6d00130a1118e56f1a41a48dc1fb47"
+    },
+    "meshes/visual/Link2__34D399.stl": {
+      "bytes": 1284,
+      "sha256": "0a72806d682ab188452a8838a39e32566dd8c573f0ca504ff996d958d60aa8e2"
+    },
+    "meshes/visual/Link2__6B7280.stl": {
+      "bytes": 3433084,
+      "sha256": "df1ccc870a8f4ac006856d824767b6a38f7f9d39175e9d7bae7cc6e024e9f6eb"
+    },
+    "meshes/visual/Link2__87CEEB.stl": {
+      "bytes": 6195584,
+      "sha256": "578b686c5b507f8f3046980bec897a99870024dafa144f4fd2169a1b9de29050"
+    },
+    "meshes/visual/Link2__FFFFFF.stl": {
+      "bytes": 8473684,
+      "sha256": "c4c72e510d090c65828d2e596b45b15d7ef39016b89cf4212262089ae71af4ab"
+    },
+    "meshes/visual/Link3__0B2545.stl": {
+      "bytes": 468484,
+      "sha256": "ae08c55fcaa1fef33b6206fb4ec4798ee77d0451c57b33632d65e30309a134cc"
+    },
+    "meshes/visual/Link3__141416.stl": {
+      "bytes": 1284,
+      "sha256": "6b62d29cdefdb5924081cd69328a922b79948d834468509be7d666da3505e66d"
+    },
+    "meshes/visual/Link3__34D399.stl": {
+      "bytes": 684,
+      "sha256": "e81c892091769e9e2d720b5f22df6502b2064cdb79b79269148c46385e70c72f"
+    },
+    "meshes/visual/Link3__6B7280.stl": {
+      "bytes": 3455484,
+      "sha256": "6e6ec5c7ba0219c67ed77f0b643fe31d1b2e71aa6427befaab08b9946ead212a"
+    },
+    "meshes/visual/Link3__87CEEB.stl": {
+      "bytes": 3673784,
+      "sha256": "d79705695a36d05acb71315ba67b8fc7713259cc1792bf14dbf976b0dfe6e09a"
+    },
+    "meshes/visual/Link3__FFFFFF.stl": {
+      "bytes": 5770084,
+      "sha256": "7c89ae7f2887c8f43c94f572f65ccab631d1863add278e0700564029776616d4"
+    },
+    "meshes/visual/Link4__0B2545.stl": {
+      "bytes": 274884,
+      "sha256": "16b3730a71c96755b4c21a9fe9399e492b3f4ae7e8a33bced99c960124e21f43"
+    },
+    "meshes/visual/Link4__141416.stl": {
+      "bytes": 1284,
+      "sha256": "efaa913c3467f2c54833805236de1a225ce7f19c3119c37d82fabab2f9e5658b"
+    },
+    "meshes/visual/Link4__6B7280.stl": {
+      "bytes": 1154384,
+      "sha256": "c69bd4941c6fbe27cb7e94d22e541b98a6ae55a1c77ef2fff9533c888190091b"
+    },
+    "meshes/visual/Link4__87CEEB.stl": {
+      "bytes": 3673784,
+      "sha256": "21d9f05f2c3ac8a2e85bf66dec82bd1944143a73775bad18d073026dc701bf13"
+    },
+    "meshes/visual/Link4__FFFFFF.stl": {
+      "bytes": 3739284,
+      "sha256": "e17a70cfcc1e70d762e01ddf17eb98b16610550275e22b1da24ab1d6c05cb3b3"
+    },
+    "meshes/visual/Link5__0B2545.stl": {
+      "bytes": 505984,
+      "sha256": "ad5aafcc0099bb0ce38507fecd8708a8d71b8de3a5ad120498ae0e8273f30ef2"
+    },
+    "meshes/visual/Link5__141416.stl": {
+      "bytes": 1284,
+      "sha256": "f3825afea706b6bc668d97d3ee3212cb3d7aed3b06d931153471f753baa98e45"
+    },
+    "meshes/visual/Link5__34D399.stl": {
+      "bytes": 684,
+      "sha256": "1b5762cafa91d58f3b97baf0939ce05b76150503d4a7f86d32965e19bf6168f6"
+    },
+    "meshes/visual/Link5__6B7280.stl": {
+      "bytes": 2646884,
+      "sha256": "cf0bdab071feeb9bb3982f806e640c9b8c1de915516ca95865873478c9a380d6"
+    },
+    "meshes/visual/Link5__87CEEB.stl": {
+      "bytes": 3673784,
+      "sha256": "581ef3870df4faefdcc6e841e198055d82762283103b351dc9761e171eb1737f"
+    },
+    "meshes/visual/Link5__FFFFFF.stl": {
+      "bytes": 5720184,
+      "sha256": "fdf62bc7fca8f3cdf006093b95f6cee59f6a685a236b9f0943d9ce75ad530e1b"
+    },
+    "meshes/visual/Link6__34D399.stl": {
+      "bytes": 1498384,
+      "sha256": "fe345f29376be059e24e86d3d1318ab55f27e6da7dbacf4cd159150be385074f"
+    },
+    "meshes/visual/Link6__6B7280.stl": {
+      "bytes": 706384,
+      "sha256": "b438fca1cb007d489682bae080644d0ddc34887212a7613fff38d70932deba54"
+    },
+    "numeric-ledger.json": {
+      "bytes": 150491,
+      "sha256": "89d871864878062290b1c6cf3cc17dccf213f3f187c493ad7aa80ca66b9e24d8"
+    },
+    "provenance.json": {
+      "bytes": 101780,
+      "sha256": "50cf136eef05a52483fc99436adc742a053f2e82fd810290f97b5f8a0a1fdd5f"
+    },
+    "robot_arm.urdf": {
+      "bytes": 20590,
+      "sha256": "d55f0cbdffb8f82094b8797b187f02a3a5fd77a4a4f4272c975f21945b53135f"
+    }
+  },
+  "plan_sha256": "6458f5750efea5693c016e606873b8536bebf254cd4d39451a60cfe63dfa3115",
+  "hardware_approved": false,
+  "limits": {
+    "total_s": 2700,
+    "handshake_s": 20,
+    "native_s": 1800,
+    "cleanup_s": 2,
+    "recovery_reserve_s": 600,
+    "import_s": 600,
+    "hold_s": 300,
+    "small_s": 300,
+    "large_s": 900,
+    "native_attempts": 1
+  },
+  "cap_modes": {
+    "legacy": {
+      "J1": 3,
+      "J2": 6,
+      "J3": 5,
+      "J4": 2,
+      "J5": 2,
+      "J6": 1,
+      "KG1_slide_A": 10,
+      "KG1_slide_B": 10,
+      "KG1_pinion": 0.2
+    },
+    "sim_override_12_7": {
+      "J1": 3,
+      "J2": 12,
+      "J3": 7,
+      "J4": 2,
+      "J5": 2,
+      "J6": 1,
+      "KG1_slide_A": 10,
+      "KG1_slide_B": 10,
+      "KG1_pinion": 0.2
+    }
+  },
+  "geometry_tolerance_m": 0.000002,
+  "inertia_absolute_tolerance": 2e-8,
+  "mass_relative_tolerance": 0.0001
+}

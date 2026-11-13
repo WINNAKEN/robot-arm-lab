@@ -1,0 +1,167 @@
+{
+  "status": "ESTIMATE_NOT_PRINT_TESTED",
+  "created_utc": "2026-10-22T16:37:39.622568+00:00",
+  "user_confirmed": [
+    "Bambu H2D",
+    "PLA",
+    "two-axis bench accessories"
+  ],
+  "assumptions": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "plate": "Textured PEI Plate",
+    "support": "auto",
+    "quantity": "one of each, sliced as three separate jobs"
+  },
+  "limits": [
+    "PLA brand, nozzle and build plate are assumed; check installed hardware and filament before printing.",
+    "Stock-profile slicer estimates are not measured print time, material use, strength or fit.",
+    "No printer address, credentials or print-dispatch command is passed to the tools.",
+    "Network activity of the native Bambu executable is not instrumented by this run.",
+    "PrintForge source and installed profiles are read, not edited by this script.",
+    "Delivered Bambu projects must contain no G-code member; raw local slice work remains evidence only."
+  ],
+  "tool_sources_sha256": {
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\runner.py": "a4606b5af14b6bdbb885f0d6cb4bef100d72c7217eb56b9be4c49d6305d02699",
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\studio.py": "d345cdc581f1791fca5ffa14f22dc7dfdb209f2e30e6c1a8a21b470261cbe0c4",
+    "C:\\projects\\printforge\\src\\printforge\\printprep\\profiles.py": "17094e31d45003905bc7b339e1f60f179e4447589ca2cbd1ea02ada848ac5093"
+  },
+  "runs": [
+    {
+      "part": "cable_tie_mount",
+      "command": [
+        "C:\\projects\\printforge\\.venv\\Scripts\\python.exe",
+        "-m",
+        "printforge.printprep",
+        "C:\\projects\\robot-arm-lab\\models\\bench-prep-v1\\cable_tie_mount.stl",
+        "--out",
+        "C:\\projects\\robot-arm-lab\\.dev\\model-prep-evidence\\slicer\\runs\\cable_tie_mount",
+        "--studio",
+        "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe",
+        "--printer",
+        "Bambu Lab H2D 0.4 nozzle",
+        "--process",
+        "0.20mm Standard @BBL H2D",
+        "--filament",
+        "Bambu PLA Basic @BBL H2D",
+        "--plate",
+        "Textured PEI Plate",
+        "--support",
+        "auto",
+        "--timeout",
+        "120"
+      ],
+      "exit_code": 0,
+      "model_sha256_before": "e970b437398618d42b250d6231720eb85f6ef64fa639e6a8aa2be55d5dda1e3e",
+      "model_sha256_after": "e970b437398618d42b250d6231720eb85f6ef64fa639e6a8aa2be55d5dda1e3e",
+      "verdict": "ready",
+      "estimate": {
+        "print_time_s": 532,
+        "filament_g": 1.61,
+        "filament_m": 0.53,
+        "support_generated": false,
+        "max_z_mm": 5.0
+      },
+      "support": {
+        "mode": "auto",
+        "advised_by_studio": false,
+        "enabled": false
+      },
+      "report_sha256": "9200f9917f91d35183e842fab00dc9c117b30048cca5bb8c571315e8cddccc2b",
+      "delivered_project_has_gcode": false
+    },
+    {
+      "part": "wire_label_tag",
+      "command": [
+        "C:\\projects\\printforge\\.venv\\Scripts\\python.exe",
+        "-m",
+        "printforge.printprep",
+        "C:\\projects\\robot-arm-lab\\models\\bench-prep-v1\\wire_label_tag.stl",
+        "--out",
+        "C:\\projects\\robot-arm-lab\\.dev\\model-prep-evidence\\slicer\\runs\\wire_label_tag",
+        "--studio",
+        "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe",
+        "--printer",
+        "Bambu Lab H2D 0.4 nozzle",
+        "--process",
+        "0.20mm Standard @BBL H2D",
+        "--filament",
+        "Bambu PLA Basic @BBL H2D",
+        "--plate",
+        "Textured PEI Plate",
+        "--support",
+        "auto",
+        "--timeout",
+        "120"
+      ],
+      "exit_code": 0,
+      "model_sha256_before": "6bcf04679a6bcd3a1b1e0bd09635eae0d59dfcb0270024f3a3cb4db75cc6ef96",
+      "model_sha256_after": "6bcf04679a6bcd3a1b1e0bd09635eae0d59dfcb0270024f3a3cb4db75cc6ef96",
+      "verdict": "ready",
+      "estimate": {
+        "print_time_s": 486,
+        "filament_g": 1.42,
+        "filament_m": 0.47,
+        "support_generated": false,
+        "max_z_mm": 2.0
+      },
+      "support": {
+        "mode": "auto",
+        "advised_by_studio": false,
+        "enabled": false
+      },
+      "report_sha256": "8b4543e3318855966987bb8b52427d81b046164ecde462246f92035364919371",
+      "delivered_project_has_gcode": false
+    },
+    {
+      "part": "parts_tray",
+      "command": [
+        "C:\\projects\\printforge\\.venv\\Scripts\\python.exe",
+        "-m",
+        "printforge.printprep",
+        "C:\\projects\\robot-arm-lab\\models\\bench-prep-v1\\parts_tray.stl",
+        "--out",
+        "C:\\projects\\robot-arm-lab\\.dev\\model-prep-evidence\\slicer\\runs\\parts_tray",
+        "--studio",
+        "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe",
+        "--printer",
+        "Bambu Lab H2D 0.4 nozzle",
+        "--process",
+        "0.20mm Standard @BBL H2D",
+        "--filament",
+        "Bambu PLA Basic @BBL H2D",
+        "--plate",
+        "Textured PEI Plate",
+        "--support",
+        "auto",
+        "--timeout",
+        "120"
+      ],
+      "exit_code": 0,
+      "model_sha256_before": "95337ea543b508b83806d331e8c3d43b7b4b283511dc1bc6c514ae3731501e67",
+      "model_sha256_after": "95337ea543b508b83806d331e8c3d43b7b4b283511dc1bc6c514ae3731501e67",
+      "verdict": "ready",
+      "estimate": {
+        "print_time_s": 1605,
+        "filament_g": 18.81,
+        "filament_m": 6.21,
+        "support_generated": false,
+        "max_z_mm": 12.0
+      },
+      "support": {
+        "mode": "auto",
+        "advised_by_studio": false,
+        "enabled": false
+      },
+      "report_sha256": "c04edcf110aadc7ccbeb71c35624ff307baf1f83cb3e9f8f85d7769315167856",
+      "delivered_project_has_gcode": false
+    }
+  ],
+  "all_ready": true,
+  "three_separate_jobs_estimate": {
+    "print_time_s": 2623,
+    "filament_g": 21.84,
+    "filament_m": 7.21
+  }
+}

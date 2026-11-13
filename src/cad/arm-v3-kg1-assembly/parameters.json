@@ -1,0 +1,40 @@
+{
+ "units": "mm · 도",
+ "what": "MP9 — 외장 v3 팔 끝(링크 6)에 그리퍼 KG1 을 붙인 조립 · 검사 설정(계획 051). 형상 숫자는 여기 없다 — 팔 = v3 바디 STL · v1 kinematics, 그리퍼 = KG1 부품 STL · 그 parameters · 끼움 원장(모두 읽기만).",
+ "inputs": {
+  "v3_model": "../../../models/armold-mks-product-v3",
+  "v3_params": "../armold-mks-product-v3/parameters.json",
+  "v1_params": "../../../models/armold-mks-concept-v1/parameters.json",
+  "v1_kinematics": "../../../models/armold-mks-concept-v1/kinematics.json",
+  "gallery_poses": "../armold-mks-product-v3/gallery_poses.json",
+  "gripper_model": "../../../models/kmjh-gripper-v1",
+  "gripper_src": "../kmjh-gripper-v1"
+ },
+ "mount": {
+  "face": "flange",
+  "face_note": "2 단계(2026-10-28 사용자 「v3 민트 고리를 그리퍼 규격 … 고쳐서 다시 붙여줘」): v3 고리가 그리퍼 홈에 맞는 돌기(Ø20 × 1.5)가 되고 플랜지에 M3 인서트 구멍 넷(Ø31.5 원)이 생겨, 받침 아랫면을 플랜지 면(J6 원점에서 28)에 댄다 — 돌기는 홈 안 · 팔 나사는 구멍 안. 1 단계 기록: face = ring(옛 고리 끝 32 · 플랜지와 4 mm 뜸)",
+  "roll_deg": 0.0,
+  "roll_note": "J6 축 둘레 돌림 — 2 단계부터 v3 플랜지 구멍이 0° · 90° · 180° · 270° 에 있어 90° 배수만 나사가 맞음(아니면 검사가 팔 나사 겹침으로 잡음). 0 =그리퍼 x(턱 방향) = 링크 6 지역 y(q6 = 0 에서 J5 축과 나란함) · 그리퍼 z = 링크 6 지역 x(J6 축 바깥) · 그리퍼 y = 링크 6 지역 z. 작성자 판단(사용자 결정 아님 — 「일단 만들어놓고 조금씩 수정」)"
+ },
+ "gripper": {
+  "padset": "FLAT",
+  "openings_u": [0.0, 47.0],
+  "openings_note": "u = 한 턱의 벌림(손끝 사이 = 2u) · 0 닫힘 · 47 끝(행정 94)",
+  "render_u": 20.0,
+  "render_note": "렌더 · 보기 GLB 의 벌림 — 갤러리 자세 검사에도 넣는다(openings_u 와 함께) · blender_assembly.py 가 이 값과 padset 을 읽음",
+  "fingertip_g": [0.0, 0.0, 103.0],
+  "fingertip_note": "쥐는 점(mass-properties.json grasp_centre_mm — 손끝 끝 106 에서 6 mm 물체 가운데)"
+ },
+ "checks": {
+  "grip_hit_mm3": 0.01,
+  "arm_self_hit_mm3": 0.05,
+  "arm_self_note": "팔끼리 겹침 기준은 MP7 pose_check 와 같은 0.05(표시 자세 접촉면 분할 오차 기준선)",
+  "floor_clear_mm": 5.0,
+  "near_mm": 2.0,
+  "near_note": "링크 0 ~ 4 와 틈(근사)이 near_mm 보다 작으면 갤러리 행에 close_l0_4 = 참으로 적음(판정 아님 · 기록) · 틈은 상자가 near_box_mm 안인 바디만 재고 그보다 먼 것은 「넘음」",
+  "near_box_mm": 10.0,
+  "sample_spacing_mm": 1.5,
+  "j5_sweep": {"bases": ["display", "home"], "from": -170, "to": 170, "step": 5},
+  "j6_sweep": {"base": "display", "from": -180, "to": 180, "step": 15}
+ }
+}

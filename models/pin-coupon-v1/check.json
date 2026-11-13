@@ -1,0 +1,245 @@
+{
+ "what": "MP13 핀 구멍 시편 검사 — 커밋된 STL 로 스스로 계산",
+ "summary": {
+  "C0_build_record_matches_files": true,
+  "C1_closed_and_positive_volume": true,
+  "C2_holes_match_table": true,
+  "C3_holes_go_through": true,
+  "C4_print_prep_ready": true
+ },
+ "all_true": true,
+ "results": {
+  "C0": {
+   "stl_matches": true,
+   "inputs_match": true,
+   "control": null
+  },
+  "C1": {
+   "watertight": true,
+   "volume_mm3": 15586.823023944622
+  },
+  "C2": {
+   "rows": [
+    {
+     "hole": 0,
+     "design": 4.1,
+     "z": 2.0,
+     "dia_area_eq": 4.0963,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 0,
+     "design": 4.1,
+     "z": 5.0,
+     "dia_area_eq": 4.0963,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 0,
+     "design": 4.1,
+     "z": 8.0,
+     "dia_area_eq": 4.0963,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 1,
+     "design": 4.15,
+     "z": 2.0,
+     "dia_area_eq": 4.1463,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 1,
+     "design": 4.15,
+     "z": 5.0,
+     "dia_area_eq": 4.1463,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 1,
+     "design": 4.15,
+     "z": 8.0,
+     "dia_area_eq": 4.1463,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 2,
+     "design": 4.2,
+     "z": 2.0,
+     "dia_area_eq": 4.1962,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 2,
+     "design": 4.2,
+     "z": 5.0,
+     "dia_area_eq": 4.1962,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 2,
+     "design": 4.2,
+     "z": 8.0,
+     "dia_area_eq": 4.1962,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 3,
+     "design": 4.25,
+     "z": 2.0,
+     "dia_area_eq": 4.2462,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 3,
+     "design": 4.25,
+     "z": 5.0,
+     "dia_area_eq": 4.2462,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 3,
+     "design": 4.25,
+     "z": 8.0,
+     "dia_area_eq": 4.2462,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 4,
+     "design": 4.3,
+     "z": 2.0,
+     "dia_area_eq": 4.2961,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 4,
+     "design": 4.3,
+     "z": 5.0,
+     "dia_area_eq": 4.2961,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 4,
+     "design": 4.3,
+     "z": 8.0,
+     "dia_area_eq": 4.2961,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 5,
+     "design": 4.35,
+     "z": 2.0,
+     "dia_area_eq": 4.3461,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 5,
+     "design": 4.35,
+     "z": 5.0,
+     "dia_area_eq": 4.3461,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 5,
+     "design": 4.35,
+     "z": 8.0,
+     "dia_area_eq": 4.3461,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 6,
+     "design": 4.4,
+     "z": 2.0,
+     "dia_area_eq": 4.396,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 6,
+     "design": 4.4,
+     "z": 5.0,
+     "dia_area_eq": 4.396,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 6,
+     "design": 4.4,
+     "z": 8.0,
+     "dia_area_eq": 4.396,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 7,
+     "design": 4.45,
+     "z": 2.0,
+     "dia_area_eq": 4.446,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 7,
+     "design": 4.45,
+     "z": 5.0,
+     "dia_area_eq": 4.446,
+     "centre_off": 0.0,
+     "ok": true
+    },
+    {
+     "hole": 7,
+     "design": 4.45,
+     "z": 8.0,
+     "dia_area_eq": 4.446,
+     "centre_off": 0.0,
+     "ok": true
+    }
+   ],
+   "mean_dia": [
+    4.0963,
+    4.1463,
+    4.1962,
+    4.2462,
+    4.2961,
+    4.3461,
+    4.396,
+    4.446
+   ],
+   "rising_left_to_right": true
+  },
+  "C3": {
+   "blocked": []
+  },
+  "C4": {
+   "verdict": "ready",
+   "support_needed": false,
+   "mass_g": 8.7,
+   "time": 1479,
+   "stl_sha256": "bcfec5864164f3922c0a8f327d22538025029c3be4d77a0b00438f3e7647d8c1",
+   "project_sha256": "5db5bf4e76bd054fb64a9ad022123c7ebed19c2379391dd95187492f7df4f48e"
+  }
+ },
+ "inputs_sha256": {
+  "parts/PIN_COUPON.stl": "bcfec5864164f3922c0a8f327d22538025029c3be4d77a0b00438f3e7647d8c1",
+  "check_pin_coupon.py": "85fb8a05a7aaf7e6d10963d91aa4cba68529983b029a2a24f8adcbf1fa3b57ac",
+  "parameters.json": "7b4a1d3d753aa3cd5727e11bc2d9f271380be171cbd333bd305b17367113c328"
+ }
+}

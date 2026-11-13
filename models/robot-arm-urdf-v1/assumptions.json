@@ -1,0 +1,242 @@
+{
+  "status": "SIMULATION_ASSUMPTION",
+  "physical_verified": false,
+  "mass_kg": [
+    1.2,
+    0.65,
+    0.7,
+    0.65,
+    0.4,
+    0.35,
+    0.2
+  ],
+  "mass_basis": "Illustrative per-link starter masses, not measured or inferred from filled CAD volume",
+  "com_basis": "Centre of each link-local mesh bounding box, assumed mass distribution",
+  "inertia_basis": "Uniform solid bounding box about assumed COM; diagonal m*(b*b+c*c)/12; not CAD/physical inertia",
+  "collision_basis": "One bounding box per physical link; conservative proxy can create false contacts",
+  "joint_limit_deg": 170.0,
+  "joint_limit_basis": "CAD example range relative to displayed zero, not measured mechanical limits",
+  "velocity_rad_s": 0.5,
+  "effort_Nm": [
+    3.0,
+    6.0,
+    5.0,
+    2.0,
+    2.0,
+    1.0
+  ],
+  "actuator_basis": "Illustrative simulation caps, not MKS/reducer ratings or safe operating commands",
+  "damping_Nm_s_rad": 0.05,
+  "friction_Nm": 0.0,
+  "can_ids": null,
+  "motor_signs": null,
+  "measured_gear_ratios": null,
+  "physical_zeros": null,
+  "encoder_scales": null,
+  "gripper": "NOT_MODELLED",
+  "tcp_basis": "Nominal CAD tool-front +X32mm from Link6; not a calibrated physical TCP",
+  "links": [
+    {
+      "link": "Base",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 1.2,
+      "com_m": [
+        0.0,
+        0.0,
+        0.057
+      ],
+      "box_size_m": [
+        0.164,
+        0.16399794,
+        0.114
+      ],
+      "inertia_kg_m2": [
+        0.0039891324324243605,
+        0.0039892,
+        0.005379132432424361
+      ]
+    },
+    {
+      "link": "Link1",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.65,
+      "com_m": [
+        -3.978160821593857e-10,
+        -0.023000002537826403,
+        0.074
+      ],
+      "box_size_m": [
+        0.10399999628004938,
+        0.136000006638631,
+        0.112
+      ],
+      "inertia_kg_m2": [
+        0.0016813334311424988,
+        0.0012653332914218907,
+        0.001587733389231056
+      ]
+    },
+    {
+      "link": "Link2",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.7,
+      "com_m": [
+        0.08599999146745295,
+        0.0365000015215827,
+        3.349041606537373e-09
+      ],
+      "box_size_m": [
+        0.24799999997403901,
+        0.10900001068000714,
+        0.09000000482397102
+      ],
+      "inertia_kg_m2": [
+        0.001165558519799128,
+        0.0040602333832338924,
+        0.004280791801729625
+      ]
+    },
+    {
+      "link": "Link3",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.65,
+      "com_m": [
+        0.06000000598207239,
+        -0.01150000010920342,
+        2.5108121901040725e-09
+      ],
+      "box_size_m": [
+        0.19600002021043755,
+        0.10100000705470003,
+        0.07800002564883965
+      ],
+      "inertia_kg_m2": [
+        0.0008821044605895762,
+        0.002410417312534377,
+        0.0026334213396584922
+      ]
+    },
+    {
+      "link": "Link4",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.4,
+      "com_m": [
+        0.06749999980567768,
+        -0.03649999670604465,
+        2.546304556094725e-10
+      ],
+      "box_size_m": [
+        0.09900002964134164,
+        0.10900001715344372,
+        0.07800002592597183
+      ],
+      "inertia_kg_m2": [
+        0.0005988335927967767,
+        0.0005295003304479601,
+        0.000722733653614585
+      ]
+    },
+    {
+      "link": "Link5",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.35,
+      "com_m": [
+        0.06299999901919842,
+        0.0065000048656980065,
+        -3.229011502625667e-11
+      ],
+      "box_size_m": [
+        0.19000003939446436,
+        0.09100002003665775,
+        0.07800002753549047
+      ],
+      "inertia_kg_m2": [
+        0.0004189793983144403,
+        0.0012303672285751957,
+        0.0012944463763166286
+      ]
+    },
+    {
+      "link": "Link6",
+      "status": "SIMULATION_ASSUMPTION",
+      "mass_kg": 0.2,
+      "com_m": [
+        0.02500000119956045,
+        2.4143106437668482e-09,
+        4.017664621130956e-09
+      ],
+      "box_size_m": [
+        0.014000034116702288,
+        0.056000012236729214,
+        0.05600001817265141
+      ],
+      "inertia_kg_m2": [
+        0.0001045333900975185,
+        5.5533383176768606e-05,
+        5.55333720963775e-05
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "joint": "J1",
+      "pose_deg": 15,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    },
+    {
+      "joint": "J2",
+      "pose_deg": -50,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    },
+    {
+      "joint": "J3",
+      "pose_deg": 70,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    },
+    {
+      "joint": "J4",
+      "pose_deg": 15,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    },
+    {
+      "joint": "J5",
+      "pose_deg": 25,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    },
+    {
+      "joint": "J6",
+      "pose_deg": -10,
+      "urdf_zero": "CAD_DISPLAY_POSE",
+      "q_urdf": "canonical_delta_rad",
+      "q_geometric": "q_urdf + radians(pose_deg)",
+      "physical_zero_verified": false
+    }
+  ],
+  "tcp_candidate": {
+    "link": "Link6",
+    "xyz_m": [
+      0.032,
+      0,
+      0
+    ],
+    "status": "CAD_NOMINAL_NOT_CALIBRATED"
+  },
+  "hardware_approved": false,
+  "isaac_import": "NOT_RUN",
+  "rl_training": "NOT_RUN"
+}

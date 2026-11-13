@@ -1,0 +1,4860 @@
+{
+ "commands": [
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_REAR_HOUSING"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      37.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      52.0
+     ],
+     [
+      -12.0,
+      52.0
+     ],
+     [
+      -12.0,
+      0.0
+     ],
+     [
+      -18.0,
+      0.0
+     ],
+     [
+      -18.0,
+      37.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING",
+    "name": "J2_REAR_HOUSING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_REAR_HOUSING"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_REAR_HOUSING",
+    "edges": [
+     [
+      52.0,
+      0.0,
+      -18.0
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_PILOT",
+    "plane": {
+     "origin": [
+      0,
+      0,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 11.15
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_PILOT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_M0",
+    "plane": {
+     "origin": [
+      -15.5,
+      -15.5,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_M0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_M1",
+    "plane": {
+     "origin": [
+      -15.5,
+      15.5,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_M1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_M2",
+    "plane": {
+     "origin": [
+      15.5,
+      -15.5,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_M2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_M3",
+    "plane": {
+     "origin": [
+      15.5,
+      15.5,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_M3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J0",
+    "plane": {
+     "origin": [
+      43.5,
+      0.0,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC0",
+    "plane": {
+     "origin": [
+      43.5,
+      0.0,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J1",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC1",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      37.67210506462308,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J2",
+    "plane": {
+     "origin": [
+      -21.74999999999999,
+      37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC2",
+    "plane": {
+     "origin": [
+      -21.74999999999999,
+      37.67210506462308,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J3",
+    "plane": {
+     "origin": [
+      -43.5,
+      5.327213576290987e-15,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC3",
+    "plane": {
+     "origin": [
+      -43.5,
+      5.327213576290987e-15,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J4",
+    "plane": {
+     "origin": [
+      -21.750000000000018,
+      -37.672105064623075,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC4",
+    "plane": {
+     "origin": [
+      -21.750000000000018,
+      -37.672105064623075,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_J5",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      -37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_J5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_JC5",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      -37.67210506462308,
+      -18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_JC5"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 4.0,
+    "height": 64.5,
+    "base": [
+     31.5,
+     0.0,
+     -81.5
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR0",
+    "name": "J2_REAR_HOUSING_PILLAR0_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_PILLAR0_RIB_P",
+    "plane": {
+     "origin": [
+      31.5,
+      0.0,
+      -81.5
+     ],
+     "x_dir": [
+      1.0,
+      0.0,
+      0
+     ],
+     "y_dir": [
+      -0.0,
+      1.0,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      0,
+      -4.0
+     ],
+     [
+      6.0,
+      -4.0
+     ],
+     [
+      6.0,
+      4.0
+     ],
+     [
+      0,
+      4.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 64.5,
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR0_RIB",
+    "name": "J2_REAR_HOUSING_PILLAR0_RIB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING_PILLAR0",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR0_RIB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR0"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_CI0",
+    "plane": {
+     "origin": [
+      31.5,
+      0.0,
+      -81.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_CI0"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 4.0,
+    "height": 64.5,
+    "base": [
+     1.9288187086570813e-15,
+     31.5,
+     -81.5
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR1",
+    "name": "J2_REAR_HOUSING_PILLAR1_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_PILLAR1_RIB_P",
+    "plane": {
+     "origin": [
+      1.9288187086570813e-15,
+      31.5,
+      -81.5
+     ],
+     "x_dir": [
+      6.123233995736766e-17,
+      1.0,
+      0
+     ],
+     "y_dir": [
+      -1.0,
+      6.123233995736766e-17,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      0,
+      -4.0
+     ],
+     [
+      6.0,
+      -4.0
+     ],
+     [
+      6.0,
+      4.0
+     ],
+     [
+      0,
+      4.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 64.5,
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR1_RIB",
+    "name": "J2_REAR_HOUSING_PILLAR1_RIB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING_PILLAR1",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR1_RIB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR1"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_CI1",
+    "plane": {
+     "origin": [
+      1.9288187086570813e-15,
+      31.5,
+      -81.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_CI1"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 4.0,
+    "height": 64.5,
+    "base": [
+     -5.786456125971244e-15,
+     -31.5,
+     -81.5
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR2",
+    "name": "J2_REAR_HOUSING_PILLAR2_C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_PILLAR2_RIB_P",
+    "plane": {
+     "origin": [
+      -5.786456125971244e-15,
+      -31.5,
+      -81.5
+     ],
+     "x_dir": [
+      -1.8369701987210297e-16,
+      -1.0,
+      0
+     ],
+     "y_dir": [
+      1.0,
+      -1.8369701987210297e-16,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      0,
+      -4.0
+     ],
+     [
+      6.0,
+      -4.0
+     ],
+     [
+      6.0,
+      4.0
+     ],
+     [
+      0,
+      4.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 64.5,
+    "operation": "new",
+    "body_name": "J2_REAR_HOUSING_PILLAR2_RIB",
+    "name": "J2_REAR_HOUSING_PILLAR2_RIB_X"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING_PILLAR2",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR2_RIB"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "J2_REAR_HOUSING",
+    "tools": [
+     "J2_REAR_HOUSING_PILLAR2"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REAR_HOUSING_H_CI2",
+    "plane": {
+     "origin": [
+      -5.786456125971244e-15,
+      -31.5,
+      -81.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REAR_HOUSING"
+    ],
+    "name": "J2_REAR_HOUSING_HOLE_CI2"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_REDUCER_HOUSING"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -12.0,
+      39.5
+     ],
+     [
+      -12.0,
+      52.0
+     ],
+     [
+      11.5,
+      52.0
+     ],
+     [
+      11.5,
+      49.0
+     ],
+     [
+      14.3,
+      49.0
+     ],
+     [
+      14.3,
+      39.0
+     ],
+     [
+      4.300000000000001,
+      39.0
+     ],
+     [
+      4.300000000000001,
+      33.0
+     ],
+     [
+      0.3000000000000007,
+      33.0
+     ],
+     [
+      0.3000000000000007,
+      39.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_REDUCER_HOUSING",
+    "name": "J2_REDUCER_HOUSING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I0",
+    "plane": {
+     "origin": [
+      43.5,
+      0.0,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I1",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I2",
+    "plane": {
+     "origin": [
+      -21.74999999999999,
+      37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I3",
+    "plane": {
+     "origin": [
+      -43.5,
+      5.327213576290987e-15,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I4",
+    "plane": {
+     "origin": [
+      -21.750000000000018,
+      -37.672105064623075,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_I5",
+    "plane": {
+     "origin": [
+      21.750000000000004,
+      -37.67210506462308,
+      -12.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_I5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI0",
+    "plane": {
+     "origin": [
+      38.53813046840752,
+      22.249999999999996,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI1",
+    "plane": {
+     "origin": [
+      2.724839128102861e-15,
+      44.5,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI2",
+    "plane": {
+     "origin": [
+      -38.53813046840752,
+      22.249999999999996,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI3",
+    "plane": {
+     "origin": [
+      -38.538130468407516,
+      -22.250000000000004,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI4",
+    "plane": {
+     "origin": [
+      -8.174517384308582e-15,
+      -44.5,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_REDUCER_HOUSING_H_RI5",
+    "plane": {
+     "origin": [
+      38.53813046840751,
+      -22.25000000000002,
+      14.3
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_REDUCER_HOUSING"
+    ],
+    "name": "J2_REDUCER_HOUSING_HOLE_RI5"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_OUTPUT_FLANGE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      2.3000000000000007,
+      0.0
+     ],
+     [
+      2.3000000000000007,
+      32.0
+     ],
+     [
+      4.300000000000001,
+      32.0
+     ],
+     [
+      4.300000000000001,
+      30.0
+     ],
+     [
+      18.0,
+      30.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_OUTPUT_FLANGE",
+    "name": "J2_OUTPUT_FLANGE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RPILOT",
+    "plane": {
+     "origin": [
+      0,
+      0,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 8.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RPILOT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI0",
+    "plane": {
+     "origin": [
+      22.0,
+      0.0,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI1",
+    "plane": {
+     "origin": [
+      11.000000000000002,
+      19.05255888325765,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI2",
+    "plane": {
+     "origin": [
+      -10.999999999999995,
+      19.052558883257653,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI3",
+    "plane": {
+     "origin": [
+      -22.0,
+      2.6942229581241772e-15,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI4",
+    "plane": {
+     "origin": [
+      -11.00000000000001,
+      -19.052558883257646,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_RI5",
+    "plane": {
+     "origin": [
+      11.000000000000002,
+      -19.05255888325765,
+      2.3000000000000007
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_RI5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI0",
+    "plane": {
+     "origin": [
+      19.052558883257653,
+      10.999999999999998,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI1",
+    "plane": {
+     "origin": [
+      1.3471114790620886e-15,
+      22.0,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI2",
+    "plane": {
+     "origin": [
+      -19.052558883257653,
+      10.999999999999998,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI3",
+    "plane": {
+     "origin": [
+      -19.05255888325765,
+      -11.000000000000002,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI4",
+    "plane": {
+     "origin": [
+      -4.0413344371862654e-15,
+      -22.0,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_OUTPUT_FLANGE_H_CI5",
+    "plane": {
+     "origin": [
+      19.052558883257646,
+      -11.00000000000001,
+      18.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 2.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_OUTPUT_FLANGE"
+    ],
+    "name": "J2_OUTPUT_FLANGE_HOLE_CI5"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_BEARING_RETAINER"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      14.3,
+      35.5
+     ],
+     [
+      14.3,
+      50.5
+     ],
+     [
+      17.5,
+      50.5
+     ],
+     [
+      17.5,
+      35.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_BEARING_RETAINER",
+    "name": "J2_BEARING_RETAINER_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_BEARING_RETAINER"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C0",
+    "plane": {
+     "origin": [
+      38.53813046840752,
+      22.249999999999996,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB0",
+    "plane": {
+     "origin": [
+      38.53813046840752,
+      22.249999999999996,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C1",
+    "plane": {
+     "origin": [
+      2.724839128102861e-15,
+      44.5,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB1",
+    "plane": {
+     "origin": [
+      2.724839128102861e-15,
+      44.5,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C2",
+    "plane": {
+     "origin": [
+      -38.53813046840752,
+      22.249999999999996,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB2",
+    "plane": {
+     "origin": [
+      -38.53813046840752,
+      22.249999999999996,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C3",
+    "plane": {
+     "origin": [
+      -38.538130468407516,
+      -22.250000000000004,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB3",
+    "plane": {
+     "origin": [
+      -38.538130468407516,
+      -22.250000000000004,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C4",
+    "plane": {
+     "origin": [
+      -8.174517384308582e-15,
+      -44.5,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB4",
+    "plane": {
+     "origin": [
+      -8.174517384308582e-15,
+      -44.5,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_C5",
+    "plane": {
+     "origin": [
+      38.53813046840751,
+      -22.25000000000002,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3.2,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_C5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_BEARING_RETAINER_H_CB5",
+    "plane": {
+     "origin": [
+      38.53813046840751,
+      -22.25000000000002,
+      17.5
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_BEARING_RETAINER"
+    ],
+    "name": "J2_BEARING_RETAINER_HOLE_CB5"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_ACCENT_RING"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_ACCENT_RING_PART_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      11.5,
+      49.15
+     ],
+     [
+      11.5,
+      52.0
+     ],
+     [
+      17.5,
+      52.0
+     ],
+     [
+      17.5,
+      50.65
+     ],
+     [
+      14.3,
+      50.65
+     ],
+     [
+      14.3,
+      49.15
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_ACCENT_RING_PART",
+    "name": "J2_ACCENT_RING_PART_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_ACCENT_RING_PART"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "PART_END_CAP"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      36.85
+     ],
+     [
+      -82.0,
+      36.85
+     ],
+     [
+      -82.0,
+      34.85
+     ],
+     [
+      -85.0,
+      34.85
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_END_CAP_PART",
+    "name": "J2_END_CAP_PART_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_END_CAP_PART"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_END_CAP_PART",
+    "edges": [
+     [
+      38.0,
+      0.0,
+      -91.0
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_CABLE",
+    "plane": {
+     "origin": [
+      0,
+      0,
+      -85.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_CABLE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_S0",
+    "plane": {
+     "origin": [
+      31.5,
+      0.0,
+      -85.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_S0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_SB0",
+    "plane": {
+     "origin": [
+      31.5,
+      0.0,
+      -91.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_SB0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_S1",
+    "plane": {
+     "origin": [
+      1.9288187086570813e-15,
+      31.5,
+      -85.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_S1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_SB1",
+    "plane": {
+     "origin": [
+      1.9288187086570813e-15,
+      31.5,
+      -91.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_SB1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_S2",
+    "plane": {
+     "origin": [
+      -5.786456125971244e-15,
+      -31.5,
+      -85.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 1.7
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 6.0,
+    "direction": "negative",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_S2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PART_H_SB2",
+    "plane": {
+     "origin": [
+      -5.786456125971244e-15,
+      -31.5,
+      -91.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "radius": 3.1
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 1.9,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "J2_END_CAP_PART"
+    ],
+    "name": "J2_END_CAP_PART_HOLE_SB2"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "REFERENCE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "REF_MOTOR_ASSUMED_P",
+    "plane": {
+     "origin": [
+      0,
+      0,
+      -58.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -21.15,
+      -21.15
+     ],
+     [
+      21.15,
+      -21.15
+     ],
+     [
+      21.15,
+      21.15
+     ],
+     [
+      -21.15,
+      21.15
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 40,
+    "operation": "new",
+    "body_name": "REF_MOTOR_ASSUMED",
+    "name": "REF_MOTOR_ASSUMED_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "REF_DRIVER_ASSUMED_P",
+    "plane": {
+     "origin": [
+      0,
+      0,
+      -78.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -23.0,
+      -23.0
+     ],
+     [
+      23.0,
+      -23.0
+     ],
+     [
+      23.0,
+      23.0
+     ],
+     [
+      -23.0,
+      23.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 18,
+    "operation": "new",
+    "body_name": "REF_DRIVER_ASSUMED",
+    "name": "REF_DRIVER_ASSUMED_X"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "REF_CONNECTOR_ASSUMED_P",
+    "plane": {
+     "origin": [
+      -29.0,
+      0,
+      -78.0
+     ],
+     "x_dir": [
+      1,
+      0,
+      0
+     ],
+     "y_dir": [
+      0,
+      1,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -6.0,
+      -10.0
+     ],
+     [
+      6.0,
+      -10.0
+     ],
+     [
+      6.0,
+      10.0
+     ],
+     [
+      -6.0,
+      10.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 18,
+    "operation": "new",
+    "body_name": "REF_CONNECTOR_ASSUMED",
+    "name": "REF_CONNECTOR_ASSUMED_X"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 39.5,
+    "height": 12.3,
+    "base": [
+     0,
+     0,
+     -12.0
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "REF_REDUCER_SPACE",
+    "name": "REF_RS"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 39.0,
+    "height": 10.0,
+    "base": [
+     0,
+     0,
+     4.300000000000001
+    ],
+    "axis": "Z",
+    "operation": "new",
+    "body_name": "REF_OUTPUT_BEARING",
+    "name": "REF_OB"
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 30.0,
+    "height": 10.0,
+    "base": [
+     0,
+     0,
+     4.300000000000001
+    ],
+    "axis": "Z",
+    "operation": "cut",
+    "targets": [
+     "REF_OUTPUT_BEARING"
+    ],
+    "name": "REF_OB_ID"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "REF_MOTOR_ASSUMED"
+    ],
+    "color": "#5aa9e6",
+    "opacity": 0.35
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "REF_DRIVER_ASSUMED"
+    ],
+    "color": "#5aa9e6",
+    "opacity": 0.35
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "REF_CONNECTOR_ASSUMED"
+    ],
+    "color": "#5aa9e6",
+    "opacity": 0.35
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "REF_REDUCER_SPACE"
+    ],
+    "color": "#5aa9e6",
+    "opacity": 0.35
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "REF_OUTPUT_BEARING"
+    ],
+    "color": "#5aa9e6",
+    "opacity": 0.35
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "A2_CHILD"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "A2_CHILD_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      38.0
+     ],
+     [
+      62.0,
+      38.0
+     ],
+     [
+      62.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "A2_CHILD_HUB",
+    "name": "A2_CHILD_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "A2_CHILD_HUB"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "A2_CHILD_HUB",
+    "edges": [
+     [
+      38.0,
+      0.0,
+      18.0
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "A2_CHILD_HUB",
+    "edges": [
+     [
+      38.0,
+      0.0,
+      62.0
+     ]
+    ],
+    "radius": 6.0
+   }
+  },
+  {
+   "command": "solid.cylinder",
+   "params": {
+    "radius": 22.0,
+    "height": 165.0,
+    "base": [
+     0.0,
+     0.0,
+     40.0
+    ],
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "operation": "new",
+    "body_name": "A2_CHILD_TUBE",
+    "name": "A2_CHILD_TUBE_CYL"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "A2_CHILD_TUBE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "A2_CHILD_HUB"
+    ],
+    "color": "#e8e8e8",
+    "opacity": 0.25
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "A2_CHILD_TUBE"
+    ],
+    "color": "#e8e8e8",
+    "opacity": 0.25
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "A2_ENVELOPE"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      52.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      12.0,
+      49.0
+     ],
+     [
+      18.0,
+      49.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_MODULE",
+    "name": "J2_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_MODULE"
+    ],
+    "color": "#eceff1"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_MODULE",
+    "edges": [
+     [
+      52.0,
+      0.0,
+      -18.0
+     ]
+    ],
+    "radius": 5.0
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      49.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      18.0,
+      52.0
+     ],
+     [
+      18.0,
+      49.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_ACCENT_RING",
+    "name": "J2_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_ACCENT_RING"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_END_CAP",
+    "name": "J2_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_END_CAP"
+    ],
+    "color": "#ed7d31"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "body": "J2_END_CAP",
+    "edges": [
+     [
+      38.0,
+      0.0,
+      -91.0
+     ]
+    ],
+    "radius": 3.0
+   }
+  },
+  {
+   "command": "solid.scale",
+   "params": {
+    "bodies": [
+     "J2_MODULE",
+     "J2_ACCENT_RING",
+     "J2_END_CAP"
+    ],
+    "factor": 1.001,
+    "origin": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_MODULE"
+    ],
+    "color": "#cccccc",
+    "opacity": 0.15
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_ACCENT_RING"
+    ],
+    "color": "#cccccc",
+    "opacity": 0.15
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_END_CAP"
+    ],
+    "color": "#cccccc",
+    "opacity": 0.15
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_REAR_HOUSING.stl",
+    "bodies": [
+     "J2_REAR_HOUSING"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_REDUCER_HOUSING.stl",
+    "bodies": [
+     "J2_REDUCER_HOUSING"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_OUTPUT_FLANGE.stl",
+    "bodies": [
+     "J2_OUTPUT_FLANGE"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_BEARING_RETAINER.stl",
+    "bodies": [
+     "J2_BEARING_RETAINER"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_ACCENT_RING_PART.stl",
+    "bodies": [
+     "J2_ACCENT_RING_PART"
+    ]
+   }
+  },
+  {
+   "command": "file.export",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\j2-split\\parts\\J2_END_CAP_PART.stl",
+    "bodies": [
+     "J2_END_CAP_PART"
+    ]
+   }
+  },
+  {
+   "command": "inspect.interference",
+   "params": {
+    "budget_s": 900
+   }
+  },
+  {
+   "command": "inspect.clearance",
+   "params": {
+    "bodies": [
+     "J2_REAR_HOUSING",
+     "J2_REDUCER_HOUSING",
+     "J2_OUTPUT_FLANGE",
+     "J2_BEARING_RETAINER",
+     "J2_ACCENT_RING_PART",
+     "J2_END_CAP_PART"
+    ],
+    "against": [
+     "J2_REAR_HOUSING",
+     "J2_REDUCER_HOUSING",
+     "J2_OUTPUT_FLANGE",
+     "J2_BEARING_RETAINER",
+     "J2_ACCENT_RING_PART",
+     "J2_END_CAP_PART"
+    ]
+   }
+  }
+ ]
+}

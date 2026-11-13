@@ -1,0 +1,295 @@
+{
+ "units": "mm (angles in deg)",
+ "status": "MP16 PROTOTYPE - J2 / J3 common drive module (NEMA23 + SERVO57D -> HTD 3M belt 20T:60T -> printed cycloid 28 pins / 27 lobes = 81:1). Purchased-part sizes are the listing / nominal values of the parts in the user's cart (2026-11-06) - measure on arrival and recalibrate (user: 「오기전에 모델링은 끝내놔 치수보정은 나중에 한다고해도」)",
+ "frame": "z = joint (reducer) axis; z 0 = HOUSING_BASE bottom face; output +z; belt / pulley side -z. Motor axis at x = +belt.centre_distance, y 0 (side layout - user 「옆 배치 (권장)」). Input angle theta: cam 1 eccentric direction; disc 1 centre = E (cos theta, sin theta), disc 2 = opposite; carrier = -theta / 27.",
+ "sizing_ref": "src/cad/j23-drive-v1/sizing.py -> .dev/mp16-evidence/sizing/sizing.json (design torque 1 kg SF 2 = 35.9 N·m)",
+ "ring": {
+  "pins": 28,
+  "pin_circle_radius": 46.0,
+  "pin_dia": 6.0,
+  "pin_length": 45.0,
+  "pin_floor": 2.0,
+  "source": "pin = cart 「HZYUEGOU M1~M8 cylindrical dowel pin 10pcs M6/45mm」 (304 stainless, GB119) - nominal; radius = author (sizing.py)"
+ },
+ "eccentricity": 1.2,
+ "disc": {
+  "count": 2,
+  "thickness": 12.0,
+  "axial_gap": 1.0,
+  "second_disc_phase_deg": 180.0,
+  "lip_bore_dia": 26.0
+ },
+ "output_pins": {
+  "count": 8,
+  "radius": 28.0,
+  "dia": 8.0,
+  "length": 45.0,
+  "phase_deg": 0.0,
+  "source": "R1 review: 45 (the cart had 40) - pressed 19 deep in the carrier instead of 14 (cantilever entrance pressure); hardened (ISO 8734 class) preferred over the cart 304 - user to change the cart option"
+ },
+ "bearings": {
+  "disc": {
+   "model": "6804ZZ",
+   "id": 20.0,
+   "od": 32.0,
+   "width": 7.0,
+   "count": 2,
+   "source": "cart 「6804ZZ - 20x32x7mm/10Pcs/ABEC-7」"
+  },
+  "output": {
+   "model": "6812-2RS",
+   "id": 60.0,
+   "od": 78.0,
+   "width": 10.0,
+   "count": 1,
+   "source": "cart 「6812-2RS 60X78X10mm」"
+  },
+  "shaft": {
+   "model": "608",
+   "id": 8.0,
+   "od": 22.0,
+   "width": 7.0,
+   "count": 2,
+   "source": "not yet in the cart (608 - common; the user has used 608 before - BOM M08)"
+  },
+  "ring_section_factor": 0.4,
+  "ring_section_min_factor": 0.15,
+  "ring_note": "same rule as MP6: a shoulder stays clear of the other ring using factor and overlaps its own ring inside the min_factor band"
+ },
+ "shaft": {
+  "dia": 8.0,
+  "flat_to_axis": 3.5,
+  "length": 81.0,
+  "z_bottom": -36.0,
+  "status": "cart 「DIY 모델용 2Pcs 8mm D 모양 샤프트 직경 8mm 길이 100mm 플랫 액슬」 - cut to 81 AFTER measuring the 60T pulley (R1: do not cut first); top flush with the upper 608, up to 2 longer is fine; flat_to_axis is an ASSUMPTION (not on the listing) - measure on arrival"
+ },
+ "belt": {
+  "profile": "HTD 3M",
+  "width": 15.0,
+  "small_teeth": 20,
+  "big_teeth": 60,
+  "length": 306.0,
+  "pitch": 3.0,
+  "z_centre": -18.0,
+  "thickness": 2.4,
+  "slot_travel": 2.5,
+  "source": "cart 「HTD 3M 15mm/3M-306mm」 · 「HTD3M 8mm/belt width 15mm/HTD3M-60teeth」 · 「…-20teeth」 - side layout",
+  "pulley_envelope": {
+   "big_od": 62.0,
+   "big_z": [
+    -34.5,
+    -1.5
+   ],
+   "small_od": 24.0,
+   "small_z": [
+    -26.5,
+    -1.5
+   ],
+   "note": "ASSUMPTION - flange diameter and hub length are not on the listing. R1: the belt plane is low (centre -18) so a hubbed 20T can sit hub-up (hub between the teeth and the plate, set screw on the shaft) and a hubless one still has shaft at its set screw; the 60T hub (if any) goes down - the envelopes cover both"
+  }
+ },
+ "motor": {
+  "frame": 56.4,
+  "bolt_square": 47.14,
+  "bolt_hole": 5.1,
+  "pilot_dia": 38.1,
+  "pilot_height": 1.6,
+  "shaft_dia": 8.0,
+  "shaft_flat": 7.5,
+  "shaft_length": {
+   "J2": 24.0,
+   "J3": 25.0
+  },
+  "body_length": {
+   "J2": 76.0,
+   "J3": 56.0
+  },
+  "board_length": 14.1,
+  "source": "listing drawings (user screenshots 2026-11-06): MKS SERVO57D 56 mm / 76 mm motor, shaft 8 / flat 7.5, shaft 25 (56 mm) and 24 (76 mm), board 14.1; frame · bolt square · pilot = NEMA23 common values (ASSUMPTION)"
+ },
+ "base": {
+  "thickness": 10.0,
+  "outer_radius": 59.0,
+  "lobe_thickness": 5.0,
+  "lobe_half_width": 34.0,
+  "lobe_corner": 8.0,
+  "lobe_x_end": 136.0,
+  "shaft_seat_from": 3.0,
+  "lip_bore_dia": 15.0,
+  "screw_counterbore": [
+   6.5,
+   3.0
+  ]
+ },
+ "cap": {
+  "top": 69.5,
+  "inner_radius_above_discs": 35.9,
+  "screw_radius": 54.5,
+  "screw_count": 6,
+  "retainer_screw_radius": 43.5,
+  "stand_insert_radius": 53.5,
+  "seat_proud": 0.2,
+  "cone_start_above_pin_tops": 1.0,
+  "note": "R1: the 6812 sits above the ring pin tops so the 45 deg cone over the discs starts above the pin grooves (a cone meeting the grooves gave an open STL) - cap printed upright; cap and hub faces 0.2 under the 6812 ring faces so the retainer and the flange clamp the rings"
+ },
+ "carrier": {
+  "plate_radius": 34.5,
+  "plate_top": 59.5,
+  "pin_floor": 3.5,
+  "insert_radius": 22.0,
+  "inserts": 6,
+  "inner_ring_relief_radius": 33.0,
+  "relief_depth": 0.5,
+  "seat_ledge_radius": 9.5
+ },
+ "retainer": {
+  "thickness": 3.0,
+  "outer_radius": 47.5
+ },
+ "output_flange": {
+  "thickness": 5.0,
+  "radius": 33.0
+ },
+ "cam": {
+  "collar_radius": 6.5,
+  "collar_height": 0.6,
+  "hub_radius": 11.5,
+  "spacer_radius": 11.0,
+  "upper_collar_radius": 11.5,
+  "note": "R1: the upper cam top collar is centred on its lobe (r 11.5) so it holds the 6804 #2 inner ring down; the washer (on the axis) sits on it"
+ },
+ "washer": {
+  "variants": [
+   1.2,
+   1.4,
+   1.6
+  ],
+  "od": 13.0,
+  "bore_clearance": 0.15
+ },
+ "guard": {
+  "wall": 2.0,
+  "floor": 2.0,
+  "gap": 3.0,
+  "tab_radius": 39.0,
+  "tab_angles_deg": [
+   109.2857,
+   186.4286,
+   263.5714
+  ],
+  "tab_motor_x": 130.0,
+  "inner_radius": 33.0,
+  "inner_half_width": 30.0,
+  "inner_x_end": 124.0,
+  "end_corner": 6.0,
+  "tab_boss_r": 4.5,
+  "note": "tab angles = half a pin pitch between ring pins (pins every 360/28 deg) so the base inserts clear the pin holes; the motor-end tab is a through hole + M3 nut on the lobe top"
+ },
+ "stand": {
+  "plate_thickness": 8.0,
+  "axis_height": 75.0,
+  "foot_thickness": 8.0,
+  "foot_back": 130.0,
+  "width": 140.0,
+  "centre_hole_radius": 48.0,
+  "desk_hole": 4.5,
+  "outer_radius": 59.0,
+  "counterbore": 2.0,
+  "note": "bench pose: axis horizontal, motor up (+x up), desk at x = -axis_height; the stand plate sits on the cap top face (z 62) and the module hangs behind it"
+ },
+ "lever": {
+  "length": 210.0,
+  "width": 36.0,
+  "hub_radius": 33.0,
+  "hub_thickness": 16.0,
+  "arm_thickness": 12.0,
+  "hook_radii": [
+   100.0,
+   150.0,
+   200.0
+  ],
+  "hook_hole": 5.0,
+  "counterbore": 6.0,
+  "note": "R1: the 20 x 6 arm was about 38 MPa at the root with the nominal J2 torque on the 200 mm hook - now 36 (in plane) x 12; print 100 % infill; swing only the lower half (pointing up the arm meets the motor)"
+ },
+ "screws": {
+  "cap": [
+   3,
+   12
+  ],
+  "retainer": [
+   3,
+   8
+  ],
+  "flange": [
+   3,
+   10
+  ],
+  "lever": [
+   3,
+   20
+  ],
+  "stand": [
+   3,
+   12
+  ],
+  "guard": [
+   3,
+   8
+  ],
+  "motor": [
+   5,
+   20
+  ],
+  "button_head": [
+   5.7,
+   1.65
+  ],
+  "socket_head": [
+   5.5,
+   3.0
+  ],
+  "m5_head": [
+   8.5,
+   5.0
+  ],
+  "min_engagement": 4.0,
+  "tip_to_floor_min": 0.5,
+  "guard_motor_end": [
+   3,
+   12
+  ],
+  "m3_nut": 2.4
+ },
+ "fits_from": {
+  "ledger": "../calibration/print-fits.json",
+  "material": "PLA",
+  "note": "Ø6 / Ø8 pin holes = pin + (ledger pin_press_hole_dia - 4.0) / + (pin_slip_hole_dia - 4.0) - the Ø4 oversize carried over (ASSUMPTION until a coupon); bearing seats + bearing_seat_extra; shafts into inner rings + bearing_bore_extra; D bores + d_bore_extra; inserts = insert_hole_dia; M3 clearance = m3_clearance_dia"
+ },
+ "fits": {
+  "profile_clearance": 0.1,
+  "output_hole_clearance": 0.1,
+  "insert_hole_depth": 7.5,
+  "m5_clearance": 5.5,
+  "slot_width_extra": 0.4
+ },
+ "min_material": 2.0,
+ "checks": {
+  "profile_chord_error_max": 0.002,
+  "theta_deg": [
+   0,
+   30,
+   60,
+   90,
+   120,
+   150,
+   180,
+   210,
+   240,
+   270,
+   300,
+   330
+  ]
+ },
+ "quality": "fine"
+}

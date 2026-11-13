@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dt_s": 0.008333333333333333,
+  "duration_s": 22,
+  "steps": 2640,
+  "capture_stride": 8,
+  "capture_count": 331,
+  "fps": 15,
+  "resolution": [640, 480],
+  "drive": {"type": "acceleration", "kp": 64, "kd": 16},
+  "initial_opening_m": 0.04,
+  "segments": [
+    {"name": "initial", "duration_s": 1, "opening_m": 0.04, "gravity": false},
+    {"name": "open", "duration_s": 3, "opening_m": 0.08, "gravity": false},
+    {"name": "close", "duration_s": 5, "opening_m": 0, "gravity": false},
+    {"name": "reopen", "duration_s": 3, "opening_m": 0.04, "gravity": false},
+    {"name": "arm_out", "duration_s": 3, "opening_m": 0.04, "arm": {"J1": 0.05235987755982989, "J2": -0.05235987755982989, "J3": 0.05235987755982989, "J4": -0.05235987755982989, "J5": 0.05235987755982989, "J6": -0.05235987755982989}, "gravity": false},
+    {"name": "arm_return", "duration_s": 3, "opening_m": 0.04, "arm": {"J1": 0, "J2": 0, "J3": 0, "J4": 0, "J5": 0, "J6": 0}, "gravity": false},
+    {"name": "settle", "duration_s": 1, "opening_m": 0.04, "gravity": false},
+    {"name": "gravity_hold", "duration_s": 3, "opening_m": 0.04, "gravity": true}
+  ],
+  "settling": {"window_s": 0.5, "arm_position_rad": 0.008726646259971648, "arm_velocity_rad_s": 0.017453292519943295, "jaw_position_m": 0.0005, "jaw_velocity_m_s": 0.001, "pinion_position_rad": 0.03490658503988659, "pinion_velocity_rad_s": 0.05235987755982989},
+  "floor": {"path": "/World/Floor", "size": 1, "scale": [2, 2, 0.02], "translation": [0, 0, -0.01]},
+  "camera": {"path": "/World/Camera", "eye": [1.05, -1.05, 0.8], "target": [0.25, 0, 0.25], "focal_length_mm": 35, "horizontal_aperture_mm": 36},
+  "assumptions": ["Mass, inertia and acceleration-drive gains are simulated assumptions.", "Eleven source collision AABB proxies; self collision disabled.", "No grasp object, contact-force or collision-free-path acceptance.", "Mimic targets synchronize nine physical DOFs; no gear-force acceptance."]
+}

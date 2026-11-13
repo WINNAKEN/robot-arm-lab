@@ -1,0 +1,169 @@
+[
+  {
+    "display_value": 90.0,
+    "errors": [],
+    "expression": "90 mm",
+    "name": "width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 90.0
+  },
+  {
+    "display_value": 60.0,
+    "errors": [],
+    "expression": "60 mm",
+    "name": "depth",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 60.0
+  },
+  {
+    "display_value": 12.0,
+    "errors": [],
+    "expression": "12 mm",
+    "name": "height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 12.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "wall",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "display_value": 2.0,
+    "errors": [],
+    "expression": "2 mm",
+    "name": "base_t",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 2.0
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "OuterProfile",
+    "projected": null,
+    "sketch": 1
+  },
+  {
+    "constraints": [
+      "k1"
+    ],
+    "created": {
+      "constraints": [
+        "k1"
+      ],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "l1.start"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 1
+  },
+  {
+    "bodies": [
+      "parts_tray"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+      "parts_tray"
+    ],
+    "feature": 2,
+    "ms": 2.2982,
+    "name": "Extrude1",
+    "removed_bodies": [],
+    "warning": null
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "TrayInterior",
+    "projected": null,
+    "sketch": 3
+  },
+  {
+    "constraints": [],
+    "created": {
+      "constraints": [],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    }
+  },
+  {
+    "profiles": 1,
+    "sketch": 3
+  },
+  {
+    "bodies": [
+      "parts_tray"
+    ],
+    "changed_bodies": [
+      "parts_tray"
+    ],
+    "created_bodies": [],
+    "feature": 4,
+    "ms": 5.2748,
+    "name": "Extrude2",
+    "removed_bodies": [],
+    "warning": null
+  }
+]

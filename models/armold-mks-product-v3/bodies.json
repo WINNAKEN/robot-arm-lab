@@ -1,0 +1,299 @@
+{
+ "bodies": [
+  {
+   "name": "BASE_FOOT",
+   "link": 0,
+   "role": "frame",
+   "color": "#6B7280"
+  },
+  {
+   "name": "BASE_COLUMN",
+   "link": 0,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "BASE_LIGHT_RING",
+   "link": 0,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "J1_MODULE",
+   "link": 0,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J1_ACCENT_RING",
+   "link": 0,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK1_SHOULDER_CAP",
+   "link": 1,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "LINK1_POST",
+   "link": 1,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J2_MODULE",
+   "link": 1,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J2_ACCENT_RING",
+   "link": 1,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J2_END_CAP",
+   "link": 1,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J2_CAP_SLASH",
+   "link": 1,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK2_SHOULDER_HUB",
+   "link": 2,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "LINK2_SHOULDER_HUB_CAP",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK2_SHOULDER_HUB_SLASH",
+   "link": 2,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK2_UPPER_BAR",
+   "link": 2,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J3_MODULE",
+   "link": 2,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J3_ACCENT_RING",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J3_END_CAP",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J3_CAP_SLASH",
+   "link": 2,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK2_LOGO_K",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK2_LOGO_K_SLASH",
+   "link": 2,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK2_LOGO_M",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK2_LOGO_J",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK2_LOGO_H",
+   "link": 2,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK3_ELBOW_HUB",
+   "link": 3,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "LINK3_ELBOW_HUB_CAP",
+   "link": 3,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK3_ELBOW_HUB_SLASH",
+   "link": 3,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK3_FOREARM_BAR",
+   "link": 3,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J4_MODULE",
+   "link": 3,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J4_ACCENT_RING",
+   "link": 3,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J4_END_CAP",
+   "link": 3,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J4_CAP_SLASH",
+   "link": 3,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK4_NECK",
+   "link": 4,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J5_MODULE",
+   "link": 4,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J5_ACCENT_RING",
+   "link": 4,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J5_END_CAP",
+   "link": 4,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J5_CAP_SLASH",
+   "link": 4,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK5_WRIST_HUB",
+   "link": 5,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "LINK5_WRIST_HUB_CAP",
+   "link": 5,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "LINK5_WRIST_HUB_SLASH",
+   "link": 5,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK5_WRIST_BAR",
+   "link": 5,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J6_MODULE",
+   "link": 5,
+   "role": "body",
+   "color": "#FFFFFF"
+  },
+  {
+   "name": "J6_ACCENT_RING",
+   "link": 5,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J6_END_CAP",
+   "link": 5,
+   "role": "accent",
+   "color": "#0B2545"
+  },
+  {
+   "name": "J6_CAP_SLASH",
+   "link": 5,
+   "role": "highlight",
+   "color": "#34D399"
+  },
+  {
+   "name": "LINK6_TOOL_FLANGE",
+   "link": 6,
+   "role": "frame",
+   "color": "#6B7280"
+  },
+  {
+   "name": "LINK6_TOOL_RING",
+   "link": 6,
+   "role": "highlight",
+   "color": "#34D399"
+  }
+ ],
+ "colors": {
+  "body": "#FFFFFF",
+  "accent": "#0B2545",
+  "frame": "#6B7280",
+  "highlight": "#34D399"
+ },
+ "color_names": {
+  "body": "White",
+  "accent": "Deep Navy",
+  "frame": "Cool Gray",
+  "highlight": "Mint Accent"
+ },
+ "control": null
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "SIMULATION_PREPARATION_ONLY",
+  "input_pins": {
+    "outputs/isaac-contact-v1/delivery.json": "f6a566c5af482280f39d89596aca619dd2086f44a967866981bf7a3755673ac6",
+    "models/robot-arm-urdf-v1/assumptions.json": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5",
+    "models/robot-arm-urdf-v1/manifest.json": "d82f530e301a448c58248b5e5cb94580da610c247fddbc7f643b76836b626b4c",
+    "outputs/isaac-contact-v1/evidence/tracking-diagnostic.json": "cb72fa53d9186b6b2c675659b718e398ca3ae87c206a3ca584b1cc0c62e2c225"
+  },
+  "physics_hz": 120,
+  "move_s": 1.5,
+  "hold_s": 0.5,
+  "max_decisions": 16,
+  "observation_dim": 41,
+  "action_dim": 6,
+  "limits": {
+    "command_deg": 10,
+    "goal_deg": 5,
+    "increment_deg": 2,
+    "velocity_rad_s": 0.2,
+    "acceleration_rad_s2": 0.5,
+    "jerk_rad_s3": 2,
+    "actual_abort_deg": 15
+  },
+  "reward": {
+    "progress": 2,
+    "position": 0.5,
+    "velocity": 0.02,
+    "acceleration": 0.005,
+    "jerk": 0.001,
+    "action_change": 0.01,
+    "time": 0.01,
+    "goal_bonus": 5,
+    "fault_penalty": 10
+  },
+  "ppo_candidate": {
+    "status": "CANDIDATE_NOT_NATIVE_VALIDATED",
+    "algorithm": "PPO",
+    "suggested_library": "rsl_rl",
+    "actor_hidden_dims": [128, 128],
+    "critic_hidden_dims": [128, 128],
+    "learning_rate": 0.0003,
+    "clip_param": 0.2,
+    "gamma": 0.97,
+    "gae_lambda": 0.95,
+    "rollout_steps": 32,
+    "mini_batches": 4,
+    "learning_epochs": 5,
+    "num_envs": 1
+  }
+}

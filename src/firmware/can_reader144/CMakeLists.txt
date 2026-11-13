@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+set(IDF_TARGET "esp32s3" CACHE STRING "ESP32-S3 only")
+set(COMPONENTS main driver esp_driver_usb_serial_jtag esp_timer esp_app_format)
+set(PROJECT_VER "144.1")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(robot_can_reader144)

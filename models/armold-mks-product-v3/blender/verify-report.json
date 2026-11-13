@@ -1,0 +1,1733 @@
+{
+ "control": null,
+ "blend": {
+  "missing": [],
+  "mesh_names_extra": [],
+  "shapes": {
+   "BASE_FOOT": {
+    "max_nearest_m": 8.381903171539307e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3656,
+     "faces": 3656,
+     "triangles": 3656,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "BASE_COLUMN": {
+    "max_nearest_m": 6.4523919540704355e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 7520,
+     "faces": 7520,
+     "triangles": 7520,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "BASE_LIGHT_RING": {
+    "max_nearest_m": 5.587935447692871e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 4356,
+     "faces": 4356,
+     "triangles": 4356,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J1_MODULE": {
+    "max_nearest_m": 8.535712581192456e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9938,
+     "faces": 9938,
+     "triangles": 9938,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J1_ACCENT_RING": {
+    "max_nearest_m": 9.125060707049215e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5856,
+     "faces": 5856,
+     "triangles": 5856,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK1_SHOULDER_CAP": {
+    "max_nearest_m": 1.5472291892137946e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 7322,
+     "faces": 7322,
+     "triangles": 7322,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK1_POST": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J2_MODULE": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9110,
+     "faces": 9110,
+     "triangles": 9110,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J2_ACCENT_RING": {
+    "max_nearest_m": 1.5472291892137946e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 4332,
+     "faces": 4332,
+     "triangles": 4332,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J2_END_CAP": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3620,
+     "faces": 3620,
+     "triangles": 3620,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J2_CAP_SLASH": {
+    "max_nearest_m": 7.679882507716229e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_SHOULDER_HUB": {
+    "max_nearest_m": 1.6763806343078613e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5294,
+     "faces": 5294,
+     "triangles": 5294,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_SHOULDER_HUB_CAP": {
+    "max_nearest_m": 1.6686016124367598e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 1412,
+     "faces": 1412,
+     "triangles": 1412,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_SHOULDER_HUB_SLASH": {
+    "max_nearest_m": 7.508562660518692e-09,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_UPPER_BAR": {
+    "max_nearest_m": 3.161013495400766e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J3_MODULE": {
+    "max_nearest_m": 3.4142850324769825e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9866,
+     "faces": 9866,
+     "triangles": 9866,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J3_ACCENT_RING": {
+    "max_nearest_m": 3.3372032248735195e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5760,
+     "faces": 5760,
+     "triangles": 5760,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J3_END_CAP": {
+    "max_nearest_m": 3.161013495400766e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3572,
+     "faces": 3572,
+     "triangles": 3572,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J3_CAP_SLASH": {
+    "max_nearest_m": 3.094458378427589e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_LOGO_K": {
+    "max_nearest_m": 1.5472291892137946e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 40,
+     "faces": 40,
+     "triangles": 40,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_LOGO_K_SLASH": {
+    "max_nearest_m": 1.5017125321037383e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_LOGO_M": {
+    "max_nearest_m": 1.580506747700383e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_LOGO_J": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 28,
+     "faces": 28,
+     "triangles": 28,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK2_LOGO_H": {
+    "max_nearest_m": 3.094458378427589e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK3_ELBOW_HUB": {
+    "max_nearest_m": 3.3527612686157227e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5366,
+     "faces": 5366,
+     "triangles": 5366,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK3_ELBOW_HUB_CAP": {
+    "max_nearest_m": 3.3527612686157227e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 1412,
+     "faces": 1412,
+     "triangles": 1412,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK3_ELBOW_HUB_SLASH": {
+    "max_nearest_m": 3.3372032248735195e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK3_FOREARM_BAR": {
+    "max_nearest_m": 3.3527612686157227e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J4_MODULE": {
+    "max_nearest_m": 4.280032683823265e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J4_ACCENT_RING": {
+    "max_nearest_m": 4.280032683823265e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5736,
+     "faces": 5736,
+     "triangles": 5736,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J4_END_CAP": {
+    "max_nearest_m": 3.4142850324769825e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3608,
+     "faces": 3608,
+     "triangles": 3608,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J4_CAP_SLASH": {
+    "max_nearest_m": 3.003425064207477e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK4_NECK": {
+    "max_nearest_m": 4.280032683823265e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J5_MODULE": {
+    "max_nearest_m": 4.280032683823265e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J5_ACCENT_RING": {
+    "max_nearest_m": 4.280032683823265e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 5736,
+     "faces": 5736,
+     "triangles": 5736,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J5_END_CAP": {
+    "max_nearest_m": 3.364382550330447e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3584,
+     "faces": 3584,
+     "triangles": 3584,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J5_CAP_SLASH": {
+    "max_nearest_m": 3.343694388036056e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK5_WRIST_HUB": {
+    "max_nearest_m": 4.470348358154297e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 4916,
+     "faces": 4916,
+     "triangles": 4916,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK5_WRIST_HUB_CAP": {
+    "max_nearest_m": 4.470348358154297e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 1388,
+     "faces": 1388,
+     "triangles": 1388,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK5_WRIST_HUB_SLASH": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK5_WRIST_BAR": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J6_MODULE": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J6_ACCENT_RING": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 4446,
+     "faces": 4446,
+     "triangles": 4446,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J6_END_CAP": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 3500,
+     "faces": 3500,
+     "triangles": 3500,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "J6_CAP_SLASH": {
+    "max_nearest_m": 3.4142850324769825e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK6_TOOL_FLANGE": {
+    "max_nearest_m": 4.470348358154297e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 13212,
+     "faces": 13212,
+     "triangles": 13212,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   },
+   "LINK6_TOOL_RING": {
+    "max_nearest_m": 4.0122603905956566e-08,
+    "ok": true,
+    "topology": {
+     "stl_triangles": 2864,
+     "faces": 2864,
+     "triangles": 2864,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    }
+   }
+  },
+  "materials": {
+   "BASE_FOOT": {
+    "slots": [
+     "KMJH_CoolGray"
+    ],
+    "err": 4.361443678435606e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "BASE_COLUMN": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "BASE_LIGHT_RING": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J1_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J1_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK1_SHOULDER_CAP": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK1_POST": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J2_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J2_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J2_END_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J2_CAP_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_UPPER_BAR": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J3_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J3_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J3_END_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J3_CAP_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_LOGO_K": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_LOGO_K_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_LOGO_M": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_LOGO_J": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK2_LOGO_H": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK3_FOREARM_BAR": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J4_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J4_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J4_END_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J4_CAP_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK4_NECK": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J5_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J5_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J5_END_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J5_CAP_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK5_WRIST_HUB": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK5_WRIST_HUB_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK5_WRIST_HUB_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK5_WRIST_BAR": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J6_MODULE": {
+    "slots": [
+     "KMJH_White"
+    ],
+    "err": 0.0,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J6_ACCENT_RING": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J6_END_CAP": {
+    "slots": [
+     "KMJH_DeepNavy"
+    ],
+    "err": 1.316534208040121e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "J6_CAP_SLASH": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK6_TOOL_FLANGE": {
+    "slots": [
+     "KMJH_CoolGray"
+    ],
+    "err": 4.361443678435606e-09,
+    "face_index_0": true,
+    "ok": true
+   },
+   "LINK6_TOOL_RING": {
+    "slots": [
+     "KMJH_Mint"
+    ],
+    "err": 6.121918028068052e-09,
+    "face_index_0": true,
+    "ok": true
+   }
+  },
+  "parents_ok": true,
+  "chain_ok": true,
+  "joints": [
+   {
+    "joint": 1,
+    "origin_err_m": 8.344650248570673e-10,
+    "axis_err": 0.0,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   },
+   {
+    "joint": 2,
+    "origin_err_m": 9.894371044705252e-09,
+    "axis_err": 4.603682890458316e-08,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   },
+   {
+    "joint": 3,
+    "origin_err_m": 3.6432793346645523e-08,
+    "axis_err": 4.603682890458316e-08,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   },
+   {
+    "joint": 4,
+    "origin_err_m": 4.137138858522727e-08,
+    "axis_err": 4.733151237612532e-08,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   },
+   {
+    "joint": 5,
+    "origin_err_m": 3.038120739989685e-08,
+    "axis_err": 2.8903386573020384e-08,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   },
+   {
+    "joint": 6,
+    "origin_err_m": 2.710596046423441e-08,
+    "axis_err": 2.8056456935487972e-08,
+    "pose_deg_prop": true,
+    "rot_z": 0.0
+   }
+  ],
+  "rotation_J2_err_m": 4.744736789752019e-08,
+  "types": {
+   "MESH": 48,
+   "EMPTY": 7,
+   "CAMERA": 1,
+   "LIGHT": 3
+  },
+  "units": [
+   "METRIC",
+   1.0
+  ]
+ },
+ "glb": {
+  "missing": [],
+  "bodies": {
+   "BASE_FOOT": {
+    "max_nearest_m": 8.381903171539307e-09,
+    "color_err": 4.361443678435606e-09,
+    "topology": {
+     "stl_triangles": 3656,
+     "faces": 3656,
+     "triangles": 3656,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "BASE_COLUMN": {
+    "max_nearest_m": 6.4523919540704355e-09,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 7520,
+     "faces": 7520,
+     "triangles": 7520,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "BASE_LIGHT_RING": {
+    "max_nearest_m": 5.587935447692871e-09,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 4356,
+     "faces": 4356,
+     "triangles": 4356,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J1_MODULE": {
+    "max_nearest_m": 8.535712581192456e-09,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9938,
+     "faces": 9938,
+     "triangles": 9938,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J1_ACCENT_RING": {
+    "max_nearest_m": 9.125060707049215e-09,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 5856,
+     "faces": 5856,
+     "triangles": 5856,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK1_SHOULDER_CAP": {
+    "max_nearest_m": 1.5472291892137946e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 7322,
+     "faces": 7322,
+     "triangles": 7322,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK1_POST": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J2_MODULE": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9110,
+     "faces": 9110,
+     "triangles": 9110,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J2_ACCENT_RING": {
+    "max_nearest_m": 1.5472291892137946e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 4332,
+     "faces": 4332,
+     "triangles": 4332,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J2_END_CAP": {
+    "max_nearest_m": 1.7071425162384912e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 3620,
+     "faces": 3620,
+     "triangles": 3620,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J2_CAP_SLASH": {
+    "max_nearest_m": 7.679882507716229e-09,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB": {
+    "max_nearest_m": 2.789307274042585e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 5294,
+     "faces": 5294,
+     "triangles": 5294,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB_CAP": {
+    "max_nearest_m": 2.4142639887259065e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 1412,
+     "faces": 1412,
+     "triangles": 1412,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_SHOULDER_HUB_SLASH": {
+    "max_nearest_m": 2.1155582174969823e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_UPPER_BAR": {
+    "max_nearest_m": 3.650024282819686e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J3_MODULE": {
+    "max_nearest_m": 3.9245694694045596e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9866,
+     "faces": 9866,
+     "triangles": 9866,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J3_ACCENT_RING": {
+    "max_nearest_m": 3.942356485708842e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 5760,
+     "faces": 5760,
+     "triangles": 5760,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J3_END_CAP": {
+    "max_nearest_m": 3.161013495400766e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 3572,
+     "faces": 3572,
+     "triangles": 3572,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J3_CAP_SLASH": {
+    "max_nearest_m": 3.0719530030864917e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_LOGO_K": {
+    "max_nearest_m": 2.363431761409629e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 40,
+     "faces": 40,
+     "triangles": 40,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_LOGO_K_SLASH": {
+    "max_nearest_m": 2.4142639887259065e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_LOGO_M": {
+    "max_nearest_m": 2.499000650857397e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_LOGO_J": {
+    "max_nearest_m": 2.499000650857397e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 28,
+     "faces": 28,
+     "triangles": 28,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK2_LOGO_H": {
+    "max_nearest_m": 3.8172867533603494e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB": {
+    "max_nearest_m": 9.541398782175747e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 5366,
+     "faces": 5366,
+     "triangles": 5366,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB_CAP": {
+    "max_nearest_m": 9.470227269048337e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 1412,
+     "faces": 1412,
+     "triangles": 1412,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK3_ELBOW_HUB_SLASH": {
+    "max_nearest_m": 9.094592456904138e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK3_FOREARM_BAR": {
+    "max_nearest_m": 9.232784492496648e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J4_MODULE": {
+    "max_nearest_m": 1.2489448408814496e-07,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J4_ACCENT_RING": {
+    "max_nearest_m": 1.2489448408814496e-07,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 5736,
+     "faces": 5736,
+     "triangles": 5736,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J4_END_CAP": {
+    "max_nearest_m": 9.884312390795458e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 3608,
+     "faces": 3608,
+     "triangles": 3608,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J4_CAP_SLASH": {
+    "max_nearest_m": 9.253429311684158e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK4_NECK": {
+    "max_nearest_m": 9.453727045638516e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 44,
+     "faces": 44,
+     "triangles": 44,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J5_MODULE": {
+    "max_nearest_m": 9.541398782175747e-08,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J5_ACCENT_RING": {
+    "max_nearest_m": 9.685754776000977e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 5736,
+     "faces": 5736,
+     "triangles": 5736,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J5_END_CAP": {
+    "max_nearest_m": 9.534237221942021e-08,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 3584,
+     "faces": 3584,
+     "triangles": 3584,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J5_CAP_SLASH": {
+    "max_nearest_m": 8.122420069867076e-08,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK5_WRIST_HUB": {
+    "max_nearest_m": 1.6323404850027146e-07,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 4916,
+     "faces": 4916,
+     "triangles": 4916,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK5_WRIST_HUB_CAP": {
+    "max_nearest_m": 1.6323404850027146e-07,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 1388,
+     "faces": 1388,
+     "triangles": 1388,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK5_WRIST_HUB_SLASH": {
+    "max_nearest_m": 1.611807078916172e-07,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK5_WRIST_BAR": {
+    "max_nearest_m": 1.7504900995390926e-07,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 52,
+     "faces": 52,
+     "triangles": 52,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J6_MODULE": {
+    "max_nearest_m": 2.0485710194861895e-07,
+    "color_err": 0.0,
+    "topology": {
+     "stl_triangles": 9872,
+     "faces": 9872,
+     "triangles": 9872,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J6_ACCENT_RING": {
+    "max_nearest_m": 2.0485710194861895e-07,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 4446,
+     "faces": 4446,
+     "triangles": 4446,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J6_END_CAP": {
+    "max_nearest_m": 1.7694148368718743e-07,
+    "color_err": 1.316534208040121e-09,
+    "topology": {
+     "stl_triangles": 3500,
+     "faces": 3500,
+     "triangles": 3500,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "J6_CAP_SLASH": {
+    "max_nearest_m": 1.6323404850027146e-07,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 12,
+     "faces": 12,
+     "triangles": 12,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK6_TOOL_FLANGE": {
+    "max_nearest_m": 1.423431399416586e-07,
+    "color_err": 4.361443678435606e-09,
+    "topology": {
+     "stl_triangles": 13212,
+     "faces": 13212,
+     "triangles": 13212,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   },
+   "LINK6_TOOL_RING": {
+    "max_nearest_m": 1.2400236926168873e-07,
+    "color_err": 6.121918028068052e-09,
+    "topology": {
+     "stl_triangles": 2864,
+     "faces": 2864,
+     "triangles": 2864,
+     "unmapped": 0,
+     "non_triangles": 0,
+     "collapsed": 0,
+     "ok": true
+    },
+    "ok": true
+   }
+  },
+  "mesh_names_extra": [],
+  "mesh_count": 48
+ },
+ "checks": {
+  "C7v_blend_reopens_with_every_body": true,
+  "C7v_blend_bodies_equal_stl_points": true,
+  "C7v_blend_triangles_and_winding_equal_stl": true,
+  "C7v_blend_mesh_list_fixed": true,
+  "C7v_blend_materials_slots_face_index_colors": true,
+  "C7v_blend_parents_and_lock_chain": true,
+  "C7v_blend_joint_empties": true,
+  "C7v_blend_rotation_J2_all_vertices": true,
+  "C7v_blend_units_and_types": true,
+  "C7v_glb_every_body_equals_stl_points_with_brand_color": true,
+  "C7v_glb_mesh_list_fixed": true
+ }
+}

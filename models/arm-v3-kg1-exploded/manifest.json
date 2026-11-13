@@ -1,0 +1,63 @@
+{
+ "what": "MP11 팔 전체 분해도(보기용) — 입력 · 스크립트 · 산출 지문(sha256 · 글 파일은 CRLF → LF 로 잼) · 실행 기록. check_exploded.py 가 지금 파일과 견준다.",
+ "unit": "MP11",
+ "plan": "docs/design/061-arm-exploded-view.md",
+ "inputs": {
+  "models/armold-mks-product-v3/blender/kmjh-arm-v3.blend": "fa271bce13405d221a4426507f171b67633fa50499158deafdd73e667a01ea8e",
+  "models/arm-v3-kg1-assembly/assembly.json": "b07383b88bc9b0b3c1fc20113b09647d85407836b93aa864d3c730b03ccdecd0",
+  "src/cad/arm-v3-kg1-assembly/parameters.json": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77",
+  "src/cad/kmjh-gripper-v1/parameters.json": "7c116e9f9bfeb49e4b45c5495f7b5f23ce6f3c7d60c1dc66680d604c98d42b8e",
+  "models/armold-mks-concept-v1/kinematics.json": "5472f3f99e4d9e2f89df2fd5bcd6228e76a84d8bdaee147243ed383ac6428372",
+  "src/cad/armold-mks-product-v3/gallery_poses.json": "f34d56fcc13133099cf6d074f6b7fa5a39f93baeb3659409d748e6c9e6a1ad59",
+  "models/kmjh-gripper-v1/parts/BASE.stl": "80ee24f437b7d23aaec2fceb345ca716efb4224a740d86285ceaba4f7d1ef794",
+  "models/kmjh-gripper-v1/parts/JAW_A.stl": "b0bee9c270933a6cd4302954a00113f2640ea18bd72949ebbddc53b3731f3bb7",
+  "models/kmjh-gripper-v1/parts/JAW_B.stl": "7667af5f78a191204603e5273e81a062a492f6deefa440b1ca8e06705b84cb42",
+  "models/kmjh-gripper-v1/parts/PINION.stl": "94b7b4af713e33b1b3a4175c5fbd00f7bd3169e77c5f14f7f0812ee6a0ab0ece",
+  "models/kmjh-gripper-v1/parts/PAD_A_FLAT.stl": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c",
+  "models/kmjh-gripper-v1/parts/PAD_B_FLAT.stl": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14"
+ },
+ "scripts": {
+  "src/cad/arm-v3-kg1-exploded/explode_arm.py": "d62fb239b8e4107429c5e2fa2555cbe822e82b213b6dbfb48a76d4dadf6b6c95",
+  "src/cad/arm-v3-kg1-exploded/label_parts.py": "42b98097816c2fd5de2d985f779e6842e17852c3d14a802ef863cc1009097a7b",
+  "src/cad/arm-v3-kg1-exploded/guard.py": "fd285ea8b49365f9e11d0a7173780b81657c3ef7501e290cb7bc8ec60217b538",
+  "src/cad/arm-v3-kg1-exploded/make_all.py": "e05d4aba7a22cef37e580f40c829b398162b04fdc92669d697937e42bb8eeae2",
+  "src/cad/arm-v3-kg1-exploded/parameters.json": "672531fb9ef57976e9cade5b94d23dccd0fa08727c1dfd7c0074817f2e9b3d1f"
+ },
+ "outputs": {
+  "renders/arm-assembled-home.jpg": "29ce1fae042c0404275853324b8c4be0343187729a15ee4efa27ae003978fd7c",
+  "renders/arm-exploded-home.jpg": "268ddc11c8ac2677187a2e6e7b8062857f45ed51241b9f3a57c16f95ab7a3daf",
+  "data/render-report-home.json": "3a3a097082f5994757843ae30e861d58be83a9156f063d10b1e840f4a1af259d",
+  "data/label-grid-home.json": "a458ee6a2c2416175ef6ceb72468247b7be3c4bbac330f5c6b84ca87ea1a7136",
+  "renders/arm-assembled-straight.jpg": "0f3123806c3aec53dc3aeb006a4534075f63d6bb8af833f6fcf5986420f5e7a4",
+  "renders/arm-exploded-straight.jpg": "7f49ea231a067d98f84205db2e4cd421c37754b3f4b65122bab52670b17cf03d",
+  "data/render-report-straight.json": "63ad97fdf84c3c58d864a14f32406abea71baa2ce6df62f5bba27da6aa157623",
+  "data/label-grid-straight.json": "0fd4b0df3a2e87620db6f18a94bdb58ec9b7483f160ab32543e8d9bbda8ce6b4",
+  "renders/arm-exploded-numbered.jpg": "a4bd38ceb0fd53a3b2d73a1c0ac0727a538753784c0259d5dc0654ce3197fcd5"
+ },
+ "runs": [
+  {
+   "shot": "home",
+   "returncode": 0,
+   "seconds": 110.6,
+   "done_marker": true
+  },
+  {
+   "shot": "straight",
+   "returncode": 0,
+   "seconds": 119.8,
+   "done_marker": true
+  }
+ ],
+ "numbered": {
+  "items": 43,
+  "hidden": [
+   14
+  ],
+  "size": [
+   3300,
+   1600
+  ]
+ },
+ "command": "python -I -B -X utf8 src/cad/arm-v3-kg1-exploded/make_all.py",
+ "python": "3.12.10"
+}

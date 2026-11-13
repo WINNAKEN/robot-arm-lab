@@ -1,0 +1,66 @@
+[
+ {
+  "no": 1,
+  "name": "motor"
+ },
+ {
+  "no": 2,
+  "name": "HOUSING_BASE"
+ },
+ {
+  "no": 3,
+  "name": "ring pins"
+ },
+ {
+  "no": 4,
+  "name": "CAM_LOWER"
+ },
+ {
+  "no": 5,
+  "name": "DISC_1"
+ },
+ {
+  "no": 6,
+  "name": "6801"
+ },
+ {
+  "no": 7,
+  "name": "CAM_UPPER"
+ },
+ {
+  "no": 8,
+  "name": "DISC_2"
+ },
+ {
+  "no": 9,
+  "name": "WASHER"
+ },
+ {
+  "no": 10,
+  "name": "CARRIER"
+ },
+ {
+  "no": 11,
+  "name": "output pins"
+ },
+ {
+  "no": 12,
+  "name": "6800"
+ },
+ {
+  "no": 13,
+  "name": "HOUSING_CAP"
+ },
+ {
+  "no": 14,
+  "name": "6808"
+ },
+ {
+  "no": 15,
+  "name": "RETAINER"
+ },
+ {
+  "no": 16,
+  "name": "OUTPUT_FLANGE"
+ }
+]

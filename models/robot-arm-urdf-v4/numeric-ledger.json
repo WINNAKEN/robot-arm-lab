@@ -1,0 +1,4631 @@
+{
+  "schema_version": 1,
+  "unit": "118",
+  "units": {
+    "length": "m",
+    "mass": "kg",
+    "angle": "rad",
+    "inertia": "kg*m^2"
+  },
+  "arm_zero_cad_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+  ],
+  "gripper_asset_reference": {
+    "u_mm": 0.0,
+    "padset": "FLAT",
+    "rotor_pivot_G_mm": [
+      0,
+      0,
+      26
+    ]
+  },
+  "links": {
+    "Base": {
+      "mass_kg": 0.8529957684193904,
+      "com_m": [
+        -0.001326609116133232,
+        -2.4834595031753267e-05,
+        0.04622927927446685
+      ],
+      "inertia_kg_m2": [
+        [
+          0.0011215626648516674,
+          -1.6097534777386772e-06,
+          -1.689151547411632e-05
+        ],
+        [
+          -1.6097534777386772e-06,
+          0.0011968337926507135,
+          -7.239134698321091e-07
+        ],
+        [
+          -1.689151547411632e-05,
+          -7.239134698321091e-07,
+          0.0010327565813507058
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.0010296462017737108,
+        0.0011246378130702036,
+        0.0011968690240091724
+      ],
+      "bounds_m": [
+        [
+          -0.12999999523162842,
+          -0.08500000089406967,
+          0.0
+        ],
+        [
+          0.08500000089406967,
+          0.08500000089406967,
+          0.1054999977350235
+        ]
+      ],
+      "canonical_mesh": "meshes/Base.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Base.stl",
+        "sha256": "cfd84fc903e955b4566d33f01811313a26d4d0fe0a391a4ac836cbe43d5004c6",
+        "bytes": 10712384,
+        "triangles": 214246,
+        "bounds_m": [
+          [
+            -0.12999999523162842,
+            -0.08500000089406967,
+            0.0
+          ],
+          [
+            0.08500000089406967,
+            0.08500000089406967,
+            0.1054999977350235
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Base__141416.stl",
+          "sha256": "c184706a96b54b718bc7ab8c146d66e27359c167569158d558a7866cdc873e7d",
+          "bytes": 1284,
+          "triangles": 24,
+          "bounds_m": [
+            [
+              -0.023000000044703484,
+              -0.023000000044703484,
+              0.009999999776482582
+            ],
+            [
+              0.023000000044703484,
+              0.023000000044703484,
+              0.06350000202655792
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J1.MOTOR42"
+          ]
+        },
+        {
+          "file": "meshes/visual/Base__34D399.stl",
+          "sha256": "1e5563b3d67052032e9daebf52cd2b7553809a6c9ff1976da8d1b50f3875206e",
+          "bytes": 179084,
+          "triangles": 3580,
+          "bounds_m": [
+            [
+              -0.06659676134586334,
+              -0.06729006767272949,
+              0.017999999225139618
+            ],
+            [
+              0.06729090958833694,
+              0.06729006767272949,
+              0.024000000208616257
+            ]
+          ],
+          "color": [
+            0.20392156862745098,
+            0.8274509803921568,
+            0.6,
+            1.0
+          ],
+          "component_ids": [
+            "BASE_SKIN_BAND"
+          ]
+        },
+        {
+          "file": "meshes/visual/Base__6B7280.stl",
+          "sha256": "505d0606151a046a2e75815ab17d276e4a28ff041962812b1946f02199022126",
+          "bytes": 1284484,
+          "triangles": 25688,
+          "bounds_m": [
+            [
+              -0.12999999523162842,
+              -0.08500000089406967,
+              0.0
+            ],
+            [
+              0.08500000089406967,
+              0.08500000089406967,
+              0.10450000315904617
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "FLOOR",
+            "REF.J1.6818_1",
+            "REF.J1.6818_2",
+            "REF.CABLE.L0_IN.0",
+            "REF.CABLE.L0_IN.1",
+            "REF.CABLE.L0_SPLIT_P.0",
+            "REF.CABLE.L0_SPLIT_P.1",
+            "REF.CABLE.L0_SPLIT_P.2",
+            "REF.CABLE.L0_SPLIT_P.3",
+            "REF.CABLE.L0_SPLIT_P.4",
+            "REF.CABLE.L0_SPLIT_P.5",
+            "REF.CABLE.L0_SPLIT_P.6",
+            "REF.CABLE.L0_SPLIT_C.0",
+            "REF.CABLE.L0_SPLIT_C.1",
+            "REF.CABLE.L0_SPLIT_C.2",
+            "REF.CABLE.L0_SPLIT_C.3",
+            "REF.CABLE.L0_SPLIT_C.4",
+            "REF.CABLE.L0_SPLIT_C.5",
+            "REF.CABLE.L0_SPLIT_C.6",
+            "REF.CABLE.L0_LINK.0",
+            "REF.CABLE.L0_OUT.0",
+            "REF.CABLE.L0_OUT.1",
+            "REF.CABLE.L0_OUT.2",
+            "REF.CABLE.L0_OUT.3"
+          ]
+        },
+        {
+          "file": "meshes/visual/Base__87CEEB.stl",
+          "sha256": "b014c1a446302ac81c01f556a8e86c2ee01163e480d10bffd5bdab8d84291b42",
+          "bytes": 3673784,
+          "triangles": 73474,
+          "bounds_m": [
+            [
+              -0.027132458984851837,
+              -0.026558080688118935,
+              0.06610000133514404
+            ],
+            [
+              0.027132458984851837,
+              0.026558080688118935,
+              0.09234999865293503
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J1.MP6.DISC_1",
+            "J1.MP6.DISC_2",
+            "J1.MP6.CAM_LOWER",
+            "J1.MP6.CAM_UPPER",
+            "J1.MP6.WASHER"
+          ]
+        },
+        {
+          "file": "meshes/visual/Base__FFFFFF.stl",
+          "sha256": "39bcf932e2e8ceb6a63944b16fb51058ff3b4dc60093e7640a3faba8721cac4a",
+          "bytes": 5574084,
+          "triangles": 111480,
+          "bounds_m": [
+            [
+              -0.0669327974319458,
+              -0.06799914687871933,
+              0.006000000052154064
+            ],
+            [
+              0.06800000369548798,
+              0.06799914687871933,
+              0.1054999977350235
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "BASE",
+            "BASE_SKIN",
+            "J1_CAN_A",
+            "J1_CAN_B",
+            "J1.MP6.HOUSING_BASE",
+            "J1.MP6.HOUSING_CAP",
+            "J1.MP6.RETAINER"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Base.stl",
+          "sha256": "7559c930c4f2feb58259efd55d42b8ecc6563ee05a11e819fa2cadb22b20d3c4",
+          "bytes": 1193684,
+          "triangles": 23872,
+          "bounds_m": [
+            [
+              -0.12999999523162842,
+              -0.08500000089406967,
+              0.0
+            ],
+            [
+              0.08500000089406967,
+              0.08500000089406967,
+              0.1054999977350235
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "FLOOR",
+            "BASE",
+            "BASE_SKIN",
+            "BASE_SKIN_BAND",
+            "J1_CAN_A",
+            "J1_CAN_B",
+            "J1.MP6.HOUSING_BASE",
+            "J1.MP6.HOUSING_CAP",
+            "J1.MP6.RETAINER",
+            "REF.J1.MOTOR42",
+            "REF.J1.6818_1",
+            "REF.J1.6818_2",
+            "REF.CABLE.L0_IN.0",
+            "REF.CABLE.L0_IN.1",
+            "REF.CABLE.L0_SPLIT_P.0",
+            "REF.CABLE.L0_SPLIT_P.1",
+            "REF.CABLE.L0_SPLIT_P.2",
+            "REF.CABLE.L0_SPLIT_P.3",
+            "REF.CABLE.L0_SPLIT_P.4",
+            "REF.CABLE.L0_SPLIT_P.5",
+            "REF.CABLE.L0_SPLIT_P.6",
+            "REF.CABLE.L0_SPLIT_C.0",
+            "REF.CABLE.L0_SPLIT_C.1",
+            "REF.CABLE.L0_SPLIT_C.2",
+            "REF.CABLE.L0_SPLIT_C.3",
+            "REF.CABLE.L0_SPLIT_C.4",
+            "REF.CABLE.L0_SPLIT_C.5",
+            "REF.CABLE.L0_SPLIT_C.6",
+            "REF.CABLE.L0_LINK.0",
+            "REF.CABLE.L0_OUT.0",
+            "REF.CABLE.L0_OUT.1",
+            "REF.CABLE.L0_OUT.2",
+            "REF.CABLE.L0_OUT.3"
+          ],
+          "shells": 33
+        }
+      ],
+      "mass_component_ids": [
+        "mass:FLOOR",
+        "mass:BASE",
+        "mass:BASE_SKIN",
+        "mass:BASE_SKIN_BAND",
+        "mass:J1_CAN_A",
+        "mass:J1_CAN_B",
+        "mass:J1.MP6 HOUSING_BASE",
+        "mass:J1.MP6 HOUSING_CAP",
+        "mass:J1.MP6 RETAINER",
+        "mass:J1.MP6 DISC_1",
+        "mass:J1.MP6 DISC_2",
+        "mass:J1.MP6 CAM_LOWER",
+        "mass:J1.MP6 CAM_UPPER",
+        "mass:J1.MP6 WASHER",
+        "mass:J1.motor + driver 42D",
+        "mass:J1.dowels",
+        "mass:J1.bearings",
+        "mass:J1.screws + inserts",
+        "mass:cable L0_IN",
+        "mass:cable L0_SPLIT_P",
+        "mass:cable L0_SPLIT_C",
+        "mass:cable L0_LINK",
+        "mass:cable L0_OUT",
+        "mass:cable loop J1.a"
+      ]
+    },
+    "Link1": {
+      "mass_kg": 3.057778990028761,
+      "com_m": [
+        -0.04332938129828452,
+        0.008137051438686066,
+        0.05946093925601445
+      ],
+      "inertia_kg_m2": [
+        [
+          0.0075193083462378255,
+          0.001390336400024856,
+          0.002421194723524371
+        ],
+        [
+          0.001390336400024856,
+          0.01272221162479024,
+          -0.0003907288780258871
+        ],
+        [
+          0.002421194723524371,
+          -0.0003907288780258871,
+          0.010591925805269999
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.005897482574680766,
+        0.01183635501714376,
+        0.013099608184473538
+      ],
+      "bounds_m": [
+        [
+          -0.1420000046491623,
+          -0.07199999690055847,
+          -0.030500000342726707
+        ],
+        [
+          0.09399999678134918,
+          0.09700000286102295,
+          0.1420000046491623
+        ]
+      ],
+      "canonical_mesh": "meshes/Link1.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link1.stl",
+        "sha256": "9163c6535f01dfa8c86467c9c364cd23c44048e9bb26ae14dff6ed22fbeec365",
+        "bytes": 16390884,
+        "triangles": 327816,
+        "bounds_m": [
+          [
+            -0.1420000046491623,
+            -0.07199999690055847,
+            -0.030500000342726707
+          ],
+          [
+            0.09399999678134918,
+            0.09700000286102295,
+            0.1420000046491623
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link1__0B2545.stl",
+          "sha256": "6808a9cb1cf63344d61bad68496b64c1e1f245c0eb97cd54c1ae9d2ef998758b",
+          "bytes": 272084,
+          "triangles": 5440,
+          "bounds_m": [
+            [
+              -0.13604581356048584,
+              -0.06359999626874924,
+              -0.003000000026077032
+            ],
+            [
+              0.06359999626874924,
+              0.0860000029206276,
+              0.12305000424385071
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "TURRET_BAND",
+            "J2_HOOD_FACE"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link1__141416.stl",
+          "sha256": "c9ddb6ebd7e07a031b727c6f3d701031de1abb4701e33117e83c734712fecc7f",
+          "bytes": 684,
+          "triangles": 12,
+          "bounds_m": [
+            [
+              -0.11919575184583664,
+              -0.021299999207258224,
+              0.049800001084804535
+            ],
+            [
+              -0.06279575079679489,
+              0.06880000233650208,
+              0.10620000213384628
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J2.MOTOR57"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link1__6B7280.stl",
+          "sha256": "a323b856b3d1ed356f6add19dfab0a82fca807b9178d1e9c54703b1540e6bdf1",
+          "bytes": 1254584,
+          "triangles": 25090,
+          "bounds_m": [
+            [
+              -0.09598120301961899,
+              -0.057349998503923416,
+              -0.017500000074505806
+            ],
+            [
+              0.057349998503923416,
+              0.09700000286102295,
+              0.11999985575675964
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J1_SPACER",
+            "J1.MP6.CARRIER",
+            "J1.MP6.OUTPUT_FLANGE",
+            "REF.CABLE.L1_HOOD.0",
+            "REF.CABLE.L1_HOOD.1",
+            "REF.CABLE.L1_HOOD.2",
+            "REF.CABLE.L1_HOOD.3",
+            "REF.CABLE.L1_HOOD.4",
+            "REF.CABLE.L1_HOOD.5",
+            "REF.CABLE.L1_HOOD.6",
+            "REF.CABLE.L1_HOOD.7",
+            "REF.CABLE.L1_PWR.0"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link1__87CEEB.stl",
+          "sha256": "a8f29e3fa3514c72304f5df8045145205ada0e763b55db1e82e4920f87811e17",
+          "bytes": 6195584,
+          "triangles": 123910,
+          "bounds_m": [
+            [
+              -0.04502420499920845,
+              -0.016300000250339508,
+              0.03396899625658989
+            ],
+            [
+              0.04502420499920845,
+              0.011699999682605267,
+              0.12203100323677063
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J2.DISC_1",
+            "J2.DISC_2",
+            "J2.CAM_LOWER",
+            "J2.CAM_UPPER",
+            "J2.WASHER_T1p4"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link1__FFFFFF.stl",
+          "sha256": "3dd0a65986a53731b904ed4e9b877f26776b2fef41144e28a369bfeed998253c",
+          "bytes": 8668284,
+          "triangles": 173364,
+          "bounds_m": [
+            [
+              -0.1420000046491623,
+              -0.07199999690055847,
+              -0.030500000342726707
+            ],
+            [
+              0.09399999678134918,
+              0.08349999785423279,
+              0.1420000046491623
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "TURRET",
+            "SHOULDER",
+            "SHOULDER_SHROUD",
+            "J2_MOTOR_HOOD",
+            "J2.HOUSING_BASE",
+            "J2.CAP",
+            "J2.RETAINER"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link1.stl",
+          "sha256": "c65a1e57dda562efe6bedfc148f07ea4d5897075cb175bf352de0b2f65e6fd69",
+          "bytes": 831584,
+          "triangles": 16630,
+          "bounds_m": [
+            [
+              -0.1420000046491623,
+              -0.07199999690055847,
+              -0.030500000342726707
+            ],
+            [
+              0.09399999678134918,
+              0.09700000286102295,
+              0.1420000046491623
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "TURRET",
+            "TURRET_BAND",
+            "J1_SPACER",
+            "SHOULDER",
+            "SHOULDER_SHROUD",
+            "J2_MOTOR_HOOD",
+            "J2_HOOD_FACE",
+            "J2.HOUSING_BASE",
+            "J2.CAP",
+            "J2.RETAINER",
+            "J1.MP6.CARRIER",
+            "J1.MP6.OUTPUT_FLANGE",
+            "REF.J2.MOTOR57",
+            "REF.CABLE.L1_HOOD.0",
+            "REF.CABLE.L1_HOOD.1",
+            "REF.CABLE.L1_HOOD.2",
+            "REF.CABLE.L1_HOOD.3",
+            "REF.CABLE.L1_HOOD.4",
+            "REF.CABLE.L1_HOOD.5",
+            "REF.CABLE.L1_HOOD.6",
+            "REF.CABLE.L1_HOOD.7",
+            "REF.CABLE.L1_PWR.0"
+          ],
+          "shells": 22
+        }
+      ],
+      "mass_component_ids": [
+        "mass:TURRET",
+        "mass:TURRET_BAND",
+        "mass:J1_SPACER",
+        "mass:SHOULDER",
+        "mass:SHOULDER_SHROUD",
+        "mass:J2_MOTOR_HOOD",
+        "mass:J2_HOOD_FACE",
+        "mass:J2.HOUSING_BASE",
+        "mass:J2.CAP",
+        "mass:J2.RETAINER",
+        "mass:J2.DISC_1",
+        "mass:J2.DISC_2",
+        "mass:J2.CAM_LOWER",
+        "mass:J2.CAM_UPPER",
+        "mass:J2.WASHER_T1p4",
+        "mass:J2.ring pins",
+        "mass:J2.bearings",
+        "mass:J2.input shaft",
+        "mass:J2.pulleys + belt",
+        "mass:J2.screws + inserts",
+        "mass:J2.motor NEMA23-76",
+        "mass:J2.driver 57D",
+        "mass:J1.MP6 CARRIER",
+        "mass:J1.MP6 OUTPUT_FLANGE",
+        "mass:J1.6818 #1",
+        "mass:J1.6818 #2",
+        "mass:cable L1_HOOD",
+        "mass:cable L1_PWR",
+        "mass:cable loop J1.b",
+        "mass:cable loop J2.a"
+      ]
+    },
+    "Link2": {
+      "mass_kg": 2.3568359198973083,
+      "com_m": [
+        0.09998566751573276,
+        0.0922724811292069,
+        0.0002492885384652505
+      ],
+      "inertia_kg_m2": [
+        [
+          0.004099078458228456,
+          -0.002170286844467444,
+          2.9554259195911454e-05
+        ],
+        [
+          -0.002170286844467444,
+          0.010171940268059197,
+          1.5115847469914669e-05
+        ],
+        [
+          2.9554259195911454e-05,
+          1.5115847469914669e-05,
+          0.012375228841399763
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.003403090517895888,
+        0.010867789473582584,
+        0.012375367576208936
+      ],
+      "bounds_m": [
+        [
+          -0.05000000074505806,
+          0.010700000450015068,
+          -0.06400000303983688
+        ],
+        [
+          0.2290000021457672,
+          0.17660000920295715,
+          0.06400000303983688
+        ]
+      ],
+      "canonical_mesh": "meshes/Link2.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link2.stl",
+        "sha256": "f940c70cd488dd31f06f8d8d128662f83e7f902b23be3f7b3f4ce26c37493573",
+        "bytes": 18899384,
+        "triangles": 377986,
+        "bounds_m": [
+          [
+            -0.05000000074505806,
+            0.010700000450015068,
+            -0.06400000303983688
+          ],
+          [
+            0.2290000021457672,
+            0.17660000920295715,
+            0.06400000303983688
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link2__0B2545.stl",
+          "sha256": "cc5a7a5457afbc6e75dc59005996cdcee30939c29e39147d00fd0397a6049b1d",
+          "bytes": 795484,
+          "triangles": 15908,
+          "bounds_m": [
+            [
+              -0.04600000008940697,
+              0.04820000007748604,
+              -0.04999937489628792
+            ],
+            [
+              0.2150000035762787,
+              0.17599999904632568,
+              0.04999937489628792
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "J2_HUB",
+            "UA_LOGO",
+            "UA_CAP_J2",
+            "UA_CAP_J3"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link2__141416.stl",
+          "sha256": "0073c3a2352359fb272f745b6ac240c06e6d00130a1118e56f1a41a48dc1fb47",
+          "bytes": 684,
+          "triangles": 12,
+          "bounds_m": [
+            [
+              0.04580424726009369,
+              0.053199999034404755,
+              -0.028200000524520874
+            ],
+            [
+              0.10220424830913544,
+              0.12330000102519989,
+              0.028200000524520874
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J3.MOTOR57"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link2__34D399.stl",
+          "sha256": "0a72806d682ab188452a8838a39e32566dd8c573f0ca504ff996d958d60aa8e2",
+          "bytes": 1284,
+          "triangles": 24,
+          "bounds_m": [
+            [
+              -0.017999999225139618,
+              0.17598000168800354,
+              -0.014000000432133675
+            ],
+            [
+              0.18299999833106995,
+              0.17660000920295715,
+              0.014000000432133675
+            ]
+          ],
+          "color": [
+            0.20392156862745098,
+            0.8274509803921568,
+            0.6,
+            1.0
+          ],
+          "component_ids": [
+            "UA_CAP_J2_MARK",
+            "UA_CAP_J3_MARK"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link2__6B7280.stl",
+          "sha256": "df1ccc870a8f4ac006856d824767b6a38f7f9d39175e9d7bae7cc6e024e9f6eb",
+          "bytes": 3433084,
+          "triangles": 68660,
+          "bounds_m": [
+            [
+              -0.03449999913573265,
+              0.010700000450015068,
+              -0.04197588562965393
+            ],
+            [
+              0.10598328709602356,
+              0.09999115765094757,
+              0.05599721521139145
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J2.CARRIER",
+            "J2.OUTPUT_FLANGE",
+            "REF.CABLE.L2_BOX.0",
+            "REF.CABLE.L2_BOX.1",
+            "REF.CABLE.L2_BOX.2",
+            "REF.CABLE.L2_BOX.3",
+            "REF.CABLE.L2_BOX.4",
+            "REF.CABLE.L2_BOX.5",
+            "REF.CABLE.L2_BOX.6",
+            "REF.CABLE.L2_BOX.7",
+            "REF.CABLE.L2_BOX.8",
+            "REF.CABLE.L2_BOX.9",
+            "REF.CABLE.L2_BOX.10",
+            "REF.CABLE.L2_BOX.11",
+            "REF.CABLE.L2_BOX.12",
+            "REF.CABLE.L2_BOX.13",
+            "REF.CABLE.L2_BOX.14",
+            "REF.CABLE.L2_BOX.15",
+            "REF.CABLE.L2_BOX.16",
+            "REF.CABLE.L2_BOX.17",
+            "REF.CABLE.L2_BOX.18"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link2__87CEEB.stl",
+          "sha256": "578b686c5b507f8f3046980bec897a99870024dafa144f4fd2169a1b9de29050",
+          "bytes": 6195584,
+          "triangles": 123910,
+          "bounds_m": [
+            [
+              0.11997579783201218,
+              0.09030000120401382,
+              -0.04403100162744522
+            ],
+            [
+              0.21002420783042908,
+              0.11829999834299088,
+              0.04403100162744522
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J3.DISC_1",
+            "J3.DISC_2",
+            "J3.CAM_LOWER",
+            "J3.CAM_UPPER",
+            "J3.WASHER_T1p4"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link2__FFFFFF.stl",
+          "sha256": "c4c72e510d090c65828d2e596b45b15d7ef39016b89cf4212262089ae71af4ab",
+          "bytes": 8473684,
+          "triangles": 169472,
+          "bounds_m": [
+            [
+              -0.05000000074505806,
+              0.052000001072883606,
+              -0.06400000303983688
+            ],
+            [
+              0.2290000021457672,
+              0.17499999701976776,
+              0.06400000303983688
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "UPPER_ARM",
+            "UA_COVER",
+            "UA_J3_BRACKET",
+            "J3.HOUSING_BASE",
+            "J3.CAP",
+            "J3.RETAINER"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link2.stl",
+          "sha256": "9ab8291c6859aa23d2b61c1cb7b8cfc09baf24c3befd4ed1d4c0a9dc04d6c228",
+          "bytes": 1277184,
+          "triangles": 25542,
+          "bounds_m": [
+            [
+              -0.05000000074505806,
+              0.010700000450015068,
+              -0.06400000303983688
+            ],
+            [
+              0.2290000021457672,
+              0.17660000920295715,
+              0.06400000303983688
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "J2_HUB",
+            "UPPER_ARM",
+            "UA_COVER",
+            "UA_J3_BRACKET",
+            "UA_LOGO",
+            "UA_CAP_J2",
+            "UA_CAP_J2_MARK",
+            "UA_CAP_J3",
+            "UA_CAP_J3_MARK",
+            "J2.CARRIER",
+            "J2.OUTPUT_FLANGE",
+            "J3.HOUSING_BASE",
+            "J3.CAP",
+            "J3.RETAINER",
+            "REF.J3.MOTOR57",
+            "REF.CABLE.L2_BOX.0",
+            "REF.CABLE.L2_BOX.1",
+            "REF.CABLE.L2_BOX.2",
+            "REF.CABLE.L2_BOX.3",
+            "REF.CABLE.L2_BOX.4",
+            "REF.CABLE.L2_BOX.5",
+            "REF.CABLE.L2_BOX.6",
+            "REF.CABLE.L2_BOX.7",
+            "REF.CABLE.L2_BOX.8",
+            "REF.CABLE.L2_BOX.9",
+            "REF.CABLE.L2_BOX.10",
+            "REF.CABLE.L2_BOX.11",
+            "REF.CABLE.L2_BOX.12",
+            "REF.CABLE.L2_BOX.13",
+            "REF.CABLE.L2_BOX.14",
+            "REF.CABLE.L2_BOX.15",
+            "REF.CABLE.L2_BOX.16",
+            "REF.CABLE.L2_BOX.17",
+            "REF.CABLE.L2_BOX.18"
+          ],
+          "shells": 34
+        }
+      ],
+      "mass_component_ids": [
+        "mass:J2_HUB",
+        "mass:UPPER_ARM",
+        "mass:UA_COVER",
+        "mass:UA_J3_BRACKET",
+        "mass:UA_LOGO",
+        "mass:UA_CAP_J2",
+        "mass:UA_CAP_J2_MARK",
+        "mass:UA_CAP_J3",
+        "mass:UA_CAP_J3_MARK",
+        "mass:J2.CARRIER",
+        "mass:J2.OUTPUT_FLANGE",
+        "mass:J2.output pins",
+        "mass:J3.HOUSING_BASE",
+        "mass:J3.CAP",
+        "mass:J3.RETAINER",
+        "mass:J3.DISC_1",
+        "mass:J3.DISC_2",
+        "mass:J3.CAM_LOWER",
+        "mass:J3.CAM_UPPER",
+        "mass:J3.WASHER_T1p4",
+        "mass:J3.ring pins",
+        "mass:J3.bearings",
+        "mass:J3.input shaft",
+        "mass:J3.pulleys + belt",
+        "mass:J3.screws + inserts",
+        "mass:J3.motor NEMA23-56",
+        "mass:J3.driver 57D",
+        "mass:MP18 screws + inserts (about 95)",
+        "mass:cable L2_BOX",
+        "mass:cable loop J2.b",
+        "mass:cable loop J3.a"
+      ]
+    },
+    "Link3": {
+      "mass_kg": 0.9501631793389972,
+      "com_m": [
+        0.09320775287813249,
+        0.020089916158944773,
+        0.0002976705750720275
+      ],
+      "inertia_kg_m2": [
+        [
+          0.00163432511510598,
+          0.001774261727432206,
+          9.857381112570485e-06
+        ],
+        [
+          0.001774261727432206,
+          0.003540876695915047,
+          1.0013778726159838e-07
+        ],
+        [
+          9.857381112570485e-06,
+          1.0013778726159838e-07,
+          0.00472545882510094
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.000573448971181304,
+        0.004601522290952899,
+        0.004725689373987762
+      ],
+      "bounds_m": [
+        [
+          -0.05000000074505806,
+          -0.050999999046325684,
+          -0.050999999046325684
+        ],
+        [
+          0.18150000274181366,
+          0.09130000323057175,
+          0.050999999046325684
+        ]
+      ],
+      "canonical_mesh": "meshes/Link3.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link3.stl",
+        "sha256": "46527211804ec9081fde47a45b42fb3881efcd65582da36594d31b83216cf60c",
+        "bytes": 13369384,
+        "triangles": 267386,
+        "bounds_m": [
+          [
+            -0.05000000074505806,
+            -0.050999999046325684,
+            -0.050999999046325684
+          ],
+          [
+            0.18150000274181366,
+            0.09130000323057175,
+            0.050999999046325684
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link3__0B2545.stl",
+          "sha256": "ae08c55fcaa1fef33b6206fb4ec4798ee77d0451c57b33632d65e30309a134cc",
+          "bytes": 468484,
+          "triangles": 9368,
+          "bounds_m": [
+            [
+              -0.036100007593631744,
+              -0.050999999046325684,
+              -0.050998978316783905
+            ],
+            [
+              0.13950000703334808,
+              0.04100000113248825,
+              0.050998978316783905
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "J3_CAP",
+            "FA_TUBE_CAP",
+            "FA_TUBE_RING"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link3__141416.stl",
+          "sha256": "6b62d29cdefdb5924081cd69328a922b79948d834468509be7d666da3505e66d",
+          "bytes": 1284,
+          "triangles": 24,
+          "bounds_m": [
+            [
+              0.0860000029206276,
+              -0.023000000044703484,
+              -0.023000000044703484
+            ],
+            [
+              0.13950000703334808,
+              0.023000000044703484,
+              0.023000000044703484
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J4.MOTOR42"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link3__34D399.stl",
+          "sha256": "e81c892091769e9e2d720b5f22df6502b2064cdb79b79269148c46385e70c72f",
+          "bytes": 684,
+          "triangles": 12,
+          "bounds_m": [
+            [
+              -0.014499999582767487,
+              0.03739999979734421,
+              -0.010999999940395355
+            ],
+            [
+              0.014499999582767487,
+              0.038019999861717224,
+              0.010999999940395355
+            ]
+          ],
+          "color": [
+            0.20392156862745098,
+            0.8274509803921568,
+            0.6,
+            1.0
+          ],
+          "component_ids": [
+            "J3_CAP_MARK"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link3__6B7280.stl",
+          "sha256": "6e6ec5c7ba0219c67ed77f0b643fe31d1b2e71aa6427befaab08b9946ead212a",
+          "bytes": 3455484,
+          "triangles": 69108,
+          "bounds_m": [
+            [
+              -0.03449999913573265,
+              -0.04823356494307518,
+              -0.046749092638492584
+            ],
+            [
+              0.14249999821186066,
+              0.09130000323057175,
+              0.0466991551220417
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J3.CARRIER",
+            "J3.OUTPUT_FLANGE",
+            "REF.CABLE.L3_FA.0",
+            "REF.CABLE.L3_ANN_IN.0",
+            "REF.CABLE.L3_ANN_ARC.0",
+            "REF.CABLE.L3_ANN_ARC.1",
+            "REF.CABLE.L3_ANN_ARC.2",
+            "REF.CABLE.L3_ANN_ARC.3",
+            "REF.CABLE.L3_ANN_ARC.4",
+            "REF.CABLE.L3_ANN_ARC.5",
+            "REF.CABLE.L3_ANN_ARC.6",
+            "REF.CABLE.L3_ANN_ARC.7",
+            "REF.CABLE.L3_ANN_ARC.8",
+            "REF.CABLE.L3_ANN_ARC.9",
+            "REF.CABLE.L3_ANN_ARC.10",
+            "REF.CABLE.L3_ANN_ARC.11",
+            "REF.CABLE.L3_ANN_ARC.12",
+            "REF.CABLE.L3_ANN_ARC.13",
+            "REF.CABLE.L3_ANN_ARC.14",
+            "REF.CABLE.L3_ANN_ARC.15",
+            "REF.CABLE.L3_ANN_FWD.0",
+            "REF.CABLE.L3_ANN_FWD.1"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link3__87CEEB.stl",
+          "sha256": "d79705695a36d05acb71315ba67b8fc7713259cc1792bf14dbf976b0dfe6e09a",
+          "bytes": 3673784,
+          "triangles": 73474,
+          "bounds_m": [
+            [
+              0.1421000063419342,
+              -0.027132458984851837,
+              -0.026558080688118935
+            ],
+            [
+              0.1683499962091446,
+              0.027132458984851837,
+              0.026558080688118935
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J4.MP6.DISC_1",
+            "J4.MP6.DISC_2",
+            "J4.MP6.CAM_LOWER",
+            "J4.MP6.CAM_UPPER",
+            "J4.MP6.WASHER"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link3__FFFFFF.stl",
+          "sha256": "7c89ae7f2887c8f43c94f572f65ccab631d1863add278e0700564029776616d4",
+          "bytes": 5770084,
+          "triangles": 115400,
+          "bounds_m": [
+            [
+              -0.05000000074505806,
+              -0.050999999046325684,
+              -0.050999999046325684
+            ],
+            [
+              0.18150000274181366,
+              0.05379999801516533,
+              0.050999999046325684
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "FOREARM",
+            "J4_CAN_A",
+            "J4_CAN_B",
+            "J4_REAR_COVER",
+            "FA_TUBE",
+            "J4.MP6.HOUSING_BASE",
+            "J4.MP6.HOUSING_CAP",
+            "J4.MP6.RETAINER"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link3.stl",
+          "sha256": "a07241e46c70cf87916890ddf823f9820aa5c42125fce51faa736fb706b1f473",
+          "bytes": 1174434,
+          "triangles": 23487,
+          "bounds_m": [
+            [
+              -0.05000000074505806,
+              -0.050999999046325684,
+              -0.050999999046325684
+            ],
+            [
+              0.18150000274181366,
+              0.09130000323057175,
+              0.050999999046325684
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "FOREARM",
+            "J3_CAP",
+            "J3_CAP_MARK",
+            "J4_CAN_A",
+            "J4_CAN_B",
+            "J4_REAR_COVER",
+            "FA_TUBE",
+            "FA_TUBE_CAP",
+            "FA_TUBE_RING",
+            "J3.CARRIER",
+            "J3.OUTPUT_FLANGE",
+            "J4.MP6.HOUSING_BASE",
+            "J4.MP6.HOUSING_CAP",
+            "J4.MP6.RETAINER",
+            "REF.J4.MOTOR42",
+            "REF.CABLE.L3_FA.0",
+            "REF.CABLE.L3_ANN_IN.0",
+            "REF.CABLE.L3_ANN_ARC.0",
+            "REF.CABLE.L3_ANN_ARC.1",
+            "REF.CABLE.L3_ANN_ARC.2",
+            "REF.CABLE.L3_ANN_ARC.3",
+            "REF.CABLE.L3_ANN_ARC.4",
+            "REF.CABLE.L3_ANN_ARC.5",
+            "REF.CABLE.L3_ANN_ARC.6",
+            "REF.CABLE.L3_ANN_ARC.7",
+            "REF.CABLE.L3_ANN_ARC.8",
+            "REF.CABLE.L3_ANN_ARC.9",
+            "REF.CABLE.L3_ANN_ARC.10",
+            "REF.CABLE.L3_ANN_ARC.11",
+            "REF.CABLE.L3_ANN_ARC.12",
+            "REF.CABLE.L3_ANN_ARC.13",
+            "REF.CABLE.L3_ANN_ARC.14",
+            "REF.CABLE.L3_ANN_ARC.15",
+            "REF.CABLE.L3_ANN_FWD.0",
+            "REF.CABLE.L3_ANN_FWD.1"
+          ],
+          "shells": 35
+        }
+      ],
+      "mass_component_ids": [
+        "mass:FOREARM",
+        "mass:J3_CAP",
+        "mass:J3_CAP_MARK",
+        "mass:J4_CAN_A",
+        "mass:J4_CAN_B",
+        "mass:J4_REAR_COVER",
+        "mass:FA_TUBE",
+        "mass:FA_TUBE_CAP",
+        "mass:FA_TUBE_RING",
+        "mass:J3.CARRIER",
+        "mass:J3.OUTPUT_FLANGE",
+        "mass:J3.output pins",
+        "mass:J4.MP6 HOUSING_BASE",
+        "mass:J4.MP6 HOUSING_CAP",
+        "mass:J4.MP6 RETAINER",
+        "mass:J4.MP6 DISC_1",
+        "mass:J4.MP6 DISC_2",
+        "mass:J4.MP6 CAM_LOWER",
+        "mass:J4.MP6 CAM_UPPER",
+        "mass:J4.MP6 WASHER",
+        "mass:J4.motor + driver 42D",
+        "mass:J4.dowels",
+        "mass:J4.bearings",
+        "mass:J4.screws + inserts",
+        "mass:cable L3_FA",
+        "mass:cable L3_ANN_IN",
+        "mass:cable L3_ANN_ARC",
+        "mass:cable L3_ANN_FWD",
+        "mass:cable loop J3.b",
+        "mass:cable loop J4.a"
+      ]
+    },
+    "Link4": {
+      "mass_kg": 0.6723728499959973,
+      "com_m": [
+        0.07494602491304835,
+        -0.03205850825895942,
+        0.000174235076721875
+      ],
+      "inertia_kg_m2": [
+        [
+          0.0004665678883602468,
+          3.7486732296911715e-05,
+          -1.2060615368314492e-06
+        ],
+        [
+          3.7486732296911715e-05,
+          0.00023332016459235165,
+          4.6518198071514025e-06
+        ],
+        [
+          -1.2060615368314492e-06,
+          4.6518198071514025e-06,
+          0.0006053754356906933
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.0002273829852105612,
+        0.00047244289008046197,
+        0.0006054376133522686
+      ],
+      "bounds_m": [
+        [
+          -0.0016499996418133378,
+          -0.08250000327825546,
+          -0.04799960181117058
+        ],
+        [
+          0.1256619691848755,
+          0.026000000536441803,
+          0.04799991101026535
+        ]
+      ],
+      "canonical_mesh": "meshes/Link4.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link4.stl",
+        "sha256": "42c1bc57849b8711977d9c8473d9b050277f6c8fc45579795b0fa9b61a527de0",
+        "bytes": 8843284,
+        "triangles": 176864,
+        "bounds_m": [
+          [
+            -0.0016499996418133378,
+            -0.08250000327825546,
+            -0.04799960181117058
+          ],
+          [
+            0.1256619691848755,
+            0.026000000536441803,
+            0.04799991101026535
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link4__0B2545.stl",
+          "sha256": "16b3730a71c96755b4c21a9fe9399e492b3f4ae7e8a33bced99c960124e21f43",
+          "bytes": 274884,
+          "triangles": 5496,
+          "bounds_m": [
+            [
+              0.039000000804662704,
+              -0.08250000327825546,
+              -0.039000000804662704
+            ],
+            [
+              0.11699999868869781,
+              -0.07850000262260437,
+              0.039000000804662704
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "J5.J5_REAR_COVER"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link4__141416.stl",
+          "sha256": "efaa913c3467f2c54833805236de1a225ce7f19c3119c37d82fabab2f9e5658b",
+          "bytes": 1284,
+          "triangles": 24,
+          "bounds_m": [
+            [
+              0.054999999701976776,
+              -0.07450000196695328,
+              -0.023000000044703484
+            ],
+            [
+              0.10100000351667404,
+              -0.020999999716877937,
+              0.023000000044703484
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J5.MOTOR42"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link4__6B7280.stl",
+          "sha256": "c69bd4941c6fbe27cb7e94d22e541b98a6ae55a1c77ef2fff9533c888190091b",
+          "bytes": 1154384,
+          "triangles": 23086,
+          "bounds_m": [
+            [
+              -0.0016499996418133378,
+              -0.07699679583311081,
+              -0.04799960181117058
+            ],
+            [
+              0.1256619691848755,
+              0.02250000089406967,
+              0.04799991101026535
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J4.MP6.CARRIER",
+            "J4.MP6.OUTPUT_FLANGE",
+            "REF.CABLE.L4_J5.0",
+            "REF.CABLE.L4_J5_ARC.0",
+            "REF.CABLE.L4_J5_ARC.1",
+            "REF.CABLE.L4_J5_ARC.2",
+            "REF.CABLE.L4_J5_ARC.3",
+            "REF.CABLE.L4_J5_ARC.4",
+            "REF.CABLE.L4_J5_ARC.5",
+            "REF.CABLE.L4_J5_ARC.6",
+            "REF.CABLE.L4_J5_ARC.7",
+            "REF.CABLE.L4_J5_ARC.8",
+            "REF.CABLE.L4_J5_ARC.9",
+            "REF.CABLE.L4_J5_ARC.10",
+            "REF.CABLE.L4_J5_ARC.11",
+            "REF.CABLE.L4_J5_ARC.12",
+            "REF.CABLE.L4_J5_ARC.13",
+            "REF.CABLE.L4_J5_ARC.14",
+            "REF.CABLE.L4_J5_ARC.15",
+            "REF.CABLE.L4_J5_ARC.16",
+            "REF.CABLE.L4_J5_ARC.17",
+            "REF.CABLE.L4_J5_ARC.18",
+            "REF.CABLE.L4_J5_ARC.19"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link4__87CEEB.stl",
+          "sha256": "21d9f05f2c3ac8a2e85bf66dec82bd1944143a73775bad18d073026dc701bf13",
+          "bytes": 3673784,
+          "triangles": 73474,
+          "bounds_m": [
+            [
+              0.05086753889918327,
+              -0.018400000408291817,
+              -0.026558080688118935
+            ],
+            [
+              0.10513246059417725,
+              0.007850000634789467,
+              0.026558080688118935
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J5.MP6.DISC_1",
+            "J5.MP6.DISC_2",
+            "J5.MP6.CAM_LOWER",
+            "J5.MP6.CAM_UPPER",
+            "J5.MP6.WASHER"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link4__FFFFFF.stl",
+          "sha256": "e17a70cfcc1e70d762e01ddf17eb98b16610550275e22b1da24ab1d6c05cb3b3",
+          "bytes": 3739284,
+          "triangles": 74784,
+          "bounds_m": [
+            [
+              0.017999999225139618,
+              -0.07850000262260437,
+              -0.04699999839067459
+            ],
+            [
+              0.11699999868869781,
+              0.026000000536441803,
+              0.04699999839067459
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "J5.MP6.HOUSING_BASE",
+            "J5.MP6.HOUSING_CAP",
+            "J5.MP6.RETAINER",
+            "J5.J5_STATOR_A",
+            "J5.J5_STATOR_B"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link4.stl",
+          "sha256": "56b6ce8e11696f2613dcfeb6da23a9e502653c62352cb2034e3a72d734453cae",
+          "bytes": 794784,
+          "triangles": 15894,
+          "bounds_m": [
+            [
+              -0.0016499996418133378,
+              -0.08250000327825546,
+              -0.04799960181117058
+            ],
+            [
+              0.1256619691848755,
+              0.026000000536441803,
+              0.04799991101026535
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "J4.MP6.CARRIER",
+            "J4.MP6.OUTPUT_FLANGE",
+            "J5.MP6.HOUSING_BASE",
+            "J5.MP6.HOUSING_CAP",
+            "J5.MP6.RETAINER",
+            "J5.J5_STATOR_A",
+            "J5.J5_STATOR_B",
+            "J5.J5_REAR_COVER",
+            "REF.J5.MOTOR42",
+            "REF.CABLE.L4_J5.0",
+            "REF.CABLE.L4_J5_ARC.0",
+            "REF.CABLE.L4_J5_ARC.1",
+            "REF.CABLE.L4_J5_ARC.2",
+            "REF.CABLE.L4_J5_ARC.3",
+            "REF.CABLE.L4_J5_ARC.4",
+            "REF.CABLE.L4_J5_ARC.5",
+            "REF.CABLE.L4_J5_ARC.6",
+            "REF.CABLE.L4_J5_ARC.7",
+            "REF.CABLE.L4_J5_ARC.8",
+            "REF.CABLE.L4_J5_ARC.9",
+            "REF.CABLE.L4_J5_ARC.10",
+            "REF.CABLE.L4_J5_ARC.11",
+            "REF.CABLE.L4_J5_ARC.12",
+            "REF.CABLE.L4_J5_ARC.13",
+            "REF.CABLE.L4_J5_ARC.14",
+            "REF.CABLE.L4_J5_ARC.15",
+            "REF.CABLE.L4_J5_ARC.16",
+            "REF.CABLE.L4_J5_ARC.17",
+            "REF.CABLE.L4_J5_ARC.18",
+            "REF.CABLE.L4_J5_ARC.19"
+          ],
+          "shells": 30
+        }
+      ],
+      "mass_component_ids": [
+        "mass:J4.MP6 CARRIER",
+        "mass:J4.MP6 OUTPUT_FLANGE",
+        "mass:J5.MP6 HOUSING_BASE",
+        "mass:J5.MP6 HOUSING_CAP",
+        "mass:J5.MP6 RETAINER",
+        "mass:J5.MP6 DISC_1",
+        "mass:J5.MP6 DISC_2",
+        "mass:J5.MP6 CAM_LOWER",
+        "mass:J5.MP6 CAM_UPPER",
+        "mass:J5.MP6 WASHER",
+        "mass:J5.motor + driver 42D",
+        "mass:J5.dowels",
+        "mass:J5.bearings",
+        "mass:J5.screws + inserts",
+        "mass:J5.J5_STATOR_A",
+        "mass:J5.J5_STATOR_B",
+        "mass:J5.J5_REAR_COVER",
+        "mass:J5.screws + inserts (MP10)",
+        "mass:cable L4_J5",
+        "mass:cable L4_J5_ARC",
+        "mass:cable loop J4.b",
+        "mass:cable loop J5.a"
+      ]
+    },
+    "Link5": {
+      "mass_kg": 0.7635800284838948,
+      "com_m": [
+        0.09154174162355679,
+        0.0033017766865343335,
+        -0.00043655715616028714
+      ],
+      "inertia_kg_m2": [
+        [
+          0.00046395794059366066,
+          0.0002128439827367745,
+          -1.855135791163177e-05
+        ],
+        [
+          0.0002128439827367745,
+          0.0013167995667760217,
+          6.180134154598162e-06
+        ],
+        [
+          -1.855135791163177e-05,
+          6.180134154598162e-06,
+          0.0013949914275772721
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        0.00041340318132950855,
+        0.0013668594745305798,
+        0.0013954862790868667
+      ],
+      "bounds_m": [
+        [
+          -0.052000001072883606,
+          -0.050999999046325684,
+          -0.050998978316783905
+        ],
+        [
+          0.15649999678134918,
+          0.056599996984004974,
+          0.050999999046325684
+        ]
+      ],
+      "canonical_mesh": "meshes/Link5.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link5.stl",
+        "sha256": "2461e95ffa752f5cabadc12e30a399345973e78c1695e026eba1c0391bc552d9",
+        "bytes": 12548384,
+        "triangles": 250966,
+        "bounds_m": [
+          [
+            -0.052000001072883606,
+            -0.050999999046325684,
+            -0.050998978316783905
+          ],
+          [
+            0.15649999678134918,
+            0.056599996984004974,
+            0.050999999046325684
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link5__0B2545.stl",
+          "sha256": "ad5aafcc0099bb0ce38507fecd8708a8d71b8de3a5ad120498ae0e8273f30ef2",
+          "bytes": 505984,
+          "triangles": 10118,
+          "bounds_m": [
+            [
+              -0.024000000208616257,
+              -0.050999999046325684,
+              -0.050998978316783905
+            ],
+            [
+              0.1145000010728836,
+              0.0560000017285347,
+              0.050998978316783905
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "LINK5_CAP",
+            "J6_TUBE_CAP",
+            "J6_TUBE_RING"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link5__141416.stl",
+          "sha256": "f3825afea706b6bc668d97d3ee3212cb3d7aed3b06d931153471f753baa98e45",
+          "bytes": 1284,
+          "triangles": 24,
+          "bounds_m": [
+            [
+              0.061000000685453415,
+              -0.023000000044703484,
+              -0.023000000044703484
+            ],
+            [
+              0.1145000010728836,
+              0.023000000044703484,
+              0.023000000044703484
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "REF.J6.MOTOR42"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link5__34D399.stl",
+          "sha256": "1b5762cafa91d58f3b97baf0939ce05b76150503d4a7f86d32965e19bf6168f6",
+          "bytes": 684,
+          "triangles": 12,
+          "bounds_m": [
+            [
+              -0.012000000104308128,
+              0.055980000644922256,
+              -0.008999999612569809
+            ],
+            [
+              0.012000000104308128,
+              0.056599996984004974,
+              0.008999999612569809
+            ]
+          ],
+          "color": [
+            0.20392156862745098,
+            0.8274509803921568,
+            0.6,
+            1.0
+          ],
+          "component_ids": [
+            "LINK5_CAP_MARK"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link5__6B7280.stl",
+          "sha256": "cf0bdab071feeb9bb3982f806e640c9b8c1de915516ca95865873478c9a380d6",
+          "bytes": 2646884,
+          "triangles": 52936,
+          "bounds_m": [
+            [
+              -0.049995023757219315,
+              -0.04674983769655228,
+              -0.04672995209693909
+            ],
+            [
+              0.11649999767541885,
+              0.04297260940074921,
+              0.04674908518791199
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J5.MP6.CARRIER",
+            "J5.MP6.OUTPUT_FLANGE",
+            "J5.J5_OUTPUT_HUB",
+            "REF.CABLE.L5_PLATE.0",
+            "REF.CABLE.L5_PLATE.1",
+            "REF.CABLE.L5_PLATE.2",
+            "REF.CABLE.L5_PLATE.3",
+            "REF.CABLE.L5_ANN_IN.0",
+            "REF.CABLE.L5_ANN_ARC.0",
+            "REF.CABLE.L5_ANN_ARC.1",
+            "REF.CABLE.L5_ANN_ARC.2",
+            "REF.CABLE.L5_ANN_ARC.3",
+            "REF.CABLE.L5_ANN_ARC.4",
+            "REF.CABLE.L5_ANN_ARC.5",
+            "REF.CABLE.L5_ANN_ARC.6",
+            "REF.CABLE.L5_ANN_ARC.7",
+            "REF.CABLE.L5_ANN_ARC.8",
+            "REF.CABLE.L5_ANN_ARC.9",
+            "REF.CABLE.L5_ANN_ARC.10",
+            "REF.CABLE.L5_ANN_ARC.11",
+            "REF.CABLE.L5_ANN_ARC.12",
+            "REF.CABLE.L5_ANN_ARC.13",
+            "REF.CABLE.L5_ANN_ARC.14",
+            "REF.CABLE.L5_ANN_ARC.15",
+            "REF.CABLE.L5_ANN_FWD.0",
+            "REF.CABLE.L5_ANN_FWD.1"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link5__87CEEB.stl",
+          "sha256": "581ef3870df4faefdcc6e841e198055d82762283103b351dc9761e171eb1737f",
+          "bytes": 3673784,
+          "triangles": 73474,
+          "bounds_m": [
+            [
+              0.11710000038146973,
+              -0.027132458984851837,
+              -0.026558080688118935
+            ],
+            [
+              0.1433500051498413,
+              0.027132458984851837,
+              0.026558080688118935
+            ]
+          ],
+          "color": [
+            0.5294117647058824,
+            0.807843137254902,
+            0.9215686274509803,
+            1.0
+          ],
+          "component_ids": [
+            "J6.MP6.DISC_1",
+            "J6.MP6.DISC_2",
+            "J6.MP6.CAM_LOWER",
+            "J6.MP6.CAM_UPPER",
+            "J6.MP6.WASHER"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link5__FFFFFF.stl",
+          "sha256": "fdf62bc7fca8f3cdf006093b95f6cee59f6a685a236b9f0943d9ce75ad530e1b",
+          "bytes": 5720184,
+          "triangles": 114402,
+          "bounds_m": [
+            [
+              -0.052000001072883606,
+              -0.050999999046325684,
+              -0.05099871754646301
+            ],
+            [
+              0.15649999678134918,
+              0.05299999937415123,
+              0.050999999046325684
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "LINK5",
+            "J6_CAN_A",
+            "J6_CAN_B",
+            "J6_REAR_COVER",
+            "J6_TUBE",
+            "J6.MP6.HOUSING_BASE",
+            "J6.MP6.HOUSING_CAP",
+            "J6.MP6.RETAINER"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link5.stl",
+          "sha256": "8269f0ad4347238877bca48f2669333fd67c5afcbdb14ce6c78ae7caabd89d7a",
+          "bytes": 1376134,
+          "triangles": 27521,
+          "bounds_m": [
+            [
+              -0.052000001072883606,
+              -0.050999999046325684,
+              -0.050998978316783905
+            ],
+            [
+              0.15649999678134918,
+              0.056599996984004974,
+              0.050999999046325684
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "LINK5",
+            "LINK5_CAP",
+            "LINK5_CAP_MARK",
+            "J6_CAN_A",
+            "J6_CAN_B",
+            "J6_REAR_COVER",
+            "J6_TUBE",
+            "J6_TUBE_CAP",
+            "J6_TUBE_RING",
+            "J5.MP6.CARRIER",
+            "J5.MP6.OUTPUT_FLANGE",
+            "J6.MP6.HOUSING_BASE",
+            "J6.MP6.HOUSING_CAP",
+            "J6.MP6.RETAINER",
+            "J5.J5_OUTPUT_HUB",
+            "REF.J6.MOTOR42",
+            "REF.CABLE.L5_PLATE.0",
+            "REF.CABLE.L5_PLATE.1",
+            "REF.CABLE.L5_PLATE.2",
+            "REF.CABLE.L5_PLATE.3",
+            "REF.CABLE.L5_ANN_IN.0",
+            "REF.CABLE.L5_ANN_ARC.0",
+            "REF.CABLE.L5_ANN_ARC.1",
+            "REF.CABLE.L5_ANN_ARC.2",
+            "REF.CABLE.L5_ANN_ARC.3",
+            "REF.CABLE.L5_ANN_ARC.4",
+            "REF.CABLE.L5_ANN_ARC.5",
+            "REF.CABLE.L5_ANN_ARC.6",
+            "REF.CABLE.L5_ANN_ARC.7",
+            "REF.CABLE.L5_ANN_ARC.8",
+            "REF.CABLE.L5_ANN_ARC.9",
+            "REF.CABLE.L5_ANN_ARC.10",
+            "REF.CABLE.L5_ANN_ARC.11",
+            "REF.CABLE.L5_ANN_ARC.12",
+            "REF.CABLE.L5_ANN_ARC.13",
+            "REF.CABLE.L5_ANN_ARC.14",
+            "REF.CABLE.L5_ANN_ARC.15",
+            "REF.CABLE.L5_ANN_FWD.0",
+            "REF.CABLE.L5_ANN_FWD.1"
+          ],
+          "shells": 39
+        }
+      ],
+      "mass_component_ids": [
+        "mass:LINK5",
+        "mass:LINK5_CAP",
+        "mass:LINK5_CAP_MARK",
+        "mass:J6_CAN_A",
+        "mass:J6_CAN_B",
+        "mass:J6_REAR_COVER",
+        "mass:J6_TUBE",
+        "mass:J6_TUBE_CAP",
+        "mass:J6_TUBE_RING",
+        "mass:J5.MP6 CARRIER",
+        "mass:J5.MP6 OUTPUT_FLANGE",
+        "mass:J6.MP6 HOUSING_BASE",
+        "mass:J6.MP6 HOUSING_CAP",
+        "mass:J6.MP6 RETAINER",
+        "mass:J6.MP6 DISC_1",
+        "mass:J6.MP6 DISC_2",
+        "mass:J6.MP6 CAM_LOWER",
+        "mass:J6.MP6 CAM_UPPER",
+        "mass:J6.MP6 WASHER",
+        "mass:J6.motor + driver 42D",
+        "mass:J6.dowels",
+        "mass:J6.bearings",
+        "mass:J6.screws + inserts",
+        "mass:J5.J5_OUTPUT_HUB",
+        "mass:cable L5_PLATE",
+        "mass:cable L5_ANN_IN",
+        "mass:cable L5_ANN_ARC",
+        "mass:cable L5_ANN_FWD",
+        "mass:cable loop J5.b",
+        "mass:cable loop J6.a"
+      ]
+    },
+    "Link6": {
+      "mass_kg": 0.025928,
+      "com_m": [
+        0.016588513494769048,
+        0.00043628510737343324,
+        -0.0019265658751334844
+      ],
+      "inertia_kg_m2": [
+        [
+          7.587891175953933e-06,
+          -4.2319873730702795e-07,
+          1.8687785740247113e-06
+        ],
+        [
+          -4.2319873730702795e-07,
+          7.969340351864852e-06,
+          6.775346863164509e-07
+        ],
+        [
+          1.8687785740247113e-06,
+          6.775346863164509e-07,
+          5.13048105067714e-06
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        3.963960770825728e-06,
+        8.122753277631685e-06,
+        8.600998530038513e-06
+      ],
+      "bounds_m": [
+        [
+          -0.0016499996418133378,
+          -0.02800000086426735,
+          -0.06400000303983688
+        ],
+        [
+          0.05598904564976692,
+          0.02800000086426735,
+          0.02800000086426735
+        ]
+      ],
+      "canonical_mesh": "meshes/Link6.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/Link6.stl",
+        "sha256": "164d690b3e0bd9032d8feb527294ab05279bb51677b77c3488d5f6ca5421029b",
+        "bytes": 2204684,
+        "triangles": 44092,
+        "bounds_m": [
+          [
+            -0.0016499996418133378,
+            -0.02800000086426735,
+            -0.06400000303983688
+          ],
+          [
+            0.05598904564976692,
+            0.02800000086426735,
+            0.02800000086426735
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/Link6__34D399.stl",
+          "sha256": "fe345f29376be059e24e86d3d1318ab55f27e6da7dbacf4cd159150be385074f",
+          "bytes": 1498384,
+          "triangles": 29966,
+          "bounds_m": [
+            [
+              0.017999999225139618,
+              -0.02800000086426735,
+              -0.02800000086426735
+            ],
+            [
+              0.029500000178813934,
+              0.02800000086426735,
+              0.02800000086426735
+            ]
+          ],
+          "color": [
+            0.20392156862745098,
+            0.8274509803921568,
+            0.6,
+            1.0
+          ],
+          "component_ids": [
+            "TOOL_FLANGE"
+          ]
+        },
+        {
+          "file": "meshes/visual/Link6__6B7280.stl",
+          "sha256": "b438fca1cb007d489682bae080644d0ddc34887212a7613fff38d70932deba54",
+          "bytes": 706384,
+          "triangles": 14126,
+          "bounds_m": [
+            [
+              -0.0016499996418133378,
+              -0.02250000089406967,
+              -0.06400000303983688
+            ],
+            [
+              0.05598904564976692,
+              0.02250000089406967,
+              0.02249971777200699
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "J6.MP6.CARRIER",
+            "J6.MP6.OUTPUT_FLANGE",
+            "REF.CABLE.L6_SERVO.0"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/Link6.stl",
+          "sha256": "44d1382447b9d99d66ae4c6d5f88b928b5e46defbb3030d0648e22e86c7dd33b",
+          "bytes": 320884,
+          "triangles": 6416,
+          "bounds_m": [
+            [
+              -0.0016499996418133378,
+              -0.02800000086426735,
+              -0.06400000303983688
+            ],
+            [
+              0.05598904564976692,
+              0.02800000086426735,
+              0.02800000086426735
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "TOOL_FLANGE",
+            "J6.MP6.CARRIER",
+            "J6.MP6.OUTPUT_FLANGE",
+            "REF.CABLE.L6_SERVO.0"
+          ],
+          "shells": 4
+        }
+      ],
+      "mass_component_ids": [
+        "mass:TOOL_FLANGE",
+        "mass:J6.MP6 CARRIER",
+        "mass:J6.MP6 OUTPUT_FLANGE",
+        "mass:cable L6_SERVO",
+        "mass:cable loop J6.b"
+      ]
+    },
+    "KG1": {
+      "mass_kg": 0.11919363636363636,
+      "com_m": [
+        0.006813221943683312,
+        -0.012919195063642322,
+        0.024353479380485783
+      ],
+      "inertia_kg_m2": [
+        [
+          7.383747062426901e-05,
+          1.1360087542921796e-05,
+          -1.1662466199262707e-06
+        ],
+        [
+          1.1360087542921796e-05,
+          0.0001927045376203814,
+          1.1444627841933635e-06
+        ],
+        [
+          -1.1662466199262707e-06,
+          1.1444627841933635e-06,
+          0.0002043628549610281
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        7.274929409842623e-05,
+        0.00019368139647597728,
+        0.00020447417263127484
+      ],
+      "bounds_m": [
+        [
+          -0.07000000029802322,
+          -0.05900000035762787,
+          -0.007000000216066837
+        ],
+        [
+          0.07000000029802322,
+          0.027995534241199493,
+          0.057999998331069946
+        ]
+      ],
+      "canonical_mesh": "meshes/KG1.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/KG1.stl",
+        "sha256": "d5fd356916c7699f56ab0629b71da931bde6c92a37a9f950dfed8d22bf912bbd",
+        "bytes": 678284,
+        "triangles": 13564,
+        "bounds_m": [
+          [
+            -0.07000000029802322,
+            -0.05900000035762787,
+            -0.007000000216066837
+          ],
+          [
+            0.07000000029802322,
+            0.027995534241199493,
+            0.057999998331069946
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/KG1__0A0A0A.stl",
+          "sha256": "55cf9341518b593dbec68f46d3c3502294c2fa8fc8b376df4a437ac25b67e166",
+          "bytes": 76084,
+          "triangles": 1520,
+          "bounds_m": [
+            [
+              -0.07000000029802322,
+              -0.017980000004172325,
+              0.04901999980211258
+            ],
+            [
+              0.07000000029802322,
+              0.021479999646544456,
+              0.054979998618364334
+            ]
+          ],
+          "color": [
+            0.0392156862745098,
+            0.0392156862745098,
+            0.0392156862745098,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:ROD_-15.0",
+            "KG1:ROD_-5.0",
+            "KG1:ROD_10.5",
+            "KG1:ROD_18.5"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1__141416.stl",
+          "sha256": "87a9b76ebeb8f39bbb02b19d61d33979f330cb7389aac53c3d9a0f6808cfb03b",
+          "bytes": 2484,
+          "triangles": 48,
+          "bounds_m": [
+            [
+              -0.010109999217092991,
+              -0.05900000035762787,
+              0.013640000484883785
+            ],
+            [
+              0.035110000520944595,
+              -0.008999999612569809,
+              0.038359999656677246
+            ]
+          ],
+          "color": [
+            0.0784313725490196,
+            0.0784313725490196,
+            0.08627450980392157,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:SERVO_BODY",
+            "KG1:SERVO_PLUGS"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1__6B7280.stl",
+          "sha256": "562e6a1bea1d4ccb0e958c3c1f541292aef6ff489c29b47bdb8e5a48bcfc7383",
+          "bytes": 295884,
+          "triangles": 5916,
+          "bounds_m": [
+            [
+              -0.07000000029802322,
+              -0.02800000086426735,
+              -1.3322676411307164e-18
+            ],
+            [
+              0.07000000029802322,
+              0.027995534241199493,
+              0.057999998331069946
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:BASE"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1__9CA3AF.stl",
+          "sha256": "2bc1d0b84db95a109374420e0e399a53deae899bf98dde96151856ce8b55e299",
+          "bytes": 304084,
+          "triangles": 6080,
+          "bounds_m": [
+            [
+              -0.01850000023841858,
+              -0.01850000023841858,
+              -0.007000000216066837
+            ],
+            [
+              0.030899999663233757,
+              0.01850000023841858,
+              0.03815000131726265
+            ]
+          ],
+          "color": [
+            0.611764705882353,
+            0.6392156862745098,
+            0.6862745098039216,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:M2_HEAD_18.41_-1",
+            "KG1:M2_SHANK_18.41_-1",
+            "KG1:M2_HEAD_18.41_1",
+            "KG1:M2_SHANK_18.41_1",
+            "KG1:M2_HEAD_39.11_-1",
+            "KG1:M2_SHANK_39.11_-1",
+            "KG1:M2_HEAD_39.11_1",
+            "KG1:M2_SHANK_39.11_1",
+            "KG1:ARM_HEAD_0",
+            "KG1:ARM_SHANK_0",
+            "KG1:ARM_HEAD_1",
+            "KG1:ARM_SHANK_1",
+            "KG1:ARM_HEAD_2",
+            "KG1:ARM_SHANK_2",
+            "KG1:ARM_HEAD_3",
+            "KG1:ARM_SHANK_3"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/KG1.stl",
+          "sha256": "60ee5c0cf4a9da1621b4ff2108ea4fb7aa26259a4279f2d4afd34f97c9f96457",
+          "bytes": 383884,
+          "triangles": 7676,
+          "bounds_m": [
+            [
+              -0.07000000029802322,
+              -0.05900000035762787,
+              -0.007000000216066837
+            ],
+            [
+              0.07000000029802322,
+              0.027995534241199493,
+              0.057999998331069946
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "KG1:BASE",
+            "KG1:SERVO_BODY",
+            "KG1:SERVO_PLUGS",
+            "KG1:M2_HEAD_18.41_-1",
+            "KG1:M2_SHANK_18.41_-1",
+            "KG1:M2_HEAD_18.41_1",
+            "KG1:M2_SHANK_18.41_1",
+            "KG1:M2_HEAD_39.11_-1",
+            "KG1:M2_SHANK_39.11_-1",
+            "KG1:M2_HEAD_39.11_1",
+            "KG1:M2_SHANK_39.11_1",
+            "KG1:ROD_-15.0",
+            "KG1:ROD_-5.0",
+            "KG1:ROD_10.5",
+            "KG1:ROD_18.5",
+            "KG1:ARM_HEAD_0",
+            "KG1:ARM_SHANK_0",
+            "KG1:ARM_HEAD_1",
+            "KG1:ARM_SHANK_1",
+            "KG1:ARM_HEAD_2",
+            "KG1:ARM_SHANK_2",
+            "KG1:ARM_HEAD_3",
+            "KG1:ARM_SHANK_3"
+          ],
+          "shells": 23
+        }
+      ],
+      "mass_component_ids": [
+        "mass:KG1:BASE",
+        "mass:KG1:SERVO_BODY",
+        "mass:KG1:SERVO_PLUGS",
+        "mass:KG1:M2_HEAD_18.41_-1",
+        "mass:KG1:M2_SHANK_18.41_-1",
+        "mass:KG1:M2_HEAD_18.41_1",
+        "mass:KG1:M2_SHANK_18.41_1",
+        "mass:KG1:M2_HEAD_39.11_-1",
+        "mass:KG1:M2_SHANK_39.11_-1",
+        "mass:KG1:M2_HEAD_39.11_1",
+        "mass:KG1:M2_SHANK_39.11_1",
+        "mass:KG1:ROD_-15.0",
+        "mass:KG1:ROD_-5.0",
+        "mass:KG1:ROD_10.5",
+        "mass:KG1:ROD_18.5",
+        "mass:KG1:ARM_HEAD_0",
+        "mass:KG1:ARM_SHANK_0",
+        "mass:KG1:ARM_HEAD_1",
+        "mass:KG1:ARM_SHANK_1",
+        "mass:KG1:ARM_HEAD_2",
+        "mass:KG1:ARM_SHANK_2",
+        "mass:KG1:ARM_HEAD_3",
+        "mass:KG1:ARM_SHANK_3"
+      ]
+    },
+    "KG1_A": {
+      "mass_kg": 0.024640909090909092,
+      "com_m": [
+        0.005256468970865253,
+        -0.004029100776105658,
+        0.06680027835214017
+      ],
+      "inertia_kg_m2": [
+        [
+          1.0895329573979285e-05,
+          9.821468714795343e-07,
+          5.591483743065995e-06
+        ],
+        [
+          9.821468714795343e-07,
+          1.8130799097990484e-05,
+          -1.1364165873205054e-06
+        ],
+        [
+          5.591483743065995e-06,
+          -1.1364165873205054e-06,
+          1.1141721966309806e-05
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        5.251718659642949e-06,
+        1.6602245637499627e-05,
+        1.8313886341137e-05
+      ],
+      "bounds_m": [
+        [
+          -0.014000000432133675,
+          -0.019999999552965164,
+          0.03799999877810478
+        ],
+        [
+          0.05400000140070915,
+          0.01464999932795763,
+          0.10599999874830246
+        ]
+      ],
+      "canonical_mesh": "meshes/KG1_A.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/KG1_A.stl",
+        "sha256": "d84f7d66da786dcfbb1169f73cc998a30feddc268c34356277d7861bfa2f6384",
+        "bytes": 552584,
+        "triangles": 11050,
+        "bounds_m": [
+          [
+            -0.014000000432133675,
+            -0.019999999552965164,
+            0.03799999877810478
+          ],
+          [
+            0.05400000140070915,
+            0.01464999932795763,
+            0.10599999874830246
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/KG1_A__6B7280.stl",
+          "sha256": "ca5ef4d1581c52c233ab10b8f3d6facb690849fe47dfeba14b06590737a53ebb",
+          "bytes": 121284,
+          "triangles": 2424,
+          "bounds_m": [
+            [
+              -0.014000000432133675,
+              -0.009999999776482582,
+              0.05849999934434891
+            ],
+            [
+              0.0,
+              0.01464999932795763,
+              0.10599999874830246
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:PAD_A",
+            "KG1:PAD_A_HEAD_0",
+            "KG1:PAD_A_SHANK_0",
+            "KG1:PAD_A_HEAD_1",
+            "KG1:PAD_A_SHANK_1"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1_A__FFFFFF.stl",
+          "sha256": "14db3b5540cd9cb9dd2cf7f42c36ae621135cb8e228db7f9f3fd797e35b759e7",
+          "bytes": 431384,
+          "triangles": 8626,
+          "bounds_m": [
+            [
+              -0.014000000432133675,
+              -0.019999999552965164,
+              0.03799999877810478
+            ],
+            [
+              0.05400000140070915,
+              0.009999999776482582,
+              0.10300000011920929
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:JAW_A"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/KG1_A.stl",
+          "sha256": "4b6f2b85d49397b9b4ee80f8c2002831e874f331a279cee786ceef25404bbd8a",
+          "bytes": 78584,
+          "triangles": 1570,
+          "bounds_m": [
+            [
+              -0.014000000432133675,
+              -0.019999999552965164,
+              0.03799999877810478
+            ],
+            [
+              0.05400000140070915,
+              0.01464999932795763,
+              0.10599999874830246
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "KG1:JAW_A",
+            "KG1:PAD_A",
+            "KG1:PAD_A_HEAD_0",
+            "KG1:PAD_A_SHANK_0",
+            "KG1:PAD_A_HEAD_1",
+            "KG1:PAD_A_SHANK_1"
+          ],
+          "shells": 6
+        }
+      ],
+      "mass_component_ids": [
+        "mass:KG1:JAW_A",
+        "mass:KG1:PAD_A",
+        "mass:KG1:PAD_A_HEAD_0",
+        "mass:KG1:PAD_A_SHANK_0",
+        "mass:KG1:PAD_A_HEAD_1",
+        "mass:KG1:PAD_A_SHANK_1"
+      ]
+    },
+    "KG1_B": {
+      "mass_kg": 0.030760909090909092,
+      "com_m": [
+        -0.008245671868210687,
+        0.00819884291839014,
+        0.05587946383421502
+      ],
+      "inertia_kg_m2": [
+        [
+          2.801785560073533e-05,
+          3.7039265086628204e-07,
+          -1.0624234302284673e-05
+        ],
+        [
+          3.7039265086628204e-07,
+          3.902149822506717e-05,
+          -3.2974103926862924e-07
+        ],
+        [
+          -1.0624234302284673e-05,
+          -3.2974103926862924e-07,
+          1.4803828892090323e-05
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        8.899378400166794e-06,
+        3.387640367731574e-05,
+        3.9067400640410276e-05
+      ],
+      "bounds_m": [
+        [
+          -0.05400000140070915,
+          -0.009999999776482582,
+          0.006500000134110451
+        ],
+        [
+          0.014000000432133675,
+          0.023499999195337296,
+          0.10599999874830246
+        ]
+      ],
+      "canonical_mesh": "meshes/KG1_B.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/KG1_B.stl",
+        "sha256": "5945d60a8dbf087ec407b2a8c1a2a977e54cb93abb6f9771aa281b66d2db776a",
+        "bytes": 429484,
+        "triangles": 8588,
+        "bounds_m": [
+          [
+            -0.05400000140070915,
+            -0.009999999776482582,
+            0.006500000134110451
+          ],
+          [
+            0.014000000432133675,
+            0.023499999195337296,
+            0.10599999874830246
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/KG1_B__6B7280.stl",
+          "sha256": "18c80b6aed5b3003cc978b50c0279c3795ffc9d007adfe47078216d8042f26e1",
+          "bytes": 109684,
+          "triangles": 2192,
+          "bounds_m": [
+            [
+              0.0,
+              -0.009999999776482582,
+              0.05849999934434891
+            ],
+            [
+              0.014000000432133675,
+              0.023499999195337296,
+              0.10599999874830246
+            ]
+          ],
+          "color": [
+            0.4196078431372549,
+            0.4470588235294118,
+            0.5019607843137255,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:PAD_B",
+            "KG1:PAD_B_HEAD_0",
+            "KG1:PAD_B_SHANK_0",
+            "KG1:PAD_B_HEAD_1",
+            "KG1:PAD_B_SHANK_1"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1_B__FFFFFF.stl",
+          "sha256": "a49d9046a1241409834a68c1cbcf0b21298553e104d7c4975a198c09c5a37d16",
+          "bytes": 319884,
+          "triangles": 6396,
+          "bounds_m": [
+            [
+              -0.05400000140070915,
+              -0.009999999776482582,
+              0.006500000134110451
+            ],
+            [
+              0.014000000432133675,
+              0.023499999195337296,
+              0.10000000149011612
+            ]
+          ],
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:JAW_B"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/KG1_B.stl",
+          "sha256": "adc37d7039acf7bf4ea573a7e929b6a36b75978c416f6bc42ff8b8fde83db24d",
+          "bytes": 78684,
+          "triangles": 1572,
+          "bounds_m": [
+            [
+              -0.05400000140070915,
+              -0.009999999776482582,
+              0.006500000134110451
+            ],
+            [
+              0.014000000432133675,
+              0.023499999195337296,
+              0.10599999874830246
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "KG1:JAW_B",
+            "KG1:PAD_B",
+            "KG1:PAD_B_HEAD_0",
+            "KG1:PAD_B_SHANK_0",
+            "KG1:PAD_B_HEAD_1",
+            "KG1:PAD_B_SHANK_1"
+          ],
+          "shells": 6
+        }
+      ],
+      "mass_component_ids": [
+        "mass:KG1:JAW_B",
+        "mass:KG1:PAD_B",
+        "mass:KG1:PAD_B_HEAD_0",
+        "mass:KG1:PAD_B_SHANK_0",
+        "mass:KG1:PAD_B_HEAD_1",
+        "mass:KG1:PAD_B_SHANK_1"
+      ]
+    },
+    "KG1_R": {
+      "mass_kg": 0.009604545454545454,
+      "com_m": [
+        -3.307156561688584e-19,
+        -0.003289286448787967,
+        1.2403673378555816e-10
+      ],
+      "inertia_kg_m2": [
+        [
+          4.732640245320544e-07,
+          4.390280953459896e-18,
+          1.6543612251060553e-23
+        ],
+        [
+          4.390280953459896e-18,
+          6.39828349514238e-07,
+          -1.815226443504644e-15
+        ],
+        [
+          1.6543612251060553e-23,
+          -1.815226443504644e-15,
+          4.7326221205312487e-07
+        ]
+      ],
+      "principal_inertias_kg_m2": [
+        4.7326221205312487e-07,
+        4.732640245320544e-07,
+        6.39828349514238e-07
+      ],
+      "bounds_m": [
+        [
+          -0.014844420365989208,
+          -0.010499999858438969,
+          -0.014999999664723873
+        ],
+        [
+          0.014844420365989208,
+          0.004999999888241291,
+          0.014999999664723873
+        ]
+      ],
+      "canonical_mesh": "meshes/KG1_R.stl",
+      "canonical_mesh_record": {
+        "file": "meshes/KG1_R.stl",
+        "sha256": "e29b54e0bab2da8161a8e02e3f54faf2f01aad7482ea5896c90150d6cb8a4884",
+        "bytes": 771484,
+        "triangles": 15428,
+        "bounds_m": [
+          [
+            -0.014844420365989208,
+            -0.010499999858438969,
+            -0.014999999664723873
+          ],
+          [
+            0.014844420365989208,
+            0.004999999888241291,
+            0.014999999664723873
+          ]
+        ]
+      },
+      "visuals": [
+        {
+          "file": "meshes/visual/KG1_R__0B2545.stl",
+          "sha256": "4814686bb555186c49f0a85a5b9fbded72988984d5a161f6ffdb7108063b798a",
+          "bytes": 543284,
+          "triangles": 10864,
+          "bounds_m": [
+            [
+              -0.014844420365989208,
+              -0.006000000052154064,
+              -0.014999999664723873
+            ],
+            [
+              0.014844420365989208,
+              0.004999999888241291,
+              0.014999999664723873
+            ]
+          ],
+          "color": [
+            0.043137254901960784,
+            0.1450980392156863,
+            0.27058823529411763,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:PINION"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1_R__2A2A2A.stl",
+          "sha256": "5e9eb697a87a31521f6574253bb1ebfab5a74cfe6f4abfeba69f3de1a48fc776",
+          "bytes": 38284,
+          "triangles": 764,
+          "bounds_m": [
+            [
+              -0.009975000284612179,
+              -0.010499999858438969,
+              -0.009975000284612179
+            ],
+            [
+              0.009975000284612179,
+              -0.006000000052154064,
+              0.00997499842196703
+            ]
+          ],
+          "color": [
+            0.16470588235294117,
+            0.16470588235294117,
+            0.16470588235294117,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:HORN"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1_R__3A3A3A.stl",
+          "sha256": "08ee1a96e560b6db823dea3b175b94965c77d9d6c15efc4a6013a0016547fac5",
+          "bytes": 19084,
+          "triangles": 380,
+          "bounds_m": [
+            [
+              -0.002950000111013651,
+              -0.010499999858438969,
+              -0.002950000809505582
+            ],
+            [
+              0.002950000111013651,
+              -0.0071000000461936,
+              0.002950000809505582
+            ]
+          ],
+          "color": [
+            0.22745098039215686,
+            0.22745098039215686,
+            0.22745098039215686,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:SPLINE"
+          ]
+        },
+        {
+          "file": "meshes/visual/KG1_R__9CA3AF.stl",
+          "sha256": "77a80ffe6c8bd4d1eb0dfc81a92f9f490ddf1739f3d38c88e7af6a90b250a559",
+          "bytes": 171084,
+          "triangles": 3420,
+          "bounds_m": [
+            [
+              -0.007699747569859028,
+              -0.00800000037997961,
+              -0.0076997471041977406
+            ],
+            [
+              0.007699747569859028,
+              0.0010000000474974513,
+              0.00769974896684289
+            ]
+          ],
+          "color": [
+            0.611764705882353,
+            0.6392156862745098,
+            0.6862745098039216,
+            1.0
+          ],
+          "component_ids": [
+            "KG1:HORN_SCREW_HEAD",
+            "KG1:PIN_HEAD_0",
+            "KG1:PIN_SHANK_0",
+            "KG1:PIN_HEAD_1",
+            "KG1:PIN_SHANK_1",
+            "KG1:PIN_HEAD_2",
+            "KG1:PIN_SHANK_2",
+            "KG1:PIN_HEAD_3",
+            "KG1:PIN_SHANK_3"
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "file": "meshes/collision/KG1_R.stl",
+          "sha256": "a8efebc892d7d9233252973384a3ba16f4d5fe49d22b78319be4f91ee8d2bad9",
+          "bytes": 255284,
+          "triangles": 5104,
+          "bounds_m": [
+            [
+              -0.014844420365989208,
+              -0.010499999858438969,
+              -0.014999999664723873
+            ],
+            [
+              0.014844420365989208,
+              0.004999999888241291,
+              0.014999999664723873
+            ]
+          ],
+          "method": "CONCATENATED_PER_PART_CONVEX_HULLS_NOT_GLOBAL_CONVEX",
+          "component_ids": [
+            "KG1:PINION",
+            "KG1:SPLINE",
+            "KG1:HORN",
+            "KG1:HORN_SCREW_HEAD",
+            "KG1:PIN_HEAD_0",
+            "KG1:PIN_SHANK_0",
+            "KG1:PIN_HEAD_1",
+            "KG1:PIN_SHANK_1",
+            "KG1:PIN_HEAD_2",
+            "KG1:PIN_SHANK_2",
+            "KG1:PIN_HEAD_3",
+            "KG1:PIN_SHANK_3"
+          ],
+          "shells": 12
+        }
+      ],
+      "mass_component_ids": [
+        "mass:KG1:PINION",
+        "mass:KG1:SPLINE",
+        "mass:KG1:HORN",
+        "mass:KG1:HORN_SCREW_HEAD",
+        "mass:KG1:PIN_HEAD_0",
+        "mass:KG1:PIN_SHANK_0",
+        "mass:KG1:PIN_HEAD_1",
+        "mass:KG1:PIN_SHANK_1",
+        "mass:KG1:PIN_HEAD_2",
+        "mass:KG1:PIN_SHANK_2",
+        "mass:KG1:PIN_HEAD_3",
+        "mass:KG1:PIN_SHANK_3"
+      ]
+    }
+  },
+  "frames": {
+    "Base": {
+      "T_world_at_arm_zero_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link1": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.9659258262890683,
+          -0.25881904510252074,
+          0.0,
+          0.0
+        ],
+        [
+          0.25881904510252074,
+          0.9659258262890683,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.096
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link2": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.6208851530148457,
+          -0.25881904510252074,
+          -0.739942111693848,
+          0.0
+        ],
+        [
+          0.16636567534280192,
+          0.9659258262890683,
+          -0.19826689127414615,
+          0.0
+        ],
+        [
+          0.766044443118978,
+          0.0,
+          0.6427876096865394,
+          0.17400000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link3": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.9076733711903687,
+          -0.25881904510252074,
+          0.3303660895493521,
+          0.10244605024744953
+        ],
+        [
+          0.24321034680169393,
+          0.9659258262890683,
+          0.08852132690137683,
+          0.027450336431562316
+        ],
+        [
+          -0.34202014332566866,
+          0.0,
+          0.9396926207859083,
+          0.30039733311463135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link4": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.9076733711903687,
+          -0.1644949641685828,
+          0.38609643613362693,
+          0.25221215649386036
+        ],
+        [
+          0.24321034680169393,
+          0.9559237071920419,
+          -0.16449496416858284,
+          0.06758004365384182
+        ],
+        [
+          -0.34202014332566866,
+          0.24321034680169393,
+          0.9076733711903686,
+          0.24396400946589603
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link5": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.6594600396925665,
+          -0.1644949641685828,
+          0.7335215489757989,
+          0.32301067944670914
+        ],
+        [
+          0.28994200701628453,
+          0.9559237071920419,
+          -0.04629793295161677,
+          0.08655045070437395
+        ],
+        [
+          -0.6935748615802388,
+          0.24321034680169393,
+          0.6780874859430397,
+          0.21728643828649388
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Link6": {
+      "T_world_at_arm_zero_m": [
+        [
+          0.6594600396925665,
+          -0.28937059630375717,
+          0.6938134576696294,
+          0.4153350850036684
+        ],
+        [
+          0.28994200701628453,
+          0.9494406298176886,
+          0.12039984642332278,
+          0.1271423316866538
+        ],
+        [
+          -0.6935748615802388,
+          0.12176677891033698,
+          0.7100188468891184,
+          0.12018595766526044
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "KG1": {
+      "T_world_at_arm_zero_m": [
+        [
+          -0.28937059630375717,
+          0.6938134576696294,
+          0.6594600396925665,
+          0.4337999661150602
+        ],
+        [
+          0.9494406298176886,
+          0.12039984642332278,
+          0.28994200701628453,
+          0.13526070788310976
+        ],
+        [
+          0.12176677891033698,
+          0.7100188468891184,
+          -0.6935748615802388,
+          0.10076586154101375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "KG1_A": {
+      "T_world_at_arm_zero_m": [
+        [
+          -0.28937059630375717,
+          0.6938134576696294,
+          0.6594600396925665,
+          0.4337999661150602
+        ],
+        [
+          0.9494406298176886,
+          0.12039984642332278,
+          0.28994200701628453,
+          0.13526070788310976
+        ],
+        [
+          0.12176677891033698,
+          0.7100188468891184,
+          -0.6935748615802388,
+          0.10076586154101375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "KG1_B": {
+      "T_world_at_arm_zero_m": [
+        [
+          -0.28937059630375717,
+          0.6938134576696294,
+          0.6594600396925665,
+          0.4337999661150602
+        ],
+        [
+          0.9494406298176886,
+          0.12039984642332278,
+          0.28994200701628453,
+          0.13526070788310976
+        ],
+        [
+          0.12176677891033698,
+          0.7100188468891184,
+          -0.6935748615802388,
+          0.10076586154101375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "KG1_R": {
+      "T_world_at_arm_zero_m": [
+        [
+          -0.28937059630375717,
+          0.6938134576696294,
+          0.6594600396925665,
+          0.45094592714706694
+        ],
+        [
+          0.9494406298176886,
+          0.12039984642332278,
+          0.28994200701628453,
+          0.14279920006553315
+        ],
+        [
+          0.12176677891033698,
+          0.7100188468891184,
+          -0.6935748615802388,
+          0.08273291513992755
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "joints": {
+    "J1": {
+      "parent": "Base",
+      "child": "Link1",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.096
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        -0.0,
+        0.2617993877991494
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cad_zero_offset_deg": 15.0,
+      "limit": {
+        "lower": -3.2288591161895095,
+        "upper": 2.705260340591211,
+        "effort": 3.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    },
+    "J2": {
+      "parent": "Link1",
+      "child": "Link2",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.078
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        -0.8726646259971648,
+        -4.73418649795769e-18
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cad_zero_offset_deg": -50.0,
+      "limit": {
+        "lower": -0.8726646259971648,
+        "upper": 0.8726646259971648,
+        "effort": 6.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    },
+    "J3": {
+      "parent": "Link2",
+      "child": "Link3",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.165,
+        -3.559392662967299e-18,
+        -1.4210854715202004e-17
+      ],
+      "origin_rpy_rad": [
+        1.2078224792345955e-16,
+        1.2217304763960306,
+        -1.3617994427880227e-16
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cad_zero_offset_deg": 70.0,
+      "limit": {
+        "lower": -1.5707963267948966,
+        "upper": 0.8726646259971648,
+        "effort": 5.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    },
+    "J4": {
+      "parent": "Link3",
+      "child": "Link4",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.16499999999999998,
+        5.076297996570011e-18,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.26179938779914946,
+        -1.8874071270761053e-17,
+        1.7255102838572333e-17
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cad_zero_offset_deg": 15.0,
+      "limit": {
+        "lower": -2.356194490192345,
+        "upper": 1.8325957145940461,
+        "effort": 2.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    },
+    "J5": {
+      "parent": "Link4",
+      "child": "Link5",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.078,
+        1.4210854715202004e-17,
+        -5.684341886080802e-17
+      ],
+      "origin_rpy_rad": [
+        -2.7600379240011737e-17,
+        0.43633231299858233,
+        3.7934779728562284e-17
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cad_zero_offset_deg": 25.0,
+      "limit": {
+        "lower": -2.007128639793479,
+        "upper": 1.1344640137963142,
+        "effort": 2.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    },
+    "J6": {
+      "parent": "Link5",
+      "child": "Link6",
+      "type": "revolute",
+      "origin_xyz_m": [
+        0.1399999999999999,
+        2.842170943040401e-17,
+        -5.684341886080802e-17
+      ],
+      "origin_rpy_rad": [
+        -0.1745329251994329,
+        8.336105700979668e-17,
+        1.513001675182638e-17
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cad_zero_offset_deg": -10.0,
+      "limit": {
+        "lower": -2.792526803190927,
+        "upper": 3.141592653589793,
+        "effort": 1.0,
+        "velocity": 0.5
+      },
+      "range_authority": "CAD_DESIGNER_PROPOSAL_WITH_ONE_AXIS_SAMPLE_SCOPE_NOT_HARDWARE_SAFE"
+    }
+  },
+  "KG1_mount_T_Link6_from_G_mm": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      28.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "totals": {
+    "original_unrounded_mass_kg": 8.863854736164349,
+    "new_mass_kg": 8.863854736164349,
+    "original_rounded_body_sum_kg": 8.863999999999999,
+    "original_rounded_total_kg": 8.8639,
+    "closed_original_com_world_m": [
+      0.1273041735296689,
+      0.027416934627721982,
+      0.15523376825494523
+    ],
+    "closed_new_com_world_m": [
+      0.12729632464671467,
+      0.027424310257409615,
+      0.15521691139204927
+    ],
+    "closed_com_delta_m": [
+      -7.848882954242242e-06,
+      7.375629687632335e-06,
+      -1.685686289595867e-05
+    ],
+    "display_closed_original_com_world_m": [
+      0.08259582560096311,
+      0.05206474111236723,
+      0.18464008286181524
+    ],
+    "display_closed_new_com_world_m": [
+      0.08257681976760652,
+      0.05206743855028274,
+      0.18463445606603782
+    ],
+    "display_closed_com_delta_m": [
+      -1.900583335659456e-05,
+      2.697437915505363e-06,
+      -5.6267957774247535e-06
+    ]
+  },
+  "sourcechecks": {
+    "before_census_sha256": "e6233e35d396d2e018790e0f307c198efe9b889a771d3c876427a3e898f9bc91",
+    "after_census_sha256": "e6233e35d396d2e018790e0f307c198efe9b889a771d3c876427a3e898f9bc91",
+    "preserved": true,
+    "load_pins_match": [
+      {
+        "record_key": "parts/FLOOR.stl",
+        "path": "models/manipulator-v2/parts/FLOOR.stl",
+        "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE.stl",
+        "path": "models/manipulator-v2/parts/BASE.stl",
+        "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+        "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN_BAND.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+        "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+        "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+        "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET.stl",
+        "path": "models/manipulator-v2/parts/TURRET.stl",
+        "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET_BAND.stl",
+        "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+        "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_SPACER.stl",
+        "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+        "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER.stl",
+        "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER_SHROUD.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+        "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_MOTOR_HOOD.stl",
+        "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+        "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HOOD_FACE.stl",
+        "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+        "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HUB.stl",
+        "path": "models/manipulator-v2/parts/J2_HUB.stl",
+        "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "match": true
+      },
+      {
+        "record_key": "parts/UPPER_ARM.stl",
+        "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+        "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_COVER.stl",
+        "path": "models/manipulator-v2/parts/UA_COVER.stl",
+        "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_J3_BRACKET.stl",
+        "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+        "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_LOGO.stl",
+        "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+        "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+        "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+        "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+        "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+        "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "match": true
+      },
+      {
+        "record_key": "parts/FOREARM.stl",
+        "path": "models/manipulator-v2/parts/FOREARM.stl",
+        "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP.stl",
+        "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+        "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+        "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+        "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+        "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+        "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+        "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+        "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5.stl",
+        "path": "models/manipulator-v2/parts/LINK5.stl",
+        "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+        "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+        "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+        "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+        "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+        "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+        "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+        "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+        "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "match": true
+      },
+      {
+        "record_key": "parts/TOOL_FLANGE.stl",
+        "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+        "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "match": true
+      },
+      {
+        "record_key": "printprep.json",
+        "path": ".dev/mp18-evidence/printprep.json",
+        "expected_sha256": "ac9261e99695ca1b4a107c4c4a7b91d00b11c2842d81b0999a4c5074660a8044",
+        "actual_sha256": "ac9261e99695ca1b4a107c4c4a7b91d00b11c2842d81b0999a4c5074660a8044",
+        "match": true
+      },
+      {
+        "record_key": "inputs.json(MP5)",
+        "path": "src/cad/review-mp5/inputs.json",
+        "expected_sha256": "612e45ea1272e266157b4cbc5213105f55938b34ad47135dec2154a9b9bb2843",
+        "actual_sha256": "612e45ea1272e266157b4cbc5213105f55938b34ad47135dec2154a9b9bb2843",
+        "match": true
+      },
+      {
+        "record_key": "printprep.json(MP16)",
+        "path": ".dev/mp16-evidence/printprep.json",
+        "expected_sha256": "dac271d23b66275a5214a86001a5559f1caff804fe7c43613751f04db04dbf88",
+        "actual_sha256": "dac271d23b66275a5214a86001a5559f1caff804fe7c43613751f04db04dbf88",
+        "match": true
+      },
+      {
+        "record_key": "sizing.json(MP16)",
+        "path": ".dev/mp16-evidence/sizing/sizing.json",
+        "expected_sha256": "1a77a9acb1bd9cb04296c064b6b408f141ed48414f3094c3b4b6593f9dc40009",
+        "actual_sha256": "1a77a9acb1bd9cb04296c064b6b408f141ed48414f3094c3b4b6593f9dc40009",
+        "match": true
+      },
+      {
+        "record_key": "mass-properties.json(MP10)",
+        "path": "models/j5-wrist-v1/mass-properties.json",
+        "expected_sha256": "4379ef87cf35bc6a967256e2aca5856ac25d1da149ef73cd20fea32f7efdab1c",
+        "actual_sha256": "4379ef87cf35bc6a967256e2aca5856ac25d1da149ef73cd20fea32f7efdab1c",
+        "match": true
+      },
+      {
+        "record_key": "mass-properties.json(KG1)",
+        "path": "models/kmjh-gripper-v1/mass-properties.json",
+        "expected_sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb",
+        "actual_sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb",
+        "match": true
+      },
+      {
+        "record_key": "parameters.json",
+        "path": "src/cad/manipulator-v2/parameters.json",
+        "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "match": true
+      },
+      {
+        "record_key": "loads_arm.py",
+        "path": "src/cad/manipulator-v2/loads_arm.py",
+        "expected_sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+        "actual_sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+        "match": true
+      },
+      {
+        "record_key": "layout.py",
+        "path": "src/cad/manipulator-v2/layout.py",
+        "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "match": true
+      }
+    ],
+    "build_pins_match": [
+      {
+        "record_key": "parameters.json",
+        "path": "src/cad/manipulator-v2/parameters.json",
+        "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "match": true
+      },
+      {
+        "record_key": "build_arm.py",
+        "path": "src/cad/manipulator-v2/build_arm.py",
+        "expected_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+        "actual_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+        "match": true
+      },
+      {
+        "record_key": "layout.py",
+        "path": "src/cad/manipulator-v2/layout.py",
+        "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "match": true
+      },
+      {
+        "record_key": "j5geom.py(MP10)",
+        "path": "src/cad/j5-wrist-v1/j5geom.py",
+        "expected_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+        "actual_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+        "match": true
+      },
+      {
+        "record_key": "parameters.json(MP10)",
+        "path": "src/cad/j5-wrist-v1/parameters.json",
+        "expected_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+        "actual_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+        "match": true
+      },
+      {
+        "record_key": "parameters.json(MP16)",
+        "path": "src/cad/j23-drive-v1/parameters.json",
+        "expected_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+        "actual_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+        "match": true
+      },
+      {
+        "record_key": "print-fits.json",
+        "path": "src/cad/calibration/print-fits.json",
+        "expected_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+        "actual_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+        "match": true
+      },
+      {
+        "record_key": "motor-mks42d.json",
+        "path": "src/cad/calibration/motor-mks42d.json",
+        "expected_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+        "actual_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+        "match": true
+      },
+      {
+        "record_key": "cycloid.json(MP6)",
+        "path": "models/cycloid-27-v1/cycloid.json",
+        "expected_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+        "actual_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+        "match": true
+      },
+      {
+        "record_key": "v1 parameters.json",
+        "path": "models/armold-mks-concept-v1/parameters.json",
+        "expected_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+        "actual_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+        "match": true
+      },
+      {
+        "record_key": "parts/FLOOR.stl",
+        "path": "models/manipulator-v2/parts/FLOOR.stl",
+        "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE.stl",
+        "path": "models/manipulator-v2/parts/BASE.stl",
+        "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+        "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN_BAND.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+        "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+        "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+        "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET.stl",
+        "path": "models/manipulator-v2/parts/TURRET.stl",
+        "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET_BAND.stl",
+        "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+        "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_SPACER.stl",
+        "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+        "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER.stl",
+        "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER_SHROUD.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+        "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_MOTOR_HOOD.stl",
+        "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+        "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HOOD_FACE.stl",
+        "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+        "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HUB.stl",
+        "path": "models/manipulator-v2/parts/J2_HUB.stl",
+        "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "match": true
+      },
+      {
+        "record_key": "parts/UPPER_ARM.stl",
+        "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+        "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_COVER.stl",
+        "path": "models/manipulator-v2/parts/UA_COVER.stl",
+        "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_J3_BRACKET.stl",
+        "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+        "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_LOGO.stl",
+        "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+        "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+        "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+        "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+        "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+        "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "match": true
+      },
+      {
+        "record_key": "parts/FOREARM.stl",
+        "path": "models/manipulator-v2/parts/FOREARM.stl",
+        "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP.stl",
+        "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+        "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+        "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+        "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+        "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+        "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+        "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+        "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5.stl",
+        "path": "models/manipulator-v2/parts/LINK5.stl",
+        "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+        "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+        "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+        "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+        "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+        "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+        "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+        "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+        "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "match": true
+      },
+      {
+        "record_key": "parts/TOOL_FLANGE.stl",
+        "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+        "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_FIT_SLEEVE.stl",
+        "path": "models/manipulator-v2/parts/J1_FIT_SLEEVE.stl",
+        "expected_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+        "actual_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_FIT_BORE.stl",
+        "path": "models/manipulator-v2/parts/J1_FIT_BORE.stl",
+        "expected_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+        "actual_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+        "match": true
+      },
+      {
+        "record_key": "manipulator-v2-parts.solidcraft",
+        "path": "models/manipulator-v2/manipulator-v2-parts.solidcraft",
+        "expected_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+        "actual_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+        "match": true
+      }
+    ],
+    "build_input_pins_match": [
+      {
+        "record_key": "parameters.json",
+        "path": "src/cad/manipulator-v2/parameters.json",
+        "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+        "match": true
+      },
+      {
+        "record_key": "build_arm.py",
+        "path": "src/cad/manipulator-v2/build_arm.py",
+        "expected_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+        "actual_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+        "match": true
+      },
+      {
+        "record_key": "layout.py",
+        "path": "src/cad/manipulator-v2/layout.py",
+        "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+        "match": true
+      },
+      {
+        "record_key": "j5geom.py(MP10)",
+        "path": "src/cad/j5-wrist-v1/j5geom.py",
+        "expected_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+        "actual_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+        "match": true
+      },
+      {
+        "record_key": "parameters.json(MP10)",
+        "path": "src/cad/j5-wrist-v1/parameters.json",
+        "expected_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+        "actual_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+        "match": true
+      },
+      {
+        "record_key": "parameters.json(MP16)",
+        "path": "src/cad/j23-drive-v1/parameters.json",
+        "expected_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+        "actual_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+        "match": true
+      },
+      {
+        "record_key": "print-fits.json",
+        "path": "src/cad/calibration/print-fits.json",
+        "expected_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+        "actual_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+        "match": true
+      },
+      {
+        "record_key": "motor-mks42d.json",
+        "path": "src/cad/calibration/motor-mks42d.json",
+        "expected_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+        "actual_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+        "match": true
+      },
+      {
+        "record_key": "cycloid.json(MP6)",
+        "path": "models/cycloid-27-v1/cycloid.json",
+        "expected_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+        "actual_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+        "match": true
+      },
+      {
+        "record_key": "v1 parameters.json",
+        "path": "models/armold-mks-concept-v1/parameters.json",
+        "expected_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+        "actual_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+        "match": true
+      }
+    ],
+    "build_output_pins_match": [
+      {
+        "record_key": "parts/FLOOR.stl",
+        "path": "models/manipulator-v2/parts/FLOOR.stl",
+        "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE.stl",
+        "path": "models/manipulator-v2/parts/BASE.stl",
+        "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+        "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+        "match": true
+      },
+      {
+        "record_key": "parts/BASE_SKIN_BAND.stl",
+        "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+        "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+        "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+        "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET.stl",
+        "path": "models/manipulator-v2/parts/TURRET.stl",
+        "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+        "match": true
+      },
+      {
+        "record_key": "parts/TURRET_BAND.stl",
+        "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+        "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_SPACER.stl",
+        "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+        "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER.stl",
+        "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+        "match": true
+      },
+      {
+        "record_key": "parts/SHOULDER_SHROUD.stl",
+        "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+        "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_MOTOR_HOOD.stl",
+        "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+        "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HOOD_FACE.stl",
+        "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+        "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+        "match": true
+      },
+      {
+        "record_key": "parts/J2_HUB.stl",
+        "path": "models/manipulator-v2/parts/J2_HUB.stl",
+        "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+        "match": true
+      },
+      {
+        "record_key": "parts/UPPER_ARM.stl",
+        "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+        "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_COVER.stl",
+        "path": "models/manipulator-v2/parts/UA_COVER.stl",
+        "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_J3_BRACKET.stl",
+        "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+        "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_LOGO.stl",
+        "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+        "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+        "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J2_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+        "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+        "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+        "match": true
+      },
+      {
+        "record_key": "parts/UA_CAP_J3_MARK.stl",
+        "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+        "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+        "match": true
+      },
+      {
+        "record_key": "parts/FOREARM.stl",
+        "path": "models/manipulator-v2/parts/FOREARM.stl",
+        "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP.stl",
+        "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+        "match": true
+      },
+      {
+        "record_key": "parts/J3_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+        "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+        "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+        "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+        "match": true
+      },
+      {
+        "record_key": "parts/J4_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+        "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+        "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+        "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+        "match": true
+      },
+      {
+        "record_key": "parts/FA_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+        "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5.stl",
+        "path": "models/manipulator-v2/parts/LINK5.stl",
+        "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+        "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+        "match": true
+      },
+      {
+        "record_key": "parts/LINK5_CAP_MARK.stl",
+        "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+        "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_A.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+        "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_CAN_B.stl",
+        "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+        "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_REAR_COVER.stl",
+        "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+        "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+        "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_CAP.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+        "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+        "match": true
+      },
+      {
+        "record_key": "parts/J6_TUBE_RING.stl",
+        "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+        "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+        "match": true
+      },
+      {
+        "record_key": "parts/TOOL_FLANGE.stl",
+        "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+        "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_FIT_SLEEVE.stl",
+        "path": "models/manipulator-v2/parts/J1_FIT_SLEEVE.stl",
+        "expected_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+        "actual_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+        "match": true
+      },
+      {
+        "record_key": "parts/J1_FIT_BORE.stl",
+        "path": "models/manipulator-v2/parts/J1_FIT_BORE.stl",
+        "expected_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+        "actual_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+        "match": true
+      },
+      {
+        "record_key": "manipulator-v2-parts.solidcraft",
+        "path": "models/manipulator-v2/manipulator-v2-parts.solidcraft",
+        "expected_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+        "actual_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+        "match": true
+      }
+    ],
+    "pin_audit_preserved": true,
+    "generation_input_count": 256,
+    "pin_audit_input_count": 61
+  }
+}

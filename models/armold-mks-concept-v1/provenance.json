@@ -1,0 +1,41 @@
+{
+  "status": "ORIGINAL_CONCEPT_REFERENCED_MECHANISM_ONLY",
+  "source_files_unchanged": [
+    {
+      "path": "docs/references/packages/01/mechanical_refs/Faze4/upstream/docs/B_Design_decisions.rst",
+      "sha256": "996d6171acf455f4a64c7d775f072bc4fb20019d3d100c94e353d509709b6f68"
+    },
+    {
+      "path": "docs/references/packages/01/mechanical_refs/Faze4/upstream/cyclo_disk_STEP_files.zip",
+      "sha256": "ce06744ab07ad8a1866caeae4bccd96126b44ed90d433f3e1a52bdf4fabf52d8"
+    },
+    {
+      "path": "docs/references/packages/01/mechanical_refs/Faze4/upstream/STL_V2.zip",
+      "sha256": "a77fc898211250469f946b0db9d5ec9b61707b5ff1e63f5b18ad2ec25b7fb5e3"
+    },
+    {
+      "path": "docs/references/packages/01/mechanical_refs/Faze4/upstream/LICENSE",
+      "sha256": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a"
+    },
+    {
+      "path": "docs/references/packages/03/MKS_CAN/Makerbase_official/User Manual/V1.0.9/MKS SERVO42&57D_CAN User Manual V1.0.9.pdf",
+      "sha256": "2d16ff8e1184ffa50c997280ac05cd5ab47bdf4632ef5397efae233e0107078f"
+    }
+  ],
+  "visual_reference": {
+    "url": "https://www.sweepdynamics.com/products/8446143070242",
+    "paid_CAD_used": false
+  },
+  "public_reference": {
+    "repository": "https://github.com/Source-Robotics/Faze4-Robotic-arm",
+    "commit": "674f46cb608d25899c46fc2ea67741f008a8f016",
+    "usage": "Mechanism topology and approximate scale only. No whole arm or cycloidal tooth geometry imported.",
+    "license_actual": "CERN-OHL-S-2.0",
+    "license_conflict": "README MIT badge conflicts with actual LICENSE",
+    "ratios_reference_only": true,
+    "J6_in_original": "planetary19.19:1"
+  },
+  "MKS_snapshot": "5c6d5b2e579b18d0465b2cb0d5a8ef44970bfdf8",
+  "ordered_motor_fit": "UNVERIFIED; generic42.3x42.3x40 motor and46x46x18 rear stack assumed",
+  "software": "Existing SolidCraft CLI0.18.4 nativeB-rep primitives; no installs/macros/hardware/printer/purchase"
+}

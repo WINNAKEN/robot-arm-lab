@@ -1,0 +1,149 @@
+{
+ "checks": {
+  "build_unchecked_pairs_0": true,
+  "build_part_part_interference_0": true,
+  "build_part_reference_interference_0": true,
+  "build_part_child_link_interference_0": true,
+  "build_parts_inside_a2_envelope": true,
+  "parts_closed_one_shell": true,
+  "j2_boxes_inside_can_bore": true,
+  "min_wall_at_least_1_2": true,
+  "clearances_positive": true,
+  "print_orientation_for_every_part": true
+ },
+ "parts": [
+  {
+   "part": "J2_REAR_HOUSING",
+   "kernel_shells": 1,
+   "volume_mm3": 90716.827,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    104.0,
+    103.999,
+    73.0
+   ]
+  },
+  {
+   "part": "J2_REDUCER_HOUSING",
+   "kernel_shells": 1,
+   "volume_mm3": 97659.81,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    104.0,
+    103.999,
+    26.3
+   ]
+  },
+  {
+   "part": "J2_OUTPUT_FLANGE",
+   "kernel_shells": 1,
+   "volume_mm3": 43568.793,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    64.0,
+    64.0,
+    15.7
+   ]
+  },
+  {
+   "part": "J2_BEARING_RETAINER",
+   "kernel_shells": 1,
+   "volume_mm3": 12553.413,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    101.0,
+    100.999,
+    3.2
+   ]
+  },
+  {
+   "part": "J2_ACCENT_RING_PART",
+   "kernel_shells": 1,
+   "volume_mm3": 3929.663,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    104.0,
+    104.0,
+    6.0
+   ]
+  },
+  {
+   "part": "J2_END_CAP_PART",
+   "kernel_shells": 1,
+   "volume_mm3": 27362.039,
+   "stl_watertight": true,
+   "stl_pieces": 1,
+   "bbox_mm": [
+    76.0,
+    76.0,
+    9.0
+   ]
+  }
+ ],
+ "boxes": [
+  {
+   "box": "REF_MOTOR_ASSUMED",
+   "corner_radius_mm": 29.911,
+   "z_mm": [
+    -58.0,
+    -18.0
+   ],
+   "inside": true
+  },
+  {
+   "box": "REF_DRIVER_ASSUMED",
+   "corner_radius_mm": 32.527,
+   "z_mm": [
+    -78.0,
+    -60.0
+   ],
+   "inside": true
+  },
+  {
+   "box": "REF_CONNECTOR_ASSUMED",
+   "corner_radius_mm": 36.401,
+   "z_mm": [
+    -78.0,
+    -60.0
+   ],
+   "inside": true
+  }
+ ],
+ "can_bore_radius_mm": 37.0,
+ "can_z_mm": [
+  -85.0,
+  -18.0
+ ],
+ "min_wall_mm": {
+  "can": 2.0,
+  "rear_wall": 6.0,
+  "reducer_housing_side": 12.5,
+  "bearing_seat_side": 10.0,
+  "flange_collar": 2.0,
+  "accent_ring_lower": 2.85,
+  "accent_ring_upper": 1.3500000000000014,
+  "cap_spigot": 2.0,
+  "retainer_under_counterbore": 1.3000000000000003,
+  "cap_under_counterbore": 4.1,
+  "joint_insert_to_reducer_space": 1.8999999999999986,
+  "joint_insert_to_outside": 6.4,
+  "retainer_insert_to_bearing_seat": 3.3999999999999986,
+  "retainer_insert_to_ring_seat": 2.4,
+  "pillar_around_insert": 1.9
+ },
+ "clearances_mm": {
+  "joint_counterbore_to_rear_fillet": 0.5,
+  "joint_counterbore_to_can": 1.5,
+  "cap_counterbore_to_cap_fillet": 0.3999999999999986,
+  "cap_screw_to_spigot": 1.6499999999999986,
+  "retainer_counterbore_to_inner_edge": 5.899999999999999,
+  "retainer_counterbore_to_outer_edge": 2.8999999999999986,
+  "retainer_inner_edge_to_flange": 5.5
+ },
+ "status": "pilot 22.3, insert 4.2, clearances 0.15 are placeholders until models/fit-coupons-v1 is printed and judged"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_DIAGRAM_ONLY",
+  "native_brep_bodies": 40,
+  "all_positive_solid_shells": true,
+  "functional_meshing": "NOT_DESIGNED",
+  "reduction_ratio": "NOT_VERIFIED",
+  "manufacturing": "NOT_APPROVED",
+  "actual_ref_joint6": "Faze4 J6 is planetary, not cycloidal",
+  "source": "Source-Robotics/Faze4-Robotic-arm/docs/B_Design_decisions.rst",
+  "license": "Original reference LICENSE CERN-OHL-S-2.0; README MIT badge conflicts"
+}

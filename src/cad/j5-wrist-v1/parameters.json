@@ -1,0 +1,144 @@
+{
+  "units": "mm (angles in deg)",
+  "status": "J5_WRIST_REAL_PART_V1_PROTOTYPE - motor / driver / connector values are assumptions (motor ledger) except overall_length (measured, upper bound); J4 interface assumes an MP6-like output flange",
+  "plan": "docs/design/056-j5-wrist-real-part.md (MP10)",
+  "frame_note": "module frame = MP6 frame: z = J5 axis (link 4 +y), z 0 = motor front face, x = link 4 +x, y = link 4 -z. MP6 part STLs are already in this frame.",
+  "sources": {
+    "v1_dir": "../../../models/armold-mks-concept-v1",
+    "reducer_json": "../../../models/cycloid-27-v1/cycloid.json",
+    "reducer_params": "../cycloid-27-v1/parameters.json",
+    "reducer_parts": "../../../models/cycloid-27-v1/parts",
+    "motor_ledger": "../calibration/motor-mks42d.json",
+    "fits_ledger": "../calibration/print-fits.json",
+    "material": "PLA",
+    "fit_keys": ["m3_clearance_dia", "insert_hole_dia"],
+    "motor_keys": ["frame", "body_length", "motor_driver_gap", "overall_length", "driver_width", "connector_clearance"],
+    "driver_span_note": "driver cavity runs from body_length + motor_driver_gap (assumed) back to overall_length (measured 2026-10-29 to the rear terminal block end, so an upper bound); the ledger driver_depth assumption is not read (MP10 rebuild 2026-10-30, user '지금 40 기준으로' - .dev/mp10-evidence/user-decisions-mp10-rebuild-1030.json)",
+    "from_mp6_note": "read from MP6 (not copied here): can outer radius check (radii_mm.outer), standard screw lengths (housing.screw_lengths_available), J4 screw circle / count (radii_mm.output_insert · carrier.output_inserts - J4 = MP6 assumption), screw head of the motor screws (motor.screw_head_*)"
+  },
+  "mp6_phases_deg": {
+    "cap_screw": 45.0,
+    "output_insert": 45.0,
+    "retainer_screw": 0.0,
+    "source": "src/cad/cycloid-27-v1/build_cycloid.py ring(..., math.pi / 4) for cap screws and carrier output inserts, ring(..., 0.0) for retainer screws - fixed in the MP6 generator, not in its parameters"
+  },
+  "screw_heads": {
+    "cap_screw_envelope": {"dia": 5.7, "height": 3.0},
+    "retainer_screw": {"dia": 5.7, "height": 1.65},
+    "source": "MP6 cap screws = BOM R08 'M3 x 30 (ISO 4762 socket or button head)' - the envelope covers both (ISO 4762 M3 dk 5.5 k 3.0 · ISO 7380 M3 dk 5.7 k 1.65; review MP10 R-2). Retainer screws = BOM R09 'M3 x 8 (button head advised)' = ISO 7380 (used for the J4 = MP6 assumption check)."
+  },
+  "placement": {
+    "joint": 5,
+    "motor_face_from_joint_along_axis": -21.0,
+    "note": "same motor-face place as v3 (drum face -18 minus 3); link 4 point = (x + 78, z - 21, -y) with 78 = v1 wrist_offsets_mm[0]"
+  },
+  "can": {
+    "outer_r": 39.0,
+    "rear_clearance": 4.0,
+    "split_gap": 1.0,
+    "clamp_side_clearance": 0.5,
+    "ring_zone": 5.0,
+    "ring_extra": 1.0,
+    "ring_extra_note": "= rib_gap: the front ring opening must be at least as wide as the clamp pocket below it, else its 0.5 underside faces down when printed upright (round 2 build: Bambu Studio 'floating cantilever' on both halves)",
+    "driver_clearance": 1.0,
+    "head_notch_width": 7.0,
+    "head_notch_depth": 3.4,
+    "rib_gap": 1.0,
+    "rib_half_width": 3.0,
+    "rib_y": [-12.0, 12.0],
+    "transition_note": "driver cavity -> clamp pocket is a 45 deg square funnel (taper -45 extrude from 0.5 inside the driver cavity, half width driver half + 0.5 down to the rib face) so no rib or air-gap underside starts in mid-air when printed upright (round 2: flat ledge + ribs = Bambu Studio 'floating cantilever'; a funnel variant slice cleared it)",
+    "note": "the two halves squeeze the motor body along x only on two ribs per half (faces at +-frame/2); elsewhere the x faces stand rib_gap off the motor (air gap - user's material choice text 'motor surrounded by an air gap'; review MP10 R-4). y faces have clamp_side_clearance; the first ring_zone mm behind the motor face open by ring_extra on every side; halves stay split_gap apart so the bolt force goes into the motor. MP6 cap screw heads sit in radial notches that also run along x to the split face, so each half slides on from the side over the heads (review MP10 R-1); notch depth covers a socket head (R-2)."
+  },
+  "connector": {
+    "side": "-x",
+    "pocket_half_width": 11.0,
+    "role": "MP10 rebuild 2 (2026-10-30): this -x pocket now holds the motor cable - the driver's top 4-pin terminal (its wires go into the motor) faces -x (user photo + text, .dev/mp10-evidence/user-decisions-mp10-terminals-1030.json). Its window (cable_slot) is kept as a spare exit.",
+    "note": "(since rebuild 2: the top 4-pin motor cable terminal is on this side - user photo; its size is still an ASSUMPTION) the driver connectors stick out on the J4 side (-x) by connector_clearance (ledger value already holds the bend allowance); the pocket reaches exactly that far, is 22 wide so its outer corners keep min_wall to the can outside, and runs inward to 0.1 past the driver cavity edge. One cut: side profile (x, z) pushed along y with a 45 deg shed roof - low (driver top + clearance) at the inner end, rising toward the outer wall - so no flat roof (Bambu Studio 'floating cantilever') and nothing rises behind the clamp face (review MP10 R-8; a box + gable pair left an open seam where their faces lay in one plane)."
+  },
+  "motor_connector": {
+    "measured": {"front_from_motor_face": 29.0, "height_above_motor_face": 10.0, "width": 16.0},
+    "measured_note": "MP10 rebuild 3 (2026-11-01): the printed half A would not slide fully onto the motor - the motor's own 6-pin cable connector sits on the motor's -x face over its rear end cap (user report + photos). User measured (unpowered, set A): '1. 29' = motor front face to the front-most point of connector + wires, '2. ... 10mm (커넥팅하고 커넥터 높이가 7mm정도라)' = height above the motor -x face incl. wires, '3. 16' = width across the motor (y), '4. ... 모터로 바로가' = the wires run straight to the motor/driver (no loop toward the shaft). Verbatim = .dev/mp10-evidence/user-decisions-mp10-connector-1101.json. Not written into the motor ledger (ledger changes belong to a ledger unit, like rebuild 2's terminal positions).",
+    "y_center_estimate": 4.0,
+    "y_center_note": "ESTIMATE from the user's top photo of the -x face (shaft to the right, label readable = camera at -x, so photo up = +y): connector housing rows 642-817 px vs motor edges 565-976 px (42.3 mm) -> centre about +4.2 mm (+3.7 when scaled to the measured 16 width). Not measured - the pocket y range below covers both this and a centred connector.",
+    "pocket": {"front_clearance": 2.0, "top_clearance": 2.0, "y": [-8.6, 14.0], "into_motor": 0.15, "rear_overlap": 1.0,
+               "deep_y_max": 11.2, "deep_beyond_old_pocket": 0.2, "side_overlap": 0.4, "side_step": 0.2},
+    "pocket_note": "half A cut in front of the -x connector pocket, pushed along x (profile in (y, z)). Roof = 45 deg gable along y: lowest (-(front - front_clearance)) at both y ends, rising to a ridge midway, so every roof layer grows from the solid end walls (y < y[0], y > y[1]) and the +y rib's cut end is a 45 deg face along the wall - first try (2026-11-01) used a shed rising toward the outer wall like the old pocket and Bambu Studio said 'floating regions': its low edge started in mid-air at the clamp wall and at the +y rib tip, and its outer wall stood on the old pocket's 45 deg roof (a downward knife edge). x = from into_motor inside the motor -x face (cuts only air there) out to: deep part (y[0] .. deep_y_max, holds the old pocket's +-11 range) = old pocket outer + deep_beyond_old_pocket, so the old roof lies inside it; side part (deep_y_max - side_overlap .. y[1]) = frame/2 + height + top_clearance (the can wall is too thin there to go deeper), roof side_step lower and floor side_step higher so no face is shared with the deep part. z floor = rear_overlap behind motor body + gap (inside the driver cavity / old pocket). y = [-8.6, 14.0]: -8.6 stops 0.4 short of the -y rib (that rib stays whole) and leaves 0.6 beside a centred 16 wide connector; 14.0 leaves 2.0 beside the photo estimate (+4 +- 8) and keeps the +y rib's outer 1 mm full length (design clearance 1.05 needs the connector's 5+2-terminal-side end >= 8.2 from the motor side face; that distance was never measured - the photo estimate about 7.9 still clears by about 0.75). 2026-11-05 widening tried for the unmeasured distance, both failed C7 and were dropped: 15.3 - the higher gable ridge ((y1 - y0) / 2) lengthens the 0.4 web between the pocket's -y end and the -y rib (thin area 2.11 > 1.5 at the ridge plane); 14.6 - leaves a 0.4 strip of the +y rib (1.53 > 1.5 at z -26.0). Widening needs the -y web removed too (a change of y[0] / the rib rule), not a y[1] change alone. Half A rib contact drops (checked by C3b against contact_area_min_mm2.halves_motor)."
+  },
+  "cable_slot": {
+    "half_width": 7.0,
+    "z_from_driver": [2.0, 4.0],
+    "note": "(since rebuild 2 a spare exit - no wire uses it; power and CAN leave through the terminal windows) window through the half A wall from the connector pocket to the outside (-x) between driver bottom + z_from_driver[0] and driver top - z_from_driver[1] (follows the motor ledger). Roof = 45 deg gable like the pocket."
+  },
+  "terminals": {
+    "sides": ["+y", "-y"],
+    "pocket_half_width": 11.0,
+    "board_rear_view": {"top_motor_4pin": "-x", "left_5plus2": "+y", "right_6": "-y", "bottom_screen_buttons": "+x"},
+    "window": {"half_width": 7.0, "z_from_rear": [2.0, 7.0]},
+    "inner_into_clamp_pocket": 0.15,
+    "roof_note": "pocket = prism along y from the clamp pocket face - inner_into_clamp_pocket (so inside |x| <= pocket_half_width it merges with the clamp pocket and the 45 deg funnel) out to driver_width/2 + connector_clearance; cross section (x, z) = box from the -x pocket's floor to its top (driver top + clearance) at x = +-pocket_half_width, then a 45 deg gable rising toward the seam (peak = top + pocket_half_width). Why not the -x pocket's shed roof (rising toward the outer wall): its low inner edge starts in mid-air beside the driver cavity, and with the pocket open at the split face that edge hung from one end only - Bambu Studio 'floating cantilever' on both halves (layer scan of the built STL found a 0.1 x 10 mm strip, also with the inner end raised to motor rear - 0.2; 2026-10-30). The gable grows from the pocket end walls instead. The motor's +-y faces never touch the can (clamp_side_clearance), so opening that wall over |x| <= 11 up to the gable leaves the rib clamp as it was.",
+    "window_note": "window = 14 wide, box from can rear + 2 to rear + 7 then a 45 deg gable (peak rear + 14). Top kept 1.0 under the clamp lug's 45 deg underside where it meets the can at the split face (limit terminal_window_clear_of_lug; with rear + 8 it touched it within 0.003 - output review R3-1). Placed from the rear face, not from the driver span: the first try (cable_slot section, peak -39) made SolidCraft fail the half A cut with 'no result' where the gable runs high into the clamp lug's 45 deg underside; lower or narrower windows built (trials kept outside the repo, C:\\tools\\mp10-rebuild\\try).",
+    "note": "user 2026-10-30 driver rear photo + text -> '양옆 단자를 이음 쪽으로 (권장)' (.dev/mp10-evidence/user-decisions-mp10-terminals-1030.json): the two side terminal blocks face +-y (the split seam). Rear view = from -z looking +z with top = -x, so right = -y and left = +y. Each side: pocket out to driver_width/2 + connector_clearance (ledger assumption incl. bend allowance), x within +-pocket_half_width across both halves, gable roof (see roof_note); window (see window / window_note) through the can wall at the seam, running out past the clamp lug (lug out + 1) and staying below the lug's 45 deg underside (limit terminal_window_clear_of_lug).",
+    "assumption_note": "ASSUMPTION - pocket_half_width 11 and the checker's terminal box x half 10 are the -x pocket's assumptions, not measured: the photo (263 px, rough) suggests the left 5+2 block may reach about x +11. Terminal block length / offset along the board edge and the wire entry direction are not measured (output review R3-2)."
+  },
+  "cable_route": {
+    "groove_half_width": 5.0,
+    "groove_depth": 2.0,
+    "tie_x": [-46.0, -42.0],
+    "tie_y": 9.5,
+    "tie_slot": [4.5, 2.4],
+    "note": "user's chosen option text 'cables leave through a groove outside the housing and tie points': a groove along the 45 deg underside of the neck web (from the plate to where the slope meets the can) and two cable-tie holes through the web (pairs at y = +-tie_y, slot x-length x y-width tie_slot) - the tie wraps the cables lying in the groove (review MP10 R-4)."
+  },
+  "clamp_bolts": {
+    "y_out": 3.5,
+    "z": [-12.0, -30.0],
+    "length": 16,
+    "insert_hole_depth": 8.0,
+    "lug": {"a_thick": 8.5, "b_thick": 10.0, "out": 8.0, "in": 2.0, "z": [-35.0, -7.0], "chamfer": 10.0},
+    "note": "M3 along +x through ears (lugs) at the split line on each side (bolt at y = +-(outer_r + y_out)): head on the flat outer face of half A's lug (x = -(split + a_thick)), thread in an M3 heat-set insert in half B's lug pushed in from the split face. The lug reaches 'in' into the can wall and 'out' beyond it; its underside is a 45 deg slope (chamfer) for upright printing. Replaced counterbores in the round can wall: their slanted exit left a lip under min_wall and the boxes that cut the lip made SolidCraft booleans fail or leave open edges on some builds (MP10 round 2)."
+  },
+  "cover": {
+    "t": 4.0,
+    "insert_r": 33.0,
+    "insert_angles_deg": [30.0, 150.0, 210.0, 330.0],
+    "insert_angles_note": "MP10 rebuild 2 (2026-10-30): moved from 70 / 110 / 250 / 290 (they would cut into the new +-y terminal pockets); still two per half",
+    "insert_hole_depth": 8.0,
+    "screw_length": 10,
+    "slash": {"height": 24.0, "width": 14.0, "depth": 0.8},
+    "note": "M3 button head on the cover outer face into inserts in the rear face of both halves (two in each half)"
+  },
+  "neck": {
+    "j4_face_x_link4": 18.0,
+    "plate_t": 10.0,
+    "plate_half": 26.0,
+    "plate_chamfer": 8.0,
+    "web_half_y": 20.0,
+    "web_x_end": -32.0,
+    "web_top_z": -2.0,
+    "web_inset": 0.3,
+    "plate_front_chamfer": 1.0,
+    "web_note": "web = side profile pushed along y: top at web_top_z (below the can front face z 0 - a shared plane there left open seams in the first build), front face web_inset inside the plate, underside a 45 deg slope that starts web_inset below the plate bottom and runs to web_x_end inside the can wall. The plate's bottom front edge gets a 45 deg chamfer (plate_front_chamfer) so the strip in front of the web is not a floating first layer when printed upright (Bambu Studio warned 'floating cantilever' on the second build).",
+    "j4_screw_under_head": 8.0,
+    "j4_cbore_dia": 6.2,
+    "j4_face_relief": {"contact_r": 28.5, "depth": 0.6},
+    "note": "ASSUMPTION - J4 is an MP6-like reducer: its output flange (4 mm) takes the MP6 output screw circle / count (read from MP6) into carrier inserts; the neck plate sits on that flange and the same screws get longer by the plate thickness under the head. J4 face = v3 place (link 4 x 18). Outside contact_r the J4 face is recessed by depth so the plate clears the J4 retainer screw heads (they stand 0.15 above the J4 output face) while J4 turns (review MP10 R-3)."
+  },
+  "hub": {
+    "r": 27.0,
+    "t": 10.0,
+    "chamfer": 2.0,
+    "screw_under_head": 4.0,
+    "cbore_dia": 6.2,
+    "link5_insert_r": 20.5,
+    "link5_insert_phase_deg": 0.0,
+    "link5_insert_count": 4,
+    "link5_insert_depth": 8.0,
+    "note": "sits on the MP6 output flange; the 4 MP6 flange screws (M3 x 8) become longer by screw_under_head (same tip place); radius kept inside the retainer screw heads (r 32.525 - head radius). link 5 insert circle 20.5 keeps 2.4 to the top chamfer edge from the 4.2 insert outside (review MP10 R-14)."
+  },
+  "min_engagement": 4.0,
+  "min_tip_to_floor": 0.5,
+  "min_wall": 2.0,
+  "insert_length": 5.7,
+  "insert_od": 4.2,
+  "insert_length_note": "M3 heat-set insert the user has: length 5.7, outer 4.2 (BOM R06, user 2026-10-26)",
+  "contact_area_min_mm2": {"halves_motor": 300.0, "halves_base": 500.0, "hub_flange": 1000.0, "cover_half": 300.0, "neck_j4_flange": 1000.0}
+}

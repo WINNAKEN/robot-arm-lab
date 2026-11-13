@@ -1,0 +1,126 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "width",
+        "expression": "90 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "depth",
+        "expression": "60 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "height",
+        "expression": "12 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "wall",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "base_t",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "OuterProfile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            "width",
+            0
+          ],
+          [
+            "width",
+            "depth"
+          ],
+          [
+            0,
+            "depth"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "height",
+        "operation": "new",
+        "body_name": "parts_tray"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "base_t",
+        "name": "TrayInterior"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "wall",
+            "wall"
+          ],
+          [
+            "width-wall",
+            "wall"
+          ],
+          [
+            "width-wall",
+            "depth-wall"
+          ],
+          [
+            "wall",
+            "depth-wall"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "height-base_t+1",
+        "operation": "cut"
+      }
+    }
+  ]
+}

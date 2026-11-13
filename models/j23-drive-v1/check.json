@@ -1,0 +1,510 @@
+{
+ "what": "MP16 구동 모듈 검사 — 커밋된 STL 로 스스로 계산",
+ "verdict": true,
+ "results": {
+  "C0": {
+   "ok": true,
+   "control": null
+  },
+  "C1": {
+   "ok": true,
+   "bodies": {
+    "HOUSING_BASE": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "CAP": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "CARRIER": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "DISC_1": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "DISC_2": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "CAM_LOWER": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "CAM_UPPER": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "WASHER_T1p4": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "RETAINER": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "OUTPUT_FLANGE": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "GUARD": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "STAND": {
+     "watertight": true,
+     "pieces": 1
+    },
+    "LEVER": {
+     "watertight": true,
+     "pieces": 1
+    }
+   }
+  },
+  "C2": {
+   "ok": true,
+   "limit_mm3": 0.01,
+   "worst_mm3": 1.0969003483296547e-13,
+   "over": [],
+   "thetas": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330
+   ],
+   "motor": "J2",
+   "travel": 0.0
+  },
+  "C2_motor_J3": {
+   "ok": true,
+   "limit_mm3": 0.01,
+   "worst_mm3": 1.0969003483296547e-13,
+   "over": [],
+   "thetas": [
+    0
+   ],
+   "motor": "J3",
+   "travel": 0.0
+  },
+  "C2_slot_ends": {
+   "minus": {
+    "ok": true,
+    "limit_mm3": 0.01,
+    "worst_mm3": 1.0969003483296547e-13,
+    "over": [],
+    "thetas": [
+     0
+    ],
+    "motor": "J2",
+    "travel": -2.5
+   },
+   "plus": {
+    "ok": true,
+    "limit_mm3": 0.01,
+    "worst_mm3": 1.0969003483296547e-13,
+    "over": [],
+    "thetas": [
+     0
+    ],
+    "motor": "J2",
+    "travel": 2.5
+   },
+   "ok": true
+  },
+  "C3": {
+   "ok": true,
+   "disc_to_ring_pin_min_mm": 0.0999999999999881,
+   "output_pin_in_hole_min_mm": 0.09999999999998455,
+   "disc_tip_max_r": 45.299999967984,
+   "disc_tip_to_housing_bore_mm": 0.7000000320159998,
+   "limits": {
+    "pin": 0.05,
+    "out_pin": 0.05,
+    "bore": 0.5
+   }
+  },
+  "C4": {
+   "centre_distance": 90.99575113922444,
+   "pitch_dia_small": 19.098593171027442,
+   "pitch_dia_big": 57.29577951308232,
+   "wrap_small_deg": 155.76883839616528,
+   "teeth_in_mesh_small": 8.653824355342515,
+   "ratio": 81.0,
+   "belt_below_base_mm": 10.5,
+   "motor_shaft_end_z": {
+    "J2": -19.0,
+    "J3": -20.0
+   },
+   "motor_shaft_reaches_belt_centre": true,
+   "input_shaft_end_below_belt_band": true,
+   "ok": true
+  },
+  "C5": {
+   "ok": true,
+   "min_material": 2.0,
+   "walls": {
+    "base_pin_hole_to_shaft_seat": 31.875,
+    "base_pin_floor": 2.0,
+    "cap_groove_to_outer": 9.875,
+    "cap_bottom_insert_to_groove": 3.375,
+    "cap_bottom_insert_to_outer": 2.5,
+    "cap_retainer_insert_to_seat": 2.4750000000000014,
+    "cap_stand_insert_to_outer": 3.5,
+    "cap_above_pin_tops_to_seat_floor": 12.0,
+    "cap_6812_ledge": 3.125,
+    "cap_cone_end_under_6812_ledge (height, not a wall - thin by design)": 1.3999999999999986,
+    "stand_counterbore_to_centre_hole": 2.25,
+    "stand_counterbore_to_outer": 2.25,
+    "carrier_608_ledge (contact width over the 608 outer ring band - thin by design)": 1.5250000000000004,
+    "carrier_pin_hole_to_plate_edge": 2.4000000000000004,
+    "carrier_pin_floor": 3.5,
+    "carrier_insert_to_hub_edge": 6.0,
+    "carrier_insert_to_shaft_lip": 12.5,
+    "carrier_hub_insert_floor_above_pins": 5.799999999999997,
+    "disc_hole_to_seat": 6.675000000000001,
+    "disc_hole_to_root": 8.399999999999999,
+    "disc_hole_web": 10.83027221244503,
+    "disc_lip": 3.0249999999999986,
+    "cam_lobe_over_d_bore": 4.700000000000001,
+    "cam_spacer_over_d_bore": 6.8500000000000005,
+    "cam_collar_over_d_bore(thin by design - 0.6 tall contact ring)": 1.2000000000000002,
+    "washer_ring": 2.3499999999999996,
+    "retainer_hole_to_inner": 5.899999999999999,
+    "retainer_hole_to_outer": 2.3,
+    "flange_hole_to_edge": 9.3
+   },
+   "gaps": {
+    "carrier_plate_to_cap": 1.3999999999999986,
+    "flange_to_retainer": 2.8999999999999986,
+    "stand_hole_to_retainer_head": 1.6499999999999986,
+    "stand_edge_to_motor": 1.2957511392244356,
+    "cap_to_motor": 1.2957511392244356,
+    "lever_arm_above_stand": 1.2000000000000028
+   },
+   "short": {},
+   "short_floor": {},
+   "bad_gap": {},
+   "lobe_end_measured": 136.0,
+   "lobe_end_needed": 133.7
+  },
+  "C6": {
+   "ok": true,
+   "rows": {
+    "cap": {
+     "screw": "M3 x 12",
+     "clamped": 7.0,
+     "engagement": 5.0,
+     "tip_to_floor": 2.5,
+     "ok": true
+    },
+    "retainer": {
+     "screw": "M3 x 8",
+     "clamped": 3.2,
+     "engagement": 4.8,
+     "tip_to_floor": 2.7,
+     "ok": true
+    },
+    "flange": {
+     "screw": "M3 x 10",
+     "clamped": 5.2,
+     "engagement": 4.8,
+     "tip_to_floor": 2.7,
+     "ok": true
+    },
+    "lever": {
+     "screw": "M3 x 20",
+     "clamped": 15.2,
+     "engagement": 4.800000000000001,
+     "tip_to_floor": 2.6999999999999993,
+     "ok": true
+    },
+    "stand": {
+     "screw": "M3 x 12",
+     "clamped": 6.0,
+     "engagement": 6.0,
+     "tip_to_floor": 1.5,
+     "ok": true
+    },
+    "guard": {
+     "screw": "M3 x 8",
+     "clamped": 3.0,
+     "engagement": 5.0,
+     "tip_to_floor": 2.5,
+     "ok": true
+    },
+    "guard_motor_end": {
+     "screw": "M3 x 12 + nut",
+     "clamped": 8.0,
+     "past_nut": 1.6,
+     "ok": true
+    },
+    "insert_assumed_length": 6.0
+   }
+  },
+  "C7": {
+   "ok": true,
+   "rows": [
+    {
+     "body": "HOUSING_BASE",
+     "what": "ring pin press",
+     "z": 6.0,
+     "expect_r": 3.1,
+     "measured_r": 3.100001661777539,
+     "ok": true
+    },
+    {
+     "body": "HOUSING_BASE",
+     "what": "608 seat",
+     "z": 6.5,
+     "expect_r": 11.025,
+     "measured_r": 11.02500034769903,
+     "ok": true
+    },
+    {
+     "body": "CAP",
+     "what": "ring pin groove (open, half in the bore)",
+     "z": 23.5,
+     "expect_r": 3.125,
+     "measured_r": 3.125001311311019,
+     "ok": true
+    },
+    {
+     "body": "CAP",
+     "what": "6812 seat",
+     "z": 64.5,
+     "expect_r": 39.025,
+     "measured_r": 39.025001525878906,
+     "ok": true
+    },
+    {
+     "body": "CARRIER",
+     "what": "output pin press",
+     "z": 46.5,
+     "expect_r": 4.1,
+     "measured_r": 4.100000791549689,
+     "ok": true
+    },
+    {
+     "body": "CARRIER",
+     "what": "608 seat",
+     "z": 41.5,
+     "expect_r": 11.025,
+     "measured_r": 11.025000347654823,
+     "ok": true
+    },
+    {
+     "body": "CARRIER",
+     "what": "6812 hub (outside)",
+     "z": 64.5,
+     "expect_r": 30.0,
+     "measured_r": 30.000000799910342,
+     "ok": true
+    },
+    {
+     "body": "DISC_1",
+     "what": "6804 seat",
+     "z": 19.5,
+     "expect_r": 16.025,
+     "measured_r": 16.025000754035222,
+     "ok": true
+    },
+    {
+     "body": "DISC_1",
+     "what": "output pin hole",
+     "z": 17.0,
+     "expect_r": 5.3,
+     "measured_r": 5.300001860904101,
+     "ok": true
+    },
+    {
+     "body": "CAM_LOWER",
+     "what": "6804 lobe (outside)",
+     "z": 19.5,
+     "expect_r": 10.0,
+     "measured_r": 10.000000402652054,
+     "ok": true
+    }
+   ],
+   "tolerance_mm": 0.03
+  },
+  "C9": {
+   "ok": true,
+   "rows": [
+    {
+     "bearing": "608_1",
+     "ring": "outer",
+     "side": "bottom",
+     "part": "HOUSING_BASE lip",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "608_1",
+     "ring": "inner",
+     "side": "top",
+     "part": "CAM_LOWER collar",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_1",
+     "ring": "inner",
+     "side": "bottom",
+     "part": "CAM_LOWER hub",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_1",
+     "ring": "inner",
+     "side": "top",
+     "part": "CAM_UPPER spacer",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_1",
+     "ring": "outer",
+     "side": "bottom",
+     "part": "DISC_1 seat floor",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_2",
+     "ring": "inner",
+     "side": "bottom",
+     "part": "CAM_UPPER spacer",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_2",
+     "ring": "inner",
+     "side": "top",
+     "part": "CAM_UPPER collar",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6804_2",
+     "ring": "outer",
+     "side": "bottom",
+     "part": "DISC_2 seat floor",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "608_2",
+     "ring": "inner",
+     "side": "bottom",
+     "part": "WASHER",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "608_2",
+     "ring": "outer",
+     "side": "top",
+     "part": "CARRIER 608 ledge",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6812",
+     "ring": "outer",
+     "side": "bottom",
+     "part": "CAP ledge",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6812",
+     "ring": "outer",
+     "side": "top",
+     "part": "RETAINER",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6812",
+     "ring": "inner",
+     "side": "bottom",
+     "part": "CARRIER plate top",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    },
+    {
+     "bearing": "6812",
+     "ring": "inner",
+     "side": "top",
+     "part": "OUTPUT_FLANGE",
+     "touches_own_ring": true,
+     "clear_of_other_ring": true,
+     "same_height": true,
+     "ok": true
+    }
+   ],
+   "note": "6804 outer rings are held by the press fit in the disc seats (flush with the disc top) - the top side has no shoulder by design (as MP6)"
+  },
+  "C8": {
+   "ok": true,
+   "printprep": "printprep.json"
+  }
+ },
+ "record": {
+  "parts/HOUSING_BASE.stl": "de180fff623bed074d131e18943c96f2acb4fcca5cc022244846e6dcdbc24455",
+  "parts/CAP.stl": "9812958a0d6d4dec3b57d502b3537db9115788e382f70844bc90909644e84a06",
+  "parts/CARRIER.stl": "015c59d6a336f26d5d1f6b556654ec4d7f32f54842a58050f564442d6e139759",
+  "parts/DISC_1.stl": "879789190569bd3e596c0d2fa54efa43593f550b9ade12dce078012281cbc350",
+  "parts/DISC_2.stl": "6c13f08281db179826b83bb1ada55ec8e0ca35081a82665d38b0a5bb894e93f7",
+  "parts/CAM_LOWER.stl": "a74de295ba583f703eaf0b4a30b608e91cb63b5d5d9adb9bd38e397d967e6e1a",
+  "parts/CAM_UPPER.stl": "c65789e93d0ccc7c7eff7ab1da2ca34679907b063f2b8a0dd7c8410873f267d6",
+  "parts/WASHER_T1p4.stl": "ab3c5685b28f8561169781ea4a64e02b6fd93d62ed531d8f932a75b389453982",
+  "parts/RETAINER.stl": "ca9f74255da5f307945774de3063930fc22af93a63493dd8d8b61d9788bf6be5",
+  "parts/OUTPUT_FLANGE.stl": "c8f9341bdc535fad04c92af0756388ff175752e526d76d05780f5504003695c6",
+  "parts/GUARD.stl": "ee57da040bc62a8e6e5ac8335cc8fa2b3c98a909228b67ee3698e45255019f0b",
+  "parts/STAND.stl": "83a5d979ff6c13ab48201dcf0040697625fcd1ca89b27905197c191e5e70e274",
+  "parts/LEVER.stl": "c7d568c70c1af54ee8194235cd0a59c6c06077233c9fc9bac51df9ac0f904b72",
+  "parts/WASHER_T1p2.stl": "8754db043b825ea1660f0ce7c1844dcfcfdf6c6aef1c3da7023e0d27d1f01999",
+  "parts/WASHER_T1p6.stl": "165c88304e1ed902248f1f230f3c327165da342d737fcbfd1c68411821d430d0",
+  "j23-drive-v1.solidcraft": "f44882988ac221a3aeafb77c49b59b578a33561cfb66f1028ae850ff670a1681",
+  "j23-drive-v1.step": "1f7addf2eb1951d27ce47ce53d9ab3c3a918d790f587afd33efb56ba1660439f"
+ }
+}

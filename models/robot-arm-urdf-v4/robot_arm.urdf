@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<!--
+  robot: kmjh_mp18_arm_kg1_v4. Canonical source: this directly authored XML.
+  consumers: CAD Viewer/RViz; future Isaac import requires separate validation.
+  Units: m, kg, s, rad. Right-handed Base/world +Z up, CAD mm scaled once to m.
+  Sources: current MP18 manipulator-v2 working CAD, MP16 drive, MP10 wrist,
+  MP6 reducer and KG1. Source hashes and preserved originals: provenance.json.
+  Scaffolding: src/simulation/urdf_mp18_v4/assets.py computes meshes/numbers only;
+  verify.py independently checks this XML. Neither is an XML generator.
+  Joint ledger: J1 Base>Link1 +Z; J2 Link1>Link2 +Y; J3 Link2>Link3 +Y;
+  J4 Link3>Link4 +X; J5 Link4>Link5 +Y; J6 Link5>Link6 +X.
+  Positive arm rotation follows right hand about these child/joint axes.
+  Origin translations in parent frames: z .096, z .078, x .165, x .165,
+  x .078, x .140. Source: MP18 layout.offsets; J3 module rotated 90deg in CAD.
+  URDF arm zero is CAD display [15,-50,70,15,25,-10]deg, not physical zero.
+  CAD absolute angle = URDF relative angle + display offset; joint origin RPY
+  embeds each display angle once. Physical link frames coincide with joints.
+  Base is a physical root at CAD world. Links1..6 inherit joint frames above.
+  Mesh local = inverse(T_link(CAD0))*Fr*source; world = T_link(display)*local.
+  Every visual/collision mesh is in owning link coordinates, metres, scale1,
+  identity origin. Multiple colour visual meshes intentionally partition each
+  canonical meshes/NAME.stl; numeric-ledger.json lists membership and bounds.
+  Each collision file concatenates per-part convex hull shells, not one global
+  convex hull. Annular bores/guide holes close; false contacts are possible.
+  Dynamic mesh decomposition, contact and self-collision acceptance NOT_RUN.
+  KG1_mount is fixed at Link6 x .028m; G axes +X=Link6+Y,+Y=Link6+Z,+Z=Link6+X.
+  KG1 is fixed group F; KG1_A/B are jaws/pads/screws with G-parallel frames;
+  KG1_R is pinion/spline/horn/screws, pivot G z .026m, +Y rotation.
+  Gripper assets are CAD closed u0/FLAT, R centred at pivot. Joint origins put
+  jaws at +/-20mm and rotor at -20/13.5rad exactly once for default 40mm gap.
+  opening_m is full gap0..94mm, expressed in m: d=opening_m/2-.020;
+  A=d, B=d, R=-d/.0135.
+  Positive A moves G-X, B moves G+X; R is right hand about G+Y.
+  B mimics A*1; R mimics A*(-74.07407407407408). 9 movable/7 independent DOF.
+  tool0 is frame-only, G z .103m, J6 x .131m; nominal uncalibrated grasp point.
+  Inertial ledger: all 11 physical links use numeric-ledger.json computed mass,
+  local COM, full COM tensor in link axes (inertial rpy0). Printed parts use
+  slicer masses and uniform mesh-volume inertia, not solid-density mass.
+  Purchased items use original estimated box/point models. 117 point-I0 items
+  contribute no intrinsic inertia; their parallel-axis contribution is kept.
+  All masses/COM/tensors are estimates, not weighed/calibrated robot properties.
+  MP18 original173 masses rebuilt; KG1 lump .1842kg removed once and split into
+  47 actual components. 219 mass entries, total8.863854736164349kg conserved.
+  KG1 allocation assumptions: servo54.8g F/spline.2g R; horn3g R; rods13.19g F;
+  screws9g split F/A/B/R16:4:4:9 of33; within category volume allocation.
+  Whole CAD0 closed COM changes [-7.849,+7.376,-16.857]um from lump refinement.
+  Explicit mismatch: 6818 bearing mass belongs Link1 in original load model,
+  visual belongs Base; preserved approximation, not resolved bearing dynamics.
+  Motors shown as central reference envelopes; driver point masses retained.
+  Clearance/connector/slot-end envelopes excluded from duplicated visuals.
+  Limits: designer CAD absolute proposals J1[-170,170],J2[-100,0],J3[-20,120],
+  J4[-120,120],J5[-90,90],J6[-170,170]deg, shifted by display offsets below.
+  These lie within independent-axis C5 samples, not safe physical limits or a
+  collision-free combined configuration space. J2/J3/J5 samples can cross desk.
+  Effort/velocity/damping/friction unchanged from v3 starter simulation caps:
+  arm3/6/5/2/2/1Nm,.5rad/s,.05/0; jaws10N,.02m/s; pinion.2Nm,2rad/s.
+  They are not motor/reducer ratings and have not been accepted for new mass.
+  57D terminal placement remains a 42D-derived assumption in source CAD.
+  UNKNOWN: physical zeros, encoder/motor signs, measured ratios and hardware IDs.
+  NOT_RUN: Isaac/USD import, gravity/stop/motion, continuous contact, hardware.
+  Older simulation outcomes do not validate this changed model. No hardware I/O.
+-->
+<robot name="kmjh_mp18_arm_kg1_v4">
+  <material name="c_0A0A0A"><color rgba="0.0392156862745098 0.0392156862745098 0.0392156862745098 1"/></material>
+  <material name="c_0B2545"><color rgba="0.043137254901960784 0.1450980392156863 0.27058823529411763 1"/></material>
+  <material name="c_141416"><color rgba="0.0784313725490196 0.0784313725490196 0.08627450980392157 1"/></material>
+  <material name="c_2A2A2A"><color rgba="0.16470588235294117 0.16470588235294117 0.16470588235294117 1"/></material>
+  <material name="c_34D399"><color rgba="0.20392156862745098 0.8274509803921568 0.6 1"/></material>
+  <material name="c_3A3A3A"><color rgba="0.22745098039215686 0.22745098039215686 0.22745098039215686 1"/></material>
+  <material name="c_6B7280"><color rgba="0.4196078431372549 0.4470588235294118 0.5019607843137255 1"/></material>
+  <material name="c_87CEEB"><color rgba="0.5294117647058824 0.807843137254902 0.9215686274509803 1"/></material>
+  <material name="c_9CA3AF"><color rgba="0.611764705882353 0.6392156862745098 0.6862745098039216 1"/></material>
+  <material name="c_FFFFFF"><color rgba="1 1 1 1"/></material>
+
+  <link name="Base">
+    <inertial>
+      <origin xyz="-0.001326609116133232 -0.000024834595031753267 0.04622927927446685" rpy="0 0 0"/>
+      <mass value="0.8529957684193904"/>
+      <inertia ixx="0.0011215626648516674" iyy="0.0011968337926507135" izz="0.0010327565813507058" ixy="-0.0000016097534777386772" ixz="-0.00001689151547411632" iyz="-7.239134698321091e-7"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Base__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Base__34D399.stl" scale="1 1 1"/></geometry><material name="c_34D399"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Base__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Base__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Base__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Base.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link1">
+    <inertial>
+      <origin xyz="-0.04332938129828452 0.008137051438686066 0.05946093925601445" rpy="0 0 0"/>
+      <mass value="3.057778990028761"/>
+      <inertia ixx="0.0075193083462378255" iyy="0.01272221162479024" izz="0.010591925805269999" ixy="0.001390336400024856" ixz="0.002421194723524371" iyz="-0.0003907288780258871"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link1__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link1__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link1__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link1__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link1__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link1.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link2">
+    <inertial>
+      <origin xyz="0.09998566751573276 0.0922724811292069 0.0002492885384652505" rpy="0 0 0"/>
+      <mass value="2.3568359198973083"/>
+      <inertia ixx="0.004099078458228456" iyy="0.010171940268059197" izz="0.012375228841399763" ixy="-0.002170286844467444" ixz="0.000029554259195911454" iyz="0.000015115847469914669"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link2__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link2__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link2__34D399.stl" scale="1 1 1"/></geometry><material name="c_34D399"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link2__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link2__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link2__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link2.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link3">
+    <inertial>
+      <origin xyz="0.09320775287813249 0.020089916158944773 0.0002976705750720275" rpy="0 0 0"/>
+      <mass value="0.9501631793389972"/>
+      <inertia ixx="0.00163432511510598" iyy="0.003540876695915047" izz="0.00472545882510094" ixy="0.001774261727432206" ixz="0.000009857381112570485" iyz="1.0013778726159838e-7"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link3__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link3__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link3__34D399.stl" scale="1 1 1"/></geometry><material name="c_34D399"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link3__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link3__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link3__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link3.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link4">
+    <inertial>
+      <origin xyz="0.07494602491304835 -0.03205850825895942 0.000174235076721875" rpy="0 0 0"/>
+      <mass value="0.6723728499959973"/>
+      <inertia ixx="0.0004665678883602468" iyy="0.00023332016459235165" izz="0.0006053754356906933" ixy="0.000037486732296911715" ixz="-0.0000012060615368314492" iyz="0.0000046518198071514025"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link4__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link4__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link4__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link4__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link4__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link4.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link5">
+    <inertial>
+      <origin xyz="0.09154174162355679 0.0033017766865343335 -0.00043655715616028714" rpy="0 0 0"/>
+      <mass value="0.7635800284838948"/>
+      <inertia ixx="0.00046395794059366066" iyy="0.0013167995667760217" izz="0.0013949914275772721" ixy="0.0002128439827367745" ixz="-0.00001855135791163177" iyz="0.000006180134154598162"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link5__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link5__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link5__34D399.stl" scale="1 1 1"/></geometry><material name="c_34D399"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link5__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link5__87CEEB.stl" scale="1 1 1"/></geometry><material name="c_87CEEB"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link5__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link5.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="Link6">
+    <inertial>
+      <origin xyz="0.016588513494769048 0.00043628510737343324 -0.0019265658751334844" rpy="0 0 0"/>
+      <mass value="0.025928"/>
+      <inertia ixx="0.000007587891175953933" iyy="0.000007969340351864852" izz="0.00000513048105067714" ixy="-4.2319873730702795e-7" ixz="0.0000018687785740247113" iyz="6.775346863164509e-7"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/Link6__34D399.stl" scale="1 1 1"/></geometry><material name="c_34D399"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/Link6__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/Link6.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="KG1">
+    <inertial>
+      <origin xyz="0.006813221943683312 -0.012919195063642322 0.024353479380485783" rpy="0 0 0"/>
+      <mass value="0.11919363636363636"/>
+      <inertia ixx="0.00007383747062426901" iyy="0.0001927045376203814" izz="0.0002043628549610281" ixy="0.000011360087542921796" ixz="-0.0000011662466199262707" iyz="0.0000011444627841933635"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/KG1__0A0A0A.stl" scale="1 1 1"/></geometry><material name="c_0A0A0A"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1__141416.stl" scale="1 1 1"/></geometry><material name="c_141416"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1__9CA3AF.stl" scale="1 1 1"/></geometry><material name="c_9CA3AF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/KG1.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="KG1_A">
+    <inertial>
+      <origin xyz="0.005256468970865253 -0.004029100776105658 0.06680027835214017" rpy="0 0 0"/>
+      <mass value="0.024640909090909092"/>
+      <inertia ixx="0.000010895329573979285" iyy="0.000018130799097990484" izz="0.000011141721966309806" ixy="9.821468714795343e-7" ixz="0.000005591483743065995" iyz="-0.0000011364165873205054"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/KG1_A__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1_A__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/KG1_A.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="KG1_B">
+    <inertial>
+      <origin xyz="-0.008245671868210687 0.00819884291839014 0.05587946383421502" rpy="0 0 0"/>
+      <mass value="0.030760909090909092"/>
+      <inertia ixx="0.00002801785560073533" iyy="0.00003902149822506717" izz="0.000014803828892090323" ixy="3.7039265086628204e-7" ixz="-0.000010624234302284673" iyz="-3.2974103926862924e-7"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/KG1_B__6B7280.stl" scale="1 1 1"/></geometry><material name="c_6B7280"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1_B__FFFFFF.stl" scale="1 1 1"/></geometry><material name="c_FFFFFF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/KG1_B.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="KG1_R">
+    <inertial>
+      <origin xyz="-3.307156561688584e-19 -0.003289286448787967 1.2403673378555816e-10" rpy="0 0 0"/>
+      <mass value="0.009604545454545454"/>
+      <inertia ixx="4.732640245320544e-7" iyy="6.39828349514238e-7" izz="4.7326221205312487e-7" ixy="4.390280953459896e-18" ixz="1.6543612251060553e-23" iyz="-1.815226443504644e-15"/>
+    </inertial>
+    <visual><geometry><mesh filename="meshes/visual/KG1_R__0B2545.stl" scale="1 1 1"/></geometry><material name="c_0B2545"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1_R__2A2A2A.stl" scale="1 1 1"/></geometry><material name="c_2A2A2A"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1_R__3A3A3A.stl" scale="1 1 1"/></geometry><material name="c_3A3A3A"/></visual>
+    <visual><geometry><mesh filename="meshes/visual/KG1_R__9CA3AF.stl" scale="1 1 1"/></geometry><material name="c_9CA3AF"/></visual>
+    <collision><geometry><mesh filename="meshes/collision/KG1_R.stl" scale="1 1 1"/></geometry></collision>
+  </link>
+  <link name="tool0"/>
+
+  <joint name="J1" type="revolute">
+    <parent link="Base"/><child link="Link1"/>
+    <origin xyz="0 0 0.096" rpy="0 0 0.261799387799149"/><axis xyz="0 0 1"/>
+    <limit lower="-3.2288591161895095" upper="2.705260340591211" effort="3" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="J2" type="revolute">
+    <parent link="Link1"/><child link="Link2"/>
+    <origin xyz="0 0 0.078" rpy="0 -0.872664625997165 0"/><axis xyz="0 1 0"/>
+    <limit lower="-0.8726646259971648" upper="0.8726646259971648" effort="6" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="J3" type="revolute">
+    <parent link="Link2"/><child link="Link3"/>
+    <origin xyz="0.165 0 0" rpy="0 1.22173047639603 0"/><axis xyz="0 1 0"/>
+    <limit lower="-1.5707963267948966" upper="0.8726646259971648" effort="5" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="J4" type="revolute">
+    <parent link="Link3"/><child link="Link4"/>
+    <origin xyz="0.165 0 0" rpy="0.261799387799149 0 0"/><axis xyz="1 0 0"/>
+    <limit lower="-2.356194490192345" upper="1.8325957145940461" effort="2" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="J5" type="revolute">
+    <parent link="Link4"/><child link="Link5"/>
+    <origin xyz="0.078 0 0" rpy="0 0.436332312998582 0"/><axis xyz="0 1 0"/>
+    <limit lower="-2.007128639793479" upper="1.1344640137963142" effort="2" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="J6" type="revolute">
+    <parent link="Link5"/><child link="Link6"/>
+    <origin xyz="0.14 0 0" rpy="-0.174532925199433 0 0"/><axis xyz="1 0 0"/>
+    <limit lower="-2.792526803190927" upper="3.141592653589793" effort="1" velocity="0.5"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="KG1_mount" type="fixed">
+    <parent link="Link6"/><child link="KG1"/>
+    <origin xyz="0.028 0 0" rpy="1.5707963267948966 0 1.5707963267948966"/>
+  </joint>
+  <joint name="KG1_slide_A" type="prismatic">
+    <parent link="KG1"/><child link="KG1_A"/>
+    <origin xyz="-0.020 0 0" rpy="0 0 0"/><axis xyz="-1 0 0"/>
+    <limit lower="-0.020" upper="0.027" effort="10" velocity="0.02"/>
+    <dynamics damping="0.05" friction="0"/>
+  </joint>
+  <joint name="KG1_slide_B" type="prismatic">
+    <parent link="KG1"/><child link="KG1_B"/>
+    <origin xyz="0.020 0 0" rpy="0 0 0"/><axis xyz="1 0 0"/>
+    <limit lower="-0.020" upper="0.027" effort="10" velocity="0.02"/>
+    <dynamics damping="0.05" friction="0"/>
+    <mimic joint="KG1_slide_A" multiplier="1" offset="0"/>
+  </joint>
+  <joint name="KG1_pinion" type="revolute">
+    <parent link="KG1"/><child link="KG1_R"/>
+    <origin xyz="0 0 0.026" rpy="0 -1.4814814814814814 0"/><axis xyz="0 1 0"/>
+    <limit lower="-2" upper="1.4814814814814814" effort="0.2" velocity="2"/>
+    <dynamics damping="0.05" friction="0"/>
+    <mimic joint="KG1_slide_A" multiplier="-74.07407407407408" offset="0"/>
+  </joint>
+  <joint name="tool0_mount" type="fixed">
+    <parent link="KG1"/><child link="tool0"/>
+    <origin xyz="0 0 0.103" rpy="0 0 0"/>
+  </joint>
+</robot>

@@ -1,0 +1,133 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "width",
+        "expression": "40 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "depth",
+        "expression": "16 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "height",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "slot_width",
+        "expression": "5 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "slot_depth",
+        "expression": "3 mm"
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "slot_left",
+        "expression": "2 mm"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "OuterProfile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            "width",
+            0
+          ],
+          [
+            "width",
+            "depth"
+          ],
+          [
+            0,
+            "depth"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "height",
+        "operation": "new",
+        "body_name": "wire_label_tag"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "TieSlot"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "slot_left",
+            "(depth-slot_depth)/2"
+          ],
+          [
+            "slot_left+slot_width",
+            "(depth-slot_depth)/2"
+          ],
+          [
+            "slot_left+slot_width",
+            "(depth+slot_depth)/2"
+          ],
+          [
+            "slot_left",
+            "(depth+slot_depth)/2"
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "height",
+        "operation": "cut"
+      }
+    }
+  ]
+}

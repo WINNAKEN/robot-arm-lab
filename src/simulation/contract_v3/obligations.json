@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "facets": [
+    "static",
+    "bodies",
+    "trace",
+    "contact"
+  ],
+  "required_fields": {
+    "static": [
+      "units",
+      "default_prim",
+      "root_placement",
+      "robot_root",
+      "bodies",
+      "joints",
+      "colliders",
+      "environment"
+    ],
+    "bodies": [
+      "dof_names",
+      "actual_drives",
+      "configuration",
+      "runtime_masses"
+    ],
+    "trace": [
+      "rows"
+    ],
+    "contact": [
+      "mapping",
+      "sample",
+      "engine_event_index",
+      "sensor_count",
+      "filter_count",
+      "capacity"
+    ]
+  }
+}

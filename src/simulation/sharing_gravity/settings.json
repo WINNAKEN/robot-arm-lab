@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "ssh_alias": "isaacpc",
+  "remote_root": "C:/isaacsim_remote/robot-arm-lab/065/runs",
+  "limits": {
+    "installation_audit": 900,
+    "provider_diagnosis": 300,
+    "provider_connection": 600
+  },
+  "max_each": 1,
+  "audit_freshness_s": 300,
+  "legacy_ledger": "C:/isaacsim_remote/robot-arm-lab/064/runs/session-ledger.json",
+  "legacy_sha256": "433892e3ca7ebbf3ff37218e05fd4edd230f9344a115c0900b4bacbab6b61a0c",
+  "legacy_runs": [
+    "94ccf968ac464bba9ab08773ca2f3bc3",
+    "d0d672f24c4041f1aa110e5b2190c465",
+    "1b7e5739236a4f1886673d3b05bda042"
+  ],
+  "references": {
+    "code/kernel.py": {
+      "path": "src/simulation/canonical_v4/kernel.py",
+      "sha256": "4a9fb954638c0032ef251371db17bfe2224f48de3d0bd2f2ffb798a9be3c01d6"
+    },
+    "code/providers.py": {
+      "path": "src/simulation/canonical_v4/providers.py",
+      "sha256": "ee62c94af1b60976261ca0d7b8f99f58d1935556d25691c2b038f109b2641d63"
+    },
+    "config.json": {
+      "path": "src/simulation/canonical_v4/config.json",
+      "sha256": "d6d8026073ed8fb026ffb77d081650e73b4364e31b29e50f2d20d7f24c68cb25"
+    },
+    "contract.json": {
+      "path": "src/simulation/canonical_v4/contract.json",
+      "sha256": "b524492a4a9ac1e2ca48805628612878bcb84463c2f348ffdca17f3dc1eded1e"
+    },
+    "lib/frames.py": {
+      "path": "src/joint_frames/frames.py",
+      "sha256": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46"
+    },
+    "lib/environment.py": {
+      "path": "src/simulation/contact_motion/environment.py",
+      "sha256": "6b1e7a1451feabf5f310ae18d32a9bae997cd56be73ed689eb91540e9d0d4c6c"
+    },
+    "lib/extract.py": {
+      "path": "src/simulation/isaac_import/extract_usd.py",
+      "sha256": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018"
+    },
+    "data/model.usda": {
+      "path": "outputs/isaac-import-v1/asset/robot-arm-v2.usda",
+      "sha256": "117d94292c75e89b201e12606eafbcf24065c537c6f8308647562f9a0679f4db"
+    },
+    "data/golden.json": {
+      "path": "outputs/isaac-contact-v1/runs/501c7bfc27b6409b8351821408bff0de/retrieved/501c7bfc27b6409b8351821408bff0de/static.json",
+      "sha256": "94c57452b7b8c7120ac0de93ed688d97fd7521b4c5bf325928ffb8b081635cd5"
+    },
+    "data/kinematics.json": {
+      "path": "models/armold-mks-concept-v1/kinematics.json",
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+    },
+    "data/assumptions.json": {
+      "path": "models/robot-arm-urdf-v1/assumptions.json",
+      "sha256": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5"
+    },
+    "prefix-seal.json": {
+      "path": "outputs/isaac-lab-recovery-v1/runs/e56d43dc7d3a41c484f6f37c15ec9045/retrieved/prefix-seal.json",
+      "sha256": "1d750019d5cab7e1cf5d001165784ffbf2c3712cf59cc7b3ff1913011c06e42a"
+    },
+    "legacy-053-delivery.json": {
+      "path": "outputs/isaac-canonical-v4/delivery.json",
+      "sha256": "0e38f634092189f85701ecdebfbc5213453bf8b8775b1a8e3cf4360babfabccd"
+    },
+    "fixture-053.py": {
+      "path": "src/simulation/canonical_v4/test_kernel.py",
+      "sha256": "d8073ceb3db8e49bed84e9ecd606a6c4a6ae80398cc08f6c281532fb0f0942f5"
+    },
+    "code/audit.py": {
+      "path": "src/simulation/phased_session/audit.py",
+      "sha256": "5a900dfa08bee6b2c019d48ca14e5f3084657bc75a810deb65eb2173c77facbc"
+    },
+    "legacy-054-delivery.json": {
+      "path": "outputs/isaac-phased-v1/delivery.json",
+      "sha256": "e18e06c10a936edb7422a4ec534ac1dbe0e99a276fea6db3c168edde9d477a62"
+    },
+    "legacy-055-delivery.json": {
+      "path": "outputs/isaac-provider-v1/delivery.json",
+      "sha256": "2fa1cb2abb56957d3135d3a4697fda6e28144f06c2396c857478740ae5191b3f"
+    },
+    "legacy-056-delivery.json": {
+      "path": "outputs/isaac-inventory-v1/delivery.json",
+      "sha256": "d519b9092db6871cd9302bbf6cdf4f606a6435543bde555e3c8086a1a36cf6e8"
+    },
+    "legacy-057-delivery.json": {
+      "path": "outputs/isaac-metadata-v1/delivery.json",
+      "sha256": "7717f899b0e8c9a4aaa30c09dc6ac98e4e6836c0fc1e3a92a3463454d4ad6445"
+    },
+    "legacy-058-delivery.json": {
+      "path": "outputs/isaac-retest-v1/delivery.json",
+      "sha256": "4b3e53e82654a6aa555a05ba41a5ed10eca0dda8f1d55a0b3e283add501e6aa9"
+    },
+    "legacy-059-delivery.json": {
+      "path": "outputs/isaac-physics-v1/delivery.json",
+      "sha256": "ff3a03d694ffc4a70f03442aaab81c21f354fc2ca5d4fa7383c53291554311cc"
+    },
+    "legacy-060-delivery.json": {
+      "path": "outputs/isaac-clock-v1/delivery.json",
+      "sha256": "bdb39636729b9c23de071846491de06bccfc49de7c78e5ecb75f0da4b392a27e"
+    },
+    "legacy-061-delivery.json": {
+      "path": "outputs/isaac-gravity-v1/delivery.json",
+      "sha256": "730b4fac9d474e8b642eab8b919588afce16f13f0ee782b58bb48d9e3b68e864"
+    },
+    "legacy-062-delivery.json": {
+      "path": "outputs/isaac-mapped-gravity-v1/delivery.json",
+      "sha256": "e2fc54de0af7c4812736e53d687f334807cad851926a46be0264c9fa62dd852b"
+    },
+    "legacy-063-delivery.json": {
+      "path": "outputs/isaac-native-gravity-v1/delivery.json",
+      "sha256": "8bb50a47a233730ba674e150726f6af613df812613b47ddd40900a9d5cf590d8"
+    },
+    "legacy-064-delivery.json": {
+      "path": "outputs/isaac-journal-gravity-v1/delivery.json",
+      "sha256": "f4c1797f57aa067191aa511f535834bdbb405e7e0e0af07326254e76c956c51d"
+    }
+  }
+}

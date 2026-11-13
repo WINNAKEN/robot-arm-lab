@@ -1,0 +1,863 @@
+{
+  "source_bodies": [
+    {
+      "name": "BASE_FOOT",
+      "link": "Base",
+      "triangles": 3656,
+      "source": "models/armold-mks-product-v3/meshes/BASE_FOOT.stl",
+      "sha256": "3ac5c8512899fe326c2791ab88474df523d3f7686593a33b6aebda0b64c3a757"
+    },
+    {
+      "name": "BASE_COLUMN",
+      "link": "Base",
+      "triangles": 7520,
+      "source": "models/armold-mks-product-v3/meshes/BASE_COLUMN.stl",
+      "sha256": "232564d82ca9692a68cde406db011599af659991bd59b62238278a524d951dcb"
+    },
+    {
+      "name": "BASE_LIGHT_RING",
+      "link": "Base",
+      "triangles": 4356,
+      "source": "models/armold-mks-product-v3/meshes/BASE_LIGHT_RING.stl",
+      "sha256": "eb0247249969f767e3832082440846e89b42dbfa27f5e0568748d744a8b663bc"
+    },
+    {
+      "name": "J1_MODULE",
+      "link": "Base",
+      "triangles": 9938,
+      "source": "models/armold-mks-product-v3/meshes/J1_MODULE.stl",
+      "sha256": "54a80302a51974e646f172841c1551d748b49278e2f5e9299772655d3c7c05b6"
+    },
+    {
+      "name": "J1_ACCENT_RING",
+      "link": "Base",
+      "triangles": 5856,
+      "source": "models/armold-mks-product-v3/meshes/J1_ACCENT_RING.stl",
+      "sha256": "a14295caa28c427f758fd15eccfc4dec8b27b994ff7712f8d6660170be1f1b6d"
+    },
+    {
+      "name": "LINK1_SHOULDER_CAP",
+      "link": "Link1",
+      "triangles": 7322,
+      "source": "models/armold-mks-product-v3/meshes/LINK1_SHOULDER_CAP.stl",
+      "sha256": "2428e661d8ec59afe4be18fc80bbc1af1aedda09726d885d8f99634c637b1db6"
+    },
+    {
+      "name": "LINK1_POST",
+      "link": "Link1",
+      "triangles": 44,
+      "source": "models/armold-mks-product-v3/meshes/LINK1_POST.stl",
+      "sha256": "5917572f3a57477617662e82fd2762b7bcafa6cf66bd341ffa4e8421bdc9eec2"
+    },
+    {
+      "name": "J2_MODULE",
+      "link": "Link1",
+      "triangles": 9110,
+      "source": "models/armold-mks-product-v3/meshes/J2_MODULE.stl",
+      "sha256": "ae604aef2da04222480363cb26d3dccc6523532dbfa05f5ec71545663396a22c"
+    },
+    {
+      "name": "J2_ACCENT_RING",
+      "link": "Link1",
+      "triangles": 4332,
+      "source": "models/armold-mks-product-v3/meshes/J2_ACCENT_RING.stl",
+      "sha256": "fe1ca7f00ada090d0abca5fd6c71499ca3645f559c6556515e36d9428898e03e"
+    },
+    {
+      "name": "J2_END_CAP",
+      "link": "Link1",
+      "triangles": 3620,
+      "source": "models/armold-mks-product-v3/meshes/J2_END_CAP.stl",
+      "sha256": "adc14d25153831fa86dcab649a888a181fe536d747e70f8e45001db45e8e1fd6"
+    },
+    {
+      "name": "J2_CAP_SLASH",
+      "link": "Link1",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/J2_CAP_SLASH.stl",
+      "sha256": "00bb43ccd432198e19f28554276817d329021992e0cffa073f6488b4b9f68dc1"
+    },
+    {
+      "name": "LINK2_SHOULDER_HUB",
+      "link": "Link2",
+      "triangles": 5294,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB.stl",
+      "sha256": "e16136a2093fc081b4f5bcb1008cd9d98c19afe5e826e1568aacd28e36291e13"
+    },
+    {
+      "name": "LINK2_SHOULDER_HUB_CAP",
+      "link": "Link2",
+      "triangles": 1412,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB_CAP.stl",
+      "sha256": "aad6a755506ce48ab37125f19018e0e14374287d0c7bd076313ae3ba4ad5d94f"
+    },
+    {
+      "name": "LINK2_SHOULDER_HUB_SLASH",
+      "link": "Link2",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB_SLASH.stl",
+      "sha256": "30823891b85f4d9596a976534f40dc5f41f6acb19e08ceef89bf0eff013cd478"
+    },
+    {
+      "name": "LINK2_UPPER_BAR",
+      "link": "Link2",
+      "triangles": 44,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_UPPER_BAR.stl",
+      "sha256": "a3a2336138c60c4e929c54b279661df1d1487c3f14f4de81afb69544ecca6afa"
+    },
+    {
+      "name": "J3_MODULE",
+      "link": "Link2",
+      "triangles": 9866,
+      "source": "models/armold-mks-product-v3/meshes/J3_MODULE.stl",
+      "sha256": "e29603f4eb468e40bd3ae5ba059239ce9b7bb44a43b8559fff8ffb0067270bc5"
+    },
+    {
+      "name": "J3_ACCENT_RING",
+      "link": "Link2",
+      "triangles": 5760,
+      "source": "models/armold-mks-product-v3/meshes/J3_ACCENT_RING.stl",
+      "sha256": "70a83dda92ce8296d78447fcd3b47ac3955e2e2174ad4b465643d9c16cf2e84a"
+    },
+    {
+      "name": "J3_END_CAP",
+      "link": "Link2",
+      "triangles": 3572,
+      "source": "models/armold-mks-product-v3/meshes/J3_END_CAP.stl",
+      "sha256": "cc26a1d4a51692cde4478b6ceb279ca2aa1c474439ee087f93d9e8246cae7d33"
+    },
+    {
+      "name": "J3_CAP_SLASH",
+      "link": "Link2",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/J3_CAP_SLASH.stl",
+      "sha256": "d73cb9b33d5a83abe70628b2d1ddb6b4f11c56d5183ef8ff9bbe7a50009133ee"
+    },
+    {
+      "name": "LINK2_LOGO_K",
+      "link": "Link2",
+      "triangles": 40,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_LOGO_K.stl",
+      "sha256": "dba2a5718ca2300e43707adaf2f55a48e551ecd17f50eb61ffb7e6d942cc26c1"
+    },
+    {
+      "name": "LINK2_LOGO_K_SLASH",
+      "link": "Link2",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_LOGO_K_SLASH.stl",
+      "sha256": "eea90acf223e549a30256274d3f2b51e70e25495ffc85fcdf101fe068aedb60f"
+    },
+    {
+      "name": "LINK2_LOGO_M",
+      "link": "Link2",
+      "triangles": 52,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_LOGO_M.stl",
+      "sha256": "68661457645e817408e65a62b4f5e4bc1dfa55d8af032918e1a1df33584b3b15"
+    },
+    {
+      "name": "LINK2_LOGO_J",
+      "link": "Link2",
+      "triangles": 28,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_LOGO_J.stl",
+      "sha256": "10623c28a153ed15b728cd40fc6a0e17b245a2871aba6dfb3a0d4f6bda37123f"
+    },
+    {
+      "name": "LINK2_LOGO_H",
+      "link": "Link2",
+      "triangles": 44,
+      "source": "models/armold-mks-product-v3/meshes/LINK2_LOGO_H.stl",
+      "sha256": "3fa617002e74761451270e2610eee816a51ab7394188d114b08a86ee98fe9e22"
+    },
+    {
+      "name": "LINK3_ELBOW_HUB",
+      "link": "Link3",
+      "triangles": 5366,
+      "source": "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB.stl",
+      "sha256": "0c716b18bd719257c217b2d61a1719b8166d6ccd41a54cbdffc6b9fc1ed0c083"
+    },
+    {
+      "name": "LINK3_ELBOW_HUB_CAP",
+      "link": "Link3",
+      "triangles": 1412,
+      "source": "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB_CAP.stl",
+      "sha256": "3e57fdeb2d14679384fec053b089d8b84e3253b414496d440603f8782956437e"
+    },
+    {
+      "name": "LINK3_ELBOW_HUB_SLASH",
+      "link": "Link3",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB_SLASH.stl",
+      "sha256": "3cdbb5db7da0c81284cd8120fd45abd50816ee42bd2716bad54a9a1b66f57d05"
+    },
+    {
+      "name": "LINK3_FOREARM_BAR",
+      "link": "Link3",
+      "triangles": 52,
+      "source": "models/armold-mks-product-v3/meshes/LINK3_FOREARM_BAR.stl",
+      "sha256": "0101ba1eb49dd363469091330017619099e57e2f856269097708eaa4ec78fb3e"
+    },
+    {
+      "name": "J4_MODULE",
+      "link": "Link3",
+      "triangles": 9872,
+      "source": "models/armold-mks-product-v3/meshes/J4_MODULE.stl",
+      "sha256": "4528651359155bdabefc5fca5253bf9b796102f66549277a12b6c1a5fd589a7e"
+    },
+    {
+      "name": "J4_ACCENT_RING",
+      "link": "Link3",
+      "triangles": 5736,
+      "source": "models/armold-mks-product-v3/meshes/J4_ACCENT_RING.stl",
+      "sha256": "d067e77be5e9287ff3c2ac30532cc000ea1c138c2a3da0d8128147ff28c1444e"
+    },
+    {
+      "name": "J4_END_CAP",
+      "link": "Link3",
+      "triangles": 3608,
+      "source": "models/armold-mks-product-v3/meshes/J4_END_CAP.stl",
+      "sha256": "5dd0180dc8f629111482ea894459c79d3ebe3ef451cdbc63adfb4a927931c62f"
+    },
+    {
+      "name": "J4_CAP_SLASH",
+      "link": "Link3",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/J4_CAP_SLASH.stl",
+      "sha256": "5a89f41ac1cc9413036119aecedd2fe801e75cea1fef55439df67f0f2e8165a2"
+    },
+    {
+      "name": "LINK4_NECK",
+      "link": "Link4",
+      "triangles": 44,
+      "source": "models/armold-mks-product-v3/meshes/LINK4_NECK.stl",
+      "sha256": "5f92865f04f5f11d54527a1ddd82ee25c963c2e7f38d9e83dd80b3b5538434ff"
+    },
+    {
+      "name": "J5_MODULE",
+      "link": "Link4",
+      "triangles": 9872,
+      "source": "models/armold-mks-product-v3/meshes/J5_MODULE.stl",
+      "sha256": "4330dbcb1ad2b93d06b07125ffc18e91fafe711b52470e461c498f3ca1e9ace9"
+    },
+    {
+      "name": "J5_ACCENT_RING",
+      "link": "Link4",
+      "triangles": 5736,
+      "source": "models/armold-mks-product-v3/meshes/J5_ACCENT_RING.stl",
+      "sha256": "7c6d23cff735e7d9bea59542db224a2db07b0ba8368b53d932ad6e5a464d41d0"
+    },
+    {
+      "name": "J5_END_CAP",
+      "link": "Link4",
+      "triangles": 3584,
+      "source": "models/armold-mks-product-v3/meshes/J5_END_CAP.stl",
+      "sha256": "3ab3436797333881ba4855f555737437133018b9a4d5d699fa694facaa556329"
+    },
+    {
+      "name": "J5_CAP_SLASH",
+      "link": "Link4",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/J5_CAP_SLASH.stl",
+      "sha256": "bfd273cbc463ba640fe8d1df757cf32982c9438c7297083343b817e5f140da2a"
+    },
+    {
+      "name": "LINK5_WRIST_HUB",
+      "link": "Link5",
+      "triangles": 4916,
+      "source": "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB.stl",
+      "sha256": "acd2d25fa223279bd214cf6e31adf901f66ee7e9b100c2ae9542b8c4624c17a4"
+    },
+    {
+      "name": "LINK5_WRIST_HUB_CAP",
+      "link": "Link5",
+      "triangles": 1388,
+      "source": "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB_CAP.stl",
+      "sha256": "10db6e07770e390f4f97c7010e720629be052ee0610843464eaa9b7d4954492c"
+    },
+    {
+      "name": "LINK5_WRIST_HUB_SLASH",
+      "link": "Link5",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB_SLASH.stl",
+      "sha256": "d3fff99eec3e6fe00999fbaeef0658bdd6faddc082c5aed932d8d1cabef4ebfb"
+    },
+    {
+      "name": "LINK5_WRIST_BAR",
+      "link": "Link5",
+      "triangles": 52,
+      "source": "models/armold-mks-product-v3/meshes/LINK5_WRIST_BAR.stl",
+      "sha256": "b1868a17368cb10af9452b0a8bf73338ddfcd1d908d993b9644aeb0e5e93275c"
+    },
+    {
+      "name": "J6_MODULE",
+      "link": "Link5",
+      "triangles": 9872,
+      "source": "models/armold-mks-product-v3/meshes/J6_MODULE.stl",
+      "sha256": "4046ab1354a695a8b758494f6cde02fb415e796829f11db20a7686fb4ca5f905"
+    },
+    {
+      "name": "J6_ACCENT_RING",
+      "link": "Link5",
+      "triangles": 4446,
+      "source": "models/armold-mks-product-v3/meshes/J6_ACCENT_RING.stl",
+      "sha256": "513e0293ad11ca62b15644eac67975f58a61c543532b0ac538acc3fa34a74902"
+    },
+    {
+      "name": "J6_END_CAP",
+      "link": "Link5",
+      "triangles": 3500,
+      "source": "models/armold-mks-product-v3/meshes/J6_END_CAP.stl",
+      "sha256": "955146f352a9a5303d4c53472b3e6b5337ec583a6322a9c61b64bd903b4695ea"
+    },
+    {
+      "name": "J6_CAP_SLASH",
+      "link": "Link5",
+      "triangles": 12,
+      "source": "models/armold-mks-product-v3/meshes/J6_CAP_SLASH.stl",
+      "sha256": "a154bee9c999da8fc9ae0022f42723496396e39ee6161c95298b87270a4eaf93"
+    },
+    {
+      "name": "LINK6_TOOL_FLANGE",
+      "link": "Link6",
+      "triangles": 13212,
+      "source": "models/armold-mks-product-v3/meshes/LINK6_TOOL_FLANGE.stl",
+      "sha256": "3fa2d44929d2e475ceb0e01c446cef05cdfece3ff642c3ebb439e01e06bb8052"
+    },
+    {
+      "name": "LINK6_TOOL_RING",
+      "link": "Link6",
+      "triangles": 2864,
+      "source": "models/armold-mks-product-v3/meshes/LINK6_TOOL_RING.stl",
+      "sha256": "961fe82f47618cad33619779b702c80bdbd9cd955122b993350ba1b9632ee432"
+    },
+    {
+      "name": "BASE",
+      "link": "KG1",
+      "triangles": 5916,
+      "printed": true,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "JAW_A",
+      "link": "KG1",
+      "triangles": 8626,
+      "printed": true,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "JAW_B",
+      "link": "KG1",
+      "triangles": 6396,
+      "printed": true,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PINION",
+      "link": "KG1",
+      "triangles": 10864,
+      "printed": true,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_A",
+      "link": "KG1",
+      "triangles": 904,
+      "printed": true,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_B",
+      "link": "KG1",
+      "triangles": 672,
+      "printed": true,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "SERVO_BODY",
+      "link": "KG1",
+      "triangles": 36,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "SERVO_PLUGS",
+      "link": "KG1",
+      "triangles": 12,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "SPLINE",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "HORN",
+      "link": "KG1",
+      "triangles": 764,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "HORN_SCREW_HEAD",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_HEAD_18.41_-1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_SHANK_18.41_-1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_HEAD_18.41_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_SHANK_18.41_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_HEAD_39.11_-1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_SHANK_39.11_-1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_HEAD_39.11_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "M2_SHANK_39.11_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_HEAD_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_SHANK_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_HEAD_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_SHANK_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_HEAD_2",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_SHANK_2",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_HEAD_3",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PIN_SHANK_3",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "R",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ROD_-15.0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ROD_-5.0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ROD_10.5",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ROD_18.5",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_HEAD_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_SHANK_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_HEAD_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_SHANK_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_HEAD_2",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_SHANK_2",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_HEAD_3",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "ARM_SHANK_3",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "F",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_A_HEAD_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_A_SHANK_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_A_HEAD_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_A_SHANK_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "A",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_B_HEAD_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_B_SHANK_0",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_B_HEAD_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    },
+    {
+      "name": "PAD_B_SHANK_1",
+      "link": "KG1",
+      "triangles": 380,
+      "printed": false,
+      "group": "B",
+      "source": "MP9 readonly gripper_items(u=20,FLAT); source STL plus purchased reference primitives"
+    }
+  ],
+  "links": {
+    "Base": {
+      "mass_kg": 1.2,
+      "com_m": [
+        0.0,
+        0.0,
+        0.05700000002980232
+      ],
+      "box_size_m": [
+        0.164000004529953,
+        0.164000004529953,
+        0.11400000005960464
+      ],
+      "inertia_kg_m2": [
+        0.0039892001499414464,
+        0.0039892001499414464,
+        0.005379200297164921
+      ],
+      "triangles": 31326
+    },
+    "Link1": {
+      "mass_kg": 0.65,
+      "com_m": [
+        0.0,
+        -0.023400001227855682,
+        0.07399999722838402
+      ],
+      "box_size_m": [
+        0.10400000214576721,
+        0.13680000603199005,
+        0.1119999960064888
+      ],
+      "inertia_kg_m2": [
+        0.0016931547076061597,
+        0.0012653333090543758,
+        0.0015995547802364054
+      ],
+      "triangles": 24440
+    },
+    "Link2": {
+      "mass_kg": 0.7,
+      "com_m": [
+        0.08599999360740185,
+        0.0368999969214201,
+        1.862645149230957e-09
+      ],
+      "box_size_m": [
+        0.24799999967217445,
+        0.10979999974370003,
+        0.09000000730156898
+      ],
+      "inertia_kg_m2": [
+        0.0011757690733832746,
+        0.004060233400514725,
+        0.0042910023205650445
+      ],
+      "triangles": 26148
+    },
+    "Link3": {
+      "mass_kg": 0.65,
+      "com_m": [
+        0.06000000797212124,
+        -0.012399997562170029,
+        -1.862645149230957e-09
+      ],
+      "box_size_m": [
+        0.19600002840161324,
+        0.10280000418424606,
+        0.0780000127851963
+      ],
+      "inertia_kg_m2": [
+        0.000901974821300139,
+        0.002410417377762549,
+        0.002653291982992853
+      ],
+      "triangles": 26070
+    },
+    "Link4": {
+      "mass_kg": 0.4,
+      "com_m": [
+        0.06750000268220901,
+        -0.03689999785274267,
+        1.862645149230957e-09
+      ],
+      "box_size_m": [
+        0.09900002181529999,
+        0.10980001278221607,
+        0.0780000276863575
+      ],
+      "inertia_kg_m2": [
+        0.0006046682375349116,
+        0.0005295002879500804,
+        0.000728568237546823
+      ],
+      "triangles": 19248
+    },
+    "Link5": {
+      "mass_kg": 0.35,
+      "com_m": [
+        0.06300000287592411,
+        0.007399996742606163,
+        1.862645149230957e-09
+      ],
+      "box_size_m": [
+        0.1900000385940075,
+        0.09280000999569893,
+        0.0780000276863575
+      ],
+      "inertia_kg_m2": [
+        0.0004286288467496687,
+        0.0012303672203899088,
+        0.0013040958151936796
+      ],
+      "triangles": 24198
+    },
+    "Link6": {
+      "mass_kg": 0.2,
+      "com_m": [
+        0.0237499987706542,
+        9.313225746154785e-10,
+        0.0
+      ],
+      "box_size_m": [
+        0.011500025168061256,
+        0.056000007316470146,
+        0.05600002408027649
+      ],
+      "inertia_kg_m2": [
+        0.00010453339194060429,
+        5.4470887930959816e-05,
+        5.4470856638512545e-05
+      ],
+      "triangles": 16076
+    },
+    "KG1": {
+      "mass_kg": 0.1842,
+      "com_m": [
+        0.0,
+        -0.015502233058214188,
+        0.04949999926611781
+      ],
+      "box_size_m": [
+        0.14000000059604645,
+        0.08699553459882736,
+        0.1129999989643693
+      ],
+      "inertia_kg_m2": [
+        0.0003121763700733776,
+        0.0004968641489691011,
+        0.00041703222622789174
+      ],
+      "triangles": 48630
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "format": "printforge-print-prep-report",
+  "version": 2,
+  "verdict": "ready",
+  "reason": null,
+  "detail": null,
+  "model": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\kmjh-gripper-v1\\print-plate-fit.stl",
+    "sha256": "b983a474996ed9a98bbce885648cafd8c174b1e29359aac0f36c70b3148cd87f",
+    "triangles": 48800,
+    "size_mm": [
+      278.739,
+      129.375,
+      16.0
+    ],
+    "min_z_mm": 0.0
+  },
+  "studio": {
+    "command": [
+      "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe"
+    ],
+    "version": "02.08.02.61",
+    "version_verified": true
+  },
+  "profiles": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "limits": {
+      "area_x_mm": 350.0,
+      "area_y_mm": 320.0,
+      "height_mm": 325.0
+    },
+    "settings_sha256": {
+      "machine": "57e4d59f3307183fba60e28c68bad1a0dd8867ce09bf41db4f148a1db4f84747",
+      "process": "9ac61c0f39f8a25a35bd9a2161ebdf8be13be47b26bf244e88917c4345231a4a",
+      "filament": "c2ecb2a0d92487b3009d70ec98d756ceb4934ff44f69fe2ee5b49d00c0d039dd"
+    }
+  },
+  "overrides": [
+    {
+      "key": "wall_generator",
+      "kind": "process",
+      "value": "arachne",
+      "system_value": "classic",
+      "source": "default",
+      "differs": true,
+      "in_project_record": true
+    },
+    {
+      "key": "enable_prime_tower",
+      "kind": "process",
+      "value": "0",
+      "system_value": "1",
+      "source": "default",
+      "differs": true,
+      "in_project_record": true
+    },
+    {
+      "key": "counterbore_hole_bridging",
+      "kind": "process",
+      "value": "sacrificiallayer",
+      "system_value": "none",
+      "source": "auto",
+      "differs": true,
+      "in_project_record": true
+    }
+  ],
+  "calibration": null,
+  "plate": {
+    "requested": "Textured PEI Plate",
+    "chosen_by": "--plate",
+    "used": "Textured PEI Plate"
+  },
+  "support": {
+    "mode": "auto",
+    "advised_by_studio": false,
+    "enabled": false
+  },
+  "runs": {
+    "plain": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 11.2,
+      "numbers": {
+        "print_time_s": 6193,
+        "filament_g": 36.49,
+        "filament_m": 12.04,
+        "support_generated": false,
+        "max_z_mm": 16.0
+      },
+      "warning_kinds": []
+    },
+    "support": null,
+    "project": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 1.2,
+      "numbers": null,
+      "warning_kinds": []
+    }
+  },
+  "checks": {
+    "gap_infill_ratio": 0.0066,
+    "height_slowdown_end_above_model": null,
+    "counterbore": {
+      "mode": "auto",
+      "found": [
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        },
+        {
+          "z_mm": 7.0,
+          "below_area_mm2": 28.223,
+          "above_areas_mm2": [
+            8.017
+          ]
+        }
+      ],
+      "error": null
+    }
+  },
+  "review": [],
+  "estimate": {
+    "print_time_s": 6193,
+    "filament_g": 36.49,
+    "filament_m": 12.04,
+    "support_generated": false,
+    "max_z_mm": 16.0
+  },
+  "outputs": {
+    "project": "print-plate-fit.bambu.3mf",
+    "preview": "preview.png"
+  }
+}

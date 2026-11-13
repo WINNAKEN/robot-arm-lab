@@ -1,0 +1,19 @@
+{
+ "_note": "MP7 동작 영상 계획 — 자세 이름은 gallery_poses.json. 이동은 관절 공간에서 부드럽게(3t² − 2t³) · 각 관절이 같은 시간에 출발 · 도착. 보기용이며 실제 궤적 · 속도 · 가속 한계가 아니다. 2026-10-27 사용자 「작업할거 계속 이어가」(직전 제안 = 한 바퀴 도는 영상 · 관절이 움직이는 영상).",
+ "fps": 24,
+ "turntable": {"pose": "display", "seconds": 8.0, "lens_mm": 50, "elevation": 0.42},
+ "motion": {
+  "start": "display",
+  "hold_start_s": 0.5,
+  "steps": [
+   {"to": "home", "move_s": 2.0, "hold_s": 0.5},
+   {"to": "reach-up", "move_s": 2.0, "hold_s": 0.5},
+   {"to": "wave", "move_s": 2.0, "hold_s": 0.5},
+   {"to": "side-reach", "move_s": 2.5, "hold_s": 0.5},
+   {"to": "pick", "move_s": 2.5, "hold_s": 0.5},
+   {"to": "display", "move_s": 2.0, "hold_s": 0.75}
+  ],
+  "lens_mm": 40,
+  "direction": [-0.55, -1.0, 0.42]
+ }
+}

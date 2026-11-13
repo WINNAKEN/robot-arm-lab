@@ -1,0 +1,118 @@
+{
+  "format": "printforge-print-prep-report",
+  "version": 2,
+  "verdict": "ready",
+  "reason": null,
+  "detail": null,
+  "model": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\j23-drive-v1\\print-plate-D_stand_lever.stl",
+    "sha256": "e3731451ad60a0254ff513cb818ca874f1a71fada9474b339b033823b17ea0f7",
+    "triangles": 28432,
+    "size_mm": [
+      208.0,
+      243.0,
+      138.0
+    ],
+    "min_z_mm": 0.0
+  },
+  "studio": {
+    "command": [
+      "C:\\tools\\BambuStudio-2.8.2.61\\bambu-studio.exe"
+    ],
+    "version": "02.08.02.61",
+    "version_verified": true
+  },
+  "profiles": {
+    "printer": "Bambu Lab H2D 0.4 nozzle",
+    "process": "0.20mm Standard @BBL H2D",
+    "filament": "Bambu PLA Basic @BBL H2D",
+    "limits": {
+      "area_x_mm": 350.0,
+      "area_y_mm": 320.0,
+      "height_mm": 325.0
+    },
+    "settings_sha256": {
+      "machine": "57e4d59f3307183fba60e28c68bad1a0dd8867ce09bf41db4f148a1db4f84747",
+      "process": "0761cd3019578b97ef27a41bb79d1234477617c9369c7dbbd00b5007b76bfb90",
+      "filament": "c2ecb2a0d92487b3009d70ec98d756ceb4934ff44f69fe2ee5b49d00c0d039dd"
+    }
+  },
+  "overrides": [
+    {
+      "key": "wall_generator",
+      "kind": "process",
+      "value": "arachne",
+      "system_value": "classic",
+      "source": "default",
+      "differs": true,
+      "in_project_record": true
+    },
+    {
+      "key": "enable_prime_tower",
+      "kind": "process",
+      "value": "0",
+      "system_value": "1",
+      "source": "default",
+      "differs": true,
+      "in_project_record": true
+    }
+  ],
+  "calibration": null,
+  "plate": {
+    "requested": "Textured PEI Plate",
+    "chosen_by": "--plate",
+    "used": "Textured PEI Plate"
+  },
+  "support": {
+    "mode": "auto",
+    "advised_by_studio": false,
+    "enabled": false
+  },
+  "runs": {
+    "plain": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 3.4,
+      "numbers": {
+        "print_time_s": 11394,
+        "filament_g": 144.86,
+        "filament_m": 47.8,
+        "support_generated": false,
+        "max_z_mm": 138.0
+      },
+      "warning_kinds": []
+    },
+    "support": null,
+    "project": {
+      "status": "ok",
+      "reason": null,
+      "detail": null,
+      "return_code": 0,
+      "error_string": "Success.",
+      "warning": "",
+      "seconds": 0.5,
+      "numbers": null,
+      "warning_kinds": []
+    }
+  },
+  "checks": {
+    "gap_infill_ratio": 0.0023,
+    "height_slowdown_end_above_model": null
+  },
+  "review": [],
+  "estimate": {
+    "print_time_s": 11394,
+    "filament_g": 144.86,
+    "filament_m": 47.8,
+    "support_generated": false,
+    "max_z_mm": 138.0
+  },
+  "outputs": {
+    "project": "print-plate-D_stand_lever.bambu.3mf",
+    "preview": "preview.png"
+  }
+}

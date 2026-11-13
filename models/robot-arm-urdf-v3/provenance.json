@@ -1,0 +1,383 @@
+{
+  "input_census": {
+    "models/arm-v3-kg1-assembly/assembly.json": {
+      "bytes": 4011,
+      "sha256": "b07383b88bc9b0b3c1fc20113b09647d85407836b93aa864d3c730b03ccdecd0"
+    },
+    "models/armold-mks-concept-v1/kinematics.json": {
+      "bytes": 6884,
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+    },
+    "models/armold-mks-concept-v1/parameters.json": {
+      "bytes": 1935,
+      "sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4"
+    },
+    "models/armold-mks-product-v3/bodies.json": {
+      "bytes": 5009,
+      "sha256": "301f57040ee4827d7c37a1f99e404399de001a79b94ef725ef816f7dd5ada564"
+    },
+    "models/armold-mks-product-v3/meshes/BASE_COLUMN.stl": {
+      "bytes": 376084,
+      "sha256": "232564d82ca9692a68cde406db011599af659991bd59b62238278a524d951dcb"
+    },
+    "models/armold-mks-product-v3/meshes/BASE_FOOT.stl": {
+      "bytes": 182884,
+      "sha256": "3ac5c8512899fe326c2791ab88474df523d3f7686593a33b6aebda0b64c3a757"
+    },
+    "models/armold-mks-product-v3/meshes/BASE_LIGHT_RING.stl": {
+      "bytes": 217884,
+      "sha256": "eb0247249969f767e3832082440846e89b42dbfa27f5e0568748d744a8b663bc"
+    },
+    "models/armold-mks-product-v3/meshes/J1_ACCENT_RING.stl": {
+      "bytes": 292884,
+      "sha256": "a14295caa28c427f758fd15eccfc4dec8b27b994ff7712f8d6660170be1f1b6d"
+    },
+    "models/armold-mks-product-v3/meshes/J1_MODULE.stl": {
+      "bytes": 496984,
+      "sha256": "54a80302a51974e646f172841c1551d748b49278e2f5e9299772655d3c7c05b6"
+    },
+    "models/armold-mks-product-v3/meshes/J2_ACCENT_RING.stl": {
+      "bytes": 216684,
+      "sha256": "fe1ca7f00ada090d0abca5fd6c71499ca3645f559c6556515e36d9428898e03e"
+    },
+    "models/armold-mks-product-v3/meshes/J2_CAP_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "00bb43ccd432198e19f28554276817d329021992e0cffa073f6488b4b9f68dc1"
+    },
+    "models/armold-mks-product-v3/meshes/J2_END_CAP.stl": {
+      "bytes": 181084,
+      "sha256": "adc14d25153831fa86dcab649a888a181fe536d747e70f8e45001db45e8e1fd6"
+    },
+    "models/armold-mks-product-v3/meshes/J2_MODULE.stl": {
+      "bytes": 455584,
+      "sha256": "ae604aef2da04222480363cb26d3dccc6523532dbfa05f5ec71545663396a22c"
+    },
+    "models/armold-mks-product-v3/meshes/J3_ACCENT_RING.stl": {
+      "bytes": 288084,
+      "sha256": "70a83dda92ce8296d78447fcd3b47ac3955e2e2174ad4b465643d9c16cf2e84a"
+    },
+    "models/armold-mks-product-v3/meshes/J3_CAP_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "d73cb9b33d5a83abe70628b2d1ddb6b4f11c56d5183ef8ff9bbe7a50009133ee"
+    },
+    "models/armold-mks-product-v3/meshes/J3_END_CAP.stl": {
+      "bytes": 178684,
+      "sha256": "cc26a1d4a51692cde4478b6ceb279ca2aa1c474439ee087f93d9e8246cae7d33"
+    },
+    "models/armold-mks-product-v3/meshes/J3_MODULE.stl": {
+      "bytes": 493384,
+      "sha256": "e29603f4eb468e40bd3ae5ba059239ce9b7bb44a43b8559fff8ffb0067270bc5"
+    },
+    "models/armold-mks-product-v3/meshes/J4_ACCENT_RING.stl": {
+      "bytes": 286884,
+      "sha256": "d067e77be5e9287ff3c2ac30532cc000ea1c138c2a3da0d8128147ff28c1444e"
+    },
+    "models/armold-mks-product-v3/meshes/J4_CAP_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "5a89f41ac1cc9413036119aecedd2fe801e75cea1fef55439df67f0f2e8165a2"
+    },
+    "models/armold-mks-product-v3/meshes/J4_END_CAP.stl": {
+      "bytes": 180484,
+      "sha256": "5dd0180dc8f629111482ea894459c79d3ebe3ef451cdbc63adfb4a927931c62f"
+    },
+    "models/armold-mks-product-v3/meshes/J4_MODULE.stl": {
+      "bytes": 493684,
+      "sha256": "4528651359155bdabefc5fca5253bf9b796102f66549277a12b6c1a5fd589a7e"
+    },
+    "models/armold-mks-product-v3/meshes/J5_ACCENT_RING.stl": {
+      "bytes": 286884,
+      "sha256": "7c6d23cff735e7d9bea59542db224a2db07b0ba8368b53d932ad6e5a464d41d0"
+    },
+    "models/armold-mks-product-v3/meshes/J5_CAP_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "bfd273cbc463ba640fe8d1df757cf32982c9438c7297083343b817e5f140da2a"
+    },
+    "models/armold-mks-product-v3/meshes/J5_END_CAP.stl": {
+      "bytes": 179284,
+      "sha256": "3ab3436797333881ba4855f555737437133018b9a4d5d699fa694facaa556329"
+    },
+    "models/armold-mks-product-v3/meshes/J5_MODULE.stl": {
+      "bytes": 493684,
+      "sha256": "4330dbcb1ad2b93d06b07125ffc18e91fafe711b52470e461c498f3ca1e9ace9"
+    },
+    "models/armold-mks-product-v3/meshes/J6_ACCENT_RING.stl": {
+      "bytes": 222384,
+      "sha256": "513e0293ad11ca62b15644eac67975f58a61c543532b0ac538acc3fa34a74902"
+    },
+    "models/armold-mks-product-v3/meshes/J6_CAP_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "a154bee9c999da8fc9ae0022f42723496396e39ee6161c95298b87270a4eaf93"
+    },
+    "models/armold-mks-product-v3/meshes/J6_END_CAP.stl": {
+      "bytes": 175084,
+      "sha256": "955146f352a9a5303d4c53472b3e6b5337ec583a6322a9c61b64bd903b4695ea"
+    },
+    "models/armold-mks-product-v3/meshes/J6_MODULE.stl": {
+      "bytes": 493684,
+      "sha256": "4046ab1354a695a8b758494f6cde02fb415e796829f11db20a7686fb4ca5f905"
+    },
+    "models/armold-mks-product-v3/meshes/LINK1_POST.stl": {
+      "bytes": 2284,
+      "sha256": "5917572f3a57477617662e82fd2762b7bcafa6cf66bd341ffa4e8421bdc9eec2"
+    },
+    "models/armold-mks-product-v3/meshes/LINK1_SHOULDER_CAP.stl": {
+      "bytes": 366184,
+      "sha256": "2428e661d8ec59afe4be18fc80bbc1af1aedda09726d885d8f99634c637b1db6"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_LOGO_H.stl": {
+      "bytes": 2284,
+      "sha256": "3fa617002e74761451270e2610eee816a51ab7394188d114b08a86ee98fe9e22"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_LOGO_J.stl": {
+      "bytes": 1484,
+      "sha256": "10623c28a153ed15b728cd40fc6a0e17b245a2871aba6dfb3a0d4f6bda37123f"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_LOGO_K.stl": {
+      "bytes": 2084,
+      "sha256": "dba2a5718ca2300e43707adaf2f55a48e551ecd17f50eb61ffb7e6d942cc26c1"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_LOGO_K_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "eea90acf223e549a30256274d3f2b51e70e25495ffc85fcdf101fe068aedb60f"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_LOGO_M.stl": {
+      "bytes": 2684,
+      "sha256": "68661457645e817408e65a62b4f5e4bc1dfa55d8af032918e1a1df33584b3b15"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB.stl": {
+      "bytes": 264784,
+      "sha256": "e16136a2093fc081b4f5bcb1008cd9d98c19afe5e826e1568aacd28e36291e13"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB_CAP.stl": {
+      "bytes": 70684,
+      "sha256": "aad6a755506ce48ab37125f19018e0e14374287d0c7bd076313ae3ba4ad5d94f"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_SHOULDER_HUB_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "30823891b85f4d9596a976534f40dc5f41f6acb19e08ceef89bf0eff013cd478"
+    },
+    "models/armold-mks-product-v3/meshes/LINK2_UPPER_BAR.stl": {
+      "bytes": 2284,
+      "sha256": "a3a2336138c60c4e929c54b279661df1d1487c3f14f4de81afb69544ecca6afa"
+    },
+    "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB.stl": {
+      "bytes": 268384,
+      "sha256": "0c716b18bd719257c217b2d61a1719b8166d6ccd41a54cbdffc6b9fc1ed0c083"
+    },
+    "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB_CAP.stl": {
+      "bytes": 70684,
+      "sha256": "3e57fdeb2d14679384fec053b089d8b84e3253b414496d440603f8782956437e"
+    },
+    "models/armold-mks-product-v3/meshes/LINK3_ELBOW_HUB_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "3cdbb5db7da0c81284cd8120fd45abd50816ee42bd2716bad54a9a1b66f57d05"
+    },
+    "models/armold-mks-product-v3/meshes/LINK3_FOREARM_BAR.stl": {
+      "bytes": 2684,
+      "sha256": "0101ba1eb49dd363469091330017619099e57e2f856269097708eaa4ec78fb3e"
+    },
+    "models/armold-mks-product-v3/meshes/LINK4_NECK.stl": {
+      "bytes": 2284,
+      "sha256": "5f92865f04f5f11d54527a1ddd82ee25c963c2e7f38d9e83dd80b3b5538434ff"
+    },
+    "models/armold-mks-product-v3/meshes/LINK5_WRIST_BAR.stl": {
+      "bytes": 2684,
+      "sha256": "b1868a17368cb10af9452b0a8bf73338ddfcd1d908d993b9644aeb0e5e93275c"
+    },
+    "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB.stl": {
+      "bytes": 245884,
+      "sha256": "acd2d25fa223279bd214cf6e31adf901f66ee7e9b100c2ae9542b8c4624c17a4"
+    },
+    "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB_CAP.stl": {
+      "bytes": 69484,
+      "sha256": "10db6e07770e390f4f97c7010e720629be052ee0610843464eaa9b7d4954492c"
+    },
+    "models/armold-mks-product-v3/meshes/LINK5_WRIST_HUB_SLASH.stl": {
+      "bytes": 684,
+      "sha256": "d3fff99eec3e6fe00999fbaeef0658bdd6faddc082c5aed932d8d1cabef4ebfb"
+    },
+    "models/armold-mks-product-v3/meshes/LINK6_TOOL_FLANGE.stl": {
+      "bytes": 660684,
+      "sha256": "3fa2d44929d2e475ceb0e01c446cef05cdfece3ff642c3ebb439e01e06bb8052"
+    },
+    "models/armold-mks-product-v3/meshes/LINK6_TOOL_RING.stl": {
+      "bytes": 143284,
+      "sha256": "961fe82f47618cad33619779b702c80bdbd9cd955122b993350ba1b9632ee432"
+    },
+    "models/kmjh-gripper-v1/mass-properties.json": {
+      "bytes": 3470,
+      "sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb"
+    },
+    "models/kmjh-gripper-v1/parts/BASE.stl": {
+      "bytes": 295884,
+      "sha256": "80ee24f437b7d23aaec2fceb345ca716efb4224a740d86285ceaba4f7d1ef794"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_BLOCK.stl": {
+      "bytes": 187284,
+      "sha256": "eedd7a12eaea8ce8c5aff4f2fe2c4219271a3c7866d7e3d55c1d091d2f01e6fd"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_MESH.stl": {
+      "bytes": 52484,
+      "sha256": "ccd12fc77710ec10a6ec7c12f63f3c29f42c7adee8ced496452114a9b995a52d"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_005.stl": {
+      "bytes": 543284,
+      "sha256": "c9202d14028ee05467d09a575c346ae681efd7ae1ffa0ce0af0c3565b81286fe"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_010.stl": {
+      "bytes": 543284,
+      "sha256": "c387ed0ae9eea02119d44e248690b85fbe217579db08d0e4fb7acee8ddc9789c"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_015.stl": {
+      "bytes": 543284,
+      "sha256": "dedf1601476fa45cdda040794bc7b5099f87bfdb601c14163e0cf5e1475045e4"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_020.stl": {
+      "bytes": 543284,
+      "sha256": "0bf71453a88d2a588488d5a318919141d75fc254f95bcd96c934e7f3c4acdb16"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_RACK_A.stl": {
+      "bytes": 13884,
+      "sha256": "e54f81d8acbf9ed18da845744957e5d718c760168f3dd0dceba1ede3c777c51b"
+    },
+    "models/kmjh-gripper-v1/parts/FIT_RACK_B.stl": {
+      "bytes": 13884,
+      "sha256": "05cc0074ebeaae52dc97d33e822c1b31aa89db265495f04d45bc6b0bafb583de"
+    },
+    "models/kmjh-gripper-v1/parts/JAW_A.stl": {
+      "bytes": 431384,
+      "sha256": "b0bee9c270933a6cd4302954a00113f2640ea18bd72949ebbddc53b3731f3bb7"
+    },
+    "models/kmjh-gripper-v1/parts/JAW_B.stl": {
+      "bytes": 319884,
+      "sha256": "7667af5f78a191204603e5273e81a062a492f6deefa440b1ca8e06705b84cb42"
+    },
+    "models/kmjh-gripper-v1/parts/PAD_A_FLAT.stl": {
+      "bytes": 45284,
+      "sha256": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c"
+    },
+    "models/kmjh-gripper-v1/parts/PAD_A_V.stl": {
+      "bytes": 47084,
+      "sha256": "a6fe1233107159745c8cc5ba2c502f4e660fb883844ac4032fd2b1f73c877d37"
+    },
+    "models/kmjh-gripper-v1/parts/PAD_B_FLAT.stl": {
+      "bytes": 33684,
+      "sha256": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14"
+    },
+    "models/kmjh-gripper-v1/parts/PAD_B_V.stl": {
+      "bytes": 35484,
+      "sha256": "9af9276b91c8d7460388145baa89d609ce19261bf2e4b4539fd7685c00bc0f35"
+    },
+    "models/kmjh-gripper-v1/parts/PINION.stl": {
+      "bytes": 543284,
+      "sha256": "94b7b4af713e33b1b3a4175c5fbd00f7bd3169e77c5f14f7f0812ee6a0ab0ece"
+    },
+    "models/robot-arm-urdf-v2/asset-ledger.json": {
+      "bytes": 26934,
+      "sha256": "c618fe72557dac55d15be952c4d5e373eed7ae4e37c0a4d5b3da6953a2b5cd91"
+    },
+    "models/robot-arm-urdf-v2/manifest.json": {
+      "bytes": 1162,
+      "sha256": "8a5d07c6b6613e1439a374d985f64cd1a743aaef388257d65245337e66a81769"
+    },
+    "models/robot-arm-urdf-v2/meshes/Base.stl": {
+      "bytes": 1566384,
+      "sha256": "0bf034bca79f21f3d5aa006eda0c80bc855b9a4be61e12315a22e1309f7c0915"
+    },
+    "models/robot-arm-urdf-v2/meshes/KG1.stl": {
+      "bytes": 2431584,
+      "sha256": "8f1b1becffc2694215f4cd686fd811444f7c95bfcca9fc2f58201c697aec3067"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link1.stl": {
+      "bytes": 1222084,
+      "sha256": "aed7c1a3596737f3373a3ba4d084eac518c8d7da7b2eea5cb20a0217320e0467"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link2.stl": {
+      "bytes": 1307484,
+      "sha256": "f8ac751136fb5473b9eda01c399de6006704e16ab9ec8fd863be95fbc93bc538"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link3.stl": {
+      "bytes": 1303584,
+      "sha256": "0158fba4e04ab88dda47e6956f9c5785bb98b484f15dc42e918363c3b1873dd4"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link4.stl": {
+      "bytes": 962484,
+      "sha256": "b0fa1cd99fedee9eec7aa46365211964f6675fc517da2a8d4d97333353db30bf"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link5.stl": {
+      "bytes": 1209984,
+      "sha256": "ec89581e32143ca244d15181b7fb7d8def245c9fc6a6382a25d9f2ea578fc7ab"
+    },
+    "models/robot-arm-urdf-v2/meshes/Link6.stl": {
+      "bytes": 803884,
+      "sha256": "84eae4dc1219e93544bcfb31589ce14b25ad4129701f08548bcd102245d0295f"
+    },
+    "models/robot-arm-urdf-v2/provenance.json": {
+      "bytes": 14451,
+      "sha256": "716d6e9b810218f55300ddb64b2dcb4a5b637a61648ca5b042fdda53fced9138"
+    },
+    "models/robot-arm-urdf-v2/README.md": {
+      "bytes": 3636,
+      "sha256": "94da10d24d4fde70c1c8e139593434064d896134d0dfcf6c9b467e54d31ca502"
+    },
+    "models/robot-arm-urdf-v2/robot_arm.urdf": {
+      "bytes": 11294,
+      "sha256": "a26817eabb553021c1c1518f92296d1cb4a458410b104a3158b356471f713eee"
+    },
+    "src/cad/arm-v3-kg1-assembly/assemble.py": {
+      "bytes": 49419,
+      "sha256": "65dcde247362f761194b9d4a120c64dd3191de24ad76f1b479ec3eb6d0ccb110"
+    },
+    "src/cad/arm-v3-kg1-assembly/blender_assembly.py": {
+      "bytes": 18131,
+      "sha256": "45269eba27e36fbf96071483e5d8aa15b248e5f200cd4998daf4484902ca9baa"
+    },
+    "src/cad/arm-v3-kg1-assembly/guard.py": {
+      "bytes": 5713,
+      "sha256": "20e02430d9b5e5e49bbe07accfeddc1020e7e70c1ce144d4a3c794eb665de1a1"
+    },
+    "src/cad/arm-v3-kg1-assembly/parameters.json": {
+      "bytes": 2886,
+      "sha256": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77"
+    },
+    "src/cad/calibration/print-fits.json": {
+      "bytes": 11782,
+      "sha256": "d0ecda67dbd61501fc873995564db9fd30c844fb1bcc2003379c5312794126a9"
+    },
+    "src/cad/kmjh-gripper-v1/build_gripper.py": {
+      "bytes": 4735,
+      "sha256": "979460f3e8f180b3d75a4c90e3aefcb0f0f2093f9059c2e22f439dea28383f58"
+    },
+    "src/cad/kmjh-gripper-v1/guard.py": {
+      "bytes": 5568,
+      "sha256": "931bdef53073075080bea44f4267e5ccfa960fb25a8e34fe2c75b602917b91ea"
+    },
+    "src/cad/kmjh-gripper-v1/kg1.py": {
+      "bytes": 27213,
+      "sha256": "5846f859a2c2bc45aa36e206a5231891c814c7ae600437e365007a4e76927850"
+    },
+    "src/cad/kmjh-gripper-v1/parameters.json": {
+      "bytes": 8987,
+      "sha256": "7c116e9f9bfeb49e4b45c5495f7b5f23ce6f3c7d60c1dc66680d604c98d42b8e"
+    },
+    "src/cad/kmjh-gripper-v1/print_prep.py": {
+      "bytes": 9770,
+      "sha256": "a255669647672a30330d13d90114a9b356262087ec62a17bbe8af8f2a8caed06"
+    },
+    "src/cad/kmjh-gripper-v1/render_gripper.py": {
+      "bytes": 5181,
+      "sha256": "04088a8cde5227c16736cbb72ca529483972b129736e1d6132d60918f224a5c2"
+    },
+    "src/cad/kmjh-gripper-v1/run_controls.py": {
+      "bytes": 26177,
+      "sha256": "8d3ee64dd5822c467eef137ab98d805fdc848d510532348fb481ca87ea8cedb0"
+    },
+    "src/cad/kmjh-gripper-v1/verify_gripper.py": {
+      "bytes": 42672,
+      "sha256": "3ddd492a28cb9ef391c8274c15b5239f755b3c14ed553c8081337ee8fd242d49"
+    }
+  },
+  "canonical_source": "robot_arm.urdf authored directly; assets.py writes only mesh/numeric scaffolding",
+  "assembly": "MP9 rev1 v3+KG1; MP10 neck user decision made but standalone NOT_INTEGRATED",
+  "physics_acceptance": "NOT_RUN in 068; root 069 independently records actual SDK evidence"
+}

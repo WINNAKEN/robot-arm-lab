@@ -1,0 +1,32 @@
+{
+  "basis": "Latest full product-exterior-v2, not a fabricated/internal reducer model",
+  "inputs": {
+    "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\armold-type-mks-product-v2.solidcraft": "c784ee45bdbbba0b62eaa1218ebaba6b276d8f259c31baed8110174b96f84bc1",
+    "C:\\projects\\robot-arm-lab\\models\\armold-mks-concept-v1\\kinematics.json": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+    "C:\\projects\\robot-arm-lab\\src\\joint_frames\\frames.py": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46",
+    "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\bodies.json": "573208fba0a0b8d7ff1b68405deec923d8027f3e0fbaa40d1cafef51b89c746f",
+    "C:\\projects\\robot-arm-lab\\src\\cad\\armold-mks-product-v2\\parameters.json": "0ad96a1d9222452a4059cade45bac97f06c09f9fad92426accfc000dc9593fb8",
+    "C:\\projects\\robot-arm-lab\\models\\armold-mks-concept-v1\\parameters.json": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+    "C:\\projects\\robot-arm-lab\\.dev\\urdf-draft-evidence\\preflight\\v2-current.3mf": "4c14a719ea78db252384e4bad22cb190eeed8a2b1b0018d8113c0f5dacafa0fa",
+    "C:\\projects\\robot-arm-lab\\src\\simulation\\urdf_draft\\assumptions.json": "162792e70bcf07ee93881a3e4d6a9dff49ab3d35f047bfaece70c0ea6e96575b"
+  },
+  "generator_files_sha256": {
+    "build.py": "9c3e60e1b4f0555b0004480de302557cfeef831434388e6ff8a4f58054dfe8b5",
+    "preview.py": "447887e199e515b38e40ada9d9de5081d68a08975d621c769bcadc33fcd88342",
+    "readme.py": "cd855641bccea534260aeab190f42782f8770d3ffd050a74a5f224fecbd03f8f",
+    "test_draft.py": "f0d6483f43093e1b18e14e7b672f9cfbc449afadc80023b7e15c2a5d006ed248",
+    "verify.py": "886555d0e2392a86ec3bc22861af170acbf0235aad57a87d49f800489ff5b887"
+  },
+  "export_cli_version": "0.23.0",
+  "preflight": [
+    {
+      "Path": "C:\\tools\\SolidCraft-0.18.2\\solidcraft-0.18.2-windows-x64-portable\\solidcraft-cli.exe",
+      "Hash": "3A8AD3262B659DF64DF7FA962309807ECA400B31DF352EB7F4A353381A32E3CB"
+    },
+    {
+      "Path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v2\\armold-type-mks-product-v2.solidcraft",
+      "Hash": "C784EE45BDBBBA0B62EAA1218EBABA6B276D8F259C31BAED8110174B96F84BC1"
+    }
+  ],
+  "geometry_scope": "Tessellation conversion and placement only; ring topology/strength/contact not accepted"
+}

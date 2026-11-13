@@ -1,0 +1,9 @@
+{
+  "date_kst": "2026-11-13",
+  "scope": "Offline HOST regression of the public can_reader144 copy",
+  "status": "PASS",
+  "checks": 322,
+  "compiler": "Zig C++ / C++17 / -O2 -Wall -Wextra -Werror",
+  "hardware_access": false,
+  "physical_CAN_retest": false
+}

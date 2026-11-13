@@ -1,0 +1,141 @@
+{
+ "what": "KG1 질량 · 무게중심(조립 · 닫힌 자세 · 손끝 FLAT) — 좌표 G(원점 = 팔 공구 플랜지에 닿는 면 가운데 · +z 다가가는 쪽)",
+ "total_mass_g": 183.1,
+ "com_mm": [
+  3.4,
+  -6.94,
+  35.69
+ ],
+ "grasp_centre_mm": [
+  0.0,
+  0.0,
+  103.0
+ ],
+ "grasp_cases_z_mm": [
+  82.25,
+  96.0,
+  103.0
+ ],
+ "grasp_note": "pad contact faces span z 58.5 ~ 106 (middle 82.25). Tray pick (G4) puts the pad tips near the tray, so a held object's centre sits at 106 - h/2: 103 = a 6 mm tall object (default, worst for the arm) · 96 = 20 mm · 82.25 = pad middle. Objects taller than 47.5 (106 - 58.5) touch the sleeves when the tips are on the tray (G4 object box check).",
+ "items": [
+  {
+   "name": "BASE",
+   "kind": "printed",
+   "mass_g": 46.45,
+   "com_mm": [
+    1.25,
+    -0.55,
+    16.35
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "JAW_A",
+   "kind": "printed",
+   "mass_g": 18.99,
+   "com_mm": [
+    7.94,
+    -6.53,
+    62.69
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "JAW_B",
+   "kind": "printed",
+   "mass_g": 25.55,
+   "com_mm": [
+    -10.64,
+    8.85,
+    49.64
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "PINION",
+   "kind": "printed",
+   "mass_g": 4.08,
+   "com_mm": [
+    0.0,
+    -0.28,
+    26.0
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "PAD_A_FLAT",
+   "kind": "printed",
+   "mass_g": 4.12,
+   "com_mm": [
+    -3.49,
+    3.66,
+    81.87
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "PAD_B_FLAT",
+   "kind": "printed",
+   "mass_g": 3.7,
+   "com_mm": [
+    3.36,
+    1.81,
+    86.27
+   ],
+   "source": "슬라이서(부품 하나 · 이 방향) · 부피 중심"
+  },
+  {
+   "name": "STS3215 서보",
+   "kind": "purchased",
+   "mass_g": 55.0,
+   "com_mm": [
+    12.5,
+    -25.0,
+    26.0
+   ],
+   "source": "Feetech C018 55 ± 1 g"
+  },
+  {
+   "name": "스플라인 혼(알루미늄)",
+   "kind": "purchased",
+   "mass_g": 3.0,
+   "com_mm": [
+    0.0,
+    -7.5,
+    26.0
+   ],
+   "source": "어림 — 6061 원판 Ø19.95 × 2.5 + 허브(재지 않음)"
+  },
+  {
+   "name": "탄소 관 6 × 4 × 140 (넷)",
+   "kind": "purchased",
+   "mass_g": 13.19,
+   "com_mm": [
+    0.0,
+    2.25,
+    52.0
+   ],
+   "source": "밀도 1.5 g/cm³(탄소 봉 판매 표기) × 부피"
+  },
+  {
+   "name": "나사 · 인서트(서보 M2 × 5 넷 · 피니언 M3 × 6 넷 · 손끝 M3 × 8 둥근머리 넷 · 팔 M3 × 10 넷 · 인서트 넷)",
+   "kind": "purchased",
+   "mass_g": 9.0,
+   "com_mm": [
+    0.0,
+    0.0,
+    40.0
+   ],
+   "source": "어림(강 M3 × 8 약 0.6 g) — 받으면 잼"
+  }
+ ],
+ "printed_mass_source": "printforge printprep(뱀부 스튜디오 2.8.2.61 · H2D 0.4 · 0.20 Standard · PLA Basic) — 부품 하나씩",
+ "parts_sha256": {
+  "BASE": "d95f225c9d51d2fb38a6e9ea84f9db98219aa8b18fcafea6ce4bf353b062fca7",
+  "JAW_A": "7d56f8b7f4672722e66bb164b42690170d6b282d605f2253f814b6e0249af7ac",
+  "JAW_B": "0b52d5efca5f7d75c9a3daa4ab6a8472a245ec70f893a9894a4878f627c97a3e",
+  "PINION": "e340ca623c9202c9ac1964af2394895217f6362434ce9617dabacfd93c23c294",
+  "PAD_A_FLAT": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c",
+  "PAD_B_FLAT": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14"
+ }
+}

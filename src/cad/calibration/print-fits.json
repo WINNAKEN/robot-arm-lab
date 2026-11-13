@@ -1,0 +1,386 @@
+{
+  "what": "인쇄 끼움 보정값 원장 — 프린터 · 재료마다 하나. 구멍 · 끼움 보정값은 여기에만 적고, 형상 생성기가 이 파일을 읽는다(parameters.json 에는 적지 않는다).",
+  "how_to_update": "1) 시험편 · 맞춤 확인 판 판정을 observations 에 원문 그대로 더한다 2) materials.<재료>.values 의 값과 status · source 를 고친다 3) history 에 한 줄(날짜 · 키 · 전 → 후 · 까닭) 4) 그 재료를 쓰는 생성기를 다시 돌린다(사이클로이드 = src/cad/cycloid-27-v1/make_all.py).",
+  "status_words": {
+    "placeholder": "임시값 — 아직 시험하지 않음",
+    "provisional": "시험했지만 확정 전(한쪽만 봄 · 실측 부정확 · 짝 부품 없음)",
+    "confirmed": "짝 부품으로 시험해 정함"
+  },
+  "printer": "Bambu Lab H2D 0.4 nozzle",
+  "materials": {
+    "PLA": {
+      "filament_profile": "Bambu PLA Basic @BBL H2D",
+      "process": "0.20mm Standard @BBL H2D",
+      "plate": "Textured PEI Plate",
+      "spool": "AMS A4 초록 PLA(2026-10-25 시험편 v1 출력)",
+      "note": "이 값들은 위 프린터 · 공정 · 필라멘트 기준이다. 재료 · 공정을 바꾸면 그 재료 항목을 새로 만들어 다시 잰다.",
+      "used_by": [
+        "src/cad/cycloid-27-v1 (parameters.json 의 fits_from 으로 자동 — values 만)",
+        "src/cad/kmjh-gripper-v1 (parameters.json 의 fits_from 으로 자동 — values 의 insert_hole_dia · m3_clearance_dia + pending 전부)"
+      ],
+      "values": {
+        "bearing_seat_extra": {
+          "value": 0.05,
+          "unit": "mm 지름",
+          "status": "provisional",
+          "means": "베어링 바깥 고리 자리(인쇄 구멍) = 베어링 바깥지름 + 이 값",
+          "source": "감속기 맞춤 확인 판 바깥 자리(6801 21.00 / 21.10 / 21.20 · 6800 19.00 / 19.10 / 19.20 · 실 베어링 · 2026-10-29 · 판정 원문 = observations) → 사용자 「작은값과 중간값 사이를 하는게 나아보이긴해」 = 0.05(MP12) — 0.05 자체는 아직 출력해 끼워 보지 않아 provisional · 6808 자리는 시험 없음 · 그 전 근거 = fit-coupons-v1 ② 608 자리 22.00 억지끼움 · 22.10 보통 끼움(2026-10-25)"
+        },
+        "bearing_bore_extra": {
+          "value": 0.0,
+          "unit": "mm 지름",
+          "status": "confirmed",
+          "means": "베어링 속 고리가 끼는 인쇄 축 = 베어링 안지름 + 이 값(손으로 밀어 끼움)",
+          "source": "감속기 맞춤 확인 판 속 고리 기둥(6801 11.90 / 12.00 / 12.10 · 6800 9.90 / 10.00 / 10.10 · 실 베어링 · 2026-10-29): 「둘 다 가운데」 = 안지름 그대로(+0.0 · MP12) · 캐리어 허브 Ø40(6808)은 시험 없음"
+        },
+        "pin_press_hole_dia": {
+          "value": 4.2,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "강철 다월 Ø4 압입 구멍(바닥판 고정 핀 · 캐리어 출력 핀)",
+          "source": "핀 구멍 시편 v1(MP13 · H2D 판 36b = 하늘 Bambu PLA Pure · 외부 스풀 · 왼쪽 노즐 · 세운 관통 구멍 4.10 ~ 4.45 · 0.05 간격 · 깊이 10 · 실 강철 Ø4 다월 · 2026-11-04 · 판정 원문 = observations): 「20은 되게 끼움맞춤인데 들어가긴하는데조금 빡세고」 = 4.20(들어가는 가장 작은 구멍) · 그 전 맞춤 확인 판 3.8 ~ 4.1 은 모두 작음. provisional — 윗면 · 밑면을 나눈 판정이 아님 · 실제 바닥판은 21.85 를 누름(시편 10) · 🔴 시험 재료 = 하늘 Pure(이 칸의 다른 값은 Basic) → 흰 Basic 시편 36 을 다음 판에 함께 뽑아 견줌 — 바닥판 · 캐리어에 실제로 눌러 본 뒤 확정"
+        },
+        "pin_slip_hole_dia": {
+          "value": 4.25,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "강철 다월 Ø4 미끄럼 구멍(덮개 — 손으로 씌우고 벗김) · 덮개 벽 2.0 때문에 4.27 이하",
+          "source": "핀 구멍 시편 v1(MP13 · 같은 판 36b · 하늘 Pure · 2026-11-04 · 판정 원문 = observations): 「25는딱 쉽게 들어갈정도」 = 4.25. provisional — 윗면 · 밑면을 나눈 판정이 아님(덮개 구멍은 판 쪽으로 열림) · 실제 덮개는 핀 28 개를 한꺼번에 씌움 · 한 칸 큰 4.30 은 4.27 을 넘어 벽 < 2.0 · 🔴 시험 재료 = 하늘 Pure(덮개는 흰 Basic 으로 뽑음 — 흰 시편 36 으로 견줌) — 덮개를 실제로 씌워 본 뒤 확정"
+        },
+        "d_bore_extra": {
+          "value": 0.2,
+          "unit": "mm 지름(평면은 절반)",
+          "status": "placeholder",
+          "means": "모터 D 축(Ø5 · 평면 2.0) 압입 구멍 = 축 + 이 값(아래 편심 축)",
+          "source": "사용자 결정(MP14 · 2026-11-04 · 원문 `.dev/mp14-evidence/user-decisions-mp14.json` · observations): 핀 구멍 시편 판정 뒤 「핀과 같이 모터축의 크기도 키워야할것같아」 → 질문 창 「핀과 같은 양 +0.20」 = 아래 편심 축 D 구멍 5.20(위 편심 축 = + cam_upper_bore_extra 0.1 = 5.30). 5.20 은 출력해 끼워 보지 않음(맞춤 확인 판 범위 4.90 ~ 5.10 밖) → placeholder · 그 전 = 맞춤 확인 판 D 구멍(4.90 / 5.00 / 5.10 · 평면 1.95 / 2.00 / 2.05 · 실 모터 축 · 2026-10-29 · 초록 Basic) 「가운데(5.00)」 · 편심 축은 하늘 Pure 로 뽑음"
+        },
+        "cam_upper_bore_extra": {
+          "value": 0.1,
+          "unit": "mm 지름(d_bore_extra 위에 더함)",
+          "status": "placeholder",
+          "means": "위 편심 축 D 구멍의 미끄럼 여유",
+          "source": "모터가 오면 정함"
+        },
+        "pilot_hole_dia": {
+          "value": 22.3,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "NEMA17 파일럿 보스 Ø22 구멍 — 헐거우면 모터 축이 핀 원 중심에서 비켜 원판 ↔ 핀 틈(0.0885)을 먹는다",
+          "source": "fit-coupons-v1 ① 버니어(부정확): 22.15→21.9 · 22.30→22.0~22.05 · 22.45→22.2(2026-10-25) — 모터로 확정"
+        },
+        "m3_clearance_dia": {
+          "value": 3.4,
+          "unit": "mm",
+          "status": "placeholder",
+          "means": "M3 나사 통과 구멍",
+          "source": "fit-coupons-v1 ③ C 구멍(3.2 / 3.4 / 3.6) — M3 나사 없음"
+        },
+        "insert_hole_dia": {
+          "value": 4.0,
+          "unit": "mm",
+          "status": "confirmed",
+          "means": "M3 열압입 인서트 구멍(인두로 넣음)",
+          "source": "fit-coupons-v1 ③ I: Ø4.0 에 M3 인서트가 잘 들어감(2026-10-25 확정) · Ø4.4 너무 큼 · Ø4.2 는 처음에 M4 인서트로 잘못 시험해 무효(M3 로는 아직 안 봄) · 쓴 인서트 = M3 · 길이 5.7 · 바깥지름 4.2(2026-10-26 사용자) — 다른 인서트면 다시 확인"
+        }
+      },
+      "pending": {
+        "note": "시험 전 새 키(MP8 그리퍼 KG1 · 2026-10-28) — values 와 따로 둔다: 사이클로이드 생성기는 values 전부를 읽어 지문을 cycloid.json 에 묶으므로 values 에 키를 더하면 MP6 을 다시 만들어야 한다. 그리퍼 시험편으로 판정하면 (1) 이 키를 values 로 옮기고 history 에 적고 (2) src/cad/kmjh-gripper-v1/parameters.json 의 fits_from 목록에서도 그 키를 pending → values 로 옮기고(안 옮기면 그리퍼 생성기 · 검사가 멈춤) (3) MP6 은 make_all.py · 그리퍼는 README 「다시 만들기」 차례로 다시 만든다. 그리퍼 생성기는 values 와 pending 을 함께 읽는다. MP19(2026-11-07): 판정한 넷(rod_slide_hole_dia · rod_press_hole_dia · m3_close_hole_dia · gear_thinning_pinion)은 사용자 결정 「시험값 넣고 다시 만든 뒤 (권장)」(설명 「원장에 판정 원문과 값(피니언 0.15 = 「4개중에 3번쨰로 큰애」 · 관 미끄럼 6.2 · 관 고정 6.1 · M3 3.2)을 적고 KG1 을 다시 만든 뒤 그 형상으로 도면 · 상태 provisional · pending 칸에 두어 감속기 지문은 안 바뀜」)대로 pending 에 둔 채 값 · 상태 · 출처만 고쳤다 — values 로 옮기는 것은 MP6 을 다시 만들 때 함께(그때 fits_from 목록도).",
+        "rod_slide_hole_dia": {
+          "value": 6.2,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "Ø6 탄소 관(6 × 4)이 미끄러지는 인쇄 구멍 — 턱(슬리브) · 눕힌 구멍(구멍 축이 판과 평행)",
+          "source": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 FIT_BLOCK 눕힌 관 구멍 5.9 / 6.0 / 6.1 / 6.2 / 6.3 / 6.4(길이 8 · 윗면 홈 1 ~ 6 = 순번 · MP19 · 판정 원문 = observations 2026-11-06): 「4번은 쑥 미끄러지고 흔들림 없음 5번부터 흔들림」 = 6.2(미끄러지고 흔들림 없는 가장 작은 구멍). provisional — 짝 = 사용자가 넣어 본 「6파이」(BOM G05 탄소 관 6 × 4 는 「살 것」 · 실물 종류 미확인) · 시편 길이 8 ↔ 턱 슬리브 양 끝 12 → 관이 오면 같은 시편으로 다시 보고 확정. 옛 출처(시험 전): 시험편 KG1_FIT 의 가로 구멍 5.9 ~ 6.4 로 정함 · 참고 시험편 ⑤ 누운 D 핀(인쇄물끼리)은 반지름 틈 0.10 억지 · 0.20 조금 헐거움"
+        },
+        "rod_press_hole_dia": {
+          "value": 6.1,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "Ø6 탄소 관을 끼워 고정하는 인쇄 구멍 — 받침 기둥 · 눕힌 구멍(손으로 밀어 넣고 빠지지 않음 · 필요하면 접착)",
+          "source": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 FIT_BLOCK 같은 구멍 줄(MP19 · 판정 원문 = observations 2026-11-06): 「2번은 안들어감 , 3번은 억지 끼워넣음」 = 6.1(6.0 은 안 들어감). provisional — 「빠지지 않음」 은 말이 없음 · 짝 = 「6파이」(실 탄소 관인지 미확인) → 헐거우면 README 조립 7 의 접착 · 관이 오면 다시 확인"
+        },
+        "m2_clearance_dia": {
+          "value": 2.4,
+          "unit": "mm",
+          "status": "placeholder",
+          "means": "M2 나사 통과 구멍(서보 몸체 고정 — 서보 위면의 M2 셀프태핑 자리로)",
+          "source": "시험 전 — M3 통과 3.4 와 같은 여유(+0.4)를 둠"
+        },
+        "gear_thinning_pinion": {
+          "value": 0.15,
+          "unit": "mm(피치선 위 피니언 이 두께에서 뺌)",
+          "status": "provisional",
+          "means": "인쇄 피니언 백래시 몫 — 맞물림 합계 원주 백래시 ≈ 이 값 + gear_thinning_rack",
+          "source": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 맞물림 지그 FIT_MESH + 랙 막대 A · B(gear_thinning_rack 0.10 그대로) + 시험 피니언 넷 0.05 / 0.10 / 0.15 / 0.20(MP19 · 판정 원문 = observations 2026-11-05 ~ 07): 3 잇 걸치기 실측 「11.2가 괜찬아보여」 · 「아무튼 값이 4개중에 3번쨰로 큰애야」 = 0.15(설계 W3 ≈ 11.449 − 0.940 × 깎음 — 셋째로 큼) · 11/05 「가장큰게 딱 맞아보인다?」 는 셋만 본 말(「그땐 피니언이 3개가 끝인줄알앗어 하나 더나와서 그래」). provisional — 시험 피니언에 구별 표시가 없어 실측 W 의 차례로 고름(이웃 차 약 0.047) · 실제 턱 랙과 서보로 돌려 본 뒤 확정. 옛 출처(시험 전): Sovol 「0.1 mm to 0.2 mm per gear … total … 0.2 mm to 0.4 mm」 · Unionfab 0.2 ~ 0.5 mm"
+        },
+        "gear_thinning_rack": {
+          "value": 0.1,
+          "unit": "mm(피치선 위 랙 이 두께에서 뺌)",
+          "status": "placeholder",
+          "means": "인쇄 랙 백래시 몫 — 턱 A · B 의 랙과 시험편 지그의 랙이 같이 쓴다",
+          "source": "시험 전 — 피니언 쪽으로 맞춘다(이 키는 시험 동안 바꾸지 않음). MP19: 판 38 맞물림 시험은 이 값 그대로 피니언 넷을 견줌(랙만의 판정 아님 · 상태 그대로) · 랙 막대는 「랙기어는 옆으로 눞혀놓은게 상대적으로 잘뽑혔고」 = FIT_RACK_A(눕힘 · 턱 A 방향)가 B(세움 · 턱 B 방향)보다 나음(observations 2026-11-06)"
+        },
+        "m3_close_hole_dia": {
+          "value": 3.2,
+          "unit": "mm",
+          "status": "provisional",
+          "means": "M3 나사 꼭 맞는 통과 구멍(세로) — 피니언을 혼에 다는 나사 넷: 구멍 틈만큼 피니언이 비키면 한쪽 랙 백래시가 준다(반지름 0.1 → 원주 0.07)",
+          "source": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 FIT_BLOCK 날개 세로 구멍 3.1 / 3.2 / 3.3(홈 1 ~ 3 · MP19 · 판정 원문 = observations 2026-11-06): 「1번은 안들어감 2번은 미끄러지고 안흔들림 3번은 살짝 흔들림」 = 3.2(값 그대로 · 상태만). provisional — 실 피니언을 혼에 조여 본 뒤 확정. 옛 출처(시험 전): ISO 273 가는 맞춤 M3 = 3.2"
+        },
+        "bearing_bore_extra_6818": {
+          "value": null,
+          "unit": "mm 지름",
+          "status": "placeholder",
+          "means": "6818(안지름 90) 속 고리가 끼는 인쇄 슬리브(팔 v2 BASE · 세워 출력 · 벽 4 mm) = 90 + 이 값 — 작은 베어링 기둥(Ø10 ~ 12)의 bearing_bore_extra 0.0 은 Ø90 에서 헛돎",
+          "source": "값 없음 — MP20 6818 슬리브 지름 단계 시편(models/sleeve-coupon-v1 · Ø90.10 / 90.20 / 90.30 / 90.40 · 높이 8 · 아래 모따기 0.5) 판정 전. 까닭 = 사용자 11/12 「어제 뽑던거 실패했어 그리고 오늘 베어링 6818왔는데 외경은 쫌 그래도 맞는데 내경은좀 작아서 조금 헛도는경향이잇어」(BASE = H2D 판 55 · 흰 Bambu PLA Pure · 벽 classic 4 · 채움 40 % 자이로이드 · 슬리브 Ø90.00) · 원문 = observations 2026-11-12. 판정 뒤 값을 넣고 팔 v2 가 이 키를 읽게 하는 일(fit_keys · build_arm.py 슬리브 · BASE · 시편 다시 만들기)은 다음 단계 — 사용자에게 다시 묻는다"
+        }
+      }
+    }
+  },
+  "observations": [
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ② 608 자리 22.00 / 22.10 / 22.20 / 22.30",
+      "said": "자 아까 베어링 꼽을수있는거608경우에는 0.1은 일반적으로 + 공차줫을정도고 0.0 은 좀 억지끼움이였어"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ③ 인서트 I Ø4.0 / 4.2 / 4.4(왼쪽 → 오른쪽)",
+      "said": "일단 오른쪽 가장큰건너무 컷고 중간건 가이드가 되진못햇어"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ④ 링 Ø40.20 / 40.40 / 40.60(반지름 틈 0.10 / 0.20 / 0.30) · 세로 출력",
+      "said": "헐거움 / 헐거움 / 헐거움"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ⑤ D 구멍 1 / 2 / 3(반지름 틈 0.10 / 0.20 / 0.30) · 누운 핀 둘",
+      "said": "1 = d핀이2개인데 하나는 꽉물려서 꽉이고 하나는 살짞 안들어갈랴는거 겨우밀어넣는수준 · 2 = 아까 두핀 중에 하나는 조금 헐겂게 들어가고하나는 조금더 덜 헐거움 · 3 = 헐거움"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ① 파일럿 판 22.15 / 22.30 / 22.45 · 버니어 안지름",
+      "said": "22.15는 내경을 버니어로잿을떄(정확하지는않아) 21.9 / 22.3으로나온건 22.0~22.05? / 22.45 는 22.2"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "coupon": "fit-coupons-v1 ③ 인서트 I Ø4.0 · 앞의 Ø4.2 시험 정정",
+      "said": "Ø4.0 인서트도 잘 들어가네 아까 4.2를 테스트를 실수로 m4로 했나봐"
+    },
+    {
+      "date": "2026-10-26",
+      "material": "PLA",
+      "coupon": "(가진 M3 열압입 인서트의 치수)",
+      "said": "인서트는 M3 길이 5.7 바깥지름 4.2야"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "coupon": "감속기 맞춤 확인 판(MP6 FIT_STRIP) 바깥 자리 6801 21.00 / 21.10 / 21.20 · 6800 19.00 / 19.10 / 19.20(왼쪽 → 오른쪽) + 속 고리 기둥 · 실 베어링 6801 · 6800",
+      "said": "베어링도 끼웟는데 외치쪽은 -> 커가고 내치는 아랫쪽으로가면서 커가는것같은데 \n\n일단 작게만든건 억지로 끼우겟다면 끼여 들어가 망치로 톡톡하면 중간값은 잘들어가고 큰값은 너무 헐거워  전체적으로그래서 작은값과 중간값 사이를 하는게 나아보이긴해"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "coupon": "감속기 맞춤 확인 판 속 고리 기둥 6801 11.90 / 12.00 / 12.10 · 6800 9.90 / 10.00 / 10.10(아래 → 위)",
+      "said": "「속 고리 기둥도 가운데 것이 가장 잘 맞았나요?」 → 「둘 다 가운데」"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "coupon": "감속기 맞춤 확인 판 D 구멍 4.90 / 5.00 / 5.10(왼쪽 → 오른쪽) · 실 모터 축(MKS 42D)",
+      "said": "「판의 D 구멍 셋 중 모터 축에 가장 잘 맞는 것은 어느 것인가요?」 → 「가운데(5.00)」"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "coupon": "감속기 맞춤 확인 판(MP6 FIT_STRIP) 핀 구멍 3.8 / 3.9 / 4.0 / 4.1 · 실 강철 Ø4 다월",
+      "said": "우선 핀이왔는데 전에 테스트핀넣으라고 줫던거 가장큰것도때려야지 겨우겨우들어가 거의안들어간다고봐도 무방"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "coupon": "핀 구멍 시편 v1(MP13 · H2D 판 36b = 하늘 Bambu PLA Pure · 외부 스풀 · 왼쪽 노즐 — 사용자 답 「36b 하늘 Pure」) 세운 관통 구멍 4.10 / 4.15 / 4.20 / 4.25 / 4.30 / 4.35 / 4.40 / 4.45(왼쪽 → 오른쪽 · 숫자 = 「4.」 뒤 두 자리) · 깊이 10 · 실 강철 Ø4 다월",
+      "said": "출력과 테스트완료했어 20은 되게 끼움맞춤인데 들어가긴하는데조금 빡세고 25는딱 쉽게 들어갈정도"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "coupon": "(시편 없음 — 핀 구멍 시편 36b 판정 뒤 사용자 결정 · 실 모터 축 Ø5 D · 질문 창 답 = 「핀과 같은 양 +0.20」)",
+      "said": "아 이거 핀과 같이 모터축의 크기도 키워야할것같아 같은 비율이면될것같고 축의 길이는 모터 턱22파이 면에서 19.5 mm 정도이고 5파이축에 디컷 쪽의 길이는 4.5mm 고 디컷 자체의 길이는 대략 2.5~3mm 되는것 같아"
+    },
+    {
+      "date": "2026-11-05",
+      "material": "PLA",
+      "coupon": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 맞물림 지그 + 시험 피니언(이때 사용자는 셋만 봄 — 판 38 에서 0.20 하나만 따로 놓였음)",
+      "said": "그리고 그리퍼 테스트는 센터기어중에 어느게 가장 나은지 확인하는거지? 가장큰게 딱 맞아보인다?>"
+    },
+    {
+      "date": "2026-11-06",
+      "material": "PLA",
+      "coupon": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 FIT_BLOCK — 눕힌 관 구멍 5.9 ~ 6.4(윗면 홈 1 ~ 6 = 순번) · 날개 세로 M3 구멍 3.1 / 3.2 / 3.3(홈 1 ~ 3) · 받은 세션 = 다른 Claude 세션(그 세션은 원장에 안 적음)",
+      "said": "6파이는 2번은 안들어감 , 3번은 억지 끼워넣음 4번은 쑥 미끄러지고 흔들림 없음 5번부터 흔들림,\n m3 은 1번은 안들어감 2번은 미끄러지고 안흔들림 3번은 살짝 흔들림"
+    },
+    {
+      "date": "2026-11-06",
+      "material": "PLA",
+      "coupon": "그리퍼 시험편 KG1_FIT(H2D 판 38 · 2026-11-05 출력 · 흰 Bambu PLA Basic · AMS A1 · 오른쪽 노즐 · 시험편 여덟만 arachne 벽 — 판의 나머지는 classic) 의 랙 막대 A(눕힘) · B(세움) + 맞물림 지그 + 시험 피니언 넷(0.05 / 0.10 / 0.15 / 0.20 · 구별 표시 없음)",
+      "said": "그리퍼 관련 테스트 출력은 일단 랙기어는 옆으로 눞혀놓은게 상대적으로 잘뽑혔고 피니언은 3개 치 를 물려서 하면 11.2가 괜찬아보여"
+    },
+    {
+      "date": "2026-11-06",
+      "material": "PLA",
+      "coupon": "(같은 시험 — 질문 창 · 선택지 밖 답)",
+      "said": "「그리퍼 시험편 결과 고맙습니다. 랙은 눕혀 뽑은 막대(A)가 낫다고 기록하겠습니다. 피니언의 「11.2」 는 무엇의 값인가요? (시험 피니언 넷은 이 두께를 0.05 / 0.10 / 0.15 / 0.20 뺀 것이고, 시험 지그는 핀 중심에서 랙 피치선까지 13.5 로 만들었습니다.)」 → 「피니언의 기어칫  3개를 버니어로 물렸을때 나오는값을나한테 달라했는데?\n아무튼 값이 4개중에 3번쨰로 큰애야」"
+    },
+    {
+      "date": "2026-11-07",
+      "material": "PLA",
+      "coupon": "(같은 시험 — 11/05 말과 11/06 판정이 어긋난 까닭 · FIT_BLOCK 값의 출처 · 턱 B 방향)",
+      "said": "그땐 피니언이 3개가 끝인줄알앗어 하나 더나와서 그래 ,\n핏블록은 프린트포지가 달라고해서 한거고 테스트값은 해당 프로그램에 들어갓어 \n턱은 못봐서 뭐가 좋을지 모르겟네 ?"
+    },
+    {
+      "date": "2026-11-12",
+      "material": "PLA",
+      "coupon": "(시편 아님 — 실제 부품) 팔 v2 J1 BASE 슬리브 Ø90.00 · TURRET 구멍 Ø115.05 에 도착한 6818ZZ 를 끼움 · H2D 판 55 · 흰 Bambu PLA Pure",
+      "said": "어제 뽑던거 실패했어 그리고 오늘 베어링 6818왔는데 외경은 쫌 그래도 맞는데 내경은좀 작아서 조금 헛도는경향이잇어"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-23",
+      "material": "PLA",
+      "key": "(전부)",
+      "from": null,
+      "to": "임시값",
+      "why": "MP4 · MP6 의 처음 값(시험 전)"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "key": "bearing_seat_extra",
+      "from": 0.0,
+      "to": 0.1,
+      "why": "시험편 ② 608: 0.0 억지끼움 · +0.1 보통 끼움"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "key": "insert_hole_dia",
+      "from": 4.2,
+      "to": 4.0,
+      "why": "시험편 ③: 4.4 너무 큼 · 4.2 잡아 주지 못함"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "key": "pilot_hole_dia",
+      "from": 22.3,
+      "to": 22.3,
+      "why": "시험편 ① 버니어로 22.0 ~ 22.05 — 딱 맞는 쪽이라 그대로(모터로 확정)"
+    },
+    {
+      "date": "2026-10-25",
+      "material": "PLA",
+      "key": "insert_hole_dia",
+      "from": 4.0,
+      "to": 4.0,
+      "why": "Ø4.0 에 M3 인서트가 잘 들어감 → 상태 확정. 앞의 「Ø4.2 잡아 주지 못함」 은 M4 인서트로 잘못 시험한 것이라 무효"
+    },
+    {
+      "date": "2026-10-26",
+      "material": "PLA",
+      "key": "insert_hole_dia",
+      "from": 4.0,
+      "to": 4.0,
+      "why": "값은 그대로 — 확정에 쓴 인서트의 치수(M3 · 길이 5.7 · 바깥지름 4.2)를 근거에 적음"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "key": "bearing_seat_extra",
+      "from": 0.1,
+      "to": 0.05,
+      "why": "MP12 · 맞춤 확인 판 6801 · 6800 바깥 자리(실 베어링) — 사용자 「작은값과 중간값 사이」"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "key": "bearing_bore_extra",
+      "from": 0.0,
+      "to": 0.0,
+      "why": "MP12 · 기둥 「둘 다 가운데」 → 값 그대로 · 상태 placeholder → confirmed"
+    },
+    {
+      "date": "2026-10-29",
+      "material": "PLA",
+      "key": "d_bore_extra",
+      "from": 0.0,
+      "to": 0.0,
+      "why": "MP12 · D 구멍 「가운데(5.00)」 → 값 그대로 · 상태 placeholder → confirmed"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "key": "pin_press_hole_dia",
+      "from": 3.95,
+      "to": 4.2,
+      "why": "MP13 · 핀 구멍 시편 36b(하늘 Pure · 실 다월): 「20은 … 들어가긴하는데조금 빡세고」 · 맞춤 확인 판 3.8 ~ 4.1 은 모두 작음 · placeholder → provisional"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "key": "pin_slip_hole_dia",
+      "from": 4.1,
+      "to": 4.25,
+      "why": "MP13 · 핀 구멍 시편 36b(하늘 Pure · 실 다월): 「25는딱 쉽게 들어갈정도」 · placeholder → provisional"
+    },
+    {
+      "date": "2026-11-04",
+      "material": "PLA",
+      "key": "d_bore_extra",
+      "from": 0.0,
+      "to": 0.2,
+      "why": "MP14 · 사용자 「핀과 같이 모터축의 크기도 키워야할것같아」 → 「핀과 같은 양 +0.20」 · confirmed → placeholder(5.20 은 시험 전)"
+    },
+    {
+      "date": "2026-11-07",
+      "material": "PLA",
+      "key": "rod_slide_hole_dia",
+      "from": 6.25,
+      "to": 6.2,
+      "why": "MP19 · FIT_BLOCK(판 38 · 흰 Basic): 「4번은 쑥 미끄러지고 흔들림 없음」 = 6.2 · placeholder → provisional · pending 칸 그대로(사용자 결정 「시험값 넣고 다시 만든 뒤 (권장)」)"
+    },
+    {
+      "date": "2026-11-07",
+      "material": "PLA",
+      "key": "rod_press_hole_dia",
+      "from": 6.05,
+      "to": 6.1,
+      "why": "MP19 · FIT_BLOCK(판 38 · 흰 Basic): 「3번은 억지 끼워넣음」 = 6.1 · placeholder → provisional · pending 칸 그대로(사용자 결정 「시험값 넣고 다시 만든 뒤 (권장)」)"
+    },
+    {
+      "date": "2026-11-07",
+      "material": "PLA",
+      "key": "m3_close_hole_dia",
+      "from": 3.2,
+      "to": 3.2,
+      "why": "MP19 · FIT_BLOCK 날개(판 38 · 흰 Basic): 「2번은 미끄러지고 안흔들림」 = 3.2 → 값 그대로 · 상태 placeholder → provisional · pending 칸 그대로(사용자 결정 「시험값 넣고 다시 만든 뒤 (권장)」)"
+    },
+    {
+      "date": "2026-11-07",
+      "material": "PLA",
+      "key": "gear_thinning_pinion",
+      "from": 0.1,
+      "to": 0.15,
+      "why": "MP19 · 맞물림 지그 + 시험 피니언 넷(판 38 · 흰 Basic): 「아무튼 값이 4개중에 3번쨰로 큰애야」 = 0.15 · placeholder → provisional · pending 칸 그대로(사용자 결정 「시험값 넣고 다시 만든 뒤 (권장)」)"
+    }
+  ]
+}

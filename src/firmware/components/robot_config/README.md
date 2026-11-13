@@ -1,0 +1,8 @@
+# ST3-C shared configuration codec
+
+Strict fixed-storage V1.0.9 config schema extracted from robot_boot, with source-compatible Boot aliases. Reads00/code/checksum, exact echoed-setting width/checksum, unsupportedFFFF rejection; settings82/84/8A/8B/8C/4A/98 and explicit Boot-only heartbeat1000 construction. No allocation, clock, I/O, version inference or runtime setting writes.
+
+ConfigSample carries actual valid/value/confirmedTX/dequeue, [2][7] fixed storage. Private BootEvidence controls admission; this schema alone grants nothing. Run and Boot both depend on this core-only module, avoiding a dependency cycle. Existing handwritten codec/Boot tests and runtime schema mismatch tests execute actual extracted code. Host validation only; target SDK and hardware NOT_RUN in C. Independent L4 pending.
+### ST3-C R2 validation snapshot (independent L4R2 pending)
+
+Runtime28fixtures/1527570assertions,5 compiled failing behavioral mutants; oldBoot46/7292+3 andRun51/3427+2 pass. Actual wire RX-age observer now kills the original urgent-only priority mutation (bad config dispatch age3402 vs diag250; positive maximum159). Shared production freshness/headroom predicates, used by actual actor, pin4000/400/overflow while real seed/EDF/one-entry nonrenew/late reply/admission traces pin consumer use. PostFD2 real config response cannot replace new positions; completion follows genuine proof515ms later. Exact actorTTL/headroom race is represented by the explicitly reviewer-permitted predicate+consumer alternative, not falsely claimed isolated wire crossing. See tests/runtime/README.md for exact evidence/limits. Historical R1 survivor gap remains in preserved R1 snapshot; current R2 awaits independent disposition.

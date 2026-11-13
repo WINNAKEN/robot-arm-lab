@@ -1,0 +1,195 @@
+{
+ "all_pass": true,
+ "rows": [
+  {
+   "id": "C1",
+   "check": "profile valid · simple (no cusp or loop) · valley > pin + C · chord error ≤ limit (recomputed)",
+   "pass": true,
+   "detail": {
+    "stored_calc_equals_recomputed": true,
+    "first_difference": null,
+    "points": 6912,
+    "chord_error_mm": 0.0008842953367380815,
+    "lobe_tip_min_curvature_radius": 1.3570835277275235,
+    "valley_min_curvature_radius": 2.2354819696352175,
+    "valley_vs_pin_plus_clearance": 0.13548196963521741
+   }
+  },
+  {
+   "id": "C2",
+   "check": "kinematics: guaranteed gap > 0 (both discs · ring and output pins · recomputed)",
+   "pass": true,
+   "detail": {
+    "stored_calc_equals_recomputed": true,
+    "first_difference": null,
+    "disc1": {
+     "ring_pin_gap_guaranteed_min": 0.0885,
+     "output_pin_gap_guaranteed_min": 0.0956
+    },
+    "disc2": {
+     "ring_pin_gap_guaranteed_min": 0.0885,
+     "output_pin_gap_guaranteed_min": 0.0956
+    }
+   }
+  },
+  {
+   "id": "C3",
+   "check": "walls ≥ min material (34 items) · a standard screw length fits every screwed joint (4)",
+   "pass": true,
+   "detail": {
+    "stored_calc_equals_recomputed": true,
+    "first_difference": null,
+    "walls_failed": {},
+    "screws_failed": [],
+    "min_wall_mm": 2.0,
+    "screws": {
+     "motor": 10,
+     "cap": 30,
+     "retainer": 8,
+     "flange": 8
+    }
+   }
+  },
+  {
+   "id": "C4",
+   "check": "moving-vs-fixed gaps > 0 (22 items) · each bearing shoulder touches its own ring only (10)",
+   "pass": true,
+   "detail": {
+    "stored_calc_equals_recomputed": true,
+    "first_difference": null,
+    "gaps_failed": {},
+    "ring_contacts_failed": [],
+    "min_gap_mm": 0.4,
+    "min_ring_margin_mm": 0.45,
+    "min_own_ring_overlap_mm": 0.3
+   }
+  },
+  {
+   "id": "C5",
+   "check": "assembly computed here from the committed part STLs at 0 · 45 · 90° — every part pair · 28 fixed pins · 6 output pins · bearing spaces · motor D shaft / pilot / body / screw heads × every part ≤ 0.01 mm3 · bearing ring end faces: no other-speed part, designed supports present (the stored SolidCraft record and fingerprints can only fail it)",
+   "pass": true,
+   "detail": {
+    "error": null,
+    "build_record_problems": [],
+    "thetas": [
+     0.0,
+     45.0,
+     90.0
+    ],
+    "pairs_part_part": 135,
+    "pairs_reference": 1350,
+    "ring_face_forbidden": 372,
+    "ring_face_required": 30,
+    "rows": 1887,
+    "max_part_part_mm3": 1.387223669269133e-13,
+    "max_reference_mm3": 1.6924988835561802e-16,
+    "max_ring_face_forbidden_mm3": 0.0,
+    "min_ring_face_required_mm3": 0.26844727662364404,
+    "failed": [],
+    "fit_gap_mm": 0.04,
+    "limit_mm3": 0.01
+   }
+  },
+  {
+   "id": "C6",
+   "check": "declared holes and bearing-seat shafts by solid containment on the committed STLs — hole core empty · skin full · blind floor full · each hole's way in empty · shaft shell full · the bearing's whole way in empty (133 holes · 10 shafts from the generator)",
+   "pass": true,
+   "detail": {
+    "error": null,
+    "holes": 133,
+    "shafts": 10,
+    "failed": [],
+    "worst": {
+     "core_material_mm3": 0.0,
+     "skin_missing_mm3": 2.842170943040401e-14,
+     "floor_missing_mm3": 6.229266021051671e-05,
+     "entry_path_material_mm3": 0.0,
+     "shell_missing_mm3": 1.4210854715202004e-14,
+     "insertion_path_material_mm3": 0.0
+    },
+    "fit_gap_mm": 0.04,
+    "shell_mm": 0.2,
+    "path_beyond_part_mm": 1.0,
+    "floor_mm": 0.3,
+    "limit_mm3": 0.01
+   }
+  },
+  {
+   "id": "C7",
+   "check": "print plate made from the current part STLs · fits · row width ≤ 280 · no overlaps · watertight · printprep ready for this plate STL (sha256 re-hashed) · no advised support",
+   "pass": true,
+   "detail": {
+    "plate_size_mm": [
+     263.2,
+     247.1,
+     23.9
+    ],
+    "row_width_max_mm": 280.0,
+    "row_width_used_mm": 280.0,
+    "plate_stl_sha256": "4ea2d01fefb28a5b5cb8c05826f5dc73bd4da2a4a72a615d59cb4fefe294fe13",
+    "plate_report_and_prep_match_the_file": true,
+    "plate_made_from_current_part_stls": true,
+    "plate_part_list_matches_generator": true,
+    "printprep": {
+     "verdict": "ready",
+     "support": {
+      "mode": "auto",
+      "advised_by_studio": false,
+      "enabled": false
+     },
+     "estimate": {
+      "print_time_s": 13738,
+      "filament_g": 116.91,
+      "filament_m": 38.57,
+      "support_generated": false,
+      "max_z_mm": 23.8
+     }
+    }
+   }
+  },
+  {
+   "id": "C8",
+   "check": "loads (rough · record only)",
+   "pass": true,
+   "detail": {
+    "stored_calc_equals_recomputed": true,
+    "first_difference": null,
+    "wrist_max": {
+     "T_Nm": 3.8770730983909223,
+     "output_pin_force_N_3pin": 80.77235621647755,
+     "output_pin_force_N_1pin": 242.31706864943263,
+     "pla_pressure_MPa_3pin": 3.4815670782964445,
+     "pla_pressure_MPa_1pin": 10.444701234889333,
+     "pla_pressure_note": "contact length = the shorter output-pin engagement of the two discs (output_pin_engagement_mm)",
+     "pin_root_bending_Nm_3pin_disc1_arm": 0.9854227458410258,
+     "pin_root_bending_Nm_1pin_disc1_arm": 2.9562682375230773,
+     "pin_root_bending_Nm_3pin_disc2_arm": 0.4200162523256832,
+     "eccentric_reaction_scale_N": 205.13614277200648,
+     "two_disc_couple_scale_Nm": 1.435952999404045
+    },
+    "shoulder_J2_max_not_this_size": {
+     "T_Nm": 28.318991169998135,
+     "output_pin_force_N_3pin": 589.9789827082944,
+     "output_pin_force_N_1pin": 1769.9369481248834,
+     "pla_pressure_MPa_3pin": 25.43012856501268,
+     "pla_pressure_MPa_1pin": 76.29038569503804,
+     "pla_pressure_note": "contact length = the shorter output-pin engagement of the two discs (output_pin_engagement_mm)",
+     "pin_root_bending_Nm_3pin_disc1_arm": 7.197743589041191,
+     "pin_root_bending_Nm_1pin_disc1_arm": 21.593230767123572,
+     "pin_root_bending_Nm_3pin_disc2_arm": 3.0678907100831307,
+     "eccentric_reaction_scale_N": 1498.3593211639225,
+     "two_disc_couple_scale_Nm": 10.488515248147454
+    },
+    "arms_mm": {
+     "carrier_underside_to_disc1_mid": 12.199999999999998,
+     "carrier_underside_to_disc2_mid": 5.199999999999999,
+     "disc_mid_spacing": 6.999999999999998
+    },
+    "output_pin_engagement_mm": {
+     "disc1": 5.8000000000000025,
+     "disc2": 5.999999999999998
+    }
+   }
+  }
+ ]
+}

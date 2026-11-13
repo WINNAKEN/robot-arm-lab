@@ -1,0 +1,29 @@
+{
+  "units": "mm",
+  "status": "CONCEPT_ONLY_NOT_FOR_FABRICATION",
+  "motor_frame_mm": 42.3,
+  "motor_length_mm": 40,
+  "driver_width_mm": 46,
+  "driver_depth_mm": 18,
+  "connector_clearance_mm": 12,
+  "base_width_mm": 140,
+  "base_thickness_mm": 12,
+  "joint1_height_mm": 96,
+  "shoulder_rise_mm": 78,
+  "upper_arm_mm": 165,
+  "forearm_mm": 140,
+  "wrist_offsets_mm": [78, 140],
+  "reducer_diameters_mm": [90, 104, 90, 78, 78, 78],
+  "reducer_depth_mm": 36,
+  "pose_deg": [15, -50, 70, 15, 25, -10],
+  "axis_parent_zero": [[0,0,1],[0,1,0],[0,1,0],[1,0,0],[0,1,0],[1,0,0]],
+  "assumptions": [
+    "Only two MKS SERVO42D CAN MT motor/driver sets are ordered; six depicted units describe a future configuration.",
+    "Actual ordered motor length, shaft, rear driver/heatsink and connectors are not measured. All motor/driver boxes are replaceable assumptions.",
+    "Housing diameters changed from the initial 80/68 mm proposal to 90/104/78 mm for a readable concept and no implied tight fit around reference discs.",
+    "J5 to J6 offset increased from 72 to 140 mm after exact kernel interference found the roughly 81 mm rear MKS stack penetrating J5. This visibly lengthens the wrist.",
+    "Reference cycloidal ratios and disc diameters are not verified reductions or matched internals for this concept.",
+    "The display pose is not a collision-free workspace or fabrication approval. Wrist axes are deliberately offset, not a spherical wrist.",
+    "Native dimensions are editable; geometry placement and pose are regenerated from this file. Native joints use zero at the displayed pose."
+  ]
+}

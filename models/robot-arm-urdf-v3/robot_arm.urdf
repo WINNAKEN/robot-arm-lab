@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<!--
+  robot: kmjh_arm_v3_kg1_articulated_v3
+  consumers: CAD Viewer; Isaac import/motion evidence separately owned by 069.
+  canonical: this XML, authored directly. assets.py computes meshes/numbers only.
+  units: metres, kilograms, seconds, radians. Right handed; Base +Z up.
+  dimensional sources: v1 kinematics.json and parameters.json; v3 bodies.json/STL;
+  MP9 rev1 assembly.json g_to_link6_local. Detailed input hashes: provenance.json.
+  MP10 J5 neck decision made by user; standalone NOT_INTEGRATED into MP9 full arm.
+  MP11 exploded illustrations are not dimensional sources. Ring review deferred.
+  zero: J1..J6=0 is displayed CAD [15,-50,70,15,25,-10] deg, not physical zero.
+  angle: geometric radians = URDF delta radians + displayed CAD angle.
+  positive: right hand about child/joint +Z for J1, +Y for J2/J3/J5,
+  +X for J4/J6, as existing CAD axes; no motor/encoder sign inferred.
+  Base: physical root, CAD world frame; visual meshes/Base.stl in metres.
+  Link1..Link6: physical frames at corresponding Jn CAD display origin;
+  axes are corresponding v1 R_child columns, parent joint Jn.
+  KG1: fixed F-group only, G frame from MP9; parent KG1_mount.
+  G +X=Link6 +Y, G +Y=Link6 +Z, G +Z=Link6 +X; mount at Link6 +X0.028m.
+  KG1_A: jaw A, FLAT pad and its screws; parent KG1_slide_A, G-parallel axes.
+  KG1_B: jaw B, FLAT pad and its screws; parent KG1_slide_B, G-parallel axes.
+  KG1_R: pinion, spline, horn and screws; parent KG1_pinion.
+  KG1_R origin is G(0,0,.026)m; axes rotated about +Y by -20/13.5rad at zero.
+  zero: all joint positions0 preserve CAD u20mm/gap40mm; FLAT pads.
+  one logical command opening_m is full finger gap0..0.094m, not raw joint q.
+  d=opening_m/2-.020m; slide_A=d, slide_B=d, pinion=-d/.0135rad.
+  slide_A positive opens toward G-X; slide_B positive opens toward G+X.
+  pinion positive is right hand about G+Y; CAD absolute pinion angle=-u/.0135.
+  slide_B mimics slide_A multiplier1 offset0; pinion multiplier-74.07407407407408
+  offset0. Physical movable joints9, independent coordinates7 including6 arm.
+  CAD source verify_gripper.place/sign_check supplies signs, centre and ratio.
+  No contact gear constraint is implied by URDF affine mimic or command coupling.
+  tool0: frame only, no mass/geometry; KG1 +Z0.103m, nominal grasp point,
+  J6 axial distance0.131m. Not a calibrated physical TCP.
+  visual: one combined mesh per physical link, saved in its own frame in metres;
+  visual origin identity, scale1. A/B closed-pose meshes; R closed mesh centered
+  at its rotation axis. Joint origins encode u20 exactly once, without mesh offsets.
+  Arm47 CAD bodies; KG1 six printed parts and
+  41 purchased-item reference primitives from existing MP9 assembly computation.
+  inertial/collision origins: physical-link local AABB centre, zero RPY.
+  inertia: uniform solid AABB m*(b*b+c*c)/12, computed from actual saved STL.
+  ASSUMPTION: arm masses [1.2,.65,.7,.65,.4,.35,.2]kg are old starter guesses.
+  ASSUMPTION: KG1 mass0.1842kg is split across F/A/B/R, never duplicated on F.
+  ASSUMPTION: source printed masses preserved; servo55g split F54.8/Rspline.2g;
+  horn3g R, rods13.19g F; screws9g split F16/A4/B4/R9 of33 screw primitives.
+  These unweighed group masses sum184.2g; full arm total4.3342kg.
+  ASSUMPTION: COM uses actual group saved-mesh AABB, not original closed-pose COM.
+  ASSUMPTION: every inertia and COM is a box placeholder, not physical properties.
+  ASSUMPTION: collision is one AABB per physical group; may create false contacts,
+  including fixed guide-rod box versus moving jaws. No self-contact acceptance.
+  ASSUMPTION: gripper effort10N/0.2Nm, velocity.02m/s/2rad/s and damping.05,
+  friction0 are starter simulation caps, not STS3215 or gearbox ratings.
+  ASSUMPTION: J1/J2/J3/J4/J6 limits +/-170deg delta are illustrative only.
+  ASSUMPTION: J5 delta[-135,85]deg = CAD absolute[-110,110]deg from MP9 sampled
+  screening, not continuous collision proof or a physical safe operating range.
+  ASSUMPTION: effort [3,6,5,2,2,1]Nm, velocity0.5rad/s, damping0.05 are starter
+  simulation caps, not MKS/reducer ratings. Friction0 is also assumed.
+  UNKNOWN: physical zeros, motor signs, CAN IDs, encoder scales, measured ratios.
+  NOT_RUN in 068: Isaac/USD/physics/contact/gravity/trajectory/RL/hardware.
+  No physics acceptance is inherited from 065, which uses the frozen older model.
+-->
+<robot name="kmjh_arm_v3_kg1_articulated_v3">
+  <link name="Base">
+    <inertial>
+      <origin xyz="0 0 0.05700000002980232" rpy="0 0 0" />
+      <mass value="1.2" />
+      <inertia ixx="0.0039892001499414464" iyy="0.0039892001499414464" izz="0.005379200297164921" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="base_gray"><color rgba="0.42 0.45 0.50 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05700000002980232" rpy="0 0 0" />
+      <geometry>
+        <box size="0.164000004529953 0.164000004529953 0.11400000005960464" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link1">
+    <inertial>
+      <origin xyz="0 -0.023400001227855682 0.07399999722838402" rpy="0 0 0" />
+      <mass value="0.65" />
+      <inertia ixx="0.0016931547076061597" iyy="0.0012653333090543758" izz="0.0015995547802364054" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white"><color rgba="0.94 0.95 0.96 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.023400001227855682 0.07399999722838402" rpy="0 0 0" />
+      <geometry>
+        <box size="0.10400000214576721 0.13680000603199005 0.1119999960064888" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link2">
+    <inertial>
+      <origin xyz="0.08599999360740185 0.0368999969214201 1.862645149230957e-09" rpy="0 0 0" />
+      <mass value="0.7" />
+      <inertia ixx="0.0011757690733832746" iyy="0.004060233400514725" izz="0.0042910023205650445" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="0.08599999360740185 0.0368999969214201 1.862645149230957e-09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.24799999967217445 0.10979999974370003 0.09000000730156898" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link3">
+    <inertial>
+      <origin xyz="0.06000000797212124 -0.012399997562170029 -1.862645149230957e-09" rpy="0 0 0" />
+      <mass value="0.65" />
+      <inertia ixx="0.000901974821300139" iyy="0.002410417377762549" izz="0.002653291982992853" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="0.06000000797212124 -0.012399997562170029 -1.862645149230957e-09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.19600002840161324 0.10280000418424606 0.0780000127851963" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link4">
+    <inertial>
+      <origin xyz="0.06750000268220901 -0.03689999785274267 1.862645149230957e-09" rpy="0 0 0" />
+      <mass value="0.4" />
+      <inertia ixx="0.0006046682375349116" iyy="0.0005295002879500804" izz="0.000728568237546823" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link4.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="0.06750000268220901 -0.03689999785274267 1.862645149230957e-09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.09900002181529999 0.10980001278221607 0.0780000276863575" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link5">
+    <inertial>
+      <origin xyz="0.06300000287592411 0.007399996742606163 1.862645149230957e-09" rpy="0 0 0" />
+      <mass value="0.35" />
+      <inertia ixx="0.0004286288467496687" iyy="0.0012303672203899088" izz="0.0013040958151936796" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link5.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="0.06300000287592411 0.007399996742606163 1.862645149230957e-09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1900000385940075 0.09280000999569893 0.0780000276863575" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Link6">
+    <inertial>
+      <origin xyz="0.0237499987706542 9.313225746154785e-10 0" rpy="0 0 0" />
+      <mass value="0.2" />
+      <inertia ixx="0.00010453339194060429" iyy="5.4470887930959816e-05" izz="5.4470856638512545e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/Link6.stl" scale="1 1 1" />
+      </geometry>
+      <material name="tool_mint"><color rgba="0.204 0.827 0.60 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0.0237499987706542 9.313225746154785e-10 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.011500025168061256 0.056000007316470146 0.05600002408027649" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="KG1">
+    <inertial>
+      <origin xyz="0 -0.015502233058214188 0.025499999057501554" rpy="0 0 0" />
+      <mass value="0.11919363636363636" />
+      <inertia ixx="0.00011713975967406956" iyy="0.00023664903197865452" izz="0.00026985660979872455" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/KG1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="gripper_gray"><color rgba="0.45 0.49 0.55 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.015502233058214188 0.025499999057501554" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14000000059604645 0.08699553459882736 0.06499999854713678" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="KG1_A">
+    <inertial>
+      <origin xyz="0.02000000048428774 -0.002675000112503767 0.07199999876320362" rpy="0 0 0" />
+      <mass value="0.02464090909090909" />
+      <inertia ixx="1.1960332625044847e-05" iyy="1.8989927776250927e-05" izz="1.1960333145213912e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/KG1_A.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="0.02000000048428774 -0.002675000112503767 0.07199999876320362" rpy="0 0 0" />
+      <geometry>
+        <box size="0.06800000183284283 0.034649998880922794 0.06799999997019768" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="KG1_B">
+    <inertial>
+      <origin xyz="-0.02000000048428774 0.006749999709427357 0.056249999441206455" rpy="0 0 0" />
+      <mass value="0.030760909090909092" />
+      <inertia ixx="2.8255175821030996e-05" iyy="3.723159442068255e-05" izz="1.4729989951020405e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/KG1_B.stl" scale="1 1 1" />
+      </geometry>
+      <material name="arm_white" />
+    </visual>
+    <collision>
+      <origin xyz="-0.02000000048428774 0.006749999709427357 0.056249999441206455" rpy="0 0 0" />
+      <geometry>
+        <box size="0.06800000183284283 0.03349999897181988 0.09949999861419201" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="KG1_R">
+    <inertial>
+      <origin xyz="0 -0.002749999985098839 0" rpy="0 0 0" />
+      <mass value="0.009604545454545456" />
+      <inertia ixx="9.126318743917363e-07" iyy="1.4258165620598258e-06" izz="8.97766682673239e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/KG1_R.stl" scale="1 1 1" />
+      </geometry>
+      <material name="pinion_navy"><color rgba="0.043 0.145 0.271 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.002749999985098839 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.029688840731978416 0.01549999974668026 0.029999999329447746" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="tool0" />
+  <joint name="J1" type="revolute">
+    <parent link="Base" />
+    <child link="Link1" />
+    <origin xyz="0 0 0.096" rpy="0 0 0.261799387799149" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.9670597283903604" upper="2.9670597283903604" effort="3" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="J2" type="revolute">
+    <parent link="Link1" />
+    <child link="Link2" />
+    <origin xyz="0 0 0.078" rpy="0 -0.872664625997165 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-2.9670597283903604" upper="2.9670597283903604" effort="6" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="J3" type="revolute">
+    <parent link="Link2" />
+    <child link="Link3" />
+    <origin xyz="0.165 0 0" rpy="0 1.22173047639603 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-2.9670597283903604" upper="2.9670597283903604" effort="5" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="J4" type="revolute">
+    <parent link="Link3" />
+    <child link="Link4" />
+    <origin xyz="0.14 0 0" rpy="0.261799387799149 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-2.9670597283903604" upper="2.9670597283903604" effort="2" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="J5" type="revolute">
+    <parent link="Link4" />
+    <child link="Link5" />
+    <origin xyz="0.078 0 0" rpy="0 0.436332312998582 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-2.356194490192345" upper="1.4835298641951802" effort="2" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="J6" type="revolute">
+    <parent link="Link5" />
+    <child link="Link6" />
+    <origin xyz="0.14 0 0" rpy="-0.174532925199433 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-2.9670597283903604" upper="2.9670597283903604" effort="1" velocity="0.5" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="KG1_mount" type="fixed">
+    <parent link="Link6" />
+    <child link="KG1" />
+    <origin xyz="0.028 0 0" rpy="1.5707963267948966 0 1.5707963267948966" />
+  </joint>
+  <joint name="KG1_slide_A" type="prismatic">
+    <parent link="KG1" />
+    <child link="KG1_A" />
+    <origin xyz="-0.020 0 0" rpy="0 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-0.020" upper="0.027" effort="10" velocity="0.02" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="KG1_slide_B" type="prismatic">
+    <parent link="KG1" />
+    <child link="KG1_B" />
+    <origin xyz="0.020 0 0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.020" upper="0.027" effort="10" velocity="0.02" />
+    <dynamics damping="0.05" friction="0" />
+    <mimic joint="KG1_slide_A" multiplier="1" offset="0" />
+  </joint>
+  <joint name="KG1_pinion" type="revolute">
+    <parent link="KG1" />
+    <child link="KG1_R" />
+    <origin xyz="0 0 0.026" rpy="0 -1.4814814814814814 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-2" upper="1.4814814814814814" effort="0.2" velocity="2" />
+    <dynamics damping="0.05" friction="0" />
+    <mimic joint="KG1_slide_A" multiplier="-74.07407407407408" offset="0" />
+  </joint>
+  <joint name="tool0_mount" type="fixed">
+    <parent link="KG1" />
+    <child link="tool0" />
+    <origin xyz="0 0 0.103" rpy="0 0 0" />
+  </joint>
+</robot>

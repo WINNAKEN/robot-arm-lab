@@ -1,0 +1,87 @@
+{
+ "what": "MP11 분해도 검사(check_exploded.py) — 그림이 무엇을 그렸는지만 · 설계 검사 아님",
+ "all_true": true,
+ "checks": [
+  {
+   "id": "C1",
+   "ok": true,
+   "detail": {
+    "home": {
+     "blend_unchanged": true,
+     "sha_same": true
+    },
+    "straight": {
+     "blend_unchanged": true,
+     "sha_same": true
+    }
+   }
+  },
+  {
+   "id": "C2",
+   "ok": true,
+   "detail": {
+    "grids": {
+     "home": {
+      "objects": 58,
+      "expected_objects": 58,
+      "objects_match_answer_table": true,
+      "items": 43,
+      "not_numbered": [],
+      "numbered_twice": [],
+      "error": null
+     },
+     "straight": {
+      "objects": 58,
+      "expected_objects": 58,
+      "objects_match_answer_table": true,
+      "items": 43,
+      "not_numbered": [],
+      "numbered_twice": [],
+      "error": null
+     }
+    },
+    "numbered_image_items": 43,
+    "hidden_in_numbered": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "C3",
+   "ok": true,
+   "detail": {
+    "files": 9,
+    "mismatch_or_missing": []
+   }
+  },
+  {
+   "id": "C4",
+   "ok": true,
+   "detail": {
+    "inputs": 12,
+    "scripts": 5,
+    "mismatch": []
+   }
+  },
+  {
+   "id": "C5",
+   "ok": true,
+   "detail": {
+    "home": {
+     "joints_moved": true,
+     "small_parts": 31,
+     "small_parts_not_moved": [],
+     "axis_line_dashes": 192,
+     "settings_match": true
+    },
+    "straight": {
+     "joints_moved": true,
+     "small_parts": 31,
+     "small_parts_not_moved": [],
+     "axis_line_dashes": 221,
+     "settings_match": true
+    }
+   }
+  }
+ ]
+}

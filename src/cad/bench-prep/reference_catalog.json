@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-23",
+  "project_relative_paths": true,
+  "scope": "Local file and archive inventory only. Original scripts, CAD macros, firmware and installers were not executed. No CAD assembly, slicing, printing or compatibility validation was performed.",
+  "counts_are_print_quantities": false,
+  "all_entries_print_release": "NOT_APPROVED",
+  "large_file_pointer_check": {
+    "roots": ["docs/references/packages/01/mechanical_refs", "docs/references/packages/02/robstride_refs"],
+    "extensions": [".stl", ".step", ".stp", ".3mf", ".f3d", ".fcstd"],
+    "files_checked": 467,
+    "method": "Read first 80 bytes and check the Git LFS pointer prefix; nested archive members excluded.",
+    "git_lfs_pointers_found": 0,
+    "geometry_integrity_verified": false
+  },
+  "entries": [
+    {
+      "id": "thor",
+      "name": "Thor",
+      "geometry_summary": "STL 72개(기본 49개 + 수정형 23개), STEP 72개, FreeCAD FCStd 79개를 확보했다. 대체 설계가 포함된 파일 수이며 출력 수량이 아니다. STEP는 형상 교환용이고 FCStd 원본은 별도로 있다. CAD 개방 및 피처 이력의 완결성은 확인하지 않았다.",
+      "manufacturing_paths": ["docs/references/packages/01/mechanical_refs/Thor/upstream/stl", "docs/references/packages/01/mechanical_refs/Thor/upstream/step", "docs/references/packages/01/mechanical_refs/Thor/upstream/freecad-src", "docs/references/packages/01/mechanical_refs/Thor/upstream/mods"],
+      "instruction_paths": ["docs/references/packages/01/mechanical_refs/Thor/upstream/README.md", "docs/references/packages/01/mechanical_refs/Thor/upstream/mods/README.md", "docs/references/packages/01/mechanical_refs/COLLECTION_SUMMARY.json"],
+      "license_observation": {"label": "CC BY-SA 4.0", "evidence_paths": ["docs/references/packages/01/mechanical_refs/Thor/upstream/LICENSE"], "note": "로컬 원본 라이선스 표기다. 출처와 저작자 표시를 유지한다. 외부 웹사이트의 BOM·조립 안내 사본은 자료 접수 당시 확보하지 못했다."},
+      "compatibility_status": "UNVERIFIED_MKS_CAN_MT: 주문한 세트의 모터 길이·후면 드라이버 간섭·축·베어링·조립 호환은 미검증이다.",
+      "print_quantity_status": "UNRESOLVED: select standard parts or corresponding mods against the selected build; do not print all 72 files."
+    },
+    {
+      "id": "small_robot_arm",
+      "name": "SmallRobotArm",
+      "geometry_summary": "STL 39개는 STL 폴더 36개와 CarbonFibre 폴더 3개로 구성된다. STEP 9개는 Axis의 금속 축 3개와 Fusion360의 6개이며, F3D 3개는 Axis에 있다. 모든 로봇 부품의 편집 가능한 원본을 확보한 것은 아니다. Fusion360라는 폴더 이름만으로 모든 부품의 F3D 원본이 있다고 해석하지 않는다.",
+      "manufacturing_paths": ["docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/STL", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/Axis", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/Fusion360", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/CarbonFibre"],
+      "instruction_paths": ["docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/README.md", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/Axis/Readme", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/SmallRobotArmMechanicalAssembly.pdf", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/SmallRobotArmElectronics.pdf"],
+      "license_observation": {"label": "GPLv3", "evidence_paths": ["docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/LICENSE", "docs/references/packages/01/mechanical_refs/SmallRobotArm/upstream/README.md"], "note": "README는 CAD와 코드에 GPL3를 적용한다고 명시한다."},
+      "compatibility_status": "UNVERIFIED_MKS_CAN_MT: 참고용 형상이며 현재 모터·드라이버의 장착 호환은 확인하지 않았다.",
+      "print_quantity_status": "UNRESOLVED: alternatives, repeated filenames and CarbonFibre fabrication references must be matched to the assembly before printing."
+    },
+    {
+      "id": "faze4_arm",
+      "name": "Faze4 arm",
+      "geometry_summary": "STL_V2.zip 안에 STL 67개가 있다. 압축 밖의 STL 7개는 URDF 시각화 메시이며 제조용 부품 묶음이 아니다. 개별 Faze4_dist_v2_STEP.step과 중첩 Distribution_PCB.zip / Distribution_PCB/STEP files.zip / STEP files/PCB2.step는 전체 로봇이 아닌 PCB 형상이다.",
+      "manufacturing_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/STL_V2.zip"],
+      "instruction_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/README.md", "docs/references/packages/01/mechanical_refs/Faze4/upstream/Assembly instructions 3.1.pdf", "docs/references/packages/01/mechanical_refs/Faze4/upstream/BOM_7_11_2023.xlsx", "docs/references/packages/01/mechanical_refs/Faze4/upstream/docs/D_Printing.rst"],
+      "license_observation": {"label": "CONFLICT: README MIT; LICENSE CERN-OHL-S v2", "evidence_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/README.md", "docs/references/packages/01/mechanical_refs/Faze4/upstream/LICENSE"], "note": "수집된 설계의 라이선스를 MIT로 단정하지 않는다. 원본 간 표기 불일치는 미해결 사항으로 보존한다."},
+      "compatibility_status": "UNVERIFIED_MKS_CAN_MT: 적용할 관절과 모터·드라이버의 장착 호환은 미확정이며, 전체 로봇 구조도 선택하지 않았다.",
+      "print_quantity_status": "UNRESOLVED: 67 archive files are not a per-robot quantity list; assembly/BOM must determine variant and quantity.",
+      "source_print_settings": "Author guidance: PETG, build volume 250x210x200 mm; small parts 0.15 mm / large parts 0.35 mm layer; 25-30% infill, 3 perimeters, 7 top and 5 bottom layers. Not a validated profile for the user's printer."
+    },
+    {
+      "id": "faze4_reducer_discs",
+      "name": "Faze4 cycloidal disc references",
+      "geometry_summary": "cyclo_disk_STEP_files.zip에 11_1 cyclo disc.STEP, 15_1 cyclo disc.STEP, 27_1 cyclo disc.STEP라는 STEP 3개가 있다. 디스크 형상 교환 파일이며, 완성 감속기 조립체나 원본 파라메트릭 설계 파일이 아니다.",
+      "manufacturing_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/cyclo_disk_STEP_files.zip"],
+      "instruction_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/Assembly instructions 3.1.pdf", "docs/references/packages/01/mechanical_refs/Faze4/upstream/BOM_7_11_2023.xlsx", "docs/references/packages/01/mechanical_refs/Faze4/upstream/docs/D_Printing.rst"],
+      "license_observation": {"label": "CONFLICT: README MIT; LICENSE CERN-OHL-S v2", "evidence_paths": ["docs/references/packages/01/mechanical_refs/Faze4/upstream/README.md", "docs/references/packages/01/mechanical_refs/Faze4/upstream/LICENSE"], "note": "faze4_arm과 같은 수집 원본이며 라이선스 표기 불일치도 동일하게 미해결 상태다."},
+      "compatibility_status": "UNVERIFIED_MKS_CAN_MT: 감속비·입력축·편심량·베어링·핀 형상·모터 고정 방식은 선택하거나 검증하지 않았다.",
+      "print_quantity_status": "REFERENCE_ONLY: do not infer a complete printable reducer or print quantity from the three disc STEP files."
+    },
+    {
+      "id": "parol6",
+      "name": "PAROL6",
+      "geometry_summary": "부속품과 작은 베드용 대체품을 포함한 STL 52개를 확보했다. 공개 STEP는 mounting plates/small_base.STEP와 big_base.STEP 두 개뿐이다. 유료 개별 로봇 부품 STEP는 없으며, 전체 로봇의 원본 CAD도 확보했다고 볼 수 없다.",
+      "manufacturing_paths": ["docs/references/packages/01/mechanical_refs/PAROL6/upstream/STL"],
+      "instruction_paths": ["docs/references/packages/01/mechanical_refs/PAROL6/upstream/README.md", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/BOM/BOM.md", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/Building instructions/Parol building instructions.pdf", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/Building instructions/PETG_printing.md", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/STL/SMALL_PRINT_BED/README.md", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/Building instructions/Parol small print bed modification.pdf"],
+      "license_observation": {"label": "GPLv3", "evidence_paths": ["docs/references/packages/01/mechanical_refs/PAROL6/upstream/LICENSE", "docs/references/packages/01/mechanical_refs/PAROL6/upstream/README.md"], "note": "공개 저장소의 원본 라이선스 표기다. 유료 STEP 모델은 별도 상품이며 확보하지 않았다."},
+      "compatibility_status": "UNVERIFIED_MKS_CAN_MT: BOM은 NEMA17 길이 20 mm ×1, 40 mm ×3, 60 mm ×2와 20:1 감속기 ×2 / 10:1 ×1을 명시한다. NEMA17이라는 명칭만으로 주문한 후면 드라이버 세트의 장착 호환이 확인되지는 않는다.",
+      "print_quantity_status": "UNRESOLVED: SMALL_PRINT_BED contains four halves replacing two standard parts, not four additional parts. Accessories and alternatives require build-specific selection.",
+      "source_print_settings": "PETG_printing.md gives general hotend 220-250 C and bed 60-90 C guidance. This is not a per-part or validated printer profile."
+    },
+    {
+      "id": "b601_rs",
+      "name": "reBot B601-RS",
+      "geometry_summary": "하드웨어 자료에 전체 조립 STEP 1개, 3D_Printed_Parts의 STEP/STP 17개, Metal_Parts의 STEP/STP 29개가 있다. 별도 STL 42개는 시각화·공유 URDF·충돌 메시이며 출력 목록이 아니다. 구매 부품 CAD 전체가 갖춰졌는지는 미확정이다.",
+      "manufacturing_paths": ["docs/references/packages/02/robstride_refs/reBot_B601_RS/hardware/reBot_B601_RS/reBot_B601_RS_v1.0_20260625.step", "docs/references/packages/02/robstride_refs/reBot_B601_RS/hardware/reBot_B601_RS/3D_Printed_Parts", "docs/references/packages/02/robstride_refs/reBot_B601_RS/hardware/reBot_B601_RS/Metal_Parts"],
+      "instruction_paths": ["docs/references/packages/02/robstride_refs/reBot_B601_RS/hardware/reBot_B601_RS/README.md", "docs/references/packages/02/robstride_refs/reBot_B601_RS/official_quick_start/READ_OFFLINE.html"],
+      "license_observation": {"label": "CERN-OHL-W v2 at collected repository root", "evidence_paths": ["docs/references/packages/02/robstride_refs/reBot_B601_RS/LICENSE", "docs/references/packages/02/robstride_refs/reBot_B601_RS/official_quick_start/LICENSE"], "note": "별도 수집한 시작 안내의 라이선스는 해당 자료와 함께 보존한다. 모든 패키지에 하나의 라이선스를 추정 적용하지 않는다."},
+      "compatibility_status": "DIFFERENT_ACTUATOR_FAMILY: 문서상 RobStride RS00 ×4 / RS06 ×3 구성이다. MKS CAN MT로 대체 장착할 수 있는 형상인지 확인되지 않았다.",
+      "print_quantity_status": "SOURCE_BOM_AVAILABLE_NOT_SELECTED: hardware README supplies part-specific quantities, materials and manufacturing routes; no whole-arm choice or print release made.",
+      "source_print_settings": "Hardware README has per-part ABS/PLA and infill settings, generally 0.4 mm nozzle and 0.2 mm layers. Metal parts must not be silently treated as printed parts."
+    },
+    {
+      "id": "edulite_a3",
+      "name": "EDULITE_A3",
+      "geometry_summary": "전체 STEP 1개와 제조용 3MF 1개를 확보했다. 3MF 구조에는 플레이트 미리보기 5개 묶음이 있다. 별도 STL 24개는 ROS/SDK 메시 8개씩 3벌이다. 플레이트별 슬라이싱·형상 검증은 수행하지 않았으며 STEP 확보만으로 편집 이력을 가진 원본 CAD가 있다고 볼 수 없다.",
+      "manufacturing_paths": ["docs/references/packages/02/robstride_refs/EDULITE_A3/hardware/step/Edulite_A3.step", "docs/references/packages/02/robstride_refs/EDULITE_A3/hardware/3mf/Edulite_A3.3mf"],
+      "instruction_paths": ["docs/references/packages/02/robstride_refs/EDULITE_A3/README.md", "docs/references/packages/02/robstride_refs/EDULITE_A3/hardware/README.md", "docs/references/packages/02/robstride_refs/EDULITE_A3/hardware/assembly_sop/A3_Assembly_SOP.pdf"],
+      "license_observation": {"label": "MIT at collected repository root", "evidence_paths": ["docs/references/packages/02/robstride_refs/EDULITE_A3/LICENSE"], "note": "수집 원본에서 확인한 라이선스 표기다. 수정 대상으로 선택한 자료의 출처 이력을 유지한다."},
+      "compatibility_status": "DIFFERENT_ACTUATOR_FAMILY: README는 RS00 ×3과 EL05/RS05 ×4를 명시한다. MKS CAN MT로 대체 장착할 수 있는 형상인지 확인되지 않았다.",
+      "print_quantity_status": "UNRESOLVED: five plate previews do not establish printer compatibility, needed quantities or a print release."
+    },
+    {
+      "id": "ar4_mk5",
+      "name": "AR4 MK5",
+      "geometry_summary": "AR4_MK5_3D_Print_Files.zip에 STL 92개와 트랙 플랫폼 PDF 1개가 있다. 커버·브래킷·그리퍼·트랙·이전 버전 업그레이드 부품을 포함한다. 유료 SolidWorks·STEP 모델은 없다. 기구학 ZIP에는 제조 형상이 아닌 XLSM 계산표가 있으며 매크로는 실행하지 않았다.",
+      "manufacturing_paths": ["docs/references/packages/04/other_public_refs/AR4/AR4_MK5_3D_Print_Files.zip"],
+      "instruction_paths": ["docs/references/packages/04/other_public_refs/AR4/README_KO.txt", "docs/references/packages/04/other_public_refs/AR4/AR4_MK5_Build_Manual_v1_1.pdf", "docs/references/packages/04/other_public_refs/AR4/manifest.json", "docs/references/packages/04/other_public_refs/PURCHASE_REQUIRED_KO.txt"],
+      "license_observation": {"label": "BSD 3-Clause for collected downloads repository", "evidence_paths": ["docs/references/packages/04/other_public_refs/AR4/LICENSE_Annin_Downloads_BSD3.txt", "docs/references/packages/04/other_public_refs/AR4/README_KO.txt"], "note": "이 저장소의 라이선스를 미확보 유료 CAD나 다른 프로젝트에 확대 적용하지 않는다."},
+      "compatibility_status": "UNVERIFIED_DIFFERENT_BUILD: 모터·감속기·홈 센서·제어기 구성이 현재 MKS 두 축 시험대와 다르며 호환은 미검증이다.",
+      "print_quantity_status": "UNRESOLVED: 92 STL files are not 92 simultaneously required parts for one robot; select variants and quantities using the build manual."
+    },
+    {
+      "id": "armold",
+      "name": "SweepDynamics Armold",
+      "geometry_summary": "받은 자료에 Armold 형상 파일은 없다. 구매·참고 안내만 있다. 전체 조립 STEP·개별 STEP·원본 CAD·감속기 모델의 포함 여부는 자료 접수 당시 미확인이었으며, 이번 작업에서 유료 파일을 구매하지 않았다.",
+      "manufacturing_paths": [],
+      "instruction_paths": ["docs/references/packages/04/other_public_refs/PURCHASE_REQUIRED_KO.txt", "docs/references/00_robot_arm_START_HERE_KO_20261021.txt", "docs/design/PROJECT_INTAKE.md"],
+      "license_observation": {"label": "NOT_ACQUIRED", "evidence_paths": ["docs/references/packages/04/other_public_refs/PURCHASE_REQUIRED_KO.txt"], "note": "이 설계를 선택하면 판매 조건과 제공되는 CAD 리비전을 확인해야 한다. 안내문에 기록된 과거 가격은 다시 검증하지 않았다."},
+      "compatibility_status": "UNKNOWN_NO_CAD: Armold와 비슷한 규모라는 참고 방향은 유지하지만, CAD 미확보 상태에서 정확한 모터-관절 대응과 MKS 후면 드라이버의 장착 호환을 확정할 수 없다.",
+      "print_quantity_status": "NO_PRINT_FILES: no printable Armold kit or per-part quantity list can be released from this collection."
+    }
+  ]
+}

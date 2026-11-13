@@ -1,0 +1,4781 @@
+{
+ "commands": [
+  {
+   "command": "document.metadata.set",
+   "params": {
+    "values": {
+     "project": "robot-arm-lab",
+     "part_number": "KMJH-ARM-PRODUCT-V3",
+     "revision": "product-exterior-v3-kmjh-rev1-tool-kg1",
+     "description": "1:1 product exterior v3 (KMJH brand) on the v1 kinematics (display pose). Solid envelopes - NOT FOR FABRICATION."
+    }
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Base"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_FOOT_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      82.0
+     ],
+     [
+      8.0,
+      82.0
+     ],
+     [
+      12.0,
+      78.0
+     ],
+     [
+      12.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_FOOT",
+    "name": "BASE_FOOT_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_FOOT"
+    ],
+    "color": "#6B7280"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_COLUMN_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      0.0
+     ],
+     [
+      12.0,
+      62.0
+     ],
+     [
+      20.0,
+      62.0
+     ],
+     [
+      20.0,
+      59.0
+     ],
+     [
+      26.0,
+      59.0
+     ],
+     [
+      26.0,
+      58.0
+     ],
+     [
+      78.0,
+      50.0
+     ],
+     [
+      78.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_COLUMN",
+    "name": "BASE_COLUMN_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_COLUMN"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "BASE_LIGHT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      20.0,
+      59.0
+     ],
+     [
+      20.0,
+      62.0
+     ],
+     [
+      26.0,
+      62.0
+     ],
+     [
+      26.0,
+      59.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "BASE_LIGHT_RING",
+    "name": "BASE_LIGHT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "BASE_LIGHT_RING"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J1_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      41.0
+     ],
+     [
+      -14.0,
+      45.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      12.0,
+      42.0
+     ],
+     [
+      18.0,
+      42.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J1_MODULE",
+    "name": "J1_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J1_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J1_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      42.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      18.0,
+      42.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J1_ACCENT_RING",
+    "name": "J1_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J1_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK1_SHOULDER_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "x_dir": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "y_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      34.0,
+      45.0
+     ],
+     [
+      40.0,
+      39.0
+     ],
+     [
+      40.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK1_SHOULDER_CAP",
+    "name": "LINK1_SHOULDER_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK1_SHOULDER_CAP"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK1_POST_PROFILE",
+    "plane": {
+     "origin": [
+      13.199771300228559,
+      -49.262217140742486,
+      114.0
+     ],
+     "x_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      0.0
+     ],
+     "y_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      32.0,
+      -21.0
+     ],
+     [
+      32.0,
+      21.0
+     ],
+     [
+      22.0,
+      31.0
+     ],
+     [
+      -22.0,
+      31.0
+     ],
+     [
+      -32.0,
+      21.0
+     ],
+     [
+      -32.0,
+      -21.0
+     ],
+     [
+      -22.0,
+      -31.0
+     ],
+     [
+      22.0,
+      -31.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 60.0,
+    "operation": "new",
+    "body_name": "LINK1_POST",
+    "name": "LINK1_POST_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK1_POST"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      48.0
+     ],
+     [
+      -14.0,
+      52.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      12.0,
+      49.0
+     ],
+     [
+      18.0,
+      49.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_MODULE",
+    "name": "J2_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      49.0
+     ],
+     [
+      12.0,
+      52.0
+     ],
+     [
+      18.0,
+      52.0
+     ],
+     [
+      18.0,
+      49.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_ACCENT_RING",
+    "name": "J2_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      36.0
+     ],
+     [
+      -89.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J2_END_CAP",
+    "name": "J2_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_END_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J2_CAP_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      23.552533104329388,
+      -87.89925019230522,
+      174.0
+     ],
+     "x_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      -0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "J2_CAP_SLASH",
+    "name": "J2_CAP_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J2_CAP_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_SHOULDER_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      34.0
+     ],
+     [
+      22.0,
+      38.0
+     ],
+     [
+      58.0,
+      38.0
+     ],
+     [
+      62.0,
+      34.0
+     ],
+     [
+      62.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK2_SHOULDER_HUB",
+    "name": "LINK2_SHOULDER_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_SHOULDER_HUB"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_SHOULDER_HUB_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      62.0,
+      0.0
+     ],
+     [
+      62.0,
+      32.0
+     ],
+     [
+      63.0,
+      32.0
+     ],
+     [
+      63.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK2_SHOULDER_HUB_CAP",
+    "name": "LINK2_SHOULDER_HUB_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_SHOULDER_HUB_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_SHOULDER_HUB_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      -16.305599841458807,
+      60.853327056211306,
+      174.0
+     ],
+     "x_dir": [
+      -0.9659258262890683,
+      -0.25881904510252074,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_SHOULDER_HUB_SLASH",
+    "name": "LINK2_SHOULDER_HUB_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_SHOULDER_HUB_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_UPPER_BAR_PROFILE",
+    "plane": {
+     "origin": [
+      -10.35276180410083,
+      38.63703305156273,
+      174.0
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      22.0,
+      -14.0
+     ],
+     [
+      22.0,
+      14.0
+     ],
+     [
+      14.0,
+      22.0
+     ],
+     [
+      -14.0,
+      22.0
+     ],
+     [
+      -22.0,
+      14.0
+     ],
+     [
+      -22.0,
+      -14.0
+     ],
+     [
+      -14.0,
+      -22.0
+     ],
+     [
+      14.0,
+      -22.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 165.0,
+    "operation": "new",
+    "body_name": "LINK2_UPPER_BAR",
+    "name": "LINK2_UPPER_BAR_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_UPPER_BAR"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      -18.0,
+      41.0
+     ],
+     [
+      -14.0,
+      45.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      12.0,
+      42.0
+     ],
+     [
+      18.0,
+      42.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_MODULE",
+    "name": "J3_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      42.0
+     ],
+     [
+      12.0,
+      45.0
+     ],
+     [
+      18.0,
+      45.0
+     ],
+     [
+      18.0,
+      42.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_ACCENT_RING",
+    "name": "J3_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865394
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      36.0
+     ],
+     [
+      -89.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J3_END_CAP",
+    "name": "J3_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_END_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J3_CAP_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      78.89351714312015,
+      115.34958662386754,
+      300.39733311463135
+     ],
+     "x_dir": [
+      -0.9659258262890683,
+      -0.25881904510252074,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "J3_CAP_SLASH",
+    "name": "J3_CAP_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J3_CAP_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_LOGO_K_PROFILE",
+    "plane": {
+     "origin": [
+      -4.658742811845373,
+      17.38666487320323,
+      174.0
+     ],
+     "x_dir": [
+      0.6208851530148457,
+      0.16636567534280194,
+      0.766044443118978
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865395
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      64.495,
+      1.56
+     ],
+     [
+      64.495,
+      6.5
+     ],
+     [
+      61.245000000000005,
+      6.5
+     ],
+     [
+      61.245000000000005,
+      -6.5
+     ],
+     [
+      64.495,
+      -6.5
+     ],
+     [
+      64.495,
+      -1.7727272727272725
+     ],
+     [
+      69.69500000000001,
+      -6.5
+     ],
+     [
+      73.985,
+      -6.5
+     ],
+     [
+      67.745,
+      1.56
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_LOGO_K",
+    "name": "LINK2_LOGO_K_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_LOGO_K"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_LOGO_K_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      -4.658742811845373,
+      17.38666487320323,
+      174.0
+     ],
+     "x_dir": [
+      0.6208851530148457,
+      0.16636567534280194,
+      0.766044443118978
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865395
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      65.795,
+      2.0800000000000005
+     ],
+     [
+      69.955,
+      2.0800000000000005
+     ],
+     [
+      74.50500000000001,
+      6.5
+     ],
+     [
+      70.345,
+      6.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_LOGO_K_SLASH",
+    "name": "LINK2_LOGO_K_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_LOGO_K_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_LOGO_M_PROFILE",
+    "plane": {
+     "origin": [
+      -4.658742811845373,
+      17.38666487320323,
+      174.0
+     ],
+     "x_dir": [
+      0.6208851530148457,
+      0.16636567534280194,
+      0.766044443118978
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865395
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      78.92500000000001,
+      1.7169811320754713
+     ],
+     [
+      82.565,
+      -3.6400000000000006
+     ],
+     [
+      86.20500000000001,
+      1.7169811320754713
+     ],
+     [
+      86.20500000000001,
+      -6.5
+     ],
+     [
+      89.45500000000001,
+      -6.5
+     ],
+     [
+      89.45500000000001,
+      6.5
+     ],
+     [
+      86.20500000000001,
+      6.5
+     ],
+     [
+      85.94500000000001,
+      6.5
+     ],
+     [
+      82.565,
+      0.26000000000000023
+     ],
+     [
+      79.185,
+      6.5
+     ],
+     [
+      78.92500000000001,
+      6.5
+     ],
+     [
+      75.675,
+      6.5
+     ],
+     [
+      75.675,
+      -6.5
+     ],
+     [
+      78.92500000000001,
+      -6.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_LOGO_M",
+    "name": "LINK2_LOGO_M_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_LOGO_M"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_LOGO_J_PROFILE",
+    "plane": {
+     "origin": [
+      -4.658742811845373,
+      17.38666487320323,
+      174.0
+     ],
+     "x_dir": [
+      0.6208851530148457,
+      0.16636567534280194,
+      0.766044443118978
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865395
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      94.39500000000001,
+      -6.5
+     ],
+     [
+      99.075,
+      -6.5
+     ],
+     [
+      102.325,
+      -6.5
+     ],
+     [
+      102.325,
+      -3.25
+     ],
+     [
+      102.325,
+      6.5
+     ],
+     [
+      99.075,
+      6.5
+     ],
+     [
+      99.075,
+      -3.25
+     ],
+     [
+      94.39500000000001,
+      -3.25
+     ],
+     [
+      94.39500000000001,
+      -1.56
+     ],
+     [
+      91.14500000000001,
+      -1.56
+     ],
+     [
+      91.14500000000001,
+      -3.25
+     ],
+     [
+      91.14500000000001,
+      -6.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_LOGO_J",
+    "name": "LINK2_LOGO_J_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_LOGO_J"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK2_LOGO_H_PROFILE",
+    "plane": {
+     "origin": [
+      -4.658742811845373,
+      17.38666487320323,
+      174.0
+     ],
+     "x_dir": [
+      0.6208851530148457,
+      0.16636567534280194,
+      0.766044443118978
+     ],
+     "y_dir": [
+      -0.739942111693848,
+      -0.19826689127414615,
+      0.6427876096865395
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      107.265,
+      -1.2999999999999998
+     ],
+     [
+      113.505,
+      -1.2999999999999998
+     ],
+     [
+      113.505,
+      -6.5
+     ],
+     [
+      116.755,
+      -6.5
+     ],
+     [
+      116.755,
+      -1.2999999999999998
+     ],
+     [
+      116.755,
+      1.9500000000000002
+     ],
+     [
+      116.755,
+      6.5
+     ],
+     [
+      113.505,
+      6.5
+     ],
+     [
+      113.505,
+      1.9500000000000002
+     ],
+     [
+      107.265,
+      1.9500000000000002
+     ],
+     [
+      107.265,
+      6.5
+     ],
+     [
+      104.015,
+      6.5
+     ],
+     [
+      104.015,
+      1.9500000000000002
+     ],
+     [
+      104.015,
+      -1.2999999999999998
+     ],
+     [
+      104.015,
+      -6.5
+     ],
+     [
+      107.265,
+      -6.5
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK2_LOGO_H",
+    "name": "LINK2_LOGO_H_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK2_LOGO_H"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_ELBOW_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -62.0,
+      0.0
+     ],
+     [
+      -62.0,
+      34.0
+     ],
+     [
+      -58.0,
+      38.0
+     ],
+     [
+      -22.0,
+      38.0
+     ],
+     [
+      -18.0,
+      34.0
+     ],
+     [
+      -18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK3_ELBOW_HUB",
+    "name": "LINK3_ELBOW_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_ELBOW_HUB"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_ELBOW_HUB_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      62.0,
+      0.0
+     ],
+     [
+      62.0,
+      32.0
+     ],
+     [
+      63.0,
+      32.0
+     ],
+     [
+      63.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK3_ELBOW_HUB_CAP",
+    "name": "LINK3_ELBOW_HUB_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_ELBOW_HUB_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_ELBOW_HUB_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      118.75165008890835,
+      -33.40299062464899,
+      300.39733311463135
+     ],
+     "x_dir": [
+      0.9659258262890683,
+      0.25881904510252074,
+      -0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK3_ELBOW_HUB_SLASH",
+    "name": "LINK3_ELBOW_HUB_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_ELBOW_HUB_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_FOREARM_BAR_PROFILE",
+    "plane": {
+     "origin": [
+      112.79881205155036,
+      -11.186696620000415,
+      300.39733311463135
+     ],
+     "x_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      22.0,
+      -14.0
+     ],
+     [
+      22.0,
+      14.0
+     ],
+     [
+      14.0,
+      22.0
+     ],
+     [
+      -14.0,
+      22.0
+     ],
+     [
+      -22.0,
+      14.0
+     ],
+     [
+      -22.0,
+      -14.0
+     ],
+     [
+      -14.0,
+      -22.0
+     ],
+     [
+      14.0,
+      -22.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 80.0,
+    "operation": "new",
+    "body_name": "LINK3_FOREARM_BAR",
+    "name": "LINK3_FOREARM_BAR_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK3_FOREARM_BAR"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK3_FOREARM_BAR_ENDCUT_PROFILE",
+    "plane": {
+     "origin": [
+      94.84763018781443,
+      25.41434591283065,
+      278.78440283655544
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      48.59509455595916,
+      -63.0
+     ],
+     [
+      81.0,
+      -63.0
+     ],
+     [
+      81.0,
+      -30.595094555959157
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 46.0,
+    "operation": "cut",
+    "targets": [
+     "LINK3_FOREARM_BAR"
+    ],
+    "name": "LINK3_FOREARM_BAR_ENDCUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_MODULE",
+    "name": "J4_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_ACCENT_RING",
+    "name": "J4_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "x_dir": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137683,
+      0.9396926207859083
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      36.0
+     ],
+     [
+      -89.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J4_END_CAP",
+    "name": "J4_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_END_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J4_CAP_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      146.9220454357776,
+      39.36764342484532,
+      283.6383460916736
+     ],
+     "x_dir": [
+      0.25881904510252074,
+      -0.9659258262890683,
+      1.2254395020387513e-17
+     ],
+     "y_dir": [
+      0.3303660895493521,
+      0.08852132690137686,
+      0.9396926207859085
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -25.0,
+      -12.0
+     ],
+     [
+      -11.0,
+      -12.0
+     ],
+     [
+      13.0,
+      12.0
+     ],
+     [
+      -1.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "J4_CAP_SLASH",
+    "name": "J4_CAP_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J4_CAP_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK4_NECK_PROFILE",
+    "plane": {
+     "origin": [
+      245.8584428955278,
+      65.87757122622996,
+      246.35815046917568
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      17.0,
+      -17.0
+     ],
+     [
+      17.0,
+      17.0
+     ],
+     [
+      8.0,
+      26.0
+     ],
+     [
+      -8.0,
+      26.0
+     ],
+     [
+      -17.0,
+      17.0
+     ],
+     [
+      -17.0,
+      -17.0
+     ],
+     [
+      -8.0,
+      -26.0
+     ],
+     [
+      8.0,
+      -26.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 30.0,
+    "operation": "new",
+    "body_name": "LINK4_NECK",
+    "name": "LINK4_NECK_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK4_NECK"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_MODULE",
+    "name": "J5_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_ACCENT_RING",
+    "name": "J5_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.38609643613362693,
+      -0.16449496416858284,
+      0.9076733711903686
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      36.0
+     ],
+     [
+      -89.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J5_END_CAP",
+    "name": "J5_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_END_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J5_CAP_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      315.28788690629096,
+      -6.518865320144215,
+      203.70480031068143
+     ],
+     "x_dir": [
+      0.9855152103075612,
+      0.16958705803345853,
+      0.0
+     ],
+     "y_dir": [
+      0.041245327197396445,
+      -0.2396874960772463,
+      0.9699735703660178
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "J5_CAP_SLASH",
+    "name": "J5_CAP_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J5_CAP_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_HUB_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      28.0
+     ],
+     [
+      22.0,
+      32.0
+     ],
+     [
+      48.0,
+      32.0
+     ],
+     [
+      52.0,
+      28.0
+     ],
+     [
+      52.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK5_WRIST_HUB",
+    "name": "LINK5_WRIST_HUB_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_HUB"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_HUB_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      52.0,
+      0.0
+     ],
+     [
+      52.0,
+      26.0
+     ],
+     [
+      53.0,
+      26.0
+     ],
+     [
+      53.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK5_WRIST_HUB_CAP",
+    "name": "LINK5_WRIST_HUB_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_HUB_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_HUB_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      291.60061206601506,
+      131.13414851550982,
+      238.72709025012537
+     ],
+     "x_dir": [
+      -0.9855152103075612,
+      -0.16958705803345853,
+      0.0
+     ],
+     "y_dir": [
+      0.041245327197396445,
+      -0.2396874960772463,
+      0.9699735703660178
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -15.200000000000003,
+      -9.600000000000001
+     ],
+     [
+      -4.000000000000001,
+      -9.600000000000001
+     ],
+     [
+      15.200000000000003,
+      9.600000000000001
+     ],
+     [
+      4.000000000000001,
+      9.600000000000001
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "LINK5_WRIST_HUB_SLASH",
+    "name": "LINK5_WRIST_HUB_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_HUB_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_BAR_PROFILE",
+    "plane": {
+     "origin": [
+      294.5615214210495,
+      113.92752178605306,
+      234.34930400769485
+     ],
+     "x_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      17.0,
+      -11.0
+     ],
+     [
+      17.0,
+      11.0
+     ],
+     [
+      11.0,
+      17.0
+     ],
+     [
+      -11.0,
+      17.0
+     ],
+     [
+      -17.0,
+      11.0
+     ],
+     [
+      -17.0,
+      -11.0
+     ],
+     [
+      -11.0,
+      -17.0
+     ],
+     [
+      11.0,
+      -17.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 86.0,
+    "operation": "new",
+    "body_name": "LINK5_WRIST_BAR",
+    "name": "LINK5_WRIST_BAR_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK5_WRIST_BAR"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK5_WRIST_BAR_ENDCUT_PROFILE",
+    "plane": {
+     "origin": [
+      287.11545728538556,
+      81.3035548274607,
+      213.63136712266086
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      67.54345089883175,
+      53.0
+     ],
+     [
+      87.0,
+      53.0
+     ],
+     [
+      87.0,
+      33.54345089883175
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 36.0,
+    "operation": "cut",
+    "targets": [
+     "LINK5_WRIST_BAR"
+    ],
+    "name": "LINK5_WRIST_BAR_ENDCUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_MODULE_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -85.0,
+      0.0
+     ],
+     [
+      -85.0,
+      39.0
+     ],
+     [
+      -20.0,
+      39.0
+     ],
+     [
+      -20.0,
+      37.5
+     ],
+     [
+      -18.0,
+      37.5
+     ],
+     [
+      -18.0,
+      39.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      12.0,
+      36.0
+     ],
+     [
+      18.0,
+      36.0
+     ],
+     [
+      18.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_MODULE",
+    "name": "J6_MODULE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_MODULE"
+    ],
+    "color": "#FFFFFF"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_ACCENT_RING_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      12.0,
+      36.0
+     ],
+     [
+      12.0,
+      39.0
+     ],
+     [
+      18.0,
+      39.0
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_ACCENT_RING",
+    "name": "J6_ACCENT_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_ACCENT_RING"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_END_CAP_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.7335215489757989,
+      -0.04629793295161677,
+      0.6780874859430397
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -91.0,
+      0.0
+     ],
+     [
+      -91.0,
+      36.0
+     ],
+     [
+      -89.0,
+      38.0
+     ],
+     [
+      -85.0,
+      38.0
+     ],
+     [
+      -85.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "J6_END_CAP",
+    "name": "J6_END_CAP_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_END_CAP"
+    ],
+    "color": "#0B2545"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "J6_CAP_SLASH_PROFILE",
+    "plane": {
+     "origin": [
+      332.6323871118857,
+      94.67735037812955,
+      191.85177365220386
+     ],
+     "x_dir": [
+      0.4024822628445678,
+      -0.9154277842055683,
+      -5.2905003559823033e-17
+     ],
+     "y_dir": [
+      0.6349176987170817,
+      0.27915157974092236,
+      0.720384557985492
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      -19.0,
+      -12.0
+     ],
+     [
+      -5.0,
+      -12.0
+     ],
+     [
+      19.0,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.8,
+    "operation": "new",
+    "body_name": "J6_CAP_SLASH",
+    "name": "J6_CAP_SLASH_EXTRUDE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "J6_CAP_SLASH"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "component.create",
+   "params": {
+    "name": "Link6"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      28.0
+     ],
+     [
+      26.0,
+      28.0
+     ],
+     [
+      28.0,
+      26.0
+     ],
+     [
+      28.0,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK6_TOOL_FLANGE",
+    "name": "LINK6_TOOL_FLANGE_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "color": "#6B7280"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_SCREW0_PROFILE",
+    "plane": {
+     "origin": [
+      405.83245151776055,
+      126.86091315693713,
+      114.86496401679734
+     ],
+     "x_dir": [
+      -0.28937059630375717,
+      0.9494406298176886,
+      0.12176677891033698
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     15.75,
+     0.0
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.5,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "name": "LINK6_TOOL_FLANGE_SCREW0_CUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_SCREW1_PROFILE",
+    "plane": {
+     "origin": [
+      405.83245151776055,
+      126.86091315693713,
+      114.86496401679734
+     ],
+     "x_dir": [
+      -0.28937059630375717,
+      0.9494406298176886,
+      0.12176677891033698
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     0.0,
+     15.75
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.5,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "name": "LINK6_TOOL_FLANGE_SCREW1_CUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_SCREW2_PROFILE",
+    "plane": {
+     "origin": [
+      405.83245151776055,
+      126.86091315693713,
+      114.86496401679734
+     ],
+     "x_dir": [
+      -0.28937059630375717,
+      0.9494406298176886,
+      0.12176677891033698
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -15.75,
+     0.0
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.5,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "name": "LINK6_TOOL_FLANGE_SCREW2_CUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_FLANGE_SCREW3_PROFILE",
+    "plane": {
+     "origin": [
+      405.83245151776055,
+      126.86091315693713,
+      114.86496401679734
+     ],
+     "x_dir": [
+      -0.28937059630375717,
+      0.9494406298176886,
+      0.12176677891033698
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -0.0,
+     -15.75
+    ],
+    "radius": 2.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 8.5,
+    "direction": "positive",
+    "operation": "cut",
+    "targets": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "name": "LINK6_TOOL_FLANGE_SCREW3_CUT"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "name": "LINK6_TOOL_RING_PROFILE",
+    "plane": {
+     "origin": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "x_dir": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ],
+     "y_dir": [
+      0.6938134576696294,
+      0.12039984642332278,
+      0.7100188468891184
+     ]
+    }
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      28.0,
+      0.0
+     ],
+     [
+      28.0,
+      10.0
+     ],
+     [
+      29.5,
+      10.0
+     ],
+     [
+      29.5,
+      0.0
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.revolve",
+   "params": {
+    "axis": "x",
+    "operation": "new",
+    "body_name": "LINK6_TOOL_RING",
+    "name": "LINK6_TOOL_RING_REVOLVE"
+   }
+  },
+  {
+   "command": "appearance.assign",
+   "params": {
+    "bodies": [
+     "LINK6_TOOL_RING"
+    ],
+    "color": "#34D399"
+   }
+  },
+  {
+   "command": "component.activate",
+   "params": {
+    "component": "root"
+   }
+  },
+  {
+   "command": "occurrence.ground",
+   "params": {
+    "occurrence": "Base:1",
+    "grounded": true
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Base:1",
+    "b": "Link1:1",
+    "at": {
+     "point": [
+      0.0,
+      0.0,
+      96.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "name": "J1_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link1:1",
+    "b": "Link2:1",
+    "at": {
+     "point": [
+      0.0,
+      0.0,
+      174.0
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "name": "J2_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link2:1",
+    "b": "Link3:1",
+    "at": {
+     "point": [
+      102.44605024744953,
+      27.450336431562317,
+      300.39733311463135
+     ],
+     "z": [
+      -0.25881904510252074,
+      0.9659258262890683,
+      0.0
+     ]
+    },
+    "name": "J3_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link3:1",
+    "b": "Link4:1",
+    "at": {
+     "point": [
+      229.52032221410116,
+      61.49978498379947,
+      252.51451304903773
+     ],
+     "z": [
+      0.9076733711903687,
+      0.24321034680169393,
+      -0.34202014332566866
+     ]
+    },
+    "name": "J4_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link4:1",
+    "b": "Link5:1",
+    "at": {
+     "point": [
+      300.3188451669499,
+      80.4701920343316,
+      225.83694186963558
+     ],
+     "z": [
+      -0.1644949641685828,
+      0.9559237071920419,
+      0.24321034680169393
+     ]
+    },
+    "name": "J5_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "joint.as_built",
+   "params": {
+    "type": "revolute",
+    "a": "Link5:1",
+    "b": "Link6:1",
+    "at": {
+     "point": [
+      392.6432507239092,
+      121.06207301661144,
+      128.73646124840212
+     ],
+     "z": [
+      0.6594600396925665,
+      0.28994200701628453,
+      -0.6935748615802388
+     ]
+    },
+    "name": "J6_DISPLAY_ZERO",
+    "limits": [
+     [
+      -170,
+      170
+     ]
+    ]
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\BASE_FOOT.stl",
+    "format": "stl",
+    "bodies": [
+     "BASE_FOOT"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\BASE_COLUMN.stl",
+    "format": "stl",
+    "bodies": [
+     "BASE_COLUMN"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\BASE_LIGHT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "BASE_LIGHT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J1_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J1_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J1_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J1_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK1_SHOULDER_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK1_SHOULDER_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK1_POST.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK1_POST"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J2_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J2_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J2_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J2_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J2_END_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "J2_END_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J2_CAP_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "J2_CAP_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_SHOULDER_HUB.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_SHOULDER_HUB"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_SHOULDER_HUB_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_SHOULDER_HUB_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_SHOULDER_HUB_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_SHOULDER_HUB_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_UPPER_BAR.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_UPPER_BAR"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J3_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J3_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J3_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J3_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J3_END_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "J3_END_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J3_CAP_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "J3_CAP_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_LOGO_K.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_LOGO_K"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_LOGO_K_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_LOGO_K_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_LOGO_M.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_LOGO_M"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_LOGO_J.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_LOGO_J"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK2_LOGO_H.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK2_LOGO_H"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK3_ELBOW_HUB.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK3_ELBOW_HUB"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK3_ELBOW_HUB_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK3_ELBOW_HUB_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK3_ELBOW_HUB_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK3_ELBOW_HUB_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK3_FOREARM_BAR.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK3_FOREARM_BAR"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J4_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J4_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J4_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J4_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J4_END_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "J4_END_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J4_CAP_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "J4_CAP_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK4_NECK.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK4_NECK"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J5_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J5_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J5_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J5_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J5_END_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "J5_END_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J5_CAP_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "J5_CAP_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK5_WRIST_HUB.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK5_WRIST_HUB"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK5_WRIST_HUB_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK5_WRIST_HUB_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK5_WRIST_HUB_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK5_WRIST_HUB_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK5_WRIST_BAR.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK5_WRIST_BAR"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J6_MODULE.stl",
+    "format": "stl",
+    "bodies": [
+     "J6_MODULE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J6_ACCENT_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "J6_ACCENT_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J6_END_CAP.stl",
+    "format": "stl",
+    "bodies": [
+     "J6_END_CAP"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\J6_CAP_SLASH.stl",
+    "format": "stl",
+    "bodies": [
+     "J6_CAP_SLASH"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK6_TOOL_FLANGE.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK6_TOOL_FLANGE"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "file.save_mesh",
+   "params": {
+    "path": "C:\\projects\\robot-arm-lab\\models\\armold-mks-product-v3\\meshes\\LINK6_TOOL_RING.stl",
+    "format": "stl",
+    "bodies": [
+     "LINK6_TOOL_RING"
+    ],
+    "quality": "fine"
+   }
+  },
+  {
+   "command": "component.list",
+   "params": {
+    "compact": true,
+    "bodies": true
+   }
+  },
+  {
+   "command": "joint.list",
+   "params": {}
+  }
+ ]
+}

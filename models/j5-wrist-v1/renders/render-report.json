@@ -1,0 +1,136 @@
+{
+ "shots": {
+  "assembled": {
+   "direction": [
+    1.2,
+    -1.6,
+    0.9
+   ],
+   "objects": [
+    "DRIVER",
+    "HOUSING_BASE",
+    "HOUSING_CAP",
+    "J5_OUTPUT_HUB",
+    "J5_REAR_COVER",
+    "J5_STATOR_A",
+    "J5_STATOR_B",
+    "MOTOR",
+    "OUTPUT_FLANGE",
+    "RETAINER"
+   ]
+  },
+  "exploded": {
+   "direction": [
+    1.2,
+    -1.6,
+    0.9
+   ],
+   "objects": [
+    "DRIVER",
+    "HOUSING_BASE",
+    "HOUSING_CAP",
+    "J5_OUTPUT_HUB",
+    "J5_REAR_COVER",
+    "J5_STATOR_A",
+    "J5_STATOR_B",
+    "MOTOR",
+    "OUTPUT_FLANGE",
+    "RETAINER"
+   ]
+  },
+  "open": {
+   "direction": [
+    1.6,
+    -1.0,
+    -0.6
+   ],
+   "objects": [
+    "DRIVER",
+    "HOUSING_BASE",
+    "HOUSING_CAP",
+    "J5_OUTPUT_HUB",
+    "J5_STATOR_A",
+    "MOTOR",
+    "OUTPUT_FLANGE",
+    "RETAINER"
+   ]
+  },
+  "in_arm": {
+   "direction": [
+    0.4,
+    -1.6,
+    0.7
+   ],
+   "objects": [
+    "DRIVER",
+    "HOUSING_BASE",
+    "HOUSING_CAP",
+    "J5_OUTPUT_HUB",
+    "J5_REAR_COVER",
+    "J5_STATOR_A",
+    "J5_STATOR_B",
+    "MOTOR",
+    "OUTPUT_FLANGE",
+    "RETAINER",
+    "V3_BASE_COLUMN",
+    "V3_BASE_FOOT",
+    "V3_BASE_LIGHT_RING",
+    "V3_J1_ACCENT_RING",
+    "V3_J1_MODULE",
+    "V3_J2_ACCENT_RING",
+    "V3_J2_CAP_SLASH",
+    "V3_J2_END_CAP",
+    "V3_J2_MODULE",
+    "V3_J3_ACCENT_RING",
+    "V3_J3_CAP_SLASH",
+    "V3_J3_END_CAP",
+    "V3_J3_MODULE",
+    "V3_J4_ACCENT_RING",
+    "V3_J4_CAP_SLASH",
+    "V3_J4_END_CAP",
+    "V3_J4_MODULE",
+    "V3_LINK1_POST",
+    "V3_LINK1_SHOULDER_CAP",
+    "V3_LINK2_LOGO_H",
+    "V3_LINK2_LOGO_J",
+    "V3_LINK2_LOGO_K",
+    "V3_LINK2_LOGO_K_SLASH",
+    "V3_LINK2_LOGO_M",
+    "V3_LINK2_SHOULDER_HUB",
+    "V3_LINK2_SHOULDER_HUB_CAP",
+    "V3_LINK2_SHOULDER_HUB_SLASH",
+    "V3_LINK2_UPPER_BAR",
+    "V3_LINK3_ELBOW_HUB",
+    "V3_LINK3_ELBOW_HUB_CAP",
+    "V3_LINK3_ELBOW_HUB_SLASH",
+    "V3_LINK3_FOREARM_BAR"
+   ]
+  }
+ },
+ "note": "모듈 좌표 = MP6 좌표(z = J5 축) · in_arm = 표시 자세(v1 kinematics) · 링크 4 ~ 6 의 v3 덩어리는 뺌",
+ "module_to_world": {
+  "R": [
+   [
+    0.9076733711903687,
+    -0.38609643613362693,
+    -0.1644949641685828
+   ],
+   [
+    0.24321034680169393,
+    0.16449496416858284,
+    0.9559237071920419
+   ],
+   [
+    -0.34202014332566866,
+    -0.9076733711903686,
+    0.24321034680169393
+   ]
+  ],
+  "t_mm": [
+   303.77323941449015,
+   60.39579418329872,
+   220.7295245868
+  ]
+ },
+ "samples": 48
+}

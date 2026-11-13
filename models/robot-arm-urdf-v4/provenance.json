@@ -1,0 +1,2183 @@
+{
+  "schema_version": 1,
+  "unit": "118",
+  "canonical_source": "Root-authored robot_arm.urdf; A writes no XML",
+  "input_census": {
+    ".dev/mp16-evidence/printprep.json": {
+      "sha256": "dac271d23b66275a5214a86001a5559f1caff804fe7c43613751f04db04dbf88",
+      "bytes": 9624
+    },
+    ".dev/mp16-evidence/sizing/sizing.json": {
+      "sha256": "1a77a9acb1bd9cb04296c064b6b408f141ed48414f3094c3b4b6593f9dc40009",
+      "bytes": 6857
+    },
+    ".dev/mp18-evidence/build/build-record.json": {
+      "sha256": "bcd66950fb7575e476bf2ee171f183466dde4124523eee0dcc671b4903ab0ef3",
+      "bytes": 20930
+    },
+    ".dev/mp18-evidence/loads/loads.json": {
+      "sha256": "84892bf2df7ad62f078ae32d9a28962c6b796b40b2a3689c4eed29c7336058ae",
+      "bytes": 26197
+    },
+    ".dev/mp18-evidence/printprep.json": {
+      "sha256": "ac9261e99695ca1b4a107c4c4a7b91d00b11c2842d81b0999a4c5074660a8044",
+      "bytes": 24447
+    },
+    "models/armold-mks-concept-v1/kinematics.json": {
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+      "bytes": 6884
+    },
+    "models/armold-mks-concept-v1/parameters.json": {
+      "sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+      "bytes": 1935
+    },
+    "models/cycloid-27-v1/parts/CAM_LOWER.stl": {
+      "sha256": "ec4c87eaf8fe254570d4e1c54cafd93643a0071f5514164ee63032d2594e9eae",
+      "bytes": 166484
+    },
+    "models/cycloid-27-v1/parts/CAM_UPPER.stl": {
+      "sha256": "35477bc7d40ab49dff80b7353d182655e6fd17fac8c8e1a66dcee235be1ab6bc",
+      "bytes": 223484
+    },
+    "models/cycloid-27-v1/parts/CARRIER.stl": {
+      "sha256": "eda73236e9bcc8a1fa88efd0010be732e20277c03193f6e19bfb893d77a91529",
+      "bytes": 527284
+    },
+    "models/cycloid-27-v1/parts/DISC_1.stl": {
+      "sha256": "8e9df1381583f2d9087663f4ee4bd77853395895864cf565a39fba46ed5328dd",
+      "bytes": 1589684
+    },
+    "models/cycloid-27-v1/parts/DISC_2.stl": {
+      "sha256": "1129d2603c9ebb7d47e14d0f9364600e68222aa862aacbe5575182cf72b3c2c6",
+      "bytes": 1589684
+    },
+    "models/cycloid-27-v1/parts/FIT_STRIP.stl": {
+      "sha256": "9b19b73ac5da516ae76c6474867d66c13bf9cb8d578036998380d3b87bc003f5",
+      "bytes": 339284
+    },
+    "models/cycloid-27-v1/parts/GAUGE.stl": {
+      "sha256": "3d378ccc98640678c8fdb7ab6ad0ffad40146b07ba2c16f4fd4fba8e61d538cc",
+      "bytes": 1484
+    },
+    "models/cycloid-27-v1/parts/HOUSING_BASE.stl": {
+      "sha256": "0144c4727748853663fc0642ae66c1a88087aa18765fd2fb0f15fa3e4a7d5fea",
+      "bytes": 1338784
+    },
+    "models/cycloid-27-v1/parts/HOUSING_CAP.stl": {
+      "sha256": "a2516ea5775365bc6c4f509856b6f456b46f87972629bb6987eca7a5c0f51434",
+      "bytes": 697584
+    },
+    "models/cycloid-27-v1/parts/OUTPUT_FLANGE.stl": {
+      "sha256": "2b466aa1def7f56266af2a9e0835925362063da044a13a6c12ccf197808138f6",
+      "bytes": 156784
+    },
+    "models/cycloid-27-v1/parts/RETAINER.stl": {
+      "sha256": "7eb0300f8a50828867c7bf64a05afadc2c0eb1a51426442c96961ac10ef74b8f",
+      "bytes": 90084
+    },
+    "models/cycloid-27-v1/parts/WASHER.stl": {
+      "sha256": "6a6a508c7237274da49d4ef6f12ed41268f6bae9acf002749a6abfe0cc5c61d7",
+      "bytes": 104784
+    },
+    "models/cycloid-27-v1/parts/WASHER_T2p0.stl": {
+      "sha256": "8304bb780a1fb991481218efcf242304ffc5344f8d18a1ea76e4c2acddce676e",
+      "bytes": 104784
+    },
+    "models/cycloid-27-v1/parts/WASHER_T2p2.stl": {
+      "sha256": "6d01eb6c1920efbaa8d1530bbb07923125be9a8862878f43280b0e5d70391613",
+      "bytes": 104784
+    },
+    "models/cycloid-27-v1/parts/WASHER_T2p4.stl": {
+      "sha256": "d12e5c2485f91887c2eca2ed3a248f07b2bff9cc4bdb390f83997ab0f0cd8082",
+      "bytes": 104784
+    },
+    "models/j23-drive-v1/parts/CAM_LOWER.stl": {
+      "sha256": "a74de295ba583f703eaf0b4a30b608e91cb63b5d5d9adb9bd38e397d967e6e1a",
+      "bytes": 484984
+    },
+    "models/j23-drive-v1/parts/CAM_UPPER.stl": {
+      "sha256": "c65789e93d0ccc7c7eff7ab1da2ca34679907b063f2b8a0dd7c8410873f267d6",
+      "bytes": 635684
+    },
+    "models/j23-drive-v1/parts/CAP.stl": {
+      "sha256": "9812958a0d6d4dec3b57d502b3537db9115788e382f70844bc90909644e84a06",
+      "bytes": 3680684
+    },
+    "models/j23-drive-v1/parts/CARRIER.stl": {
+      "sha256": "015c59d6a336f26d5d1f6b556654ec4d7f32f54842a58050f564442d6e139759",
+      "bytes": 2578284
+    },
+    "models/j23-drive-v1/parts/DISC_1.stl": {
+      "sha256": "879789190569bd3e596c0d2fa54efa43593f550b9ade12dce078012281cbc350",
+      "bytes": 2429884
+    },
+    "models/j23-drive-v1/parts/DISC_2.stl": {
+      "sha256": "6c13f08281db179826b83bb1ada55ec8e0ca35081a82665d38b0a5bb894e93f7",
+      "bytes": 2429884
+    },
+    "models/j23-drive-v1/parts/GUARD.stl": {
+      "sha256": "ee57da040bc62a8e6e5ac8335cc8fa2b3c98a909228b67ee3698e45255019f0b",
+      "bytes": 1170584
+    },
+    "models/j23-drive-v1/parts/HOUSING_BASE.stl": {
+      "sha256": "de180fff623bed074d131e18943c96f2acb4fcca5cc022244846e6dcdbc24455",
+      "bytes": 2076884
+    },
+    "models/j23-drive-v1/parts/LEVER.stl": {
+      "sha256": "c7d568c70c1af54ee8194235cd0a59c6c06077233c9fc9bac51df9ac0f904b72",
+      "bytes": 717784
+    },
+    "models/j23-drive-v1/parts/OUTPUT_FLANGE.stl": {
+      "sha256": "c8f9341bdc535fad04c92af0756388ff175752e526d76d05780f5504003695c6",
+      "bytes": 429284
+    },
+    "models/j23-drive-v1/parts/RETAINER.stl": {
+      "sha256": "ca9f74255da5f307945774de3063930fc22af93a63493dd8d8b61d9788bf6be5",
+      "bytes": 273684
+    },
+    "models/j23-drive-v1/parts/STAND.stl": {
+      "sha256": "83a5d979ff6c13ab48201dcf0040697625fcd1ca89b27905197c191e5e70e274",
+      "bytes": 703984
+    },
+    "models/j23-drive-v1/parts/WASHER_T1p2.stl": {
+      "sha256": "8754db043b825ea1660f0ce7c1844dcfcfdf6c6aef1c3da7023e0d27d1f01999",
+      "bytes": 167484
+    },
+    "models/j23-drive-v1/parts/WASHER_T1p4.stl": {
+      "sha256": "ab3c5685b28f8561169781ea4a64e02b6fd93d62ed531d8f932a75b389453982",
+      "bytes": 215484
+    },
+    "models/j23-drive-v1/parts/WASHER_T1p6.stl": {
+      "sha256": "165c88304e1ed902248f1f230f3c327165da342d737fcbfd1c68411821d430d0",
+      "bytes": 215484
+    },
+    "models/j5-wrist-v1/mass-properties.json": {
+      "sha256": "4379ef87cf35bc6a967256e2aca5856ac25d1da149ef73cd20fea32f7efdab1c",
+      "bytes": 4925
+    },
+    "models/j5-wrist-v1/parts/J5_OUTPUT_HUB.stl": {
+      "sha256": "d57ecc6fc9f5bc50a61c7812b1cff2257d40b5eb253f0eda68268fa6563970d2",
+      "bytes": 1447784
+    },
+    "models/j5-wrist-v1/parts/J5_REAR_COVER.stl": {
+      "sha256": "2343d7d69e7916b5678e4083f121c6cab5f9a09a03ed668c14107f11b763d60d",
+      "bytes": 274884
+    },
+    "models/j5-wrist-v1/parts/J5_STATOR_A.stl": {
+      "sha256": "477a89f93de5124f580f3dc13a9bdf09f6979bd02b700e9664d8c3ece35c06a0",
+      "bytes": 941984
+    },
+    "models/j5-wrist-v1/parts/J5_STATOR_B.stl": {
+      "sha256": "f49b61dd91b1740288fd4695052f84d116c4d7d0c81eb22b7abea76f089e77a5",
+      "bytes": 671184
+    },
+    "models/kmjh-gripper-v1/README.md": {
+      "sha256": "b1fe10f2f8df158a9de5d950e3272ee1dc3b9a831b8affd25862e0e8a5ef046f",
+      "bytes": 20752
+    },
+    "models/kmjh-gripper-v1/front.png": {
+      "sha256": "a50ba673032f65461e6e85cd856e56e6f85026a918d40957788cc1fee64cb043",
+      "bytes": 72546
+    },
+    "models/kmjh-gripper-v1/iso.png": {
+      "sha256": "f20be76a7125d8eba926444a9099b62b053178ad6bc7e89b182e7a0479e8c9f8",
+      "bytes": 853800
+    },
+    "models/kmjh-gripper-v1/kmjh-gripper-v1.3mf": {
+      "sha256": "cc857e47ca1246efc07f1ac73d257e02ce2e5b670ae3096a20fe7adf6bff5513",
+      "bytes": 803464
+    },
+    "models/kmjh-gripper-v1/kmjh-gripper-v1.solidcraft": {
+      "sha256": "bbf177966f7f73118147e3613e115bf36816d61d34831cfa945d03bfb22d06a7",
+      "bytes": 13017050
+    },
+    "models/kmjh-gripper-v1/kmjh-gripper-v1.solidcraft.bak": {
+      "sha256": "7b560ce06d3c0a3f4f09a7917017fc386ef44e030da2f7418de5a7a3f2f9834a",
+      "bytes": 13201019
+    },
+    "models/kmjh-gripper-v1/kmjh-gripper-v1.step": {
+      "sha256": "8dc2e32228c24130c84f1cd5c9b2798f5f9b9a138fa196588b50f8421444b1e1",
+      "bytes": 5872190
+    },
+    "models/kmjh-gripper-v1/mass-properties.json": {
+      "sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb",
+      "bytes": 3470
+    },
+    "models/kmjh-gripper-v1/parts/BASE.stl": {
+      "sha256": "80ee24f437b7d23aaec2fceb345ca716efb4224a740d86285ceaba4f7d1ef794",
+      "bytes": 295884
+    },
+    "models/kmjh-gripper-v1/parts/FIT_BLOCK.stl": {
+      "sha256": "eedd7a12eaea8ce8c5aff4f2fe2c4219271a3c7866d7e3d55c1d091d2f01e6fd",
+      "bytes": 187284
+    },
+    "models/kmjh-gripper-v1/parts/FIT_MESH.stl": {
+      "sha256": "ccd12fc77710ec10a6ec7c12f63f3c29f42c7adee8ced496452114a9b995a52d",
+      "bytes": 52484
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_005.stl": {
+      "sha256": "c9202d14028ee05467d09a575c346ae681efd7ae1ffa0ce0af0c3565b81286fe",
+      "bytes": 543284
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_010.stl": {
+      "sha256": "c387ed0ae9eea02119d44e248690b85fbe217579db08d0e4fb7acee8ddc9789c",
+      "bytes": 543284
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_015.stl": {
+      "sha256": "dedf1601476fa45cdda040794bc7b5099f87bfdb601c14163e0cf5e1475045e4",
+      "bytes": 543284
+    },
+    "models/kmjh-gripper-v1/parts/FIT_PINION_020.stl": {
+      "sha256": "0bf71453a88d2a588488d5a318919141d75fc254f95bcd96c934e7f3c4acdb16",
+      "bytes": 543284
+    },
+    "models/kmjh-gripper-v1/parts/FIT_RACK_A.stl": {
+      "sha256": "e54f81d8acbf9ed18da845744957e5d718c760168f3dd0dceba1ede3c777c51b",
+      "bytes": 13884
+    },
+    "models/kmjh-gripper-v1/parts/FIT_RACK_B.stl": {
+      "sha256": "05cc0074ebeaae52dc97d33e822c1b31aa89db265495f04d45bc6b0bafb583de",
+      "bytes": 13884
+    },
+    "models/kmjh-gripper-v1/parts/JAW_A.stl": {
+      "sha256": "b0bee9c270933a6cd4302954a00113f2640ea18bd72949ebbddc53b3731f3bb7",
+      "bytes": 431384
+    },
+    "models/kmjh-gripper-v1/parts/JAW_B.stl": {
+      "sha256": "7667af5f78a191204603e5273e81a062a492f6deefa440b1ca8e06705b84cb42",
+      "bytes": 319884
+    },
+    "models/kmjh-gripper-v1/parts/PAD_A_FLAT.stl": {
+      "sha256": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c",
+      "bytes": 45284
+    },
+    "models/kmjh-gripper-v1/parts/PAD_A_V.stl": {
+      "sha256": "a6fe1233107159745c8cc5ba2c502f4e660fb883844ac4032fd2b1f73c877d37",
+      "bytes": 47084
+    },
+    "models/kmjh-gripper-v1/parts/PAD_B_FLAT.stl": {
+      "sha256": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14",
+      "bytes": 33684
+    },
+    "models/kmjh-gripper-v1/parts/PAD_B_V.stl": {
+      "sha256": "9af9276b91c8d7460388145baa89d609ce19261bf2e4b4539fd7685c00bc0f35",
+      "bytes": 35484
+    },
+    "models/kmjh-gripper-v1/parts/PINION.stl": {
+      "sha256": "94b7b4af713e33b1b3a4175c5fbd00f7bd3169e77c5f14f7f0812ee6a0ab0ece",
+      "bytes": 543284
+    },
+    "models/kmjh-gripper-v1/print-plate-fit.stl": {
+      "sha256": "b983a474996ed9a98bbce885648cafd8c174b1e29359aac0f36c70b3148cd87f",
+      "bytes": 2440084
+    },
+    "models/kmjh-gripper-v1/print-plate-main.stl": {
+      "sha256": "c83be6fd5f2ef10fcfa4a0f5d1bc4ce3805b80efb42991ad3a4b5ae4ab3064d0",
+      "bytes": 1751384
+    },
+    "models/kmjh-gripper-v1/render-closed.png": {
+      "sha256": "1adc4d49ef6339943bc113a50ad5c75b219eae135bcd20d37d7bb5abd8adad4a",
+      "bytes": 1271248
+    },
+    "models/kmjh-gripper-v1/render-open80-back.png": {
+      "sha256": "a1efa4bed339813835e95d065b115930b55fcdead6ec8696b9c6ce3d512f11de",
+      "bytes": 1254738
+    },
+    "models/kmjh-gripper-v1/render-open80.png": {
+      "sha256": "9d50f67d66c80de06c5ed97ea2409c4f9140c718b4d360816961532837503a54",
+      "bytes": 1266439
+    },
+    "models/kmjh-gripper-v1/slicer/fit/preview.png": {
+      "sha256": "779e620359b9c8a966c9f6a5158ad1f617fe8285f396a2f8179da918eca54e6d",
+      "bytes": 10171
+    },
+    "models/kmjh-gripper-v1/slicer/fit/print-plate-fit.bambu.3mf": {
+      "sha256": "3b03e6528d9d57b2ecc9a1fa18c9c620f07c5077bb3edb0c97deaec76390c0f0",
+      "bytes": 499764
+    },
+    "models/kmjh-gripper-v1/slicer/fit/print_prep_report.json": {
+      "sha256": "9f2cef7589e85a3316a7e2df19da0b160409eb56b0a2afd6ea70c3cec71cf4ba",
+      "bytes": 2155
+    },
+    "models/kmjh-gripper-v1/slicer/main/preview.png": {
+      "sha256": "ef1281dd917e863f6828bf5452418c13162d41c9b0d18181cfaaf198ccc46fc2",
+      "bytes": 11151
+    },
+    "models/kmjh-gripper-v1/slicer/main/print-plate-main.bambu.3mf": {
+      "sha256": "079a2a0a7ff663808e8e73e8f91f2331ce6dc3a5c2b595e779119f6291453494",
+      "bytes": 362146
+    },
+    "models/kmjh-gripper-v1/slicer/main/print_prep_report.json": {
+      "sha256": "ed100c916f680b81a2514b50cbc5f2a6e911288bbf569a6ddf4eff6439c6dc56",
+      "bytes": 2159
+    },
+    "models/kmjh-gripper-v1/top.png": {
+      "sha256": "4d637856974291d6c8f8f9f8b9513aff0f4ace7524642a22cdfe157cbbabd4b9",
+      "bytes": 76191
+    },
+    "models/manipulator-v2/README.md": {
+      "sha256": "190afcddc89c93669b5b8cada8011d3a59ae68a01726781bd8413457261e2313",
+      "bytes": 20281
+    },
+    "models/manipulator-v2/check.json": {
+      "sha256": "bf3ee9f00769b7b3f27c4cdbb8fa822aa2fd6e32f9dfed8268e5da83a3629438",
+      "bytes": 350141
+    },
+    "models/manipulator-v2/manipulator-v2-display.glb": {
+      "sha256": "ca617b17586a4ef400ce856cea5c9d50e6ac5ecfac943308bb26fe8d3db31730",
+      "bytes": 17337552
+    },
+    "models/manipulator-v2/manipulator-v2-parts.solidcraft": {
+      "sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+      "bytes": 22377306
+    },
+    "models/manipulator-v2/parts/BASE.stl": {
+      "sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+      "bytes": 1268684
+    },
+    "models/manipulator-v2/parts/BASE_SKIN.stl": {
+      "sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+      "bytes": 754284
+    },
+    "models/manipulator-v2/parts/BASE_SKIN_BAND.stl": {
+      "sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+      "bytes": 179084
+    },
+    "models/manipulator-v2/parts/FA_TUBE.stl": {
+      "sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+      "bytes": 971484
+    },
+    "models/manipulator-v2/parts/FA_TUBE_CAP.stl": {
+      "sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+      "bytes": 207484
+    },
+    "models/manipulator-v2/parts/FA_TUBE_RING.stl": {
+      "sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+      "bytes": 153884
+    },
+    "models/manipulator-v2/parts/FLOOR.stl": {
+      "sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+      "bytes": 670084
+    },
+    "models/manipulator-v2/parts/FOREARM.stl": {
+      "sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+      "bytes": 756484
+    },
+    "models/manipulator-v2/parts/J1_CAN_A.stl": {
+      "sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+      "bytes": 753984
+    },
+    "models/manipulator-v2/parts/J1_CAN_B.stl": {
+      "sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+      "bytes": 671184
+    },
+    "models/manipulator-v2/parts/J1_FIT_BORE.stl": {
+      "sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+      "bytes": 251484
+    },
+    "models/manipulator-v2/parts/J1_FIT_SLEEVE.stl": {
+      "sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+      "bytes": 327684
+    },
+    "models/manipulator-v2/parts/J1_SPACER.stl": {
+      "sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+      "bytes": 369084
+    },
+    "models/manipulator-v2/parts/J2_HOOD_FACE.stl": {
+      "sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+      "bytes": 51884
+    },
+    "models/manipulator-v2/parts/J2_HUB.stl": {
+      "sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+      "bytes": 396484
+    },
+    "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl": {
+      "sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+      "bytes": 24884
+    },
+    "models/manipulator-v2/parts/J3_CAP.stl": {
+      "sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+      "bytes": 107284
+    },
+    "models/manipulator-v2/parts/J3_CAP_MARK.stl": {
+      "sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+      "bytes": 684
+    },
+    "models/manipulator-v2/parts/J4_CAN_A.stl": {
+      "sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+      "bytes": 970184
+    },
+    "models/manipulator-v2/parts/J4_CAN_B.stl": {
+      "sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+      "bytes": 671184
+    },
+    "models/manipulator-v2/parts/J4_REAR_COVER.stl": {
+      "sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+      "bytes": 274884
+    },
+    "models/manipulator-v2/parts/J6_CAN_A.stl": {
+      "sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+      "bytes": 963584
+    },
+    "models/manipulator-v2/parts/J6_CAN_B.stl": {
+      "sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+      "bytes": 671184
+    },
+    "models/manipulator-v2/parts/J6_REAR_COVER.stl": {
+      "sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+      "bytes": 274884
+    },
+    "models/manipulator-v2/parts/J6_TUBE.stl": {
+      "sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+      "bytes": 769384
+    },
+    "models/manipulator-v2/parts/J6_TUBE_CAP.stl": {
+      "sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+      "bytes": 207484
+    },
+    "models/manipulator-v2/parts/J6_TUBE_RING.stl": {
+      "sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+      "bytes": 153884
+    },
+    "models/manipulator-v2/parts/LINK5.stl": {
+      "sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+      "bytes": 915284
+    },
+    "models/manipulator-v2/parts/LINK5_CAP.stl": {
+      "sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+      "bytes": 144784
+    },
+    "models/manipulator-v2/parts/LINK5_CAP_MARK.stl": {
+      "sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+      "bytes": 684
+    },
+    "models/manipulator-v2/parts/SHOULDER.stl": {
+      "sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+      "bytes": 606084
+    },
+    "models/manipulator-v2/parts/SHOULDER_SHROUD.stl": {
+      "sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+      "bytes": 1204584
+    },
+    "models/manipulator-v2/parts/TOOL_FLANGE.stl": {
+      "sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+      "bytes": 1498384
+    },
+    "models/manipulator-v2/parts/TURRET.stl": {
+      "sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+      "bytes": 801984
+    },
+    "models/manipulator-v2/parts/TURRET_BAND.stl": {
+      "sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+      "bytes": 220284
+    },
+    "models/manipulator-v2/parts/UA_CAP_J2.stl": {
+      "sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+      "bytes": 200884
+    },
+    "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl": {
+      "sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+      "bytes": 684
+    },
+    "models/manipulator-v2/parts/UA_CAP_J3.stl": {
+      "sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+      "bytes": 189484
+    },
+    "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl": {
+      "sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+      "bytes": 684
+    },
+    "models/manipulator-v2/parts/UA_COVER.stl": {
+      "sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+      "bytes": 472284
+    },
+    "models/manipulator-v2/parts/UA_J3_BRACKET.stl": {
+      "sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+      "bytes": 949784
+    },
+    "models/manipulator-v2/parts/UA_LOGO.stl": {
+      "sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+      "bytes": 8884
+    },
+    "models/manipulator-v2/parts/UPPER_ARM.stl": {
+      "sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+      "bytes": 1020784
+    },
+    "models/manipulator-v2/print-plate-A_upper_arm.stl": {
+      "sha256": "cad3b8f9d19a06b28b472273b8e1879a5dfd5b17794c20ecc06826e64c770175",
+      "bytes": 1020784
+    },
+    "models/manipulator-v2/print-plate-B_cover.stl": {
+      "sha256": "f0c8d27dae292d78b7569192bcc05fff8a757d03d87bc46512f96915ec568123",
+      "bytes": 1430784
+    },
+    "models/manipulator-v2/print-plate-C_shoulder.stl": {
+      "sha256": "ddcbe62bde26adfa3b0f99fa8791f7dcfbeb30a7750ff93f8412aa35fb0a9729",
+      "bytes": 1810584
+    },
+    "models/manipulator-v2/print-plate-D_floor_hood.stl": {
+      "sha256": "277ed4b52966e9ead3a3cc8a8a8a8f5adb9e5199cd4a7a83303e88199f2e5c88",
+      "bytes": 1143084
+    },
+    "models/manipulator-v2/print-plate-E_base_skin.stl": {
+      "sha256": "13fb1c2435d3216cedebfc366caa52f8016fb0e71aaf23d739d36d592aca1b3e",
+      "bytes": 2570884
+    },
+    "models/manipulator-v2/print-plate-F_forearm_tubes.stl": {
+      "sha256": "358c689d9d1c62816610851a7c707efa541fc7e2d7de3e6f374b503a55253bcc",
+      "bytes": 3219584
+    },
+    "models/manipulator-v2/print-plate-G_cans.stl": {
+      "sha256": "9fdb2285cd28cdcfb4a78a6600cd6facb1e6bd3fd2cbb68ba06510cf079731a1",
+      "bytes": 4700884
+    },
+    "models/manipulator-v2/print-plate-H_turret_small.stl": {
+      "sha256": "a7afa6be9f590ffbb0772186d035eca5bb28866dfe83705742d06c74102bc45e",
+      "bytes": 3070084
+    },
+    "models/manipulator-v2/print-plate-I_fit_coupons_first.stl": {
+      "sha256": "4d8fd96a28b495f0251962980188eda1c2c32fa45d81519b119e47cf981a97cd",
+      "bytes": 579084
+    },
+    "models/manipulator-v2/print-plate-J_link5_caps.stl": {
+      "sha256": "bcbb396cd46075a9e5ef894372a91d39100126ba1ced720749c117dce6a84d31",
+      "bytes": 1559784
+    },
+    "models/manipulator-v2/renders/display-back.png": {
+      "sha256": "6fe52aa1239467a799aa48a12420359151417135d143f22aeb1ec1d0c493f112",
+      "bytes": 1975449
+    },
+    "models/manipulator-v2/renders/display-front.png": {
+      "sha256": "6f05943bf3becfb4b1346773f881176cc7e8ece0d95cf33f1597ed6609bff28e",
+      "bytes": 1938570
+    },
+    "models/manipulator-v2/renders/display-iso.png": {
+      "sha256": "5340542808e8c049671c8e12974e0f8b3c37b93e61f1ec90cec4bcabcbc12f0e",
+      "bytes": 2037698
+    },
+    "models/manipulator-v2/renders/display-isoback.png": {
+      "sha256": "546e875eaa4ce7f8841548c969272380121d9091dfbc27fc5f679ea7a079e37c",
+      "bytes": 2018438
+    },
+    "models/manipulator-v2/renders/display-top.png": {
+      "sha256": "919abe5e66b462b077567bac9f640ef4561f382d0bf355db9ff84c6045e9aa5b",
+      "bytes": 1992154
+    },
+    "models/manipulator-v2/renders/ready-isoback.png": {
+      "sha256": "49d9182053d66021759d0de6932a77dd3f567aaa3887f5a62b8b8f2d2d08c2de",
+      "bytes": 2011962
+    },
+    "models/manipulator-v2/renders/renders.json": {
+      "sha256": "32ee81de6c570cb5c5cce1d216e5a9038750e16eb0706c1c860715ca1c76d167",
+      "bytes": 1087
+    },
+    "models/manipulator-v2/renders/zero-isoback.png": {
+      "sha256": "4155f53a0046af70d5482ac7ba8cf63d199c70f54a5516b8fe6af63233fa0b8a",
+      "bytes": 1965449
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-A_upper_arm.bambu.3mf": {
+      "sha256": "38e0136c937db780acb5d8e07c821e25996e7f0b1884735ba6212e9823e0e2ae",
+      "bytes": 244594
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-B_cover.bambu.3mf": {
+      "sha256": "aabad742b68024285624e57d1a8acae7a0ba73b8a7e24035302c13b66ad0804e",
+      "bytes": 320575
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-C_shoulder.bambu.3mf": {
+      "sha256": "2e8a2625ce8147cbbd642a826f56f39fb72dcf12e517540b0ae7e4fd9bb9bcc2",
+      "bytes": 387926
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-D_floor_hood.bambu.3mf": {
+      "sha256": "d03599f246c600f75f9e550309457cd05ced5e9144f62e7a87edce0119d8673f",
+      "bytes": 261530
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-E_base_skin.bambu.3mf": {
+      "sha256": "362ee530a2a0f5a03190f255194cad74c4bf55df62fffb9b892fe224a4b94645",
+      "bytes": 661879
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-F_forearm_tubes.bambu.3mf": {
+      "sha256": "8ba8c7e80a148de0f0cac0b7d72a8b0cd3f18bd3794e9809497766814fb63ad2",
+      "bytes": 681036
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-G_cans.bambu.3mf": {
+      "sha256": "fb4703418200ec350ead41441fd95fc112535aa13441a706be2dbd9f61456f84",
+      "bytes": 929973
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-H_turret_small.bambu.3mf": {
+      "sha256": "a17bd28417a7284f52f68c08fa798047e14461bb89f6313e07abb10f481b6b85",
+      "bytes": 671022
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-I_fit_coupons_first.bambu.3mf": {
+      "sha256": "f7d4dab1b017e99780b0c0af6677dd18ec564a05508d22310862a43ce3b12ec3",
+      "bytes": 183763
+    },
+    "models/manipulator-v2/slicer/manipulator-v2-J_link5_caps.bambu.3mf": {
+      "sha256": "fcc65eac92fb10601cacbf722f44b332c9c2667722b69c28660ff297b676c393",
+      "bytes": 363183
+    },
+    "models/manipulator-v2/slicer/print_prep_report-A_upper_arm.json": {
+      "sha256": "3759b85b5f3114f69e9af83ec8055320c355e49940fba54f186857277c3dc131",
+      "bytes": 3990
+    },
+    "models/manipulator-v2/slicer/print_prep_report-B_cover.json": {
+      "sha256": "2556889364d1d178c4e3b4ca44b014a9bd6234871f77165a51fd5648c5c779bb",
+      "bytes": 2898
+    },
+    "models/manipulator-v2/slicer/print_prep_report-C_shoulder.json": {
+      "sha256": "ff1c65578b36c532a3900a8a93c21f713b79693a08d1bc90a1d14d55e2856dd0",
+      "bytes": 4556
+    },
+    "models/manipulator-v2/slicer/print_prep_report-D_floor_hood.json": {
+      "sha256": "564b8f003f0a666d8ae599440f0bfe69e8e934dc1da123fad7210709c0ff102a",
+      "bytes": 2922
+    },
+    "models/manipulator-v2/slicer/print_prep_report-E_base_skin.json": {
+      "sha256": "79f591ac014f216771d154db89e767c9c89ce8b32fd5609f9db8fa7297964fa6",
+      "bytes": 2914
+    },
+    "models/manipulator-v2/slicer/print_prep_report-F_forearm_tubes.json": {
+      "sha256": "13573025b072ab1ba0bd4cd374b17ddd9511bd24213613e9eefe1e658c8e6043",
+      "bytes": 3999
+    },
+    "models/manipulator-v2/slicer/print_prep_report-G_cans.json": {
+      "sha256": "0c56bb943935834f51b1e08c354a63caf4690d752d62622fa122335514e5e1bf",
+      "bytes": 2900
+    },
+    "models/manipulator-v2/slicer/print_prep_report-H_turret_small.json": {
+      "sha256": "176b98c6a29b602554894867eb1a50f39dd8f9f67789c60c00ffd61f5861fb85",
+      "bytes": 3710
+    },
+    "models/manipulator-v2/slicer/print_prep_report-I_fit_coupons_first.json": {
+      "sha256": "c8aca5cc98873c13ba7ced7ec25f99b0182c84668874c6b99a57dccee0a97871",
+      "bytes": 2919
+    },
+    "models/manipulator-v2/slicer/print_prep_report-J_link5_caps.json": {
+      "sha256": "27f523aff957c04a1c269ab5e7c313d38ccf191bde147d6d08daa4b7994552c2",
+      "bytes": 4268
+    },
+    "models/robot-arm-urdf-v1/README.md": {
+      "sha256": "92c3103b96cab53c7e3575813c5b6d56560d59ef5a1eddc43e5cd6fec77d2ef6",
+      "bytes": 5946
+    },
+    "models/robot-arm-urdf-v1/assumptions.json": {
+      "sha256": "19a5c0c80c2d4047ff4eefec982bcdc91062e6dcd392cb548fbd7c5878b66de5",
+      "bytes": 5873
+    },
+    "models/robot-arm-urdf-v1/isaac_import_settings.json": {
+      "sha256": "be6f09f7f69763aac9ffba8307e2d1d15aa71c58236554dc51e7b912ff6f6878",
+      "bytes": 506
+    },
+    "models/robot-arm-urdf-v1/manifest.json": {
+      "sha256": "d82f530e301a448c58248b5e5cb94580da610c247fddbc7f643b76836b626b4c",
+      "bytes": 3818
+    },
+    "models/robot-arm-urdf-v1/meshes/BASE_COLUMN.stl": {
+      "sha256": "192fe64ced938471a62b6764dabfedd031cc667640fdd31d5b77a960e2327b17",
+      "bytes": 121384
+    },
+    "models/robot-arm-urdf-v1/meshes/BASE_FOOT.stl": {
+      "sha256": "e483ca65bb4d99357c466c44d94a7d065b42ad00b71d0dbec10736e8398a17b4",
+      "bytes": 187684
+    },
+    "models/robot-arm-urdf-v1/meshes/BASE_LIGHT_RING.stl": {
+      "sha256": "fb38f4267ecf1c1cffd8a92dea497c6ccac6ad0b30c08195916ce2335370f4f9",
+      "bytes": 70884
+    },
+    "models/robot-arm-urdf-v1/meshes/J1_ACCENT_RING.stl": {
+      "sha256": "2849b1315dd955ddea05964c35021fe2943497b37796b1e01023de7eeb606a7a",
+      "bytes": 108684
+    },
+    "models/robot-arm-urdf-v1/meshes/J1_MODULE.stl": {
+      "sha256": "b2cae5ac39140cb54acea91819d64375bfc54c9029c0b3640f26ece20fd2477e",
+      "bytes": 410584
+    },
+    "models/robot-arm-urdf-v1/meshes/J2_ACCENT_RING.stl": {
+      "sha256": "97bf028acc36713681dd59373657c5b57c151876c4c1ae93e33264c7ef8cdf73",
+      "bytes": 69684
+    },
+    "models/robot-arm-urdf-v1/meshes/J2_END_CAP.stl": {
+      "sha256": "5540cd7b6ac4dc1cbdcbc5ffcd99840cbefe308b51c64e6c2d4dba6bc6660352",
+      "bytes": 511984
+    },
+    "models/robot-arm-urdf-v1/meshes/J2_MODULE.stl": {
+      "sha256": "ea3f312062bf736fc72f58a21f6d6ed31913b4b605721ab784c4f54287547fd6",
+      "bytes": 398884
+    },
+    "models/robot-arm-urdf-v1/meshes/J3_ACCENT_RING.stl": {
+      "sha256": "4169e8d46551d91caf68f0ac70a058d46cf2de344c63323302a0402f4d4e73f6",
+      "bytes": 105084
+    },
+    "models/robot-arm-urdf-v1/meshes/J3_END_CAP.stl": {
+      "sha256": "70b258b6fb07a7630a8462623cf3e54d1f38a3212fd68080883836a21cbf4c14",
+      "bytes": 510184
+    },
+    "models/robot-arm-urdf-v1/meshes/J3_MODULE.stl": {
+      "sha256": "02920a092540e9d0a5ead332dbb27320dcb7ee853615010e95611f95e80fd4e3",
+      "bytes": 389284
+    },
+    "models/robot-arm-urdf-v1/meshes/J4_ACCENT_RING.stl": {
+      "sha256": "edbc1082fff12080f3c53347b85745728d4d497f8d1039588760e278b2a685f5",
+      "bytes": 105084
+    },
+    "models/robot-arm-urdf-v1/meshes/J4_END_CAP.stl": {
+      "sha256": "f1a68ba1de7c0ba171a59648c3456a5121d4b39762871d2861f20156cef16fd4",
+      "bytes": 510184
+    },
+    "models/robot-arm-urdf-v1/meshes/J4_MODULE.stl": {
+      "sha256": "78ec5c2303096a168069e3b51f35b3b55e024726e16fa2d79ec229717b8c19cf",
+      "bytes": 151084
+    },
+    "models/robot-arm-urdf-v1/meshes/J5_ACCENT_RING.stl": {
+      "sha256": "aab57153c45d564705c7fdc682fe4dc1343cf105fe2df356132d98a673aa767f",
+      "bytes": 105084
+    },
+    "models/robot-arm-urdf-v1/meshes/J5_END_CAP.stl": {
+      "sha256": "891e8dd79b61fe33bfc5245ec9140949e7f89593315b35876660223c67c4723a",
+      "bytes": 510184
+    },
+    "models/robot-arm-urdf-v1/meshes/J5_MODULE.stl": {
+      "sha256": "a81e4b4b316caaa1a6cf61ebace9ac4dd721de23716cabdc68a66832ce89320a",
+      "bytes": 151084
+    },
+    "models/robot-arm-urdf-v1/meshes/J6_ACCENT_RING.stl": {
+      "sha256": "8f2e60f2cb570a01c8be92ae1f250119860e206c6bcb920111b31546f197bbac",
+      "bytes": 82584
+    },
+    "models/robot-arm-urdf-v1/meshes/J6_END_CAP.stl": {
+      "sha256": "732397a80b9c9e6859a763054a1a7d49f3207427e4ad41d99686e16ecd68acf6",
+      "bytes": 508384
+    },
+    "models/robot-arm-urdf-v1/meshes/J6_MODULE.stl": {
+      "sha256": "f27ae91db28ccbfefb25b65e216835451520c686f4191caf53379d8c3a89117b",
+      "bytes": 151084
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK1_POST.stl": {
+      "sha256": "5f0bfc95a66c8d7e2977741c0fd839123b4eca11ed74b711a4630109f125449e",
+      "bytes": 74284
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK1_SHOULDER_CAP.stl": {
+      "sha256": "7c51b94fd84fc220fa74c39f3f5811003456ecaf8b196cb7feb05b5d9fe0ff5d",
+      "bytes": 430984
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK2_SHOULDER_HUB.stl": {
+      "sha256": "b6ee070e4eaada005c0850f6bd957f62461c09f3079096b2f7d08bf9c09b38ae",
+      "bytes": 1067584
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK2_UPPER_TUBE.stl": {
+      "sha256": "e27aaf60170ae4801ae7b4ca9b978f0228bb47fc4c4768734aa3a1ebfc6629ed",
+      "bytes": 185284
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK3_ELBOW_HUB.stl": {
+      "sha256": "f010910ce4ad94788b406e3eb4ead19db8adaea9636d1270696cdea6e3b6aa96",
+      "bytes": 1067584
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK3_FOREARM_TUBE.stl": {
+      "sha256": "936b74cc05a9d7d9bcda77b0925e09f6ba7b32264ae00368411852f611677ced",
+      "bytes": 187284
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK4_NECK.stl": {
+      "sha256": "58d9d00fe643b2d37908361672cbe219cf81198b42aa63af7c0cff430216347f",
+      "bytes": 50284
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK5_WRIST_HUB.stl": {
+      "sha256": "6c8f3c99de847740608f40a89befd23e0883a6874fab436ce9fd5cf7da7f3abd",
+      "bytes": 1096084
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK5_WRIST_TUBE.stl": {
+      "sha256": "24e6d321b7cc9f0609ed26bb5e032fa01b222a4a38080ee5f33a038002cd8d46",
+      "bytes": 215884
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK6_TOOL_FLANGE.stl": {
+      "sha256": "13db5e13419b03bb1a0a8caac9865f213c1c760d0397999bb8753f38a36c9b00",
+      "bytes": 331084
+    },
+    "models/robot-arm-urdf-v1/meshes/LINK6_TOOL_RING.stl": {
+      "sha256": "8872513ac230eef8cdefbaee2811c16679b7ba24c913203c9fd30c14c9fe879e",
+      "bytes": 51184
+    },
+    "models/robot-arm-urdf-v1/preview.png": {
+      "sha256": "7e4321e199b5ef32fad083e5575551adf6dc4f7421f66198d07a8cc365d771d1",
+      "bytes": 130786
+    },
+    "models/robot-arm-urdf-v1/provenance.json": {
+      "sha256": "a4fd17f5cd05ab8081613edcc1363786529ec9a7efb6b9513daf82c8dbcc0557",
+      "bytes": 2361
+    },
+    "models/robot-arm-urdf-v1/robot_arm.urdf": {
+      "sha256": "cebe5306f97dc82352fad38d317041c3db648b8f8978bf942cbe51e37dfee23f",
+      "bytes": 12743
+    },
+    "models/robot-arm-urdf-v1/validation.json": {
+      "sha256": "add3637bffc753e71376b0f2852f925400fd1a3c5b804b43b71e79495630fec4",
+      "bytes": 558
+    },
+    "models/robot-arm-urdf-v2/README.md": {
+      "sha256": "94da10d24d4fde70c1c8e139593434064d896134d0dfcf6c9b467e54d31ca502",
+      "bytes": 3636
+    },
+    "models/robot-arm-urdf-v2/asset-ledger.json": {
+      "sha256": "c618fe72557dac55d15be952c4d5e373eed7ae4e37c0a4d5b3da6953a2b5cd91",
+      "bytes": 26934
+    },
+    "models/robot-arm-urdf-v2/manifest.json": {
+      "sha256": "8a5d07c6b6613e1439a374d985f64cd1a743aaef388257d65245337e66a81769",
+      "bytes": 1162
+    },
+    "models/robot-arm-urdf-v2/meshes/Base.stl": {
+      "sha256": "0bf034bca79f21f3d5aa006eda0c80bc855b9a4be61e12315a22e1309f7c0915",
+      "bytes": 1566384
+    },
+    "models/robot-arm-urdf-v2/meshes/KG1.stl": {
+      "sha256": "8f1b1becffc2694215f4cd686fd811444f7c95bfcca9fc2f58201c697aec3067",
+      "bytes": 2431584
+    },
+    "models/robot-arm-urdf-v2/meshes/Link1.stl": {
+      "sha256": "aed7c1a3596737f3373a3ba4d084eac518c8d7da7b2eea5cb20a0217320e0467",
+      "bytes": 1222084
+    },
+    "models/robot-arm-urdf-v2/meshes/Link2.stl": {
+      "sha256": "f8ac751136fb5473b9eda01c399de6006704e16ab9ec8fd863be95fbc93bc538",
+      "bytes": 1307484
+    },
+    "models/robot-arm-urdf-v2/meshes/Link3.stl": {
+      "sha256": "0158fba4e04ab88dda47e6956f9c5785bb98b484f15dc42e918363c3b1873dd4",
+      "bytes": 1303584
+    },
+    "models/robot-arm-urdf-v2/meshes/Link4.stl": {
+      "sha256": "b0fa1cd99fedee9eec7aa46365211964f6675fc517da2a8d4d97333353db30bf",
+      "bytes": 962484
+    },
+    "models/robot-arm-urdf-v2/meshes/Link5.stl": {
+      "sha256": "ec89581e32143ca244d15181b7fb7d8def245c9fc6a6382a25d9f2ea578fc7ab",
+      "bytes": 1209984
+    },
+    "models/robot-arm-urdf-v2/meshes/Link6.stl": {
+      "sha256": "84eae4dc1219e93544bcfb31589ce14b25ad4129701f08548bcd102245d0295f",
+      "bytes": 803884
+    },
+    "models/robot-arm-urdf-v2/provenance.json": {
+      "sha256": "716d6e9b810218f55300ddb64b2dcb4a5b637a61648ca5b042fdda53fced9138",
+      "bytes": 14451
+    },
+    "models/robot-arm-urdf-v2/robot_arm.urdf": {
+      "sha256": "a26817eabb553021c1c1518f92296d1cb4a458410b104a3158b356471f713eee",
+      "bytes": 11294
+    },
+    "models/robot-arm-urdf-v3/README.md": {
+      "sha256": "38cddc1e5b64a21e07f8988afab4662259758b8d7ab6d08800a7c63ac4afc142",
+      "bytes": 3315
+    },
+    "models/robot-arm-urdf-v3/asset-ledger.json": {
+      "sha256": "33b3392e57d429df58ee48048b83b2683816a51e1ce9e93d6156257c19ee21ef",
+      "bytes": 8580
+    },
+    "models/robot-arm-urdf-v3/manifest.json": {
+      "sha256": "bceb1b267a0b352e72d39bd081baeae18edcfafc71501cfbdeeebfa67d1f1ea4",
+      "bytes": 1441
+    },
+    "models/robot-arm-urdf-v3/meshes/Base.stl": {
+      "sha256": "0bf034bca79f21f3d5aa006eda0c80bc855b9a4be61e12315a22e1309f7c0915",
+      "bytes": 1566384
+    },
+    "models/robot-arm-urdf-v3/meshes/KG1.stl": {
+      "sha256": "d5fd356916c7699f56ab0629b71da931bde6c92a37a9f950dfed8d22bf912bbd",
+      "bytes": 678284
+    },
+    "models/robot-arm-urdf-v3/meshes/KG1_A.stl": {
+      "sha256": "d84f7d66da786dcfbb1169f73cc998a30feddc268c34356277d7861bfa2f6384",
+      "bytes": 552584
+    },
+    "models/robot-arm-urdf-v3/meshes/KG1_B.stl": {
+      "sha256": "5945d60a8dbf087ec407b2a8c1a2a977e54cb93abb6f9771aa281b66d2db776a",
+      "bytes": 429484
+    },
+    "models/robot-arm-urdf-v3/meshes/KG1_R.stl": {
+      "sha256": "e29b54e0bab2da8161a8e02e3f54faf2f01aad7482ea5896c90150d6cb8a4884",
+      "bytes": 771484
+    },
+    "models/robot-arm-urdf-v3/meshes/Link1.stl": {
+      "sha256": "aed7c1a3596737f3373a3ba4d084eac518c8d7da7b2eea5cb20a0217320e0467",
+      "bytes": 1222084
+    },
+    "models/robot-arm-urdf-v3/meshes/Link2.stl": {
+      "sha256": "f8ac751136fb5473b9eda01c399de6006704e16ab9ec8fd863be95fbc93bc538",
+      "bytes": 1307484
+    },
+    "models/robot-arm-urdf-v3/meshes/Link3.stl": {
+      "sha256": "0158fba4e04ab88dda47e6956f9c5785bb98b484f15dc42e918363c3b1873dd4",
+      "bytes": 1303584
+    },
+    "models/robot-arm-urdf-v3/meshes/Link4.stl": {
+      "sha256": "b0fa1cd99fedee9eec7aa46365211964f6675fc517da2a8d4d97333353db30bf",
+      "bytes": 962484
+    },
+    "models/robot-arm-urdf-v3/meshes/Link5.stl": {
+      "sha256": "ec89581e32143ca244d15181b7fb7d8def245c9fc6a6382a25d9f2ea578fc7ab",
+      "bytes": 1209984
+    },
+    "models/robot-arm-urdf-v3/meshes/Link6.stl": {
+      "sha256": "84eae4dc1219e93544bcfb31589ce14b25ad4129701f08548bcd102245d0295f",
+      "bytes": 803884
+    },
+    "models/robot-arm-urdf-v3/provenance.json": {
+      "sha256": "7823f47b81b3ddb1317d1bee6f6dad1f9f99c1213099c1b7a868e347d0087284",
+      "bytes": 16602
+    },
+    "models/robot-arm-urdf-v3/robot_arm.urdf": {
+      "sha256": "9cbbebe2ecfebd08436aa77c2760c281319eeca82c195108f177a15f2d6b2d2c",
+      "bytes": 16181
+    },
+    "src/cad/arm-v3-kg1-assembly/assemble.py": {
+      "sha256": "65dcde247362f761194b9d4a120c64dd3191de24ad76f1b479ec3eb6d0ccb110",
+      "bytes": 49419
+    },
+    "src/cad/arm-v3-kg1-assembly/blender_assembly.py": {
+      "sha256": "45269eba27e36fbf96071483e5d8aa15b248e5f200cd4998daf4484902ca9baa",
+      "bytes": 18131
+    },
+    "src/cad/arm-v3-kg1-assembly/guard.py": {
+      "sha256": "20e02430d9b5e5e49bbe07accfeddc1020e7e70c1ce144d4a3c794eb665de1a1",
+      "bytes": 5713
+    },
+    "src/cad/arm-v3-kg1-assembly/parameters.json": {
+      "sha256": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77",
+      "bytes": 2886
+    },
+    "src/cad/calibration/motor-mks42d.json": {
+      "sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+      "bytes": 23577
+    },
+    "src/cad/calibration/print-fits.json": {
+      "sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+      "bytes": 18311
+    },
+    "src/cad/j23-drive-v1/parameters.json": {
+      "sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+      "bytes": 8331
+    },
+    "src/cad/kmjh-gripper-v1/build_gripper.py": {
+      "sha256": "979460f3e8f180b3d75a4c90e3aefcb0f0f2093f9059c2e22f439dea28383f58",
+      "bytes": 4735
+    },
+    "src/cad/kmjh-gripper-v1/guard.py": {
+      "sha256": "931bdef53073075080bea44f4267e5ccfa960fb25a8e34fe2c75b602917b91ea",
+      "bytes": 5568
+    },
+    "src/cad/kmjh-gripper-v1/kg1.py": {
+      "sha256": "5846f859a2c2bc45aa36e206a5231891c814c7ae600437e365007a4e76927850",
+      "bytes": 27213
+    },
+    "src/cad/kmjh-gripper-v1/parameters.json": {
+      "sha256": "7c116e9f9bfeb49e4b45c5495f7b5f23ce6f3c7d60c1dc66680d604c98d42b8e",
+      "bytes": 8987
+    },
+    "src/cad/kmjh-gripper-v1/print_prep.py": {
+      "sha256": "a255669647672a30330d13d90114a9b356262087ec62a17bbe8af8f2a8caed06",
+      "bytes": 9770
+    },
+    "src/cad/kmjh-gripper-v1/render_gripper.py": {
+      "sha256": "04088a8cde5227c16736cbb72ca529483972b129736e1d6132d60918f224a5c2",
+      "bytes": 5181
+    },
+    "src/cad/kmjh-gripper-v1/run_controls.py": {
+      "sha256": "8d3ee64dd5822c467eef137ab98d805fdc848d510532348fb481ca87ea8cedb0",
+      "bytes": 26177
+    },
+    "src/cad/kmjh-gripper-v1/verify_gripper.py": {
+      "sha256": "3ddd492a28cb9ef391c8274c15b5239f755b3c14ed553c8081337ee8fd242d49",
+      "bytes": 42672
+    },
+    "src/cad/manipulator-v2/blender_arm.py": {
+      "sha256": "9d74a92987f653b4df1d57bf798848b3925b5bd0c99aa9e98c93cf103167d6e0",
+      "bytes": 2215
+    },
+    "src/cad/manipulator-v2/build_arm.py": {
+      "sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+      "bytes": 100646
+    },
+    "src/cad/manipulator-v2/check_arm.py": {
+      "sha256": "a36929601eb945acb8656dbf4434c1a30b8d0b4ba3d0fa67493e645cee8bf329",
+      "bytes": 49516
+    },
+    "src/cad/manipulator-v2/layout.py": {
+      "sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+      "bytes": 18640
+    },
+    "src/cad/manipulator-v2/loads_arm.py": {
+      "sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+      "bytes": 21056
+    },
+    "src/cad/manipulator-v2/parameters.json": {
+      "sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+      "bytes": 52625
+    },
+    "src/cad/manipulator-v2/print_prep_arm.py": {
+      "sha256": "31b0f8b85245f1add18bb6c4cb99c71dcb329cbad4848c0f8c88a67e48155aec",
+      "bytes": 10743
+    },
+    "src/cad/manipulator-v2/render_arm.py": {
+      "sha256": "d42eb283657da36a84030345d88626207fa0df1ac9b8e569d057f39cd85f0ae1",
+      "bytes": 5174
+    },
+    "src/cad/manipulator-v2/run_controls.py": {
+      "sha256": "2a1ca3e2f1f1aa6e0f9b54bdbed99741e1a7c78dd75c920e71e57435cc9d6cc7",
+      "bytes": 8799
+    },
+    "src/cad/review-mp5/inputs.json": {
+      "sha256": "612e45ea1272e266157b4cbc5213105f55938b34ad47135dec2154a9b9bb2843",
+      "bytes": 7072
+    }
+  },
+  "read_only_load_prefix": {
+    "source": "src/cad/manipulator-v2/loads_arm.py",
+    "sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+    "main_prefix_start_line": 30,
+    "excluded_world_and_rest_start_line": 106,
+    "cli_override": "parse_args([])",
+    "source_modified": false,
+    "torque_and_output_main_executed": false
+  },
+  "source_preservation": true,
+  "mass_confidence": "SLICER_ESTIMATES_AND_ORIGINAL_PURCHASED_ASSUMPTIONS_NOT_WEIGHED",
+  "COM_difference": "Original KG1 aggregate COM replaced by actual47-component allocation. Mass conserved; whole COM delta explicitly retained.",
+  "visual_mass_model_difference": "Central motor geometry only; original driver point masses retained. J1 bearing mass-owner Link1 vs visual Base preserved as source mismatch.",
+  "physics_acceptance": "NOT_RUN",
+  "hardware_approved": false,
+  "XML_written_by_A": false,
+  "assets_code_sha256": "c9ab41a79588d59ea32e6b921faea14fb11e99f75031fbbe73fb8d566e9f2728",
+  "versions": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "trimesh": "4.12.2"
+  },
+  "elapsed_prepare_s": 26.59399999998277,
+  "generation_assets_code_sha256": "358d66266e8ec755a543f77badc2006248ff9abb7dd2bb5e029be16dcd80dc1d",
+  "pin_audit": {
+    "mode": "METADATA_ONLY_NO_MESH_NUMERIC_XML_REGENERATION",
+    "input_records": {
+      "load_pins_match": [
+        {
+          "record_key": "parts/FLOOR.stl",
+          "path": "models/manipulator-v2/parts/FLOOR.stl",
+          "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE.stl",
+          "path": "models/manipulator-v2/parts/BASE.stl",
+          "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+          "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN_BAND.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+          "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+          "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+          "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET.stl",
+          "path": "models/manipulator-v2/parts/TURRET.stl",
+          "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET_BAND.stl",
+          "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+          "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_SPACER.stl",
+          "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+          "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER.stl",
+          "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER_SHROUD.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+          "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_MOTOR_HOOD.stl",
+          "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+          "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HOOD_FACE.stl",
+          "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+          "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HUB.stl",
+          "path": "models/manipulator-v2/parts/J2_HUB.stl",
+          "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "match": true
+        },
+        {
+          "record_key": "parts/UPPER_ARM.stl",
+          "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+          "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_COVER.stl",
+          "path": "models/manipulator-v2/parts/UA_COVER.stl",
+          "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_J3_BRACKET.stl",
+          "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+          "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_LOGO.stl",
+          "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+          "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+          "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+          "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+          "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+          "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "match": true
+        },
+        {
+          "record_key": "parts/FOREARM.stl",
+          "path": "models/manipulator-v2/parts/FOREARM.stl",
+          "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP.stl",
+          "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+          "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+          "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+          "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+          "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+          "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+          "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+          "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5.stl",
+          "path": "models/manipulator-v2/parts/LINK5.stl",
+          "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+          "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+          "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+          "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+          "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+          "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+          "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+          "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+          "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "match": true
+        },
+        {
+          "record_key": "parts/TOOL_FLANGE.stl",
+          "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+          "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "match": true
+        },
+        {
+          "record_key": "printprep.json",
+          "path": ".dev/mp18-evidence/printprep.json",
+          "expected_sha256": "ac9261e99695ca1b4a107c4c4a7b91d00b11c2842d81b0999a4c5074660a8044",
+          "actual_sha256": "ac9261e99695ca1b4a107c4c4a7b91d00b11c2842d81b0999a4c5074660a8044",
+          "match": true
+        },
+        {
+          "record_key": "inputs.json(MP5)",
+          "path": "src/cad/review-mp5/inputs.json",
+          "expected_sha256": "612e45ea1272e266157b4cbc5213105f55938b34ad47135dec2154a9b9bb2843",
+          "actual_sha256": "612e45ea1272e266157b4cbc5213105f55938b34ad47135dec2154a9b9bb2843",
+          "match": true
+        },
+        {
+          "record_key": "printprep.json(MP16)",
+          "path": ".dev/mp16-evidence/printprep.json",
+          "expected_sha256": "dac271d23b66275a5214a86001a5559f1caff804fe7c43613751f04db04dbf88",
+          "actual_sha256": "dac271d23b66275a5214a86001a5559f1caff804fe7c43613751f04db04dbf88",
+          "match": true
+        },
+        {
+          "record_key": "sizing.json(MP16)",
+          "path": ".dev/mp16-evidence/sizing/sizing.json",
+          "expected_sha256": "1a77a9acb1bd9cb04296c064b6b408f141ed48414f3094c3b4b6593f9dc40009",
+          "actual_sha256": "1a77a9acb1bd9cb04296c064b6b408f141ed48414f3094c3b4b6593f9dc40009",
+          "match": true
+        },
+        {
+          "record_key": "mass-properties.json(MP10)",
+          "path": "models/j5-wrist-v1/mass-properties.json",
+          "expected_sha256": "4379ef87cf35bc6a967256e2aca5856ac25d1da149ef73cd20fea32f7efdab1c",
+          "actual_sha256": "4379ef87cf35bc6a967256e2aca5856ac25d1da149ef73cd20fea32f7efdab1c",
+          "match": true
+        },
+        {
+          "record_key": "mass-properties.json(KG1)",
+          "path": "models/kmjh-gripper-v1/mass-properties.json",
+          "expected_sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb",
+          "actual_sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb",
+          "match": true
+        },
+        {
+          "record_key": "parameters.json",
+          "path": "src/cad/manipulator-v2/parameters.json",
+          "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "match": true
+        },
+        {
+          "record_key": "loads_arm.py",
+          "path": "src/cad/manipulator-v2/loads_arm.py",
+          "expected_sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+          "actual_sha256": "78a1be679a6a4af4c70509b88bb6fcadb90d1754447ed5638b72792a42ebd62e",
+          "match": true
+        },
+        {
+          "record_key": "layout.py",
+          "path": "src/cad/manipulator-v2/layout.py",
+          "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "match": true
+        }
+      ],
+      "build_pins_match": [
+        {
+          "record_key": "parameters.json",
+          "path": "src/cad/manipulator-v2/parameters.json",
+          "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "match": true
+        },
+        {
+          "record_key": "build_arm.py",
+          "path": "src/cad/manipulator-v2/build_arm.py",
+          "expected_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+          "actual_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+          "match": true
+        },
+        {
+          "record_key": "layout.py",
+          "path": "src/cad/manipulator-v2/layout.py",
+          "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "match": true
+        },
+        {
+          "record_key": "j5geom.py(MP10)",
+          "path": "src/cad/j5-wrist-v1/j5geom.py",
+          "expected_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+          "actual_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+          "match": true
+        },
+        {
+          "record_key": "parameters.json(MP10)",
+          "path": "src/cad/j5-wrist-v1/parameters.json",
+          "expected_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+          "actual_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+          "match": true
+        },
+        {
+          "record_key": "parameters.json(MP16)",
+          "path": "src/cad/j23-drive-v1/parameters.json",
+          "expected_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+          "actual_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+          "match": true
+        },
+        {
+          "record_key": "print-fits.json",
+          "path": "src/cad/calibration/print-fits.json",
+          "expected_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+          "actual_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+          "match": true
+        },
+        {
+          "record_key": "motor-mks42d.json",
+          "path": "src/cad/calibration/motor-mks42d.json",
+          "expected_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+          "actual_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+          "match": true
+        },
+        {
+          "record_key": "cycloid.json(MP6)",
+          "path": "models/cycloid-27-v1/cycloid.json",
+          "expected_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+          "actual_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+          "match": true
+        },
+        {
+          "record_key": "v1 parameters.json",
+          "path": "models/armold-mks-concept-v1/parameters.json",
+          "expected_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+          "actual_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+          "match": true
+        },
+        {
+          "record_key": "parts/FLOOR.stl",
+          "path": "models/manipulator-v2/parts/FLOOR.stl",
+          "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE.stl",
+          "path": "models/manipulator-v2/parts/BASE.stl",
+          "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+          "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN_BAND.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+          "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+          "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+          "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET.stl",
+          "path": "models/manipulator-v2/parts/TURRET.stl",
+          "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET_BAND.stl",
+          "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+          "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_SPACER.stl",
+          "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+          "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER.stl",
+          "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER_SHROUD.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+          "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_MOTOR_HOOD.stl",
+          "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+          "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HOOD_FACE.stl",
+          "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+          "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HUB.stl",
+          "path": "models/manipulator-v2/parts/J2_HUB.stl",
+          "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "match": true
+        },
+        {
+          "record_key": "parts/UPPER_ARM.stl",
+          "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+          "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_COVER.stl",
+          "path": "models/manipulator-v2/parts/UA_COVER.stl",
+          "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_J3_BRACKET.stl",
+          "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+          "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_LOGO.stl",
+          "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+          "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+          "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+          "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+          "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+          "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "match": true
+        },
+        {
+          "record_key": "parts/FOREARM.stl",
+          "path": "models/manipulator-v2/parts/FOREARM.stl",
+          "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP.stl",
+          "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+          "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+          "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+          "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+          "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+          "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+          "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+          "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5.stl",
+          "path": "models/manipulator-v2/parts/LINK5.stl",
+          "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+          "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+          "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+          "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+          "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+          "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+          "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+          "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+          "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "match": true
+        },
+        {
+          "record_key": "parts/TOOL_FLANGE.stl",
+          "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+          "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_FIT_SLEEVE.stl",
+          "path": "models/manipulator-v2/parts/J1_FIT_SLEEVE.stl",
+          "expected_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+          "actual_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_FIT_BORE.stl",
+          "path": "models/manipulator-v2/parts/J1_FIT_BORE.stl",
+          "expected_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+          "actual_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+          "match": true
+        },
+        {
+          "record_key": "manipulator-v2-parts.solidcraft",
+          "path": "models/manipulator-v2/manipulator-v2-parts.solidcraft",
+          "expected_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+          "actual_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+          "match": true
+        }
+      ],
+      "build_input_pins_match": [
+        {
+          "record_key": "parameters.json",
+          "path": "src/cad/manipulator-v2/parameters.json",
+          "expected_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "actual_sha256": "f74937e134d8057dec301ffcb3c22cf5e5330925630ab10266c702d3931a523c",
+          "match": true
+        },
+        {
+          "record_key": "build_arm.py",
+          "path": "src/cad/manipulator-v2/build_arm.py",
+          "expected_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+          "actual_sha256": "2448cc2163c9821751e52a89e8cea772cdb77bbce9c84092029c253d6b345fb6",
+          "match": true
+        },
+        {
+          "record_key": "layout.py",
+          "path": "src/cad/manipulator-v2/layout.py",
+          "expected_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "actual_sha256": "97fda7c54455083fce21192bb22ae8939ad0dd4ccc99eb498bcc65bb508df416",
+          "match": true
+        },
+        {
+          "record_key": "j5geom.py(MP10)",
+          "path": "src/cad/j5-wrist-v1/j5geom.py",
+          "expected_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+          "actual_sha256": "2aaf74108cb222ac5c5ba7960ee6df9fa7ce36e9b4b04b70ccd185d20dfce238",
+          "match": true
+        },
+        {
+          "record_key": "parameters.json(MP10)",
+          "path": "src/cad/j5-wrist-v1/parameters.json",
+          "expected_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+          "actual_sha256": "a8cf02942638891bd13c2cbc679a7f8d5e9f9656c1e588e2c0c0070c7ffbebb7",
+          "match": true
+        },
+        {
+          "record_key": "parameters.json(MP16)",
+          "path": "src/cad/j23-drive-v1/parameters.json",
+          "expected_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+          "actual_sha256": "95399d8afef63e1ad1e16bd4e361f14a7421716099bd2def4c6bde3709b4237f",
+          "match": true
+        },
+        {
+          "record_key": "print-fits.json",
+          "path": "src/cad/calibration/print-fits.json",
+          "expected_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+          "actual_sha256": "49bebf0889e0cfe3db42b68187e1c3eaf836574f44dfb78c3652360900a70277",
+          "match": true
+        },
+        {
+          "record_key": "motor-mks42d.json",
+          "path": "src/cad/calibration/motor-mks42d.json",
+          "expected_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+          "actual_sha256": "bee75aedc13446800b114da7dd965d51c86d52d6ee5665f256c284a5919af4c7",
+          "match": true
+        },
+        {
+          "record_key": "cycloid.json(MP6)",
+          "path": "models/cycloid-27-v1/cycloid.json",
+          "expected_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+          "actual_sha256": "65a8c7c7a8f73ecd23f2b28a02e55ebea65c59f8d92f152cf5825ce9b944c1ff",
+          "match": true
+        },
+        {
+          "record_key": "v1 parameters.json",
+          "path": "models/armold-mks-concept-v1/parameters.json",
+          "expected_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+          "actual_sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+          "match": true
+        }
+      ],
+      "build_output_pins_match": [
+        {
+          "record_key": "parts/FLOOR.stl",
+          "path": "models/manipulator-v2/parts/FLOOR.stl",
+          "expected_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "actual_sha256": "9a31e827e061a73d28a175a05d0f908d446c4c868ab5bece0ea56a93e7ed5009",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE.stl",
+          "path": "models/manipulator-v2/parts/BASE.stl",
+          "expected_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "actual_sha256": "078e9de59b2ec4f934871183868d2fbb01819e911831acf62b782d959a4f4d6a",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN.stl",
+          "expected_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "actual_sha256": "50aaa97b2b596e5cc936633775d209c096efbb336a18491eae5ff05800be47c0",
+          "match": true
+        },
+        {
+          "record_key": "parts/BASE_SKIN_BAND.stl",
+          "path": "models/manipulator-v2/parts/BASE_SKIN_BAND.stl",
+          "expected_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "actual_sha256": "6afc287c5db4eed0dfb2c66a90cc166f397a6c1c92b5a6c829e9c85fb3f88efe",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_A.stl",
+          "expected_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "actual_sha256": "56d256bae55ecd848ac76466a0f56784caeff2a25456f62ff499236205538285",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J1_CAN_B.stl",
+          "expected_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "actual_sha256": "aea7208d98c6c3a8d7b8904e69589faa44b89510e3716d81aaca04730fcb0efc",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET.stl",
+          "path": "models/manipulator-v2/parts/TURRET.stl",
+          "expected_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "actual_sha256": "70cf159060b4b5441b04b4a5b30bb86acc39ff251f7d2b0e707b3f92f5998eb9",
+          "match": true
+        },
+        {
+          "record_key": "parts/TURRET_BAND.stl",
+          "path": "models/manipulator-v2/parts/TURRET_BAND.stl",
+          "expected_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "actual_sha256": "2fc6ccf4ffe1fdff32f66fd561c168c1858842fa1f55594f7c198f9241cbb004",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_SPACER.stl",
+          "path": "models/manipulator-v2/parts/J1_SPACER.stl",
+          "expected_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "actual_sha256": "e0ee7c55936353a027ca79ff2bbe0e7b3c6dfa9ef27cf64dd9846b94f7d3eca8",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER.stl",
+          "expected_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "actual_sha256": "a72b68f7fc17ee308070343f901736a1715a44037e110ba4232ab91424afa000",
+          "match": true
+        },
+        {
+          "record_key": "parts/SHOULDER_SHROUD.stl",
+          "path": "models/manipulator-v2/parts/SHOULDER_SHROUD.stl",
+          "expected_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "actual_sha256": "a42a21f44a2e5e61aade9cd6696619ad010ca0823e1a6a1f15c438e9b6cd458d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_MOTOR_HOOD.stl",
+          "path": "models/manipulator-v2/parts/J2_MOTOR_HOOD.stl",
+          "expected_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "actual_sha256": "f7370270d38ba424e5f9edd04e56c36870d1572cdc85bec44670045ef6dff607",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HOOD_FACE.stl",
+          "path": "models/manipulator-v2/parts/J2_HOOD_FACE.stl",
+          "expected_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "actual_sha256": "834b61f6552c07ca91261c8cac142f50b615fc06cfbdf586292d0ab892a7c369",
+          "match": true
+        },
+        {
+          "record_key": "parts/J2_HUB.stl",
+          "path": "models/manipulator-v2/parts/J2_HUB.stl",
+          "expected_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "actual_sha256": "22708af1e9144a370a83c5887c2ba8ef128ae0cc12ff2809523fad99c7cd5641",
+          "match": true
+        },
+        {
+          "record_key": "parts/UPPER_ARM.stl",
+          "path": "models/manipulator-v2/parts/UPPER_ARM.stl",
+          "expected_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "actual_sha256": "4c822e0e83e2261197b1d0f1b4d600148ec716d293ea33a2e06ae368378f166b",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_COVER.stl",
+          "path": "models/manipulator-v2/parts/UA_COVER.stl",
+          "expected_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "actual_sha256": "17741dcb91666f3d6ea6c2fc6f2d20cc3a5fcc106bc8370ac1a2a0f54df7bbcc",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_J3_BRACKET.stl",
+          "path": "models/manipulator-v2/parts/UA_J3_BRACKET.stl",
+          "expected_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "actual_sha256": "3693154394abd223261ed5dec74c2612340965605e21def8da3a89fa7ab028d8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_LOGO.stl",
+          "path": "models/manipulator-v2/parts/UA_LOGO.stl",
+          "expected_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "actual_sha256": "fc90161d063a812d347a962ff545bbeda2b1c10979e2f8e1eff0f317657172f3",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2.stl",
+          "expected_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "actual_sha256": "8e934f0568147fcf024db4cd1c779bc927fd08104944d1b7a589c9d26a0c4ae8",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J2_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J2_MARK.stl",
+          "expected_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "actual_sha256": "a5e1d98b4c5bda4e2bf507915edc0cd26bc3fccc970852ab349682d81240de98",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3.stl",
+          "expected_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "actual_sha256": "da619ca9e8f273d3f80390c1525644ef46c9dc1f0528b40b274470bc3e90c331",
+          "match": true
+        },
+        {
+          "record_key": "parts/UA_CAP_J3_MARK.stl",
+          "path": "models/manipulator-v2/parts/UA_CAP_J3_MARK.stl",
+          "expected_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "actual_sha256": "e778b47e30f5f5835943bb4d4c2a778d13815a7852fdb394ee53fc9010177b7e",
+          "match": true
+        },
+        {
+          "record_key": "parts/FOREARM.stl",
+          "path": "models/manipulator-v2/parts/FOREARM.stl",
+          "expected_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "actual_sha256": "b57f454b2a8fa9839bd21bb5a2d2d0ac768d70beec7d5a19334323d53e43f06e",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP.stl",
+          "expected_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "actual_sha256": "476f92d88c9990df0a2e783745a0e6453906d7f9f77b4a8073493bc72702512d",
+          "match": true
+        },
+        {
+          "record_key": "parts/J3_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/J3_CAP_MARK.stl",
+          "expected_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "actual_sha256": "761da518dad4a4f14c839f6e3c21b9e4d81d86558a00f27e7fe7c24a8d34a47b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_A.stl",
+          "expected_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "actual_sha256": "f894798ae6106b46d8fa1fa187087bb8a5985edafbccf81345da395e199177d4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J4_CAN_B.stl",
+          "expected_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "actual_sha256": "ae203af28a7527c503afa7cd5bf01ed8fcfb3db7096a2e5cbdd710f9b70c3751",
+          "match": true
+        },
+        {
+          "record_key": "parts/J4_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J4_REAR_COVER.stl",
+          "expected_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "actual_sha256": "fa13a372945ac6fbc2a55794db2efe05f5fc5a184c81ea72588716b7488df5af",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE.stl",
+          "expected_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "actual_sha256": "0b65e1a1742ea24dadf29f58d5da2ceddc6c52493fbc6aa2bae8eceddf97f205",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_CAP.stl",
+          "expected_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "actual_sha256": "3f4046b7b2552c07aab4f425d832485b252ef21a72bf151a39fb3afae439163f",
+          "match": true
+        },
+        {
+          "record_key": "parts/FA_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/FA_TUBE_RING.stl",
+          "expected_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "actual_sha256": "6837650f1e0658625447a415cab6f943b3c5315aae41c091ef3a67339a4e1880",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5.stl",
+          "path": "models/manipulator-v2/parts/LINK5.stl",
+          "expected_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "actual_sha256": "45f8d34c69c4ce72bc29501eb29352ef62dd9dcce7f27a77e998c34ca4acd774",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP.stl",
+          "expected_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "actual_sha256": "a5c69788628786b8e2911a2b4e1f345573119c070907879ef25ce572a31d2295",
+          "match": true
+        },
+        {
+          "record_key": "parts/LINK5_CAP_MARK.stl",
+          "path": "models/manipulator-v2/parts/LINK5_CAP_MARK.stl",
+          "expected_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "actual_sha256": "9bcc32742c1cb07cf0d626a7be9b45f65cf77a21fac0ff68ab54cac8d6b8a46b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_A.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_A.stl",
+          "expected_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "actual_sha256": "b64c92dba0489865258ae4849b296ea6551210dce3168d5954272f96059cd51f",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_CAN_B.stl",
+          "path": "models/manipulator-v2/parts/J6_CAN_B.stl",
+          "expected_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "actual_sha256": "7fd5009701b74d1e3ad6c6adb45627521c297a56ed48e411492a01578c5b288b",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_REAR_COVER.stl",
+          "path": "models/manipulator-v2/parts/J6_REAR_COVER.stl",
+          "expected_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "actual_sha256": "69d4d8db9e341401976583f9bed9073e476bc1829b7e015a4021f258dbacebf4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE.stl",
+          "expected_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "actual_sha256": "f74a45db0119e4fc9b690f63dfc11935ea5fe99599e9c0a81826ed561e8f3437",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_CAP.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_CAP.stl",
+          "expected_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "actual_sha256": "c45cdeb27d11bf39a0e260430c8dbf6d50d4f059c3152266a303b2ea37d12be4",
+          "match": true
+        },
+        {
+          "record_key": "parts/J6_TUBE_RING.stl",
+          "path": "models/manipulator-v2/parts/J6_TUBE_RING.stl",
+          "expected_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "actual_sha256": "87e46e8da58ac432456a82fa97065960bc7614de8ab5fa8518951547d3ff22de",
+          "match": true
+        },
+        {
+          "record_key": "parts/TOOL_FLANGE.stl",
+          "path": "models/manipulator-v2/parts/TOOL_FLANGE.stl",
+          "expected_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "actual_sha256": "a298193c8c6730c91fac4d58bb4728e45c59556de0553b50eff69a93a9e31003",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_FIT_SLEEVE.stl",
+          "path": "models/manipulator-v2/parts/J1_FIT_SLEEVE.stl",
+          "expected_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+          "actual_sha256": "4a2fdeae495537af10f67b8473d1d5893492fd0ccced2951fc5c98d15fff19d5",
+          "match": true
+        },
+        {
+          "record_key": "parts/J1_FIT_BORE.stl",
+          "path": "models/manipulator-v2/parts/J1_FIT_BORE.stl",
+          "expected_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+          "actual_sha256": "3529f7151ca7f39f878ecc19b2fb7fea4363508a273190597d9391b4c660c7cc",
+          "match": true
+        },
+        {
+          "record_key": "manipulator-v2-parts.solidcraft",
+          "path": "models/manipulator-v2/manipulator-v2-parts.solidcraft",
+          "expected_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+          "actual_sha256": "e902a36f6073dc5f97ed013c94901be78ac59c1ddc6f62f654573dd96e5637bf",
+          "match": true
+        }
+      ]
+    },
+    "generation_census": "outputs/urdf-mp18-v4-118/A/input-before.json",
+    "pin_audit_before": "outputs/urdf-mp18-v4-118/A/input-pin-audit-before.json",
+    "pin_audit_after": "outputs/urdf-mp18-v4-118/A/input-pin-audit-after.json",
+    "original_generation_files": 256,
+    "additional_pin_inputs_first_read_at_audit": [
+      "models/cycloid-27-v1/cycloid.json",
+      "src/cad/j5-wrist-v1/j5geom.py",
+      "src/cad/j5-wrist-v1/parameters.json"
+    ]
+  }
+}

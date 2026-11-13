@@ -1,0 +1,69 @@
+{
+  "units": "SI unless named _mm / _g / _deg",
+  "frame_note": "frame_mm = square flange size: 42.3 = v1 motor_frame_mm (NEMA17), 57.0 = the NEMA23 listing above; corner chamfers are not modelled",
+  "purpose": "MP5 joint load and reducer sizing review inputs. Every number is either read from a repository file by joint_loads.py (print settings, lengths, bodies, split parts) or listed here with its source or marked as an ASSUMPTION.",
+  "g_m_s2": 9.81,
+  "print_settings_note": "read by joint_loads.py from models/fit-coupons-v1/slicer/*.bambu.3mf Metadata/project_settings.config (outer 0.42 + inner 0.45 wall, 15 % sparse infill, filament_density 1.26). ASSUMPTION: the model applies that wall thickness to every face (the profile has 1.0 mm top and 3-layer bottom shells) and is checked against one plate only.",
+  "motors": {
+    "NEMA17-40": {"frame_mm": 42.3, "holding_Nm": 0.40, "mass_kg": 0.28, "length_mm": 40, "rated_A": 1.5, "driver": "MKS SERVO42D (0-3000 mA)",
+                  "source": "17HS4401 class seller listings (40 Ncm, about 280 g) - not a manufacturer data sheet; the ordered MKS motor is not measured"},
+    "NEMA17-48": {"frame_mm": 42.3, "holding_Nm": 0.59, "mass_kg": 0.39, "length_mm": 48, "rated_A": 2.0, "driver": "MKS SERVO42D (0-3000 mA)",
+                  "source": "STEPPERONLINE 17HS19-2004S1 (59 Ncm, 48 mm) listing / manual; 390 g from a retailer listing - not checked again in this review"},
+    "NEMA17-60": {"frame_mm": 42.3, "holding_Nm": 0.65, "mass_kg": 0.50, "length_mm": 60, "rated_A": 2.1, "driver": "MKS SERVO42D (0-3000 mA)",
+                  "source": "STEPPERONLINE 17HS24-2104S (65 Ncm, 60 mm, 2.1 A) listing; mass 0.50 kg is an ASSUMPTION (not found)"},
+    "NEMA23-56": {"frame_mm": 57.0, "holding_Nm": 1.26, "mass_kg": 0.70, "length_mm": 56, "rated_A": 2.8, "driver": "MKS SERVO57D (0-5200 mA)",
+                  "source": "STEPPERONLINE 23HS22-2804S listings (1.26 Nm, 2.8 A, 57 x 57 x 56 mm, about 700 g) - not checked again in this review"}
+  },
+  "driver_board_mass_kg": {"value": 0.03, "note": "ASSUMPTION - MKS rear board + magnet + screws, not weighed"},
+  "usable_torque_fraction": {"value": 0.5, "note": "ASSUMPTION - share of holding torque usable at the working speed with margin for closed-loop stepper roll-off (24 V); to be replaced by the measured MKS torque/speed in the two-axis bench test"},
+  "safety_factor": {"value": 2.0, "note": "ASSUMPTION - printed reducer parts, unknown friction, stall margin"},
+  "angular_accel_rad_s2": {"value": 2.0, "note": "ASSUMPTION - about 115 deg/s^2 joint acceleration for the inertial term"},
+  "payloads_kg": [0.0, 0.25, 0.5, 1.0],
+  "payload_offset_from_flange_m": {"value": 0.05, "note": "ASSUMPTION - payload + gripper centre 50 mm beyond the tool flange face (no gripper designed yet)"},
+  "j6_payload_offset_from_axis_m": {"value": 0.02, "note": "ASSUMPTION - payload centre 20 mm off the J6 roll axis (no gripper designed yet)"},
+  "self_inertia_radius_m": {"value": 0.052, "note": "ASSUMPTION (rough, NOT a bound) - every moving element also gets the inertia of a disc of the largest drum radius (104 / 2 mm) about its own centre; a long tube has a larger transverse inertia; motor rotor and reducer internals (reflected inertia) are not included"},
+  "reducer_metal_mass_kg": {"value": 0.15, "note": "ASSUMPTION - bearings, pins, shafts, inserts and screws of one joint reducer (6812 alone is about 0.05 kg class)"},
+  "efficiency_by_type": {
+    "cycloid_printed": {"value": 0.75, "note": "ASSUMPTION - printed cycloid with rolling pins; not measured"},
+    "prestage_plus_cycloid": {"value": 0.7125, "note": "ASSUMPTION - cycloid 0.75 x belt or spur pre-stage 0.95 = 0.7125; neither measured"},
+    "compound_planetary_printed": {"value": 0.55, "note": "ASSUMPTION - split-ring compound planetary has higher sliding loss"},
+    "gearhead_commercial": {"value": 0.73, "note": "ASSUMPTION - typical value printed on low-cost NEMA17 planetary gearhead listings; not verified here"}
+  },
+  "reducer_stacks_mm": {
+    "note": "every thickness is an ASSUMPTION for comparison - not a drawing, a product size or a minimum",
+    "사이클로이드 1 단(원판 2 장)": {"원판 2 × 6": 12, "출력 핀 캐리어": 6, "간격 · 여유": 2},
+    "앞단(벨트 · 평기어) + 사이클로이드 · 같은 축에 쌓음": {"사이클로이드(위와 같음)": 20, "앞단 기어 한 쌍": 10},
+    "복합 유성(링 둘)": {"유성 · 링 두 층 2 × 9": 18, "캐리어 판 2 × 3": 6, "여유": 2},
+    "상용 NEMA17 유성 기어헤드": {"기어헤드 몸체": 40}
+  },
+  "candidate_drives": {
+    "note": "ratios are examples for comparison: 27:1 = Faze4 J2 and the Codex workbook example; the pre-stage ratios 2, 3, 5, 6 and 8 are ASSUMPTIONS (not designed)",
+    "list": [
+      {"name": "사이클로이드 1 단 27:1", "ratio": 27, "efficiency": "cycloid_printed"},
+      {"name": "앞단 2:1 + 사이클로이드 27:1 = 54:1", "ratio": 54, "efficiency": "prestage_plus_cycloid"},
+      {"name": "앞단 3:1 + 사이클로이드 27:1 = 81:1", "ratio": 81, "efficiency": "prestage_plus_cycloid"},
+      {"name": "앞단 5:1 + 사이클로이드 27:1 = 135:1", "ratio": 135, "efficiency": "prestage_plus_cycloid"},
+      {"name": "앞단 6:1 + 사이클로이드 27:1 = 162:1", "ratio": 162, "efficiency": "prestage_plus_cycloid"},
+      {"name": "앞단 8:1 + 사이클로이드 27:1 = 216:1", "ratio": 216, "efficiency": "prestage_plus_cycloid"}
+    ],
+    "columns": {
+      "J2 · S1(17-40)": ["S1", ["J2"]],
+      "J2 · S2(17-48)": ["S2", ["J2"]],
+      "J2 · S3(17-60)": ["S3", ["J2"]],
+      "J2 · S4(23-56)": ["S4", ["J2"]],
+      "J3 · S2(17-48)": ["S2", ["J3"]],
+      "J3 · S4(23-56)": ["S4", ["J3"]],
+      "J4 · J5 · S1(17-40)": ["S1", ["J4", "J5"]],
+      "J4 · J5 · S2(17-48)": ["S2", ["J4", "J5"]]
+    }
+  },
+  "reference_ratios": {
+    "faze4": {"J1": 25, "J2": 27, "J3": 15, "J4": 11.846, "J5": 11, "J6": 19.19, "note": "J1/J4/J5 include belt stages, J6 is planetary; motor count and frame sizes are not in the local design-decision file",
+              "source": "docs/references/packages/01/mechanical_refs/Faze4/upstream/docs/B_Design_decisions.rst"},
+    "arctos_v2": {"J1": 13.5, "J2": 150, "J3": 150, "J4": 48, "J5": 67.82, "J6": 67.82, "note": "J5/J6 are a differential wrist; MKS 57D appears on J1 in the sample configuration",
+                  "source": "docs/references/packages/03/MKS_CAN/Arctos_MKS_CAN_reference/docs/configuration.md"},
+    "sweep_26_1": {"note": "the local purchase note lists a separate Sweep 26:1 cycloidal drive product and states it is not the whole Armold model; whether the Armold package uses the same reducer, and which NEMA17 lengths go on which joint, are open questions in that note",
+                   "source": "docs/references/packages/04/other_public_refs/PURCHASE_REQUIRED_KO.txt"}
+  },
+  "speed_check": {"motor_rpm_at_usable_torque": {"value": 300, "note": "ASSUMPTION - motor speed at which the usable torque fraction is assumed; joint speed = this / ratio"}}
+}

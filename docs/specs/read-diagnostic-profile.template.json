@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "RECORD_ONLY_NOT_LOADED_BY_FIRMWARE",
+  "hardware_approved": false,
+  "expected": {
+    "board": "Waveshare ESP32-S3-RS485-CAN-U",
+    "driver_protocol": "Makerbase CAN; ordered option, not physically verified",
+    "supported_selected_ids": [1, 2],
+    "tx_gpio": 15,
+    "rx_gpio": 16,
+    "bitrate": 500000,
+    "tick_hz_candidate": 1000,
+    "poll_period_ms_candidate": 1
+  },
+  "observed": {
+    "board_model": null,
+    "driver_protocol": null,
+    "hardware_revision": null,
+    "firmware_version": null,
+    "selected_axis": null,
+    "actual_can_id": null,
+    "tx_gpio": null,
+    "rx_gpio": null,
+    "bitrate": null,
+    "wiring_and_termination": "UNCONFIRMED",
+    "power_on_motion_excluded": "UNCONFIRMED"
+  },
+  "evidence": {
+    "photo_and_label_paths": [],
+    "motor_body_label_observed": "SERVO42D_485; does not establish driver protocol",
+    "CAN_hardware_test": "NOT_RUN",
+    "RTOS_jitter_and_ISR_test": "NOT_RUN"
+  }
+}

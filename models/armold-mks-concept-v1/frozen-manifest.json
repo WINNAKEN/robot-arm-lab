@@ -1,0 +1,120 @@
+{
+  "status": "FROZEN_FOR_MP3_L4_R2",
+  "files": [
+    {
+      "path": "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.3mf",
+      "bytes": 1429065,
+      "sha256": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.solidcraft",
+      "bytes": 231407,
+      "sha256": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.step",
+      "bytes": 527729,
+      "sha256": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/build-commands.json",
+      "bytes": 144800,
+      "sha256": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/front.png",
+      "bytes": 143743,
+      "sha256": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/iso.png",
+      "bytes": 196905,
+      "sha256": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/kinematics.json",
+      "bytes": 6884,
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/parameters.json",
+      "bytes": 1935,
+      "sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/provenance.json",
+      "bytes": 1988,
+      "sha256": "3968a78be6993244aff8138f452e4490dceb88f04ae73737c5674ca9f1754a27"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/README.md",
+      "bytes": 5546,
+      "sha256": "9b0e74ec2262316747694dd8585c8a6a442d65d68e34c4b2b0e523c11953107f"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/reducer-principle-schematic-NONFUNCTIONAL.solidcraft",
+      "bytes": 146508,
+      "sha256": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/reducer-principle-schematic.png",
+      "bytes": 125932,
+      "sha256": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/reducer-schematic-commands.json",
+      "bytes": 61129,
+      "sha256": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/reducer-schematic-raw.png",
+      "bytes": 95565,
+      "sha256": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/reducer-schematic-validation.json",
+      "bytes": 450,
+      "sha256": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/REFERENCE-LICENSE-CERN-OHL-S-2.0.txt",
+      "bytes": 13419,
+      "sha256": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/right.png",
+      "bytes": 128333,
+      "sha256": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512"
+    },
+    {
+      "path": "models/armold-mks-concept-v1/validation.json",
+      "bytes": 20424,
+      "sha256": "c7cf84a0099f859fe874959457c50cd48ea8537ba9ec0d149cb9a4dd33e597f1"
+    },
+    {
+      "path": "src/cad/armold-mks-concept/build_concept.py",
+      "bytes": 10772,
+      "sha256": "e5b6e6e4a7c861290fde3aa90feab7b6e673435f22d29b6dab79e3bed4d86a0e"
+    },
+    {
+      "path": "src/cad/armold-mks-concept/build_reducer_schematic.py",
+      "bytes": 4423,
+      "sha256": "fb88b23924eaf7a49cb976333a628292e1a1bc966fef61b694d1cfbc3d3e4f8b"
+    },
+    {
+      "path": "src/cad/armold-mks-concept/parameters.json",
+      "bytes": 1601,
+      "sha256": "b5d17b4b3616ca6cc0f5ae558c085e52f9c2631119ce50282c16c70c542ef776"
+    },
+    {
+      "path": "src/cad/armold-mks-concept/README.md",
+      "bytes": 2024,
+      "sha256": "f4c96041250de1ecb35c22acbdfaa62af729fc602f4ce4b49b4f99482f150de7"
+    },
+    {
+      "path": "src/cad/armold-mks-concept/validate_concept.py",
+      "bytes": 6513,
+      "sha256": "0c222eac9aa5a0770800bdc73e298ddbd4b0b80a4661cdb71bb5d0aa4dac8feb"
+    }
+  ]
+}

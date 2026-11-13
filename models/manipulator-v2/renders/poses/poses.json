@@ -1,0 +1,150 @@
+{
+ "what": "MP18 팔 전체 v2 자세 그림(보기용) — 자세마다 검사기 Sweep(링크끼리 겹침 · 탁자 z 0)을 먼저 보고 통과한 자세만 그림",
+ "views": "isoback,back",
+ "poses": {
+  "home": {
+   "q_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "note": "영점 — 팔을 앞으로 곧게",
+   "self_collision": [],
+   "lowest_z_mm": 110.0,
+   "drawn": true,
+   "pngs": [
+    "pose-home-back.png",
+    "pose-home-isoback.png"
+   ]
+  },
+  "display": {
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "note": "표시 자세(parameters poses.display_deg)",
+   "self_collision": [],
+   "lowest_z_mm": 13.4,
+   "drawn": true,
+   "pngs": [
+    "pose-display-back.png",
+    "pose-display-isoback.png"
+   ]
+  },
+  "ready_high": {
+   "q_deg": [
+    0.0,
+    -60.0,
+    60.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "note": "들어 올린 준비 자세(parameters 의 ready 는 팔의 가장 낮은 점이 탁자 아래 z −79 라 대신 — find_poses.py)",
+   "self_collision": [],
+   "lowest_z_mm": 124.0,
+   "drawn": true,
+   "pngs": [
+    "pose-ready_high-back.png",
+    "pose-ready_high-isoback.png"
+   ]
+  },
+  "upright": {
+   "q_deg": [
+    0.0,
+    -90.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "note": "위로 곧게 세움",
+   "self_collision": [],
+   "lowest_z_mm": 124.0,
+   "drawn": true,
+   "pngs": [
+    "pose-upright-back.png",
+    "pose-upright-isoback.png"
+   ]
+  },
+  "reach_table": {
+   "q_deg": [
+    0.0,
+    -40.0,
+    60.0,
+    0.0,
+    20.0,
+    0.0
+   ],
+   "note": "앞 탁자로 뻗어 집기(쥐는 점 앞 562 · 탁자 위 23 — find_poses.py)",
+   "self_collision": [],
+   "lowest_z_mm": 7.4,
+   "drawn": true,
+   "pngs": [
+    "pose-reach_table-back.png",
+    "pose-reach_table-isoback.png"
+   ]
+  },
+  "side_pick": {
+   "q_deg": [
+    90.0,
+    -40.0,
+    60.0,
+    0.0,
+    20.0,
+    0.0
+   ],
+   "note": "J1 90° 돌려 옆 탁자에서 집기",
+   "self_collision": [],
+   "lowest_z_mm": 7.4,
+   "drawn": true,
+   "pngs": [
+    "pose-side_pick-back.png",
+    "pose-side_pick-isoback.png"
+   ]
+  },
+  "folded": {
+   "q_deg": [
+    0.0,
+    -95.0,
+    110.0,
+    0.0,
+    90.0,
+    0.0
+   ],
+   "note": "작게 접은 보관(쥐는 점 바닥 앞 150 · 탁자 위 14 — find_folded.py)",
+   "self_collision": [],
+   "lowest_z_mm": 7.5,
+   "drawn": true,
+   "pngs": [
+    "pose-folded-back.png",
+    "pose-folded-isoback.png"
+   ]
+  },
+  "wrist_play": {
+   "q_deg": [
+    -30.0,
+    -55.0,
+    75.0,
+    90.0,
+    60.0,
+    90.0
+   ],
+   "note": "손목 돌림 · 꺾음",
+   "self_collision": [],
+   "lowest_z_mm": 124.0,
+   "drawn": true,
+   "pngs": [
+    "pose-wrist_play-back.png",
+    "pose-wrist_play-isoback.png"
+   ]
+  }
+ }
+}

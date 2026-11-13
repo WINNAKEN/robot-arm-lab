@@ -1,0 +1,150 @@
+{
+ "what": "그리퍼 KG1 을 외장 v3 링크 6 에 붙인 자리(계획 051) — 좌표 G(그리퍼) → 세계(표시 자세 · v1 kinematics) · mm",
+ "mount": {
+  "face": "flange",
+  "face_axial_mm": 28.0,
+  "roll_deg": 0.0,
+  "g_to_world_display": [
+   [
+    -0.289370596,
+    0.693813458,
+    0.65946004,
+    411.108131835
+   ],
+   [
+    0.94944063,
+    0.120399846,
+    0.289942007,
+    129.180449213
+   ],
+   [
+    0.121766779,
+    0.710018847,
+    -0.693574862,
+    109.316365124
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "g_to_link6_local": [
+   [
+    0.0,
+    0.0,
+    1.0,
+    28.0
+   ],
+   [
+    1.0,
+    -0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "link6_local": "원점 = J6 원점 · 축 = v1 kinematics J6 R_child 열(지역 x = J6 축) · 표시 자세",
+  "j6_origin_mm": [
+   392.6432507239092,
+   121.06207301661144,
+   128.73646124840212
+  ],
+  "j6_axis_world": [
+   0.6594600396925665,
+   0.28994200701628453,
+   -0.6935748615802388
+  ]
+ },
+ "interface": {
+  "measured_from_stl": {
+   "flange_end": 28.0,
+   "flange_start": 18.0,
+   "flange_r": 28.0,
+   "flange_link": 6,
+   "ring_end": 29.5,
+   "ring_start": 28.0,
+   "ring_r": 10.0,
+   "ring_link": 6
+  },
+  "expected_from_params": {
+   "flange_start": 18.0,
+   "flange_end": 28.0,
+   "flange_r": 28.0,
+   "ring_start": 28.0,
+   "ring_end": 29.5,
+   "ring_r": 10.0
+  },
+  "match": true,
+  "link6_x_is_j6_axis": true
+ },
+ "mount_gap_flange_to_base_mm": 0.0,
+ "grasp_point": {
+  "g_mm": [
+   0.0,
+   0.0,
+   103.0
+  ],
+  "world_display_mm": [
+   479.0325,
+   159.0445,
+   37.8782
+  ],
+  "axial_from_j6_mm": 131.0,
+  "note": "J6 축 위 — 독립 순기구학 대조(check.json numbers.independent_fk)"
+ },
+ "arm_screw_into_arm": [],
+ "inputs_sha256": {
+  "v3 bodies.json": "301f57040ee4827d7c37a1f99e404399de001a79b94ef725ef816f7dd5ada564",
+  "v3 meshes (이름순 sha 의 sha)": "e128215d35894ae5612d5d47234dfbfbfb930a4f4c9270b28e8beb07124cd78c",
+  "v1 kinematics.json": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+  "v1 parameters.json": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+  "v3 parameters.json": "0491e2cc14554ac86dd173e879eb959717dffb02671d81e9f9988b25822ff10a",
+  "gallery_poses.json": "f34d56fcc13133099cf6d074f6b7fa5a39f93baeb3659409d748e6c9e6a1ad59",
+  "gripper parameters.json": "7c116e9f9bfeb49e4b45c5495f7b5f23ce6f3c7d60c1dc66680d604c98d42b8e",
+  "verify_gripper.py": "3ddd492a28cb9ef391c8274c15b5239f755b3c14ed553c8081337ee8fd242d49",
+  "print-fits.json": "d0ecda67dbd61501fc873995564db9fd30c844fb1bcc2003379c5312794126a9",
+  "gripper parts/BASE.stl": "80ee24f437b7d23aaec2fceb345ca716efb4224a740d86285ceaba4f7d1ef794",
+  "gripper parts/JAW_A.stl": "b0bee9c270933a6cd4302954a00113f2640ea18bd72949ebbddc53b3731f3bb7",
+  "gripper parts/JAW_B.stl": "7667af5f78a191204603e5273e81a062a492f6deefa440b1ca8e06705b84cb42",
+  "gripper parts/PINION.stl": "94b7b4af713e33b1b3a4175c5fbd00f7bd3169e77c5f14f7f0812ee6a0ab0ece",
+  "gripper parts/PAD_A_FLAT.stl": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c",
+  "gripper parts/PAD_B_FLAT.stl": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14",
+  "gripper parts/PAD_A_V.stl": "a6fe1233107159745c8cc5ba2c502f4e660fb883844ac4032fd2b1f73c877d37",
+  "gripper parts/PAD_B_V.stl": "9af9276b91c8d7460388145baa89d609ce19261bf2e4b4539fd7685c00bc0f35",
+  "assemble.py": "65dcde247362f761194b9d4a120c64dd3191de24ad76f1b479ec3eb6d0ccb110",
+  "parameters.json (MP9)": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77"
+ },
+ "gripper_mass": {
+  "total_mass_g": 184.2,
+  "com_g_mm": [
+   3.38,
+   -6.89,
+   35.76
+  ],
+  "com_link6_local_mm": [
+   63.76,
+   3.38,
+   -6.89
+  ],
+  "com_world_display_mm": [
+   428.932,
+   141.9283,
+   80.0337
+  ],
+  "source": "models/kmjh-gripper-v1/mass-properties.json",
+  "source_sha256": "3642f0f3bf0ff0ede344c41eff6b79b9c092106320c004a466ff911e443d10eb"
+ }
+}

@@ -1,0 +1,604 @@
+{
+  "status": "PASS_SCOPED_CONCEPT",
+  "units": "mm",
+  "bodies": 69,
+  "native_brep_solids": 69,
+  "root_rigid_links": 7,
+  "native_revolute_joints": 6,
+  "terminal_link_dof": 6,
+  "joint_errors": [],
+  "joint_conflicts": [],
+  "floating_chains": [],
+  "positive_solid_checks": [
+    {
+      "body": "BASE_PLATE_CONCEPT",
+      "bbox_max_delta_mm": 0.0,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "BASE_HOLLOW_PEDESTAL",
+      "bbox_max_delta_mm": 4.263256414560601e-14,
+      "volume_relative_error": 5.597050243016688e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 4.689582056016661e-13,
+      "volume_relative_error": 5.7767472316839046e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 2.8421709430404007e-13,
+      "volume_relative_error": 4.5734583113069155e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 2.0321522242738865e-12,
+      "volume_relative_error": 6.33397387621031e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 1.9895196601282805e-13,
+      "volume_relative_error": 3.7673184187804016e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 0.0,
+      "volume_relative_error": 2.0331968585817355e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 0.0,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 0.0,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 9.618178201264982e-05,
+      "volume_relative_error": 3.275709401303649e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J1_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.001212268970697039,
+      "volume_relative_error": 0.00014167954432519193,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK1_SHOULDER_POST_-1",
+      "bbox_max_delta_mm": 7.105427357601002e-15,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK1_SHOULDER_POST_+1",
+      "bbox_max_delta_mm": 7.105427357601002e-15,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 7.780442956573097e-13,
+      "volume_relative_error": 5.733901518724126e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 7.105427357601002e-14,
+      "volume_relative_error": 3.693832499711889e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 6.288303211476887e-13,
+      "volume_relative_error": 3.0837055128930377e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 8.526512829121202e-14,
+      "volume_relative_error": 3.207979079531665e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 3.552713678800501e-15,
+      "volume_relative_error": 2.0331968585817355e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 1.4210854715202004e-14,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 1.4210854715202004e-14,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 0.0006846086581120403,
+      "volume_relative_error": 2.9067355375999842e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J2_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.0002552107230791023,
+      "volume_relative_error": 0.00015917995736024296,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK2_UPPER_SLIM_BEAM",
+      "bbox_max_delta_mm": 7.105427357601002e-15,
+      "volume_relative_error": 1.7393281732127142e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK2_ELBOW_STATOR_MOUNT",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 4.3502616475108174e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 0.0014355603229603275,
+      "volume_relative_error": 3.5979201103438897e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 0.0005756936442367078,
+      "volume_relative_error": 4.5734583083827565e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 0.001467461657966851,
+      "volume_relative_error": 6.678504687138397e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 0.0006690493703729317,
+      "volume_relative_error": 3.7673184187804016e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 1.2434497875801753e-14,
+      "volume_relative_error": 4.066393717163471e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 2.842170943040401e-14,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 1.4210854715202004e-14,
+      "volume_relative_error": 1.684249447727645e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 0.0007851392853694961,
+      "volume_relative_error": 3.275709400866957e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J3_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.0011371408553060292,
+      "volume_relative_error": 0.00016610368649853414,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK3_FOREARM_SIDE_RAIL",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 8.661854302599317e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK3_FLANGE_RAIL_ADAPTER",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.6240976817373719e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 0.0008986168199918154,
+      "volume_relative_error": 0.00011283651855663523,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 0.0007142851646086967,
+      "volume_relative_error": 7.03277555057949e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 0.0009216582769049353,
+      "volume_relative_error": 3.0110248560962806e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 0.0008525339061193904,
+      "volume_relative_error": 4.573458134927844e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 2.842170943040401e-14,
+      "volume_relative_error": 4.066393717163471e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.052655904829778e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 7.572488232199248e-05,
+      "volume_relative_error": 3.938949823761221e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J4_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.0006439898170924607,
+      "volume_relative_error": 0.00016610368649865642,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK4_WRIST_SPINE",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.8189894035458566e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK4_WRIST_FLANGE_ADAPTER",
+      "bbox_max_delta_mm": 1.4210854715202004e-14,
+      "volume_relative_error": 1.166018848426831e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK4_NEXT_STATOR_ADAPTER",
+      "bbox_max_delta_mm": 2.842170943040401e-14,
+      "volume_relative_error": 5.983517774821896e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 0.0020220693780288457,
+      "volume_relative_error": 0.00011283651852819144,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 0.0007707443642743783,
+      "volume_relative_error": 7.032775553263074e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 0.000994508857047549,
+      "volume_relative_error": 3.0110253209683276e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 0.0009199206929224601,
+      "volume_relative_error": 4.573458148414265e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 2.0331968585817355e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 0.0,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.052655904829778e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 0.00024720515840215285,
+      "volume_relative_error": 3.93894983530367e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J5_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.0006180897780154737,
+      "volume_relative_error": 0.00016610368649388845,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK5_WRIST_SPINE",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 4.872293045212116e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK5_WRIST_FLANGE_ADAPTER",
+      "bbox_max_delta_mm": 2.842170943040401e-14,
+      "volume_relative_error": 1.166018848426831e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "LINK5_NEXT_STATOR_ADAPTER",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.1842378929335003e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_REDUCER_HOUSING_ENVELOPE",
+      "bbox_max_delta_mm": 0.00021970314054442497,
+      "volume_relative_error": 0.00011283651853936047,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_REDUCER_UNDESIGNED_CORE",
+      "bbox_max_delta_mm": 0.0001746358191780928,
+      "volume_relative_error": 7.032775546119446e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_ORANGE_MODULE_BAND",
+      "bbox_max_delta_mm": 0.00022533654077960819,
+      "volume_relative_error": 2.8728142509094195e-06,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_MOTOR_ADAPTER_UNDESIGNED",
+      "bbox_max_delta_mm": 0.0002084363001699785,
+      "volume_relative_error": 4.5734581120513444e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_MOTOR_ASSUMED_NEMA17",
+      "bbox_max_delta_mm": 0.0,
+      "volume_relative_error": 8.132787434326942e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_DRIVER_HEATSINK_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 5.730905493213159e-16,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_CONNECTOR_KEEP_OUT_ASSUMED",
+      "bbox_max_delta_mm": 5.684341886080802e-14,
+      "volume_relative_error": 1.2631870857957337e-15,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_OUTPUT_FLANGE",
+      "bbox_max_delta_mm": 0.0007265089283094994,
+      "volume_relative_error": 3.9389498086846025e-05,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "J6_OUTPUT_SHAFT_CUE",
+      "bbox_max_delta_mm": 0.0005577272895038732,
+      "volume_relative_error": 0.00016610368649462196,
+      "one_positive_solid_shell": true
+    },
+    {
+      "body": "TOOL_PASSIVE_FLANGE_NO_GRIPPER_AXIS",
+      "bbox_max_delta_mm": 0.000539022753429208,
+      "volume_relative_error": 4.107094356703285e-05,
+      "one_positive_solid_shell": true
+    }
+  ],
+  "static_display_pose": {
+    "kernel_bodies_checked": 69,
+    "keepout_or_motor_clashes": [],
+    "cross_rigid_link_intersections": [],
+    "same_link_schematic_or_attachment_intersections": 36,
+    "unchecked": [],
+    "note": "Same-link intersections represent attachment unions and undesigned-envelope overlap; no fabricated assembly topology is claimed."
+  },
+  "software_drive_probe": {
+    "joint": "J1",
+    "delta_deg": 5,
+    "moved": true,
+    "downstream_joint_axes_and_origins_match_rigid_FK": true,
+    "saved_main_file_unchanged_by_probe": true
+  },
+  "native_parameter_users": {
+    "motor_frame": {
+      "persisted_feature_reference_count": 6,
+      "feature_names": [
+        "J1_MOTOR_ASSUMED_NEMA17_PROFILE",
+        "J2_MOTOR_ASSUMED_NEMA17_PROFILE",
+        "J3_MOTOR_ASSUMED_NEMA17_PROFILE",
+        "J4_MOTOR_ASSUMED_NEMA17_PROFILE",
+        "J5_MOTOR_ASSUMED_NEMA17_PROFILE",
+        "J6_MOTOR_ASSUMED_NEMA17_PROFILE"
+      ],
+      "cli_used_by": [],
+      "upstream_parameter_dependencies": []
+    },
+    "motor_length": {
+      "persisted_feature_reference_count": 6,
+      "feature_names": [
+        "J1_MOTOR_ASSUMED_NEMA17_EXTRUDE",
+        "J2_MOTOR_ASSUMED_NEMA17_EXTRUDE",
+        "J3_MOTOR_ASSUMED_NEMA17_EXTRUDE",
+        "J4_MOTOR_ASSUMED_NEMA17_EXTRUDE",
+        "J5_MOTOR_ASSUMED_NEMA17_EXTRUDE",
+        "J6_MOTOR_ASSUMED_NEMA17_EXTRUDE"
+      ],
+      "cli_used_by": [
+        "d12",
+        "d28",
+        "d44",
+        "d60",
+        "d77",
+        "d94"
+      ],
+      "upstream_parameter_dependencies": []
+    },
+    "driver_width": {
+      "persisted_feature_reference_count": 6,
+      "feature_names": [
+        "J1_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE",
+        "J2_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE",
+        "J3_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE",
+        "J4_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE",
+        "J5_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE",
+        "J6_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_PROFILE"
+      ],
+      "cli_used_by": [],
+      "upstream_parameter_dependencies": []
+    },
+    "driver_depth": {
+      "persisted_feature_reference_count": 12,
+      "feature_names": [
+        "J1_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J1_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J2_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J2_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J3_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J3_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J4_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J4_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J5_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J5_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J6_DRIVER_HEATSINK_KEEP_OUT_ASSUMED_EXTRUDE",
+        "J6_CONNECTOR_KEEP_OUT_ASSUMED_EXTRUDE"
+      ],
+      "cli_used_by": [
+        "d13",
+        "d14",
+        "d29",
+        "d30",
+        "d45",
+        "d46",
+        "d61",
+        "d62",
+        "d78",
+        "d79",
+        "d95",
+        "d96"
+      ],
+      "upstream_parameter_dependencies": []
+    },
+    "connector_clearance": {
+      "persisted_feature_reference_count": 6,
+      "feature_names": [
+        "J1_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE",
+        "J2_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE",
+        "J3_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE",
+        "J4_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE",
+        "J5_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE",
+        "J6_CONNECTOR_KEEP_OUT_ASSUMED_PROFILE"
+      ],
+      "cli_used_by": [],
+      "upstream_parameter_dependencies": []
+    }
+  },
+  "files": {
+    "armold-type-mks-six-axis-concept.3mf": {
+      "bytes": 1429065,
+      "sha256": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da"
+    },
+    "armold-type-mks-six-axis-concept.solidcraft": {
+      "bytes": 231407,
+      "sha256": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd"
+    },
+    "armold-type-mks-six-axis-concept.step": {
+      "bytes": 527729,
+      "sha256": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d"
+    },
+    "build-commands.json": {
+      "bytes": 144800,
+      "sha256": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d"
+    },
+    "front.png": {
+      "bytes": 143743,
+      "sha256": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285"
+    },
+    "iso.png": {
+      "bytes": 196905,
+      "sha256": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f"
+    },
+    "kinematics.json": {
+      "bytes": 6884,
+      "sha256": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50"
+    },
+    "parameters.json": {
+      "bytes": 1935,
+      "sha256": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4"
+    },
+    "reducer-principle-schematic-NONFUNCTIONAL.solidcraft": {
+      "bytes": 146508,
+      "sha256": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d"
+    },
+    "reducer-principle-schematic.png": {
+      "bytes": 125932,
+      "sha256": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3"
+    },
+    "reducer-schematic-commands.json": {
+      "bytes": 61129,
+      "sha256": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f"
+    },
+    "reducer-schematic-raw.png": {
+      "bytes": 95565,
+      "sha256": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4"
+    },
+    "reducer-schematic-validation.json": {
+      "bytes": 450,
+      "sha256": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c"
+    },
+    "right.png": {
+      "bytes": 128333,
+      "sha256": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512"
+    }
+  },
+  "limitations": {
+    "mechanical_fit": "NOT_RUN",
+    "load_torque_strength": "NOT_RUN",
+    "full_range_collision_sweep": "NOT_RUN",
+    "physical_print": "NOT_RUN",
+    "hardware": "NOT_RUN",
+    "purchase": "NOT_RUN",
+    "native_joint_values": "Display pose is zero; source pose_deg is the geometry construction pose. Native deltas add at their displayed joint frame.",
+    "mass": "Default CAD density only; not robot mass or payload."
+  }
+}

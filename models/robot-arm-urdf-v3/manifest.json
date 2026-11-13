@@ -1,0 +1,20 @@
+{
+  "canonical": "robot_arm.urdf",
+  "files": {
+    "asset-ledger.json": "33b3392e57d429df58ee48048b83b2683816a51e1ce9e93d6156257c19ee21ef",
+    "meshes/Base.stl": "0bf034bca79f21f3d5aa006eda0c80bc855b9a4be61e12315a22e1309f7c0915",
+    "meshes/KG1.stl": "d5fd356916c7699f56ab0629b71da931bde6c92a37a9f950dfed8d22bf912bbd",
+    "meshes/KG1_A.stl": "d84f7d66da786dcfbb1169f73cc998a30feddc268c34356277d7861bfa2f6384",
+    "meshes/KG1_B.stl": "5945d60a8dbf087ec407b2a8c1a2a977e54cb93abb6f9771aa281b66d2db776a",
+    "meshes/KG1_R.stl": "e29b54e0bab2da8161a8e02e3f54faf2f01aad7482ea5896c90150d6cb8a4884",
+    "meshes/Link1.stl": "aed7c1a3596737f3373a3ba4d084eac518c8d7da7b2eea5cb20a0217320e0467",
+    "meshes/Link2.stl": "f8ac751136fb5473b9eda01c399de6006704e16ab9ec8fd863be95fbc93bc538",
+    "meshes/Link3.stl": "0158fba4e04ab88dda47e6956f9c5785bb98b484f15dc42e918363c3b1873dd4",
+    "meshes/Link4.stl": "b0fa1cd99fedee9eec7aa46365211964f6675fc517da2a8d4d97333353db30bf",
+    "meshes/Link5.stl": "ec89581e32143ca244d15181b7fb7d8def245c9fc6a6382a25d9f2ea578fc7ab",
+    "meshes/Link6.stl": "84eae4dc1219e93544bcfb31589ce14b25ad4129701f08548bcd102245d0295f",
+    "provenance.json": "7823f47b81b3ddb1317d1bee6f6dad1f9f99c1213099c1b7a868e347d0087284",
+    "README.md": "38cddc1e5b64a21e07f8988afab4662259758b8d7ab6d08800a7c63ac4afc142",
+    "robot_arm.urdf": "9cbbebe2ecfebd08436aa77c2760c281319eeca82c195108f177a15f2d6b2d2c"
+  }
+}

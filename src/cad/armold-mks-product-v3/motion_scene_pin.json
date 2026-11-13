@@ -1,0 +1,5 @@
+{
+ "_note": "동작 영상의 정본 블렌더 장면 — blender_motion.py · motion_encode.py 는 이 sha256 의 .blend 로만 저장소용 영상을 렌더 · 게시한다(2026-10-27 독립 검토 3 회: 「다른 .blend 로 바꾸면」 부류의 지적을 하나씩 막는 대신 장면 자체를 고정). 이 .blend 는 MP7 커밋 866f3da 에서 blender_scene.py 가 만들고 blender_verify.py(C7v)가 다시 열어 확인한 파일이며, 같은 sha256 이 gallery/gallery-report.json(b99a50a)에도 있다. .blend 를 다시 만들면 C7 · C7v 를 다시 통과시킨 뒤에만 이 값을 바꾼다.",
+ "blend": "models/armold-mks-product-v3/blender/kmjh-arm-v3.blend",
+ "blend_sha256": "2db0af5469f3b95041d5de955bab63e1e4854888c9e912950a6a996f2a7122b7"
+}

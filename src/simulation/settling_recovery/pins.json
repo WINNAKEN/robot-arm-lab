@@ -1,0 +1,37 @@
+{
+  "ssh_alias": "isaacpc",
+  "remote_runs_root": "C:/isaacsim_remote/robot-arm-lab/047/runs",
+  "isaac_root": "C:/isaacsim",
+  "expected_isaac_version": "6.2.0-rc.14+release.52805.02189a84.gl",
+  "maximum_author_attempts": 2,
+  "timeout_seconds": 600,
+  "hardware_approved": false,
+  "physical_calibration": false,
+  "ring_geometry": "DEFERRED",
+  "dependencies_sha256": {
+    "src/simulation/contact_motion/core.py": "432306d8f6726469a30949e6cd4119f0dab2370d213da70126a25c8f065a6ff0",
+    "src/simulation/contact_motion/environment.py": "6b1e7a1451feabf5f310ae18d32a9bae997cd56be73ed689eb91540e9d0d4c6c",
+    "src/simulation/contact_motion/runtime.py": "8ce1d6543e184daadc7c613ced029fea4027d90edd2599b22f34a4dfda194734",
+    "src/simulation/contact_motion/verify.py": "1444b98f83b60761b0d6d137c92645ef31f0ed02f5f25d5366b67c7e2aec6c19",
+    "src/simulation/motion/core.py": "3d27396f2929f713f42d6449a7ef1dae0d8b20515c14323557b23fd4146305c4",
+    "src/simulation/motion/verify.py": "ceb5f3da61592ac61f19923a1bc8844d843ac4af85ee650289532de9558d4724",
+    "src/simulation/isaac_import/verify_import.py": "bcf682c5a3a14d04b91458845331b92f9794e231ac0c57b7c5a475677a283eeb",
+    "src/simulation/isaac_import/extract_usd.py": "2e48eb12de4d66f67c5aa5ec8117626fc0f6ee1c18484ad15e0cec6016ad6018",
+    "src/simulation/urdf_draft/verify.py": "886555d0e2392a86ec3bc22861af170acbf0235aad57a87d49f800489ff5b887",
+    "src/joint_frames/frames.py": "1eb5d41f439e5201ce0b0c5ee53222584082b8446bfef2e00a5bdd3eed5b4d46"
+  },
+  "variants": {
+    "solver": {
+      "position_iterations": 64,
+      "velocity_iterations": 16,
+      "kp_scale": 1,
+      "kd_scale": 1
+    },
+    "solver_pd": {
+      "position_iterations": 64,
+      "velocity_iterations": 16,
+      "kp_scale": 4,
+      "kd_scale": 2
+    }
+  }
+}

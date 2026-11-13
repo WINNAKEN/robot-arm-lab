@@ -1,0 +1,8 @@
+{
+  "units": "mm",
+  "parts": {
+    "cable_tie_mount": {"width": 24, "depth": 18, "height": 5, "channel_width": 5, "channel_height": 2, "floor": 2},
+    "wire_label_tag": {"width": 40, "depth": 16, "height": 2, "slot_width": 5, "slot_depth": 3, "slot_left": 2},
+    "parts_tray": {"width": 90, "depth": 60, "height": 12, "wall": 2, "floor": 2}
+  }
+}

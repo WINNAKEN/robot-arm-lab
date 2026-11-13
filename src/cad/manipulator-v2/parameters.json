@@ -1,0 +1,2139 @@
+{
+ "units": "mm (angles in deg)",
+ "status": "MP18 PROTOTYPE - whole manipulator v2 (v3-draft look, concept B - user 2026-11-06 「B 로 진행 · 손목까지 (권장)」; verbatim .dev/mp18-evidence/user-decisions-mp18.json): the MP17 arm (src/cad/manipulator-v1, read only) redrawn - purchased parts and joint distances unchanged; the J3 drive module (MP16 parts as they are) turned about its axis so its motor lies inside the upper arm; new housings (base skin · shoulder drum + post · upper-arm bar · forearm tube · wrist) in the KMJH / v3 language. Purchased-part sizes are listing / nominal values - measure on arrival.",
+ "frame": "world = robot base frame at q = 0 (all link frames parallel to world): z up, desk z 0, J1 axis = z through x = y = 0. Joint origins at q = 0 (v1 + kinematics_override): J1 (0,0,96) · J2 (0,0,174) · J3 (165,0,174) · J4 (330,0,174) · J5 (408,0,174) · J6 (548,0,174). Axes: J1 z · J2 y · J3 y · J4 x · J5 y · J6 x. Part STLs are saved in their own local frames (see layout.py frames)",
+ "kinematics_override": {
+  "forearm_mm": 165.0,
+  "v1_forearm_mm": 140.0,
+  "decision": "user 2026-11-06 question window 「165 로 늘림 (권장)」 after 「j2,j3가 j4 닿는거 너무 이상한거아니야/」 · 「디자인요소도 생각해야지」 — at 140 the J4 can rear cover sat 6 mm inside the J3 module circle (r 59) in the side view",
+  "note": "only J3 -> J4 changes (+25 along the forearm); v1 files are not edited - Codex URDF must take the same change (HANDOFF)"
+ },
+ "wrist": {
+  "output_face_from_joint": 18.0,
+  "mp6_output_face": 43.5,
+  "note": "J4 / J6 MP6 output face = joint origin + 18 along the axis (MP10 neck face = J4 + 18); motor face = output face - 43.5 (MP6 stack)"
+ },
+ "style": {
+  "colors": {
+   "white": "#FFFFFF",
+   "navy": "#0B2545",
+   "gray": "#6B7280",
+   "mint": "#34D399",
+   "source": "docs/brand/README.md (KMJH) · MP7 v3 exterior roles body / accent / frame / highlight"
+  },
+  "cap": {
+   "r": 36.0,
+   "t": 3.0,
+   "seat": 1.5,
+   "recess_extra": 0.15,
+   "seat_clear": 0.05,
+   "chamfer": 1.0,
+   "mark": {
+    "h": 22.0,
+    "w": 7.0,
+    "raise": 0.6
+   },
+   "note": "navy end cap over the six link screws (v3 end-cap look) - J2: flat disc in a 1.5 recess of the upper arm (0.05 clearance) · J3: on the flat forearm face (that face is on the print bed, a recess there was a 72 mm ceiling) · glue / thin double-sided tape · printed inner face down so the raised mint slash (0.6) is the top layers (AMS height-range colour)"
+  },
+  "logo": {
+   "height": 12.0,
+   "raise": 0.6,
+   "engrave": 0.6,
+   "centre_x": 72.5,
+   "note": "KMJH letters (MP7 kmjh_logo.py read-only): raised 0.6 on the upper-arm box +y face (navy by AMS height range) + engraved 0.6 on the plate -y face (the forearm passes 1 mm below it)"
+  },
+  "motor_cover": {
+   "clear": 0.6,
+   "wall": 3.0,
+   "corner": 3.0,
+   "corner_note": "outer 45 deg corner 3 with wall 3 leaves 2.1 at the corner (6 with 2.5 cut the walls apart - trial 2026-11-06)",
+   "rib_w": 3.0,
+   "rib_in": 0.75,
+   "rib_offsets": [
+    -14.0,
+    14.0
+   ],
+   "vent_w": 6.0,
+   "vent_margin": 8.0,
+   "z_j2": [
+    18.0,
+    67.0
+   ],
+   "z_j3": [
+    18.0,
+    58.0
+   ],
+   "mark": {
+    "h": 26.0,
+    "w": 7.0,
+    "raise": 0.6
+   },
+   "note": "white U cover (open toward the drum and at both ends - driver back and connectors exposed, air flows) held by ribs on the motor body (0.15 interference); J2 cover ends at z_m 67 below the shoulder plate layer (y 43); print PETG / ASA if the motor runs hot (PLA softens near 55 C)"
+  },
+  "base_ring": {
+   "r": [
+    56.8,
+    59.5
+   ],
+   "z": [
+    -42.0,
+    -38.0
+   ],
+   "groove_r": 56.6,
+   "groove_z": [
+    -42.2,
+    -37.8
+   ],
+   "split": 2.0,
+   "inner_top_chamfer": 1.4,
+   "note": "mint snap ring in a groove of the BASE wall (v3 base ring) - groove top 45 deg (a flat 1.4 ledge made Bambu ask for support, printprep 2026-11-06) · ring inner top corner 45 deg to match"
+  },
+  "shoulder_chamfer": 8.0
+ },
+ "sources": {
+  "v1_dir": "../../../models/armold-mks-concept-v1",
+  "drive_dir": "../../../models/j23-drive-v1",
+  "drive_params": "../j23-drive-v1/parameters.json",
+  "wrist_dir": "../../../models/j5-wrist-v1",
+  "wrist_code": "../j5-wrist-v1",
+  "reducer_dir": "../../../models/cycloid-27-v1",
+  "reducer_json": "../../../models/cycloid-27-v1/cycloid.json",
+  "gripper_dir": "../../../models/kmjh-gripper-v1",
+  "gripper_mount": "../../../models/arm-v3-kg1-assembly/assembly.json",
+  "motor_ledger": "../calibration/motor-mks42d.json",
+  "fits_ledger": "../calibration/print-fits.json",
+  "material": "PLA",
+  "fit_keys": [
+   "bearing_seat_extra",
+   "bearing_bore_extra",
+   "insert_hole_dia",
+   "m3_clearance_dia",
+   "m3_close_hole_dia"
+  ],
+  "fit_keys_note": "m3_close_hole_dia is a PENDING (placeholder) ledger key (MP8 gripper, 'M3 꼭 맞는 통과 구멍(세로)') - read from values or pending; used for the link screw holes that print vertical (review R1-20: the screws act as dowels)",
+  "mp17_dir": "../manipulator-v1"
+ },
+ "j1": {
+  "motor_face_z": 63.5,
+  "note_height": "J1 motor face at world z 63.5 so the MP6 output face is at 107 and the turret top at 113 - J2 cap bottom = 174 - 59 = 115 (2 mm above the turret)",
+  "bearing": {
+   "model": "6818ZZ (= 61818-ZZ)",
+   "id": 90.0,
+   "od": 115.0,
+   "width": 13.0,
+   "count": 2,
+   "z": [
+    [
+     2.0,
+     15.0
+    ],
+    [
+     28.0,
+     41.0
+    ]
+   ],
+   "outer_ring_face_r": [
+    53.5,
+    57.5
+   ],
+   "inner_ring_face_r": [
+    45.0,
+    48.5
+   ],
+   "source": "user 「6818 두 개 새로 구매 (권장)」 (2026-11-06) - catalogue nominal 90 x 115 x 13; ring face widths are an ASSUMPTION (not on a drawing) - measure on arrival",
+   "kg_each": 0.25,
+   "kg_note": "ASSUMPTION - 618 series 90 mm class",
+   "seal_note": "ZZ (shields) - a 2RS seal drag (about 0.2 - 0.5 N·m each, author estimate) would eat the J1 motor margin (+5 % at 1 kg) - review R1-19"
+  },
+  "floor": {
+   "thickness": 6.0,
+   "radius": 85.0,
+   "desk_hole_dia": 5.5,
+   "desk_hole_r": 74.0,
+   "desk_hole_angles": [
+    45.0,
+    135.0,
+    225.0,
+    315.0
+   ],
+   "window": 28.0,
+   "can_hole_dia": 5.2,
+   "can_cbore": [
+    9.5,
+    3.0
+   ],
+   "base_screw_r": 53.75,
+   "base_screw_angles": [
+    45.0,
+    135.0,
+    225.0,
+    315.0
+   ],
+   "base_cbore": [
+    6.5,
+    3.0
+   ],
+   "note": "can holes oversize (M3 + 1.8) so the J1 can + MP6 self-centre on the turret before the floor screws are tightened from below (assembly README)",
+   "washer": [
+    7.0,
+    0.5
+   ],
+   "washer_note": "M3 flat washer (OD 7 · t 0.5) under each button head - the Ø5.2 float hole left only 0.15 of head seat (review R1-3) · counterbore Ø9.5 lets the washer float with the screw (±1.1)"
+  },
+  "base": {
+   "wall_r": [
+    49.5,
+    58.0
+   ],
+   "wall_top": -2.0,
+   "collar_r": [
+    41.0,
+    51.0
+   ],
+   "collar_z": [
+    -2.0,
+    2.0
+   ],
+   "sleeve_inner_r": 41.0,
+   "sleeve_top": 41.0,
+   "window_half_width": 9.0,
+   "window_top": -43.0,
+   "window_angles": [
+    90.0,
+    180.0,
+    270.0
+   ],
+   "chamfer": 0.8,
+   "window_note": "cable windows at the J1 can's terminal / motor-wire exits - 45 deg gable top (a 22 wide flat top was a bridge Bambu flagged)",
+   "cone_top": 1.8,
+   "cone_note": "inner 45 deg cone starts at z 1.8 so the J1 can lug corner (r 48.2 at z -7) keeps 1.3 radial (review R1-7)",
+   "window_half_width_back": 12.0,
+   "window_back_note": "cable unit: the 180 deg window 18 -> 24 wide (in + out bundles to the J1 terminals inside the BASE ring)"
+  },
+  "spacer": {
+   "r": [
+    54.0,
+    57.35
+   ],
+   "z": [
+    15.0,
+    28.0
+   ]
+  },
+  "turret": {
+   "cup_outer_r": 63.0,
+   "shoulder_inner_r": 54.0,
+   "plate_z": [
+    43.5,
+    49.5
+   ],
+   "relief_r": 28.5,
+   "relief_d": 0.6,
+   "ext_x": [
+    60.0,
+    94.0
+   ],
+   "ext_y": [
+    -42.0,
+    51.0
+   ],
+   "ext_z0": 38.0,
+   "ext_chamfer": 8.0,
+   "foot_insert_xy": [
+    [
+     77.0,
+     -30.0
+    ],
+    [
+     77.0,
+     5.0
+    ],
+    [
+     77.0,
+     40.0
+    ]
+   ],
+   "mp6_screw_under_head": 4.0,
+   "mp6_cbore": 6.2,
+   "shoulder_gap": 0.4,
+   "shoulder_gap_note": "turret shoulder clears the top 6818 outer ring - the only axial datum is the MP6 output face (review R1-1: two axial datums fought through the turret screws)",
+   "bore_chamfer": 0.8,
+   "tie_xy": [
+    [
+     85.0,
+     -20.0
+    ],
+    [
+     85.0,
+     25.0
+    ]
+   ]
+  }
+ },
+ "j2": {
+  "module_axis_y0": -26.3,
+  "frame_note": "M2 (MP16 module frame) -> world(q=0): x_m = -x (motor behind J2), y_m = +z, z_m = +y; world = (-x_m, z_m + module_axis_y0, 174 + y_m)",
+  "hub": {
+   "r_contact": 33.0,
+   "r_outer": 46.0,
+   "y": [
+    48.2,
+    52.0
+   ],
+   "outer_face_y": 48.85,
+   "note": "J2_HUB: between the MP16 J2 output flange (STL z 69.5 - 74.5 -> y 43.2 - 48.2) and the upper arm (y 52); r > 33 stays 1.0 above the MP16 retainer screw heads (y 47.85)"
+  },
+  "shoulder": {
+   "plate_y": [
+    43.0,
+    51.0
+   ],
+   "ring_r": 60.0,
+   "hole_r": 48.0,
+   "body_x": [
+    -94.0,
+    94.0
+   ],
+   "body_z": [
+    113.5,
+    128.0
+   ],
+   "motor_keepout_x": -54.45,
+   "motor_keepout_z": 137.45,
+   "foot_z": [
+    113.0,
+    121.0
+   ],
+   "foot_x": [
+    62.0,
+    94.0
+   ],
+   "foot_y": [
+    -42.0,
+    50.5
+   ],
+   "wall_x": [
+    62.5,
+    68.0
+   ],
+   "wall_z": [
+    121.0,
+    137.0
+   ],
+   "cap_screw_cbore": [
+    6.5,
+    3.5
+   ],
+   "note": "plate on the J2 cap top (MP16 stand inserts r 53.5 phase 30 · same as the test stand) · feet bolt to the turret extensions beside the J2 cap (|x| > 59)",
+   "motor_keepout_note": "MP18: keepout enlarged (MP17 -58.3 / 143.8) so the J2 motor hood walls pass the plate (hood outer x -58.3 / z 141.3) · cable unit: -54.45 / 137.45 = hood outer (driver fit, x -56.45 / z 139.45) + 2.0",
+   "foot_cbore": [
+    6.5,
+    1.0
+   ],
+   "ties": [],
+   "ties_note": "cable unit: the two MP17 placeholder tie pairs (+-80, 135) are gone (the -80 one sat in the new hood-bump keepout). The J1 loop end on link 1 is tied on the navy hood face (cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-2): behind the plate is the shoulder rear housing (y -72 .. 42, open only at its bottom over the shoulder foot) - a strap through the plate could not be reached after assembly"
+  }
+ },
+ "j3": {
+  "module_axis_y0": 128.3,
+  "frame_note": "M3 -> world(q=0) (MP18: after the module turn about z_m): x_m' = +z, y_m' = -x, z_m = -y on the turned axes; motor (module x_m = C) at world (165 - C, ·, 174)",
+  "upper_arm": {
+   "plate_y": [
+    52.0,
+    59.0
+   ],
+   "j2_disc_r": 40.0,
+   "j3_ring_r": 60.0,
+   "beam_half_z": 30.0,
+   "box_x": [
+    42.0,
+    103.0
+   ],
+   "box_y": [
+    52.0,
+    95.0
+   ],
+   "box_half_z": 28.0,
+   "hole_r": 48.0,
+   "j3_cbore": [
+    6.5,
+    3.5
+   ],
+   "j2_cbore": [
+    6.5,
+    5.0
+   ],
+   "chamfer": 4.0
+  },
+  "forearm": {
+   "plate_y": [
+    41.0,
+    51.0
+   ],
+   "boss_r_contact": 33.0,
+   "boss_r_outer": 46.0,
+   "boss_y": [
+    51.0,
+    53.8
+   ],
+   "boss_outer_face_y": 53.15,
+   "j3_disc_r": 50.0,
+   "beam_end_past_motor_face": 2.5,
+   "beam_half_z": 30.0,
+   "j3_cbore": [
+    6.5,
+    7.0
+   ],
+   "pad_cbore": [
+    6.5,
+    2.5
+   ],
+   "chamfer": 4.0,
+   "tie_x_from_j3": 45.0
+  },
+  "module_turn_deg": 90.0,
+  "module_turn_note": "MP18 concept B: the J3 module (MP16 printed + purchased parts unchanged) is turned +90 deg about its own axis so the motor (91 mm from the axis, belt 3M-306) lies along the upper arm toward J2 (world x 74 at q = 0) instead of above the elbow - the upper arm hides it. The cap-top insert ring (6 at r 53.5, phase 30 in the module) turns with it -> phase 0 in the arm (30 + 90 = 120 = 0 mod 60)."
+ },
+ "j4": {
+  "frame_note": "C4 (MP10-type can frame: z = J4 axis, z 0 = motor face) -> world(q=0): x_c = -y, y_c = -z, z_c = +x; world = (x4 + z_c, -x_c, 174 - y_c) with x4 = J4 x + 18 - 43.5 = 304.5"
+ },
+ "j5": {
+  "frame_note": "MP10 module frame -> world(q=0) = (J5 x + x_m, z_m - 21, 174 - y_m) (MP10 README: link 4 point = (x + 78, z - 21, -y)) · J5 x = 408"
+ },
+ "link5": {
+  "boss_r": 27.0,
+  "boss_y": [
+   32.5,
+   43.0
+  ],
+  "plate_y": [
+   43.0,
+   53.0
+  ],
+  "j5_disc_r": 30.0,
+  "beam_end_past_motor_face": 2.5,
+  "beam_half_z": 30.0,
+  "hub_cbore": [
+   6.5,
+   6.5
+  ],
+  "pad_cbore": [
+   6.5,
+   3.0
+  ],
+  "chamfer": 4.0,
+  "tie_x_from_j5": 70.0,
+  "tab": {
+   "x_from_j5": [
+    -52.0,
+    -20.0
+   ],
+   "z_half": 12.0,
+   "chamfer": 4.0,
+   "tie_x_from_j5": -45.0,
+   "note": "cable unit: tab on the J5 disc (-x side at q = 0) with a tie pair - the J5 loop's link-5 end close to the J5 axis (r 45)"
+  }
+ },
+ "j6": {
+  "frame_note": "C6 -> world(q=0) = (x6 + z_c, -x_c, 174 - y_c) with x6 = J6 x + 18 - 43.5 = 522.5"
+ },
+ "pad": {
+  "x_face_j4": -41.0,
+  "x_face_j6": -43.0,
+  "x_inner": -28.0,
+  "y": [
+   -19.0,
+   24.5
+  ],
+  "z": [
+   -30.3,
+   -0.5
+  ],
+  "z_j6": [
+   -30.3,
+   -0.5
+  ],
+  "z_j6_note": "J6 pad 45 deg underside starts 0.3 lower - with the face at -43 the 45 deg plane met the can cylinder in a 3-edge STL sliver (trial build 2026-11-06)",
+  "inserts_yz": [
+   [
+    -13.0,
+    -5.0
+   ],
+   [
+    -13.0,
+    -26.0
+   ],
+   [
+    18.5,
+    -5.0
+   ],
+   [
+    18.5,
+    -26.0
+   ]
+  ],
+  "insert_depth": 7.5,
+  "note": "flat land on can half A (-x side) for the link (forearm / link 5) - inserts kept out of the MP10 connector pockets (see check_limits in build_arm.py)",
+  "z_note": "J4 pad bottom -30.3 (was -30.0): the insert walls are counted with the insert OD 4.2 (review R1-11) - same as z_j6"
+ },
+ "tool_flange": {
+  "r": 28.0,
+  "t": 10.0,
+  "boss_r": 10.0,
+  "boss_h": 1.5,
+  "insert_r": 15.75,
+  "insert_angles": [
+   0.0,
+   90.0,
+   180.0,
+   270.0
+  ],
+  "insert_depth": 8.0,
+  "mp6_screw_under_head": 4.0,
+  "mp6_cbore": 6.2,
+  "chamfer": 1.0,
+  "note": "gripper interface = MP9 rev1 (boss Ø20 × 1.5 · M3 inserts Ø31.5 at 0°) at J6 + 28 - KG1 BASE recess sits on the boss"
+ },
+ "gripper_screw": {
+  "length": 10.0,
+  "seat_z": 3.0,
+  "head": "M3 socket ISO 4762 (dk 5.5 · k 3.0)",
+  "source": "KG1 BASE.stl rays at r 15.75: counterbore floor z 3 · top z 6 (2026-11-06) · KG1 parameters screws.arm_m3 length 10 was a placeholder 「length set when the arm side is designed」"
+ },
+ "screws": {
+  "insert_length": 5.7,
+  "insert_length_source": "BOM R06 user 2026-10-26 「인서트는 M3 길이 5.7 바깥지름 4.2야」 - every insert hole must be at least 5.7 + 0.25 deep (C3)",
+  "min_engagement": 4.0,
+  "tip_to_floor_min": 0.5,
+  "lengths_available": [
+   6.0,
+   8.0,
+   10.0,
+   12.0,
+   16.0,
+   20.0,
+   25.0,
+   30.0
+  ],
+  "button_head": [
+   5.7,
+   1.65
+  ],
+  "socket_head": [
+   5.5,
+   3.0
+  ],
+  "head": "ISO 7380 button head (dk 5.7 · k 1.65) for every M3 link screw - the gripper G11 alone is ISO 4762 socket (review R1-2)"
+ },
+ "min_wall": 2.0,
+ "insert_od": 4.2,
+ "quality": "fine",
+ "poses": {
+  "display_deg": [
+   15.0,
+   -50.0,
+   70.0,
+   15.0,
+   25.0,
+   -10.0
+  ],
+  "ready_deg": [
+   0.0,
+   -60.0,
+   90.0,
+   0.0,
+   60.0,
+   0.0
+  ],
+  "sweep_step_deg": 5.0,
+  "grid_step_deg": 10.0,
+  "wanted_ranges_deg": {
+   "J1": [
+    -170.0,
+    170.0
+   ],
+   "J2": [
+    -100.0,
+    0.0
+   ],
+   "J3": [
+    -20.0,
+    120.0
+   ],
+   "J4": [
+    -120.0,
+    120.0
+   ],
+   "J5": [
+    -90.0,
+    90.0
+   ],
+   "J6": [
+    -170.0,
+    170.0
+   ]
+  },
+  "wanted_note": "AUTHOR PROPOSAL (not a user decision) - the range each joint must reach without self-collision from the display pose with the other joints held; sign = v1 kinematics (J2 negative lifts the upper arm · J3 positive bends the forearm down)"
+ },
+ "ties": {
+  "slot": [
+   4.5,
+   2.4
+  ],
+  "z_off": 24.0,
+  "pitch": 9.0,
+  "note": "cable-tie slot pairs (MP10 neck size 4.5 x 2.4) - anchors only; the cable route itself = MP18 shells (review R1-5)"
+ },
+ "fit_coupons": {
+  "height": 8.0,
+  "sleeve_ring_wall": 4.0,
+  "bore_ring_wall": 4.0,
+  "chamfer": 0.8,
+  "note": "print first - push the real 6818 onto the sleeve ring and into the bore ring before plate B (Ø90 / Ø115 fits are extrapolated from Ø10 - 21 coupons - review R1-4)"
+ },
+ "v2": {
+  "note": "MP18 concept B housings (world mm at q = 0 unless said) - walls are printed shells; structure = the MP17 plates / frames + the new box walls",
+  "wall": 2.5,
+  "gap": 2.0,
+  "upper_arm": {
+   "j2_end_r": 50.0,
+   "bar_half_z": 45.5,
+   "j3_end_r": 64.0,
+   "plate_y": [
+    52.0,
+    59.0
+   ],
+   "wall_top_y": 170.0,
+   "motor_window_clear": 3.5,
+   "j3_stand_phase_deg": 30.0,
+   "cover_t": 4.0,
+   "cover_edge_chamfer": 2.0,
+   "cover_clear": 0.3,
+   "boss_r": 4.5,
+   "insert_depth": 8.5,
+   "note": "box section: plate (back, y 52 .. 59 = MP17 plate layer) + perimeter wall to y 170 + front cover y 170 .. 173 (screwed). The motor window cuts the plate across the beam - the top / bottom walls carry the bending. J3 module slides in from the front (+y) and is screwed from the back through the plate (as MP17).",
+   "rib_from_y": 138.5,
+   "cover_screws_note": "J2 end = three posts from the plate, r 44 from the J2 axis (counterbores 0.75 inside the cover edge step - review R1-11b). J3 end = the separate bracket v2.j3_bracket - box ribs at the J3 end (r 59) blocked the J3 module's way in through the open front (review R1-1); cover_ribs / rib_from_y / rib_wedge stay only for the positive control ua_j3_ribs_back",
+   "vents": {
+    "x": [
+     48.0,
+     84.0
+    ],
+    "n": 5,
+    "w": 4.0,
+    "y": [
+     66.0,
+     114.0
+    ],
+    "note": "slots through the top and bottom walls over the J3 motor body (motor y 53 .. 123)",
+    "x_note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-7: x 50 .. 98 -> 48 .. 84 (pitch 9, slots 46 .. 86) so the inner tie at x 92 keeps 3.75 to the last slot (the 8 mm pitch left 1.75 < min wall 2 on either side of any tie) - the J3 motor body x 45.8 .. 102.2 stays mostly under the slots"
+   },
+   "cover_screw_len": 8.0,
+   "cover_screw_note": "M3 x 8 button heads (a length already in the BOM - no new screw length); insert holes 8.5 deep leave 1.65 below the tip",
+   "cover_posts_xz": [
+    [
+     -44.0,
+     174.0
+    ],
+    [
+     4.86,
+     130.27
+    ],
+    [
+     4.86,
+     217.73
+    ]
+   ],
+   "cover_ribs": [],
+   "rib_wedge": 9.0,
+   "motor_window_note": "window = motor frame + 3.5 each side: the J3 motor slides 2.5 toward J2 for belt tension (MP16 belt slot_travel) + 1.0 (review R1-5: with 2.0 the board passed the window edge by 0.5 at the slot end) · cable unit: the 57D driver is assumed frame + 3.7 wide (v2.term57) -> x sides 5.5 = 1.85 + 2.5 belt travel (MP16 slots +-2.5) + 1.15; z sides stay 3.5 = 1.85 + 1.65 (no travel across the belt line)",
+   "cover_t_note": "4 so 2.15 stays under the button heads (3 left 1.15 - review R1-11a)",
+   "bar_note": "cable unit: 39 -> 45.5 (user 「A · 막대 높이 키움 (권장)」 - user 2026-11-06 「2」 → 「42D 단자 배치를 57D 에도 가정해 지금 바로」 · 「A · 막대 높이 키움 (권장)」 · 「±170° 유지 (권장)」 (verbatim .dev/mp18-evidence/user-decisions-mp18-cable.json)): the J3 57D terminal pockets (42D layout assumption, out to 42.55 from the motor axis with 0.5 gap) and the cable path over / under the J3 motor fit inside (inner 43.0)",
+   "motor_window_clear_x": 5.5,
+   "notches": {
+    "exit_x": [
+     62.5,
+     108.0
+    ],
+    "note": "plate notches (y 52 .. 59, cut to the plate front + 0.5): J3 terminal pockets top / bottom over x 74 +- 11.5 out to +-42.55 (the 0.45 left to the wall face stays joined to the wall), J2 side (-x) over z +-11.5 out to 74 - 42.55; the TOP one also passes the cable out behind the plate (merged x 62.5 .. 108 · bundle d 10 at z 211) - first full check 2026-11-06: an exit under the motor (z 137) limited J2 to +3 deg (shoulder plate) and J3 to +121 deg (forearm); at the top (phi 150 deg from J3) neither link reaches it in its free range",
+    "exit_side": "top",
+    "travel": 2.5,
+    "travel_note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-4: the J3 motor (and its 57D driver / terminals) slides +-2.5 in the MP16 belt slots (tension toward J2 = -x) - the top / bottom notches grow by 2.5 each side in x and the J2-side notch by 2.5 toward J2, so the terminal envelopes at either slot end keep the 0.5 pocket gap (C4 also places the J3 driver / terminal envelopes at +-2.5 - REF.J3.*@+2.5 / @-2.5)"
+   },
+   "j2_entry": {
+    "phi_deg": 112.0,
+    "y": 95.0,
+    "d": 13.0,
+    "note": "cable entry through the J2-end wall (r 47.5 .. 50) at 112 deg (world angle from +x toward +z: top-back of the J2 drum), 13 wide + 45 deg point toward +y (the box prints plate down) - the J2 loop from the hood front face"
+   },
+   "inner_tie": {
+    "x": 92.0,
+    "y": 72.0,
+    "side": "top",
+    "note": "cable-tie slot pair through the TOP wall beside the exit (bundle along x) - hold A of the J3 loop"
+   },
+   "j2_tie": {
+    "x": 25.0,
+    "y": 76.5,
+    "side": "top",
+    "note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-2: tie pair through the top wall at x 25 (past the top cover post x 0.4 .. 9.4) - the J2 loop end inside the upper arm, before the J3 terminals"
+   }
+  },
+  "caps": {
+   "t": 3.0,
+   "chamfer": 1.0,
+   "recess": 1.0,
+   "recess_clear": 0.15,
+   "pin_d": 3.0,
+   "pin_hole_extra": 0.1,
+   "j2_r": 39.0,
+   "j3_r": 50.0,
+   "mark": {
+    "h": 28.0,
+    "w": 8.0,
+    "raise": 0.6
+   },
+   "note": "navy end caps: three pins (d 3, h 2) stand on the cover recess floor, the cap has blind holes (d 3.1 x 2.3) - press-fit, removable (MP17 review R1-8); caps print top-up so the mint 45 deg slash is raised on top (AMS height range). Link-5 cap: seated in a 1.0 recess of the link-5 plate (glue dot) - link 5 prints +y face down so it cannot carry pins",
+   "pin_h": 2.0,
+   "hole_depth": 2.3,
+   "pin_r_fracs": [
+    0.6,
+    0.6,
+    0.45
+   ],
+   "pin_note": "one pin at another radius so each cap goes on one way only (the mint slashes line up - review R1-11e); pin 3.0 / hole 3.1 = untested (coupon)",
+   "j2_r_note": "39 so the J2-end cover counterbores (r 44 - 3.25) keep 1.6 to the cap recess",
+   "mark_embed": 0.02
+  },
+  "logo": {
+   "height": 16.0,
+   "raise": 0.6,
+   "centre_x": 77.5,
+   "join_letters": true
+  },
+  "guards_dropped": "MP16 GUARD (belt guard) is not used in v2 - the shoulder housing and the upper-arm box enclose the belts (printed part only; no purchased part changes)",
+  "shoulder": {
+   "drum_r": 64.0,
+   "post_x": [
+    -142.0,
+    -52.5
+   ],
+   "post_z": [
+    114.0,
+    214.0
+   ],
+   "post_chamfer": 10.0,
+   "bottom_z": 114.0,
+   "back_y": -72.0,
+   "back_t": 2.5,
+   "front_y": 42.0,
+   "tab_from": "MP16 GUARD tabs (guard r 39 at the guard tab angles + motor-end tab x 130) - same screws M3 x 8 x 3 + M3 x 12 + nut (BOM 2d unchanged)",
+   "tab_boss_r": 5.5,
+   "tab_t": 3.0,
+   "keepout_x": -56.3,
+   "keepout_z": 140.3,
+   "hood": {
+    "x_clear": 2.0,
+    "y": [
+     43.5,
+     86.0
+    ],
+    "front_t": 2.5,
+    "rib_in": 0.75,
+    "rib_w": 3.0,
+    "rib_offsets": [
+     -17.0,
+     17.0
+    ],
+    "rib_y": [
+     56.5,
+     66.5
+    ],
+    "vent_w": 3.0,
+    "rib_note": "ribs (MP18) gripped the 57D motor body with rib_press interference; the y-high end is a 45 deg ramp (the hood prints face down - a square rib end needed supports, printprep 2026-11-06) · cable unit: offsets 14 -> 17 so the ribs stand clear of the terminal pockets (+-11.5 / +-12.5) · cable unit: the hood now fits the 57D DRIVER housing (assumed frame + 3.7 - v2.term57) with x_clear 2.0 and its ribs press the driver over y 56.5 .. 66.5 (driver y 54.7 .. 68.8): ribs on the motor body could not pass the wider driver when the hood slides on (first cable build, C4 / C9)",
+    "rib_press": 0.15,
+    "vent_note": "cable unit: four slots at +-21.5 / +-26.5 (w 3) beside the top terminal bump (+-14) and clear of the ribs at +-17 +- 1.5",
+    "rib_lead": 1.5,
+    "rib_lead_note": "45 deg lead-in at the rib end that meets the motor first (y-low - review R1-11f); it is the top when the hood prints face down",
+    "vent_offsets": [
+     -26.5,
+     -21.5,
+     21.5,
+     26.5
+    ],
+    "bump_chamfer": 3.0,
+    "pockets": true,
+    "entry_slot": {
+     "half_w": 7.0,
+     "y": [
+      62.0,
+      78.0
+     ]
+    },
+    "exit": {
+     "x": -68.0,
+     "z": 196.0,
+     "d": 13.0
+    },
+    "cable_note": "cable unit (user 2026-11-06 「2」 → 「42D 단자 배치를 57D 에도 가정해 지금 바로」 · 「A · 막대 높이 키움 (권장)」 · 「±170° 유지 (권장)」 (verbatim .dev/mp18-evidence/user-decisions-mp18-cable.json)): the hood grows three bumps over the 57D terminal pockets (42D layout assumption, v2.term57) - back (-x: motor connector + 4-pin, z +-12.5), top (CAN block, x +-11.5), bottom (power block, x +-11.5) - all prisms along y open at the back end so the hood still slides on; front 43.5 .. 76 -> 86 leaves a cable chamber in front of the driver (y 70 .. 83.5). The trunk comes up through a slot in the bottom bump floor (14 x 16 + 45 deg point toward -y = up when printed face down) and leaves through a 13 hole in the navy face at (-68, 196) for the J2 loop",
+    "face_ties": [
+     {
+      "end": "J1.b",
+      "at": [
+       -91.0,
+       141.0
+      ],
+      "along": "v"
+     },
+     {
+      "end": "J2.a",
+      "at": [
+       -80.0,
+       197.0
+      ],
+      "along": "h"
+     }
+    ],
+    "face_ties_note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-2: cable-tie slot pairs through the navy face - J1 loop end (bundle up the front chamber against the face, y 78, between the bottom slot and the power terminal) and J2 loop end (bundle along x to the face hole). The strap passes outside the face; both loop pulls are across the hood's slide-off direction (J1 = -z, J2 = in the x-z plane) - a positive hood lock comes with the 57D measurement re-design",
+    "vent_top": "hull",
+    "vent_top_note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-5: the slots cut up to 174 + reach + wall + 1 so they pass the octagon (convex hull) fill above the cavity - with the box-top height (MP18 square hood) the hull left 2.6 / 4.8 mm closed over the slots; 'box' = the old height (positive control hood_vents_short)"
+   },
+   "cap": {
+    "r": 34.0,
+    "t": 3.0,
+    "chamfer": 1.0
+   },
+   "post_note": "post grown to x -142 / z 214 and chamfered only at the top: the MP16 lobe end has an R8 round corner (not a chamfer) that reached the 1.74-off inner chamfer wall; the bottom-right chamfer met the shoulder foot (first v2 check 2026-11-06)",
+   "vents": {
+    "x": [
+     -116.0,
+     -66.0
+    ],
+    "n": 5,
+    "w": 4.0,
+    "y": [
+     -12.0,
+     36.0
+    ],
+    "note": "slots through the post top over the J2 motor body (motor y -21 .. 69, x -119 .. -63)"
+   },
+   "tab_boss_note": "r 5.5: wall 2.25 around the 6.5 head bore (4.5 left 1.25 over 40 mm - review R1-6); 2.5 to the J2 big pulley r 31",
+   "hood_bump_keepout_gap": 1.5
+  },
+  "shoulder_note": "J2: rear housing (drum r 64 + post behind the drum, open bottom) slid on from -y over the J2 module and screwed into the base-plate bottom inserts the MP16 belt guard used (the housing replaces the guard) · front hood over the J2 motor end, gripping the motor body with ribs (MP17 motor-cover way) through the enlarged shoulder-plate keepout",
+  "base_skin": {
+   "z": [
+    6.0,
+    61.0
+   ],
+   "r_bottom": 68.0,
+   "r_top": 62.0,
+   "band_z": [
+    18.0,
+    24.0
+   ],
+   "band_raise": 0.6,
+   "screw_r": 63.1,
+   "screw_angles": [
+    20.0,
+    140.0,
+    260.0
+   ],
+   "boss_r": 4.1,
+   "boss_h": 10.0,
+   "insert_depth": 6.5,
+   "cable_slot": {
+    "angle": 180.0,
+    "w": 24.0,
+    "side_h": 10.0,
+    "apex_h": 22.0,
+    "note": "gable notch from the floor: vertical sides 0 .. 10 then 45 deg roof to the apex 22 above the skin bottom (world z 28 - above the mint band z 18 .. 24, so the band is cut through with it). No flat roof (the MP17 flat 22 x 10 slot was Bambu's floating cantilever - variant slices 2026-11-06) · cable unit: 24 wide for the in and out bundles (d 10 each, side by side - routes L0_IN / L0_OUT, 1 mm each side); MP18 was 16 wide / apex 15 (world z 21, inside the band)"
+   },
+   "note": "white cone over the MP17 BASE (link 0) - sits on the floor, 3 screws up through the floor into bosses; mint band printed in the same object (AMS height range); cable slot at the back (-x) bottom",
+   "boss_note": "review R1-9: feet r 4.1 so the insert (OD 4.2) keeps 2.0 at the sides; screw r 63.1 and insert depth 6.5 keep 2.0 outside (cone outer r 67.3 at the insert top) and 1.0 to BASE r 58; the foot is cut 0.3 inside the cone outer surface at its top",
+   "screw_angles_note": "angles chosen by trial builds 2026-11-06: 30/150/270 left a sliver face, 40/160/280 and 90/210/330 failed a boolean, 20/140/260 builds watertight in one piece",
+   "flange": {
+    "t": 3.0,
+    "r_in": 59.5
+   },
+   "flange_note": "inward foot ring r 59.5 .. 68 x 3 on the bed (BASE wall r 58 keeps 1.5) - the bosses stand on it: a wall lifted 0.3 floated over the bed and needed supports; bosses sharing the bottom plane with the cone flipped face orientation (trials 2026-11-06)",
+   "boss_trim_inset": 0.3,
+   "tie": {
+    "angle": 180.0,
+    "z": 46.0,
+    "note": "cable-tie slot pair through the cone wall at the back (slots along z, pair across y) - the J1 loop's link-0 end"
+   }
+  },
+  "turret_band": {
+   "z": [
+    93.0,
+    98.0
+   ],
+   "raise": 0.6,
+   "note": "navy band on the turret cup (link 1) - same object, AMS height range"
+  },
+  "tubes": {
+   "wall": 2.5,
+   "r_in": 48.5,
+   "plate_t": 3.0,
+   "ring_len": 4.5,
+   "ring_raise": 0.0,
+   "slot_y": [
+    39.5,
+    62.0
+   ],
+   "slot_z": [
+    143.0,
+    205.0
+   ],
+   "cable_hole": {
+    "r": 43.75,
+    "phi_deg": {
+     "FA_TUBE": 33.7,
+     "J6_TUBE": -32.3
+    },
+    "d": 9.0,
+    "note": "cable unit: the old hole (y -30, z 174, d 12) opened onto the solid MP10 can rear cover - moved into the tube annulus (r 39 .. 48.5) at the angle the bundle arrives along the forearm / link-5 -y face (phi = world angle in the (y, z) plane from +y toward +z); d 9 = split wires (the bundle opens into its wires in the 9.5 annulus) · FA_TUBE at +33.7 deg (the bundle runs along the forearm -y face at the top tie, z 198) · cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-11: the round d 9 hole -> an arc slot 9 wide along the annulus (r 43.75, phi FA 24 .. 54 / J6 -54 .. -24) so the wires pass side by side (RVSP + 18AWG pair + servo 3-wire ~ d 8 bundled left ~0.5 in a d 9 hole); the low / high end may open into the plate slot (no structural role - the cap is clamped under the four can rear-cover screws)",
+    "arc_deg": {
+     "FA_TUBE": [
+      24.0,
+      54.0
+     ],
+     "J6_TUBE": [
+      -54.0,
+      -24.0
+     ]
+    }
+   },
+   "cover_screw_clear": 3.4,
+   "note": "white tube over the J4 / J6 can (link 3 / 5), slid on from the rear: the forearm / link-5 plate runs in the +y slot; the rear plate (navy) is clamped under the can rear-cover screws (longer screws); navy ring at the front end - one printed object (rear plate down) with AMS height ranges",
+   "cover_screw_len": 12.0,
+   "cover_screw_note": "MP10 can rear-cover screws M3 x 10 -> M3 x 12 (the 3 mm navy rear plate rides under the heads)",
+   "vents": {
+    "n": 3,
+    "w": 4.0,
+    "x_from_rear": [
+     12.0,
+     44.0
+    ],
+    "z_pitch": 9.0,
+    "note": "slots through the -y side of the tube (the +y side is the open plate slot) - air for the 42D can"
+   },
+   "front_tie": {
+    "FA_TUBE": {
+     "phi_deg": 180.0,
+     "x_from_front": 9.5
+    },
+    "J6_TUBE": {
+     "phi_deg": 300.0,
+     "x_from_front": 9.5
+    },
+    "note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-2: tie pair through the tube wall 9.5 behind the front end (2.75 to the navy ring) holding the wires against the wall at the exit angle - FA at 180 deg (-y side, ahead of the vents) and J6 at 300 deg (the can halves' bottom ears fill 260 .. 280 deg over x 483 .. 513 - scanned 2026-11-06); the exits moved there from 225 deg (FA: same angle as the J5 neck groove - J4 wrap 165 -> 120 deg; J6: toward the servo plug - J6 wrap 228 -> 187 deg) · slots cut radially (sketch tangent to the tube)"
+   }
+  },
+  "link5_cap": {
+   "r": 24.0,
+   "mark": {
+    "h": 18.0,
+    "w": 6.0,
+    "raise": 0.6
+   },
+   "note": "navy cap on the link-5 plate +y face over the J5 hub screws (v3 wrist hub cap) - pinned",
+   "recess": 0.0,
+   "recess_note": "no recess: link 5 prints +y face down, a 48 mm recess there is a bridged ceiling 1 mm over the plate (review R1-10) - the cap sits on the flat face with removable double-sided tape (the J5 hub screws stay reachable)"
+  },
+  "j3_bracket": {
+   "post_r": 55.0,
+   "post_angles_deg": [
+    0.0,
+    120.0,
+    -120.0
+   ],
+   "post_d": 9.0,
+   "post_pad_r": 4.0,
+   "t": 3.0,
+   "arc_r": [
+    42.5,
+    52.0
+   ],
+   "arc_deg": [
+    -125.0,
+    125.0
+   ],
+   "tab_pad_r": 4.5,
+   "insert_depth": 8.5,
+   "note": "MP18 review R1-1: J3-end cover fixing. A separate bracket sits on the J3 base-plate face (y 128.3, the belt side) on the three MP16 belt-guard tab inserts (r 39) with the guard's own M3 x 8 (BOM 2d - v2 does not print the guard); three posts r 55 at 0 / +-120 deg (world, about the J3 axis) rise to the cover face with inserts on top. It goes in after the J3 module (from the front) and stays out of the belt (hull >= 1 + its 1 margin) and the box wall (>= 2). Post pads r 4.0 under r 4.5 posts so no faces coincide (SolidCraft)"
+  },
+  "term57": {
+   "u_top_module": [
+    1.0,
+    0.0
+   ],
+   "driver_excess": 1.85,
+   "clearance": 12.0,
+   "band_half": 11.0,
+   "rear_margin": 1.0,
+   "pocket_gap": 0.5,
+   "conn": {
+    "len": 11.0,
+    "h": 10.0,
+    "top_clear": 2.0,
+    "front_clear": 2.0,
+    "band_half": 12.0
+   },
+   "decision": "user 2026-11-06 「2」 → 「42D 단자 배치를 57D 에도 가정해 지금 바로」 · 「A · 막대 높이 키움 (권장)」 · 「±170° 유지 (권장)」 (verbatim .dev/mp18-evidence/user-decisions-mp18-cable.json)",
+   "source_note": "42D layout (MP10 rebuild 2 / 3 - user photo + words, .dev/mp10-evidence/user-decisions-mp10-terminals-1030.json · user-decisions-mp10-connector-1101.json): driver seen from behind - top = motor 4-pin terminal (the motor's own 6-pin connector sits on the body face under it: 42D 29 from the front of the 40 body = 11 before the body rear, 10 high with wires, 16 wide), left = 5+2 block (EVCC EGND IN_1 H L - CAN side), right = 6 block (V+ GND COM EN STP DIR - power side), bottom = screen + buttons. Blocks and the motor terminal stick out connector_clearance 12 (motor ledger, incl. wire bend) from the driver faces over a +-11 band (MP10 pocket_half_width). Driver width = 57D frame + (42D ledger driver_width 46 - frame 42.3) = frame + 3.7 (ASSUMPTION - the 42D width was never measured either)",
+   "note": "ASSUMPTION until the 57D arrives (MP16 listing: frame 56.4 · body J2 76 / J3 56 · board 14.1). Orientation chosen: top (motor connector + 4-pin) = module +x = world -x for J2 (behind J2) and J3 (toward J2 inside the upper arm); the screen faces the joint axis (not reachable once assembled - set CAN id / calibrate by CAN commands or before assembly). J2: right(6, power) = world -z (bottom), left(5+2, CAN) = +z (top) · J3: right(6, power) = +z (top), left(5+2, CAN) = -z (bottom)",
+   "j3_slot_ends": [
+    2.5,
+    -1.5
+   ],
+   "j3_slot_ends_note": "cable review R1-4: C4 also places the J3 57D driver / terminal envelopes at the belt-slot ends (module x; + = toward J2 = belt tension, MP16 slots +-2.5). Toward J3 the assumed driver (frame + 3.7) meets the MP16 J3 cap beyond -1.9 (1.3 mm3 at -2.0, 49 mm3 at -2.5 - measured 2026-11-06), so the slack end is taken at -1.5: a belt at the short end of its tolerance cannot use the full -2.5 with this driver width - re-check at the 57D measurement"
+  },
+  "cable": {
+   "decision": "user 2026-11-06 「2」 → 「42D 단자 배치를 57D 에도 가정해 지금 바로」 · 「A · 막대 높이 키움 (권장)」 · 「±170° 유지 (권장)」 (verbatim .dev/mp18-evidence/user-decisions-mp18-cable.json)",
+   "bundle_d": 10.0,
+   "split_d": 6.0,
+   "loop_margin": 10.0,
+   "sweep_step_deg": 2.5,
+   "assumption": "bundle = power 18AWG red / black (BOM E04) + CAN RVSP 4core 24AWG (E09) + gripper STS3215 3-wire, taken as d 10 round (holes >= 13) and d 6 where the wires are split (inside the BASE ring and the tube annuli, 9.5 gap); power daisy-chained beside each driver like the CAN bus (a star power layout or WAGO junctions inside the arm need more room - wiring documents decide). RVSP moving bend radius ~50 (10 x d) is NOT met by the joint loops - a flexible cable for the moving parts is the user's call (not bought)",
+   "segments": [
+    {
+     "name": "L0_IN",
+     "link": 0,
+     "d": 10.0,
+     "pts": [
+      [
+       -125,
+       -6,
+       11.5
+      ],
+      [
+       -74,
+       -6,
+       11.5
+      ],
+      [
+       -50,
+       -6,
+       11.5
+      ]
+     ]
+    },
+    {
+     "name": "L0_SPLIT_P",
+     "link": 0,
+     "d": 6.0,
+     "pts": [
+      [
+       -44.25,
+       0.0,
+       11.5
+      ],
+      [
+       -43.14,
+       -9.85,
+       11.5
+      ],
+      [
+       -39.87,
+       -19.2,
+       11.5
+      ],
+      [
+       -34.6,
+       -27.59,
+       11.5
+      ],
+      [
+       -27.59,
+       -34.6,
+       11.5
+      ],
+      [
+       -19.2,
+       -39.87,
+       11.5
+      ],
+      [
+       -9.85,
+       -43.14,
+       11.5
+      ],
+      [
+       -0.0,
+       -44.25,
+       11.5
+      ]
+     ]
+    },
+    {
+     "name": "L0_SPLIT_C",
+     "link": 0,
+     "d": 6.0,
+     "pts": [
+      [
+       -44.25,
+       0.0,
+       11.5
+      ],
+      [
+       -43.14,
+       9.85,
+       11.5
+      ],
+      [
+       -39.87,
+       19.2,
+       11.5
+      ],
+      [
+       -34.6,
+       27.59,
+       11.5
+      ],
+      [
+       -27.59,
+       34.6,
+       11.5
+      ],
+      [
+       -19.2,
+       39.87,
+       11.5
+      ],
+      [
+       -9.85,
+       43.14,
+       11.5
+      ],
+      [
+       0.0,
+       44.25,
+       11.5
+      ]
+     ]
+    },
+    {
+     "name": "L0_LINK",
+     "link": 0,
+     "d": 6.0,
+     "pts": [
+      [
+       -50,
+       -6,
+       11.5
+      ],
+      [
+       -44.25,
+       0,
+       11.5
+      ]
+     ]
+    },
+    {
+     "name": "L0_OUT",
+     "link": 0,
+     "d": 10.0,
+     "pts": [
+      [
+       -50,
+       6,
+       11.5
+      ],
+      [
+       -74,
+       6,
+       11.5
+      ],
+      [
+       -72.8,
+       3,
+       20
+      ],
+      [
+       -70.4,
+       0,
+       35
+      ],
+      [
+       -68.6,
+       0,
+       48
+      ]
+     ]
+    },
+    {
+     "name": "L1_HOOD",
+     "link": 1,
+     "d": 10.0,
+     "pts": [
+      [
+       -91,
+       67,
+       120
+      ],
+      [
+       -91,
+       67,
+       133
+      ],
+      [
+       -91,
+       78,
+       140
+      ],
+      [
+       -91,
+       78,
+       209
+      ],
+      [
+       -91,
+       66,
+       211
+      ],
+      [
+       -91,
+       78,
+       207
+      ],
+      [
+       -91,
+       78,
+       198
+      ],
+      [
+       -68,
+       78,
+       196
+      ],
+      [
+       -68,
+       92,
+       196
+      ]
+     ]
+    },
+    {
+     "name": "L1_PWR",
+     "link": 1,
+     "d": 6.0,
+     "pts": [
+      [
+       -91,
+       78,
+       141
+      ],
+      [
+       -91,
+       64,
+       138
+      ]
+     ]
+    },
+    {
+     "name": "L2_BOX",
+     "link": 2,
+     "d": 10.0,
+     "pts": [
+      [
+       -20.6,
+       95,
+       225.0
+      ],
+      [
+       -17.8,
+       95,
+       218.1
+      ],
+      [
+       -4,
+       88,
+       206.5
+      ],
+      [
+       14,
+       80,
+       206.5
+      ],
+      [
+       20,
+       77.5,
+       211.5
+      ],
+      [
+       32,
+       75.5,
+       211.5
+      ],
+      [
+       40,
+       68,
+       211
+      ],
+      [
+       74,
+       65,
+       211
+      ],
+      [
+       40,
+       65,
+       211
+      ],
+      [
+       24,
+       65,
+       204
+      ],
+      [
+       24,
+       65,
+       144
+      ],
+      [
+       40,
+       65,
+       137
+      ],
+      [
+       74,
+       65,
+       137
+      ],
+      [
+       40,
+       77,
+       137
+      ],
+      [
+       24,
+       77,
+       144
+      ],
+      [
+       24,
+       77,
+       204
+      ],
+      [
+       40,
+       77,
+       211.5
+      ],
+      [
+       101,
+       72,
+       211.5
+      ],
+      [
+       101,
+       51,
+       211
+      ],
+      [
+       101,
+       45,
+       211
+      ]
+     ]
+    },
+    {
+     "name": "L3_FA",
+     "link": 3,
+     "d": 10.0,
+     "pts": [
+      [
+       205,
+       36,
+       198
+      ],
+      [
+       234,
+       36,
+       198
+      ]
+     ]
+    },
+    {
+     "name": "L3_ANN_IN",
+     "link": 3,
+     "d": 6.0,
+     "pts": [
+      [
+       234,
+       36.4,
+       198.27
+      ],
+      [
+       255,
+       36.4,
+       198.27
+      ]
+     ]
+    },
+    {
+     "name": "L3_ANN_ARC",
+     "link": 3,
+     "d": 6.0,
+     "pts": [
+      [
+       255.0,
+       36.4,
+       198.27
+      ],
+      [
+       255.0,
+       29.01,
+       206.75
+      ],
+      [
+       255.0,
+       19.7,
+       213.06
+      ],
+      [
+       255.0,
+       9.09,
+       216.79
+      ],
+      [
+       255.0,
+       -2.12,
+       217.7
+      ],
+      [
+       255.0,
+       -13.19,
+       215.72
+      ],
+      [
+       255.0,
+       -23.39,
+       210.98
+      ],
+      [
+       255.0,
+       -32.04,
+       203.79
+      ],
+      [
+       255.0,
+       -38.58,
+       194.64
+      ],
+      [
+       255.0,
+       -42.56,
+       184.13
+      ],
+      [
+       255.0,
+       -43.74,
+       172.94
+      ],
+      [
+       255.0,
+       -42.02,
+       161.83
+      ],
+      [
+       255.0,
+       -37.53,
+       151.52
+      ],
+      [
+       255.0,
+       -30.56,
+       142.69
+      ],
+      [
+       255.0,
+       -21.57,
+       135.94
+      ],
+      [
+       255.0,
+       -11.15,
+       131.7
+      ],
+      [
+       255.0,
+       -0.0,
+       130.25
+      ]
+     ]
+    },
+    {
+     "name": "L3_ANN_FWD",
+     "link": 3,
+     "d": 6.0,
+     "pts": [
+      [
+       255,
+       -43.75,
+       174
+      ],
+      [
+       262,
+       -45.25,
+       174
+      ],
+      [
+       304.5,
+       -45.25,
+       174
+      ]
+     ]
+    },
+    {
+     "name": "L4_J5",
+     "link": 4,
+     "d": 6.0,
+     "pts": [
+      [
+       358.5,
+       -43.5,
+       174
+      ],
+      [
+       364,
+       -74,
+       174
+      ]
+     ]
+    },
+    {
+     "name": "L4_J5_ARC",
+     "link": 4,
+     "d": 6.0,
+     "pts": [
+      [
+       363.0,
+       -74.0,
+       174.0
+      ],
+      [
+       364.13,
+       -74.0,
+       184.01
+      ],
+      [
+       367.46,
+       -74.0,
+       193.52
+      ],
+      [
+       372.82,
+       -74.0,
+       202.06
+      ],
+      [
+       379.94,
+       -74.0,
+       209.18
+      ],
+      [
+       388.48,
+       -74.0,
+       214.54
+      ],
+      [
+       397.99,
+       -74.0,
+       217.87
+      ],
+      [
+       408.0,
+       -74.0,
+       219.0
+      ],
+      [
+       418.77,
+       -74.0,
+       217.69
+      ],
+      [
+       428.91,
+       -74.0,
+       213.85
+      ],
+      [
+       437.84,
+       -74.0,
+       207.68
+      ],
+      [
+       445.03,
+       -74.0,
+       199.56
+      ],
+      [
+       450.08,
+       -74.0,
+       189.96
+      ],
+      [
+       452.67,
+       -74.0,
+       179.42
+      ],
+      [
+       452.67,
+       -74.0,
+       168.58
+      ],
+      [
+       450.08,
+       -74.0,
+       158.04
+      ],
+      [
+       445.03,
+       -74.0,
+       148.44
+      ],
+      [
+       437.84,
+       -74.0,
+       140.32
+      ],
+      [
+       428.91,
+       -74.0,
+       134.15
+      ],
+      [
+       418.77,
+       -74.0,
+       130.31
+      ],
+      [
+       408.0,
+       -74.0,
+       129.0
+      ]
+     ]
+    },
+    {
+     "name": "L5_PLATE",
+     "link": 5,
+     "d": 10.0,
+     "pts": [
+      [
+       363,
+       38,
+       174
+      ],
+      [
+       372,
+       38,
+       150
+      ],
+      [
+       392,
+       38,
+       138
+      ],
+      [
+       424,
+       38,
+       141
+      ],
+      [
+       452,
+       38,
+       150.6
+      ]
+     ]
+    },
+    {
+     "name": "L5_ANN_IN",
+     "link": 5,
+     "d": 6.0,
+     "pts": [
+      [
+       452,
+       37.0,
+       150.6
+      ],
+      [
+       473,
+       37.0,
+       150.6
+      ]
+     ]
+    },
+    {
+     "name": "L5_ANN_ARC",
+     "link": 5,
+     "d": 6.0,
+     "pts": [
+      [
+       473.0,
+       36.98,
+       150.62
+      ],
+      [
+       473.0,
+       29.75,
+       141.92
+      ],
+      [
+       473.0,
+       20.53,
+       135.37
+      ],
+      [
+       473.0,
+       9.94,
+       131.39
+      ],
+      [
+       473.0,
+       -1.32,
+       130.27
+      ],
+      [
+       473.0,
+       -12.49,
+       132.07
+      ],
+      [
+       473.0,
+       -22.82,
+       136.67
+      ],
+      [
+       473.0,
+       -31.63,
+       143.77
+      ],
+      [
+       473.0,
+       -38.32,
+       152.89
+      ],
+      [
+       473.0,
+       -42.45,
+       163.42
+      ],
+      [
+       473.0,
+       -43.75,
+       174.66
+      ],
+      [
+       473.0,
+       -42.11,
+       185.85
+      ],
+      [
+       473.0,
+       -37.67,
+       196.25
+      ],
+      [
+       473.0,
+       -30.7,
+       205.17
+      ],
+      [
+       473.0,
+       -21.68,
+       212.0
+      ],
+      [
+       473.0,
+       -11.22,
+       216.29
+      ],
+      [
+       473.0,
+       -0.0,
+       217.75
+      ]
+     ]
+    },
+    {
+     "name": "L5_ANN_FWD",
+     "link": 5,
+     "d": 4.0,
+     "pts": [
+      [
+       473,
+       21.88,
+       136.11
+      ],
+      [
+       480,
+       23.13,
+       133.95
+      ],
+      [
+       522.5,
+       23.13,
+       133.95
+      ]
+     ]
+    },
+    {
+     "name": "L6_SERVO",
+     "link": 6,
+     "d": 4.0,
+     "pts": [
+      [
+       602,
+       14,
+       112
+      ],
+      [
+       602,
+       14,
+       118
+      ]
+     ]
+    }
+   ],
+   "loops": [
+    {
+     "joint": "J1",
+     "a": {
+      "link": 0,
+      "p": [
+       -68.6,
+       0,
+       48
+      ]
+     },
+     "b": {
+      "link": 1,
+      "p": [
+       -91,
+       67,
+       120
+      ]
+     },
+     "wrap_r": 68.0,
+     "length": 300.0,
+     "design_max": 281.7,
+     "design_min": 84.6,
+     "design_max_wrap_deg": 206.4
+    },
+    {
+     "joint": "J2",
+     "a": {
+      "link": 1,
+      "p": [
+       -68,
+       92,
+       196
+      ]
+     },
+     "b": {
+      "link": 2,
+      "p": [
+       -20.6,
+       95,
+       225.0
+      ]
+     },
+     "wrap_r": 55.0,
+     "length": 75.0,
+     "design_max": 55.7,
+     "design_min": 16.7,
+     "design_max_wrap_deg": 50.1
+    },
+    {
+     "joint": "J3",
+     "a": {
+      "link": 2,
+      "p": [
+       101,
+       45,
+       211
+      ]
+     },
+     "b": {
+      "link": 3,
+      "p": [
+       205,
+       36,
+       198
+      ]
+     },
+     "wrap_r": 41.0,
+     "length": 210.0,
+     "design_max": 194.3,
+     "design_min": 94.4,
+     "design_max_wrap_deg": 239.0
+    },
+    {
+     "joint": "J4",
+     "a": {
+      "link": 3,
+      "p": [
+       304.5,
+       -45.25,
+       174
+      ]
+     },
+     "b": {
+      "link": 4,
+      "p": [
+       358.5,
+       -43.5,
+       174
+      ]
+     },
+     "wrap_r": 42.0,
+     "length": 120.0,
+     "design_max": 104.1,
+     "design_min": 54.0,
+     "design_max_wrap_deg": 120.0
+    },
+    {
+     "joint": "J5",
+     "a": {
+      "link": 4,
+      "p": [
+       358.5,
+       -43.5,
+       174
+      ]
+     },
+     "b": {
+      "link": 5,
+      "p": [
+       363,
+       38,
+       174
+      ]
+     },
+     "wrap_r": 44.0,
+     "length": 135.0,
+     "design_max": 108.1,
+     "design_min": 81.6,
+     "design_max_wrap_deg": 90.0,
+     "extra": 10.0,
+     "extra_note": "the straight model passes through the MP10 neck web (link 4 - x 348 .. 376, y -36.5 .. -23, z 154 .. 194); the real wires go round it - review R1-6 estimate +21 at 0 deg / +6 at +-90 deg"
+    },
+    {
+     "joint": "J6",
+     "a": {
+      "link": 5,
+      "p": [
+       522.5,
+       23.13,
+       133.95
+      ]
+     },
+     "b": {
+      "link": 6,
+      "p": [
+       602,
+       14,
+       112
+      ]
+     },
+     "wrap_r": 42.0,
+     "length": 190.0,
+     "design_max": 170.3,
+     "design_min": 81.4,
+     "design_max_wrap_deg": 187.3
+    }
+   ],
+   "note": "fixed (tied / channelled) segments per link, world mm at q = 0 - checked as purchased-part envelopes (capsules) in C4 / C5 (also against the same-link motor / driver envelopes - review R1-3); joint loops checked in C10: shortest path between the two anchors around a cylinder coaxial with the joint (wrap_r) over the wanted range (other joints 0) with the wrap angle unfolded (signed angle at q = 0 + joint angle, not folded into 0 .. 180 - review R1-1) <= length - loop_margin; each loop end has a tie within max_tie_dist on its link (C10 finds the two slots empty and the web between them solid in the part STL) or ends in a plug. J1 (+-170) = loose loop at the back (user 「±170° 유지 (권장)」)",
+   "max_tie_dist": 60.0,
+   "max_tie_dist_note": "cable review R1 (.dev/mp18-evidence/review-cable-r1-disposition.md)-2: straight-line anchor -> tie centre; every tie sits between its loop end and the first terminal on that link (route order)",
+   "cable_mass_g_per_m": {
+    "bundle": 55.0,
+    "gripper": 8.0,
+    "note": "ASSUMPTION for the loads (review R1-10d): 18AWG pair ~20 g/m + RVSP 4 x 24AWG ~25 g/m + servo 3-wire ~8 g/m (+ ties) = ~55 g/m for d 10 / d 6 segments; the d 4 gripper lead ~8 g/m"
+   },
+   "ties": {
+    "J1.a": {
+     "part": "BASE_SKIN",
+     "c": [
+      -62.39,
+      0.0,
+      46.0
+     ],
+     "spread": [
+      0,
+      1,
+      0
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "white cone back, z 46 (existing)"
+    },
+    "J1.b": {
+     "part": "J2_HOOD_FACE",
+     "c": [
+      -91.0,
+      84.75,
+      141.0
+     ],
+     "spread": [
+      1,
+      0,
+      0
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "navy hood face, bottom (new - review R1-2)"
+    },
+    "J2.a": {
+     "part": "J2_HOOD_FACE",
+     "c": [
+      -80.0,
+      84.75,
+      197.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "navy hood face beside the cable hole (new - review R1-2)"
+    },
+    "J2.b": {
+     "part": "UPPER_ARM",
+     "c": [
+      25.0,
+      76.5,
+      218.25
+     ],
+     "spread": [
+      0,
+      1,
+      0
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "upper-arm top wall at x 25 past the cover post (new - review R1-2)"
+    },
+    "J3.a": {
+     "part": "UPPER_ARM",
+     "c": [
+      92.0,
+      72.0,
+      218.25
+     ],
+     "spread": [
+      0,
+      1,
+      0
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "upper-arm top wall at x 92 beside the exit (existing)"
+    },
+    "J3.b": {
+     "part": "FOREARM",
+     "c": [
+      210.0,
+      46.0,
+      198.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "forearm plate top tie (existing)"
+    },
+    "J4.a": {
+     "part": "FA_TUBE",
+     "c": [
+      295.0,
+      -49.75,
+      174.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "forearm tube -y side near the front ring (new - review R1-2)"
+    },
+    "J4.b": {
+     "part": "J5.J5_STATOR_A",
+     "c": [
+      363.0,
+      -30.0,
+      174.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 9.5,
+     "probe": 7.5,
+     "where": "MP10 J5 neck web tie holes (existing, read only)"
+    },
+    "J5.a": {
+     "part": "J5.J5_STATOR_A",
+     "c": [
+      363.0,
+      -30.0,
+      174.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 9.5,
+     "probe": 7.5,
+     "where": "MP10 J5 neck web tie holes (existing, read only)"
+    },
+    "J5.b": {
+     "part": "LINK5",
+     "c": [
+      363.0,
+      48.0,
+      174.0
+     ],
+     "spread": [
+      0,
+      0,
+      1
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "link-5 tab tie (existing)"
+    },
+    "J6.a": {
+     "part": "J6_TUBE",
+     "c": [
+      513.0,
+      24.875,
+      130.915
+     ],
+     "spread": [
+      0,
+      0.866025,
+      0.5
+     ],
+     "half_pitch": 4.5,
+     "probe": 2.5,
+     "where": "J6 tube wall at 300 deg near the front ring (new - review R1-2)"
+    },
+    "J6.b": {
+     "plug": "KG1 servo connector (MP8 plug) - the gripper lead ends in its plug"
+    }
+   }
+  }
+ }
+}

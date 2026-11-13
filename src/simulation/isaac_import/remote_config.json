@@ -1,0 +1,10 @@
+{
+  "ssh_alias": "isaacpc",
+  "remote_runs_root": "C:/isaacsim_remote/robot-arm-lab/041/runs",
+  "isaac_root": "C:/isaacsim",
+  "expected_isaac_version": "6.2.0-rc.14+release.52805.02189a84.gl",
+  "timeout_seconds": 600,
+  "maximum_author_import_attempts": 2,
+  "hardware_approved": false,
+  "timeline_play": false
+}

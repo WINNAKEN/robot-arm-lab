@@ -1,0 +1,3581 @@
+{
+ "mode": "normal",
+ "binding": {
+  "check_and_eval_made_from_this_native": true,
+  "native_is_the_build_output": true,
+  "every_stl_is_the_build_output": true
+ },
+ "check_provenance": {
+  "native": "49d132a43ad10f25d3434765f48964e4489de486d362cbcf01edce5ee6e4a222",
+  "check_result": "2c42f6c68c646fdec397c8b8441445fa847f6761329749f25b2a64e17303454f",
+  "eval_now": "39fdd13b6a526de6561f73783ab40812e6701ddea898622932e73f386b37c68e"
+ },
+ "native_sha256": "49d132a43ad10f25d3434765f48964e4489de486d362cbcf01edce5ee6e4a222",
+ "native_document_joints": [
+  {
+   "joint": "J1",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J2",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J3",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J4",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J5",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J6",
+   "origin_err_mm": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  }
+ ],
+ "acceptance": true,
+ "checks": {
+  "C1_joints_match_v1": true,
+  "C1a_kinematics_equal_v1_forward_kinematics": true,
+  "C1b_revolved_bodies_on_their_joint_axis": true,
+  "C1c_native_structure_and_body_owners": true,
+  "C1d_link_frame_geometry_equals_v1_v2": true,
+  "C1e_every_body_matches_independent_expected_shape": true,
+  "C0_outputs_and_evidence_bound_to_current_native": true,
+  "C1_native_document_joints_match_v1": true,
+  "C2_interference_complete": true,
+  "C2_cross_link_interference_0": true,
+  "C2b_marks_overlap_no_body": true,
+  "C3_keepout_boxes_18": true,
+  "C3_keepouts_100pct_inside_their_module": true,
+  "C3_keepouts_no_other_link_overlap": true,
+  "C4_protected_folders_equal_start_snapshot": true,
+  "C4_v1_frozen_files_unchanged": true,
+  "C5_stored_colors_match_roles": true,
+  "C6_one_faithful_mesh_per_body": true,
+  "C6b_feature_volumes_independent": true,
+  "C4_v2_tracked_equal_head": true
+ },
+ "not_run": [],
+ "structure": {
+  "components": true,
+  "occurrences_identity": true,
+  "only_base_grounded": true,
+  "joint_chain": true,
+  "joints_revolute_display_zero": true,
+  "body_owner_equals_bodies_json": true,
+  "body_names_equal_expected": true,
+  "body_owner_equals_expected": true,
+  "bodies_json_link_role_equal_expected": true
+ },
+ "cross_link": [],
+ "same_link_overlaps": [
+  {
+   "a": "BASE_FOOT",
+   "b": "J1_MODULE",
+   "link": 0,
+   "volume_mm3": 4778.0949927746615
+  },
+  {
+   "a": "BASE_COLUMN",
+   "b": "J1_MODULE",
+   "link": 0,
+   "volume_mm3": 315318.3122037639
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "LINK1_POST",
+   "link": 1,
+   "volume_mm3": 25894.871133323202
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "J2_MODULE",
+   "link": 1,
+   "volume_mm3": 22929.927554449165
+  },
+  {
+   "a": "LINK1_SHOULDER_CAP",
+   "b": "J2_ACCENT_RING",
+   "link": 1,
+   "volume_mm3": 1306.4161657305617
+  },
+  {
+   "a": "LINK1_POST",
+   "b": "J2_MODULE",
+   "link": 1,
+   "volume_mm3": 129721.59716943443
+  },
+  {
+   "a": "LINK2_SHOULDER_HUB",
+   "b": "LINK2_UPPER_BAR",
+   "link": 2,
+   "volume_mm3": 64534.36540862467
+  },
+  {
+   "a": "LINK2_UPPER_BAR",
+   "b": "J3_MODULE",
+   "link": 2,
+   "volume_mm3": 66953.2519210195
+  },
+  {
+   "a": "LINK3_ELBOW_HUB",
+   "b": "LINK3_FOREARM_BAR",
+   "link": 3,
+   "volume_mm3": 64534.98894402771
+  },
+  {
+   "a": "LINK3_FOREARM_BAR",
+   "b": "J4_MODULE",
+   "link": 3,
+   "volume_mm3": 18412.357248706565
+  },
+  {
+   "a": "LINK3_FOREARM_BAR",
+   "b": "J4_END_CAP",
+   "link": 3,
+   "volume_mm3": 4209.029013389691
+  },
+  {
+   "a": "LINK4_NECK",
+   "b": "J5_MODULE",
+   "link": 4,
+   "volume_mm3": 9569.953442777109
+  },
+  {
+   "a": "LINK4_NECK",
+   "b": "J5_ACCENT_RING",
+   "link": 4,
+   "volume_mm3": 613.8219918476294
+  },
+  {
+   "a": "LINK5_WRIST_HUB",
+   "b": "LINK5_WRIST_BAR",
+   "link": 5,
+   "volume_mm3": 32730.426503740116
+  },
+  {
+   "a": "LINK5_WRIST_BAR",
+   "b": "J6_MODULE",
+   "link": 5,
+   "volume_mm3": 19480.812053278936
+  },
+  {
+   "a": "LINK5_WRIST_BAR",
+   "b": "J6_END_CAP",
+   "link": 5,
+   "volume_mm3": 3526.330637502851
+  }
+ ],
+ "marks": [
+  "J2_CAP_SLASH",
+  "J3_CAP_SLASH",
+  "J4_CAP_SLASH",
+  "J5_CAP_SLASH",
+  "J6_CAP_SLASH",
+  "LINK2_LOGO_H",
+  "LINK2_LOGO_J",
+  "LINK2_LOGO_K",
+  "LINK2_LOGO_K_SLASH",
+  "LINK2_LOGO_M",
+  "LINK2_SHOULDER_HUB_CAP",
+  "LINK2_SHOULDER_HUB_SLASH",
+  "LINK3_ELBOW_HUB_CAP",
+  "LINK3_ELBOW_HUB_SLASH",
+  "LINK5_WRIST_HUB_CAP",
+  "LINK5_WRIST_HUB_SLASH"
+ ],
+ "buried_marks": [],
+ "keepouts": [
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 0,
+   "inside_module_mm3": 71571.59999999998,
+   "ratio": 0.9999999999999998,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 0,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 1,
+   "name": "KEEPOUT_J1_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 0,
+   "inside_module_mm3": 4320.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 1,
+   "inside_module_mm3": 71571.6,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 1,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 2,
+   "name": "KEEPOUT_J2_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 1,
+   "inside_module_mm3": 4320.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 2,
+   "inside_module_mm3": 71571.59999999999,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 2,
+   "inside_module_mm3": 38088.00000000001,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 3,
+   "name": "KEEPOUT_J3_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 2,
+   "inside_module_mm3": 4319.999999999995,
+   "ratio": 0.999999999999999,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 3,
+   "inside_module_mm3": 71571.60000000002,
+   "ratio": 1.0000000000000004,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 3,
+   "inside_module_mm3": 38088.00000000001,
+   "ratio": 1.0000000000000002,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 4,
+   "name": "KEEPOUT_J4_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 3,
+   "inside_module_mm3": 4320.000000000005,
+   "ratio": 1.000000000000001,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 4,
+   "inside_module_mm3": 71571.59999999996,
+   "ratio": 0.9999999999999996,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 4,
+   "inside_module_mm3": 38088.0,
+   "ratio": 1.0,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 5,
+   "name": "KEEPOUT_J5_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 4,
+   "inside_module_mm3": 4319.999999999995,
+   "ratio": 0.999999999999999,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_MOTOR",
+   "volume_mm3": 71571.59999999999,
+   "owner_link": 5,
+   "inside_module_mm3": 71571.60000000002,
+   "ratio": 1.0000000000000004,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_DRIVER",
+   "volume_mm3": 38088.0,
+   "owner_link": 5,
+   "inside_module_mm3": 38087.99999999998,
+   "ratio": 0.9999999999999994,
+   "other_link_overlaps": []
+  },
+  {
+   "joint": 6,
+   "name": "KEEPOUT_J6_CONNECTOR",
+   "volume_mm3": 4320.0,
+   "owner_link": 5,
+   "inside_module_mm3": 4320.000000000005,
+   "ratio": 1.000000000000001,
+   "other_link_overlaps": []
+  }
+ ],
+ "joints": [
+  {
+   "joint": "J1",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J2",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J3",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J4",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J5",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": "J6",
+   "found": true,
+   "origin_err_mm": 0.0,
+   "axis_unit_component_err": 0.0,
+   "ok": true
+  }
+ ],
+ "fk_v1": [
+  {
+   "joint": 1,
+   "origin_err_mm": 0.0,
+   "R_child_err": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": 2,
+   "origin_err_mm": 0.0,
+   "R_child_err": 0.0,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": 3,
+   "origin_err_mm": 0.0,
+   "R_child_err": 1.1102230246251565e-16,
+   "axis_err": 0.0,
+   "ok": true
+  },
+  {
+   "joint": 4,
+   "origin_err_mm": 2.842170943040401e-14,
+   "R_child_err": 1.1102230246251565e-16,
+   "axis_err": 5.551115123125783e-17,
+   "ok": true
+  },
+  {
+   "joint": 5,
+   "origin_err_mm": 2.842170943040401e-14,
+   "R_child_err": 1.1102230246251565e-16,
+   "axis_err": 2.7755575615628914e-17,
+   "ok": true
+  },
+  {
+   "joint": 6,
+   "origin_err_mm": 5.684341886080802e-14,
+   "R_child_err": 1.1102230246251565e-16,
+   "axis_err": 0.0,
+   "ok": true
+  }
+ ],
+ "revolved_com": [
+  {
+   "body": "BASE_FOOT",
+   "joint": 1,
+   "com_to_axis_mm": 1.5618006977094792e-14,
+   "ok": true
+  },
+  {
+   "body": "BASE_COLUMN",
+   "joint": 1,
+   "com_to_axis_mm": 3.379368728543302e-07,
+   "ok": true
+  },
+  {
+   "body": "BASE_LIGHT_RING",
+   "joint": 1,
+   "com_to_axis_mm": 1.1801295050144963e-13,
+   "ok": true
+  },
+  {
+   "body": "J1_MODULE",
+   "joint": 1,
+   "com_to_axis_mm": 4.278957807171488e-14,
+   "ok": true
+  },
+  {
+   "body": "J1_ACCENT_RING",
+   "joint": 1,
+   "com_to_axis_mm": 3.5470596235818043e-13,
+   "ok": true
+  },
+  {
+   "body": "LINK1_SHOULDER_CAP",
+   "joint": 1,
+   "com_to_axis_mm": 2.2354911626366596e-09,
+   "ok": true
+  },
+  {
+   "body": "J2_MODULE",
+   "joint": 2,
+   "com_to_axis_mm": 3.688346512957955e-12,
+   "ok": true
+  },
+  {
+   "body": "J2_ACCENT_RING",
+   "joint": 2,
+   "com_to_axis_mm": 1.1796200669583313e-12,
+   "ok": true
+  },
+  {
+   "body": "J2_END_CAP",
+   "joint": 2,
+   "com_to_axis_mm": 3.1776437161565096e-14,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB",
+   "joint": 2,
+   "com_to_axis_mm": 4.529790031777864e-09,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_CAP",
+   "joint": 2,
+   "com_to_axis_mm": 1.5631940186722204e-13,
+   "ok": true
+  },
+  {
+   "body": "J3_MODULE",
+   "joint": 3,
+   "com_to_axis_mm": 2.3359770200677395e-09,
+   "ok": true
+  },
+  {
+   "body": "J3_ACCENT_RING",
+   "joint": 3,
+   "com_to_axis_mm": 4.326497959915147e-13,
+   "ok": true
+  },
+  {
+   "body": "J3_END_CAP",
+   "joint": 3,
+   "com_to_axis_mm": 2.4868995751603507e-14,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB",
+   "joint": 3,
+   "com_to_axis_mm": 9.059608955424169e-09,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_CAP",
+   "joint": 3,
+   "com_to_axis_mm": 4.1583447479068616e-14,
+   "ok": true
+  },
+  {
+   "body": "J4_MODULE",
+   "joint": 4,
+   "com_to_axis_mm": 5.505359444366692e-13,
+   "ok": true
+  },
+  {
+   "body": "J4_ACCENT_RING",
+   "joint": 4,
+   "com_to_axis_mm": 2.8393141524562297e-13,
+   "ok": true
+  },
+  {
+   "body": "J4_END_CAP",
+   "joint": 4,
+   "com_to_axis_mm": 1.0154796774455443e-13,
+   "ok": true
+  },
+  {
+   "body": "J5_MODULE",
+   "joint": 5,
+   "com_to_axis_mm": 2.998532964540748e-13,
+   "ok": true
+  },
+  {
+   "body": "J5_ACCENT_RING",
+   "joint": 5,
+   "com_to_axis_mm": 8.908407411518395e-13,
+   "ok": true
+  },
+  {
+   "body": "J5_END_CAP",
+   "joint": 5,
+   "com_to_axis_mm": 6.524334023157137e-14,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB",
+   "joint": 5,
+   "com_to_axis_mm": 1.5051996123708006e-09,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_CAP",
+   "joint": 5,
+   "com_to_axis_mm": 3.280748344311171e-12,
+   "ok": true
+  },
+  {
+   "body": "J6_MODULE",
+   "joint": 6,
+   "com_to_axis_mm": 4.3999179200125774e-13,
+   "ok": true
+  },
+  {
+   "body": "J6_ACCENT_RING",
+   "joint": 6,
+   "com_to_axis_mm": 4.739178895624059e-13,
+   "ok": true
+  },
+  {
+   "body": "J6_END_CAP",
+   "joint": 6,
+   "com_to_axis_mm": 1.9131948672901813e-14,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_FLANGE",
+   "joint": 6,
+   "com_to_axis_mm": 6.199121177847838e-10,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_RING",
+   "joint": 6,
+   "com_to_axis_mm": 3.557151798805476e-14,
+   "ok": true
+  }
+ ],
+ "geometry": [
+  {
+   "what": "J1_MODULE axial min (motor can rear)",
+   "got": -85.0,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_MODULE axial max (output face)",
+   "got": 18.0,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_MODULE max radius (drum)",
+   "got": 45.00000184311198,
+   "want": 45.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_MODULE can radius",
+   "got": 39.00000185288268,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_ACCENT_RING axial min",
+   "got": 12.0,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_ACCENT_RING axial max",
+   "got": 18.0,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J1_ACCENT_RING outer radius",
+   "got": 45.000001910173324,
+   "want": 45.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_MODULE axial min (motor can rear)",
+   "got": -85.00000401079186,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_MODULE axial max (output face)",
+   "got": 18.00000107036856,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_MODULE max radius (drum)",
+   "got": 52.00000755264839,
+   "want": 52.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_MODULE can radius",
+   "got": 39.00000770567908,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_ACCENT_RING axial min",
+   "got": 11.99999878740821,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_ACCENT_RING axial max",
+   "got": 18.00000122711519,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_ACCENT_RING outer radius",
+   "got": 52.00000756252308,
+   "want": 52.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_END_CAP axial min",
+   "got": -91.00000408726758,
+   "want": -91.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_END_CAP axial max",
+   "got": -84.99999604406996,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J2_END_CAP radius",
+   "got": 38.00000711415156,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_MODULE axial min (motor can rear)",
+   "got": -85.00000446604378,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_MODULE axial max (output face)",
+   "got": 18.000002574276536,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_MODULE max radius (drum)",
+   "got": 45.000015004283604,
+   "want": 45.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_MODULE can radius",
+   "got": 39.000015340561234,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_ACCENT_RING axial min",
+   "got": 11.999997300723503,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_ACCENT_RING axial max",
+   "got": 18.00000265926597,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_ACCENT_RING outer radius",
+   "got": 45.0000151838903,
+   "want": 45.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_END_CAP axial min",
+   "got": -91.00000428580289,
+   "want": -91.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_END_CAP axial max",
+   "got": -84.99999588430886,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J3_END_CAP radius",
+   "got": 38.00001509647978,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_MODULE axial min (motor can rear)",
+   "got": -85.00001182540218,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_MODULE axial max (output face)",
+   "got": 18.000015335862035,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_MODULE max radius (drum)",
+   "got": 39.00001763660036,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_MODULE can radius",
+   "got": 39.000015215679255,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_ACCENT_RING axial min",
+   "got": 11.999986225553942,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_ACCENT_RING axial max",
+   "got": 18.000016576934748,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_ACCENT_RING outer radius",
+   "got": 39.00001763660036,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_END_CAP axial min",
+   "got": -91.00001091698276,
+   "want": -91.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_END_CAP axial max",
+   "got": -84.99998865313862,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J4_END_CAP radius",
+   "got": 38.00001587898208,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_MODULE axial min (motor can rear)",
+   "got": -85.00000440989346,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_MODULE axial max (output face)",
+   "got": 18.000008732032438,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_MODULE max radius (drum)",
+   "got": 39.000017565374215,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_MODULE can radius",
+   "got": 39.00001669198068,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_ACCENT_RING axial min",
+   "got": 11.999991227983617,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_ACCENT_RING axial max",
+   "got": 18.000008732032438,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_ACCENT_RING outer radius",
+   "got": 39.00001629665191,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_END_CAP axial min",
+   "got": -91.00000467198838,
+   "want": -91.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_END_CAP axial max",
+   "got": -84.99999623290681,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J5_END_CAP radius",
+   "got": 38.00001553519121,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_MODULE axial min (motor can rear)",
+   "got": -85.00001314912497,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_MODULE axial max (output face)",
+   "got": 18.00001466042927,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_MODULE max radius (drum)",
+   "got": 39.00001549664847,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_MODULE can radius",
+   "got": 39.00001549664847,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_ACCENT_RING axial min",
+   "got": 11.999984398470312,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_ACCENT_RING axial max",
+   "got": 18.000016070360232,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_ACCENT_RING outer radius",
+   "got": 39.00001521520934,
+   "want": 39.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_END_CAP axial min",
+   "got": -91.0000141443001,
+   "want": -91.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_END_CAP axial max",
+   "got": -84.99998501702599,
+   "want": -85.0,
+   "ok": 1.0
+  },
+  {
+   "what": "J6_END_CAP radius",
+   "got": 38.00001387515883,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_SHOULDER_HUB y min",
+   "got": 17.99999902787378,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_SHOULDER_HUB y max",
+   "got": 62.00000346172643,
+   "want": 62.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_SHOULDER_HUB radius",
+   "got": 38.00000729227376,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_ELBOW_HUB y min",
+   "got": -62.00000266438609,
+   "want": -62.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_ELBOW_HUB y max",
+   "got": -17.999997722172186,
+   "want": -18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_ELBOW_HUB radius",
+   "got": 38.00001513506491,
+   "want": 38.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_HUB y min",
+   "got": 17.999993557519264,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_HUB y max",
+   "got": 52.00001032428874,
+   "want": 52.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_HUB radius",
+   "got": 32.00001986378421,
+   "want": 32.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_UPPER_BAR x min (joint 2 centre)",
+   "got": -2.7877273515226246e-06,
+   "want": 0.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_UPPER_BAR x max",
+   "got": 165.00000871190366,
+   "want": 165.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_UPPER_BAR y min",
+   "got": 17.999999762706143,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_UPPER_BAR y max",
+   "got": 62.00000349979259,
+   "want": 62.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK2_UPPER_BAR z half",
+   "got": 22.00000489893714,
+   "want": 22.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_FOREARM_BAR x min (joint 3 centre)",
+   "got": -5.656302376513447e-06,
+   "want": 0.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_FOREARM_BAR x max",
+   "got": 80.00000408742645,
+   "want": 80.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_FOREARM_BAR y min",
+   "got": -62.000002514451495,
+   "want": -62.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_FOREARM_BAR y max",
+   "got": -17.999997896287862,
+   "want": -18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK3_FOREARM_BAR z half",
+   "got": 22.000003431370942,
+   "want": 22.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_BAR x min (joint 5 centre)",
+   "got": -1.107181459745586e-05,
+   "want": 0.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_BAR x max",
+   "got": 86.00001377791924,
+   "want": 86.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_BAR y min",
+   "got": 17.99999656504885,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_BAR y max",
+   "got": 51.99999976984678,
+   "want": 52.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK5_WRIST_BAR z half",
+   "got": 17.000010753764474,
+   "want": 17.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK4_NECK x min",
+   "got": 17.999991341083778,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK4_NECK x max",
+   "got": 48.00001123051263,
+   "want": 48.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK4_NECK y half",
+   "got": 17.000006121973005,
+   "want": 17.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK4_NECK z half",
+   "got": 26.00001008945763,
+   "want": 26.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK1_POST z min",
+   "got": 18.0,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK1_POST z max (joint 2)",
+   "got": 78.0,
+   "want": 78.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK1_POST y min",
+   "got": -82.0000036150896,
+   "want": -82.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK1_POST y max",
+   "got": -19.999999414422053,
+   "want": -20.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK1_POST x half",
+   "got": 32.000001112348585,
+   "want": 32.0,
+   "ok": 1.0
+  },
+  {
+   "what": "BASE_COLUMN z min",
+   "got": 12.0,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "BASE_COLUMN z max (J1 drum)",
+   "got": 78.0,
+   "want": 78.0,
+   "ok": 1.0
+  },
+  {
+   "what": "BASE_COLUMN radius",
+   "got": 62.000002625595556,
+   "want": 62.0,
+   "ok": 1.0
+  },
+  {
+   "what": "BASE_FOOT z max",
+   "got": 12.0,
+   "want": 12.0,
+   "ok": 1.0
+  },
+  {
+   "what": "BASE_FOOT radius",
+   "got": 82.00000369491691,
+   "want": 82.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_FLANGE x min",
+   "got": 17.99998550094919,
+   "want": 18.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_FLANGE x max",
+   "got": 28.00001316127905,
+   "want": 28.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_FLANGE radius",
+   "got": 28.00001489067952,
+   "want": 28.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_RING (boss) x min",
+   "got": 27.999986179577117,
+   "want": 28.0,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_RING (boss) x max",
+   "got": 29.50001213909582,
+   "want": 29.5,
+   "ok": 1.0
+  },
+  {
+   "what": "LINK6_TOOL_RING (boss) radius",
+   "got": 10.00001441689771,
+   "want": 10.0,
+   "ok": 1.0
+  }
+ ],
+ "independent_shapes": [
+  {
+   "body": "J1_MODULE",
+   "stl_to_expected_mm": 0.0004293719222257379,
+   "expected_to_stl_mm": 0.007023033132040083,
+   "ok": true
+  },
+  {
+   "body": "J1_ACCENT_RING",
+   "stl_to_expected_mm": 0.00043023349318872556,
+   "expected_to_stl_mm": 0.00453911483702177,
+   "ok": true
+  },
+  {
+   "body": "J2_MODULE",
+   "stl_to_expected_mm": 0.0005020899904282013,
+   "expected_to_stl_mm": 0.008455119929454124,
+   "ok": true
+  },
+  {
+   "body": "J2_ACCENT_RING",
+   "stl_to_expected_mm": 0.0005019701594152816,
+   "expected_to_stl_mm": 0.005246516028481725,
+   "ok": true
+  },
+  {
+   "body": "J2_END_CAP",
+   "stl_to_expected_mm": 0.004376311170740384,
+   "expected_to_stl_mm": 0.004096265952702522,
+   "ok": true
+  },
+  {
+   "body": "J2_CAP_SLASH",
+   "stl_to_expected_mm": 3.5993731019354792e-06,
+   "expected_to_stl_mm": 3.5822616664211732e-06,
+   "ok": true
+  },
+  {
+   "body": "J3_MODULE",
+   "stl_to_expected_mm": 0.00044337185040100967,
+   "expected_to_stl_mm": 0.007319469687694671,
+   "ok": true
+  },
+  {
+   "body": "J3_ACCENT_RING",
+   "stl_to_expected_mm": 0.0004429830770609333,
+   "expected_to_stl_mm": 0.0047837342645804274,
+   "ok": true
+  },
+  {
+   "body": "J3_END_CAP",
+   "stl_to_expected_mm": 0.004382353937665822,
+   "expected_to_stl_mm": 0.004964077797736207,
+   "ok": true
+  },
+  {
+   "body": "J3_CAP_SLASH",
+   "stl_to_expected_mm": 6.467006379943285e-06,
+   "expected_to_stl_mm": 6.564471836507142e-06,
+   "ok": true
+  },
+  {
+   "body": "J4_MODULE",
+   "stl_to_expected_mm": 0.0003863907611655899,
+   "expected_to_stl_mm": 0.006346222298743511,
+   "ok": true
+  },
+  {
+   "body": "J4_ACCENT_RING",
+   "stl_to_expected_mm": 0.00038468419613826095,
+   "expected_to_stl_mm": 0.0041434493777655085,
+   "ok": true
+  },
+  {
+   "body": "J4_END_CAP",
+   "stl_to_expected_mm": 0.004376389498570893,
+   "expected_to_stl_mm": 0.004826240748267021,
+   "ok": true
+  },
+  {
+   "body": "J4_CAP_SLASH",
+   "stl_to_expected_mm": 1.0492453415763152e-05,
+   "expected_to_stl_mm": 1.5199500656875666e-05,
+   "ok": true
+  },
+  {
+   "body": "J5_MODULE",
+   "stl_to_expected_mm": 0.004751339595822704,
+   "expected_to_stl_mm": 0.00633187223337108,
+   "ok": true
+  },
+  {
+   "body": "J5_ACCENT_RING",
+   "stl_to_expected_mm": 0.000805857312873603,
+   "expected_to_stl_mm": 0.0048752531356944665,
+   "ok": true
+  },
+  {
+   "body": "J5_END_CAP",
+   "stl_to_expected_mm": 0.0003762783794902235,
+   "expected_to_stl_mm": 0.0040951651601398575,
+   "ok": true
+  },
+  {
+   "body": "J5_CAP_SLASH",
+   "stl_to_expected_mm": 1.3261037029084665e-05,
+   "expected_to_stl_mm": 1.1791474607003086e-05,
+   "ok": true
+  },
+  {
+   "body": "J6_MODULE",
+   "stl_to_expected_mm": 0.0006012762460336059,
+   "expected_to_stl_mm": 0.0063039158173926624,
+   "ok": true
+  },
+  {
+   "body": "J6_ACCENT_RING",
+   "stl_to_expected_mm": 0.0003817576179519088,
+   "expected_to_stl_mm": 0.004634094411734942,
+   "ok": true
+  },
+  {
+   "body": "J6_END_CAP",
+   "stl_to_expected_mm": 0.0003731000356389598,
+   "expected_to_stl_mm": 0.004370966909408505,
+   "ok": true
+  },
+  {
+   "body": "J6_CAP_SLASH",
+   "stl_to_expected_mm": 1.2694867398710439e-05,
+   "expected_to_stl_mm": 1.2650577688374489e-05,
+   "ok": true
+  },
+  {
+   "body": "BASE_FOOT",
+   "stl_to_expected_mm": 0.0007837065285273866,
+   "expected_to_stl_mm": 0.00827379081099501,
+   "ok": true
+  },
+  {
+   "body": "BASE_COLUMN",
+   "stl_to_expected_mm": 0.003143014066703253,
+   "expected_to_stl_mm": 0.007572834954891705,
+   "ok": true
+  },
+  {
+   "body": "BASE_LIGHT_RING",
+   "stl_to_expected_mm": 0.00059192629127734,
+   "expected_to_stl_mm": 0.006254490620111148,
+   "ok": true
+  },
+  {
+   "body": "LINK1_SHOULDER_CAP",
+   "stl_to_expected_mm": 0.0032683194098891205,
+   "expected_to_stl_mm": 0.00477903380095782,
+   "ok": true
+  },
+  {
+   "body": "LINK1_POST",
+   "stl_to_expected_mm": 3.7427636363902105e-06,
+   "expected_to_stl_mm": 3.6122815405342343e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB",
+   "stl_to_expected_mm": 0.0003680169499377897,
+   "expected_to_stl_mm": 0.0051060307516867885,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_CAP",
+   "stl_to_expected_mm": 0.0003093916084194806,
+   "expected_to_stl_mm": 0.00400881513321004,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_SLASH",
+   "stl_to_expected_mm": 2.933385264232212e-06,
+   "expected_to_stl_mm": 2.7427132298216834e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_UPPER_BAR",
+   "stl_to_expected_mm": 8.711903654340675e-06,
+   "expected_to_stl_mm": 8.124127727915008e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB",
+   "stl_to_expected_mm": 0.0003763122460901124,
+   "expected_to_stl_mm": 0.005114629847031719,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_CAP",
+   "stl_to_expected_mm": 0.0003152464596356652,
+   "expected_to_stl_mm": 0.004828581453198492,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_SLASH",
+   "stl_to_expected_mm": 9.252615031327147e-06,
+   "expected_to_stl_mm": 6.859724997990257e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK3_FOREARM_BAR",
+   "stl_to_expected_mm": 7.913170635286056e-06,
+   "expected_to_stl_mm": 1.4317150658168453e-05,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB",
+   "stl_to_expected_mm": 0.002744212288961368,
+   "expected_to_stl_mm": 0.004440913473527863,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_CAP",
+   "stl_to_expected_mm": 0.00026311317028255475,
+   "expected_to_stl_mm": 0.0048815338212001794,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_SLASH",
+   "stl_to_expected_mm": 1.2724169914501916e-05,
+   "expected_to_stl_mm": 1.149097263129822e-05,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_BAR",
+   "stl_to_expected_mm": 1.6491389149396882e-05,
+   "expected_to_stl_mm": 1.5750652186434117e-05,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K",
+   "stl_to_expected_mm": 6.665170619673993e-06,
+   "expected_to_stl_mm": 0.0027458759902684263,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K_SLASH",
+   "stl_to_expected_mm": 4.624439005379709e-06,
+   "expected_to_stl_mm": 5.186080849383636e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_M",
+   "stl_to_expected_mm": 7.637966897404798e-06,
+   "expected_to_stl_mm": 7.524549570796433e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_J",
+   "stl_to_expected_mm": 1.2170655098982328e-05,
+   "expected_to_stl_mm": 9.739917045309173e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_H",
+   "stl_to_expected_mm": 1.0142134844024337e-05,
+   "expected_to_stl_mm": 0.0021806499417536644,
+   "ok": true
+  },
+  {
+   "body": "LINK4_NECK",
+   "stl_to_expected_mm": 1.3594518819232917e-05,
+   "expected_to_stl_mm": 1.5853824398375485e-05,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_FLANGE",
+   "stl_to_expected_mm": 0.004997260747022593,
+   "expected_to_stl_mm": 0.004956827028863251,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_RING",
+   "stl_to_expected_mm": 0.00403579343679148,
+   "expected_to_stl_mm": 0.004670211507484327,
+   "ok": true
+  }
+ ],
+ "expected_bodies": {
+  "J1_MODULE": {
+   "link": 0,
+   "role": "body"
+  },
+  "J1_ACCENT_RING": {
+   "link": 0,
+   "role": "accent"
+  },
+  "J2_MODULE": {
+   "link": 1,
+   "role": "body"
+  },
+  "J2_ACCENT_RING": {
+   "link": 1,
+   "role": "accent"
+  },
+  "J2_END_CAP": {
+   "link": 1,
+   "role": "accent"
+  },
+  "J2_CAP_SLASH": {
+   "link": 1,
+   "role": "highlight"
+  },
+  "J3_MODULE": {
+   "link": 2,
+   "role": "body"
+  },
+  "J3_ACCENT_RING": {
+   "link": 2,
+   "role": "accent"
+  },
+  "J3_END_CAP": {
+   "link": 2,
+   "role": "accent"
+  },
+  "J3_CAP_SLASH": {
+   "link": 2,
+   "role": "highlight"
+  },
+  "J4_MODULE": {
+   "link": 3,
+   "role": "body"
+  },
+  "J4_ACCENT_RING": {
+   "link": 3,
+   "role": "accent"
+  },
+  "J4_END_CAP": {
+   "link": 3,
+   "role": "accent"
+  },
+  "J4_CAP_SLASH": {
+   "link": 3,
+   "role": "highlight"
+  },
+  "J5_MODULE": {
+   "link": 4,
+   "role": "body"
+  },
+  "J5_ACCENT_RING": {
+   "link": 4,
+   "role": "accent"
+  },
+  "J5_END_CAP": {
+   "link": 4,
+   "role": "accent"
+  },
+  "J5_CAP_SLASH": {
+   "link": 4,
+   "role": "highlight"
+  },
+  "J6_MODULE": {
+   "link": 5,
+   "role": "body"
+  },
+  "J6_ACCENT_RING": {
+   "link": 5,
+   "role": "accent"
+  },
+  "J6_END_CAP": {
+   "link": 5,
+   "role": "accent"
+  },
+  "J6_CAP_SLASH": {
+   "link": 5,
+   "role": "highlight"
+  },
+  "BASE_FOOT": {
+   "link": 0,
+   "role": "frame"
+  },
+  "BASE_COLUMN": {
+   "link": 0,
+   "role": "body"
+  },
+  "BASE_LIGHT_RING": {
+   "link": 0,
+   "role": "highlight"
+  },
+  "LINK1_SHOULDER_CAP": {
+   "link": 1,
+   "role": "body"
+  },
+  "LINK1_POST": {
+   "link": 1,
+   "role": "body"
+  },
+  "LINK2_SHOULDER_HUB": {
+   "link": 2,
+   "role": "body"
+  },
+  "LINK2_SHOULDER_HUB_CAP": {
+   "link": 2,
+   "role": "accent"
+  },
+  "LINK2_SHOULDER_HUB_SLASH": {
+   "link": 2,
+   "role": "highlight"
+  },
+  "LINK2_UPPER_BAR": {
+   "link": 2,
+   "role": "body"
+  },
+  "LINK3_ELBOW_HUB": {
+   "link": 3,
+   "role": "body"
+  },
+  "LINK3_ELBOW_HUB_CAP": {
+   "link": 3,
+   "role": "accent"
+  },
+  "LINK3_ELBOW_HUB_SLASH": {
+   "link": 3,
+   "role": "highlight"
+  },
+  "LINK3_FOREARM_BAR": {
+   "link": 3,
+   "role": "body"
+  },
+  "LINK5_WRIST_HUB": {
+   "link": 5,
+   "role": "body"
+  },
+  "LINK5_WRIST_HUB_CAP": {
+   "link": 5,
+   "role": "accent"
+  },
+  "LINK5_WRIST_HUB_SLASH": {
+   "link": 5,
+   "role": "highlight"
+  },
+  "LINK5_WRIST_BAR": {
+   "link": 5,
+   "role": "body"
+  },
+  "LINK2_LOGO_K": {
+   "link": 2,
+   "role": "accent"
+  },
+  "LINK2_LOGO_K_SLASH": {
+   "link": 2,
+   "role": "highlight"
+  },
+  "LINK2_LOGO_M": {
+   "link": 2,
+   "role": "accent"
+  },
+  "LINK2_LOGO_J": {
+   "link": 2,
+   "role": "accent"
+  },
+  "LINK2_LOGO_H": {
+   "link": 2,
+   "role": "accent"
+  },
+  "LINK4_NECK": {
+   "link": 4,
+   "role": "body"
+  },
+  "LINK6_TOOL_FLANGE": {
+   "link": 6,
+   "role": "frame"
+  },
+  "LINK6_TOOL_RING": {
+   "link": 6,
+   "role": "highlight"
+  }
+ },
+ "protected_params": [
+  {
+   "key": "exterior.motor_can_radius_mm",
+   "v3": 39.0,
+   "v2": 39.0,
+   "ok": true
+  },
+  {
+   "key": "exterior.can_rear_clearance_mm",
+   "v3": 4.0,
+   "v2": 4.0,
+   "ok": true
+  },
+  {
+   "key": "exterior.end_cap_thickness_mm",
+   "v3": 6.0,
+   "v2": 6.0,
+   "ok": true
+  },
+  {
+   "key": "exterior.accent_ring_width_mm",
+   "v3": 6.0,
+   "v2": 6.0,
+   "ok": true
+  },
+  {
+   "key": "exterior.accent_ring_depth_mm",
+   "v3": 3.0,
+   "v2": 3.0,
+   "ok": true
+  },
+  {
+   "key": "exterior.output_side_sign",
+   "v3": [
+    1,
+    1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "v2": [
+    1,
+    1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "ok": true
+  },
+  {
+   "key": "links.base.foot_r",
+   "v3": 82.0,
+   "v2": 82.0,
+   "ok": true
+  },
+  {
+   "key": "links.base.foot_h",
+   "v3": 12.0,
+   "v2": 12.0,
+   "ok": true
+  },
+  {
+   "key": "links.base.column_r",
+   "v3": 62.0,
+   "v2": 62.0,
+   "ok": true
+  },
+  {
+   "key": "links.base.band_z0",
+   "v3": 20.0,
+   "v2": 20.0,
+   "ok": true
+  },
+  {
+   "key": "links.base.band_z1",
+   "v3": 26.0,
+   "v2": 26.0,
+   "ok": true
+  },
+  {
+   "key": "links.base.column_top_r",
+   "v3": 50.0,
+   "v2": 50.0,
+   "ok": true
+  },
+  {
+   "key": "links.shoulder.cap_r",
+   "v3": 45.0,
+   "v2": 45.0,
+   "ok": true
+  },
+  {
+   "key": "links.shoulder.cap_h",
+   "v3": 22.0,
+   "v2": 22.0,
+   "ok": true
+  },
+  {
+   "key": "links.shoulder.post_half_w",
+   "v3": 32.0,
+   "v2": 32.0,
+   "ok": true
+  },
+  {
+   "key": "links.shoulder.post_y0",
+   "v3": -82.0,
+   "v2": -82.0,
+   "ok": true
+  },
+  {
+   "key": "links.shoulder.post_y1",
+   "v3": -20.0,
+   "v2": -20.0,
+   "ok": true
+  },
+  {
+   "key": "links.upper_arm.hub_r",
+   "v3": 38.0,
+   "v2": 38.0,
+   "ok": true
+  },
+  {
+   "key": "links.upper_arm.hub_t",
+   "v3": 44.0,
+   "v2": 44.0,
+   "ok": true
+  },
+  {
+   "key": "links.forearm.hub_r",
+   "v3": 38.0,
+   "v2": 38.0,
+   "ok": true
+  },
+  {
+   "key": "links.forearm.hub_t",
+   "v3": 44.0,
+   "v2": 44.0,
+   "ok": true
+  },
+  {
+   "key": "links.forearm.tube_len",
+   "v3": 80.0,
+   "v2": 80.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist1.neck_w",
+   "v3": 34.0,
+   "v2": 34.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist1.neck_h",
+   "v3": 52.0,
+   "v2": 52.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist1.neck_gap",
+   "v3": 30.0,
+   "v2": 30.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist2.hub_r",
+   "v3": 32.0,
+   "v2": 32.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist2.hub_t",
+   "v3": 34.0,
+   "v2": 34.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist2.tube_len",
+   "v3": 86.0,
+   "v2": 86.0,
+   "ok": true
+  },
+  {
+   "key": "links.tool.flange_r",
+   "v3": 28.0,
+   "v2": 28.0,
+   "ok": true
+  },
+  {
+   "key": "links.tool.flange_t",
+   "v3": 10.0,
+   "v2": 10.0,
+   "ok": true
+  },
+  {
+   "key": "links.tool has no ring_r/ring_t/boss/hole numbers (interface_from only)",
+   "v3": [],
+   "v2": [],
+   "ok": true
+  },
+  {
+   "key": "tool insert hole = ledger confirmed",
+   "v3": "confirmed",
+   "v2": "confirmed",
+   "ok": true
+  },
+  {
+   "key": "tool hole depth <= flange_t - min_floor",
+   "v3": 8.0,
+   "v2": 9.0,
+   "ok": true
+  },
+  {
+   "key": "tool holes clear boss (pcd/2 - d/2 > boss_r)",
+   "v3": 13.75,
+   "v2": 10.0,
+   "ok": true
+  },
+  {
+   "key": "tool holes inside flange face (pcd/2 + d/2 < flange_r - chamfer)",
+   "v3": 17.75,
+   "v2": 26.0,
+   "ok": true
+  },
+  {
+   "key": "tool interface material = gripper fits_from.material",
+   "v3": "PLA",
+   "v2": "PLA",
+   "ok": true
+  },
+  {
+   "key": "links.upper_arm.bar_half_w = v2 tube_r",
+   "v3": 22.0,
+   "v2": 22.0,
+   "ok": true
+  },
+  {
+   "key": "links.upper_arm.bar_half_h = v2 tube_r",
+   "v3": 22.0,
+   "v2": 22.0,
+   "ok": true
+  },
+  {
+   "key": "links.forearm.bar_half_w = v2 tube_r",
+   "v3": 22.0,
+   "v2": 22.0,
+   "ok": true
+  },
+  {
+   "key": "links.forearm.bar_half_h = v2 tube_r",
+   "v3": 22.0,
+   "v2": 22.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist2.bar_half_w = v2 tube_r",
+   "v3": 17.0,
+   "v2": 17.0,
+   "ok": true
+  },
+  {
+   "key": "links.wrist2.bar_half_h = v2 tube_r",
+   "v3": 17.0,
+   "v2": 17.0,
+   "ok": true
+  }
+ ],
+ "colors": [
+  {
+   "body": "BASE_COLUMN",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "BASE_FOOT",
+   "role_by_name": "frame",
+   "role_expected": "frame",
+   "role_in_bodies_json": "frame",
+   "stored_rgb": [
+    107,
+    114,
+    128
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "BASE_LIGHT_RING",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J1_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J1_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J2_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J2_CAP_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J2_END_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J2_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J3_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J3_CAP_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J3_END_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J3_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J4_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J4_CAP_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J4_END_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J4_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J5_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J5_CAP_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J5_END_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J5_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J6_ACCENT_RING",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J6_CAP_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J6_END_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "J6_MODULE",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK1_POST",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK1_SHOULDER_CAP",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_H",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_J",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_M",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK2_UPPER_BAR",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK3_FOREARM_BAR",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK4_NECK",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_BAR",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB",
+   "role_by_name": "body",
+   "role_expected": "body",
+   "role_in_bodies_json": "body",
+   "stored_rgb": [
+    255,
+    255,
+    255
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_CAP",
+   "role_by_name": "accent",
+   "role_expected": "accent",
+   "role_in_bodies_json": "accent",
+   "stored_rgb": [
+    11,
+    37,
+    69
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_SLASH",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_FLANGE",
+   "role_by_name": "frame",
+   "role_expected": "frame",
+   "role_in_bodies_json": "frame",
+   "stored_rgb": [
+    107,
+    114,
+    128
+   ],
+   "in_eval": true,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_RING",
+   "role_by_name": "highlight",
+   "role_expected": "highlight",
+   "role_in_bodies_json": "highlight",
+   "stored_rgb": [
+    52,
+    211,
+    153
+   ],
+   "in_eval": true,
+   "ok": true
+  }
+ ],
+ "meshes": [
+  {
+   "body": "BASE_COLUMN",
+   "exists": true,
+   "faces": 7520,
+   "watertight": true,
+   "bbox_err_mm": 3.410605131648481e-13,
+   "com_err_mm": 0.0005252580668232247,
+   "volume_rel": 5.491140010966015e-05,
+   "area_rel": 5.922873551307935e-06,
+   "ok": true
+  },
+  {
+   "body": "BASE_FOOT",
+   "exists": true,
+   "faces": 3656,
+   "watertight": true,
+   "bbox_err_mm": 4.618527782440651e-14,
+   "com_err_mm": 2.3762201998749477e-06,
+   "volume_rel": 5.240454655448055e-07,
+   "area_rel": 1.893838511738464e-08,
+   "ok": true
+  },
+  {
+   "body": "BASE_LIGHT_RING",
+   "exists": true,
+   "faces": 4356,
+   "watertight": true,
+   "bbox_err_mm": 1.4210854715202004e-14,
+   "com_err_mm": 1.4167298916005659e-06,
+   "volume_rel": 4.933840064885554e-08,
+   "area_rel": 1.4231031838199405e-08,
+   "ok": true
+  },
+  {
+   "body": "J1_ACCENT_RING",
+   "exists": true,
+   "faces": 5856,
+   "watertight": true,
+   "bbox_err_mm": 1.4210854715202004e-14,
+   "com_err_mm": 2.8654600692900944e-09,
+   "volume_rel": 1.6755416846866102e-08,
+   "area_rel": 1.574289546236328e-08,
+   "ok": true
+  },
+  {
+   "body": "J1_MODULE",
+   "exists": true,
+   "faces": 9938,
+   "watertight": true,
+   "bbox_err_mm": 2.824407374646398e-13,
+   "com_err_mm": 3.823835904178451e-05,
+   "volume_rel": 2.631092377483924e-06,
+   "area_rel": 3.7694393687224676e-07,
+   "ok": true
+  },
+  {
+   "body": "J2_ACCENT_RING",
+   "exists": true,
+   "faces": 4332,
+   "watertight": true,
+   "bbox_err_mm": 3.9889237513079934e-07,
+   "com_err_mm": 1.6809424359496196e-07,
+   "volume_rel": 3.1128281399004875e-08,
+   "area_rel": 3.8798502654984276e-08,
+   "ok": true
+  },
+  {
+   "body": "J2_CAP_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 1.1227234466559821e-06,
+   "com_err_mm": 1.220680805345601e-06,
+   "volume_rel": 2.987584157420107e-06,
+   "area_rel": 2.8956465152238305e-07,
+   "ok": true
+  },
+  {
+   "body": "J2_END_CAP",
+   "exists": true,
+   "faces": 3620,
+   "watertight": true,
+   "bbox_err_mm": 2.667721034299575e-06,
+   "com_err_mm": 2.0716823764240383e-06,
+   "volume_rel": 8.805374828829175e-07,
+   "area_rel": 1.4642593848789944e-08,
+   "ok": true
+  },
+  {
+   "body": "J2_MODULE",
+   "exists": true,
+   "faces": 9110,
+   "watertight": true,
+   "bbox_err_mm": 1.823147428581251e-06,
+   "com_err_mm": 6.030498462420303e-05,
+   "volume_rel": 5.498773753880312e-06,
+   "area_rel": 5.126175072816547e-07,
+   "ok": true
+  },
+  {
+   "body": "J3_ACCENT_RING",
+   "exists": true,
+   "faces": 5760,
+   "watertight": true,
+   "bbox_err_mm": 9.053557505467325e-06,
+   "com_err_mm": 9.141224667552968e-06,
+   "volume_rel": 9.354356159883285e-08,
+   "area_rel": 7.356253164354518e-08,
+   "ok": true
+  },
+  {
+   "body": "J3_CAP_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 5.752556148763688e-06,
+   "com_err_mm": 3.217570514722773e-05,
+   "volume_rel": 1.5287434867212397e-06,
+   "area_rel": 3.665586041652123e-08,
+   "ok": true
+  },
+  {
+   "body": "J3_END_CAP",
+   "exists": true,
+   "faces": 3572,
+   "watertight": true,
+   "bbox_err_mm": 1.0881994342071266e-05,
+   "com_err_mm": 2.0004649317073527e-06,
+   "volume_rel": 1.0699018365091244e-06,
+   "area_rel": 4.35212033899777e-08,
+   "ok": true
+  },
+  {
+   "body": "J3_MODULE",
+   "exists": true,
+   "faces": 9866,
+   "watertight": true,
+   "bbox_err_mm": 9.053557334937068e-06,
+   "com_err_mm": 3.8171770037050696e-05,
+   "volume_rel": 2.605080980613512e-06,
+   "area_rel": 3.6530883075744124e-07,
+   "ok": true
+  },
+  {
+   "body": "J4_ACCENT_RING",
+   "exists": true,
+   "faces": 5736,
+   "watertight": true,
+   "bbox_err_mm": 5.784443430911779e-06,
+   "com_err_mm": 7.74001563018097e-07,
+   "volume_rel": 3.3085835333502874e-07,
+   "area_rel": 1.414960473830878e-07,
+   "ok": true
+  },
+  {
+   "body": "J4_CAP_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 1.0716311976466386e-05,
+   "com_err_mm": 2.158798186430786e-05,
+   "volume_rel": 6.309685963553777e-06,
+   "area_rel": 2.253733643366635e-07,
+   "ok": true
+  },
+  {
+   "body": "J4_END_CAP",
+   "exists": true,
+   "faces": 3608,
+   "watertight": true,
+   "bbox_err_mm": 6.471933090779203e-06,
+   "com_err_mm": 2.5000409485185244e-06,
+   "volume_rel": 9.992064089839739e-07,
+   "area_rel": 4.7565924538630256e-08,
+   "ok": true
+  },
+  {
+   "body": "J4_MODULE",
+   "exists": true,
+   "faces": 9872,
+   "watertight": true,
+   "bbox_err_mm": 1.5030260954063124e-05,
+   "com_err_mm": 4.133634126163765e-07,
+   "volume_rel": 6.579527435171907e-10,
+   "area_rel": 1.09447869327683e-08,
+   "ok": true
+  },
+  {
+   "body": "J5_ACCENT_RING",
+   "exists": true,
+   "faces": 5736,
+   "watertight": true,
+   "bbox_err_mm": 1.499548073979895e-05,
+   "com_err_mm": 2.9606713785361172e-06,
+   "volume_rel": 6.390503459226183e-08,
+   "area_rel": 4.97357793487904e-09,
+   "ok": true
+  },
+  {
+   "body": "J5_CAP_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 8.232125424001424e-06,
+   "com_err_mm": 1.452183405754086e-05,
+   "volume_rel": 3.767757346329584e-07,
+   "area_rel": 2.86919184619808e-08,
+   "ok": true
+  },
+  {
+   "body": "J5_END_CAP",
+   "exists": true,
+   "faces": 3584,
+   "watertight": true,
+   "bbox_err_mm": 1.5096158904270851e-05,
+   "com_err_mm": 2.28321795653516e-06,
+   "volume_rel": 1.117142633842155e-06,
+   "area_rel": 4.395685999758025e-08,
+   "ok": true
+  },
+  {
+   "body": "J5_MODULE",
+   "exists": true,
+   "faces": 9872,
+   "watertight": true,
+   "bbox_err_mm": 1.2591048971444252e-05,
+   "com_err_mm": 3.8403778766452917e-07,
+   "volume_rel": 1.485239532449418e-09,
+   "area_rel": 3.7826870800336045e-10,
+   "ok": true
+  },
+  {
+   "body": "J6_ACCENT_RING",
+   "exists": true,
+   "faces": 4446,
+   "watertight": true,
+   "bbox_err_mm": 4.9325014970236225e-06,
+   "com_err_mm": 4.475402168256872e-06,
+   "volume_rel": 9.862391276927057e-08,
+   "area_rel": 5.8345746524777855e-09,
+   "ok": true
+  },
+  {
+   "body": "J6_CAP_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 9.862973229246563e-06,
+   "com_err_mm": 4.227452381515749e-06,
+   "volume_rel": 1.7008592140847796e-05,
+   "area_rel": 1.4363164995467462e-06,
+   "ok": true
+  },
+  {
+   "body": "J6_END_CAP",
+   "exists": true,
+   "faces": 3500,
+   "watertight": true,
+   "bbox_err_mm": 9.377004460020544e-06,
+   "com_err_mm": 3.4955826488032157e-06,
+   "volume_rel": 1.1924248127658463e-06,
+   "area_rel": 3.82772577002209e-08,
+   "ok": true
+  },
+  {
+   "body": "J6_MODULE",
+   "exists": true,
+   "faces": 9872,
+   "watertight": true,
+   "bbox_err_mm": 7.933072140531294e-06,
+   "com_err_mm": 5.499026914364144e-07,
+   "volume_rel": 2.0928396206293022e-08,
+   "area_rel": 1.521938021455272e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK1_POST",
+   "exists": true,
+   "faces": 44,
+   "watertight": true,
+   "bbox_err_mm": 3.742763595937504e-06,
+   "com_err_mm": 1.5550848084436262e-06,
+   "volume_rel": 6.946509192091817e-08,
+   "area_rel": 4.5890985989976734e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK1_SHOULDER_CAP",
+   "exists": true,
+   "faces": 7322,
+   "watertight": true,
+   "bbox_err_mm": 1.1368683772161603e-13,
+   "com_err_mm": 4.022822925367855e-05,
+   "volume_rel": 4.73432693561447e-06,
+   "area_rel": 3.122142858543971e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_H",
+   "exists": true,
+   "faces": 44,
+   "watertight": true,
+   "bbox_err_mm": 6.844353094948019e-06,
+   "com_err_mm": 3.6110464509445493e-06,
+   "volume_rel": 9.601161020810861e-07,
+   "area_rel": 5.769508102247456e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_J",
+   "exists": true,
+   "faces": 28,
+   "watertight": true,
+   "bbox_err_mm": 1.2045278708683327e-05,
+   "com_err_mm": 9.772011173259716e-06,
+   "volume_rel": 5.505742835125859e-07,
+   "area_rel": 6.833173877937955e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K",
+   "exists": true,
+   "faces": 40,
+   "watertight": true,
+   "bbox_err_mm": 6.464648379278515e-06,
+   "com_err_mm": 4.067284392873603e-06,
+   "volume_rel": 7.864419926615057e-08,
+   "area_rel": 3.1856034713981195e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 2.3967607205577224e-06,
+   "com_err_mm": 1.5948294093268732e-06,
+   "volume_rel": 5.283525352735181e-07,
+   "area_rel": 1.5202537266840343e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_M",
+   "exists": true,
+   "faces": 52,
+   "watertight": true,
+   "bbox_err_mm": 4.760842557516298e-06,
+   "com_err_mm": 2.611435490907707e-06,
+   "volume_rel": 4.975463592311374e-07,
+   "area_rel": 2.0652537588587003e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB",
+   "exists": true,
+   "faces": 5294,
+   "watertight": true,
+   "bbox_err_mm": 5.129438193307578e-06,
+   "com_err_mm": 1.1063396385114073e-07,
+   "volume_rel": 1.075838438695482e-05,
+   "area_rel": 1.3806843905104003e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_CAP",
+   "exists": true,
+   "faces": 1412,
+   "watertight": true,
+   "bbox_err_mm": 6.120697207734338e-06,
+   "com_err_mm": 7.787731082661927e-07,
+   "volume_rel": 8.857674407981914e-08,
+   "area_rel": 4.1902096375499785e-09,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 2.933133771421126e-06,
+   "com_err_mm": 4.481300633985019e-06,
+   "volume_rel": 1.7125871903680335e-06,
+   "area_rel": 2.1951232134712844e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK2_UPPER_BAR",
+   "exists": true,
+   "faces": 44,
+   "watertight": true,
+   "bbox_err_mm": 5.243749114924867e-06,
+   "com_err_mm": 3.892904045917412e-06,
+   "volume_rel": 5.6907975472775586e-08,
+   "area_rel": 2.9168083032912107e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB",
+   "exists": true,
+   "faces": 5366,
+   "watertight": true,
+   "bbox_err_mm": 6.2718912658965564e-06,
+   "com_err_mm": 1.313628394704399e-06,
+   "volume_rel": 1.049238418061569e-05,
+   "area_rel": 1.3913939498221625e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_CAP",
+   "exists": true,
+   "faces": 1412,
+   "watertight": true,
+   "bbox_err_mm": 6.189890996211034e-06,
+   "com_err_mm": 1.3042127629686866e-06,
+   "volume_rel": 5.030576554702714e-08,
+   "area_rel": 4.971856319508166e-09,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 5.752556148763688e-06,
+   "com_err_mm": 1.4579729631307887e-05,
+   "volume_rel": 3.242718489493958e-07,
+   "area_rel": 6.537963934135135e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK3_FOREARM_BAR",
+   "exists": true,
+   "faces": 52,
+   "watertight": true,
+   "bbox_err_mm": 1.4131296325103904e-05,
+   "com_err_mm": 2.4428628329018464e-06,
+   "volume_rel": 1.2053557645031886e-07,
+   "area_rel": 1.238491625737858e-07,
+   "ok": true
+  },
+  {
+   "body": "LINK4_NECK",
+   "exists": true,
+   "faces": 44,
+   "watertight": true,
+   "bbox_err_mm": 9.935539310390595e-06,
+   "com_err_mm": 1.2910108436035936e-06,
+   "volume_rel": 9.3092581293178e-08,
+   "area_rel": 5.4115270671803905e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_BAR",
+   "exists": true,
+   "faces": 52,
+   "watertight": true,
+   "bbox_err_mm": 1.4437684626500413e-05,
+   "com_err_mm": 6.417371432867037e-06,
+   "volume_rel": 8.694921937647407e-08,
+   "area_rel": 2.628114537828242e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB",
+   "exists": true,
+   "faces": 4916,
+   "watertight": true,
+   "bbox_err_mm": 1.3103461071750644e-05,
+   "com_err_mm": 2.3562706052231773e-07,
+   "volume_rel": 1.5796642522372017e-05,
+   "area_rel": 1.9759404238335615e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_CAP",
+   "exists": true,
+   "faces": 1388,
+   "watertight": true,
+   "bbox_err_mm": 1.517548935225932e-05,
+   "com_err_mm": 2.188678375400339e-06,
+   "volume_rel": 6.066349098033471e-07,
+   "area_rel": 1.3764495436712081e-08,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_SLASH",
+   "exists": true,
+   "faces": 12,
+   "watertight": true,
+   "bbox_err_mm": 9.361829370391206e-06,
+   "com_err_mm": 3.279227043739398e-05,
+   "volume_rel": 4.357056354102389e-06,
+   "area_rel": 1.221510290845289e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_FLANGE",
+   "exists": true,
+   "faces": 13212,
+   "watertight": true,
+   "bbox_err_mm": 0.0006395391795877003,
+   "com_err_mm": 1.3279993116997987e-05,
+   "volume_rel": 2.5256294725278396e-05,
+   "area_rel": 6.93876641306985e-05,
+   "ok": true
+  },
+  {
+   "body": "LINK6_TOOL_RING",
+   "exists": true,
+   "faces": 2864,
+   "watertight": true,
+   "bbox_err_mm": 1.3219230595495901e-05,
+   "com_err_mm": 2.091872492133217e-06,
+   "volume_rel": 5.437854893798759e-07,
+   "area_rel": 6.674345682301941e-08,
+   "ok": true
+  }
+ ],
+ "stray_meshes": [],
+ "feature_volumes": [
+  {
+   "body": "LINK2_LOGO_K",
+   "native_mm3": 65.0410327272727,
+   "independent_mm3": 65.04103272727274,
+   "rel": 6.554718207561532e-16,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_K_SLASH",
+   "native_mm3": 14.70975999999999,
+   "independent_mm3": 14.709760000000001,
+   "rel": 7.245625378253283e-16,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_M",
+   "native_mm3": 94.18287094339651,
+   "independent_mm3": 94.18287094339625,
+   "rel": 2.715943804976689e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_J",
+   "native_mm3": 58.81200000000003,
+   "independent_mm3": 58.81199999999999,
+   "rel": 7.248956700266275e-16,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_LOGO_H",
+   "native_mm3": 83.8240000000002,
+   "independent_mm3": 83.82400000000003,
+   "rel": 2.0343846223327923e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "J2_CAP_SLASH",
+   "native_mm3": 268.8000000000009,
+   "independent_mm3": 268.8,
+   "rel": 3.383536836952858e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "J3_CAP_SLASH",
+   "native_mm3": 268.80000000000035,
+   "independent_mm3": 268.8,
+   "rel": 1.2688263138573218e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "J4_CAP_SLASH",
+   "native_mm3": 268.8000000000007,
+   "independent_mm3": 268.8,
+   "rel": 2.5376526277146436e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "J5_CAP_SLASH",
+   "native_mm3": 268.8000000000003,
+   "independent_mm3": 268.8,
+   "rel": 1.0573552615477681e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "J6_CAP_SLASH",
+   "native_mm3": 268.8000000000006,
+   "independent_mm3": 268.8,
+   "rel": 2.1147105230955362e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_CAP",
+   "native_mm3": 3216.801507310578,
+   "independent_mm3": 3216.990877275948,
+   "rel": 5.886555871444874e-05,
+   "tol": 0.0002,
+   "ok": true
+  },
+  {
+   "body": "LINK2_SHOULDER_HUB_SLASH",
+   "native_mm3": 268.7999999999997,
+   "independent_mm3": 268.8,
+   "rel": 1.0573552615477681e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_CAP",
+   "native_mm3": 3216.8015073109814,
+   "independent_mm3": 3216.990877275948,
+   "rel": 5.8865558589064204e-05,
+   "tol": 0.0002,
+   "ok": true
+  },
+  {
+   "body": "LINK3_ELBOW_HUB_SLASH",
+   "native_mm3": 268.79999999999956,
+   "independent_mm3": 268.8,
+   "rel": 1.691768418476429e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_CAP",
+   "native_mm3": 2123.585198041127,
+   "independent_mm3": 2123.7166338267,
+   "rel": 6.188951175481005e-05,
+   "tol": 0.0002,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_HUB_SLASH",
+   "native_mm3": 172.03200000000075,
+   "independent_mm3": 172.03200000000007,
+   "rel": 3.965082230804129e-15,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK2_UPPER_BAR",
+   "native_mm3": 298320.00000000006,
+   "independent_mm3": 298320.0,
+   "rel": 1.951181982886411e-16,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK3_FOREARM_BAR",
+   "native_mm3": 126077.1652304085,
+   "independent_mm3": 126077.16408305692,
+   "rel": 9.100391694968847e-09,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK5_WRIST_BAR",
+   "native_mm3": 88600.00695677659,
+   "independent_mm3": 88600.00648836861,
+   "rel": 5.28677134939602e-09,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK4_NECK",
+   "native_mm3": 48180.00000000001,
+   "independent_mm3": 48180.0,
+   "rel": 1.510161397713455e-16,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "body": "LINK1_POST",
+   "native_mm3": 226080.0,
+   "independent_mm3": 226080.0,
+   "rel": 0.0,
+   "tol": 1e-06,
+   "ok": true
+  }
+ ],
+ "protected_snapshot": {
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "same": true,
+  "files": 54,
+  "root": "C:\\projects\\robot-arm-lab",
+  "baseline_roots_fixed": true,
+  "baseline_sha256": "35ca6f308e03b8dcae6a972f2b7aec495dcf5b9314e14028b72883b6290400a0"
+ },
+ "v2_head": {
+  "models/armold-mks-product-v2/README.md": {
+   "head": "453b54e637f4769bc1b1ada6fef343701e1bf143",
+   "worktree": "453b54e637f4769bc1b1ada6fef343701e1bf143",
+   "same": true
+  },
+  "models/armold-mks-product-v2/armold-type-mks-product-v2.3mf": {
+   "head": "1ebe062500b8133532aa13a37bcd3f6dcec95166",
+   "worktree": "1ebe062500b8133532aa13a37bcd3f6dcec95166",
+   "same": true
+  },
+  "models/armold-mks-product-v2/armold-type-mks-product-v2.solidcraft": {
+   "head": "628cae1ed1d08d87f1c1ffc2b7784b58404e9b11",
+   "worktree": "628cae1ed1d08d87f1c1ffc2b7784b58404e9b11",
+   "same": true
+  },
+  "models/armold-mks-product-v2/armold-type-mks-product-v2.step": {
+   "head": "14f9801dfd7740f54111a3989d06b5603e9c4c3f",
+   "worktree": "14f9801dfd7740f54111a3989d06b5603e9c4c3f",
+   "same": true
+  },
+  "models/armold-mks-product-v2/bodies.json": {
+   "head": "6757bccb955770873639893c37fe6b4226e6966b",
+   "worktree": "6757bccb955770873639893c37fe6b4226e6966b",
+   "same": true
+  },
+  "models/armold-mks-product-v2/build-commands.json": {
+   "head": "e0fb8aaa632349fd25f73797d27c83e6462daacf",
+   "worktree": "e0fb8aaa632349fd25f73797d27c83e6462daacf",
+   "same": true
+  },
+  "models/armold-mks-product-v2/front.png": {
+   "head": "c69853b2682e85fe9b3ace4df8664d13116b1135",
+   "worktree": "c69853b2682e85fe9b3ace4df8664d13116b1135",
+   "same": true
+  },
+  "models/armold-mks-product-v2/iso.png": {
+   "head": "0d9d2565665c146465d4b55cc30a4cd05070ca9b",
+   "worktree": "0d9d2565665c146465d4b55cc30a4cd05070ca9b",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/README.md": {
+   "head": "612dbf35ed5345403e8d9c55ab0d691171c85ac6",
+   "worktree": "612dbf35ed5345403e8d9c55ab0d691171c85ac6",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/build-commands.json": {
+   "head": "75bf562cb1c636da816c5d573199a19426a7a07c",
+   "worktree": "75bf562cb1c636da816c5d573199a19426a7a07c",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/iso.png": {
+   "head": "c3b63e18d3588e46daaa5519a89b1f2b59cbbbbd",
+   "worktree": "c3b63e18d3588e46daaa5519a89b1f2b59cbbbbd",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/j2-split.solidcraft": {
+   "head": "88759bcd824e4d39d144bd775d92bd698f567dd1",
+   "worktree": "88759bcd824e4d39d144bd775d92bd698f567dd1",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/j2-split.step": {
+   "head": "6cc64b74ba1e75ec76d57559075a2bb02f1fa743",
+   "worktree": "6cc64b74ba1e75ec76d57559075a2bb02f1fa743",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_ACCENT_RING_PART.stl": {
+   "head": "1d73558651bad141992f98e46bfbd42c8015ddbb",
+   "worktree": "1d73558651bad141992f98e46bfbd42c8015ddbb",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_BEARING_RETAINER.stl": {
+   "head": "a18a95f597d5b7bcd9d050b6a43d717d7f48380a",
+   "worktree": "a18a95f597d5b7bcd9d050b6a43d717d7f48380a",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_END_CAP_PART.stl": {
+   "head": "0345ecabbea54f483e0eb66cc27ce1eb03dcbe3c",
+   "worktree": "0345ecabbea54f483e0eb66cc27ce1eb03dcbe3c",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_OUTPUT_FLANGE.stl": {
+   "head": "55fb78526482e6c8714bf44c41aba933b63f8b27",
+   "worktree": "55fb78526482e6c8714bf44c41aba933b63f8b27",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_REAR_HOUSING.stl": {
+   "head": "0c6670db4e740b77b2ad97d9ca7ec32f9730290e",
+   "worktree": "0c6670db4e740b77b2ad97d9ca7ec32f9730290e",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/parts/J2_REDUCER_HOUSING.stl": {
+   "head": "66fcb33ee6a0a2ce6f41b91b0c1bb637c91aea81",
+   "worktree": "66fcb33ee6a0a2ce6f41b91b0c1bb637c91aea81",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/section.png": {
+   "head": "7b025e67a139fbd21deb4c45920dcfba46c2257f",
+   "worktree": "7b025e67a139fbd21deb4c45920dcfba46c2257f",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/split.json": {
+   "head": "81089a23dad2ccb70e24728684ed6aaee2937ca5",
+   "worktree": "81089a23dad2ccb70e24728684ed6aaee2937ca5",
+   "same": true
+  },
+  "models/armold-mks-product-v2/j2-split/validation.json": {
+   "head": "9b3b53f12de28f29f2814ca1f78cac66c6451ad7",
+   "worktree": "9b3b53f12de28f29f2814ca1f78cac66c6451ad7",
+   "same": true
+  },
+  "models/armold-mks-product-v2/right.png": {
+   "head": "f1c2152af1e954d11a0e246500d45ee24a2c6422",
+   "worktree": "f1c2152af1e954d11a0e246500d45ee24a2c6422",
+   "same": true
+  },
+  "models/armold-mks-product-v2/v1-v2-side-by-side.png": {
+   "head": "345ba11e652221211e443c230f912f81acf0f26c",
+   "worktree": "345ba11e652221211e443c230f912f81acf0f26c",
+   "same": true
+  },
+  "models/armold-mks-product-v2/validation.json": {
+   "head": "e40cf04a2baa3d7143f24536674977c16d4381e7",
+   "worktree": "e40cf04a2baa3d7143f24536674977c16d4381e7",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/README.md": {
+   "head": "8206ed38f4c5733338932c58c1ae4308602de7a9",
+   "worktree": "8206ed38f4c5733338932c58c1ae4308602de7a9",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/build_j2_split.py": {
+   "head": "92989166707d7d232b7afd133ef757fed5bf1f5d",
+   "worktree": "92989166707d7d232b7afd133ef757fed5bf1f5d",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/build_product.py": {
+   "head": "118f35fad7b197fae5a10dacf66ae32a1e704fa2",
+   "worktree": "118f35fad7b197fae5a10dacf66ae32a1e704fa2",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/check_j2_split.py": {
+   "head": "92520d9ff5162b9f24c770b382028a9959f4faa9",
+   "worktree": "92520d9ff5162b9f24c770b382028a9959f4faa9",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/parameters.json": {
+   "head": "0068008bdf213152171f235ac47bf41cb42c3093",
+   "worktree": "0068008bdf213152171f235ac47bf41cb42c3093",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/v2geom.py": {
+   "head": "ca860ad9aed6974daf74226a4ecdd7e1e3eabff7",
+   "worktree": "ca860ad9aed6974daf74226a4ecdd7e1e3eabff7",
+   "same": true
+  },
+  "src/cad/armold-mks-product-v2/validate_product.py": {
+   "head": "b5ae920d63fe53893bd2b5ef86ec03a7906fde1c",
+   "worktree": "b5ae920d63fe53893bd2b5ef86ec03a7906fde1c",
+   "same": true
+  }
+ },
+ "v1_frozen": {
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.3mf": {
+   "manifest": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da",
+   "now": "179008aa284dc397967a8635890c908ea7352e4515ac642fcc0a8bf632f4b0da",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.solidcraft": {
+   "manifest": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd",
+   "now": "5e172880ef738fac9599f67e5c9db9ea93294f9922a3a0131a1b9cf2f82b95fd",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/armold-type-mks-six-axis-concept.step": {
+   "manifest": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d",
+   "now": "20684d39fbb8d6df109734fa9f940dec7b78cb3fc2393ff4e9b2e78d5b38935d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/build-commands.json": {
+   "manifest": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d",
+   "now": "bb9742c2068b688a471deb20a09e8207792b5b2449029a2ace9e83268e86d96d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/front.png": {
+   "manifest": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285",
+   "now": "ba48add7511777ba669877db813cd96c317dd700f08a24ece4d3713dc6ceb285",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/iso.png": {
+   "manifest": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f",
+   "now": "785f896b09c5ee87aca6eee8ba1bddde2ff26de3c84154f91468eb45736bc47f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/kinematics.json": {
+   "manifest": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+   "now": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/parameters.json": {
+   "manifest": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+   "now": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/provenance.json": {
+   "manifest": "3968a78be6993244aff8138f452e4490dceb88f04ae73737c5674ca9f1754a27",
+   "now": "3968a78be6993244aff8138f452e4490dceb88f04ae73737c5674ca9f1754a27",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/README.md": {
+   "manifest": "9b0e74ec2262316747694dd8585c8a6a442d65d68e34c4b2b0e523c11953107f",
+   "now": "9b0e74ec2262316747694dd8585c8a6a442d65d68e34c4b2b0e523c11953107f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-principle-schematic-NONFUNCTIONAL.solidcraft": {
+   "manifest": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d",
+   "now": "34dd0fe028e9f66384aaed172e4ae91bc527cd67c6d6468b1ee740cd9420ed9d",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-principle-schematic.png": {
+   "manifest": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3",
+   "now": "797e7dae1574818d8b8d8b134deb560488da4c36df37b23f6f3a579bba468cd3",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-commands.json": {
+   "manifest": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f",
+   "now": "d98d41ac43e16c895a7590630e63f5caa6464c5b338edc956a6baa84f535df5f",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-raw.png": {
+   "manifest": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4",
+   "now": "8ef8b41b9dcd787598ff73579d4ebe71711a46d3da7fbb7ebcadd88768d656b4",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/reducer-schematic-validation.json": {
+   "manifest": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c",
+   "now": "d3ee8194b356885cb70ccd76e5cdc19518c614deb3981c143b23f5e4a94b266c",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/REFERENCE-LICENSE-CERN-OHL-S-2.0.txt": {
+   "manifest": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+   "now": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/right.png": {
+   "manifest": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512",
+   "now": "3c183eab37e4e2578228250655a5f692d8da4f444d8f21fb9d17a2e47762e512",
+   "same": true
+  },
+  "models/armold-mks-concept-v1/validation.json": {
+   "manifest": "c7cf84a0099f859fe874959457c50cd48ea8537ba9ec0d149cb9a4dd33e597f1",
+   "now": "c7cf84a0099f859fe874959457c50cd48ea8537ba9ec0d149cb9a4dd33e597f1",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/build_concept.py": {
+   "manifest": "e5b6e6e4a7c861290fde3aa90feab7b6e673435f22d29b6dab79e3bed4d86a0e",
+   "now": "e5b6e6e4a7c861290fde3aa90feab7b6e673435f22d29b6dab79e3bed4d86a0e",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/build_reducer_schematic.py": {
+   "manifest": "fb88b23924eaf7a49cb976333a628292e1a1bc966fef61b694d1cfbc3d3e4f8b",
+   "now": "fb88b23924eaf7a49cb976333a628292e1a1bc966fef61b694d1cfbc3d3e4f8b",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/parameters.json": {
+   "manifest": "b5d17b4b3616ca6cc0f5ae558c085e52f9c2631119ce50282c16c70c542ef776",
+   "now": "b5d17b4b3616ca6cc0f5ae558c085e52f9c2631119ce50282c16c70c542ef776",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/README.md": {
+   "manifest": "f4c96041250de1ecb35c22acbdfaa62af729fc602f4ce4b49b4f99482f150de7",
+   "now": "f4c96041250de1ecb35c22acbdfaa62af729fc602f4ce4b49b4f99482f150de7",
+   "same": true
+  },
+  "src/cad/armold-mks-concept/validate_concept.py": {
+   "manifest": "0c222eac9aa5a0770800bdc73e298ddbd4b0b80a4661cdb71bb5d0aa4dac8feb",
+   "now": "0c222eac9aa5a0770800bdc73e298ddbd4b0b80a4661cdb71bb5d0aa4dac8feb",
+   "same": true
+  }
+ },
+ "unchecked": [],
+ "scope": [
+  "Interference is checked at the display pose only (the pose the model is built in) - other poses and continuous rotation are not checked.",
+  "Blender rotation tests (C7) are kinematic checks, not collision checks.",
+  "Envelope bodies are solid; containment = keep-out box fully inside the solid module (v1 motor/driver/connector assumptions)."
+ ]
+}

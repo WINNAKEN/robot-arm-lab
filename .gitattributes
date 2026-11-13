@@ -1,0 +1,5 @@
+* -text
+*.stl binary
+*.webp binary
+
+# Preserve the byte hashes of imported source files; do not normalize line endings.

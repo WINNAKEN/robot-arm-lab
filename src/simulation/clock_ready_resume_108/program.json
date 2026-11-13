@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "dt_s": 0.008333333333333333,
+  "duration_s": 42,
+  "steps": 5040,
+  "capture_stride": 12,
+  "capture_count": 421,
+  "fps": 10,
+  "resolution": [
+    640,
+    480
+  ],
+  "drive": {
+    "type": "acceleration",
+    "kp": 64,
+    "kd": 16
+  },
+  "initial_opening_m": 0.04,
+  "gravity_all": true,
+  "segments": [
+    {
+      "name": "initial_hold",
+      "kind": "hold",
+      "duration_s": 2,
+      "arm": {
+        "J1": 0.0,
+        "J2": 0.0,
+        "J3": 0.0,
+        "J4": 0.0,
+        "J5": 0.0,
+        "J6": 0.0
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    },
+    {
+      "name": "raise",
+      "kind": "move",
+      "duration_s": 5,
+      "arm": {
+        "J1": 0.0,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": 0.0,
+        "J5": 0.0,
+        "J6": 0.0
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": false
+    },
+    {
+      "name": "raise_settle",
+      "kind": "hold",
+      "duration_s": 1,
+      "arm": {
+        "J1": 0.0,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": 0.0,
+        "J5": 0.0,
+        "J6": 0.0
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    },
+    {
+      "name": "sweep_left",
+      "kind": "move",
+      "duration_s": 6,
+      "arm": {
+        "J1": -1.0471975511965976,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": -0.4363323129985824,
+        "J5": -0.2617993877991494,
+        "J6": -0.7853981633974483
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": false
+    },
+    {
+      "name": "sweep_left_settle",
+      "kind": "hold",
+      "duration_s": 1,
+      "arm": {
+        "J1": -1.0471975511965976,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": -0.4363323129985824,
+        "J5": -0.2617993877991494,
+        "J6": -0.7853981633974483
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    },
+    {
+      "name": "sweep_right",
+      "kind": "move",
+      "duration_s": 9,
+      "arm": {
+        "J1": 1.0471975511965976,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": 0.4363323129985824,
+        "J5": 0.2617993877991494,
+        "J6": 0.7853981633974483
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": false
+    },
+    {
+      "name": "sweep_right_settle",
+      "kind": "hold",
+      "duration_s": 1,
+      "arm": {
+        "J1": 1.0471975511965976,
+        "J2": -0.6108652381980153,
+        "J3": 0.3490658503988659,
+        "J4": 0.4363323129985824,
+        "J5": 0.2617993877991494,
+        "J6": 0.7853981633974483
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    },
+    {
+      "name": "reach_high_right",
+      "kind": "move",
+      "duration_s": 8,
+      "arm": {
+        "J1": 1.0471975511965976,
+        "J2": -0.9599310885968813,
+        "J3": -0.4363323129985824,
+        "J4": -0.4363323129985824,
+        "J5": -0.3490658503988659,
+        "J6": -1.0471975511965976
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": false
+    },
+    {
+      "name": "reach_high_right_settle",
+      "kind": "hold",
+      "duration_s": 1,
+      "arm": {
+        "J1": 1.0471975511965976,
+        "J2": -0.9599310885968813,
+        "J3": -0.4363323129985824,
+        "J4": -0.4363323129985824,
+        "J5": -0.3490658503988659,
+        "J6": -1.0471975511965976
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    },
+    {
+      "name": "reach_high_right_observe",
+      "kind": "hold",
+      "duration_s": 8,
+      "arm": {
+        "J1": 1.0471975511965976,
+        "J2": -0.9599310885968813,
+        "J3": -0.4363323129985824,
+        "J4": -0.4363323129985824,
+        "J5": -0.3490658503988659,
+        "J6": -1.0471975511965976
+      },
+      "opening_m": 0.04,
+      "gravity": true,
+      "checkpoint": true
+    }
+  ],
+  "settling": {
+    "window_s": 0.5,
+    "arm_position_rad": 0.008726646259971648,
+    "arm_velocity_rad_s": 0.017453292519943295,
+    "jaw_position_m": 0.0005,
+    "jaw_velocity_m_s": 0.001,
+    "pinion_position_rad": 0.03490658503988659,
+    "pinion_velocity_rad_s": 0.05235987755982989
+  },
+  "floor": {
+    "path": "/World/Floor",
+    "size": 1,
+    "scale": [
+      2,
+      2,
+      0.02
+    ],
+    "translation": [
+      0,
+      0,
+      -0.01
+    ]
+  },
+  "camera": {
+    "path": "/World/Camera",
+    "eye": [
+      1.4,
+      -1.6,
+      1.42
+    ],
+    "target": [
+      0,
+      0,
+      0.42
+    ],
+    "focal_length_mm": 35,
+    "horizontal_aperture_mm": 36,
+    "vertical_aperture_mm": 27
+  },
+  "assumptions": [
+    "Assumed mass, COM, inertia and effort limits; no real calibration.",
+    "All phases use gravity, native compensation and remaining original effort caps.",
+    "The cloud is finite sampled quasi-static TCP points, not a certified working volume.",
+    "Self collision is disabled for overlapping source AABB proxies; no grasp/load certification.",
+    "Fixed 40 mm opening; orientation-unconstrained workspace samples."
+  ]
+}

@@ -1,0 +1,8 @@
+# ST2 preparation only; hardware acceptance remains NOT_RUN.
+# This flag records an unapproved profile. Setting it to y cannot enable motion:
+# Default app_main starts no network/CAN. Optional prepared runtime starts AP/HTTP
+# with immutable false physical approvals; it still rejects CAN/torque/motion.
+# CONFIG_ROBOT_LAB_HARDWARE_PROFILE_APPROVED is not set
+# CONFIG_ROBOT_LAB_PREPARED_RUNTIME is not set
+CONFIG_FREERTOS_HZ=1000
+CONFIG_LWIP_MAX_SOCKETS=16

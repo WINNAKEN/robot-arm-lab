@@ -1,0 +1,23 @@
+{
+  "status": "SIMULATION_ASSUMPTION",
+  "physical_verified": false,
+  "mass_kg": [1.2, 0.65, 0.7, 0.65, 0.4, 0.35, 0.2],
+  "mass_basis": "Illustrative per-link starter masses, not measured or inferred from filled CAD volume",
+  "com_basis": "Centre of each link-local mesh bounding box, assumed mass distribution",
+  "inertia_basis": "Uniform solid bounding box about assumed COM; diagonal m*(b*b+c*c)/12; not CAD/physical inertia",
+  "collision_basis": "One bounding box per physical link; conservative proxy can create false contacts",
+  "joint_limit_deg": 170.0,
+  "joint_limit_basis": "CAD example range relative to displayed zero, not measured mechanical limits",
+  "velocity_rad_s": 0.5,
+  "effort_Nm": [3.0, 6.0, 5.0, 2.0, 2.0, 1.0],
+  "actuator_basis": "Illustrative simulation caps, not MKS/reducer ratings or safe operating commands",
+  "damping_Nm_s_rad": 0.05,
+  "friction_Nm": 0.0,
+  "can_ids": null,
+  "motor_signs": null,
+  "measured_gear_ratios": null,
+  "physical_zeros": null,
+  "encoder_scales": null,
+  "gripper": "NOT_MODELLED",
+  "tcp_basis": "Nominal CAD tool-front +X32mm from Link6; not a calibrated physical TCP"
+}

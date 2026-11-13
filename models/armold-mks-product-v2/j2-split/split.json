@@ -1,0 +1,209 @@
+{
+ "units": "mm",
+ "frame": "J2 local: output axis +Z (= Link2 +Y), joint centre at origin, output face z = +D/2 (= +18), +X = Link2 +X, +Y = -(Link2 +Z); at the display pose +Z is the v1 J2 world axis [-0.2588, 0.9659, 0]",
+ "parts": [
+  "J2_REAR_HOUSING",
+  "J2_REDUCER_HOUSING",
+  "J2_OUTPUT_FLANGE",
+  "J2_BEARING_RETAINER",
+  "J2_ACCENT_RING_PART",
+  "J2_END_CAP_PART"
+ ],
+ "references": [
+  "REF_MOTOR_ASSUMED",
+  "REF_DRIVER_ASSUMED",
+  "REF_CONNECTOR_ASSUMED",
+  "REF_REDUCER_SPACE",
+  "REF_OUTPUT_BEARING"
+ ],
+ "child_link_references": [
+  "A2_CHILD_HUB",
+  "A2_CHILD_TUBE"
+ ],
+ "interfaces": {
+  "motor_face": {
+   "z_mm": -18.0,
+   "pilot_dia_mm": 22.3,
+   "bolts": "4 x M3, clearance 3.4 on a 31.0 mm square",
+   "note": "motor face against the rear wall underside; screws from the reducer side into the motor"
+  },
+  "reducer_space": {
+   "radius_mm": 39.5,
+   "z_from_mm": -12.0,
+   "z_to_mm": 0.3000000000000007,
+   "depth_mm": 12.3,
+   "type": "not selected (plan 014 B3)"
+  },
+  "reducer_output_to_flange": {
+   "pilot_dia_mm": 16.0,
+   "pilot_depth_mm": 3.0,
+   "inserts": "6 x M3 heat-set at r 22.0 from the flange underside"
+  },
+  "child_link_to_flange": {
+   "inserts": "6 x M3 heat-set at r 22.0 from the flange top (offset 30.0 deg)",
+   "flange_top_z_mm": 18.0,
+   "stationary_top_z_mm": 17.5,
+   "stationary_gap_mm": 0.5
+  },
+  "output_bearing_seat": {
+   "model": "6812 (placeholder, d x D x B = 60 x 78 x 10) - chosen after the reducer (plan 014 B3)",
+   "id_mm": 60.0,
+   "od_mm": 78.0,
+   "width_mm": 10.0,
+   "z_from_mm": 4.300000000000001,
+   "z_to_mm": 14.3,
+   "shoulder": "lip r 33.0 .. 39.0, z 0.3000000000000007 .. 4.300000000000001",
+   "outer_ring_held_by": "J2_BEARING_RETAINER from above"
+  },
+  "bearing_retainer": {
+   "thickness_mm": 3.2,
+   "inner_radius_mm": 35.5,
+   "outer_radius_mm": 50.5,
+   "radial_clearance_mm": 0.15,
+   "screw_count": 6,
+   "screw_radius_mm": 44.5,
+   "screw_phase_deg": 30.0,
+   "clearance_dia_mm": 3.4,
+   "counterbore_dia_mm": 6.2,
+   "counterbore_depth_mm": 1.9,
+   "insert_hole_dia_mm": 4.2,
+   "insert_depth_mm": 8.0,
+   "z_from_mm": 14.3,
+   "z_to_mm": 17.5,
+   "screws": "6 x M3 button head through the retainer into heat-set inserts in the reducer housing"
+  },
+  "rear_housing_to_reducer_housing": {
+   "bolts": "6 x M3 at r 43.5",
+   "rear": "clearance 3.4 + counterbore Ø6.0 x 3.2",
+   "front": "heat-set insert hole Ø4.2 x 8.0"
+  },
+  "accent_ring": {
+   "radial_clearance_mm": 0.15,
+   "z_from_mm": 11.5,
+   "z_to_mm": 17.5,
+   "notch_inner_radius_mm": 50.65,
+   "held_by": "the retainer rim (r up to the retainer outer radius) above the ring's lower part"
+  },
+  "end_cap": {
+   "spigot_radial_clearance_mm": 0.15,
+   "spigot_height_mm": 3.0,
+   "spigot_wall_mm": 2.0,
+   "cable_exit_dia_mm": 10.0,
+   "outer_fillet_mm": 3.0,
+   "screw_angles_deg": [
+    0,
+    90,
+    270
+   ],
+   "screw_radius_mm": 31.5,
+   "clearance_dia_mm": 3.4,
+   "counterbore_dia_mm": 6.2,
+   "counterbore_depth_mm": 1.9,
+   "pillar_dia_mm": 8.0,
+   "pillar_rib_to_radius_mm": 37.5,
+   "pillar_gap_to_spigot_mm": 0.5,
+   "insert_hole_dia_mm": 4.2,
+   "insert_depth_mm": 8.0,
+   "can_bore_radius_mm": 37.0,
+   "pillar_z_mm": [
+    -81.5,
+    -18.0
+   ],
+   "screws": "3 x M3 button head through the cap into heat-set inserts in the rear-housing pillars"
+  }
+ },
+ "fit_values_status": "placeholders until the fit coupons (models/fit-coupons-v1) are printed and judged",
+ "min_wall_mm": {
+  "can": 2.0,
+  "rear_wall": 6.0,
+  "reducer_housing_side": 12.5,
+  "bearing_seat_side": 10.0,
+  "flange_collar": 2.0,
+  "accent_ring_lower": 2.85,
+  "accent_ring_upper": 1.3500000000000014,
+  "cap_spigot": 2.0,
+  "retainer_under_counterbore": 1.3000000000000003,
+  "cap_under_counterbore": 4.1,
+  "joint_insert_to_reducer_space": 1.8999999999999986,
+  "joint_insert_to_outside": 6.4,
+  "retainer_insert_to_bearing_seat": 3.3999999999999986,
+  "retainer_insert_to_ring_seat": 2.4,
+  "pillar_around_insert": 1.9
+ },
+ "clearances_mm": {
+  "joint_counterbore_to_rear_fillet": 0.5,
+  "joint_counterbore_to_can": 1.5,
+  "cap_counterbore_to_cap_fillet": 0.3999999999999986,
+  "cap_screw_to_spigot": 1.6499999999999986,
+  "retainer_counterbore_to_inner_edge": 5.899999999999999,
+  "retainer_counterbore_to_outer_edge": 2.8999999999999986,
+  "retainer_inner_edge_to_flange": 5.5
+ },
+ "print_orientation": {
+  "J2_REAR_HOUSING": "rear-wall inner face (z = -12) on the bed, can and pillars upward",
+  "J2_REDUCER_HOUSING": "underside (z = -12) on the bed - the lip underside needs support",
+  "J2_OUTPUT_FLANGE": "underside (collar) on the bed",
+  "J2_BEARING_RETAINER": "flat, counterbores upward",
+  "J2_ACCENT_RING_PART": "flat, notch upward",
+  "J2_END_CAP_PART": "outer face on the bed, spigot upward"
+ },
+ "fasteners": {
+  "m3_heat_set_inserts": 27,
+  "m3_screws": {
+   "motor": 4,
+   "rear_to_reducer_housing": 6,
+   "retainer_button_head": 6,
+   "end_cap_button_head": 3
+  },
+  "note": "screw lengths are chosen after the fit coupons and the reducer; only inserts are on hand"
+ },
+ "checks": {
+  "unchecked_pairs_0": true,
+  "part_part_interference_0": true,
+  "part_reference_interference_0": true,
+  "part_child_link_interference_0": true,
+  "parts_inside_a2_envelope": true
+ },
+ "part_part": [],
+ "part_reference": [],
+ "part_child_link": [],
+ "contacts_thinner_than_mm": 0.001,
+ "contacts": [
+  {
+   "a": "J2_REAR_HOUSING",
+   "b": "J2_END_CAP_PART",
+   "volume_mm3": 8.632978486080228e-15,
+   "bbox": {
+    "min": [
+     -37.74747221198691,
+     -37.97188186645508,
+     -85.0
+    ],
+    "max": [
+     38.0,
+     37.97188186645508,
+     -85.0
+    ]
+   },
+   "by": "manifold3d on the exported STL (interference: the operation failed: boolean Intersect: the operation failed: no result)"
+  }
+ ],
+ "envelope_scale_for_check": 1.001,
+ "outside_envelope_mm3": {
+  "J2_REAR_HOUSING": 0.0,
+  "J2_REDUCER_HOUSING": 0.0,
+  "J2_OUTPUT_FLANGE": 0.0,
+  "J2_BEARING_RETAINER": -0.057,
+  "J2_ACCENT_RING_PART": 0.016,
+  "J2_END_CAP_PART": 0.001
+ },
+ "outside_tolerance_relative": 1e-05,
+ "unchecked": [],
+ "interference_unchecked_raw": [
+  {
+   "a": "J2_REAR_HOUSING",
+   "b": "J2_END_CAP_PART",
+   "reason": "the operation failed: boolean Intersect: the operation failed: no result"
+  }
+ ]
+}

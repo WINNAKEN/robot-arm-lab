@@ -1,0 +1,577 @@
+{
+ "units": "mm (angles in deg)",
+ "status": "MP17 PROTOTYPE - whole manipulator v1: existing modules (J2 / J3 = MP16 j23-drive-v1 · J5 = MP10 j5-wrist-v1 · wrist-type reducer = MP6 cycloid-27-v1 · gripper KG1 = MP8 at the MP9 tool-flange pose) joined by new printed links. Purchased-part sizes are listing / nominal values - measure on arrival and recalibrate (MP16 user words carried: 「오기전에 모델링은 끝내놔 치수보정은 나중에 한다고해도」)",
+ "frame": "world = robot base frame at q = 0 (all link frames parallel to world): z up, desk z 0, J1 axis = z through x = y = 0. Joint origins at q = 0 (v1 + kinematics_override): J1 (0,0,96) · J2 (0,0,174) · J3 (165,0,174) · J4 (330,0,174) · J5 (408,0,174) · J6 (548,0,174). Axes: J1 z · J2 y · J3 y · J4 x · J5 y · J6 x. Part STLs are saved in their own local frames (see layout.py frames)",
+ "kinematics_override": {
+  "forearm_mm": 165.0,
+  "v1_forearm_mm": 140.0,
+  "decision": "user 2026-11-06 question window 「165 로 늘림 (권장)」 after 「j2,j3가 j4 닿는거 너무 이상한거아니야/」 · 「디자인요소도 생각해야지」 — at 140 the J4 can rear cover sat 6 mm inside the J3 module circle (r 59) in the side view",
+  "note": "only J3 -> J4 changes (+25 along the forearm); v1 files are not edited - Codex URDF must take the same change (HANDOFF)"
+ },
+ "wrist": {
+  "output_face_from_joint": 18.0,
+  "mp6_output_face": 43.5,
+  "note": "J4 / J6 MP6 output face = joint origin + 18 along the axis (MP10 neck face = J4 + 18); motor face = output face - 43.5 (MP6 stack)"
+ },
+ "style": {
+  "colors": {
+   "white": "#FFFFFF",
+   "navy": "#0B2545",
+   "gray": "#6B7280",
+   "mint": "#34D399",
+   "source": "docs/brand/README.md (KMJH) · MP7 v3 exterior roles body / accent / frame / highlight"
+  },
+  "cap": {
+   "r": 36.0,
+   "t": 3.0,
+   "seat": 1.5,
+   "recess_extra": 0.15,
+   "seat_clear": 0.05,
+   "chamfer": 1.0,
+   "mark": {
+    "h": 22.0,
+    "w": 7.0,
+    "raise": 0.6
+   },
+   "note": "navy end cap over the six link screws (v3 end-cap look) - J2: flat disc in a 1.5 recess of the upper arm (0.05 clearance) · J3: on the flat forearm face (that face is on the print bed, a recess there was a 72 mm ceiling) · glue / thin double-sided tape · printed inner face down so the raised mint slash (0.6) is the top layers (AMS height-range colour)"
+  },
+  "logo": {
+   "height": 12.0,
+   "raise": 0.6,
+   "engrave": 0.6,
+   "centre_x": 72.5,
+   "note": "KMJH letters (MP7 kmjh_logo.py read-only): raised 0.6 on the upper-arm box +y face (navy by AMS height range) + engraved 0.6 on the plate -y face (the forearm passes 1 mm below it)"
+  },
+  "motor_cover": {
+   "clear": 0.6,
+   "wall": 3.0,
+   "corner": 3.0,
+   "corner_note": "outer 45 deg corner 3 with wall 3 leaves 2.1 at the corner (6 with 2.5 cut the walls apart - trial 2026-11-06)",
+   "rib_w": 3.0,
+   "rib_in": 0.75,
+   "rib_offsets": [
+    -14.0,
+    14.0
+   ],
+   "vent_w": 6.0,
+   "vent_margin": 8.0,
+   "z_j2": [
+    18.0,
+    67.0
+   ],
+   "z_j3": [
+    18.0,
+    58.0
+   ],
+   "mark": {
+    "h": 26.0,
+    "w": 7.0,
+    "raise": 0.6
+   },
+   "note": "white U cover (open toward the drum and at both ends - driver back and connectors exposed, air flows) held by ribs on the motor body (0.15 interference); J2 cover ends at z_m 67 below the shoulder plate layer (y 43); print PETG / ASA if the motor runs hot (PLA softens near 55 C)"
+  },
+  "base_ring": {
+   "r": [
+    56.8,
+    59.5
+   ],
+   "z": [
+    -42.0,
+    -38.0
+   ],
+   "groove_r": 56.6,
+   "groove_z": [
+    -42.2,
+    -37.8
+   ],
+   "split": 2.0,
+   "inner_top_chamfer": 1.4,
+   "note": "mint snap ring in a groove of the BASE wall (v3 base ring) - groove top 45 deg (a flat 1.4 ledge made Bambu ask for support, printprep 2026-11-06) · ring inner top corner 45 deg to match"
+  },
+  "shoulder_chamfer": 8.0
+ },
+ "sources": {
+  "v1_dir": "../../../models/armold-mks-concept-v1",
+  "drive_dir": "../../../models/j23-drive-v1",
+  "drive_params": "../j23-drive-v1/parameters.json",
+  "wrist_dir": "../../../models/j5-wrist-v1",
+  "wrist_code": "../j5-wrist-v1",
+  "reducer_dir": "../../../models/cycloid-27-v1",
+  "reducer_json": "../../../models/cycloid-27-v1/cycloid.json",
+  "gripper_dir": "../../../models/kmjh-gripper-v1",
+  "gripper_mount": "../../../models/arm-v3-kg1-assembly/assembly.json",
+  "motor_ledger": "../calibration/motor-mks42d.json",
+  "fits_ledger": "../calibration/print-fits.json",
+  "material": "PLA",
+  "fit_keys": [
+   "bearing_seat_extra",
+   "bearing_bore_extra",
+   "insert_hole_dia",
+   "m3_clearance_dia",
+   "m3_close_hole_dia"
+  ],
+  "fit_keys_note": "m3_close_hole_dia is a PENDING (placeholder) ledger key (MP8 gripper, 'M3 꼭 맞는 통과 구멍(세로)') - read from values or pending; used for the link screw holes that print vertical (review R1-20: the screws act as dowels)"
+ },
+ "j1": {
+  "motor_face_z": 63.5,
+  "note_height": "J1 motor face at world z 63.5 so the MP6 output face is at 107 and the turret top at 113 - J2 cap bottom = 174 - 59 = 115 (2 mm above the turret)",
+  "bearing": {
+   "model": "6818ZZ (= 61818-ZZ)",
+   "id": 90.0,
+   "od": 115.0,
+   "width": 13.0,
+   "count": 2,
+   "z": [
+    [
+     2.0,
+     15.0
+    ],
+    [
+     28.0,
+     41.0
+    ]
+   ],
+   "outer_ring_face_r": [
+    53.5,
+    57.5
+   ],
+   "inner_ring_face_r": [
+    45.0,
+    48.5
+   ],
+   "source": "user 「6818 두 개 새로 구매 (권장)」 (2026-11-06) - catalogue nominal 90 x 115 x 13; ring face widths are an ASSUMPTION (not on a drawing) - measure on arrival",
+   "kg_each": 0.25,
+   "kg_note": "ASSUMPTION - 618 series 90 mm class",
+   "seal_note": "ZZ (shields) - a 2RS seal drag (about 0.2 - 0.5 N·m each, author estimate) would eat the J1 motor margin (+5 % at 1 kg) - review R1-19"
+  },
+  "floor": {
+   "thickness": 6.0,
+   "radius": 85.0,
+   "desk_hole_dia": 5.5,
+   "desk_hole_r": 74.0,
+   "desk_hole_angles": [
+    45.0,
+    135.0,
+    225.0,
+    315.0
+   ],
+   "window": 28.0,
+   "can_hole_dia": 5.2,
+   "can_cbore": [
+    9.5,
+    3.0
+   ],
+   "base_screw_r": 53.75,
+   "base_screw_angles": [
+    45.0,
+    135.0,
+    225.0,
+    315.0
+   ],
+   "base_cbore": [
+    6.5,
+    3.0
+   ],
+   "note": "can holes oversize (M3 + 1.8) so the J1 can + MP6 self-centre on the turret before the floor screws are tightened from below (assembly README)",
+   "washer": [
+    7.0,
+    0.5
+   ],
+   "washer_note": "M3 flat washer (OD 7 · t 0.5) under each button head - the Ø5.2 float hole left only 0.15 of head seat (review R1-3) · counterbore Ø9.5 lets the washer float with the screw (±1.1)"
+  },
+  "base": {
+   "wall_r": [
+    49.5,
+    58.0
+   ],
+   "wall_top": -2.0,
+   "collar_r": [
+    41.0,
+    51.0
+   ],
+   "collar_z": [
+    -2.0,
+    2.0
+   ],
+   "sleeve_inner_r": 41.0,
+   "sleeve_top": 41.0,
+   "window_half_width": 9.0,
+   "window_top": -43.0,
+   "window_angles": [
+    90.0,
+    180.0,
+    270.0
+   ],
+   "chamfer": 0.8,
+   "window_note": "cable windows at the J1 can's terminal / motor-wire exits - 45 deg gable top (a 22 wide flat top was a bridge Bambu flagged)",
+   "cone_top": 1.8,
+   "cone_note": "inner 45 deg cone starts at z 1.8 so the J1 can lug corner (r 48.2 at z -7) keeps 1.3 radial (review R1-7)"
+  },
+  "spacer": {
+   "r": [
+    54.0,
+    57.35
+   ],
+   "z": [
+    15.0,
+    28.0
+   ]
+  },
+  "turret": {
+   "cup_outer_r": 63.0,
+   "shoulder_inner_r": 54.0,
+   "plate_z": [
+    43.5,
+    49.5
+   ],
+   "relief_r": 28.5,
+   "relief_d": 0.6,
+   "ext_x": [
+    60.0,
+    94.0
+   ],
+   "ext_y": [
+    -42.0,
+    51.0
+   ],
+   "ext_z0": 38.0,
+   "ext_chamfer": 8.0,
+   "foot_insert_xy": [
+    [
+     77.0,
+     -30.0
+    ],
+    [
+     77.0,
+     5.0
+    ],
+    [
+     77.0,
+     40.0
+    ]
+   ],
+   "mp6_screw_under_head": 4.0,
+   "mp6_cbore": 6.2,
+   "shoulder_gap": 0.4,
+   "shoulder_gap_note": "turret shoulder clears the top 6818 outer ring - the only axial datum is the MP6 output face (review R1-1: two axial datums fought through the turret screws)",
+   "bore_chamfer": 0.8,
+   "tie_xy": [
+    [
+     85.0,
+     -20.0
+    ],
+    [
+     85.0,
+     25.0
+    ]
+   ]
+  }
+ },
+ "j2": {
+  "module_axis_y0": -26.3,
+  "frame_note": "M2 (MP16 module frame) -> world(q=0): x_m = -x (motor behind J2), y_m = +z, z_m = +y; world = (-x_m, z_m + module_axis_y0, 174 + y_m)",
+  "hub": {
+   "r_contact": 33.0,
+   "r_outer": 46.0,
+   "y": [
+    48.2,
+    52.0
+   ],
+   "outer_face_y": 48.85,
+   "note": "J2_HUB: between the MP16 J2 output flange (STL z 69.5 - 74.5 -> y 43.2 - 48.2) and the upper arm (y 52); r > 33 stays 1.0 above the MP16 retainer screw heads (y 47.85)"
+  },
+  "shoulder": {
+   "plate_y": [
+    43.0,
+    51.0
+   ],
+   "ring_r": 60.0,
+   "hole_r": 48.0,
+   "body_x": [
+    -94.0,
+    94.0
+   ],
+   "body_z": [
+    113.5,
+    128.0
+   ],
+   "motor_keepout_x": -58.3,
+   "motor_keepout_z": 143.8,
+   "foot_z": [
+    113.0,
+    121.0
+   ],
+   "foot_x": [
+    62.0,
+    94.0
+   ],
+   "foot_y": [
+    -42.0,
+    50.5
+   ],
+   "wall_x": [
+    62.5,
+    68.0
+   ],
+   "wall_z": [
+    121.0,
+    137.0
+   ],
+   "cap_screw_cbore": [
+    6.5,
+    3.5
+   ],
+   "note": "plate on the J2 cap top (MP16 stand inserts r 53.5 phase 30 · same as the test stand) · feet bolt to the turret extensions beside the J2 cap (|x| > 59)",
+   "motor_keepout_note": "J2 motor slot travel -2.5 toward the drum keeps 2.0 (review R1-6)",
+   "foot_cbore": [
+    6.5,
+    1.0
+   ]
+  }
+ },
+ "j3": {
+  "module_axis_y0": 128.3,
+  "frame_note": "M3 -> world(q=0): x_m = +z (motor above the elbow at q = 0), y_m = -x, z_m = -y; world = (165 - y_m, module_axis_y0 - z_m, 174 + x_m)",
+  "upper_arm": {
+   "plate_y": [
+    52.0,
+    59.0
+   ],
+   "j2_disc_r": 40.0,
+   "j3_ring_r": 60.0,
+   "beam_half_z": 30.0,
+   "box_x": [
+    42.0,
+    103.0
+   ],
+   "box_y": [
+    52.0,
+    95.0
+   ],
+   "box_half_z": 28.0,
+   "hole_r": 48.0,
+   "j3_cbore": [
+    6.5,
+    3.5
+   ],
+   "j2_cbore": [
+    6.5,
+    5.0
+   ],
+   "chamfer": 4.0
+  },
+  "forearm": {
+   "plate_y": [
+    41.0,
+    51.0
+   ],
+   "boss_r_contact": 33.0,
+   "boss_r_outer": 46.0,
+   "boss_y": [
+    51.0,
+    53.8
+   ],
+   "boss_outer_face_y": 53.15,
+   "j3_disc_r": 50.0,
+   "beam_end_past_motor_face": 2.5,
+   "beam_half_z": 30.0,
+   "j3_cbore": [
+    6.5,
+    7.0
+   ],
+   "pad_cbore": [
+    6.5,
+    2.5
+   ],
+   "chamfer": 4.0,
+   "tie_x_from_j3": 45.0
+  }
+ },
+ "j4": {
+  "frame_note": "C4 (MP10-type can frame: z = J4 axis, z 0 = motor face) -> world(q=0): x_c = -y, y_c = -z, z_c = +x; world = (x4 + z_c, -x_c, 174 - y_c) with x4 = J4 x + 18 - 43.5 = 304.5"
+ },
+ "j5": {
+  "frame_note": "MP10 module frame -> world(q=0) = (J5 x + x_m, z_m - 21, 174 - y_m) (MP10 README: link 4 point = (x + 78, z - 21, -y)) · J5 x = 408"
+ },
+ "link5": {
+  "boss_r": 27.0,
+  "boss_y": [
+   32.5,
+   43.0
+  ],
+  "plate_y": [
+   43.0,
+   53.0
+  ],
+  "j5_disc_r": 30.0,
+  "beam_end_past_motor_face": 2.5,
+  "beam_half_z": 30.0,
+  "hub_cbore": [
+   6.5,
+   6.5
+  ],
+  "pad_cbore": [
+   6.5,
+   3.0
+  ],
+  "chamfer": 4.0,
+  "tie_x_from_j5": 70.0
+ },
+ "j6": {
+  "frame_note": "C6 -> world(q=0) = (x6 + z_c, -x_c, 174 - y_c) with x6 = J6 x + 18 - 43.5 = 522.5"
+ },
+ "pad": {
+  "x_face_j4": -41.0,
+  "x_face_j6": -43.0,
+  "x_inner": -28.0,
+  "y": [
+   -19.0,
+   24.5
+  ],
+  "z": [
+   -30.3,
+   -0.5
+  ],
+  "z_j6": [
+   -30.3,
+   -0.5
+  ],
+  "z_j6_note": "J6 pad 45 deg underside starts 0.3 lower - with the face at -43 the 45 deg plane met the can cylinder in a 3-edge STL sliver (trial build 2026-11-06)",
+  "inserts_yz": [
+   [
+    -13.0,
+    -5.0
+   ],
+   [
+    -13.0,
+    -26.0
+   ],
+   [
+    18.5,
+    -5.0
+   ],
+   [
+    18.5,
+    -26.0
+   ]
+  ],
+  "insert_depth": 7.5,
+  "note": "flat land on can half A (-x side) for the link (forearm / link 5) - inserts kept out of the MP10 connector pockets (see check_limits in build_arm.py)",
+  "z_note": "J4 pad bottom -30.3 (was -30.0): the insert walls are counted with the insert OD 4.2 (review R1-11) - same as z_j6"
+ },
+ "tool_flange": {
+  "r": 28.0,
+  "t": 10.0,
+  "boss_r": 10.0,
+  "boss_h": 1.5,
+  "insert_r": 15.75,
+  "insert_angles": [
+   0.0,
+   90.0,
+   180.0,
+   270.0
+  ],
+  "insert_depth": 8.0,
+  "mp6_screw_under_head": 4.0,
+  "mp6_cbore": 6.2,
+  "chamfer": 1.0,
+  "note": "gripper interface = MP9 rev1 (boss Ø20 × 1.5 · M3 inserts Ø31.5 at 0°) at J6 + 28 - KG1 BASE recess sits on the boss"
+ },
+ "gripper_screw": {
+  "length": 10.0,
+  "seat_z": 3.0,
+  "head": "M3 socket ISO 4762 (dk 5.5 · k 3.0)",
+  "source": "KG1 BASE.stl rays at r 15.75: counterbore floor z 3 · top z 6 (2026-11-06) · KG1 parameters screws.arm_m3 length 10 was a placeholder 「length set when the arm side is designed」"
+ },
+ "screws": {
+  "insert_length": 5.7,
+  "insert_length_source": "BOM R06 user 2026-10-26 「인서트는 M3 길이 5.7 바깥지름 4.2야」 - every insert hole must be at least 5.7 + 0.25 deep (C3)",
+  "min_engagement": 4.0,
+  "tip_to_floor_min": 0.5,
+  "lengths_available": [
+   6.0,
+   8.0,
+   10.0,
+   12.0,
+   16.0,
+   20.0,
+   25.0,
+   30.0
+  ],
+  "button_head": [
+   5.7,
+   1.65
+  ],
+  "socket_head": [
+   5.5,
+   3.0
+  ],
+  "head": "ISO 7380 button head (dk 5.7 · k 1.65) for every M3 link screw - the gripper G11 alone is ISO 4762 socket (review R1-2)"
+ },
+ "min_wall": 2.0,
+ "insert_od": 4.2,
+ "quality": "fine",
+ "poses": {
+  "display_deg": [
+   15.0,
+   -50.0,
+   70.0,
+   15.0,
+   25.0,
+   -10.0
+  ],
+  "ready_deg": [
+   0.0,
+   -60.0,
+   90.0,
+   0.0,
+   60.0,
+   0.0
+  ],
+  "sweep_step_deg": 5.0,
+  "grid_step_deg": 10.0,
+  "wanted_ranges_deg": {
+   "J1": [
+    -170.0,
+    170.0
+   ],
+   "J2": [
+    -100.0,
+    0.0
+   ],
+   "J3": [
+    -20.0,
+    120.0
+   ],
+   "J4": [
+    -120.0,
+    120.0
+   ],
+   "J5": [
+    -90.0,
+    90.0
+   ],
+   "J6": [
+    -170.0,
+    170.0
+   ]
+  },
+  "wanted_note": "AUTHOR PROPOSAL (not a user decision) - the range each joint must reach without self-collision from the display pose with the other joints held; sign = v1 kinematics (J2 negative lifts the upper arm · J3 positive bends the forearm down)"
+ },
+ "ties": {
+  "slot": [
+   4.5,
+   2.4
+  ],
+  "z_off": 24.0,
+  "pitch": 9.0,
+  "note": "cable-tie slot pairs (MP10 neck size 4.5 x 2.4) - anchors only; the cable route itself = MP18 shells (review R1-5)"
+ },
+ "fit_coupons": {
+  "height": 8.0,
+  "sleeve_ring_wall": 4.0,
+  "bore_ring_wall": 4.0,
+  "chamfer": 0.8,
+  "note": "print first - push the real 6818 onto the sleeve ring and into the bore ring before plate B (Ø90 / Ø115 fits are extrapolated from Ø10 - 21 coupons - review R1-4)"
+ }
+}

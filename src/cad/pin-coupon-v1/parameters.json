@@ -1,0 +1,18 @@
+{
+  "units": "mm",
+  "status": "MP13 PIN HOLE COUPON v1 - test piece for the steel dowel holes of the MP6 cycloid reducer; values here are test sizes, not fits (fits live only in src/cad/calibration/print-fits.json)",
+  "decision": ".dev/mp13-evidence/user-decisions-mp13.json - user 2026-11-04: the FIT_STRIP pin holes 3.8 / 3.9 / 4.0 / 4.1 were all too small for the real Ø4 dowel ('가장큰것도때려야지 겨우겨우들어가 거의안들어간다고봐도 무방') -> question box '0.05 간격 8 개 (권장)' · 'MP13 (권장)'",
+  "holes": [4.10, 4.15, 4.20, 4.25, 4.30, 4.35, 4.40, 4.45],
+  "holes_note": "left -> right = small -> large; 4.10 repeats the largest FIT_STRIP hole as a reference between the two prints",
+  "pitch": 10.0,
+  "first_x": 7.0,
+  "hole_y": 13.0,
+  "plate": {"length": 84.0, "width": 20.0, "thickness": 10.0, "corner_r": 2.0},
+  "plate_note": "through holes, printed flat (hole axis = z, like the reducer parts). Push a dowel in from the TOP face = the base / carrier press holes (they open upward when printed); from the BOTTOM face (bed side) = the cap slip holes (the cap prints with its pin holes opening on the bed). Thickness 10 > the cap slip depth 6.65; the base press depth is 21.85 so the press feel here is per 10 mm.",
+  "label": {"y": 3.0, "height": 3.5, "depth": 0.6, "format": "two digits after '4.' (10 = 4.10)", "x_offset": -2.3},
+  "print": {"printer": "Bambu Lab H2D 0.4 nozzle", "process": "0.20mm Standard @BBL H2D", "filament": "Bambu PLA Basic @BBL H2D", "plate": "Textured PEI Plate",
+            "note": "same as the reducer parts and the fit ledger's PLA rows - print the coupon with the filament (and nozzle) the housing / carrier will be printed with"},
+  "quality": "fine",
+  "check_tolerance": {"dia": 0.03, "centre": 0.05},
+  "check_note": "C2 reads each hole's area-equivalent diameter from STL sections at z = 2 / 5 / 8; a fine-tessellated circle reads a little under the design value, inside the tolerance"
+}

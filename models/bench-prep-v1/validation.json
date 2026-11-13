@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "status": "PASS",
+  "generator": "SolidCraft 0.18.2 CAD + reloaded STL validation",
+  "tool_sha256": "500d4a6cec4d75a7c15b6239a1a72d91e1cd5fe71ed22a9bb4a32ee164d78d64",
+  "python": "3.12.10",
+  "trimesh": "4.12.2",
+  "source_sha256": "d4184f361e1b297dbfc569d14fe0db0ecfad8f9d6205d1c90c7798de4e4ffd90",
+  "parameters_sha256": "5357681f03e3e322390f00ad7057440af4099f880278e6865dc77e2cfe277fa1",
+  "parts": [
+    {
+      "name": "cable_tie_mount",
+      "status": "PASS",
+      "checks": {
+        "finite_vertices": true,
+        "watertight": true,
+        "consistent_winding": true,
+        "single_connected_body": true,
+        "positive_volume": true,
+        "bounds_match": true,
+        "volume_matches_box_minus_void": true,
+        "opening_and_wall_probes": true
+      },
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          18.0,
+          5.0
+        ]
+      ],
+      "dimensions_mm": [
+        24.0,
+        18.0,
+        5.0
+      ],
+      "volume_mm3": 1980.0,
+      "expected_volume_mm3": 1980,
+      "vertices": 16,
+      "triangles": 32,
+      "connected_bodies": 1,
+      "opening": {
+        "type": "tunnel",
+        "width_mm": 5,
+        "height_mm": 2,
+        "open_ends": [
+          "Y=0",
+          "Y=depth"
+        ]
+      },
+      "probes": [
+        {
+          "label": "tunnel open through both Y ends",
+          "point_mm": [
+            12.0,
+            0.01,
+            3.0
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "tunnel open through both Y ends",
+          "point_mm": [
+            12.0,
+            9.0,
+            3.0
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "tunnel open through both Y ends",
+          "point_mm": [
+            12.0,
+            17.99,
+            3.0
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "floor intact",
+          "point_mm": [
+            12.0,
+            9.0,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "roof intact",
+          "point_mm": [
+            12.0,
+            9.0,
+            4.5
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "left wall intact",
+          "point_mm": [
+            4.75,
+            9.0,
+            3.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "right wall intact",
+          "point_mm": [
+            19.25,
+            9.0,
+            3.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        }
+      ],
+      "files": {
+        "json": {
+          "path": "cable_tie_mount.json",
+          "sha256": "563c5bc93456d2eea04aa831c58a36edb42de51f7424d6abd8277b60428ddcd2"
+        },
+        "stl": {
+          "path": "cable_tie_mount.stl",
+          "sha256": "e970b437398618d42b250d6231720eb85f6ef64fa639e6a8aa2be55d5dda1e3e"
+        },
+        "step": {
+          "path": "cable_tie_mount.step",
+          "sha256": "7a77366512a35f41eb4873a25d1067c755b534d8bcc43ac107acf8bac42adb22"
+        },
+        "solidcraft": {
+          "path": "cable_tie_mount.solidcraft",
+          "sha256": "315f4a6b530d453bbd6aac6b9e6d9ca7734ebf90af63fc1d458679b4d26d3ce2"
+        }
+      }
+    },
+    {
+      "name": "wire_label_tag",
+      "status": "PASS",
+      "checks": {
+        "finite_vertices": true,
+        "watertight": true,
+        "consistent_winding": true,
+        "single_connected_body": true,
+        "positive_volume": true,
+        "bounds_match": true,
+        "volume_matches_box_minus_void": true,
+        "opening_and_wall_probes": true
+      },
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          40.0,
+          16.0,
+          2.0
+        ]
+      ],
+      "dimensions_mm": [
+        40.0,
+        16.0,
+        2.0
+      ],
+      "volume_mm3": 1250.0,
+      "expected_volume_mm3": 1250,
+      "vertices": 16,
+      "triangles": 32,
+      "connected_bodies": 1,
+      "opening": {
+        "type": "through slot",
+        "width_mm": 5,
+        "depth_mm": 3,
+        "left_mm": 2,
+        "bottom_mm": 6.5
+      },
+      "probes": [
+        {
+          "label": "slot through thickness",
+          "point_mm": [
+            4.5,
+            8.0,
+            0.01
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "slot through thickness",
+          "point_mm": [
+            4.5,
+            8.0,
+            1.0
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "slot through thickness",
+          "point_mm": [
+            4.5,
+            8.0,
+            1.99
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "slot left ligament",
+          "point_mm": [
+            1.0,
+            8.0,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "slot right ligament",
+          "point_mm": [
+            23.5,
+            8.0,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "slot lower ligament",
+          "point_mm": [
+            4.5,
+            3.25,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "slot upper ligament",
+          "point_mm": [
+            4.5,
+            12.75,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        }
+      ],
+      "files": {
+        "json": {
+          "path": "wire_label_tag.json",
+          "sha256": "7cf69cde071a1c33962d5ef02853f1cfd8e83a83066dcc137bbe3a4c81fdd2a1"
+        },
+        "stl": {
+          "path": "wire_label_tag.stl",
+          "sha256": "6bcf04679a6bcd3a1b1e0bd09635eae0d59dfcb0270024f3a3cb4db75cc6ef96"
+        },
+        "step": {
+          "path": "wire_label_tag.step",
+          "sha256": "9c39c6cdcc0ae8db6db82fa5603f36f1b54aede85186a0216f8fac7fa5efeb8c"
+        },
+        "solidcraft": {
+          "path": "wire_label_tag.solidcraft",
+          "sha256": "a5f2cbea18f96b3b85207734de24cec185100756cdb32452690b9cd9b7e89a82"
+        }
+      }
+    },
+    {
+      "name": "parts_tray",
+      "status": "PASS",
+      "checks": {
+        "finite_vertices": true,
+        "watertight": true,
+        "consistent_winding": true,
+        "single_connected_body": true,
+        "positive_volume": true,
+        "bounds_match": true,
+        "volume_matches_box_minus_void": true,
+        "opening_and_wall_probes": true
+      },
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          90.0,
+          60.0,
+          12.0
+        ]
+      ],
+      "dimensions_mm": [
+        90.0,
+        60.0,
+        12.0
+      ],
+      "volume_mm3": 16640.0,
+      "expected_volume_mm3": 16640,
+      "vertices": 16,
+      "triangles": 28,
+      "connected_bodies": 1,
+      "opening": {
+        "type": "open tray",
+        "interior_mm": [
+          86,
+          56,
+          10
+        ],
+        "wall_mm": 2,
+        "floor_mm": 2
+      },
+      "probes": [
+        {
+          "label": "interior empty",
+          "point_mm": [
+            45.0,
+            30.0,
+            7.0
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "top open",
+          "point_mm": [
+            45.0,
+            30.0,
+            11.99
+          ],
+          "expected_inside": false,
+          "observed_inside": false,
+          "pass": true
+        },
+        {
+          "label": "floor intact",
+          "point_mm": [
+            45.0,
+            30.0,
+            1.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "wall intact",
+          "point_mm": [
+            1.0,
+            30.0,
+            6.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "wall intact",
+          "point_mm": [
+            89.0,
+            30.0,
+            6.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "wall intact",
+          "point_mm": [
+            45.0,
+            1.0,
+            6.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        },
+        {
+          "label": "wall intact",
+          "point_mm": [
+            45.0,
+            59.0,
+            6.0
+          ],
+          "expected_inside": true,
+          "observed_inside": true,
+          "pass": true
+        }
+      ],
+      "files": {
+        "json": {
+          "path": "parts_tray.json",
+          "sha256": "ffc9944598ee89626a5220ec50ae9b79c9a28b2c668a1d65d517228557e469b0"
+        },
+        "stl": {
+          "path": "parts_tray.stl",
+          "sha256": "95337ea543b508b83806d331e8c3d43b7b4b283511dc1bc6c514ae3731501e67"
+        },
+        "step": {
+          "path": "parts_tray.step",
+          "sha256": "d59502f3559df59f007569aadff427401b26f94557405cfa041ea5a134d2a799"
+        },
+        "solidcraft": {
+          "path": "parts_tray.solidcraft",
+          "sha256": "c6129d2173d9b1f51d8813912047b443b0ba50492ab5db2f2410b9bfab25fc0a"
+        }
+      }
+    }
+  ],
+  "limits": {
+    "slicing": "NOT_RUN_BY_THIS_GENERATOR",
+    "physical_print": "NOT_RUN",
+    "strength_and_fit": "NOT_RUN",
+    "printer_material": "Bambu H2D / PLA user confirmed; nozzle, plate and exact filament unconfirmed"
+  }
+}

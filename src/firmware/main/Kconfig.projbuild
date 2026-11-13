@@ -1,0 +1,22 @@
+menu "robot-arm-lab preparation"
+
+config ROBOT_LAB_HARDWARE_PROFILE_APPROVED
+    bool "Hardware profile approval record (inactive in ST2)"
+    default n
+    help
+        This preparation skeleton has no approved physical hardware profile.
+        Leave this option disabled. Enabling it only produces a warning log;
+        app_main keeps effective physical approval false. The default entry starts no
+        network or CAN transport. The separate prepared runtime option may start
+        SoftAP/HTTP, but still cannot authorize CAN, torque or motion.
+        Actual hardware approval and transport integration require a later
+        reviewed implementation and physical acceptance evidence.
+
+config ROBOT_LAB_PREPARED_RUNTIME
+    bool "Compile prepared owner/SoftAP/HTTP execution entry"
+    default n
+    help
+        Offline build candidate only. Hardware approvals remain immutable false.
+        Flashing and physical networking/motion require separate acceptance.
+
+endmenu

@@ -1,0 +1,56 @@
+{
+ "what": "MP17 보기용 그림(치수 원천 아님) — 부품 색 = layout · 구매품 어림 = 어두운 회색",
+ "poses": {
+  "display": {
+   "q_deg": [
+    15.0,
+    -50.0,
+    70.0,
+    15.0,
+    25.0,
+    -10.0
+   ],
+   "glb": "manipulator-v1-display.glb",
+   "glb_note": null,
+   "glb_sha256": "50e20e643001f45a5980744e71229aca99b1b18ec924778ee01546840d20582d",
+   "pngs": [
+    "display-front.png",
+    "display-iso.png",
+    "display-isoback.png",
+    "display-top.png"
+   ]
+  },
+  "zero": {
+   "q_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "glb": null,
+   "glb_note": "scratch only (not committed)",
+   "glb_sha256": "5a4471fd0e7a0e8ffe6e9db67069cbe229ca873f2edfeb9ed3ee09712212420f",
+   "pngs": [
+    "zero-iso.png"
+   ]
+  },
+  "ready": {
+   "q_deg": [
+    0.0,
+    -60.0,
+    90.0,
+    0.0,
+    60.0,
+    0.0
+   ],
+   "glb": null,
+   "glb_note": "scratch only (not committed)",
+   "glb_sha256": "01bf8cf87fca80ae949e94aa91856f520cff81105571fd85417aa174ca7a1f14",
+   "pngs": [
+    "ready-iso.png"
+   ]
+  }
+ }
+}

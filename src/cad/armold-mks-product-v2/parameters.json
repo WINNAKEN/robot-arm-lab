@@ -1,0 +1,49 @@
+{
+  "units": "mm",
+  "status": "PRODUCT_EXTERIOR_V2_ENVELOPE_NOT_FOR_FABRICATION",
+  "kinematics_source": "models/armold-mks-concept-v1/kinematics.json (joint origins, world axes, R_child at the display pose) and parameters.json (lengths, reducer diameters/depth, motor/driver assumptions)",
+  "exterior": {
+    "motor_can_radius_mm": 39.0,
+    "can_rear_clearance_mm": 4.0,
+    "end_cap_thickness_mm": 6.0,
+    "accent_ring_width_mm": 6.0,
+    "accent_ring_depth_mm": 3.0,
+    "output_side_sign": [1, 1, -1, 1, 1, 1]
+  },
+  "links": {
+    "base": {"foot_r": 82.0, "foot_h": 12.0, "column_r": 62.0, "band_z0": 20.0, "band_z1": 26.0, "column_top_r": 50.0},
+    "shoulder": {"cap_r": 45.0, "cap_h": 22.0, "post_half_w": 32.0, "post_y0": -82.0, "post_y1": -20.0},
+    "upper_arm": {"hub_r": 38.0, "hub_t": 44.0, "tube_r": 22.0},
+    "forearm": {"hub_r": 38.0, "hub_t": 44.0, "tube_r": 22.0, "tube_len": 80.0},
+    "wrist1": {"neck_w": 34.0, "neck_h": 52.0, "neck_gap": 30.0},
+    "wrist2": {"hub_r": 32.0, "hub_t": 34.0, "tube_r": 17.0, "tube_len": 86.0},
+    "tool": {"flange_r": 28.0, "flange_t": 10.0, "ring_r": 20.0, "ring_t": 4.0}
+  },
+  "j2_split": {
+    "rear_wall_thickness_mm": 6.0,
+    "can_wall_mm": 2.0,
+    "reducer_space_radius_mm": 39.5,
+    "lip_inner_radius_mm": 33.0,
+    "lip_height_mm": 4.0,
+    "output_bearing_placeholder": {"model": "6812 (placeholder, d x D x B = 60 x 78 x 10) - chosen after the reducer (plan 014 B3)", "id_mm": 60.0, "od_mm": 78.0, "width_mm": 10.0},
+    "stationary_top_gap_mm": 0.5,
+    "output_flange": {"collar_radius_mm": 32.0, "collar_height_mm": 2.0, "reducer_pilot_dia_mm": 16.0, "reducer_pilot_depth_mm": 3.0,
+                      "insert_count": 6, "insert_radius_mm": 22.0, "insert_depth_mm": 6.0},
+    "bearing_retainer": {"thickness_mm": 3.2, "inner_radius_mm": 35.5, "outer_radius_mm": 50.5, "radial_clearance_mm": 0.15,
+                         "screw_count": 6, "screw_radius_mm": 44.5, "screw_phase_deg": 30.0, "clearance_dia_mm": 3.4,
+                         "counterbore_dia_mm": 6.2, "counterbore_depth_mm": 1.9, "insert_hole_dia_mm": 4.2, "insert_depth_mm": 8.0},
+    "motor_interface": {"pilot_dia_mm": 22.3, "bolt_square_mm": 31.0, "bolt_clearance_dia_mm": 3.4},
+    "joint_bolts": {"count": 6, "radius_mm": 43.5, "phase_deg": 0.0, "clearance_dia_mm": 3.4, "counterbore_dia_mm": 6.0, "counterbore_depth_mm": 3.2,
+                    "insert_hole_dia_mm": 4.2, "insert_depth_mm": 8.0},
+    "accent_ring_radial_clearance_mm": 0.15,
+    "end_cap": {"spigot_radial_clearance_mm": 0.15, "spigot_height_mm": 3.0, "spigot_wall_mm": 2.0, "cable_exit_dia_mm": 10.0, "outer_fillet_mm": 3.0,
+                "screw_angles_deg": [0, 90, 270], "screw_radius_mm": 31.5, "clearance_dia_mm": 3.4, "counterbore_dia_mm": 6.2, "counterbore_depth_mm": 1.9,
+                "pillar_dia_mm": 8.0, "pillar_rib_to_radius_mm": 37.5, "pillar_gap_to_spigot_mm": 0.5, "insert_hole_dia_mm": 4.2, "insert_depth_mm": 8.0},
+    "fit_status": "pilot 22.3, insert 4.2, clearances 0.15 are placeholders until models/fit-coupons-v1 is printed and judged"
+  },
+  "notes": [
+    "Exterior bodies are solid envelopes. Wall thickness, internal cavities, fasteners, bearing seats and reducers are designed in the next step (plan 014 B).",
+    "Only J3 has its motor can on the +axis side (output face -Y) so the forearm sits on the opposite side of the upper arm; joint origins and axes are v1's.",
+    "Motor/driver/connector sizes are v1 assumptions (not measured)."
+  ]
+}

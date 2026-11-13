@@ -1,0 +1,3062 @@
+{
+  "commands": [
+    {
+      "command": "document.metadata.set",
+      "params": {
+        "values": {
+          "project": "robot-arm-lab",
+          "description": "NONFUNCTIONAL exploded cycloidal principle schematic: blank smooth discs, no cycloidal tooth profiles or matched dimensions. Reference Faze4 J2 27:1; not a verified ratio of this concept."
+        }
+      }
+    },
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "PRINCIPLE_ONLY_NOT_WORKING_REDUCER"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "INPUT_SHAFT_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 7.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "INPUT_SHAFT_SCHEMATIC",
+        "name": "INPUT_SHAFT_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "INPUT_SHAFT_SCHEMATIC"
+        ],
+        "color": "#8ca2b5"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "ECCENTRIC_JOURNAL_ASSUMED_1MM_OFFSET_PROFILE",
+        "plane": {
+          "origin": [
+            1.0,
+            0.0,
+            24.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 4.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 8.0,
+        "operation": "new",
+        "body_name": "ECCENTRIC_JOURNAL_ASSUMED_1MM_OFFSET",
+        "name": "ECCENTRIC_JOURNAL_ASSUMED_1MM_OFFSET_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "ECCENTRIC_JOURNAL_ASSUMED_1MM_OFFSET"
+        ],
+        "color": "#ef7a36"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_HOUSING_HALF_CUT_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 52.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_HOUSING_HALF_CUT_SCHEMATIC",
+        "name": "OUTER_HOUSING_HALF_CUT_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_HOUSING_HALF_CUT_SCHEMATIC_BORE",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 47.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "cut",
+        "targets": [
+          "OUTER_HOUSING_HALF_CUT_SCHEMATIC"
+        ],
+        "name": "OUTER_HOUSING_HALF_CUT_SCHEMATIC_CUT"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_HOUSING_HALF_CUT_SCHEMATIC"
+        ],
+        "color": "#46535f"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "HOUSING_SECTION_CUT",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -55,
+            0
+          ],
+          [
+            55,
+            0
+          ],
+          [
+            55,
+            55
+          ],
+          [
+            -55,
+            55
+          ]
+        ],
+        "closed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24,
+        "operation": "cut",
+        "targets": [
+          "OUTER_HOUSING_HALF_CUT_SCHEMATIC"
+        ],
+        "name": "SECTION_CUT_NONFUNCTIONAL"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_01_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            43.5,
+            0.0,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_01_SCHEMATIC",
+        "name": "OUTER_PIN_01_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_01_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_02_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            42.409364179909325,
+            9.679660627099675,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_02_SCHEMATIC",
+        "name": "OUTER_PIN_02_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_02_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_03_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            39.192145753755234,
+            18.873942651613778,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_03_SCHEMATIC",
+        "name": "OUTER_PIN_03_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_03_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_04_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            34.0096694873593,
+            27.121806380854906,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_04_SCHEMATIC",
+        "name": "OUTER_PIN_04_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_04_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_05_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            27.12180638085491,
+            34.0096694873593,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_05_SCHEMATIC",
+        "name": "OUTER_PIN_05_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_05_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_06_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            18.87394265161378,
+            39.192145753755234,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_06_SCHEMATIC",
+        "name": "OUTER_PIN_06_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_06_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_07_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            9.679660627099679,
+            42.409364179909325,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_07_SCHEMATIC",
+        "name": "OUTER_PIN_07_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_07_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_08_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            2.6636067881454934e-15,
+            43.5,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_08_SCHEMATIC",
+        "name": "OUTER_PIN_08_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_08_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_09_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -9.679660627099674,
+            42.409364179909325,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_09_SCHEMATIC",
+        "name": "OUTER_PIN_09_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_09_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_10_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -18.873942651613774,
+            39.192145753755234,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_10_SCHEMATIC",
+        "name": "OUTER_PIN_10_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_10_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_11_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -27.121806380854906,
+            34.009669487359304,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_11_SCHEMATIC",
+        "name": "OUTER_PIN_11_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_11_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_12_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -34.00966948735928,
+            27.121806380854927,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_12_SCHEMATIC",
+        "name": "OUTER_PIN_12_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_12_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_13_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -39.19214575375523,
+            18.873942651613785,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_13_SCHEMATIC",
+        "name": "OUTER_PIN_13_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_13_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_14_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -42.40936417990933,
+            9.679660627099663,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_14_SCHEMATIC",
+        "name": "OUTER_PIN_14_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_14_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_15_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -43.5,
+            5.327213576290987e-15,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_15_SCHEMATIC",
+        "name": "OUTER_PIN_15_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_15_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_16_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -42.40936417990933,
+            -9.679660627099652,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_16_SCHEMATIC",
+        "name": "OUTER_PIN_16_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_16_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_17_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -39.192145753755234,
+            -18.873942651613774,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_17_SCHEMATIC",
+        "name": "OUTER_PIN_17_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_17_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_18_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -34.00966948735929,
+            -27.12180638085492,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_18_SCHEMATIC",
+        "name": "OUTER_PIN_18_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_18_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_19_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -27.121806380854917,
+            -34.00966948735929,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_19_SCHEMATIC",
+        "name": "OUTER_PIN_19_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_19_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_20_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -18.873942651613785,
+            -39.19214575375523,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_20_SCHEMATIC",
+        "name": "OUTER_PIN_20_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_20_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_21_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -9.679660627099684,
+            -42.409364179909325,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_21_SCHEMATIC",
+        "name": "OUTER_PIN_21_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_21_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_22_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -7.99082036443648e-15,
+            -43.5,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_22_SCHEMATIC",
+        "name": "OUTER_PIN_22_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_22_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_23_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            9.679660627099631,
+            -42.40936417990934,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_23_SCHEMATIC",
+        "name": "OUTER_PIN_23_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_23_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_24_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            18.87394265161377,
+            -39.192145753755234,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_24_SCHEMATIC",
+        "name": "OUTER_PIN_24_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_24_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_25_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            27.121806380854903,
+            -34.009669487359304,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_25_SCHEMATIC",
+        "name": "OUTER_PIN_25_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_25_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_26_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            34.00966948735929,
+            -27.121806380854917,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_26_SCHEMATIC",
+        "name": "OUTER_PIN_26_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_26_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_27_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            39.19214575375524,
+            -18.873942651613753,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_27_SCHEMATIC",
+        "name": "OUTER_PIN_27_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_27_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTER_PIN_28_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            42.409364179909325,
+            -9.679660627099686,
+            34.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 1.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 24.0,
+        "operation": "new",
+        "body_name": "OUTER_PIN_28_SCHEMATIC",
+        "name": "OUTER_PIN_28_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTER_PIN_28_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "BLANK_DISC_1_NO_CYCLOIDAL_TEETH_PROFILE",
+        "plane": {
+          "origin": [
+            1.0,
+            0.0,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 39.875
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4.0,
+        "operation": "new",
+        "body_name": "BLANK_DISC_1_NO_CYCLOIDAL_TEETH",
+        "name": "BLANK_DISC_1_NO_CYCLOIDAL_TEETH_EXTRUDE"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "BLANK_DISC_1_NO_CYCLOIDAL_TEETH_BORE",
+        "plane": {
+          "origin": [
+            1.0,
+            0.0,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 5.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4.0,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "BLANK_DISC_1_NO_CYCLOIDAL_TEETH_CUT"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "color": "#d87737"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_1",
+        "plane": {
+          "origin": [
+            26.0,
+            0.0,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_1_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_2",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            22.516660498395403,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_2_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_3",
+        "plane": {
+          "origin": [
+            -12.999999999999995,
+            22.516660498395407,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_3_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_4",
+        "plane": {
+          "origin": [
+            -26.0,
+            3.184081677783118e-15,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_4_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_5",
+        "plane": {
+          "origin": [
+            -13.00000000000001,
+            -22.5166604983954,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_5_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_1_OUTPUT_CLEARANCE_6",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            -22.516660498395403,
+            68.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_1_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_1_OUTPUT_CLEARANCE_6_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "BLANK_DISC_2_NO_CYCLOIDAL_TEETH_PROFILE",
+        "plane": {
+          "origin": [
+            -1.0,
+            0.0,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 39.875
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4.0,
+        "operation": "new",
+        "body_name": "BLANK_DISC_2_NO_CYCLOIDAL_TEETH",
+        "name": "BLANK_DISC_2_NO_CYCLOIDAL_TEETH_EXTRUDE"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "BLANK_DISC_2_NO_CYCLOIDAL_TEETH_BORE",
+        "plane": {
+          "origin": [
+            -1.0,
+            0.0,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 5.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4.0,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "BLANK_DISC_2_NO_CYCLOIDAL_TEETH_CUT"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "color": "#d87737"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_1",
+        "plane": {
+          "origin": [
+            26.0,
+            0.0,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_1_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_2",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            22.516660498395403,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_2_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_3",
+        "plane": {
+          "origin": [
+            -12.999999999999995,
+            22.516660498395407,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_3_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_4",
+        "plane": {
+          "origin": [
+            -26.0,
+            3.184081677783118e-15,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_4_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_5",
+        "plane": {
+          "origin": [
+            -13.00000000000001,
+            -22.5166604983954,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_5_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "DISC_2_OUTPUT_CLEARANCE_6",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            -22.516660498395403,
+            82.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 3.5
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4,
+        "operation": "cut",
+        "targets": [
+          "BLANK_DISC_2_NO_CYCLOIDAL_TEETH"
+        ],
+        "name": "DISC_2_OUTPUT_CLEARANCE_6_CUT"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_1_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            26.0,
+            0.0,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_1_SCHEMATIC",
+        "name": "OUTPUT_PIN_1_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_1_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_2_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            22.516660498395403,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_2_SCHEMATIC",
+        "name": "OUTPUT_PIN_2_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_2_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_3_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -12.999999999999995,
+            22.516660498395407,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_3_SCHEMATIC",
+        "name": "OUTPUT_PIN_3_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_3_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_4_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -26.0,
+            3.184081677783118e-15,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_4_SCHEMATIC",
+        "name": "OUTPUT_PIN_4_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_4_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_5_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            -13.00000000000001,
+            -22.5166604983954,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_5_SCHEMATIC",
+        "name": "OUTPUT_PIN_5_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_5_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_PIN_6_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            13.000000000000004,
+            -22.516660498395403,
+            96.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 2.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20.0,
+        "operation": "new",
+        "body_name": "OUTPUT_PIN_6_SCHEMATIC",
+        "name": "OUTPUT_PIN_6_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_PIN_6_SCHEMATIC"
+        ],
+        "color": "#b9c4cf"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_FLANGE_SCHEMATIC_PROFILE",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            116.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 37.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 7.0,
+        "operation": "new",
+        "body_name": "OUTPUT_FLANGE_SCHEMATIC",
+        "name": "OUTPUT_FLANGE_SCHEMATIC_EXTRUDE"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "OUTPUT_FLANGE_SCHEMATIC_BORE",
+        "plane": {
+          "origin": [
+            0.0,
+            0.0,
+            116.0
+          ],
+          "x_dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_dir": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 8.0
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 7.0,
+        "operation": "cut",
+        "targets": [
+          "OUTPUT_FLANGE_SCHEMATIC"
+        ],
+        "name": "OUTPUT_FLANGE_SCHEMATIC_CUT"
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "OUTPUT_FLANGE_SCHEMATIC"
+        ],
+        "color": "#ed7d31"
+      }
+    },
+    {
+      "command": "component.list",
+      "params": {
+        "compact": true,
+        "bodies": true
+      }
+    }
+  ]
+}

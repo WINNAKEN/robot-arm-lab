@@ -1,0 +1,413 @@
+{
+  "source_items": [
+    {
+      "name": "BASE",
+      "group": "F",
+      "link": "KG1",
+      "printed": true,
+      "triangles": 5916
+    },
+    {
+      "name": "JAW_A",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": true,
+      "triangles": 8626
+    },
+    {
+      "name": "JAW_B",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": true,
+      "triangles": 6396
+    },
+    {
+      "name": "PINION",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": true,
+      "triangles": 10864
+    },
+    {
+      "name": "PAD_A",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": true,
+      "triangles": 904
+    },
+    {
+      "name": "PAD_B",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": true,
+      "triangles": 672
+    },
+    {
+      "name": "SERVO_BODY",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 36
+    },
+    {
+      "name": "SERVO_PLUGS",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 12
+    },
+    {
+      "name": "SPLINE",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "HORN",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 764
+    },
+    {
+      "name": "HORN_SCREW_HEAD",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_HEAD_18.41_-1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_SHANK_18.41_-1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_HEAD_18.41_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_SHANK_18.41_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_HEAD_39.11_-1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_SHANK_39.11_-1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_HEAD_39.11_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "M2_SHANK_39.11_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_HEAD_0",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_SHANK_0",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_HEAD_1",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_SHANK_1",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_HEAD_2",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_SHANK_2",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_HEAD_3",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PIN_SHANK_3",
+      "group": "R",
+      "link": "KG1_R",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ROD_-15.0",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ROD_-5.0",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ROD_10.5",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ROD_18.5",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_HEAD_0",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_SHANK_0",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_HEAD_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_SHANK_1",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_HEAD_2",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_SHANK_2",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_HEAD_3",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "ARM_SHANK_3",
+      "group": "F",
+      "link": "KG1",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_A_HEAD_0",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_A_SHANK_0",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_A_HEAD_1",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_A_SHANK_1",
+      "group": "A",
+      "link": "KG1_A",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_B_HEAD_0",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_B_SHANK_0",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_B_HEAD_1",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": false,
+      "triangles": 380
+    },
+    {
+      "name": "PAD_B_SHANK_1",
+      "group": "B",
+      "link": "KG1_B",
+      "printed": false,
+      "triangles": 380
+    }
+  ],
+  "links": {
+    "KG1": {
+      "mass_kg": 0.11919363636363636,
+      "com_m": [
+        0.0,
+        -0.015502233058214188,
+        0.025499999057501554
+      ],
+      "box_size_m": [
+        0.14000000059604645,
+        0.08699553459882736,
+        0.06499999854713678
+      ],
+      "inertia_kg_m2": [
+        0.00011713975967406956,
+        0.00023664903197865452,
+        0.00026985660979872455
+      ],
+      "triangles": 13564
+    },
+    "KG1_A": {
+      "mass_kg": 0.02464090909090909,
+      "com_m": [
+        0.02000000048428774,
+        -0.002675000112503767,
+        0.07199999876320362
+      ],
+      "box_size_m": [
+        0.06800000183284283,
+        0.034649998880922794,
+        0.06799999997019768
+      ],
+      "inertia_kg_m2": [
+        1.1960332625044847e-05,
+        1.8989927776250927e-05,
+        1.1960333145213912e-05
+      ],
+      "triangles": 11050
+    },
+    "KG1_B": {
+      "mass_kg": 0.030760909090909092,
+      "com_m": [
+        -0.02000000048428774,
+        0.006749999709427357,
+        0.056249999441206455
+      ],
+      "box_size_m": [
+        0.06800000183284283,
+        0.03349999897181988,
+        0.09949999861419201
+      ],
+      "inertia_kg_m2": [
+        2.8255175821030996e-05,
+        3.723159442068255e-05,
+        1.4729989951020405e-05
+      ],
+      "triangles": 8588
+    },
+    "KG1_R": {
+      "mass_kg": 0.009604545454545456,
+      "com_m": [
+        0.0,
+        -0.002749999985098839,
+        0.0
+      ],
+      "box_size_m": [
+        0.029688840731978416,
+        0.01549999974668026,
+        0.029999999329447746
+      ],
+      "inertia_kg_m2": [
+        9.126318743917363e-07,
+        1.4258165620598258e-06,
+        8.97766682673239e-07
+      ],
+      "triangles": 15428
+    }
+  },
+  "mass_allocation": "184.2g conserved; printed source masses; servo spline .2g to R; servo54.8g F; horn3g R; rods13.19g F; screws9g split16/4/4/9 of33 by F/A/B/R",
+  "mass_confidence": "ASSUMED_NOT_WEIGHED; COM/inertia uniform AABB placeholders"
+}

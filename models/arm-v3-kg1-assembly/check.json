@@ -1,0 +1,7266 @@
+{
+ "what": "MP9 외장 v3 + 그리퍼 KG1 조립 검사(커밋된 STL 로 스스로 계산 · 계획 051)",
+ "checks": {
+  "A_all_manifold_equal_mesh_positive": true,
+  "A_interface_measured_equals_params": true,
+  "A_tool_holes_match_gripper_and_ledger": true,
+  "A_link6_x_is_j6_axis": true,
+  "A_mount_rotation_proper": true,
+  "A_independent_fk_mount_and_roll": true,
+  "A_mount_face_contact_only": true,
+  "controls_all_as_expected": true,
+  "A_display_pose_gripper_free_of_arm": true
+ },
+ "controls": {
+  "C1_mounted_1mm_inside_overlaps": {
+   "max_mm3": 1842.5167,
+   "top": [
+    {
+     "grip": "BASE",
+     "arm": "LINK6_TOOL_FLANGE",
+     "mm3": 1842.5167
+    },
+    {
+     "grip": "BASE",
+     "arm": "LINK6_TOOL_RING",
+     "mm3": 311.0116
+    },
+    {
+     "grip": "ARM_SHANK_0",
+     "arm": "LINK6_TOOL_FLANGE",
+     "mm3": 0.0
+    }
+   ],
+   "ok": true
+  },
+  "C2_pushed_60_into_arm_hits": {
+   "max_mm3": 27416.1629,
+   "top": [
+    {
+     "grip": "SERVO_BODY",
+     "arm": "J6_MODULE",
+     "link": 5,
+     "mm3": 27416.1629
+    },
+    {
+     "grip": "BASE",
+     "arm": "J6_MODULE",
+     "link": 5,
+     "mm3": 27324.6356
+    },
+    {
+     "grip": "JAW_B",
+     "arm": "J6_MODULE",
+     "link": 5,
+     "mm3": 14520.4223
+    }
+   ],
+   "ok": true
+  },
+  "C3_open_or_inverted_mesh_fails_manifold_key": {
+   "open": {
+    "mesh_mm3": 57318.5805,
+    "manifold_mm3": 0.0
+   },
+   "inverted": {
+    "mesh_mm3": -85644.965,
+    "manifold_mm3": -85644.965
+   },
+   "ok": true
+  },
+  "C4_below_floor_fails_floor_key": {
+   "min_z": -978.027,
+   "ok": true
+  },
+  "C5_home_moved_to_elbow_hits_links_0_4": {
+   "max_mm3": 44695.6519,
+   "top": [
+    {
+     "grip": "BASE",
+     "arm": "J3_MODULE",
+     "link": 2,
+     "mm3": 44695.6519
+    },
+    {
+     "grip": "SERVO_BODY",
+     "arm": "J3_MODULE",
+     "link": 2,
+     "mm3": 25124.6344
+    },
+    {
+     "grip": "JAW_A",
+     "arm": "J4_MODULE",
+     "link": 3,
+     "mm3": 16262.554
+    }
+   ],
+   "ok": true
+  },
+  "C6_j5_folded_180_arm_self_hits": {
+   "top": [
+    {
+     "a": "J4_MODULE",
+     "b": "J6_MODULE",
+     "links": [
+      3,
+      5
+     ],
+     "mm3": 458272.3498
+    },
+    {
+     "a": "J4_MODULE",
+     "b": "LINK5_WRIST_BAR",
+     "links": [
+      3,
+      5
+     ],
+     "mm3": 15670.0231
+    }
+   ],
+   "ok": true
+  },
+  "C7_free_interval_synthetic": {
+   "got": [
+    {
+     "free": [
+      5,
+      15
+     ],
+     "first_blocked_below": 0,
+     "first_blocked_above": 20
+    },
+    {
+     "free": null,
+     "base_blocked": true
+    },
+    {
+     "free": [
+      0,
+      20
+     ],
+     "first_blocked_below": null,
+     "first_blocked_above": null
+    }
+   ],
+   "ok": true
+  },
+  "C8_independent_fk_catches_roll_and_face": {
+   "roll_plus_90_gx_dot": [
+    -0.0,
+    0.0
+   ],
+   "on_boss_top_base_bottom": [
+    29.5,
+    29.5
+   ],
+   "ok": true
+  },
+  "C9_roll_45_screws_miss_holes": {
+   "max_mm3": 48.1351,
+   "shank_top": [
+    {
+     "grip": "ARM_SHANK_0",
+     "arm": "LINK6_TOOL_FLANGE",
+     "mm3": 48.1351
+    },
+    {
+     "grip": "ARM_SHANK_1",
+     "arm": "LINK6_TOOL_FLANGE",
+     "mm3": 48.135
+    }
+   ],
+   "ok": true
+  },
+  "C10_shift_0_5_boss_hits_recess_wall": {
+   "max_mm3": 13.097,
+   "fit_pairs": [
+    {
+     "grip": "BASE",
+     "arm": "LINK6_TOOL_RING",
+     "raw_mm3": 15.4548,
+     "inset_mm": 0.05,
+     "inset_mm3": 13.097
+    }
+   ],
+   "top": [
+    {
+     "grip": "BASE",
+     "arm": "LINK6_TOOL_RING",
+     "mm3": 13.097
+    },
+    {
+     "grip": "BASE",
+     "arm": "LINK6_TOOL_FLANGE",
+     "mm3": 0.0044
+    }
+   ],
+   "ok": true
+  },
+  "C11_hole_measure_catches_angle_count_depth": {
+   "rotated_20": {
+    "ok": false,
+    "false_rows": [
+     "angles"
+    ]
+   },
+   "one_dropped": {
+    "ok": false,
+    "false_rows": [
+     "count",
+     "angles"
+    ]
+   },
+   "bottom_up_2": {
+    "ok": false,
+    "false_rows": [
+     "screw_tip_above_bottom"
+    ]
+   },
+   "ok": true
+  }
+ },
+ "numbers": {
+  "manifold_vs_mesh": {
+   "arm/BASE_FOOT": {
+    "ok": true,
+    "mesh_mm3": 249423.5717,
+    "manifold_mm3": 249423.5717,
+    "status": "Error.NoError"
+   },
+   "arm/BASE_COLUMN": {
+    "ok": true,
+    "mesh_mm3": 639377.4083,
+    "manifold_mm3": 639377.4083,
+    "status": "Error.NoError"
+   },
+   "arm/BASE_LIGHT_RING": {
+    "ok": true,
+    "mesh_mm3": 6842.2878,
+    "manifold_mm3": 6842.2878,
+    "status": "Error.NoError"
+   },
+   "arm/J1_MODULE": {
+    "ok": true,
+    "mesh_mm3": 541965.4214,
+    "manifold_mm3": 541965.4214,
+    "status": "Error.NoError"
+   },
+   "arm/J1_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 4919.617,
+    "manifold_mm3": 4919.617,
+    "status": "Error.NoError"
+   },
+   "arm/LINK1_SHOULDER_CAP": {
+    "ok": true,
+    "mesh_mm3": 135088.6319,
+    "manifold_mm3": 135088.6319,
+    "status": "Error.NoError"
+   },
+   "arm/LINK1_POST": {
+    "ok": true,
+    "mesh_mm3": 226080.0157,
+    "manifold_mm3": 226080.0157,
+    "status": "Error.NoError"
+   },
+   "arm/J2_MODULE": {
+    "ok": true,
+    "mesh_mm3": 617600.2923,
+    "manifold_mm3": 617600.2923,
+    "status": "Error.NoError"
+   },
+   "arm/J2_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 5711.3665,
+    "manifold_mm3": 5711.3665,
+    "status": "Error.NoError"
+   },
+   "arm/J2_END_CAP": {
+    "ok": true,
+    "mesh_mm3": 26748.4545,
+    "manifold_mm3": 26748.4545,
+    "status": "Error.NoError"
+   },
+   "arm/J2_CAP_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8008,
+    "manifold_mm3": 268.8008,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_SHOULDER_HUB": {
+    "ok": true,
+    "mesh_mm3": 195886.8604,
+    "manifold_mm3": 195886.8604,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_SHOULDER_HUB_CAP": {
+    "ok": true,
+    "mesh_mm3": 3216.8018,
+    "manifold_mm3": 3216.8018,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_SHOULDER_HUB_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8005,
+    "manifold_mm3": 268.8005,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_UPPER_BAR": {
+    "ok": true,
+    "mesh_mm3": 298320.017,
+    "manifold_mm3": 298320.017,
+    "status": "Error.NoError"
+   },
+   "arm/J3_MODULE": {
+    "ok": true,
+    "mesh_mm3": 541964.8047,
+    "manifold_mm3": 541964.8047,
+    "status": "Error.NoError"
+   },
+   "arm/J3_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 4919.5969,
+    "manifold_mm3": 4919.5969,
+    "status": "Error.NoError"
+   },
+   "arm/J3_END_CAP": {
+    "ok": true,
+    "mesh_mm3": 26748.4088,
+    "manifold_mm3": 26748.4088,
+    "status": "Error.NoError"
+   },
+   "arm/J3_CAP_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.7996,
+    "manifold_mm3": 268.7996,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_LOGO_K": {
+    "ok": true,
+    "mesh_mm3": 65.041,
+    "manifold_mm3": 65.041,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_LOGO_K_SLASH": {
+    "ok": true,
+    "mesh_mm3": 14.7098,
+    "manifold_mm3": 14.7098,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_LOGO_M": {
+    "ok": true,
+    "mesh_mm3": 94.1828,
+    "manifold_mm3": 94.1828,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_LOGO_J": {
+    "ok": true,
+    "mesh_mm3": 58.812,
+    "manifold_mm3": 58.812,
+    "status": "Error.NoError"
+   },
+   "arm/LINK2_LOGO_H": {
+    "ok": true,
+    "mesh_mm3": 83.8239,
+    "manifold_mm3": 83.8239,
+    "status": "Error.NoError"
+   },
+   "arm/LINK3_ELBOW_HUB": {
+    "ok": true,
+    "mesh_mm3": 195887.067,
+    "manifold_mm3": 195887.067,
+    "status": "Error.NoError"
+   },
+   "arm/LINK3_ELBOW_HUB_CAP": {
+    "ok": true,
+    "mesh_mm3": 3216.8017,
+    "manifold_mm3": 3216.8017,
+    "status": "Error.NoError"
+   },
+   "arm/LINK3_ELBOW_HUB_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8001,
+    "manifold_mm3": 268.8001,
+    "status": "Error.NoError"
+   },
+   "arm/LINK3_FOREARM_BAR": {
+    "ok": true,
+    "mesh_mm3": 126077.15,
+    "manifold_mm3": 126077.15,
+    "status": "Error.NoError"
+   },
+   "arm/J4_MODULE": {
+    "ok": true,
+    "mesh_mm3": 487124.9183,
+    "manifold_mm3": 487124.9183,
+    "status": "Error.NoError"
+   },
+   "arm/J4_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 4241.0447,
+    "manifold_mm3": 4241.0447,
+    "status": "Error.NoError"
+   },
+   "arm/J4_END_CAP": {
+    "ok": true,
+    "mesh_mm3": 26748.4464,
+    "manifold_mm3": 26748.4464,
+    "status": "Error.NoError"
+   },
+   "arm/J4_CAP_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8017,
+    "manifold_mm3": 268.8017,
+    "status": "Error.NoError"
+   },
+   "arm/LINK4_NECK": {
+    "ok": true,
+    "mesh_mm3": 48180.0045,
+    "manifold_mm3": 48180.0045,
+    "status": "Error.NoError"
+   },
+   "arm/J5_MODULE": {
+    "ok": true,
+    "mesh_mm3": 487124.9187,
+    "manifold_mm3": 487124.9187,
+    "status": "Error.NoError"
+   },
+   "arm/J5_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 4241.0436,
+    "manifold_mm3": 4241.0436,
+    "status": "Error.NoError"
+   },
+   "arm/J5_END_CAP": {
+    "ok": true,
+    "mesh_mm3": 26748.4122,
+    "manifold_mm3": 26748.4122,
+    "status": "Error.NoError"
+   },
+   "arm/J5_CAP_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8001,
+    "manifold_mm3": 268.8001,
+    "status": "Error.NoError"
+   },
+   "arm/LINK5_WRIST_HUB": {
+    "ok": true,
+    "mesh_mm3": 106278.1111,
+    "manifold_mm3": 106278.1111,
+    "status": "Error.NoError"
+   },
+   "arm/LINK5_WRIST_HUB_CAP": {
+    "ok": true,
+    "mesh_mm3": 2123.5839,
+    "manifold_mm3": 2123.5839,
+    "status": "Error.NoError"
+   },
+   "arm/LINK5_WRIST_HUB_SLASH": {
+    "ok": true,
+    "mesh_mm3": 172.0313,
+    "manifold_mm3": 172.0313,
+    "status": "Error.NoError"
+   },
+   "arm/LINK5_WRIST_BAR": {
+    "ok": true,
+    "mesh_mm3": 88599.9993,
+    "manifold_mm3": 88599.9993,
+    "status": "Error.NoError"
+   },
+   "arm/J6_MODULE": {
+    "ok": true,
+    "mesh_mm3": 487124.9282,
+    "manifold_mm3": 487124.9282,
+    "status": "Error.NoError"
+   },
+   "arm/J6_ACCENT_RING": {
+    "ok": true,
+    "mesh_mm3": 4242.5672,
+    "manifold_mm3": 4242.5672,
+    "status": "Error.NoError"
+   },
+   "arm/J6_END_CAP": {
+    "ok": true,
+    "mesh_mm3": 26748.3369,
+    "manifold_mm3": 26748.3369,
+    "status": "Error.NoError"
+   },
+   "arm/J6_CAP_SLASH": {
+    "ok": true,
+    "mesh_mm3": 268.8046,
+    "manifold_mm3": 268.8046,
+    "status": "Error.NoError"
+   },
+   "arm/LINK6_TOOL_FLANGE": {
+    "ok": true,
+    "mesh_mm3": 23883.7064,
+    "manifold_mm3": 23883.7064,
+    "status": "Error.NoError"
+   },
+   "arm/LINK6_TOOL_RING": {
+    "ok": true,
+    "mesh_mm3": 471.2168,
+    "manifold_mm3": 471.2168,
+    "status": "Error.NoError"
+   },
+   "gripper/BASE": {
+    "ok": true,
+    "mesh_mm3": 85644.965,
+    "manifold_mm3": 85644.965,
+    "status": "Error.NoError"
+   },
+   "gripper/JAW_A": {
+    "ok": true,
+    "mesh_mm3": 30534.7097,
+    "manifold_mm3": 30534.7097,
+    "status": "Error.NoError"
+   },
+   "gripper/JAW_B": {
+    "ok": true,
+    "mesh_mm3": 37921.1475,
+    "manifold_mm3": 37921.1475,
+    "status": "Error.NoError"
+   },
+   "gripper/PINION": {
+    "ok": true,
+    "mesh_mm3": 4353.9029,
+    "manifold_mm3": 4353.9029,
+    "status": "Error.NoError"
+   },
+   "gripper/PAD_A_FLAT": {
+    "ok": true,
+    "mesh_mm3": 5442.2388,
+    "manifold_mm3": 5442.2388,
+    "status": "Error.NoError"
+   },
+   "gripper/PAD_B_FLAT": {
+    "ok": true,
+    "mesh_mm3": 4822.7896,
+    "manifold_mm3": 4822.7896,
+    "status": "Error.NoError"
+   },
+   "gripper/PAD_A_V": {
+    "ok": true,
+    "mesh_mm3": 5252.5721,
+    "manifold_mm3": 5252.5721,
+    "status": "Error.NoError"
+   },
+   "gripper/PAD_B_V": {
+    "ok": true,
+    "mesh_mm3": 4633.1229,
+    "manifold_mm3": 4633.1229,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/SERVO_BODY": {
+    "ok": true,
+    "mesh_mm3": 36899.5447,
+    "manifold_mm3": 36899.5447,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/SERVO_PLUGS": {
+    "ok": true,
+    "mesh_mm3": 3107.9997,
+    "manifold_mm3": 3107.9997,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/SPLINE": {
+    "ok": true,
+    "mesh_mm3": 92.8887,
+    "manifold_mm3": 92.8887,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/HORN": {
+    "ok": true,
+    "mesh_mm3": 908.0619,
+    "manifold_mm3": 908.0619,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/HORN_SCREW_HEAD": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_HEAD_18.41_-1": {
+    "ok": true,
+    "mesh_mm3": 18.1329,
+    "manifold_mm3": 18.1329,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_SHANK_18.41_-1": {
+    "ok": true,
+    "mesh_mm3": 15.0752,
+    "manifold_mm3": 15.0752,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_HEAD_18.41_1": {
+    "ok": true,
+    "mesh_mm3": 18.1329,
+    "manifold_mm3": 18.1329,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_SHANK_18.41_1": {
+    "ok": true,
+    "mesh_mm3": 15.0752,
+    "manifold_mm3": 15.0752,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_HEAD_39.11_-1": {
+    "ok": true,
+    "mesh_mm3": 18.1329,
+    "manifold_mm3": 18.1329,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_SHANK_39.11_-1": {
+    "ok": true,
+    "mesh_mm3": 15.0752,
+    "manifold_mm3": 15.0752,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_HEAD_39.11_1": {
+    "ok": true,
+    "mesh_mm3": 18.1329,
+    "manifold_mm3": 18.1329,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/M2_SHANK_39.11_1": {
+    "ok": true,
+    "mesh_mm3": 15.0752,
+    "manifold_mm3": 15.0752,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_HEAD_0": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_SHANK_0": {
+    "ok": true,
+    "mesh_mm3": 41.2586,
+    "manifold_mm3": 41.2586,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_HEAD_1": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_SHANK_1": {
+    "ok": true,
+    "mesh_mm3": 41.2586,
+    "manifold_mm3": 41.2586,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_HEAD_2": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_SHANK_2": {
+    "ok": true,
+    "mesh_mm3": 41.2586,
+    "manifold_mm3": 41.2586,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_HEAD_3": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PIN_SHANK_3": {
+    "ok": true,
+    "mesh_mm3": 41.2586,
+    "manifold_mm3": 41.2586,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ROD_-15.0": {
+    "ok": true,
+    "mesh_mm3": 3903.0166,
+    "manifold_mm3": 3903.0166,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ROD_-5.0": {
+    "ok": true,
+    "mesh_mm3": 3903.0167,
+    "manifold_mm3": 3903.0167,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ROD_10.5": {
+    "ok": true,
+    "mesh_mm3": 3903.0167,
+    "manifold_mm3": 3903.0167,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ROD_18.5": {
+    "ok": true,
+    "mesh_mm3": 3903.0166,
+    "manifold_mm3": 3903.0166,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_HEAD_0": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_SHANK_0": {
+    "ok": true,
+    "mesh_mm3": 68.7643,
+    "manifold_mm3": 68.7643,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_HEAD_1": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_SHANK_1": {
+    "ok": true,
+    "mesh_mm3": 68.7643,
+    "manifold_mm3": 68.7643,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_HEAD_2": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_SHANK_2": {
+    "ok": true,
+    "mesh_mm3": 68.7643,
+    "manifold_mm3": 68.7643,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_HEAD_3": {
+    "ok": true,
+    "mesh_mm3": 71.224,
+    "manifold_mm3": 71.224,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/ARM_SHANK_3": {
+    "ok": true,
+    "mesh_mm3": 68.7643,
+    "manifold_mm3": 68.7643,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_A_HEAD_0": {
+    "ok": true,
+    "mesh_mm3": 42.0739,
+    "manifold_mm3": 42.0739,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_A_SHANK_0": {
+    "ok": true,
+    "mesh_mm3": 55.0114,
+    "manifold_mm3": 55.0114,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_A_HEAD_1": {
+    "ok": true,
+    "mesh_mm3": 42.0739,
+    "manifold_mm3": 42.0739,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_A_SHANK_1": {
+    "ok": true,
+    "mesh_mm3": 55.0114,
+    "manifold_mm3": 55.0114,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_B_HEAD_0": {
+    "ok": true,
+    "mesh_mm3": 42.074,
+    "manifold_mm3": 42.074,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_B_SHANK_0": {
+    "ok": true,
+    "mesh_mm3": 55.0115,
+    "manifold_mm3": 55.0115,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_B_HEAD_1": {
+    "ok": true,
+    "mesh_mm3": 42.074,
+    "manifold_mm3": 42.074,
+    "status": "Error.NoError"
+   },
+   "gripper-ref/PAD_B_SHANK_1": {
+    "ok": true,
+    "mesh_mm3": 55.0115,
+    "manifold_mm3": 55.0115,
+    "status": "Error.NoError"
+   }
+  },
+  "interface": {
+   "measured_from_stl": {
+    "flange_end": 28.0,
+    "flange_start": 18.0,
+    "flange_r": 28.0,
+    "flange_link": 6,
+    "ring_end": 29.5,
+    "ring_start": 28.0,
+    "ring_r": 10.0,
+    "ring_link": 6
+   },
+   "expected_from_params": {
+    "flange_start": 18.0,
+    "flange_end": 28.0,
+    "flange_r": 28.0,
+    "ring_start": 28.0,
+    "ring_end": 29.5,
+    "ring_r": 10.0
+   },
+   "match": true,
+   "link6_x_is_j6_axis": true
+  },
+  "tool_holes": {
+   "holes": [
+    {
+     "angle_deg": 0.0,
+     "pcd_r": 15.75,
+     "dia": 4.0,
+     "dia_spread": 0.0001,
+     "bottom_x": 20.0,
+     "depth": 8.0
+    },
+    {
+     "angle_deg": 90.0,
+     "pcd_r": 15.75,
+     "dia": 4.0,
+     "dia_spread": 0.0,
+     "bottom_x": 20.0,
+     "depth": 8.0
+    },
+    {
+     "angle_deg": 180.0,
+     "pcd_r": 15.75,
+     "dia": 4.0,
+     "dia_spread": 0.0001,
+     "bottom_x": 20.0,
+     "depth": 8.0
+    },
+    {
+     "angle_deg": 270.0,
+     "pcd_r": 15.75,
+     "dia": 4.0,
+     "dia_spread": 0.0,
+     "bottom_x": 20.0,
+     "depth": 8.0
+    }
+   ],
+   "expected": {
+    "count": 4,
+    "angles_deg": [
+     0.0,
+     90.0,
+     180.0,
+     270.0
+    ],
+    "pcd_r": 15.75,
+    "dia": 4.0,
+    "shank_below_mm": 7.0,
+    "min_floor_mm": 1.0
+   },
+   "rows": {
+    "count": true,
+    "angles": true,
+    "pcd": true,
+    "dia_ledger": true,
+    "screw_tip_above_bottom": true,
+    "floor_left": true
+   },
+   "ok": true
+  },
+  "fingertip": {
+   "world_display_mm": [
+    479.0325,
+    159.0445,
+    37.8782
+   ],
+   "g_mm": [
+    0.0,
+    0.0,
+    103.0
+   ]
+  },
+  "independent_fk": {
+   "kinematics_json_vs_v1_params_max_err": 5.684341886080802e-14,
+   "poses": [
+    {
+     "pose": "display",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 4.9227844771419234e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "home",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 5.823432306539628e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "reach-up",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 5.126874814344906e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "pick",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 8.711894517771024e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "side-reach",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 9.209686451197087e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "wave",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 3.4809342861069267e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "zero",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 1.423091014281048e-13,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "display_j5_m60_j6_90",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 4.4143897099397604e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    },
+    {
+     "pose": "display_j6_m135",
+     "face_body": "LINK6_TOOL_FLANGE",
+     "face_end_mm": 28.000013,
+     "base_bottom_mm": 28.0,
+     "pad_tip_mm": 134.0,
+     "grasp_axial_mm": 131.0,
+     "grasp_off_axis_mm": 3.256115871121665e-14,
+     "gx_dot_want_at_q6_0": 1.0,
+     "ok": true
+    }
+   ]
+  },
+  "mount_gap_flange_to_base_mm": 0.0
+ },
+ "openings_checked_u": [
+  0.0,
+  20.0,
+  47.0
+ ],
+ "inputs_sha256": {
+  "v3 bodies.json": "301f57040ee4827d7c37a1f99e404399de001a79b94ef725ef816f7dd5ada564",
+  "v3 meshes (이름순 sha 의 sha)": "e128215d35894ae5612d5d47234dfbfbfb930a4f4c9270b28e8beb07124cd78c",
+  "v1 kinematics.json": "fe000e47a3885566a9ca808b053f429e13272da97a8dac132cb44b6153eeae50",
+  "v1 parameters.json": "f31e3e11109f9c50565aadb225048b8d5be13de953089315beaaf8488ce0b2a4",
+  "v3 parameters.json": "0491e2cc14554ac86dd173e879eb959717dffb02671d81e9f9988b25822ff10a",
+  "gallery_poses.json": "f34d56fcc13133099cf6d074f6b7fa5a39f93baeb3659409d748e6c9e6a1ad59",
+  "gripper parameters.json": "7c116e9f9bfeb49e4b45c5495f7b5f23ce6f3c7d60c1dc66680d604c98d42b8e",
+  "verify_gripper.py": "3ddd492a28cb9ef391c8274c15b5239f755b3c14ed553c8081337ee8fd242d49",
+  "print-fits.json": "d0ecda67dbd61501fc873995564db9fd30c844fb1bcc2003379c5312794126a9",
+  "gripper parts/BASE.stl": "80ee24f437b7d23aaec2fceb345ca716efb4224a740d86285ceaba4f7d1ef794",
+  "gripper parts/JAW_A.stl": "b0bee9c270933a6cd4302954a00113f2640ea18bd72949ebbddc53b3731f3bb7",
+  "gripper parts/JAW_B.stl": "7667af5f78a191204603e5273e81a062a492f6deefa440b1ca8e06705b84cb42",
+  "gripper parts/PINION.stl": "94b7b4af713e33b1b3a4175c5fbd00f7bd3169e77c5f14f7f0812ee6a0ab0ece",
+  "gripper parts/PAD_A_FLAT.stl": "bea1d6891040b74ad01adf96f10d05564c6907af9f22312e643b157ce3851e8c",
+  "gripper parts/PAD_B_FLAT.stl": "548aec57e765939fbe9884151838f03a69a76383de698400879ffa5468f28d14",
+  "gripper parts/PAD_A_V.stl": "a6fe1233107159745c8cc5ba2c502f4e660fb883844ac4032fd2b1f73c877d37",
+  "gripper parts/PAD_B_V.stl": "9af9276b91c8d7460388145baa89d609ce19261bf2e4b4539fd7685c00bc0f35",
+  "assemble.py": "65dcde247362f761194b9d4a120c64dd3191de24ad76f1b479ec3eb6d0ccb110",
+  "parameters.json (MP9)": "6fa652b1390c3700125b7af5feb6530c2ec6cc10680522ed80afab57729c8d77"
+ },
+ "mount_contact": {
+  "max_mm3": 0.0053,
+  "ok": true,
+  "overlaps": [
+   {
+    "grip": "BASE",
+    "arm": "LINK6_TOOL_FLANGE",
+    "mm3": 0.0053
+   },
+   {
+    "grip": "BASE",
+    "arm": "LINK6_TOOL_RING",
+    "mm3": 0.0003
+   }
+  ],
+  "arm_screw_into_arm": [],
+  "fit_pairs": [
+   {
+    "grip": "BASE",
+    "arm": "LINK6_TOOL_RING",
+    "raw_mm3": 0.9168,
+    "inset_mm": 0.05,
+    "inset_mm3": 0.0003
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "pose": "display",
+   "label": "표시 자세(v1)",
+   "q_deg": [
+    15,
+    -50,
+    70,
+    15,
+    25,
+    -10
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 21.973,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "display",
+   "label": "표시 자세(v1)",
+   "q_deg": [
+    15,
+    -50,
+    70,
+    15,
+    25,
+    -10
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 19.538,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "display",
+   "label": "표시 자세(v1)",
+   "q_deg": [
+    15,
+    -50,
+    70,
+    15,
+    25,
+    -10
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 16.25,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "home",
+   "label": "ㄱ 자 대기",
+   "q_deg": [
+    0,
+    -90,
+    90,
+    0,
+    0,
+    0
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 280.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "home",
+   "label": "ㄱ 자 대기",
+   "q_deg": [
+    0,
+    -90,
+    90,
+    0,
+    0,
+    0
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 280.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "home",
+   "label": "ㄱ 자 대기",
+   "q_deg": [
+    0,
+    -90,
+    90,
+    0,
+    0,
+    0
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 280.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "reach-up",
+   "label": "위로 뻗기",
+   "q_deg": [
+    -20,
+    -80,
+    25,
+    0,
+    -15,
+    0
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 660.466,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "reach-up",
+   "label": "위로 뻗기",
+   "q_deg": [
+    -20,
+    -80,
+    25,
+    0,
+    -15,
+    0
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 660.466,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "reach-up",
+   "label": "위로 뻗기",
+   "q_deg": [
+    -20,
+    -80,
+    25,
+    0,
+    -15,
+    0
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 660.466,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "pick",
+   "label": "아래 집기",
+   "q_deg": [
+    -35,
+    -50,
+    75,
+    0,
+    65,
+    30
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": false,
+   "grip_min_z_mm": -65.733,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": false
+  },
+  {
+   "pose": "pick",
+   "label": "아래 집기",
+   "q_deg": [
+    -35,
+    -50,
+    75,
+    0,
+    65,
+    30
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": false,
+   "grip_min_z_mm": -65.733,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": false
+  },
+  {
+   "pose": "pick",
+   "label": "아래 집기",
+   "q_deg": [
+    -35,
+    -50,
+    75,
+    0,
+    65,
+    30
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_1",
+    "J6_MODULE"
+   ],
+   "floor_ok": false,
+   "grip_min_z_mm": -65.733,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": false
+  },
+  {
+   "pose": "side-reach",
+   "label": "옆으로 뻗기",
+   "q_deg": [
+    80,
+    -20,
+    30,
+    -40,
+    35,
+    45
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_3",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 20.807,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "side-reach",
+   "label": "옆으로 뻗기",
+   "q_deg": [
+    80,
+    -20,
+    30,
+    -40,
+    35,
+    45
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_3",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 22.428,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "side-reach",
+   "label": "옆으로 뻗기",
+   "q_deg": [
+    80,
+    -20,
+    30,
+    -40,
+    35,
+    45
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_3",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 23.008,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "wave",
+   "label": "손목 비틀기",
+   "q_deg": [
+    -60,
+    -70,
+    40,
+    60,
+    -50,
+    0
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 492.653,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "wave",
+   "label": "손목 비틀기",
+   "q_deg": [
+    -60,
+    -70,
+    40,
+    60,
+    -50,
+    0
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 492.653,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "wave",
+   "label": "손목 비틀기",
+   "q_deg": [
+    -60,
+    -70,
+    40,
+    60,
+    -50,
+    0
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 492.653,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "zero",
+   "label": "기하 영점(q = 0)",
+   "q_deg": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u": 0.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 115.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "zero",
+   "label": "기하 영점(q = 0)",
+   "q_deg": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u": 20.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 115.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  },
+  {
+   "pose": "zero",
+   "label": "기하 영점(q = 0)",
+   "q_deg": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u": 47.0,
+   "hit": false,
+   "max_mm3": 0.0,
+   "hits": [],
+   "gap_l0_4_approx_mm": null,
+   "gap_l0_4_pair": null,
+   "gap_l5_approx_mm": 3.0,
+   "gap_l5_pair": [
+    "ARM_SHANK_2",
+    "J6_MODULE"
+   ],
+   "floor_ok": true,
+   "grip_min_z_mm": 115.0,
+   "close_l0_4": false,
+   "arm_self_hits": [],
+   "free": true
+  }
+ ],
+ "j5_sweep": {
+  "display": {
+   "summary": {
+    "q_base": [
+     15.0,
+     -50.0,
+     70.0,
+     15.0,
+     25.0,
+     -10.0
+    ],
+    "step_deg": 5,
+    "arm_only": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u0": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u0_and_floor": {
+     "free": [
+      -110,
+      30
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 35
+    },
+    "gripper_first_hit_u0": {
+     "plus": 150,
+     "minus": -160
+    },
+    "with_gripper_u47": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u47_and_floor": {
+     "free": [
+      -110,
+      25
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 30
+    },
+    "gripper_first_hit_u47": {
+     "plus": 145,
+     "minus": -160
+    }
+   },
+   "rows": [
+    {
+     "q5": -170,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 322198.4215
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13233.1405
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 12927.255,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 12927.255
+       },
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 11435.3516
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.02,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J3_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 262.504
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 11983.1617,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "LINK3_ELBOW_HUB",
+        "link": 3,
+        "mm3": 11983.1617
+       },
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 11435.3516
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.02,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J3_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 262.504
+     }
+    },
+    {
+     "q5": -165,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 254894.7411
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 10456.6199
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 8296.0443,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK3_ELBOW_HUB",
+        "link": 3,
+        "mm3": 8296.0443
+       },
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 5202.3924
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.05,
+      "gap_l0_4_pair": [
+       "PAD_A",
+       "J3_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 276.108
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 5202.3924,
+      "top": [
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 5202.3924
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 2108.9028
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "JAW_B",
+       "J3_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 276.108
+     }
+    },
+    {
+     "q5": -160,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 190913.881
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 7729.7878
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 918.5051,
+      "top": [
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 918.5051
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK3_ELBOW_HUB",
+        "link": 3,
+        "mm3": 722.2382
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_END_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 289.21
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 918.5051,
+      "top": [
+       {
+        "grip": "BASE",
+        "arm": "LINK3_FOREARM_BAR",
+        "link": 3,
+        "mm3": 918.5051
+       },
+       {
+        "grip": "BASE",
+        "arm": "J4_END_CAP",
+        "link": 3,
+        "mm3": 344.2613
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_END_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 289.21
+     }
+    },
+    {
+     "q5": -155,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 132513.9173
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 6547.084
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 5.8,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_FOREARM_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 301.71
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 5.8,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_FOREARM_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 301.71
+     }
+    },
+    {
+     "q5": -150,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 85090.7616
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 5535.2089
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 313.513
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 313.513
+     }
+    },
+    {
+     "q5": -145,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 52960.2592
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 4637.1487
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 324.53
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 324.53
+     }
+    },
+    {
+     "q5": -140,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 31612.0017
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 3777.8504
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 334.676
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 334.676
+     }
+    },
+    {
+     "q5": -135,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 17525.0118
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 2882.413
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 343.873
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 343.873
+     }
+    },
+    {
+     "q5": -130,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 8440.5943
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 1890.3558
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 352.053
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 352.053
+     }
+    },
+    {
+     "q5": -125,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 3068.7281
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 892.5011
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 359.153
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 359.153
+     }
+    },
+    {
+     "q5": -120,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 490.4249
+      },
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 445.9308
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 365.119
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 365.119
+     }
+    },
+    {
+     "q5": -115,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13.0557
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 369.905
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 369.905
+     }
+    },
+    {
+     "q5": -110,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 370.771
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 370.771
+     }
+    },
+    {
+     "q5": -105,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 368.854
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 368.854
+     }
+    },
+    {
+     "q5": -100,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 365.713
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 365.713
+     }
+    },
+    {
+     "q5": -95,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 361.371
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 361.371
+     }
+    },
+    {
+     "q5": -90,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 355.862
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 355.862
+     }
+    },
+    {
+     "q5": -85,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 349.227
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 349.227
+     }
+    },
+    {
+     "q5": -80,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 341.518
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 341.518
+     }
+    },
+    {
+     "q5": -75,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 332.791
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 332.791
+     }
+    },
+    {
+     "q5": -70,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 322.938
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 322.938
+     }
+    },
+    {
+     "q5": -65,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 308.629
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 308.629
+     }
+    },
+    {
+     "q5": -60,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 293.686
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 293.686
+     }
+    },
+    {
+     "q5": -55,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 278.225
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 278.225
+     }
+    },
+    {
+     "q5": -50,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 262.362
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 262.362
+     }
+    },
+    {
+     "q5": -45,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 246.218
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 246.218
+     }
+    },
+    {
+     "q5": -40,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 229.916
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 229.916
+     }
+    },
+    {
+     "q5": -35,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 213.581
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 213.581
+     }
+    },
+    {
+     "q5": -30,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 197.336
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 197.336
+     }
+    },
+    {
+     "q5": -25,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 181.305
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 181.305
+     }
+    },
+    {
+     "q5": -20,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 165.384
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 165.384
+     }
+    },
+    {
+     "q5": -15,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 148.394
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 148.394
+     }
+    },
+    {
+     "q5": -10,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 131.991
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 131.991
+     }
+    },
+    {
+     "q5": -5,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 116.3
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 116.3
+     }
+    },
+    {
+     "q5": 0,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 101.439
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 101.439
+     }
+    },
+    {
+     "q5": 5,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 87.522
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 87.522
+     }
+    },
+    {
+     "q5": 10,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 73.238
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 68.792
+     }
+    },
+    {
+     "q5": 15,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 54.837
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 50.013
+     }
+    },
+    {
+     "q5": 20,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 37.705
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 32.454
+     }
+    },
+    {
+     "q5": 25,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 21.973
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 16.25
+     }
+    },
+    {
+     "q5": 30,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 7.761
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": 1.523
+     }
+    },
+    {
+     "q5": 35,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -4.824
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -11.614
+     }
+    },
+    {
+     "q5": 40,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -15.685
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -23.062
+     }
+    },
+    {
+     "q5": 45,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -24.74
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -32.733
+     }
+    },
+    {
+     "q5": 50,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -31.92
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -40.554
+     }
+    },
+    {
+     "q5": 55,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -37.17
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -46.465
+     }
+    },
+    {
+     "q5": 60,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -40.451
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -50.421
+     }
+    },
+    {
+     "q5": 65,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -41.737
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -52.393
+     }
+    },
+    {
+     "q5": 70,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -41.018
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -52.365
+     }
+    },
+    {
+     "q5": 75,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -40.008
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -52.045
+     }
+    },
+    {
+     "q5": 80,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -38.035
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -50.755
+     }
+    },
+    {
+     "q5": 85,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -34.074
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -47.467
+     }
+    },
+    {
+     "q5": 90,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -28.157
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -42.206
+     }
+    },
+    {
+     "q5": 95,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -20.328
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -35.012
+     }
+    },
+    {
+     "q5": 100,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -10.761
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -25.939
+     }
+    },
+    {
+     "q5": 105,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": 0.138
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -15.058
+     }
+    },
+    {
+     "q5": 110,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 12.763
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": false,
+      "grip_min_z_mm": -2.45
+     }
+    },
+    {
+     "q5": 115,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13.0547
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 27.016
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 11.788
+     }
+    },
+    {
+     "q5": 120,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 490.3332
+      },
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 445.9238
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 42.791
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 27.548
+     }
+    },
+    {
+     "q5": 125,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 3068.5622
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 892.5276
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 57.35
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 44.71
+     }
+    },
+    {
+     "q5": 130,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 8440.4546
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 1890.3654
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 71.974
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 63.143
+     }
+    },
+    {
+     "q5": 135,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 17524.9056
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 2882.4141
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 87.648
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 82.708
+     }
+    },
+    {
+     "q5": 140,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 31611.798
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 3777.8484
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 8.03,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "J2_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 104.255
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 5.67,
+      "gap_l0_4_pair": [
+       "PAD_A",
+       "LINK1_SHOULDER_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 103.255
+     }
+    },
+    {
+     "q5": 145,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 52960.005
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 4637.1488
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 1.46,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "J2_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 121.668
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 91.8447,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 91.8447
+       },
+       {
+        "grip": "PAD_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 9.302
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.18,
+      "gap_l0_4_pair": [
+       "PAD_A",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 121.668
+     }
+    },
+    {
+     "q5": 150,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 85090.4582
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 5535.2088
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 74.5122,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_ACCENT_RING",
+        "link": 1,
+        "mm3": 74.5122
+       },
+       {
+        "grip": "PAD_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 66.0236
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.22,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 139.753
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 880.625,
+      "top": [
+       {
+        "grip": "PAD_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 880.625
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 774.8456
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.14,
+      "gap_l0_4_pair": [
+       "PAD_A",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 139.753
+     }
+    },
+    {
+     "q5": 155,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 132513.6676
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 6547.0948
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 2817.2073,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 2817.2073
+       },
+       {
+        "grip": "SERVO_PLUGS",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 2739.7396
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.11,
+      "gap_l0_4_pair": [
+       "SERVO_PLUGS",
+       "J3_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 158.374
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 2739.7396,
+      "top": [
+       {
+        "grip": "SERVO_PLUGS",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 2739.7396
+       },
+       {
+        "grip": "PAD_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 1129.3597
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.08,
+      "gap_l0_4_pair": [
+       "PAD_A",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 158.374
+     }
+    },
+    {
+     "q5": 160,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 190913.8375
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 7729.805
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 13569.944,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 13569.944
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 8438.307
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.08,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "J3_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 176.297
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 13569.944,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 13569.944
+       },
+       {
+        "grip": "BASE",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 3780.9031
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.09,
+      "gap_l0_4_pair": [
+       "PAD_B",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 176.297
+     }
+    },
+    {
+     "q5": 165,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 254895.0016
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 10456.7042
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 31628.8574,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 31628.8574
+       },
+       {
+        "grip": "BASE",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 12028.6478
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "ROD_-15.0",
+       "J3_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 190.663
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 31628.8574,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 31628.8574
+       },
+       {
+        "grip": "BASE",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 12028.6478
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "ROD_-15.0",
+       "J3_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 190.663
+     }
+    },
+    {
+     "q5": 170,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 322198.8474
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13233.2279
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 36893.4107,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 36893.4107
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 21412.5397
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.02,
+      "gap_l0_4_pair": [
+       "PAD_B",
+       "LINK2_LOGO_H"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 205.176
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 36893.4107,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 36893.4107
+       },
+       {
+        "grip": "BASE",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 21027.5639
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "JAW_B",
+       "J3_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 205.176
+     }
+    }
+   ]
+  },
+  "home": {
+   "summary": {
+    "q_base": [
+     0.0,
+     -90.0,
+     90.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "step_deg": 5,
+    "arm_only": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u0": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u0_and_floor": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "gripper_first_hit_u0": {
+     "plus": 130,
+     "minus": -160
+    },
+    "with_gripper_u47": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "with_gripper_u47_and_floor": {
+     "free": [
+      -110,
+      110
+     ],
+     "first_blocked_below": -115,
+     "first_blocked_above": 115
+    },
+    "gripper_first_hit_u47": {
+     "plus": 130,
+     "minus": -160
+    }
+   },
+   "rows": [
+    {
+     "q5": -170,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 322198.4339
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13233.1598
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 14630.0626,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 14630.0626
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK3_ELBOW_HUB",
+        "link": 3,
+        "mm3": 8915.6687
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 340.603
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 21660.7968,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 21660.7968
+       },
+       {
+        "grip": "BASE",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 7654.8625
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 340.603
+     }
+    },
+    {
+     "q5": -165,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 254894.7333
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 10456.5857
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 3743.8248,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 3743.8248
+       },
+       {
+        "grip": "BASE",
+        "arm": "J4_END_CAP",
+        "link": 3,
+        "mm3": 1740.6505
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.06,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 355.44
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 4325.223,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 4325.223
+       },
+       {
+        "grip": "BASE",
+        "arm": "J4_END_CAP",
+        "link": 3,
+        "mm3": 1740.6505
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.06,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 355.44
+     }
+    },
+    {
+     "q5": -160,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 190913.862
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 7729.7907
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 312.974,
+      "top": [
+       {
+        "grip": "BASE",
+        "arm": "J4_END_CAP",
+        "link": 3,
+        "mm3": 312.974
+       },
+       {
+        "grip": "ARM_SHANK_1",
+        "arm": "J4_MODULE",
+        "link": 3,
+        "mm3": 0.015
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_END_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 370.152
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 312.974,
+      "top": [
+       {
+        "grip": "BASE",
+        "arm": "J4_END_CAP",
+        "link": 3,
+        "mm3": 312.974
+       },
+       {
+        "grip": "ARM_SHANK_1",
+        "arm": "J4_MODULE",
+        "link": 3,
+        "mm3": 0.015
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_END_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 370.152
+     }
+    },
+    {
+     "q5": -155,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 132513.9265
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 6547.0826
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 6.74,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 384.627
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 6.74,
+      "gap_l0_4_pair": [
+       "BASE",
+       "J4_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 384.627
+     }
+    },
+    {
+     "q5": -150,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 85090.7384
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 5535.2096
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 398.755
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 398.755
+     }
+    },
+    {
+     "q5": -145,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 52960.2544
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 4637.1532
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 412.428
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 412.428
+     }
+    },
+    {
+     "q5": -140,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 31612.0595
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 3777.8512
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 425.542
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 425.542
+     }
+    },
+    {
+     "q5": -135,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 17525.0052
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 2882.4138
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 437.998
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 437.998
+     }
+    },
+    {
+     "q5": -130,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 8440.5851
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 1890.3573
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 449.7
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 449.7
+     }
+    },
+    {
+     "q5": -125,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 3068.7557
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 892.5014
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 460.56
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 460.56
+     }
+    },
+    {
+     "q5": -120,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 490.4465
+      },
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 445.9311
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 469.815
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 469.815
+     }
+    },
+    {
+     "q5": -115,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13.0446
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 477.634
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 477.634
+     }
+    },
+    {
+     "q5": -110,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 484.398
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 484.398
+     }
+    },
+    {
+     "q5": -105,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 490.055
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 490.055
+     }
+    },
+    {
+     "q5": -100,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 494.562
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 494.562
+     }
+    },
+    {
+     "q5": -95,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 497.886
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 497.886
+     }
+    },
+    {
+     "q5": -90,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 500.0
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 500.0
+     }
+    },
+    {
+     "q5": -85,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 497.886
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 497.886
+     }
+    },
+    {
+     "q5": -80,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 494.562
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 494.562
+     }
+    },
+    {
+     "q5": -75,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 490.055
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 490.055
+     }
+    },
+    {
+     "q5": -70,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 484.398
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 484.398
+     }
+    },
+    {
+     "q5": -65,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 477.634
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 477.634
+     }
+    },
+    {
+     "q5": -60,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 468.537
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 468.537
+     }
+    },
+    {
+     "q5": -55,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 455.588
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 455.588
+     }
+    },
+    {
+     "q5": -50,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 441.752
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 441.752
+     }
+    },
+    {
+     "q5": -45,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 427.134
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 427.134
+     }
+    },
+    {
+     "q5": -40,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 411.845
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 411.845
+     }
+    },
+    {
+     "q5": -35,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 396.002
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 396.002
+     }
+    },
+    {
+     "q5": -30,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 379.725
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 379.725
+     }
+    },
+    {
+     "q5": -25,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 363.137
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 363.137
+     }
+    },
+    {
+     "q5": -20,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 346.367
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 346.367
+     }
+    },
+    {
+     "q5": -15,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 329.54
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 329.54
+     }
+    },
+    {
+     "q5": -10,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 312.785
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 312.785
+     }
+    },
+    {
+     "q5": -5,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 296.23
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 296.23
+     }
+    },
+    {
+     "q5": 0,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 280.0
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 280.0
+     }
+    },
+    {
+     "q5": 5,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 262.413
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 262.413
+     }
+    },
+    {
+     "q5": 10,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 245.41
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 245.41
+     }
+    },
+    {
+     "q5": 15,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 229.118
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 229.118
+     }
+    },
+    {
+     "q5": 20,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 213.663
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 213.663
+     }
+    },
+    {
+     "q5": 25,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 199.162
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 199.162
+     }
+    },
+    {
+     "q5": 30,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 185.725
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 185.725
+     }
+    },
+    {
+     "q5": 35,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 167.178
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 167.178
+     }
+    },
+    {
+     "q5": 40,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 149.484
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 149.484
+     }
+    },
+    {
+     "q5": 45,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 133.232
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 133.232
+     }
+    },
+    {
+     "q5": 50,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 118.546
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 118.546
+     }
+    },
+    {
+     "q5": 55,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 105.538
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 105.538
+     }
+    },
+    {
+     "q5": 60,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 94.307
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 94.307
+     }
+    },
+    {
+     "q5": 65,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 84.938
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 84.938
+     }
+    },
+    {
+     "q5": 70,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 77.503
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 77.503
+     }
+    },
+    {
+     "q5": 75,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 71.748
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 71.748
+     }
+    },
+    {
+     "q5": 80,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 67.426
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 67.426
+     }
+    },
+    {
+     "q5": 85,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 65.171
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 65.171
+     }
+    },
+    {
+     "q5": 90,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 65.0
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 65.0
+     }
+    },
+    {
+     "q5": 95,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 64.91
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 64.91
+     }
+    },
+    {
+     "q5": 100,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 66.698
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 66.698
+     }
+    },
+    {
+     "q5": 105,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 69.985
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 69.985
+     }
+    },
+    {
+     "q5": 110,
+     "arm_self_hit": false,
+     "arm_self_top": [],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 75.32
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 75.32
+     }
+    },
+    {
+     "q5": 115,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13.0544
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 82.661
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 82.661
+     }
+    },
+    {
+     "q5": 120,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 490.3352
+      },
+      {
+       "a": "J4_ACCENT_RING",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 445.9231
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 91.953
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": null,
+      "gap_l0_4_pair": null,
+      "floor_ok": true,
+      "grip_min_z_mm": 91.953
+     }
+    },
+    {
+     "q5": 125,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 3068.5442
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 892.5284
+      }
+     ],
+     "u0": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 1.45,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "LINK1_SHOULDER_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 103.126
+     },
+     "u47": {
+      "hit": false,
+      "max_mm3": 0.0,
+      "top": [],
+      "gap_l0_4_approx_mm": 9.18,
+      "gap_l0_4_pair": [
+       "SERVO_PLUGS",
+       "J2_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 103.126
+     }
+    },
+    {
+     "q5": 130,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 8440.4232
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 1890.3667
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 2910.6223,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 2910.6223
+       },
+       {
+        "grip": "PAD_B",
+        "arm": "LINK1_SHOULDER_CAP",
+        "link": 1,
+        "mm3": 85.228
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.15,
+      "gap_l0_4_pair": [
+       "PAD_B",
+       "LINK1_SHOULDER_CAP"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 116.093
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 125.5532,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "LINK1_POST",
+        "link": 1,
+        "mm3": 125.5532
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.16,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "LINK1_POST"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 116.093
+     }
+    },
+    {
+     "q5": 135,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 17524.8693
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 2882.4166
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 11972.9292,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 11972.9292
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 5963.5847
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 130.757
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 5847.2635,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 5847.2635
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "LINK1_POST",
+        "link": 1,
+        "mm3": 3642.4642
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "LINK1_POST"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 130.757
+     }
+    },
+    {
+     "q5": 140,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 31611.7574
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 3777.8491
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 15368.8511,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 15368.8511
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 11837.4086
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.09,
+      "gap_l0_4_pair": [
+       "JAW_A",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 146.803
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 12107.3375,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 12107.3375
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_SHOULDER_HUB",
+        "link": 2,
+        "mm3": 7633.0669
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.11,
+      "gap_l0_4_pair": [
+       "PAD_A_SHANK_0",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 146.803
+     }
+    },
+    {
+     "q5": 145,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 52959.9591
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 4637.1459
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 14463.4966,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 14463.4966
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 13754.7891
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.1,
+      "gap_l0_4_pair": [
+       "JAW_B",
+       "J2_ACCENT_RING"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 164.311
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 10172.0702,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_SHOULDER_HUB",
+        "link": 2,
+        "mm3": 10172.0702
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 10123.4683
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.11,
+      "gap_l0_4_pair": [
+       "JAW_B",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 164.311
+     }
+    },
+    {
+     "q5": 150,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 85090.4315
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 5535.2084
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 13586.7385,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 13586.7385
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 8999.6516
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.07,
+      "gap_l0_4_pair": [
+       "ROD_-5.0",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 183.148
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 10398.1536,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 10398.1536
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_SHOULDER_HUB",
+        "link": 2,
+        "mm3": 6170.8697
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.06,
+      "gap_l0_4_pair": [
+       "JAW_B",
+       "J2_MODULE"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 183.148
+     }
+    },
+    {
+     "q5": 155,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 132513.6833
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 6547.0965
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 5885.9455,
+      "top": [
+       {
+        "grip": "JAW_A",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 5885.9455
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "J2_MODULE",
+        "link": 1,
+        "mm3": 4653.3211
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.05,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 203.172
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 12585.0654,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 12585.0654
+       },
+       {
+        "grip": "PAD_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 3428.2805
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.05,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 203.172
+     }
+    },
+    {
+     "q5": 160,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 190913.8901
+      },
+      {
+       "a": "LINK4_NECK",
+       "b": "J6_END_CAP",
+       "links": [
+        4,
+        5
+       ],
+       "mm3": 7729.8056
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 9391.6286,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 9391.6286
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 8591.6444
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 224.23
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 13873.5003,
+      "top": [
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 13873.5003
+       },
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 9391.6286
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.03,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 224.23
+     }
+    },
+    {
+     "q5": 165,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 254895.0826
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 10456.7367
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 27335.5369,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 27335.5369
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 9325.5541
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 246.161
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 27335.5369,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 27335.5369
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 13764.7198
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK2_UPPER_BAR"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 246.161
+     }
+    },
+    {
+     "q5": 170,
+     "arm_self_hit": true,
+     "arm_self_top": [
+      {
+       "a": "J4_MODULE",
+       "b": "J6_MODULE",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 322198.8846
+      },
+      {
+       "a": "J4_MODULE",
+       "b": "LINK5_WRIST_BAR",
+       "links": [
+        3,
+        5
+       ],
+       "mm3": 13233.2554
+      }
+     ],
+     "u0": {
+      "hit": true,
+      "max_mm3": 36460.0705,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 36460.0705
+       },
+       {
+        "grip": "JAW_A",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 21161.4865
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 268.798
+     },
+     "u47": {
+      "hit": true,
+      "max_mm3": 36460.0705,
+      "top": [
+       {
+        "grip": "SERVO_BODY",
+        "arm": "J3_MODULE",
+        "link": 2,
+        "mm3": 36460.0705
+       },
+       {
+        "grip": "JAW_B",
+        "arm": "LINK2_UPPER_BAR",
+        "link": 2,
+        "mm3": 13082.5825
+       }
+      ],
+      "gap_l0_4_approx_mm": 0.0,
+      "gap_l0_4_pair": [
+       "BASE",
+       "LINK3_ELBOW_HUB"
+      ],
+      "floor_ok": true,
+      "grip_min_z_mm": 268.798
+     }
+    }
+   ]
+  }
+ },
+ "j6_sweep": {
+  "summary": {
+   "base": "display",
+   "step_deg": 15,
+   "arm_hit_q6": {
+    "u0": [],
+    "u47": []
+   },
+   "floor_short_q6": {
+    "u0": [],
+    "u47": [
+     -165,
+     -150,
+     -135,
+     -120,
+     -105,
+     -90,
+     -75,
+     -60,
+     15,
+     30,
+     45,
+     60,
+     75,
+     90,
+     105,
+     120
+    ]
+   },
+   "min_z_mm": {
+    "u0": {
+     "q6": 90,
+     "z": 15.664
+    },
+    "u47": {
+     "q6": -135,
+     "z": -9.087
+    }
+   }
+  },
+  "rows": [
+   {
+    "q6": -180,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 18.538
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 7.107
+    }
+   },
+   {
+    "q6": -165,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 18.219
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -1.071
+    }
+   },
+   {
+    "q6": -150,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 19.204
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -6.594
+    }
+   },
+   {
+    "q6": -135,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 15.953
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -9.087
+    }
+   },
+   {
+    "q6": -120,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 16.324
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -8.379
+    }
+   },
+   {
+    "q6": -105,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 17.586
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -6.51
+    }
+   },
+   {
+    "q6": -90,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 16.515
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -5.917
+    }
+   },
+   {
+    "q6": -75,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 19.028
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -2.34
+    }
+   },
+   {
+    "q6": -60,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 24.951
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": 3.978
+    }
+   },
+   {
+    "q6": -45,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 26.079
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 12.606
+    }
+   },
+   {
+    "q6": -30,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 24.215
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 22.545
+    }
+   },
+   {
+    "q6": -15,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 22.688
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 19.895
+    }
+   },
+   {
+    "q6": 0,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 20.911
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 9.481
+    }
+   },
+   {
+    "q6": 15,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 20.292
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": 1.002
+    }
+   },
+   {
+    "q6": 30,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 20.834
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -4.964
+    }
+   },
+   {
+    "q6": 45,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 17.03
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -8.011
+    }
+   },
+   {
+    "q6": 60,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 16.773
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -7.93
+    }
+   },
+   {
+    "q6": 75,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 17.378
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -6.688
+    }
+   },
+   {
+    "q6": 90,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 15.664
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -6.647
+    }
+   },
+   {
+    "q6": 105,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 17.591
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": -3.571
+    }
+   },
+   {
+    "q6": 120,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 23.028
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": false,
+     "grip_min_z_mm": 2.329
+    }
+   },
+   {
+    "q6": 135,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 22.569
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_2",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 10.651
+    }
+   },
+   {
+    "q6": 150,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 21.22
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_3",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 20.418
+    }
+   },
+   {
+    "q6": 165,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 20.175
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_1",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 17.382
+    }
+   },
+   {
+    "q6": 180,
+    "u0": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 18.538
+    },
+    "u47": {
+     "hit": false,
+     "max_mm3": 0.0,
+     "top": [],
+     "gap_l5_approx_mm": 3.0,
+     "gap_l5_pair": [
+      "ARM_SHANK_0",
+      "J6_MODULE"
+     ],
+     "gap_l0_4_approx_mm": null,
+     "floor_ok": true,
+     "grip_min_z_mm": 7.107
+    }
+   }
+  ]
+ },
+ "all_ok": true,
+ "seconds": 352.4
+}

@@ -1,0 +1,120 @@
+{
+  "units": "mm",
+  "status": "MP8 KG1 — first gripper (3D-print pick-and-place from a tray). Purchased-part sizes are public drawings / listings, not measured — verify on arrival. Not printed, not tested.",
+  "frame": "G: origin = centre of the mounting face (touches the arm tool flange) · +z = approach (away from the arm) · x = jaw travel · y = depth. Parts are modelled in the closed state u = 0 (pad faces touch at x = 0); jaw A opens to -x, jaw B to +x.",
+  "decisions": "../../../.dev/mp8-evidence/user-decisions-mp8.json (G1 STS3215 12V · G2 gripper inside 0.5 kg · G3 objects up to 80 mm / 200 g · G4 tray pick · G5 Ø6 rods + printed bores · G6 carbon tube 6 x 4)",
+  "fits_from": {
+    "ledger": "../calibration/print-fits.json",
+    "material": "PLA",
+    "values": ["insert_hole_dia", "m3_clearance_dia"],
+    "pending": ["rod_slide_hole_dia", "rod_press_hole_dia", "m2_clearance_dia", "gear_thinning_pinion", "gear_thinning_rack", "m3_close_hole_dia"],
+    "note": "fit values live only in the ledger; writing any of these keys here makes loading stop. When a pending key is judged and moved to the ledger's values, move its name from pending to values here too (README 「다시 만들기」)."
+  },
+  "servo": {
+    "model": "Feetech STS3215 12V (C018)",
+    "body": [45.22, 24.72, 32.0],
+    "out_end_thickness": 29.0,
+    "out_end_length": 15.0,
+    "bottom_bump": 3.0,
+    "spline_from_out_end": 10.11,
+    "spline_above_out_end_face": 3.4,
+    "horn_dia": 19.95,
+    "horn_face_above_body_top": [2.65, 3.0],
+    "top_holes_from_out_end": [18.41, 39.11],
+    "top_holes_width_spacing": 20.5,
+    "top_holes_width_spacing_range": [20.1, 20.5],
+    "plug_zone_from_out_end": [19.0, 29.0],
+    "plug_zone_depth": 15.0,
+    "mass_g": 55.0,
+    "source": "Feetech C018 page A 45.2 / B 24.7 / C 35 · 55 ± 1 g (quote); Feetech + Waveshare outline drawings (drawing_read: 45.22 × 24.72 · 29 / 32 / 35 layers · spline 10.11 from the output end · spline 3.4 above the 29 face · top holes 18.41 / 39.11 · bottom width spacing 20.5 · horn Ø19.95 (Waveshare 19.2) · horn 4.5 thick · 37.25 over both horns); step boundary 15 and the symmetric 1.5 step are pixel estimates; top-face hole width spacing 20.1 ~ 20.5 (slots); connectors = two 5264 3P on the bottom face about 21 ~ 27 from the output end (pixel estimate) — research 2026-10-28 (.dev/mp8-evidence/research-dims.md)"
+  },
+  "screws": {
+    "servo_m2": {"length": 5.0, "head_max": [3.8, 1.6], "note": "M2 x 5 self-tapping into the servo top holes; head = button / low pan, dia <= 3.8 and height <= 1.6 (the counterbore is Ø4.0 x 1.8) — measure the delivered screws (BOM G06)"},
+    "pinion_m3": {"length": 6.0, "head": [5.5, 3.0], "note": "M3 x 6 socket head into the horn's tapped flange (2.5) — Waveshare FAQ warns against longer screws"},
+    "pad_m3": {"length": 8.0, "head": [5.7, 1.65], "note": "M3 x 8 button head (ISO 7380-1 M3: dk 5.7 · k 1.65) — pad B heads sit on the tip side, button keeps them 1.35 below the pad tip"},
+    "arm_m3": {"length": 10.0, "head": [5.5, 3.0], "note": "M3 socket head (ISO 4762 M3: dk 5.5 · k 3.0) through the base into the arm flange — length set when the arm side is designed"}
+  },
+  "rod": {
+    "od": 6.0, "id": 4.0, "length": 140.0, "count": 4, "density_g_cm3": 1.5,
+    "insert_from": "L",
+    "source": "user G6 carbon tube 6 x 4; density = pultruded carbon rod listing 1.5 g/cm3 (research) — tube mass about 3.3 g per 140 mm. Tubes go in from the L post (slide fit) through both sleeves and are pressed into the R post only (R-14: no long push through a press hole)."
+  },
+  "layout": {
+    "z_c": 26.0,
+    "gear_band_y": [-5.0, 5.0],
+    "gear_band_note": "rack tooth band (both racks); the pinion's front face sits at gear_band_y[1] and its teeth are gear.face_width deep, so the pinion back is 1.0 in front of the rack-A wedge front (y -5) — axial gap 1.0 / 0.65 at horn height 3.0 / 2.65 (review G01 · INT-01)",
+    "wall_y": [-9.0, -6.0],
+    "wall_x": [-14.0, 39.0],
+    "wall_top": 38.5,
+    "horn_hole_dia": 21.0,
+    "gusset_x": [[-14.0, -11.0], [36.0, 39.0]],
+    "gusset_y": [-26.0, -9.0],
+    "servo_ledge": {"x": [-11.0, 36.0], "depth": 2.0, "height": 2.4, "note": "45°-ish rib behind the wall under the servo's lower side face (z = z_c - body width / 2): push the servo down onto it while tightening the M2 screws — the slots let the servo float ±0.4 in z otherwise (review G07)"},
+    "base_top": 6.0,
+    "base_x": 70.0,
+    "base_y": [-26.0, 25.0],
+    "align_groove": {"width": 1.0, "depth": 0.6, "note": "vertical groove on the base front face (y = base_y[1]) at x = 0 — the pad meeting line must sit on it (± 1 mm) when both jaws are engaged; a 2.4 mm offset means one jaw is a tooth off"},
+    "disc_dia": 56.0,
+    "recess_dia": 20.0,
+    "recess_depth": 1.5,
+    "arm_screw_pcd": 31.5,
+    "arm_screw_phase_deg": 0.0,
+    "arm_screw_cbore": [6.2, 3.0],
+    "post_x": [62.0, 70.0],
+    "post_y": [-21.0, 24.5],
+    "post_top": 58.0,
+    "rod_z": 52.0,
+    "rod_y_a": [-15.0, -5.0],
+    "rod_y_b": [10.5, 18.5],
+    "stroke_half": 47.0,
+    "camera_holes": [[-20.0, 22.0], [20.0, 22.0]]
+  },
+  "gear": {
+    "module": 1.5, "teeth": 18, "pressure_angle_deg": 20.0, "face_width": 9.0, "addendum": 1.0, "dedendum": 1.25,
+    "hub_dia": 20.0, "hub_len": 2.0, "screw_pcd": 14.0, "screw_count": 4, "screw_phase_deg": 45.0,
+    "screw_cbore": [6.0, 7.0], "centre_hole": 6.0,
+    "coupon_thinning": [0.05, 0.10, 0.15, 0.20],
+    "note": "m1.5 z18 (r 13.5) without profile shift — research: 0.4 nozzle m1.5 ~ 2.0, z >= 17 avoids undercut at 20 deg. Face width 9 + hub 2 (total 11, the horn screws still bite 2.0 into the horn's 2.5 tapped flange) — b 10 -> 9 raises the Lewis stress by 10/9 (review G01). Pinion screw holes = ledger m3_close_hole_dia (the pinion is located on the horn by these four screws — review G07)."
+  },
+  "rack": {"back_a": 4.1, "back_b": 3.5, "local_x_a": [-8.0, 54.0]},
+  "jaw_a": {
+    "sleeve_y": [-20.0, 0.0], "sleeve_z": [46.0, 58.0], "local_x": [-14.0, 54.0],
+    "stalk_x": [-14.0, -4.0], "stalk_top": 103.0,
+    "pad_insert_x": -9.0, "pad_insert_z": [70.0, 95.0], "pad_insert_depth": 6.5,
+    "bearing_len": 12.0, "relief_dia": 7.0
+  },
+  "jaw_b": {
+    "sleeve_y": [5.5, 23.5], "sleeve_z": [46.0, 58.0], "local_x": [-54.0, 14.0],
+    "stalk_x": [4.0, 14.0], "stalk_top": 100.0,
+    "hanger_y": [5.5, 9.5], "rib_local_x": [-52.5, -20.0, 12.5], "rib_t": 3.0,
+    "cap_insert_x": 9.0, "cap_insert_y": [10.0, 19.0], "cap_insert_depth": 6.5,
+    "bearing_len": 12.0, "relief_dia": 7.0
+  },
+  "pad": {
+    "t": 4.0, "y": [-10.0, 10.0], "z": [58.5, 106.0], "tip_chamfer": 3.0,
+    "flange_t_a": 3.0, "cap_t_b": 3.0, "v_depth": 2.0,
+    "grasp_centre": [0.0, 0.0, 103.0],
+    "grasp_cases_z": [82.25, 96.0, 103.0],
+    "grasp_note": "pad contact faces span z 58.5 ~ 106 (middle 82.25). Tray pick (G4) puts the pad tips near the tray, so a held object's centre sits at 106 - h/2: 103 = a 6 mm tall object (default, worst for the arm) · 96 = 20 mm · 82.25 = pad middle. Objects taller than 47.5 (106 - 58.5) touch the sleeves when the tips are on the tray (G4 object box check).",
+    "object_box": [80.0, 20.0, 47.5],
+    "screw": "M3 x 8 button head (A: through the 3 mm flange into the stalk insert · B: through the 3 mm cap)"
+  },
+  "fit_coupon": {
+    "holes": [5.9, 6.0, 6.1, 6.2, 6.3, 6.4], "hole_len": 8.0, "block": [8.0, 12.0], "pitch": 14.0,
+    "hole_len_note": "8 = the post thickness (press fit grip is judged over the real post length — review R-14)",
+    "m3_close_holes": [3.1, 3.2, 3.3], "m3_tab": [12.0, 30.0, 6.0],
+    "mesh_jig": {"pin_dia": 5.8, "plate_t": 3.0, "wall_t": 4.0, "wall_h": 8.0, "half_len": 30.0, "rack_len": 40.0, "rack_t": 12.0, "rack_back": 4.0, "pin_above_plate": 13.0,
+                 "note": "pinion on a pin between two separate rack bars at the design centre distance: FIT_RACK_A printed flat (teeth in the layer plane like jaw A) · FIT_RACK_B printed standing (teeth across layers like jaw B). The bars slide in x against the outer walls — the pinion drives them like the real jaws."}
+  },
+  "print": {
+    "printer": "Bambu Lab H2D 0.4 nozzle", "process": "0.20mm Standard @BBL H2D", "filament": "Bambu PLA Basic @BBL H2D",
+    "orientation": {
+      "BASE": "as modelled (z up)",
+      "JAW_A": "y up — the XZ plane on the plate so the rack teeth lie in the layer plane",
+      "JAW_B": "z up (as modelled) — rack teeth across layers (rack Lewis Y 0.485 is unverified) · brim on (93.5 tall on a 14.5 deep footprint — review G13)",
+      "PINION": "y down — the front face (screw counterbores) on the plate, tooth profile in the layer plane",
+      "PAD_*": "contact face down",
+      "KG1_FIT": "as modelled — FIT_BLOCK rod holes horizontal like the jaw bores and post holes · M3 holes vertical like the pinion screw holes · FIT_RACK_A flat · FIT_RACK_B standing · FIT_PINION_* y down like PINION"
+    }
+  }
+}
